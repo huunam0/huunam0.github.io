@@ -3,19 +3,19 @@
  <meta charset="utf8"/>
  <title>Segment Tree - Cây phân đoạn</title>
  <meta name="author" value="Tran Huu Nam"/>
- <link rel="stylesheet" href="../../inc/chung.css">
+ 
  <link rel="stylesheet" href="../../inc/mathjax/mathjax_styles.css">
  <script src="../../inc/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
  <script src="../../inc/jquery.min.js" type="text/javascript"></script>
  <script src="../../inc/jquery-ui.min.js" type="text/javascript"></script>
  <link rel="stylesheet" href="../../inc/jquery-ui.min.css">
  <script src="../../inc/chung.js" type="text/javascript"></script>
- 
+ <link rel="stylesheet" href="../../inc/chung.css">
 </head>
 <body>
 
 <h1>Segment Tree - Cây phân đoạn</h1>
-<p><strong>1. Khái niệm:</strong></p>
+<h2>1. Khái niệm:</h2>
 <p class="mucan">Segment tree (ST) là cây nhị phân đầy đủ. Mỗi nút quản lí 1 đoạn (VD: tổng, tích, max, min, ucln,... của một đoạn).</p>
 <p class="mucan">Trong ví dụ minh hoạ sau đây, ta giả sử mỗi nút là tổng của một đoạn. ST cho phép tính nhanh tổng của 1 đoạn bất kì.</p>
 <p class="mucan">Giả sử ta có mảng A gồm n phần tử : A[1..n]. Thì cây ST sẽ được biểu diễn bởi mảng H[1..4n]:</p>
@@ -90,12 +90,13 @@
 		</tr>
 	</tbody>
 </table>
-<p class="mucan"><strong>2. Các thao tác trên ST:</strong></p>
+<h2 class="mucan">2. Các thao tác trên ST:</h2>
 <ul>
-	<li class="mucan">Xây dựng cây ST (mảng H)</li>
-	<li class="mucan">Truy vấn trên đoạn (tính tổng trên 1 đoạn p..q)</li>
-	<li class="mucan">Cập nhật giá trị một phần tử (gán A[i]=x)</li>
+	<li class="mucan">Xây dựng cây ST (mảng H) <a href="build.html">►</a></li>
+	<li class="mucan">Truy vấn trên đoạn (tính tổng trên 1 đoạn p..q) <a href="query.html">►</a></li>
+	<li class="mucan">Cập nhật giá trị một phần tử (gán A[i]=x) <a href="update.html">►</a></li>
 </ul>
+<h2 class="mucan">3. Lazy propagation <a href="lazy.html">►</a></h2>
 <p>&nbsp;</p>
 <p class="mucan">Tài liệu tham khảo:</p>
 <ul>

@@ -1,0 +1,121 @@
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+ <meta charset="utf8"/>
+ <title>Segment Tree - Cây phân đoạn</title>
+ <meta name="author" value="Tran Huu Nam"/>
+ <link rel="stylesheet" href="../../inc/chung.css">
+ <link rel="stylesheet" href="../../inc/mathjax/mathjax_styles.css">
+ <script src="../../inc/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+ <script src="../../inc/jquery.min.js" type="text/javascript"></script>
+ <script src="../../inc/jquery-ui.min.js" type="text/javascript"></script>
+ <link rel="stylesheet" href="../../inc/jquery-ui.min.css">
+ <script src="../../inc/chung.js" type="text/javascript"></script>
+ 
+</head>
+<body>
+
+<h1>Segment Tree - Cây phân đoạn</h1>
+<h2>Xây dựng cây ST</h2>
+
+<p># Mảng H là cây ST của mảng A.</p>
+
+<h3>1. Hàm <span class="code nenxam">build(v, l, r)</span></h3><p> // xây dựng nhánh cây do nút v quản lí đoạn l..r</p>
+
+<ul class="code">
+	<li class="mucan">Nếu l=r thì H[v] = A[l] và kết thúc</li>
+	<li class="mucan">mid = (l+r)/2</li>
+	<li class="mucan">build(2v, l, mid); //xây dựng nhánh con trái</li>
+	<li class="mucan">build(2v+1, mid+1, r);//xây dựng nhánh con phải</li>
+	<li class="mucan">H[v] = H[2v] + H[2v+1];</li>
+</ul>
+
+<h3 class="mucan">2. Gọi <span class="code nenxam">build(1, 1, n);</span></h3>
+
+<h3 class="mucan">3. ĐPT: O(logn)</h3>
+<div class="mucan">
+<h3>4. Ví dụ:</h3>
+<div>n=7; A = [3,  8,  4,  5,  8,  5,  1]</div>
+<div>Gọi: build(1, 1, 7);</div>
+</div>
+<div class="mucan">Quá trình thực hiện <br/>
+► build(1, 1, 7);
+<ul class="mucan code">
+	<li>build(2, 1, 4);
+		<ul class="mucan">
+			<li>build(4, 1, 2);
+				<ul class="mucan">
+					<li>build(8, 1, 1); <span class="bamhien">H[8]=A[1];</span>
+					</li>
+					<li>build(9, 2, 2); <span class="bamhien">H[9]=A[2];</span>
+					</li>
+					<li>H[4] = H[8]+H[9];</li>
+				</ul>
+			</li>
+			<li>build(5, 3, 4);
+				<ul class="mucan">
+					<li>build(10, 3, 3); <span class="bamhien">H[10]=A[3];</span></li>
+					<li>build(11, 4, 4); <span class="bamhien">H[11]=A[4];</span></li>
+					<li>H[5] = H[10]+H[11];</li>
+				</ul>
+			</li>
+			<li>H[2] = H[4]+H[5];</li>
+		</ul>
+	</li>
+	<li>build(3, 5, 7);
+		<ul class="mucan">
+			<li>build(6, 5, 6);
+				<ul class="mucan">
+					<li>build(12, 5, 5); <span class="bamhien">H[12]=A[5];</span></li>
+					<li>build(13, 6, 6); <span class="bamhien">H[13]=A[6];</span></li>
+					<li>H[6] = H[12]+H[13];</li>
+				</ul>
+			</li>
+			<li>build(7, 7, 7); <span class="bamhien">H[7]=A[7];</span></li>
+			<li>H[3] = H[6]+H[7];</li>
+		</ul>
+	</li>
+	<li>H[1] = H[2]+H[3];</li>
+</ul>
+</div>
+<div class="mucan">
+<h3>5. Mã nguồn:</h3>
+<pre>
+<span class="style9">#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+</span><span class="style5">using namespace </span><span class="style16">std</span><span class="style10">;
+</span><span class="style5">int </span><span class="style11">A</span><span class="style10">[</span><span class="style4">1000</span><span class="style10">], </span><span class="style11">H</span><span class="style10">[</span><span class="style4">4000</span><span class="style10">],</span><span class="style11">n</span><span class="style10">;
+</span><span class="style5">void </span><span class="style11">nhapmang</span><span class="style10">()
+{
+    </span><span class="style11">freopen</span><span class="style10">(</span><span class="style6">"mang.inp"</span><span class="style10">,</span><span class="style6">"r"</span><span class="style10">,</span><span class="style11">stdin</span><span class="style10">);
+    </span><span class="style16">cin</span><span class="style10">&gt;&gt;</span><span class="style11">n</span><span class="style10">;
+    </span><span class="style5">for </span><span class="style10">(</span><span class="style5">int </span><span class="style11">i</span><span class="style10">=</span><span class="style4">1</span><span class="style10">; </span><span class="style11">i</span><span class="style10">&lt;=</span><span class="style11">n</span><span class="style10">; </span><span class="style11">i</span><span class="style10">++) </span><span class="style16">cin </span><span class="style10">&gt;&gt; </span><span class="style11">A</span><span class="style10">[</span><span class="style11">i</span><span class="style10">];
+}
+</span><div class="quantrong"><span class="style5">void </span><span class="style11">build </span><span class="style10">(</span><span class="style5">int </span><span class="style11">v</span><span class="style10">, </span><span class="style5">int </span><span class="style11">l</span><span class="style10">, </span><span class="style5">int </span><span class="style11">r</span><span class="style10">)
+{
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">l </span><span class="style10">== </span><span class="style11">r</span><span class="style10">)
+    {
+        </span><span class="style11">H</span><span class="style10">[</span><span class="style11">v</span><span class="style10">] = </span><span class="style11">A</span><span class="style10">[</span><span class="style11">l</span><span class="style10">];
+        </span><span class="style5">return </span><span class="style10">;
+    }
+    </span><span class="style5">int </span><span class="style11">mid </span><span class="style10">= (</span><span class="style11">l</span><span class="style10">+</span><span class="style11">r</span><span class="style10">) / </span><span class="style4">2</span><span class="style10">;
+    </span><span class="style11">build</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">, </span><span class="style11">l</span><span class="style10">, </span><span class="style11">mid</span><span class="style10">);
+    </span><span class="style11">build</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">, </span><span class="style11">mid</span><span class="style10">+</span><span class="style4">1</span><span class="style10">, </span><span class="style11">r</span><span class="style10">);
+    </span><span class="style11">H</span><span class="style10">[</span><span class="style11">v</span><span class="style10">] = </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">] + </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">];
+}
+</span></div><span class="style5">void </span><span class="style11">vietmangh</span><span class="style10">()
+{
+    </span><span class="style5">for </span><span class="style10">(</span><span class="style5">int </span><span class="style11">i</span><span class="style10">=</span><span class="style4">1</span><span class="style10">; </span><span class="style11">i</span><span class="style10">&lt;</span><span class="style4">2</span><span class="style10">*</span><span class="style11">n</span><span class="style10">; </span><span class="style11">i</span><span class="style10">++) </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style11">H</span><span class="style10">[</span><span class="style11">i</span><span class="style10">]&lt;&lt;</span><span class="style6">" "</span><span class="style10">;
+    </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;
+}
+</span><span class="style5">int </span><span class="style11">main</span><span class="style10">()
+{
+    </span><span class="style11">nhapmang</span><span class="style10">();
+    </span><span class="quantrong"><span class="style11">build</span><span class="style10">(</span><span class="style4">1</span><span class="style10">, </span><span class="style4">1</span><span class="style10">, </span><span class="style11">n</span><span class="style10">);</span></span>
+    <span class="style11">vietmangh</span><span class="style10">();
+    </span><span class="style5">return </span><span class="style4">0</span><span class="style10">;
+</span>
+</pre>
+</div>
+
+</body>
+</html>

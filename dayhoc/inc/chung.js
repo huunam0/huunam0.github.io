@@ -6,6 +6,7 @@ $(document).ready(function(){
 	}
 	//
 	var norun=$.urlParam("norun")+"";
+	var lophoc=$.urlParam("lop")+"";
 	//alert(norun.length);
 	if (norun.length==0 || norun== "0")
 	{
@@ -31,11 +32,15 @@ $(document).ready(function(){
 			$(this).attr("src",src.replace( "x.", "."));
 			alert(src.replace( "x.", "."));
 		});
-		$("body").append("<div><br/><br/><br/><br/><br/>THNam-"+prompt("Nhập tên người học","11Tin")+" - "+currentDate()+"</div>");
+		if (lophoc == "") lophoc = prompt("Nhập tên người học","11Tin");
+		$("body").append("<div><br/><br/><br/><br/><br/><br/>THNam-"+lophoc+"-"+currentDate()+"</div>");
+		$("a").attr('href', function(i, h) {
+			return h + (h.indexOf('?') != -1 ? "&" : "?") + "lop="+lophoc;
+		});
 	}
 	else 
 	{
-		$(".landau").hide(); //ẩn bớt chi tiết
+		$(".landau").hide(); //ẩn bớt chi tiết, dùng để xem lại
 	}
 	
 });
