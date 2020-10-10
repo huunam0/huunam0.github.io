@@ -1,0 +1,90 @@
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+ <meta charset="utf8"/>
+ <title>Segment Tree - Cây phân đoạn</title>
+ <meta name="author" value="Tran Huu Nam"/>
+ <link rel="stylesheet" href="../../inc/chung.css">
+ <link rel="stylesheet" href="../../inc/mathjax/mathjax_styles.css">
+ <script src="../../inc/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+ <script src="../../inc/jquery.min.js" type="text/javascript"></script>
+ <script src="../../inc/jquery-ui.min.js" type="text/javascript"></script>
+ <link rel="stylesheet" href="../../inc/jquery-ui.min.css">
+ <script src="../../inc/chung.js" type="text/javascript"></script>
+ 
+</head>
+<body>
+
+<h1>Segment Tree - Cây phân đoạn</h1>
+<h2>Cập nhật đoạn. Lazy propagation</h3>
+
+<h3>1. Xét bài toán:</h3>
+
+<p>Cho dãy số A với N phần tử (N≤50,000). Bạn cần thực hiện 2 loại truy vấn:</p>
+
+<ul>
+	<li>Cộng tất cả các số trong đoạn [l,r] lên giá trị val.</li>
+	<li>In ra giá trị lớn nhất của các số trong đoạn [l,r].</li>
+</ul>
+
+<p>Đối với truy vấn loại 1, nếu ta dùng cách cập nhật từng phần tử như hàm update() thì sẽ tốn nhiều thời gian. Độ phức tạp sẽ là O(n.logn).</p>
+<img src="img/cayphandoan.png"/>
+<p>Giả sử ta cần tăng đoạn 1..5 thêm x. Khi đó, các nút sau phải thay đổi: 8, 9, 10, 11, 12, 4, 5, 6, 2, 3, 1.</p>
+
+<p>Thay vì vậy, ta chỉ cập nhật các nút 2, 12, 6, 3, 1.</p>
+
+<p>Các nút 4, 5, 8, 9, 10, 11 sẽ cập nhật sau, ta sử dụng 1 biến nhớ tại nút 2 để lưu giá trị cần cộng thêm cho tất cả các nút hậu duệ của nó.</p>
+
+<p>Khi nào ta cập nhật tới các nút này (4, 5, 8, 9, 10, 11) ?</p>
+
+<p>Ngoài mảng H[], ta còn dùng thêm mảng Nho[], ban đầu bằng 0 hết.</p>
+
+<h3>2. Hàm cập nhật đoạn p..q tăng thêm giá trị g:</h3>
+
+<pre>
+<span class="style5">void </span><span class="style11">update</span><span class="style10">(</span><span class="style5">int </span><span class="style11">v</span><span class="style10">, </span><span class="style5">int </span><span class="style11">l</span><span class="style10">, </span><span class="style5">int </span><span class="style11">r</span><span class="style10">, </span><span class="style5">int </span><span class="style11">p</span><span class="style10">, </span><span class="style5">int </span><span class="style11">q</span><span class="style10">, </span><span class="style5">int </span><span class="style11">g</span><span class="style10">)
+{
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">q </span><span class="style10">&lt; </span><span class="style11">l </span><span class="style10">|| </span><span class="style11">r </span><span class="style10">&lt; </span><span class="style11">p</span><span class="style10">)         </span><span class="style5">return </span><span class="style10">;
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">p </span><span class="style10">&lt;= </span><span class="style11">l </span><span class="style10">&amp;&amp; </span><span class="style11">r </span><span class="style10">&lt;= </span><span class="style11">q</span><span class="style10">)
+    {
+        </span><span class="style11">H</span><span class="style10">[</span><span class="style11">v</span><span class="style10">] += </span><span class="style11">g</span><span class="style10">;
+        </span><span class="style11">Nho</span><span class="style10">[</span><span class="style11">v</span><span class="style10">] += </span><span class="style11">g</span><span class="style10">;
+        </span><span class="style5">return </span><span class="style10">;
+    }
+    </span><span class="style5">int </span><span class="style11">mid </span><span class="style10">= (</span><span class="style11">l </span><span class="style10">+ </span><span class="style11">r</span><span class="style10">) / </span><span class="style4">2</span><span class="style10">;
+
+    </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">] += </span><span class="style11">Nho</span><span class="style10">[</span><span class="style11">v</span><span class="style10">];
+    </span><span class="style11">Nho</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">] += </span><span class="style11">Nho</span><span class="style10">[</span><span class="style11">v</span><span class="style10">];
+    </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">] += </span><span class="style11">Nho</span><span class="style10">[</span><span class="style11">v</span><span class="style10">];
+    </span><span class="style11">Nho</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">] += </span><span class="style11">Nho</span><span class="style10">[</span><span class="style11">v</span><span class="style10">];
+    </span><span class="style11">Nho</span><span class="style10">[</span><span class="style11">v</span><span class="style10">]=</span><span class="style4">0</span><span class="style10">;
+
+    </span><span class="style11">update</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">, </span><span class="style11">l</span><span class="style10">, </span><span class="style11">mid</span><span class="style10">, </span><span class="style11">p</span><span class="style10">, </span><span class="style11">q</span><span class="style10">, </span><span class="style11">g</span><span class="style10">);
+    </span><span class="style11">update</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">, </span><span class="style11">mid</span><span class="style10">+</span><span class="style4">1</span><span class="style10">, </span><span class="style11">r</span><span class="style10">, </span><span class="style11">p</span><span class="style10">, </span><span class="style11">q</span><span class="style10">, </span><span class="style11">g</span><span class="style10">);
+
+    </span><span class="style11">H</span><span class="style10">[</span><span class="style11">v</span><span class="style10">] = </span><span class="style16">max</span><span class="style10">(</span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">], </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">]);
+}
+
+</span>
+</pre>
+
+<h3>3. Hàm lấy giá trị lớn nhất trên đoạn p..q</h3>
+
+<pre>
+<span class="style5">int </span><span class="style11">getmax</span><span class="style10">(</span><span class="style5">int </span><span class="style11">v</span><span class="style10">, </span><span class="style5">int </span><span class="style11">l</span><span class="style10">, </span><span class="style5">int </span><span class="style11">r</span><span class="style10">, </span><span class="style5">int </span><span class="style11">p</span><span class="style10">, </span><span class="style5">int </span><span class="style11">q</span><span class="style10">)
+{
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">q </span><span class="style10">&lt; </span><span class="style11">l </span><span class="style10">|| </span><span class="style11">r </span><span class="style10">&lt; </span><span class="style11">p</span><span class="style10">)  </span><span class="style5">return </span><span class="style10">-</span><span class="style4">INFINITY</span><span class="style10">;
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">p </span><span class="style10">&lt;= </span><span class="style11">l </span><span class="style10">&amp;&amp; </span><span class="style11">r </span><span class="style10">&lt;= </span><span class="style11">q</span><span class="style10">) </span><span class="style5">return </span><span class="style11">H</span><span class="style10">[</span><span class="style11">v</span><span class="style10">];
+    </span><span class="style5">int </span><span class="style11">mid </span><span class="style10">= (</span><span class="style11">l </span><span class="style10">+ </span><span class="style11">r</span><span class="style10">) / </span><span class="style4">2</span><span class="style10">;
+    </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">] += </span><span class="style11">Nho</span><span class="style10">[</span><span class="style11">v</span><span class="style10">];
+    </span><span class="style11">Nho</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">] += </span><span class="style11">Nho</span><span class="style10">[</span><span class="style11">v</span><span class="style10">];
+    </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">] += </span><span class="style11">Nho</span><span class="style10">[</span><span class="style11">v</span><span class="style10">];
+    </span><span class="style11">Nho</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">] += </span><span class="style11">Nho</span><span class="style10">[</span><span class="style11">v</span><span class="style10">];
+    </span><span class="style11">Nho</span><span class="style10">[</span><span class="style11">v</span><span class="style10">]=</span><span class="style4">0</span><span class="style10">;
+    </span><span class="style5">return </span><span class="style16">max</span><span class="style10">(</span><span class="style11">getmax</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">, </span><span class="style11">l</span><span class="style10">, </span><span class="style11">mid</span><span class="style10">, </span><span class="style11">p</span><span class="style10">, </span><span class="style11">q</span><span class="style10">), </span><span class="style11">getmax</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">, </span><span class="style11">mid</span><span class="style10">+</span><span class="style4">1</span><span class="style10">, </span><span class="style11">r</span><span class="style10">, </span><span class="style11">p</span><span class="style10">, </span><span class="style11">q</span><span class="style10">));
+}
+</span>
+</pre>
+
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+body
+{
+	font-family: "Times New Roman", Arial;
+	font-size: 20px;
+	/*margin: 10px 50px 10px 50px;*/
+	padding-left:50px;
+}
+p 
+{
+	line-height: 1.2;
+	margin-top: 2px;
+}
+img 
+{
+	font-size:0px;
+}
+tr, th, td {
+  padding: 8px;
+  text-align: center;
+  border: 1px blue solid;
+}
+
+table 
+{
+	border: 1px blue solid;
+	border-collapse: collapse;
+}
+
+pre
+{
+	background-color:#eeeeee;
+}
+
+.mucan
+{
+	/*display:none;*/
+}
+.code 
+{
+	font-family: "Courier New", Tahoma;
+	/*font-weight:bold;*/
+}
+.dam
+{
+	font-weight:bold;
+}
+.nenxam 
+{
+	background-color: #e0e0e0;
+}
+.nenvang
+{
+	background-color:#fcf7ae;
+}
+.nenxanhla
+{
+	background-color:#ddfad9;
+}
+.bamhien:hover
+{
+	background-color: #f7f763;
+}
+.quantrong:hover
+{
+	background-color: #f7f763;
+	/*font-weight:bold;*/
+	/*transform: scale(1.1);*/
+}
+.codebox {
+	/*padding: 15px;*/
+	font-family: "Courier New", sans-serif;
+	/*font-size: 1em;*/
+	line-height: 1.0;
+	/*color: #fff;*/
+	background-color: #faf9c0;
+	-webkit-border-radius: 0px 0px 6px 6px;
+	-moz-border-radius: 0px 0px 6px 6px;
+	border-radius: 0px 0px 6px 6px;
+	/*margin-bottom: 10px;*/
+}
+
+.symbol, .style10 { color: #FF0000; }
+.number, .style4 { color: #F000F0; }
+.tukhoa, .style5 { color: #0000A0; font-weight: bold; }
+.tenchuan, .style11, .style8 { color: #000000; }
+.style68 { color: #F0C8F0; }
+
+.style64, .style72, .style75 { color: #C8C8C8; }
+.style1,.style23,.style65,.style87 { color: #A0A0A0; }
+
+.style2, .style66 { color: #BEBEE6; }
+
+.style3, .style24, .style67, .style88, .style15, .style79  { color: #8080FF; font-weight: bold; }
+
+.style17,.style81 { color: #008080; }
+ 
+.style18,.style82 { color: #800000; }
+.style69 { color: #8787C8; font-weight: bold; }
+.style16 { color: #00A000; font-weight: bold; }
+.style80 { color: #9AC89A; font-weight: bold; }
+.style19 { color: #BE00BE; font-weight: bold; }
+.style83 { color: #BE89BE; font-weight: bold; }
+.style6 ,.style12,.style20 { color: #0000FF; }
+.style70 , .style76 { color: #BEBEFF; }
+.style7 { color: #E0A000; }
+.style71 { color: #E0CE9F; }
+
+.style9 { color: #00A000; }
+.style73 { color: #84A084; }
+
+.style74 { color: #FFC8C8; }
+.style34 { color: #000000; font-weight: bold; }
+.style35 { color: #FFFFFF; font-weight: bold; }
+.style50 { color: #404080; font-style: italic; }
+.style114 { color: #8585AC; font-style: italic; }

@@ -1,0 +1,165 @@
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+ <meta charset="utf8"/>
+ <title>Pointer - Con trỏ</title>
+ <meta name="author" value="Tran Huu Nam"/>
+ <link rel="stylesheet" href="../inc/chung.css">
+ <link rel="stylesheet" href="../inc/mathjax/mathjax_styles.css">
+ <link rel="stylesheet" href="../inc/jquery.min.css">
+ <script src="../inc/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+ <script src="../inc/jquery.min.js" type="text/javascript"></script>
+ <script src="../inc/jquery-ui.min.js" type="text/javascript"></script>
+ <script src="../inc/chung.js" type="text/javascript"></script>
+ 
+</head>
+<body>
+
+<h1>Pointer - Con trỏ</h1>
+<h2>1. Đặt vấn đề</h2>
+<p>Cho biết kết quả của chương trình sau:</p>
+<pre class="nenxam">
+#include &lt;iostream&gt;
+</span><span class="style5">using namespace </span><span class="style16">std</span><span class="style10">;
+</span><span class="style5">void </span><span class="style11">test</span><span class="style10">(</span><span class="style5">int </span><span class="style11">A</span><span class="style10">[])
+{
+    </span><span class="style11">A</span><span class="style10">[</span><span class="style4">2</span><span class="style10">]++;
+}
+</span><span class="style5">int </span><span class="style11">main</span><span class="style10">()
+{
+    </span><span class="style5">int </span><span class="style11">b</span><span class="style10">[</span><span class="style4">7</span><span class="style10">];
+    </span><span class="style11">b</span><span class="style10">[</span><span class="style4">2</span><span class="style10">]=</span><span class="style4">8</span><span class="style10">;
+    </span><span class="style11">test</span><span class="style10">(</span><span class="style11">b</span><span class="style10">);
+    </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style11">b</span><span class="style10">[</span><span class="style4">2</span><span class="style10">];
+    </span><span class="style5">return </span><span class="style4">0</span><span class="style10">;
+}</span></pre>
+<div class="mucan">
+<h2>2. Con trỏ</h2>
+<p>Khi khai báo <span class="code nenxam"> <span class="style5">int </span><span class="style11">x</span><span class="style10"> = </span><span class="style4">79</span><span class="style10">;</span></span></p>
+</div>
+<p  class="mucan">TBD dành ra một vùng nhớ 4 byte trong bộ nhớ (RAM) để lưu trữ giá trị của biến x.<br/>
+Các ô nhớ được đánh số thứ tự từ 0 trở đi. Số thứ tự đó còn được gọi là địa chỉ của ô nhớ.<br/>
+<img src="img/bienx.png"/></p>
+
+<p class="mucan">Để xem/lấy địa chỉ của vùng nhớ của biến, ta dùng kí hiệu &amp;, Ví dụ : <span class="code mucan"><span class="style16">cout</span><span class="style10">&lt;&lt;&amp;</span><span class="style11">x</span><span class="style10">;</span></span></p>
+
+<p class="mucan"><b>Biến lưu địa chỉ của ô nhớ (hoặc vùng nhớ) được gọi là con trỏ.</b></p>
+
+<p class="mucan">Khai báo con trỏ: &lt;kiểu dữ liệu&gt; * &lt;tên biến&gt;;</p>
+<div class="mucan">
+<h3>Ví dụ 1:</h3>
+<p> <span class="code nenxam"><span class="style5">int </span><span class="style10"> * </span><span class="style11">y</span><span class="style10">;</span></span> //y là con trỏ trỏ đến vùng nhớ kiểu int;</p>
+</div>
+<p class="mucan">Câu hỏi: Khai báo <span class="code nenxam">int * a, b;</span> có nghĩa là...<br/>
+
+A. a và b là hai con trỏ. <br/>
+
+B. a là con trỏ còn b không phải<br/>
+
+C. b là con trỏ còn a không phải<br/></p>
+<div class="mucan">
+<h3>Ví dụ 2:</h3>
+<pre>
+<span class="style9">#include &lt;iostream&gt;
+</span><span class="style5">using namespace </span><span class="style16">std</span><span class="style10">;
+</span><span class="style5">int </span><span class="style11">main</span><span class="style10">()
+{
+    </span><span class="style5">int </span><span class="style11">b</span><span class="style10">=</span><span class="style4">6</span><span class="style10">;
+    </span><span class="style5">int</span><span class="style10">* </span><span class="style11">c</span><span class="style10">;
+    </span><span class="style11">c </span><span class="style10">= &amp;</span><span class="style11">b</span><span class="style10">;
+    </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Dia chi bien b la "</span><span class="style10">&lt;&lt;</span><span class="style11">c</span><span class="style10">;
+    </span><span class="style5">return </span><span class="style4">0</span><span class="style10">;
+}</span></pre>
+</div>
+
+<p class="mucan">Lấy giá trị lưu trong vùng nhớ của con trỏ p: *p, Ví dụ : <span class="code nenxam">cout &lt;&lt; *p;</span></p>
+<div class="mucan">
+<h3>Ví dụ 3:</h3>
+<pre>
+<span class="style9">#include &lt;iostream&gt;
+</span><span class="style5">using namespace </span><span class="style16">std</span><span class="style10">;
+</span><span class="style5">int </span><span class="style11">main</span><span class="style10">()
+{
+    </span><span class="style5">int </span><span class="style11">b</span><span class="style10">=</span><span class="style4">6</span><span class="style10">;
+    </span><span class="style5">int</span><span class="style10">* </span><span class="style11">c</span><span class="style10">;
+    </span><span class="style11">c </span><span class="style10">= &amp;</span><span class="style11">b</span><span class="style10">;
+    </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Dia chi bien b la "</span><span class="style10">&lt;&lt;</span><span class="style11">c</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;
+    </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Gia tri cua bien b la "</span><span class="style10">&lt;&lt;*</span><span class="style11">c</span><span class="style10">;
+    </span><span class="style5">return </span><span class="style4">0</span><span class="style10">;
+}</span></pre>
+</div>
+<div class="mucan">
+<h3>Ví dụ 4:</h3>
+<pre>
+<span class="body"> 1 </span><span class="style9">#include &lt;iostream&gt;</span>
+<span class="body"> 2  </span><span class="style5">using namespace </span><span class="style16">std</span><span class="style10">;</span>
+<span class="body"> 3  </span><span class="style5">int </span><span class="style11">main</span><span class="style10">()</span>
+<span class="body"> 4  </span><span class="style10">{</span>
+<span class="body"> 5      </span><span class="style5">int </span><span class="style11">b</span><span class="style10">=</span><span class="style4">6</span><span class="style10">;</span>
+<span class="body"> 6      </span><span class="style5">int</span><span class="style10">* </span><span class="style11">c</span><span class="style10">;</span>
+<span class="body"> 7      </span><span class="style11">c </span><span class="style10">= &amp;</span><span class="style11">b</span><span class="style10">;</span>
+<span class="body"> 8      </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Dia chi bien b la "</span><span class="style10">&lt;&lt;</span><span class="style11">c</span><span class="style10">&lt;&lt;</span><span class="style16">endl</span><span class="style10">;</span>
+<span class="body"> 9      </span><span class="style10">*</span><span class="style11">c</span><span class="style10">=</span><span class="style4">7</span><span class="style10">;</span>
+<span class="body">10      </span><span class="style16">cout</span><span class="style10">&lt;&lt;</span><span class="style6">"Gia tri cua bien b la "</span><span class="style10">&lt;&lt;</span><span class="style11">b</span><span class="style10">;</span>
+<span class="body">11      </span><span class="style5">return </span><span class="style4">0</span><span class="style10">;</span>
+<span class="body">12  </span><span class="style10">}</span></pre>
+</div>
+
+<h3 class="mucan">Tóm lại: </h3>
+<p class="mucan">Biến con trỏ để lưu địa chỉ vùng nhớ.</p>
+<p class="mucan">Con trỏ không trỏ vào đâu là con trỏ rỗng (NULL).</p>
+<p class="mucan">Con trỏ trong ngôn ngữ C/C++ vốn không an toàn. Nếu sử dụng không hợp lý có thể gây crash chương trình.</p>
+
+<h3 class="mucan">Bonus: Biến tham chiếu ≠ con trỏ</h3>
+
+<div class="mucan">Biến tham chiếu là bí danh của biến khác. 2 biến này có cùng địa chỉ vùng nhớ.
+
+<p>Ví dụ :</p>
+
+<pre><span class="style5">int </span><span class="style11">x</span><span class="style10">;
+</span><span class="style5">int </span><span class="style10">&amp;</span><span class="style11">y </span><span class="style10">= </span><span class="style11">x</span><span class="style10">;</span></pre>
+
+</div>
+<p class="mucan">Lúc này, 2 biến x và y là một, sử dụng x hoặc y là như nhau.</p>
+
+<p class="mucan">Câu hỏi: Tại sao cần biến tham chiếu?</p>
+
+<div  class="mucan">
+<pre>
+<span class="style5">long long </span><span class="style11">thu</span><span class="style10">(</span><span class="style5">int </span><span class="style11">i</span><span class="style10">, </span><span class="style5">bool </span><span class="style11">gh</span><span class="style10">,</span><span class="style5">char </span><span class="style11">dig</span><span class="style10">, </span><span class="style5">bool </span><span class="style11">tang</span><span class="style10">, </span><span class="style5">bool </span><span class="style11">nghia</span><span class="style10">)
+ {
+    </span><span class="style5">bool </span><span class="style11">ghm</span><span class="style10">;
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">i </span><span class="style10">&lt; </span><span class="style4">0</span><span class="style10">)
+    {
+        </span><span class="style5">return </span><span class="style4">1</span><span class="style10">;
+    }
+    </span><span class="style5">if</span><span class="style10">(</span><span class="style11">gh </span><span class="style10">== </span><span class="style5">false </span><span class="style10">&amp;&amp; </span><span class="nenvang"><span class="style11">F</span><span class="style10">[</span><span class="style11">i</span><span class="style10">][</span><span class="style11">dig</span><span class="style10">][</span><span class="style11">tang</span><span class="style10">][</span><span class="style11">nghia</span><span class="style10">]</span></span> &gt;= <span class="style4">0</span><span class="style10">)
+        </span><span class="style5">return </span><span class="nenvang"><span class="style11">F</span><span class="style10">[</span><span class="style11">i</span><span class="style10">][</span><span class="style11">dig</span><span class="style10">][</span><span class="style11">tang</span><span class="style10">][</span><span class="style11">nghia</span><span class="style10">]</span></span>;
+    <span class="style5">long long </span><span class="style11">kq</span><span class="style10">=</span><span class="style4">0</span><span class="style10">;
+    </span><span class="style11">kq </span><span class="style10">%= </span><span class="style4">1000000007</span><span class="style10">;
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">gh</span><span class="style10">==</span><span class="style5">false</span><span class="style10">) </span><span class="nenvang"><span class="style11">F</span><span class="style10">[</span><span class="style11">i</span><span class="style10">][</span><span class="style11">dig</span><span class="style10">][</span><span class="style11">tang</span><span class="style10">][</span><span class="style11">nghia</span><span class="style10">]</span></span> = <span class="style11">kq</span><span class="style10">;
+    </span><span class="style5">return </span><span class="style11">kq</span><span class="style10">;
+ }
+</span></pre>
+trở thành
+<pre>
+<span class="style5">long long </span><span class="style11">thu</span><span class="style10">(</span><span class="style5">int </span><span class="style11">i</span><span class="style10">, </span><span class="style5">bool </span><span class="style11">gh</span><span class="style10">,</span><span class="style5">char </span><span class="style11">dig</span><span class="style10">, </span><span class="style5">bool </span><span class="style11">tang</span><span class="style10">, </span><span class="style5">bool </span><span class="style11">nghia</span><span class="style10">)
+ {
+    </span><span class="style5">bool </span><span class="style11">ghm</span><span class="style10">;
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">i </span><span class="style10">&lt; </span><span class="style4">0</span><span class="style10">)
+    {
+        </span><span class="style5">return </span><span class="style4">1</span><span class="style10">;
+    }
+    </span><span class="quantrong"><span class="style5">int </span><span class="style10">&amp;</span>trangthai<span class="style10"> = </span><span class="style11">F</span><span class="style10">[</span><span class="style11">i</span><span class="style10">][</span><span class="style11">dig</span><span class="style10">][</span><span class="style11">tang</span><span class="style10">][</span><span class="style11">nghia</span><span class="style10">];
+    </span></span><span class="style5">if</span><span class="style10">(</span><span class="style11">gh </span><span class="style10">== </span><span class="style5">false </span><span class="style10">&amp;&amp; </span><span class="nenvang">trangthai</span><span class="style10"> &gt;= </span><span class="style4">0</span><span class="style10">)
+        </span><span class="style5">return </span><span class="nenvang">trangthai</span><span class="style10">;
+
+    </span><span class="style5">long long </span><span class="style11">kq</span><span class="style10">=</span><span class="style4">0</span><span class="style10">;
+    </span><span class="style11">kq </span><span class="style10">%= </span><span class="style4">1000000007</span><span class="style10">;
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">gh</span><span class="style10">==</span><span class="style5">false</span><span class="style10">) </span><span class="nenvang">trangthai</span><span class="style10"> = </span><span class="style11">kq</span><span class="style10">;
+    </span><span class="style5">return </span><span class="style11">kq</span><span class="style10">;
+ }
+</span></pre>
+
+</div>
+</body>
+</html>

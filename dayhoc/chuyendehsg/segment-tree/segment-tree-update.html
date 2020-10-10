@@ -1,0 +1,57 @@
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+ <meta charset="utf8"/>
+ <title>Segment Tree - Cây phân đoạn</title>
+ <meta name="author" value="Tran Huu Nam"/>
+ <link rel="stylesheet" href="../../inc/chung.css">
+ <link rel="stylesheet" href="../../inc/mathjax/mathjax_styles.css">
+ <script src="../../inc/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+ <script src="../../inc/jquery.min.js" type="text/javascript"></script>
+ <script src="../../inc/jquery-ui.min.js" type="text/javascript"></script>
+ <link rel="stylesheet" href="../../inc/jquery-ui.min.css">
+ <script src="../../inc/chung.js" type="text/javascript"></script>
+ 
+</head>
+<body>
+
+<h1>Segment Tree - Cây phân đoạn</h1>
+<h2>Cập nhật phần tử : gán A[i]=x;</h3>
+<h3>1. Ví dụ: </h3>
+<p>Giả sử ta cần gán A[2]=x. Ta phải cập nhật nhánh 9-4-2-1 theo chiều từ dưới lên.</p>
+<div>
+<img class="bamthay" src="img/st-update.png"/>
+</div>
+<h3>2. Hàm update(v, l, r, i, x)</h3>
+<div><em># Gán A[i]=x và cập nhật nhánh cây do nút v quản lí đoạn l..r</em></div>
+<ul>
+	<li>Nếu i không thuộc đoạn l..r thì kết thúc</li>
+	<li>Nếu l=r thì gán H[v]=x; và kết thúc</li>
+	<li>gán mid = (l+r) div 2</li>
+	<li>Nếu i ≤ mid thì update(2v, l, mid, i, x) </li>
+	<li>Ngược lại, update(2v+1, mid+1, r, i, x);</li>
+	<li>Gán H[v] = H[2v]+H[2v+1];</li>
+</ul>
+
+<h3>3. Độ phức tạp: O(logn).</h3>
+<h3>4. Gọi: update(1, 1, n, i, x).</h3>
+<h3>5. Mã nguồn:</h3>
+<pre>
+<span class="style5">void </span><span class="style11">update</span><span class="style10">(</span><span class="style5">int </span><span class="style11">v</span><span class="style10">, </span><span class="style5">int </span><span class="style11">l</span><span class="style10">, </span><span class="style5">int </span><span class="style11">r</span><span class="style10">, </span><span class="style5">int </span><span class="style11">i</span><span class="style10">, </span><span class="style5">int </span><span class="style11">x</span><span class="style10">)
+{
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">i</span><span class="style10">&lt;</span><span class="style11">l </span><span class="style10">|| </span><span class="style11">i</span><span class="style10">&gt;</span><span class="style11">r</span><span class="style10">) </span><span class="style5">return</span><span class="style10">;
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">l</span><span class="style10">==</span><span class="style11">r</span><span class="style10">)
+    {
+        </span><span class="style11">H</span><span class="style10">[</span><span class="style11">v</span><span class="style10">]=</span><span class="style11">x</span><span class="style10">;
+        </span><span class="style5">return</span><span class="style10">;
+    }
+    </span><span class="style5">int </span><span class="style11">mid </span><span class="style10">= (</span><span class="style11">l</span><span class="style10">+</span><span class="style11">r</span><span class="style10">)/</span><span class="style4">2</span><span class="style10">;
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">i</span><span class="style10">&lt;=</span><span class="style11">mid</span><span class="style10">) </span><span class="style11">update</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">,</span><span class="style11">l</span><span class="style10">,</span><span class="style11">mid</span><span class="style10">,</span><span class="style11">i</span><span class="style10">,</span><span class="style11">x</span><span class="style10">);
+    </span><span class="style5">else </span><span class="style11">update</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">,</span><span class="style11">mid</span><span class="style10">+</span><span class="style4">1</span><span class="style10">,</span><span class="style11">r</span><span class="style10">,</span><span class="style11">i</span><span class="style10">,</span><span class="style11">x</span><span class="style10">);
+    </span><span class="style11">H</span><span class="style10">[</span><span class="style11">v</span><span class="style10">] = </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">] + </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">];
+}
+</span>
+</pre>
+
+
+</body>
+</html>

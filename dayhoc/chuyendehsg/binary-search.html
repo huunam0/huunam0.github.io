@@ -1,0 +1,137 @@
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+ <meta charset="utf8"/>
+ <title>Tìm kiếm nhị phân</title>
+ <meta name="author" value="Tran Huu Nam"/>
+ <link rel="stylesheet" href="../inc/chung.css">
+ <link rel="stylesheet" href="../inc/mathjax/mathjax_styles.css">
+ <script src="../inc/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+ <script src="../inc/jquery.min.js" type="text/javascript"></script>
+ <script src="../inc/jquery-ui.min.js" type="text/javascript"></script>
+ <script src="../inc/chung.js" type="text/javascript"></script>
+ 
+</head>
+<body>
+
+<h1>Tìm kiếm nhị phân</h1>
+<h3 class="mucan">1. Bài toán 1:</h3>
+<div  class="mucan">
+<p>Cho số K và dãy A gồm n số nguyên đã được sắp xếp không giảm. Tìm vị trí của K trong dãy số A.</p>
+<p><strong>Input:</strong></p>
+<p>n, K</p>
+<p>A1, A2, ..., An</p>
+<p><strong>Output:</strong></p>
+<p>Vị trí tìm thấy K hoặc -1 nếu không tìm thấy.</p>
+<p><strong>Ví dụ 1:</strong></p>
+<p><em>Input:</em></p>
+<p>7 9</p>
+<p>1 3 4 6 9 10 15</p>
+<p><em>Output:</em></p>
+<p>5</p>
+<p><strong>Ví dụ 2:</strong></p>
+<p><em>Input:</em></p>
+<p>7 11</p>
+<p>1 3 4 6 9 10 15</p>
+<p><em>Output:</em></p>
+<p>-1</p>
+</div>
+<p class="mucan"><span style="color:#000066"><u><strong>* Phân tích:</strong></u></span></p>
+<p class="mucan">Xét ví dụ 1:</p>
+<p class="mucan">K=9, n=7</p>
+<table border="1" cellpadding="0" cellspacing="0" style="height:55px; width:500px" class="mucan">
+	<thead>
+		<tr>
+			<th scope="col"><em>i</em></th>
+			<th scope="col"><em>1</em></th>
+			<th scope="col"><em>2</em></th>
+			<th scope="col"><em>3</em></th>
+			<th scope="col"><em>4</em></th>
+			<th scope="col"><em>5</em></th>
+			<th scope="col"><em>6</em></th>
+			<th scope="col"><em>7</em></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align:center">Ai</td>
+			<td style="text-align:center">1</td>
+			<td style="text-align:center">3</td>
+			<td style="text-align:center">4</td>
+			<td style="text-align:center">6</td>
+			<td style="text-align:center">9</td>
+			<td style="text-align:center">10</td>
+			<td style="text-align:center">15</td>
+		</tr>
+	</tbody>
+</table>
+<p class="mucan">Phạm vi tìm kiếm ban đầu: từ 1..7 (dau=1; cuoi=7)</p>
+<p class="mucan">Chọn phần tử ở giữa phạm vi tìm kiếm: giua = (1+7) div 2 = 4. Ta thấy A4 = 6 &lt; K. Suy ra số K không thể có mặt trong đoạn 1..4, hay nói cách khác, phạm vi tìm K thu hẹp thành 5..7 (dau=5, cuoi=7).</p>
+<p class="mucan">Tiếp tục, chọn giua = (5+7) div 2 = 6. Ta thấy A6 = 10 &gt; K. Vậy K không có trong đoạn 6..7. Phạm vi tìm kiếm K thu hẹp thành 5..5 (dau=5; cuoi=5).</p>
+<p class="mucan">Chọn giua = (5+5) div 2 = 5. Ta thấy A5 = K. Vậy K tìm thấy ở vị trí 5.</p>
+<p class="mucan">Xét ví dụ 2:</p>
+<p class="mucan">K=11, n=7</p>
+<table border="1" cellpadding="0" cellspacing="0" style="height:55px; width:500px" class="mucan">
+	<thead>
+		<tr>
+			<th scope="col"><em>i</em></th>
+			<th scope="col"><em>1</em></th>
+			<th scope="col"><em>2</em></th>
+			<th scope="col"><em>3</em></th>
+			<th scope="col"><em>4</em></th>
+			<th scope="col"><em>5</em></th>
+			<th scope="col"><em>6</em></th>
+			<th scope="col"><em>7</em></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align:center">A_i</td>
+			<td style="text-align:center">1</td>
+			<td style="text-align:center">3</td>
+			<td style="text-align:center">4</td>
+			<td style="text-align:center">6</td>
+			<td style="text-align:center">9</td>
+			<td style="text-align:center">10</td>
+			<td style="text-align:center">15</td>
+		</tr>
+	</tbody>
+</table>
+<p class="mucan">Phạm vi tìm kiếm ban đầu: từ 1..7 (dau=1; cuoi=7)</p>
+<p class="mucan">Chọn phần tử ở giữa phạm vi tìm kiếm: giua = (1+7) div 2 = 4. Ta thấy A4 = 6 &lt; K. Phạm vi tìm K thu hẹp thành 5..7 (dau=5, cuoi=7).</p>
+<p class="mucan">Tiếp tục, chọn giua = (5+7) div 2 = 6. Ta thấy A6 = 10 &lt; K. Vậy K không có trong đoạn 5..6. Phạm vi tìm kiếm K thu hẹp thành 7..7 (dau=7; cuoi=7).</p>
+<p class="mucan">Chọn giua = (7+7) div 2 = 7. Ta thấy A7 &gt; K. Phạm vi tìm K lúc này là 7..6 ! Vậy không có số K.</p>
+<p class="mucan">Ý tưởng:</p>
+<p class="mucan">Ý tưởng chính là thu hẹp phạm vi tìm kiếm cho đến khi phạm vi chỉ còn 1 phần tử hoặc không còn phần tử nào. Lúc đó, ta dễ dàng tìm K. Giả sử phạm vi tìm kiếm là dau..cuoi.&nbsp; Ta chọn phần tử ở giữa: giua=(dau+cuoi) div 2 so sánh với K</p>
+<ul>
+	<li class="mucan">Nếu Agiua = K: thông báo vị trí tìm thấy là giua và kết thúc.</li>
+	<li class="mucan">Nếu Agiua &lt; K: dau = K+1.</li>
+	<li class="mucan">Nếu Agiua &gt; K: cuoi = K-1.</li>
+</ul>
+<p class="mucan">Thuật toán:</p>
+<div  class="codebox">
+<pre>
+<code>
+<div class="mucan">
+<span class="style5">int </span><span class="style11">tknp</span><span class="style10">(</span><span class="style5">int </span><span class="style11">A</span><span class="style10">[], </span><span class="style5">int </span><span class="style11">n</span><span class="style10">, </span><span class="style5">int </span><span class="style11">K</span><span class="style10">)</span>
+<span class="symbol">{</span>
+    <div class="mucan"><span class="style5">int </span><span class="style11">dau</span><span class="style10">=</span><span class="style4">1</span><span class="style10">, </span><span class="style11">cuoi</span><span class="style10">=</span><span class="style11">n</span><span class="style10">;
+    </span><span class="style5">int </span><span class="style11">giua</span><span class="style10">;
+    </span></div><div class="mucan"><span class="style5">while </span><span class="style10">(</span><span class="style11">dau</span><span class="style10">&lt;=</span><span class="style11">cuoi</span><span class="style10">)
+    {
+        </span><div class="mucan"><span class="style11">giua</span><span class="style10">=(</span><span class="style11">dau</span><span class="style10">+</span><span class="style11">cuoi</span><span class="style10">)/</span><span class="style4">2</span><span class="style10">;
+        </span></div><div class="mucan"><span class="style5">if </span><span class="style10">(</span><span class="style11">A</span><span class="style10">[</span><span class="style11">giua</span><span class="style10">] == </span><span class="style11">K</span><span class="style10">) </span><span class="style5">return </span><span class="style11">giua</span><span class="style10">;
+        </span></div><div class="mucan"><span class="style5">if </span><span class="style10">(</span><span class="style11">A</span><span class="style10">[</span><span class="style11">giua</span><span class="style10">] &lt; </span><span class="style11">K</span><span class="style10">) </span><span class="style11">dau </span><span class="style10">= </span><span class="style11">K </span><span class="style10">+ </span><span class="style4">1</span><span class="style10">;
+        </span></div><div class="mucan"><span class="style5">else </span><span class="style11">cuoi </span><span class="style10">= </span><span class="style11">K</span><span class="style10">-</span><span class="style4">1</span><span class="style10">;
+    }
+    </span></div><div class="mucan"><span class="style5">return </span><span class="style10">-</span><span class="style4">1</span><span class="style10">;
+}</span></div></div>
+</div>
+</code></pre>
+</div>
+
+<p>2. Các bài toán mở rộng:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+ <meta charset="utf8"/>
+ <title>Tạo bảng</title>
+ <meta name="author" value="Tran Huu Nam"/>
+ <link rel="stylesheet" href="../inc/chung.css">
+ <link rel="stylesheet" href="../inc/mathjax/mathjax_styles.css">
+ <link rel="stylesheet" href="../inc/jquery-ui.min.css">
+ <script src="../inc/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+ <script src="../inc/jquery.min.js" type="text/javascript"></script>
+ <script src="../inc/jquery-ui.min.js" type="text/javascript"></script>
+ <script src="../inc/chung.js" type="text/javascript"></script>
+ 
+</head>
+<body>
+
+<h1>Thực hành tạo bảng</h1>
+<h3>1. Tạo bảng nguoimuon theo cấu trúc sau</h3>
+<ul>
+<li>sothe int(11) AUTO_INCREMENT primarykey</li>
+<li>hoten varchar(70)</li>
+<li>diachi varchar(60)</li>
+</ul>
+Nhập dữ liệu mẫu như sau:
+<table>
+	<tbody>
+		<tr>
+			<td>sothe</td>
+			<td>hoten</td>
+			<td>diachi</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Nguyễn Văn Bình</td>
+			<td>12 Toán</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Lê Thị Bông</td>
+			<td>11 Văn</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Phan Bích Thảo</td>
+			<td>10 Tin</td>
+		</tr>
+	</tbody>
+</table>
+<h3>2. Tạo bảng sach theo cấu trúc sau</h3>
+<ul>
+<li>masach int(11) AUTO_INCREMENT primarykey</li>
+<li>tensach varchar(200)</li>
+<li>tacgia varchar(60)</li>
+<li>giatien int(11)</li>
+<li>soluong int(11)</li>
+</ul>
+Nhập dữ liệu cho khoảng 3 sách.
+<table border="1" >
+	<tbody>
+		<tr>
+			<td>masach</td>
+			<td>tensach</td>
+			<td>tacgia</td>
+			<td>giatien</td>
+			<td>soluong</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Tin học 12</td>
+			<td>Hồ Sĩ Đàm</td>
+			<td>23000</td>
+			<td>14</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Đại số 10</td>
+			<td>Hồ Văn Mậu</td>
+			<td>34500</td>
+			<td>9</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Bài tập Vật lí 11</td>
+			<td>Nguyễn Trung Kiên</td>
+			<td>22000</td>
+			<td>6</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>3. Tạo bảng muonsach theo cấu trúc sau</h3>
+<ul>
+<li>sothe int(11) </li>
+<li>masach int(11)</li>
+<li>ngaymuon date()</li>
+<li>ngaytra date()</li>
+</ul>
+
+Nhập dữ liệu cho khoảng 4 dòng:
+<table >
+	<tbody>
+		<tr>
+			<td>sothe</td>
+			<td>masach</td>
+			<td>ngaymuon</td>
+			<td>ngaytra</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>15/9/2020</td>
+			<td>19/9/2020</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2</td>
+			<td>20/9/2020</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>21/9/2020</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>21/9/2020</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
