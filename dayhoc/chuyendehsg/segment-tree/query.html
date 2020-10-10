@@ -20,17 +20,20 @@
 <div>
 <img class="bamthay" src="img/st-query.png"/>
 </div>
-<h3>2. Hàm getSum(v, l, r, p, q)</h3>
+<div class="mucan">
+<h3>2. Hàm <span class="code">getSum(v, l, r, p, q)</span></h3>
 <div><em>#tính tổng của đoạn p..q trên nhánh cây do nút v quản lí đoạn l..r</em></div>
+</div>
 <ul>
-	<li>Nếu đoạn l..r và p..q không giao nhau thì trả về 0</li>
-	<li>Nếu đoạn l..r nằm trong đoạn p..q thì trả về H[v]</li>
-	<li>gán mid = (l+r) div 2</li>
-	<li>Trả về getSum(2v, l, mid, p, q) + getSum(2v+1, mid+1, r, p, q);</li>
+	<li class="mucan">Nếu đoạn l..r và p..q không giao nhau thì trả về 0</li>
+	<li class="mucan">Nếu đoạn l..r nằm trong đoạn p..q thì trả về H[v]</li>
+	<li class="mucan">gán mid = (l+r) div 2</li>
+	<li class="mucan">Trả về getSum(2v, l, mid, p, q) + getSum(2v+1, mid+1, r, p, q);</li>
 </ul>
 
-<h3>3. Độ phức tạp: O(logn).</h3>
-<h3>4. Gọi: getSum(1, 1, n, p, q).</h3>
+<h3 class="mucan">3. Độ phức tạp: O(logn).</h3>
+<h3 class="mucan">4. Gọi: <span class="code">getSum(1, 1, n, p, q);</span></h3>
+<div class="mucan">
 <h3>5. Mã nguồn:</h3>
 <pre>
 <span class="style5">int </span><span class="style11">getSum</span><span class="style10">(</span><span class="style5">int </span><span class="style11">v</span><span class="style10">, </span><span class="style5">int </span><span class="style11">l</span><span class="style10">, </span><span class="style5">int </span><span class="style11">r</span><span class="style10">, </span><span class="style5">int </span><span class="style11">p</span><span class="style10">, </span><span class="style5">int </span><span class="style11">q</span><span class="style10">)
@@ -38,11 +41,10 @@
     </span><span class="style5">if </span><span class="style10">(</span><span class="style11">r</span><span class="style10">&lt;</span><span class="style11">p </span><span class="style10">|| </span><span class="style11">l</span><span class="style10">&gt;</span><span class="style11">q</span><span class="style10">) </span><span class="style5">return </span><span class="style4">0</span><span class="style10">;
     </span><span class="style5">if </span><span class="style10">(</span><span class="style11">p</span><span class="style10">&lt;=</span><span class="style11">l </span><span class="style10">&amp;&amp; </span><span class="style11">r</span><span class="style10">&lt;=</span><span class="style11">q</span><span class="style10">) </span><span class="style5">return </span><span class="style11">H</span><span class="style10">[</span><span class="style11">v</span><span class="style10">];
     </span><span class="style5">int </span><span class="style11">mid </span><span class="style10">= (</span><span class="style11">l</span><span class="style10">+</span><span class="style11">r</span><span class="style10">)/</span><span class="style4">2</span><span class="style10">;
-    </span><span class="style5">return </span><span class="style11">getSum</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">,</span><span class="style11">l</span><span class="style10">,</span><span class="style11">mid</span><span class="style10">,</span><span class="style11">p</span><span class="style10">,</span><span class="style11">q</span><span class="style10">) + </span><span class="style11">getSum</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">,</span><span class="style11">mid</span><span class="style10">+</span><span class="style4">1</span><span class="style10">,</span><span class="style11">r</span><span class="style10">,</span><span class="style11">p</span><span class="style10">,</span><span class="style11">q</span><span class="style10">);
-}
-</span>
+    </span><span class="style5">return </span><span class="quantrong"><span class="style11">getSum</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">,</span><span class="style11">l</span><span class="style10">,</span><span class="style11">mid</span><span class="style10">,</span><span class="style11">p</span><span class="style10">,</span><span class="style11">q</span><span class="style10">)</span></span> + <span class="quantrong"><span class="style11">getSum</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">,</span><span class="style11">mid</span><span class="style10">+</span><span class="style4">1</span><span class="style10">,</span><span class="style11">r</span><span class="style10">,</span><span class="style11">p</span><span class="style10">,</span><span class="style11">q</span><span class="style10">);</span></span>
+<span class="style10">}</span>
 </pre>
-
+</div>
 
 </body>
 </html>

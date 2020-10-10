@@ -21,19 +21,21 @@
 <div>
 <img class="bamthay" src="img/st-update.png"/>
 </div>
+<div class="mucan">
 <h3>2. Hàm update(v, l, r, i, x)</h3>
-<div><em># Gán A[i]=x và cập nhật nhánh cây do nút v quản lí đoạn l..r</em></div>
+<div><em># Gán A[i]=x và cập nhật nhánh cây do nút v quản lí đoạn l..r</em></div></div>
 <ul>
-	<li>Nếu i không thuộc đoạn l..r thì kết thúc</li>
-	<li>Nếu l=r thì gán H[v]=x; và kết thúc</li>
-	<li>gán mid = (l+r) div 2</li>
-	<li>Nếu i ≤ mid thì update(2v, l, mid, i, x) </li>
-	<li>Ngược lại, update(2v+1, mid+1, r, i, x);</li>
-	<li>Gán H[v] = H[2v]+H[2v+1];</li>
+	<li class="mucan">Nếu i không thuộc đoạn l..r thì kết thúc</li>
+	<li class="mucan">Nếu l=r thì gán H[v]=x; và kết thúc</li>
+	<li class="mucan">gán mid = (l+r) div 2</li>
+	<li class="mucan">Nếu i ≤ mid thì update(2v, l, mid, i, x) </li>
+	<li class="mucan">Ngược lại, update(2v+1, mid+1, r, i, x);</li>
+	<li class="mucan">Gán H[v] = H[2v]+H[2v+1];</li>
 </ul>
 
-<h3>3. Độ phức tạp: O(logn).</h3>
-<h3>4. Gọi: update(1, 1, n, i, x).</h3>
+<h3 class="mucan">3. Độ phức tạp: O(logn).</h3>
+<h3 class="mucan">4. Gọi: update(1, 1, n, i, x).</h3>
+<div  class="mucan">
 <h3>5. Mã nguồn:</h3>
 <pre>
 <span class="style5">void </span><span class="style11">update</span><span class="style10">(</span><span class="style5">int </span><span class="style11">v</span><span class="style10">, </span><span class="style5">int </span><span class="style11">l</span><span class="style10">, </span><span class="style5">int </span><span class="style11">r</span><span class="style10">, </span><span class="style5">int </span><span class="style11">i</span><span class="style10">, </span><span class="style5">int </span><span class="style11">x</span><span class="style10">)
@@ -45,13 +47,13 @@
         </span><span class="style5">return</span><span class="style10">;
     }
     </span><span class="style5">int </span><span class="style11">mid </span><span class="style10">= (</span><span class="style11">l</span><span class="style10">+</span><span class="style11">r</span><span class="style10">)/</span><span class="style4">2</span><span class="style10">;
-    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">i</span><span class="style10">&lt;=</span><span class="style11">mid</span><span class="style10">) </span><span class="style11">update</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">,</span><span class="style11">l</span><span class="style10">,</span><span class="style11">mid</span><span class="style10">,</span><span class="style11">i</span><span class="style10">,</span><span class="style11">x</span><span class="style10">);
-    </span><span class="style5">else </span><span class="style11">update</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">,</span><span class="style11">mid</span><span class="style10">+</span><span class="style4">1</span><span class="style10">,</span><span class="style11">r</span><span class="style10">,</span><span class="style11">i</span><span class="style10">,</span><span class="style11">x</span><span class="style10">);
-    </span><span class="style11">H</span><span class="style10">[</span><span class="style11">v</span><span class="style10">] = </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">] + </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">];
+    </span><span class="style5">if </span><span class="style10">(</span><span class="style11">i</span><span class="style10">&lt;=</span><span class="style11">mid</span><span class="style10">) </span><span class="quantrong"><span class="style11">update</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">,</span><span class="style11">l</span><span class="style10">,</span><span class="style11">mid</span><span class="style10">,</span><span class="style11">i</span><span class="style10">,</span><span class="style11">x</span><span class="style10">)</span></span>;
+    <span class="style5">else </span><span class="quantrong"><span class="style11">update</span><span class="style10">(</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">,</span><span class="style11">mid</span><span class="style10">+</span><span class="style4">1</span><span class="style10">,</span><span class="style11">r</span><span class="style10">,</span><span class="style11">i</span><span class="style10">,</span><span class="style11">x</span><span class="style10">)</span></span>;
+    <span class="style11">H</span><span class="style10">[</span><span class="style11">v</span><span class="style10">] = </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">] + </span><span class="style11">H</span><span class="style10">[</span><span class="style4">2</span><span class="style10">*</span><span class="style11">v</span><span class="style10">+</span><span class="style4">1</span><span class="style10">];
 }
 </span>
 </pre>
-
+</div>
 
 </body>
 </html>
