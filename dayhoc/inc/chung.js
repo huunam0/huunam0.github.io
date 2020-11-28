@@ -7,6 +7,7 @@ $(document).ready(function(){
 	//
 	var norun=$.urlParam("norun")+"";
 	var lophoc=$.urlParam("lop")+"";
+	var boqua=parseInt("0"+$.urlParam("next"));
 	//alert(norun.length);
 	if (norun.length==0 || norun== "0")
 	{
@@ -22,7 +23,12 @@ $(document).ready(function(){
 		$(".bammat").click(function(){ //bấm vào là mất
 			$(this).hide();
 		});	
-
+		$(".click2blue").click(function(){ //bấm vào là mất
+			$(this).css("color","blue");
+		});
+		$(".click2red").click(function(){ //bấm vào là mất
+			$(this).css("color","red");
+		});
 		$("img.bamthay").click(function(){ //bấm vào thay hình khác
 			var src = $(this).attr("src");
 			$(this).attr("src",src.replace( ".", "x."));
@@ -32,11 +38,18 @@ $(document).ready(function(){
 			$(this).attr("src",src.replace( "x.", "."));
 			alert(src.replace( "x.", "."));
 		});
+		//alert(boqua);
+		while (boqua>0) {
+			hientiep();
+			boqua-=1;
+		}
+		//alert(boqua);
 		if (lophoc == "") lophoc = prompt("Nhập tên người học","11Tin");
-		$("body").append("<div><br/><br/><br/><br/><br/><br/>THNam-"+lophoc+"-"+currentDate()+"</div>");
+		$("body").append("<div contenteditable='true'><br/><br/><br/><br/><br/><br/>THNam - "+lophoc+" - "+currentDate()+"</div>");
 		$("a").attr('href', function(i, h) {
 			return h + (h.indexOf('?') != -1 ? "&" : "?") + "lop="+lophoc;
 		});
+		//alert(currentDate());
 	}
 	else 
 	{
@@ -44,16 +57,27 @@ $(document).ready(function(){
 	}
 	
 });
+function hientiep(ekeyCode=0)
+{
+	if (ekeyCode>0)
+		$(".mucan:hidden:first").show().effect('highlight',{},5000*(ekeyCode - 38));
+	else
+		$(".mucan:hidden:first").show();
+	$(".anngay:visible:first").hide();
+}
+function hoanmot()
+{
+	$(".mucan:visible:last").fadeOut(100);
+	$(".anngay:hidden:last").show();
+}
 $(document).keydown(function(e) {
 	if(e.keyCode == 37 || e.keyCode == 38) { // left or up : hide previoux element
 		//alert("left");
-		$(".mucan:visible:last").fadeOut(1000);
-		$(".anngay:hidden:last").show();
+		hoanmot();
 	}
 	else if(e.keyCode == 39 || e.keyCode == 40) { // right or down : show next element
 		//alert("right");
-		$(".mucan:hidden:first").show().effect('highlight',{},5000*(e.keyCode - 38));;
-		$(".anngay:visible:first").hide();
+		hientiep(e.keyCode);
 		//$(".mucan:hidden:first").fadeIn(2000);
 	}
 	else {
@@ -64,5 +88,5 @@ $(document).keydown(function(e) {
 function currentDate()
 {
 	var d= new Date();
-	return d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
+	return d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
 }

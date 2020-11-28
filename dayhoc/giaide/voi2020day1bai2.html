@@ -1,0 +1,188 @@
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+ <meta charset="utf8"/>
+ <title>VOI 2020 ngày 1</title>
+ <meta name="author" value="Tran Huu Nam"/>
+ <link rel="stylesheet" href="../inc/chung.css">
+ <link rel="stylesheet" href="../inc/mathjax/mathjax_styles.css">
+ <script src="../inc/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+ <script src="../inc/jquery.min.js" type="text/javascript"></script>
+ <script src="../inc/jquery-ui.min.js" type="text/javascript"></script>
+ <script src="../inc/chung.js" type="text/javascript"></script>
+ 
+</head>
+<body>
+
+<h1>Lời giải đề thi HSG quốc gia môn tin học năm 2020 - Ngày 1 bài 2</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Đ&acirc;y l&agrave; một lời giải <strong>rất kh&oacute;, </strong>nhưng đồng thời cũng mang rất nhiều gi&aacute; trị về mặt kiến thức, n&ecirc;n c&aacute;c bạn c&oacute; thể c&acirc;n nhắc trước đọc. Nhưng ngo&agrave;i ra th&igrave; c&aacute;c bạn c&oacute; thể đọc lời giải cho một v&agrave;i subtask nhỏ nếu như c&aacute;c bạn vẫn chưa giải được sau k&igrave; thi.</p>
+<p>&nbsp;</p>
+<p><strong>Subtask 1:</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Trong subtask n&agrave;y, chỉ c&ocirc;ng ty A c&oacute; c&aacute;c cạnh nối tr&ecirc;n đồ thị, do đ&oacute; b&agrave;i to&aacute;n quy về t&igrave;m một đường đi từ s đến t sao cho cạnh lớn nhất nằm tr&ecirc;n đường đi l&agrave; nhỏ nhất. Đ&acirc;y l&agrave; một b&agrave;i to&aacute;n kh&aacute; cơ bản m&agrave; c&aacute;c bạn c&oacute; thể sử dụng cấu tr&uacute;c dữ liệu Disjoint-set kết hợp với thuật to&aacute;n Kruskal để giải.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Cụ thể, ta c&oacute; thể sort lại c&aacute;c cạnh của đồ thị theo trọng số, lần lượt th&ecirc;m c&aacute;c cạnh v&agrave;o cho đến khi s v&agrave; t li&ecirc;n th&ocirc;ng. Trọng số của cạnh cuối c&ugrave;ng cũng ch&iacute;nh l&agrave; đ&aacute;p số b&agrave;i to&aacute;n.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Để đọc th&ecirc;m về Disjoint-set, c&aacute;c bạn c&oacute; thể xem ở VNOI Wiki:</p>
+<p><a href="https://vnoi.info/wiki/algo/data-structures/disjoint-set">https://vnoi.info/wiki/algo/data-structures/disjoint-set</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Subtask 2:</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>C&oacute; kh&aacute; nhiều c&aacute;ch giải cho subtask n&agrave;y, nhưng m&igrave;nh sẽ tr&igrave;nh b&agrave;y c&aacute;ch để phục vụ cho subtask</p>
+<p>4.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Dựa v&agrave;o &yacute; tưởng của subtask 1, ta c&oacute; thể dễ d&agrave;ng đo&aacute;n rằng b&agrave;i n&agrave;y c&oacute; thể giải bằng tham lam. B&acirc;y giờ thay v&igrave;, chỉ sử dụng to&agrave;n cạnh từ A, c&aacute;c bạn c&oacute; thể sử dụng th&ecirc;m một v&agrave;i cạnh từ B.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Vậy nếu ch&uacute;ng ta cố định cạnh lớn nhất c&oacute; thể sử dụng của cả A v&agrave; B, th&igrave; mọi cạnh b&eacute; hơn c&aacute;c cạnh đ&atilde; chọn nằm trong 2 tập cạnh A, B đều c&oacute; thể th&ecirc;m v&agrave;o m&agrave; kh&ocirc;ng mất th&ecirc;m chi ph&iacute; n&agrave;o.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Để ứng dụng lời giải của subtask 1, ta c&oacute; thể giải b&agrave;i to&aacute;n theo c&aacute;c bước sau:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+  <li>Cố định một cạnh lớn nhất trong đồ thị B, th&ecirc;m tất cả c&aacute;c cạnh b&eacute; hơn trong B v&agrave;o</li>
+</ul>
+<p>Disjoint-set hiện tại.</p>
+<ul>
+  <li>Lần lượt th&ecirc;m c&aacute;c cạnh trong đồ thị A, dừng lại ngay thời điểm đầu ti&ecirc;n s li&ecirc;n th&ocirc;ng với t v&agrave; cập nhật đ&aacute;p &aacute;n (giống như subtask 1, chỉ kh&aacute;c kết quả sẽ được cộng th&ecirc;m trọng số của cạnh B đ&atilde; cố định).</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Subtask 4:</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Từ subtask 2, ch&uacute;ng ta lại thu về được một nhận x&eacute;t quan trọng sau:</p>
+<h2 style="text-align: center;">&nbsp;</h2>
+<p><em>Gọi f(b) = a l&agrave; trọng số cạnh trong đồ thị A nhỏ nhất để nếu th&ecirc;m tất cả c&aacute;c cạnh trong đồ thi B</em></p>
+<p><em>với trọng số &lt;= b v&agrave; c&aacute;c cạnh trong đồ thị A với trọng số &lt;= a th&igrave; s li&ecirc;n th&ocirc;ng với t.</em></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Nhận x&eacute;t: </strong>f(b + 1) &lt;= f(b).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Đ&acirc;y l&agrave; một nhận x&eacute;t kh&aacute; r&otilde; r&agrave;ng, do th&ecirc;m c&agrave;ng nhiều cạnh trong B v&agrave;o th&igrave; cần c&agrave;ng &iacute;t cạnh trong A để s v&agrave; t li&ecirc;n th&ocirc;ng, tương đương với việc trọng số cạnh A lớn nhất cần thiết cũng sẽ nhỏ đi.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Thuật to&aacute;n two-pointer:</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Đến đ&acirc;y, ta c&oacute; thể dễ d&agrave;ng nh&igrave;n ra một &yacute; tưởng sau:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+  <li>Đầu ti&ecirc;n th&ecirc;m tất cả c&aacute;c cạnh trong đồ thị A v&agrave;o đồ thị.</li>
+  <li>Lần lượt t&iacute;nh c&aacute;c f(b) với b từ nhỏ đến lớn, mỗi lần th&igrave; thử x&oacute;a c&aacute;c cạnh A lớn nhất đến khi n&agrave;o s v&agrave; t vẫn c&ograve;n li&ecirc;n th&ocirc;ng.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Cản trở: </strong>Theo như m&igrave;nh biết th&igrave; đến hiện tại, chưa c&oacute; một cấu tr&uacute;c dữ liệu n&agrave;o đủ mạnh để th&ecirc;m v&agrave; x&oacute;a cạnh bất k&igrave; c&ugrave;ng l&uacute;c phục vụ cho c&aacute;c truy vấn ở b&ecirc;n tr&ecirc;n trừ Link-Cut Tree (thứ m&agrave; bạn chỉ c&agrave;i trong 3 tiếng k&igrave; thi quốc gia nếu như bạn bị mất n&atilde;o).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Một c&aacute;ch tiếp cận kh&aacute;c: </strong>Nếu nh&igrave;n theo một mặt kh&aacute;c, cấu tr&uacute;c dữ liệu Disjoint-set ở tr&ecirc;n c&oacute;</p>
+<p>thể gi&uacute;p bạn trả lời hai truy vấn bao gồm th&ecirc;m cạnh v&agrave; hỏi t&iacute;nh li&ecirc;n th&ocirc;ng của 2 đỉnh bất k&igrave;. Thứ duy nhất n&oacute; thiếu l&agrave; thao t&aacute;c x&oacute;a cạnh.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><em>&ldquo;Vậy nếu kh&ocirc;ng x&oacute;a th&igrave; sao?&rdquo;</em></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Điều n&agrave;y l&agrave; ho&agrave;n to&agrave;n c&oacute; thể, do giới hạn của b&agrave;i to&aacute;n l&agrave; N &lt;= 50 000, n&ecirc;n kh&ocirc;ng ai bắt bạn phải l&agrave;m một thuật cực k&igrave; tối ưu mới c&oacute; thể ăn hết điểm. Một lời giải dựa tr&ecirc;n c&aacute;c nhận x&eacute;t n&agrave;y đ&atilde; được gi&aacute;o sư PVH chia sẻ v&agrave; c&aacute;c bạn c&oacute; thể tham khảo ở đ&acirc;y: <a href="https://www.facebook.com/groups/VNOIForum/permalink/2843454175675398/?comment_id=2843697328984416">https://www.facebook.com/groups/VNOIForum/permalink/2843454175675398/?comment_id=28</a></p>
+<p><a href="https://www.facebook.com/groups/VNOIForum/permalink/2843454175675398/?comment_id=2843697328984416">43697328984416</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Lời giải của m&igrave;nh:</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Như đ&atilde; n&oacute;i ở tr&ecirc;n th&igrave; lời giải của m&igrave;nh cho b&agrave;i to&aacute;n n&agrave;y l&agrave; chia để trị, v&agrave; một nhận x&eacute;t quan trọng cần thiết để thực hiện m&igrave;nh đ&atilde; n&oacute;i ở tr&ecirc;n: f(b + 1) &lt;= f(b).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Nhận x&eacute;t thứ 2: thứ tự để t&iacute;nh f(b) kh&ocirc;ng quan trọng.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Do đ&oacute; m&igrave;nh c&oacute; một tư tưởng chia để trị với h&agrave;m solve như h&igrave;nh 2</p>
+<h2 style="text-align: center;">&nbsp;</h2>
+<p>L&iacute; do ta c&oacute; thuật to&aacute;n n&agrave;y, l&agrave; bởi v&igrave; với một đoạn [L, R] bất k&igrave; v&agrave; mid = (L + R) / 2 th&igrave; f(R) &lt;=</p>
+<p>f(mid) &lt;= f(L).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Vấn đề b&acirc;y giờ l&agrave; l&agrave;m thế n&agrave;o để t&iacute;nh f(mid) một c&aacute;ch nhanh ch&oacute;ng.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Nếu ta coi như trong Disjoint-set hiện tại đ&atilde; c&oacute; tất cả c&aacute;c cạnh B với trọng số &lt; L v&agrave; c&aacute;c cạnh A</p>
+<p>với trọng số &lt; from. Th&igrave; việc t&iacute;nh f(mid) c&oacute; thể thực hiện như sau:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+  <li>Th&ecirc;m tất cả c&aacute;c cạnh B c&oacute; trọng số từ L đến mid.</li>
+  <li>Lần lượt th&ecirc;m c&aacute;c cạnh A c&oacute; trọng số từ from đến to v&agrave; dừng lại khi s v&agrave; t li&ecirc;n th&ocirc;ng, trọng số của cạnh cuối c&ugrave;ng th&ecirc;m v&agrave;o ch&iacute;nh l&agrave; f(mid).</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Tiếp theo, để h&agrave;m chia để trị xuống [mid + 1, R] v&agrave; [L, mid - 1] thỏa m&atilde;n điều kiện đ&atilde; giả sử ở b&ecirc;n tr&ecirc;n, th&igrave; b&acirc;y giờ ta phải x&oacute;a c&aacute;c cạnh đ&atilde; th&ecirc;m hiện tại khỏi Disjoint-set v&agrave; th&ecirc;m một số cạnh v&agrave;o sao cho ph&ugrave; hợp.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Mấu chốt: </strong>C&aacute;c cạnh ta cần x&oacute;a đi hiện tại l&agrave; những cạnh cuối c&ugrave;ng vừa được th&ecirc;m v&agrave;o</p>
+<p>Disjoint-set.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Hay n&oacute;i c&aacute;ch kh&aacute;c, ta c&oacute; thể lưu lại những thay đổi gần nhất nhất trong cấu tr&uacute;c Disjoint-set v&agrave;</p>
+<p>&ldquo;phi&ecirc;n bản cũ&rdquo; của ch&iacute;nh n&oacute; để kh&ocirc;i phục lại Disjoint-set giống như trước khi t&iacute;nh h&agrave;m f(mid).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Persistent Disjoint-set (with rollbacks):</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Nếu như với disjoint-set th&ocirc;ng thường, c&aacute;c bạn thường c&oacute; 2 hướng ch&iacute;nh sau:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+  <li>Union by rank</li>
+  <li>N&eacute;n đường</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>V&agrave; c&oacute; nhiều bạn c&ograve;n l&agrave;m cả 2.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Để &yacute; rằng, nếu sử dụng phương ph&aacute;p Union by rank, th&igrave; mỗi lần hỏi về t&iacute;nh li&ecirc;n th&ocirc;ng của hai đỉnh bất k&igrave;, ta chỉ mất O(log N), do đ&oacute; n&eacute;n đường trong trường hợp n&agrave;y l&agrave; kh&ocirc;ng cần thiết.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Thứ hai, trong h&agrave;m th&ecirc;m cạnh (join) th&igrave; chỉ c&oacute; th&ocirc;ng số của duy nhất 2 đỉnh bị thay đổi. Do đ&oacute;, chi ph&iacute; để ta &ldquo;rollback&rdquo; disjoint-set về K cạnh trước đ&oacute; c&oacute; độ phức tạp l&agrave; O(K).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Quay lại với b&agrave;i to&aacute;n, giờ đ&acirc;y ta c&oacute; thể thực hiện lời giải theo c&aacute;c bước sau:</p>
+<ul>
+  <li>T&iacute;nh f(mid)</li>
+  <li>Rollback về như cũ, th&ecirc;m c&aacute;c cạnh A từ from đến f(mid) v&agrave; gọi solve(L, mid - 1, f(mid), to).</li>
+  <li>Roll back về như cũ, th&ecirc;m c&aacute;c cạnh B từ L đến mid v&agrave; gọi solve(mid + 1, R, from, f(mid)).</li>
+</ul>
+<h2 style="text-align: center;">&nbsp;</h2>
+<ul>
+  <li>Roll back về như cũ tiếp.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Đ&aacute;nh gi&aacute; độ phức tạp: Do mỗi lần ta chia đ&ocirc;i L, R n&ecirc;n sẽ c&oacute; tối đa O(log |B|) tầng, v&agrave; mỗi tầng, tổng số cạnh ta duyệt qua l&agrave; O(|A| + |B|). Với mỗi cạnh duyệt qua, ta c&oacute; th&ecirc;m truy vấn về t&iacute;nh li&ecirc;n th&ocirc;ng của s v&agrave; t, nhờ Union by rank n&ecirc;n độ phức tạp cho mỗi truy vấn l&agrave; O(log N).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Vậy tổng kết lại độ phức tạp của lời giải n&agrave;y l&agrave; O(M log M log N).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Lời kết: </strong>Do b&agrave;i tập n&agrave;y từ đầu đ&atilde; ở mức advanced, n&ecirc;n để giải th&iacute;ch cặn kẽ từng chỗ th&igrave; sẽ rất d&agrave;i, n&ecirc;n mong c&aacute;c bạn th&ocirc;ng cảm. M&igrave;nh cũng xin khẳng định lại l&agrave; lời giải ở tr&ecirc;n kh&ocirc;ng hề đơn giản, n&ecirc;n d&ugrave; bạn c&oacute; đọc kh&ocirc;ng hiểu ngay th&igrave; cũng rất b&igrave;nh thường. M&igrave;nh rất hi vọng c&aacute;c bạn c&oacute; thể nghiền ngẫm đủ l&acirc;u v&agrave; học được c&aacute;i g&igrave; đ&oacute; từ b&agrave;i viết n&agrave;y. :)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Kiến thức quan trọng (kh&ocirc;ng phải cho VOI) về Persistent Dsu c&aacute;c bạn c&oacute; thể search tr&ecirc;n google v&agrave; đọc c&aacute;c t&agrave;i liệu tiếng anh.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Tham khảo:</strong></p>
+<p><a href="https://vnoi.info/wiki/algo/dp/Mot-so-ky-thuat-toi-uu-hoa-thuat-toan-Quy-Hoach-Dong"><strong>&nbsp;https://vnoi.info/wiki/algo/dp/Mot-so-ky-thuat-toi-uu-hoa-thuat-toan-Quy-Hoach-Dong</strong></a></p>
+</body>
+</html>

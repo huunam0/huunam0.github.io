@@ -1,0 +1,59 @@
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+ <meta charset="utf8"/>
+ <title>Cấu trúc dữ liệu Set</title>
+ <meta name="author" value="Tran Huu Nam"/>
+ <link rel="stylesheet" href="../inc/chung.css">
+ <link rel="stylesheet" href="../inc/mathjax/mathjax_styles.css">
+ <script src="../inc/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+ <script src="../inc/jquery.min.js" type="text/javascript"></script>
+ <script src="../inc/jquery-ui.min.js" type="text/javascript"></script>
+ <script src="../inc/chung.js" type="text/javascript"></script>
+ 
+</head>
+<body>
+
+<h1>Cấu trúc dữ liệu Set</h1>
+<div class="mucan">
+<h3>Khái niệm:</h3>
+<p>SET là kiểu dữ liệu để lưu các phần tử cùng kiểu và mỗi phần tử là duy nhất.</p>
+</div>
+<h3 class="mucan">Đặc trưng của set:</h3>
+<ul>
+<li class="mucan">Mỗi phần tử là duy nhất</li>
+<li class="mucan">Các phần tử được sắp xếp tăng dần</li>
+<li class="mucan">Các phần tử không sửa đổi được (chỉ thêm và xoá)</li>
+</ul>
+<h3 class="mucan">Khai báo:</h3>
+<p class="mucan">set &lt;kiểu dữ liệu&gt; biến;</p>
+<p class="mucan">Ví dụ: set &lt;int&gt; t;</p>
+<p class="mucan">hoặc set &lt;string&gt; h;</p>
+<p class="mucan">…</p>
+<h3 class="mucan">Các hàm:</h3>
+<ul>
+<li class="mucan">set.begin() là con trỏ trỏ đến phần tử đầu tiên của set</li>
+<li class="mucan">set.end() là con trỏ trỏ đến sau phần tử cuối cùng của set (không thuộc set)</li>
+<li class="mucan">set.size() trả về số lượng phần tử đang có trong set</li>
+<li class="mucan">set.empty() kiểm tra set có rỗng không (tương đương set.size()==0)</li>
+<li class="mucan">set.insert() thêm 1 phần tử vào set</li>
+<li class="mucan">set.remove() xoá một hoặc nhiều phần tử ra khỏi set</li>
+<li class="mucan">set.clear() xoá hết các phần tử của set</li>
+<li class="mucan">set.count() đếm số lần xuất hiện của 1 giá trị trong set. Kết quả là 0 hoặc 1.</li>
+<li class="mucan">set.find() tìm một phần tử trong set. Trả về con trỏ trỏ đến vị trí của phần tử cần tìm.</li>
+
+</ul>
+<h3 class="mucan">Duyệt set</h3>
+<p class="mucan">Cho set &lt;int&gt; t;
+In ra các phần tử của set t:</p>
+<pre class="mucan">
+<span class="style16">set</span><span class="style10">&lt;</span><span class="style5">int</span><span class="style10">&gt; </span><span class="style11">t</span><span class="style10">;
+</span><span class="style16">set</span><span class="style10">&lt;</span><span class="style5">int</span><span class="style10">&gt;::</span><span class="style16">iterator </span><span class="style11">it</span><span class="style10">;
+</span><span class="style5">for </span><span class="style10">(</span><span class="style11">it</span><span class="style10">=</span><span class="style11">t</span><span class="style10">.</span><span class="style16">begin</span><span class="style10">(); </span><span class="style11">it</span><span class="style10">!=</span><span class="style11">t</span><span class="style10">.</span><span class="style16">end</span><span class="style10">(); </span><span class="style11">it</span><span class="style10">++)
+{
+    </span><span class="style16">cout </span><span class="style10">&lt;&lt; *</span><span class="style11">it</span><span class="style10">;
+}
+    </span>
+</pre>
+
+</body>
+</html>

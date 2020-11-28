@@ -1,0 +1,144 @@
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+ <meta charset="utf8"/>
+ <title>Segment Tree - Cây phân đoạn</title>
+ <meta name="author" value="Tran Huu Nam"/>
+ 
+ <link rel="stylesheet" href="../../inc/mathjax/mathjax_styles.css">
+ <script src="../../inc/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
+ <script src="../../inc/jquery.min.js" type="text/javascript"></script>
+ <script src="../../inc/jquery-ui.min.js" type="text/javascript"></script>
+ <link rel="stylesheet" href="../../inc/jquery-ui.min.css">
+ <script src="../../inc/chung.js" type="text/javascript"></script>
+ <link rel="stylesheet" href="../../inc/chung.css">
+</head>
+<body>
+
+<h1>QUY HOẠCH ĐỘNG CHỮ SỐ</h1>
+<p>Trần Hữu Nam - THPT chuyên Chu Văn An, Bình Định.</p>
+<h2>Bài toán mở đầu:</h2>
+<p>Cho số tự nhiên N. Viết tất cả các số tự nhiên nhỏ hơn hoặc bằng N.</p>
+<h3>Thuật toán 1:</h3>
+<pre><code class="language-C++">for (X=0; X&lt;=N; ++X) 
+    cout &lt;&lt; X &lt;&lt; endl;
+</code></pre>
+<h3>Thuật toán 2:</h3>
+<p><strong>Ý tưởng:</strong> Sử dụng quay lui để sinh tất cả các số tự nhiên X nhỏ hơn hoặc bằng N.</p>
+<p>Giả sử N = <span style="border-top: 1px solid;">a<sub>n</sub>a<sub>n-1</sub>…a<sub>1</sub></span>. Khi đó, X có tối đa n chữ số, ta gọi X = <span style="border-top: 1px solid;">x<sub>n</sub>x<sub>n-1</sub>..x<sub>1</sub></span>.</p>
+
+<pre><code>N = a<sub>n</sub> a<sub>n-1</sub> a<sub>n-2</sub> .. a<sub>1</sub>
+X = x<sub>n</sub> x<sub>n-1</sub> x<sub>n-2</sub> .. x<sub>1</sub>
+</code></pre>
+
+<p>Vì X ≤ N nên <code>x<sub>n</sub> ≤ a<sub>n</sub></code>, hay <code>x<sub>n</sub> = 0..a<sub>n</sub></code>.</p>
+
+<p>Phạm vi của <code>x<sub>n-1</sub></code> ? Có phải <code>x<sub>n-1</sub> = 0..a<sub>n-1</sub></code>??</p>
+
+<p>Nếu <code>x<sub>n</sub> &lt; a<sub>n</sub></code> thì <code>x<sub>n-1</sub></code> nhận giá trị tuỳ ý, tức là <code>x<sub>n-1</sub> = 0..9</code>. Ta nói <code>x<sub>n-1</sub></code> không bị giới hạn.</p>
+
+<p>Còn nếu <code>x<sub>n</sub> = a<sub>n</sub></code> thì  <code>x<sub>n-1</sub> = 0..a<sub>n-1</sub></code>. Ta nói <code>x<sub>n-1</sub></code> bị giới hạn (bởi <code>a<sub>n-1</sub></code>).</p>
+
+<p>Phạm vi của <code>x<sub>n-2</sub></code> ? </p>
+<p>Nếu <code>x<sub>n</sub> = a<sub>n</sub></code> và <code>x<sub>n-1</sub> = a<sub>n-1</sub></code> thì  <code>x<sub>n-2</sub> = 0..a<sub>n-2</sub></code>
+(<code>x<sub>n-1</sub></code> bị giới hạn).</p>
+<p>Ngược lại, <code>x<sub>n-2</sub> = 0..9</code></p>
+
+<p>Tổng quát: Khi <code>x<sub>i</sub></code> bị giới hạn? </p>
+
+<pre><code>N = a<sub>n</sub> .. a<sub>i+1</sub> a<sub>i</sub> .. a<sub>1</sub>
+X = x<sub>n</sub> .. x<sub>i+1</sub> <b>x<sub>i</sub></b> .. x<sub>1</sub>
+</code></pre>
+
+<p>Trả lời: <code>x<sub>i</sub></code> bị giới hạn khi và chỉ khi <code>x<sub>j</sub> = a<sub>j</sub></code> với <code>j = i+1..n</code> .</p>
+<p>Hay nói cách khác: <code>x<sub>i</sub></code> bị giới hạn nếu <code>x<sub>i+1</sub></code> bị giới hạn và <code>x<sub>i+1</sub> = a<sub>i+1</sub></code>.</p>
+<p>Và giới hạn của <code>x<sub>i</sub></code> là <code>a<sub>i</sub></code></p>
+<p>Ta có hàm thử (quay lui) như sau:</p>
+<pre>
+Hàm thu(i, gh) <small><i>//hàm thử các khả năng của chữ số x<sub>i</sub></i></small>
+<small><i>#gh = true/false cho biết x<sub>i</sub> có bị giới hạn hay không.</i></small>
+<small><i>#Mảng x[] để lưu các kết quả sinh ra được</i></small>
++ Nếu i<1 thì:
+    - Viết ngược mảng x 
+    - Kết thúc hàm;
++ maxc = gh là true ? a[i] : 9;
++ Với mỗi c chạy từ 0 đến maxc:
+    - x[i] = c;
+    - ghm = (gh = true) và (c = maxc);
+    - thu(i-1, ghm)
+</pre>
+Gọi hàm <code>thu(n,true);</code>
+
+<h2>Bài toán minh hoạ</h2>
+<p>Có bao nhiêu số từ A đến B mà tổng các chữ số của nó là số nguyên tố.</p>
+<p><b>Input</b> (tệp TNT.INP) gồm hai số A, B (1 ≤ A ≤ B ≤ 10<sup>8</sup>).</p>
+<p><b>Output</b> (tệp TNT.OUT) ghi số lượng số tìm được</p>
+<p><b>Ví dụ:</b></p>
+<code>
+TNT.INP	<br/>	
+7 20		<br/>
+TNT.OUT <br/>
+6</code>
+<p><i>Giải thích:</i> Có 6 số thoả mãn là 7, 11, 12, 14, 16, 20</p>
+<p><i>Nguồn: <span style="color:white;">https://www.spoj.com/problems/GONE/</span></i></p>
+<h3>Ý tưởng</h3>
+<p>Nếu <code>G(N)</code> là số lượng số tự nhiên nhỏ hơn hoặc bằng N mà tổng các chữ số của nó là SNT</p>
+<p>Thì đáp án bài toán là <code>G(B) - G(A-1)</code></p>
+<p>Ta tìm cách tính G(N) bằng cách dùng hàm <code>thu()</code> ở trên để sinh tất cả các số không vượt quá N rồi kiểm tra từng số đó.</p>
+<h3>Vận dụng 1:</h3>
+<p>Copy lại hàm <code>thu()</code> để sinh số ở trên</p>
+<pre contenteditable="true">
+Hàm thu(i, gh) <small><i>//hàm thử các khả năng của chữ số x<sub>i</sub></i></small>
+<small><i>#gh = true/false cho biết x<sub>i</sub> có bị giới hạn hay không.</i></small>
+<small><i>#Mảng x[] để lưu các kết quả thử</i></small>
++ Nếu i<1 thì:
+    - Viết ngược mảng x 
+    - Kết thúc hàm;
++ maxc = gh là true ? a[i] : 9;
++ Với mỗi c chạy từ 0 đến maxc:
+    - x[i] = c;
+    - ghm = (gh = true) và (c = maxc);
+    - thu(i-1, ghm)
+</pre>
+
+<h3>Vận dụng 2:</h3>
+<p>Nhận thấy: có nhiều lời gọi hàm <code>thu()</code> với cùng tham số!</p>
+<p>VD: N =  5000000, n=7</p>
+<p>Khi ta sinh 2 chữ số đầu là 09 thì ta sẽ gọi đến trạng thái <code>thu(5, false, 9)</code></p>
+<p>Sau này, khi ta sinh 2 chữ số đầu là 18, 27, 36, 45 thì ta sẽ gọi lại trạng thái <code>thu(5, false, 9)</code></p>
+<p>Ta dùng mảng để lưu lại trạng thái <code>thu(5, false, 9)</code> để khỏi phải tính lại.</p>
+<p>Mảng đó là  <code>F[max i][2][max tong]</code>. Ban đầu F[][][] đều bằng -1 hết.</p>
+<p>Do đó hàm <code>thu(i,gh,tong)</code> phải trả về giá trị là số lượng số mà nó thử tìm được sau khi kết thúc gọi hàm và kết quả được lưu vào <code>F[i][gh][tong]</code>.</p>
+
+<pre>
+Hàm thu(i, gh, tong) <small><i>//hàm thử các khả năng của chữ số x<sub>i</sub></i></small>
+<small><i>#gh = true/false cho biết x<sub>i</sub> có bị giới hạn hay không.</i></small>
+<small><i>#tong lưu tổng các chữ số đã sinh được trước i</i></small>
++ Nếu i<1 thì:
+    - Nếu tong là SNT thì trả về 1;
+    - Ngược lại, trả về 0;
++ Nếu F[i][gh][tong] ≥ 0 thì trả về F[i][gh][tong];
++ kq = 0;
++ maxc = gh là true ? a[i] : 9;
++ Với mỗi c chạy từ 0 đến maxc:
+    - ghm = (gh = true) và (c = maxc);
+    - kq += thu(i-1, ghm, tong+c)
++ F[i][gh][tong] = kq
++ Trả về kq;
+</pre>
+
+<p>Hàm G(N) trở thành:</p>
+<pre>
++ Tách các chữ số của N lưu vào mảng a[], n= số chữ số
++ Cho F[][][] bằng -1 hết
++ Trả về thu(n, true, 0); 
+</pre>
+
+<p>Hàm main() </p>
+<pre>
++ Nhập A, B;
++ Xuất G(B)-G(A-1); </pre>
+
+<p>Đề xuất chỉ lưu các trạng thái mà gh=false</p>
+
+</body>
+</html>
