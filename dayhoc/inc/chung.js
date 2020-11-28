@@ -60,14 +60,14 @@ $(document).ready(function(){
 function hientiep(ekeyCode=0)
 {
 	if (ekeyCode>0)
-		$(".mucan:hidden:first").show().effect('highlight',{},5000*(ekeyCode - 38));
+		$(".mucan:hidden:first").show().effect('highlight',{},2000*(ekeyCode - 38));
 	else
 		$(".mucan:hidden:first").show();
 	$(".anngay:visible:first").hide();
 }
 function hoanmot()
 {
-	$(".mucan:visible:last").fadeOut(100);
+	$(".mucan:visible:last").hide();
 	$(".anngay:hidden:last").show();
 }
 $(document).keydown(function(e) {

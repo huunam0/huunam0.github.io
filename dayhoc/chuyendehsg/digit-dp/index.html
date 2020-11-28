@@ -57,14 +57,14 @@ X = x<sub>n</sub> .. x<sub>i+1</sub> <b>x<sub>i</sub></b> .. x<sub>1</sub>
 Hàm thu(i, gh) <small><i>//hàm thử các khả năng của chữ số x<sub>i</sub></i></small>
 <small><i>#gh = true/false cho biết x<sub>i</sub> có bị giới hạn hay không.</i></small>
 <small><i>#Mảng x[] để lưu các kết quả sinh ra được</i></small>
-+ Nếu i<1 thì:
+<span class="mucan">+ Nếu i<1 thì:
     - Viết ngược mảng x 
-    - Kết thúc hàm;
-+ maxc = gh = true ? a[i] : 9;
-+ Với mỗi c chạy từ 0 đến maxc:
-    - x[i] = c;
-    - ghm = (gh = true) và (c = maxc);
-    - thu(i-1, ghm)
+    - Kết thúc hàm;</span>
+<span class="mucan">+ maxc = gh = true ? a[i] : 9;</span>
+<span class="mucan">+ Với mỗi c chạy từ 0 đến maxc:</span>
+<span class="mucan">    - x[i] = c;</span>
+<span class="mucan">    - ghm = (gh = true) và (c = maxc);</span>
+<span class="mucan">    - thu(i-1, ghm)</span>
 </pre>
 <p  class="mucan">Gọi hàm <code>thu(n,true);</code></p>
 
@@ -74,11 +74,10 @@ Hàm thu(i, gh) <small><i>//hàm thử các khả năng của chữ số x<sub>i
 <p><b>Input</b> (tệp TNT.INP) gồm hai số A, B (1 ≤ A ≤ B ≤ 10<sup>8</sup>).</p>
 <p><b>Output</b> (tệp TNT.OUT) ghi số lượng số tìm được</p>
 <p><b>Ví dụ:</b></p>
-<code>
-TNT.INP	<br/>	
-7 20		<br/>
-TNT.OUT <br/>
-6</code>
+<table>
+<tr><td>TNT.INP</td><td>TNT.OUT</td></tr>
+<tr><td>7 20</td><td>6</td></tr>
+</table>
 <p><i>Giải thích:</i> Có 6 số thoả mãn là 7, 11, 12, 14, 16, 20</p>
 <p class="bammat"><i>Nguồn: https://www.spoj.com/problems/GONE/</i></p>
 </div>
@@ -143,7 +142,7 @@ Hàm thu(i, gh, tong) <small><i>//hàm thử các khả năng của chữ số x
 <pre class="mucan" contenteditable="true">+ Nhập A, B;
 + Xuất G(B) - G(A-1);</pre>
 
-<p class="mucan">* Đề xuất chỉ lưu các trạng thái mà <code>gh=false</code></p>
+<p class="mucan click2red">* Đề xuất chỉ lưu các trạng thái mà <code>gh=false</code></p>
 
 <h2 class="mucan">III. Bài toán mở rộng</h2>
 <div class="mucan">
@@ -152,11 +151,10 @@ Hàm thu(i, gh, tong) <small><i>//hàm thử các khả năng của chữ số x
 <p><b>Input</b> (tệp TNT.INP) gồm số k (1 ≤ k ≤ 10<sup>18</sup>).</p>
 <p><b>Output</b> (tệp TNT.OUT) ghi số tìm được</p>
 <p><b>Ví dụ:</b></p>
-<code>
-TNT.INP	<br/>	
-5		<br/>
-TNT.OUT <br/>
-11</code>
+<table>
+<tr><td>TNT.INP</td><td>TNT.OUT</td></tr>
+<tr><td>5</td><td>11</td></tr>
+</table>
 <p><i>Giải thích: Dãy số là 2, 3, 5, 7, <b>11</b>, 12, 14, 16, 20,...</i></p>
 </div>
 <div  class="mucan">
@@ -166,12 +164,11 @@ TNT.OUT <br/>
 <p><b>Input</b> (tệp TNT.INP) gồm số K (1 ≤ K ≤ 10<sup>8</sup>).</p>
 <p><b>Output</b> (tệp TNT.OUT) ghi ra vị trí của số K. Nếu không có số K trong dãy, ghi ra số -1.</p>
 <p><b>Ví dụ:</b></p>
-<code>
-TNT.INP	<br/>	
-5		<br/>
-TNT.OUT <br/>
-3</code>
+<table>
+<tr><td>TNT.INP</td><td>TNT.OUT</td></tr>
+<tr><td>5</td><td>3</td></tr>
+</table>
 </div>
-<p>Cảm ơn quý thầy cô đã lắng nghe!</p>
+<p class="mucan">Cảm ơn quý thầy cô đã lắng nghe!</p>
 </body>
 </html>
