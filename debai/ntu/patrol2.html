@@ -1,0 +1,52 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    PATROL2 - Đi tuần kho (ACMVN 10-2015 D) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 20.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>ADR là một công ty khởi nghiệp mới về lĩnh vực thương mại điện tử, với tham vọng thống trị thị trường thương mại điện tử ở Việt Nam. Có nguồn vốn đầu tư lớn, họ vừa xây xong một nhà kho khổng lồ để dễ dàng đáp ứng yêu cầu của khách hàng.</p>
+<p>Vì nhà kho lớn quá nên họ phải mua hai con robot đi tuần kho. Robot đi tuần vòng quanh nhà kho với chỉ thị dạng "x y w h", nghĩa là:</p>
+<p>       1. Vị trí xuất phát là (x, y)<br/>
+       2. Đi sang phía đông w bước đến vị trí (x+w, y)<br/>
+       3. Đi lên hướng bắc h bước đến vị trí (x+w, y+h)<br/>
+       4. Đi sang phía tây w bước đến vị trí (x, y+h)<br/>
+       5. Đi xuống phía nam h bước về lại vị trí ban đầu (x, y)<br/>
+       6. Lặp lại các bước 2, 3, 4, 5.</p>
+<p>Công ty muốn cho 2 con robot xuất phát cùng lúc. Các con robot mỗi lần sẽ di chuyển 1 bước. Vì 2 con robot không có khả năng chống va chạm một cách tự động nên công ty phải đảm bảo rằng chỉ thị của 2 con robot không làm cho chúng va chạm nhau. Bạn hãy giúp họ kiểm tra vấn đề này nhé.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng thứ nhất là số test case T (1 ≤ T ≤ 1000)</p>
+<p>- Trong các dòng tiếp theo, mỗi test case gồm 2 dòng mô tả chỉ thị của 2 robot. Mỗi dòng là 4 số nguyên x, y, w, h (0 &lt;x, y, w, h &lt; 10<sup>5</sup>).</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Với mỗi test case, in ra "safe" nếu chỉ thị không bao giờ làm cho 2 robot va chạm nhau, in ra "collide" nếu 2 chỉ thị đó có thể gây va chạm cho 2 robot.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2<br/>1 1 2 2<br/>2 2 2 2<br/>1 1 2 2<br/>3 3 1 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">safe<br/>collide</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">1<br/>1 1 2 2<br/>3 2 1 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">collide</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Trong test 2, hai con robot va chạm ở vị trí (3, 2.5)</p>
+</div>
+</div></body></html>

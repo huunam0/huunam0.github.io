@@ -1,0 +1,47 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    ANTO - An toàn giao thông (OLP 2011) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 5.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">Hưởng ứng phong trào vận động toàn dân nghiêm chỉnh chấp hành luật lệ giao thông Bộ Văn hóa và Thể thao tổ chức một cuộc đua xe đường trường với khẩu hiệu “Vì sự an toàn của bạn và của mọi người, không vượt quá tốc độ cho phép”. Trên đường đua từ điểm xuất phát đến điểm đích Ban tổ chức cắm lần lượt n biển hạn chế tốc độ. Các biển được đánh số từ 1 đến n. Trên biển thứ i có ghi tốc độ v<sub>i</sub> (i = 1, 2, ..., n) tối đa cho phép và có gắn camera tự động ghi nhận các xe vượt quá tốc độ khi đi qua. Không có hai biển hạn chế tốc độ nào cắm cùng một chỗ và không có hai biển nào có giá trị tốc độ hạn chế giống nhau. Dãy giá trị tốc độ hạn chế v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>n</sub> trên các biển của đường đua chỉ được công bố trước cuộc thi. Thắng cuộc là người phạm lỗi ít nhất và về đích đầu tiên.</p>
+<p style="text-align:center"><img alt="" src="images/ANTO2.png" style="height:271px; width:547px"/></p>
+<p style="text-align:justify">Quyết tâm giành thứ bậc cao trong cuộc thi, đội đua của hãng taxi Miền Tây đã tổ chức một đường luyện tập trên đó có cắm m biển hạn chế tốc độ theo quy tắc như với đường đua chính thức. Các biển này được đánh số từ 1 đến m và trên biển thứ j ghi tốc độ giới hạn u<sub>j</sub> (j = 1, 2, ...,m). Nếu cách tổ chức đoạn đường luyện tập càng gần với đường đua chính thức bao nhiêu thì khả năng giành chiến thắng của đội càng lớn bấy nhiêu. Khi số liệu về đường đua chính thức được công bố Ban huấn luyện của đội đua hãng taxi Miền Tây muốn đánh giá xem đường luyện tập của mình giống đường đua chính thức đến mức nào bằng cách tính xem trên đoạn đường đua chính thức có bao nhiêu đoạn đường đua cùng dạng với đường luyện tập. Một đoạn đường đua chứa m biển hạn chế tốc độ trên đường đua chính thức được gọi là có cùng dạng với đường luyện tập nếu:</p>
+<p style="text-align:justify">      • Biển ghi tốc độ nhỏ nhất và biển ghi tốc độ lớn nhất trên nó ở cùng một vị trí tính từ đầu đoạn như trong đường đua luyện tập;</p>
+<p style="text-align:justify">      • Hiệu hai giá trị của biển đầu tiên và biển cuối cùng trên nó cùng dấu với hiệu hai giá trị của<br/>
+biển đầu tiên và biển cuối cùng trong đường luyện tập.</p>
+<p style="text-align:justify">Hai đoạn của đường đua chính thức gọi là khác nhau nếu biển đầu tiên trong chúng là khác nhau.</p>
+<p style="text-align:justify">Ví dụ: Đường đua chính thức có n = 12 biển hạn chế tốc độ và các giá trị ghi trên biển lần lượt là (2, 4, 6, 1, 9, 5, 7, 3, 10, 8, 11, 13). Đoạn đường luyện tập có m = 5 biển hạn chế tốc độ và các giá trị ghi trên biển lần lượt là (3, 5, 2, 8, 6).Có 2 đoạn đường trên đường đua chính thức (bắt đầu từ biển số 2 và bắt đầu từ biển số 6) cùng dạng với đường đua tập. </p>
+<p><strong>Yêu cầu:</strong> Cho n, m, các giá trị u<sub>j</sub> (j = 1, 2, ...,m)và v<sub>i</sub> (i = 1, 2, ..., n). Hãy xác định số lượng đoạn đường đua chính thức khác nhau cùng dạng với đường luyện tập.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên chứa 2 số nguyên n và m (2 ≤ m ≤ n ≤ 10<sup>6</sup>)</p>
+<p>- Dòng thứ 2 chứa m số nguyên u<sub>1</sub>, u<sub>2</sub>, . . ., u<sub>m</sub> (0 &lt; u<sub>j</sub> ≤ 10<sup>9</sup>, j = 1, 2, ...,m)</p>
+<p>- Dòng thứ 3 chứa n số nguyên v<sub>1</sub>, v<sub>2</sub>, . . ., v<sub>n</sub> (0 &lt; v<sub>i</sub> ≤ 10<sup>9</sup>, i = 1, 2, ..., n).</p>
+<p><em>Các số trên một dòng cách nhau một dấu cách.</em></p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p style="text-align:justify">- Là một số nguyên – số lượng đoạn đường đua chính thức khác nhau cùng dạng với đường luyện tập.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">12 5<br/>3 5 2 8 6<br/>2 4 6 1 9 5 7 3 10 8 11 13</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

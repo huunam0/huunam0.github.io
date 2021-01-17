@@ -1,0 +1,98 @@
+<h2>BPAINT - Tô màu</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/C" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/C </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/272561/problem/M" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/272561/problem/M </a><div style="margin: 1ex;">
+<div>
+<p><span style="font-family: Tahoma; font-size: small;">Tèo được các admin VNOI đố  cho một trò chơi như sau :</span></p>
+<ul type="DISC">
+<li><span style="font-family: Tahoma; font-size: small;">Tèo có một bảng hình    chữ nhật N x M, mỗi ô có một màu nhất định và K lần    tô màu.</span></li>
+<li><span style="font-family: Tahoma; font-size: small;">Trong mỗi lần tô màu,    Tèo chọn một vùng có số hiệu màu như nhau và tô một    màu khác. (Một vùng là một dãy các ô chung cạnh có cùng    màu với nhau).</span></li>
+</ul>
+<ul>
+<p><span style="font-family: Tahoma; font-size: small;"><span style="text-decoration: underline;">Ví  dụ :</span></span></p>
+</ul>
+<p><span style="font-family: Tahoma; font-size: small;">Ở hình bên trái nếu ta chọn  ô (3,3) màu xanh lá và tô thành màu vàng thì sẽ thu được  hình bên phải.</span></p>
+<a name="0.1_table01"></a>
+<div>
+<table border="2" cellspacing="0" style="width: 643px;">
+<tbody>
+<tr valign="top">
+<td height="176"><a name="0.1_table02"></a>
+<div>
+<table border="2" cellspacing="0" style="width: 304px;">
+<tbody>
+<tr valign="top">
+<td bgcolor="#ff0000" height="50"> </td>
+<td bgcolor="#ff0000"> </td>
+<td bgcolor="#ffff00"> </td>
+<td bgcolor="#00b050"> </td>
+</tr>
+<tr valign="top">
+<td bgcolor="#ff0000" height="49"> </td>
+<td bgcolor="#ffff00"> </td>
+<td bgcolor="#ffff00"> </td>
+<td bgcolor="#00b050"> </td>
+</tr>
+<tr valign="top">
+<td bgcolor="#ffff00" height="48"> </td>
+<td bgcolor="#ffff00"> </td>
+<td bgcolor="#00b050"> </td>
+<td bgcolor="#00b050"> </td>
+</tr>
+</tbody>
+</table>
+</div>
+ <br/></td>
+<td><a name="0.1_table03"></a>
+<div>
+<table border="2" cellspacing="0" style="width: 304px;">
+<tbody>
+<tr valign="top">
+<td bgcolor="#ff0000" height="50"> </td>
+<td bgcolor="#ff0000"> </td>
+<td bgcolor="#ffff00"> </td>
+<td bgcolor="#ffff00"> </td>
+</tr>
+<tr valign="top">
+<td bgcolor="#ff0000" height="49"> </td>
+<td bgcolor="#ffff00"> </td>
+<td bgcolor="#ffff00"> </td>
+<td bgcolor="#ffff00"> </td>
+</tr>
+<tr valign="top">
+<td bgcolor="#ffff00" height="48"> </td>
+<td bgcolor="#ffff00"> </td>
+<td bgcolor="#ffff00"> </td>
+<td bgcolor="#ffff00"> </td>
+</tr>
+</tbody>
+</table>
+</div>
+ <br/></td>
+</tr>
+</tbody>
+</table>
+</div>
+ <br/>
+<p><span style="font-family: Tahoma; font-size: small;">Sau khi biến đổi, bảng màu sẽ  có Q vùng, mỗi vùng sẽ có c[i] ô (i=1-&gt;Q). Câu hỏi của  các admin VNOI cho Tèo là : Hãy chỉ ra cách tô màu sau K lần  sao cho c[1]^2 + .... + c[Q]^2 càng lớn càng tốt.</span></p>
+<h3>Dữ liệu</h3>
+<ul type="DISC">
+<li><span style="font-family: Tahoma; font-size: small;">Dòng đầu tiên chứa    3 số n, m, k. (n, m, k &lt;= 50)</span></li>
+<li><span style="font-family: Tahoma; font-size: small;">n dòng tiếp theo, mỗi    dòng chứa m số thể hiện màu được tô cho ô tương ứng    trên bảng (mỗi màu khác nhau được đánh một số hiệu    khác nhau và các ô có màu giống nhau thì được đánh cùng    một số). Số hiệu màu là số tự nhiên không vượt quá    3000.</span></li>
+</ul>
+<h3>Kết quả</h3>
+<ul type="DISC">
+<li><span style="font-family: Tahoma; font-size: small;">Ghi ra trên k dòng, thể    hiện các bước tô màu theo thứ tự tăng dần của thời    gian, mỗi dòng có dạng: i, j, t tương ứng với việc tô    màu t cho ô (i, j).</span></li>
+</ul>
+<h3>Ví dụ</h3>
+<p><span style="font-family: Courier New; font-size: small;">Dữ liệu:</span></p>
+<p><span style="font-family: Courier New; font-size: small;">3 4 2</span></p>
+<p><span style="font-family: Courier New; font-size: small;">1 1 2 3</span></p>
+<p><span style="font-family: Courier New; font-size: small;">1 2 2 3</span></p>
+<p><span style="font-family: Courier New; font-size: small;">2 2 3 3</span></p>
+<p><span style="font-family: Courier New; font-size: small;">Kết quả:</span></p>
+<p><span style="font-family: Courier New; font-size: small;">3 3 2</span></p>
+<p><span style="font-family: Courier New; font-size: small;">1 1 2</span></p>
+<h3>Cách tính điểm</h3>
+<p><span style="font-family: Tahoma; font-size: small;">Điểm cho mỗi output hợp lệ  sẽ tỷ lệ với tổng c[1]^2 + .... + c[Q]^2.<br/></span></p>
+</div>
+</div>
+</div>

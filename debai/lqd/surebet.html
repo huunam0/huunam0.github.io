@@ -1,0 +1,36 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chắc kèo</h2>
+</div><div class="content-description screen">
+<div><p>Bạn được yêu cầu chuẩn bị một phương án cá độ sao cho lợi nhuận thu được là cao nhất có thể. Có <em>đúng hai kết quả khác nhau</em>, ký hiệu là \(A\) và \(B\), có thể xảy ra đối với sự kiện mà bạn sắp cá độ. Có \(n\) nhà cái tham gia vào cuộc cá độ này, nhà cái thứ \(i\) cung cấp cho bạn hai kèo: đối với kèo thứ nhất, bạn được trả \(a_i\) đồng nếu <em>kết quả \(A\)</em> là kết quả chung cuộc cho sự kiện mà bạn cá độ, tương tự, ở kèo thứ hai bạn sẽ được nhận \(b_i\) đồng nếu kết quả chung cuộc là <em>kết quả \(B\)</em>. Bạn có thể chọn tùy ý một hoặc nhiều nhà cá để đặt kèo, ở mỗi nhà cái bạn có thể đặt <em>một hoặc cả hai kèo</em> mà họ cung cấp, với chi phí cho mỗi lần đặt kèo là \(1\) đồng (bạn sẽ mất trắng \(1\) đồng này bất kể kết quả A hay B là chung cuộc). Một ràng buộc nữa là bạn không thể đặt một kèo <em>hai lần trở lên</em>. Hãy tính toán xem lợi nhuận <em>cao nhất</em> mà bạn có thể thu được (số tiền lời mà ta chắc chắn có bất kể kết quả chung cuộc là như thế nào), trong phương án đặt kèo tối ưu, là bao nhiêu nhé!</p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu chứa số nguyên dương \(n\) là số lượng nhà cái.</p>
+<p>\(n\) dòng tiếp theo mô tả các kèo mà từng nhà cái cung cấp: dòng thứ \(i\) chứa hai số thực \(a_i\) và \(b_i\) - Tỷ lệ ăn đối với hai kết quả \(A\) và \(B\). Các tỷ lệ này sẽ được làm tròn đến tối đa \(4\) chữ số thập phân sau dấu phẩy.</p>
+<hr/>
+<h4>Output</h4>
+<p>Một số thực duy nhất là lợi nhuận tối đa bạn có thể thu được. Kết quả được làm tròn đến <strong>đúng</strong> \(4\) chữ số thập phân sau dấu phẩy.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>4
+1.4 3.7
+1.2 2
+1.6 1.4
+1.9 1.5</code></pre>
+<h5>Output</h5>
+<pre><code>0.5000</code></pre>
+<h5>Giải thích</h5>
+<p>Chiến lược cá độ tối ưu là đặt kèo vào kết quả \(B\) đối với nhà cái đầu tiên và đặt kèo vào kết quả \(A\) đối với nhà cái thứ ba và thứ tư. Nếu kết quả \(A\) là chung cuộc, ta sẽ thu được \(1.6+1.9-3=0.5\) đồng và nếu kết quả \(B\) là chung cuộc thì ta thu được \(3.7-3=0.7\) đồng. Vậy, chúng ta chắc chắn sẽ thu được \(0.5\) đồng bất kể kết quả chung cuộc là \(A\) hay \(B\).</p>
+<hr/>
+<h4>Giới hạn</h4>
+<ul>
+<li>\(1.0\leq a_i, b_i\leq 1000.0\)</li>
+<li>\(1\leq n\leq 100,000\)</li>
+<li>\(20\%\) số test có \(n\leq 10\).</li>
+<li>\(40\%\) số test khác có \(n\leq 1,000\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn bài: CEOI 2017</em></p>
+</div>
+<hr/>
+</div>

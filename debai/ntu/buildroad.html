@@ -1,0 +1,43 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    BUILDROAD - Xây dựng đường đua 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Thành phố ACM quyết định tổ chức một cuộc đua xe hậu Valentine. Thành phố gồm n nút giao thông và không có con đường nào nối 2 nút giao thông bất kỳ. Vì vậy ban tổ chức (BTC) muốn xây dựng các đường đua nối các nút giao thông lại với nhau tạo thành các vòng đua. Sau khi tham khảo giá cả từ công ty MCA, BTC đưa ra một danh sách gồm m con đường một chiều nối giữa 2 nút giao thông có thể xây dựng và giá của chúng. Vì muốn xây dựng thật nhiều vòng đua (như vậy sẽ có nhiều cuộc đua diễn ra song song), BTC muốn tất cả các nút giao thông đều được sử dụng trong cuộc đua và mỗi nút giao thông chỉ thuộc đúng một vòng đua (nghĩa là từ một nút giao thông chỉ có thể di chuyển tới các nút giao thông khác thuộc cùng một vòng đua). Chi phí xây dựng cuộc đua là tổng chi phí xây dựng các vòng đua, trong đó chi phí xây dựng một vòng đua là tổng chi phí xây dựng các đường đua thuộc vòng đua đó. Các NTUCoders hãy giúp BTC chọn các con đường cần xây dựng sao cho tổng chi phí là bé nhất nhé!</p>
+<p><strong>Chú ý</strong>: Các nút giao thông x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, ..., x<sub>k</sub> tạo thành một vòng đua nếu như ta có đường đi x<sub>i</sub> -&gt; x<sub>i+1</sub> -&gt; x<sub>i+2</sub> -&gt; ... -&gt; x<sub>i</sub> (1 &lt;= i &lt;= k).</p>
+<p><strong>Dữ liệu vào</strong></p>
+<p>Dòng thứ nhất chứa 2 số nguyên dương n và m</p>
+<p>m dòng tiếp theo, dòng thứ i gồm 3 số u, v, w với ý nghĩa có thể xây dựng con đường nối từ u đến v với giá là w</p>
+<p><strong>Dữ liệu ra</strong></p>
+<p>In ra tổng chi phí bé nhất tìm được hoặc in ra -1 nếu không có cách xây dựng thỏa mãn yêu cầu bài toán</p>
+<p><strong>Giới hạn</strong></p>
+<p>1 &lt;= n &lt;= 500, 1 &lt;= m &lt;= n*(n-1)</p>
+<p>1 &lt;= w &lt;= 10<sup>9</sup></p>
+<p>Dữ liệu đảm bảo không có đường đua nào nối một nút giao thông với chính nó</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">6 8<br/>1 2 3<br/>2 3 2<br/>3 1 6<br/>2 4 3<br/>4 6 1<br/>6 5 2<br/>5 4 3<br/>5 3 4</div>
+<div class="sample-type">output</div>
+<div class="sample-value">17</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Xây dựng các đường đua tạo thành 2 vòng đua: 1 - 2 - 3 và 4 - 6 - 5 với chi phí là 17</p>
+</div>
+</div></body></html>

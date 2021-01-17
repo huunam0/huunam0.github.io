@@ -1,0 +1,49 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Thay thế số 0</h2>
+</div><div class="content-description screen">
+<div><p>Cho một bảng \(A\) có kích thước \(N\text{x}N\) (\(N\in \mathbb{N}^{*}\))</p>
+<p>Khoảng cách giữa hai phần tử \(A[i][j]\) và \(A[p][q]\) được định nghĩa là \(|i-p|+|j-q|(1\le i,j,p,q\le N)\).</p>
+<p>(Chú ý: \(A[i][j]\) có nghĩa là phần tử ở hàng thứ \(i\) và cột thứ \(j\))</p>
+<p><strong>Yêu cầu:</strong> Viết chương trình thay thế mỗi phần tử \(0\) trong bảng \(A\) thành phần tử khác \(0\) và gần với nó nhất. Nếu có hai (hoặc nhiều hơn) phần tử khác \(0\) và gần với nó nhất thì giữ nguyên giá trị \(0\).</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng duy nhất chứa số nguyên dương \(N\)</p>
+</li>
+<li><p>\(N\) dòng tiếp theo, mỗi dòng chứa \(N\) phần tử thể hiện giá trị các phần tử trong bảng, biết rằng mỗi phần tử trong bảng là một số nguyên không âm, và không lớn hơn \(10^6\)</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra bảng sau khi biến đổi </li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3
+0 0 0
+7 0 3
+0 5 0</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>7 0 3
+7 0 3
+0 5 0</code></pre>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li><p>Ta có: \(A[1][1]=0\). Và chỉ có \(1\) số duy nhất khác \(0\) và gần với nó nhất đó là \(A[2][1]=7\). Do đó ta gán \(A[1][1]=7\).</p>
+</li>
+<li><p>Tiếp theo, ta có: \(A[1][2]=0\). Và có tới ba số khác \(0\) và gần với nó nhất đó là \(A[2][1]=7\);\(A[2][3]=3\) và \(A[3][2]=5\). Nên nó vẫn giữ nguyên giá trị \(0\). (Ở đây ta không tính \(A[1][1]\) là số khác không và gần với \(A[1][2]\) nhất vì \(A[1][1]\) bản chất nguyên thủy nó là \(0\))</p>
+</li>
+<li><p>Tương tự cho các phần tử \(0\) còn lại ta sẽ thu được kết quả cần tìm.</p>
+</li>
+</ul>
+<p><strong>Subtask:</strong></p>
+<ul>
+<li><p>\(20\text{%}\) test có \(1\le N\le 40\)</p>
+</li>
+<li><p>\(60\text{%}\) test có \(1\le N\le 200\)</p>
+</li>
+<li><p>\(20\text{%}%\) test có \(1\le N\le 1000\)</p>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

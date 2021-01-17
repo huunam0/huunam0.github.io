@@ -1,0 +1,65 @@
+<div class="tm-box2">
+<div class="problem-name">
+    KiDCAT - Kid và lũ mèo. 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p><span style="font-size:14px">Những ngày quá rỗi vì dịch bệnh Corona, Kid chỉ biết vật vờ lên lướt facebook với mong muốn tìm kiếm được chút niềm vui nho nhỏ. Vô tình cô bắt được trào lưu trên mạng rằng : “ <em>Game hot chưa chơi, phim hot chưa xem, nhạc hot chưa nghe, contest hot chưa làm thì sure kèo bạn là người tối cổ rồi!” Cô tự nhủ rằng, hiện tại mình đã là người vô công rỗi nghề, mình không thể trở nên tối cổ được. Sau hàng giờ lần mò, cuối cùng cô đã tìm ra được tựa game hot đang làm điên đảo giới trẻ với hàng triệu lượt tải. Vì là một người có óc quan sát, trong lúc chơi </em>Adorable Home<em> cô đã phát hiện ra rằng, chỉ có 2 loại mèo trong game, đó là loại có lông một màu và loại có lông hai màu. Quá hào hứng, cô áp dụng ngay phát hiện này vào kiến thức Machine learning. Cô tin chắc rằng, việc một con mèo có một màu hay hai màu sẽ phụ thuộc vào cân nặng của chúng.</em></span></p>
+<p><span style="font-size:14px"><em>Để trở nên có ích, cô đã tự đặt cho bản thân một thử thách về đề tài liên quan đến học máy, đó là viết một chương trình dự đoán các con mèo có khối lượng trong khoảng [a,b] sẽ sở hữu bộ lông một màu huyền bí hay hai  màu nổi bật. Kid đã áp dụng lí thuyết “phân loại theo hàng xóm gần nhất” (</em><strong>K – Nearest Neighbors – KNN). </strong>Màu lông của một con mèo có khối lượng c sẽ phụ thuộc vào màu lông của con mèo có khối lượng c’ gần c nhất ( tức là abs(c-c’)min). Nếu trường hợp khối lượng của con mèo c nằm chính giữa khối lượng con mèo a và con mèo b ( tức là a - c = c - b), mà trong hai loại mèo này, một con sở hữu bộ lông một màu, một con lại hai màu thì bộ lông của mèo c sẽ được dự đoán là hai màu. Vì quá ham vui, Kid lại đi tụ họp bạn bè mà không ngó ngàng gì đến đề tài mình đang nghiên cứu. Các bạn hãy giúp Kid nhé!</span></p>
+<p><span style="font-size:14px"><strong>Yêu cầu:</strong> Giúp Kid xác định xem trong khoảng [a,b] có bao nhiêu con mèo có 2 màu lông.</span></p>
+<p><span style="font-size:14px"><strong>Dữ liệu vào:</strong></span></p>
+<ul>
+<li><span style="font-size:14px">Ba số tự nhiên n, a, b ( 1&lt;= n &lt;= 50000, 1 &lt;= a &lt;= b &lt;= 10<sup>9</sup>), trong đó n là số lượng con mèo có sẵn trong nhà, [a, b] là khoảng khối lượng đang xét.</span></li>
+<li><span style="font-size:14px">n dòng tiếp theo miêu tả những con mèo có sẵn, mỗi một con mèo được miêu tả bằng một xâu ký tự “S” là hai màu lông, “NS” là một màu lông, và 1 số tự nhiên w chỉ khối lượng.  ( 1 &lt;= w &lt;= 10<sup>9</sup>).</span></li>
+</ul>
+<p><span style="font-size:14px"><strong>Dữ liệu ra:</strong></span></p>
+<ul>
+<li><span style="font-size:14px">In ra số lượng con mèo có hai màu trong khoảng [a,b]</span></li>
+</ul>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><span style="font-size:14px">Ví dụ:</span></p>
+<p style="margin-left:.5in"> </p>
+<table border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width:312px">
+<p><span style="font-size:14px">Input</span></p>
+</td>
+<td style="width:312px">
+<p><span style="font-size:14px">Output</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:312px">
+<p style="margin-left:40px"><span style="font-size:14px">3 1 10</span></p>
+<p style="margin-left:40px"><span style="font-size:14px">S 10</span></p>
+<p style="margin-left:40px"><span style="font-size:14px">NS 4</span></p>
+<p style="margin-left:40px"><span style="font-size:14px">S 1</span></p>
+</td>
+<td style="width:312px">
+<p style="margin-left:40px"><span style="font-size:14px">6</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><span style="font-size:14px">Giải thích: Con mèo có hai màu có khối lượng lần lượt là : 1, 2, 7, 8, 9 và 10.</span></p>
+<p><span style="font-size:14px">Vậy tổng cộng có 6 con mèo có hai màu.</span></p>
+</div>
+</div>

@@ -1,0 +1,30 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Luyện thi cấp tốc</h2>
+</div><div class="content-description screen">
+<div><p>XYZ là trung tâm luyện thi đại học lâu đời ở tỉnh Phú Thọ, nơi đây đã sản sinh ra vô số thủ khoa của cả nước. Thành công của trung tâm đến từ bí quyết “Đánh giá năng lực 4.0”. Trung tâm vận hành cách đánh giá dựa trên một siêu máy tính. Giả sử đối tượng học tập còn \(X\) ngày là đến kỳ thi đại học và đối tượng muốn ôn thi \(N\) môn, siêu máy tính sẽ tính được rằng nếu đối tượng học ở trung tâm trong \(j\) ngày để ôn thi môn thứ \(i\) thì sẽ đạt \(A[i,j]\) điểm. Tất nhiên là càng học nhiều thì điểm sẽ cao lên nên \(A[i,j] \le A[i , j + k]\)  (\(k &gt;= 0\)). Dựa vào cách đánh giá trên trung tâm sẽ tìm ra phương pháp học tập tốt nhất cho đối tượng . Hôm nay do có một chút trục trặc nên siêu máy tính không thể hoạt động được nữa , bạn hãy viết chương trình giúp trung tâm nhé!!</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng thứ nhất gồm 2 số nguyên dương \(N\) và \(X\).</li>
+<li>\(N\) dòng tiếp theo, mỗi dòng ghi \(X\) số, số thứ \(j\) là \(A_{ij}\) (\(A_{ij} \le 10^6\)) là số điểm đạt được của môn \(i\) nếu học trong \(j\) ngày. </li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Một số nguyên duy nhất là tổng điểm lớn nhất có thể đạt được.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>3 3
+4 8 9
+0 5 6
+3 6 7</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>11</code></pre>
+<p><em>Giải thích</em> : 11 = 8 + 3 (Môn 1 ôn 2 ngày , môn 3 ôn 1 ngày)</p>
+<p><em>Giới hạn</em></p>
+<p>-Sub 1: 30% số điểm có \(N , X \le 4\).<br/>
+-Sub 2: 30% số điểm tiếp theo có \(N \le 100 , X = 1\).
+-Sub 2: 40% số điểm còn lại có \(N  , X \le 100\).</p>
+<hr/>
+<p><em>Nguồn: 2019 HV-PT</em></p>
+</div>
+<hr/>
+</div>

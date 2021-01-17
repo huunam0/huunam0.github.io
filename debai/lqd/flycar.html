@@ -1,0 +1,27 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Ô tô bay</h2>
+</div><div class="content-description screen">
+<div><p>Hãng xe ô tô BT đang thử nghiệm môt loai ô tô bay. Mỗi khi găp một chướng ngai vật có độ cao \(h\), ô tô có thể đi qua chướng ngại vật này bằng cách "nâng" độ cao của mình cách mặt đất môt khoảng \(l ≥ h\). Tất nhiên "nâng" độ cao càng lớn thì nhiên liệu sử dụng càng nhiều. Do đó BT định nghĩa "độ lãng phí" khi nâng ô tô lên chiều cao \(l\) để đi qua chướng ngại vật chiều cao \(h\) là \(l-h\).</p>
+<p>Trong ngày thử nghiệm loại ô tô mới này, BT cho ô tô đi qua n chướng ngại vật theo thứ tự có chiều cao là \(h_1,h_2,…,h_n\). Tất nhiên khi đi qua chướng ngại vât nào ô tô phải duy trì chiều cao tối thiểu bằng chướng ngại vật đó. Do đang là phiên bản thử nghiệm nên trong suốt quá trình đia qua n chướng ngại vật ô tô chỉ có thể thay đổi độ cao không quá \(k\) lần.</p>
+<p><strong>Yêu cầu</strong>: Viết chương trình lên lịch thay đổi độ cao của ô tô sao cho tổng "độ lãng phí" khi đi qua n chướng ngại vật là nhỏ nhất? Ô tô có thể khởi hành với độ cao ban đầu bất kỳ và việc xuất phát đưa ô tô lên độ cao ban đầu này không được tính vào \(k\) lần thay đổi độ cao.</p>
+<p><strong>Input</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương \(n,k\) (\(1≤ k&lt;n≤400\))</li>
+<li>Dòng thứ hai chứa n số nguyên \(h_1,h_2,…,h_n\)  (\(0≤ h_i≤ 10^9\)) là độ cao của các chướng ngại vật lần lượt xuất hiện trên hành trình.</li>
+</ul>
+<p><strong>Output</strong></p>
+<ul>
+<li>In ra một số nguyên là "tổng độ lãng phí" nhỏ nhất khi thay đổi độ cao của ô tô một cách hợp lý.</li>
+</ul>
+<h4>Sample Input</h4>
+<pre><code>6 2
+7 9 8 2 3 2</code></pre>
+<h4>Sample Output</h4>
+<pre><code>3</code></pre>
+<p><strong><em>Giải thích</em></strong>: Ô tô xuất phát với độ cao 7. Sau khi vươt qua chướng ngại vât thứ nhất nó tăng độ cao lên 9, giữ nguyên độ cao này cho đến khi vượt qua chướng ngại vật thứ ba thì giảm xuống độ cao 3 bay cho đến khi vượt qua chướng ngại vật thứ sáu. Tổng "độ lãng phí" là:
+\((7-7)+(9-9)+(9-8)+(3-2)+(3-3)+(3-2)=3\)</p>
+<hr/>
+<p><em>Nguồn: NTB-HD</em></p>
+</div>
+<hr/>
+</div>

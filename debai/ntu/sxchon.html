@@ -1,0 +1,45 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    SXCHON - Sắp xếp chọn 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>       Để sắp xếp một mảng gồm n phần tử a<sub>1</sub>, a<sub>2</sub>,..., a<sub>n</sub> , giải thuật sắp xếp chọn (Selection Sort) thực hiện qua n-1 bước. Tại mỗi bước chọn ra phần tử nhỏ nhất trong các phần tử còn lại và hoán vị về đầu. Ví dụ minh họa:</p>
+<p>       Sắp xếp mảng 6 phần tử:  8  5  2  7  9  3</p>
+<p><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">        Sau bước 1: [2]  5  [8]  7  9  3</span></span></p>
+<p><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">        Sau bước 2: 2  [3]  8  7  9  [5]</span></span></p>
+<p><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">        Sau bước 3: 2  3  [5]  7  9  [8]</span></span></p>
+<p><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">        Sau bước 4: 2  3  5  [7]  9  8</span></span></p>
+<p><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">        Sau bước 5: 2  3  5  7  [8]  [9]</span></span></p>
+<p>      (Dấu [] đánh dấu hai phần tử <em>sau khi được hoán vị</em> của từng bước. Tại bước 4, số 7 là phần tử nhỏ nhất trong ba số 7, 9, 8, tuy nhiên 7 đã nằm ở đầu nên không hoán vị)</p>
+<p>      Cho mảng n phần tử bất kỳ, bạn hãy cho biết tình trạng của mảng sau mỗi bước thực hiện như trên.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên là số nguyên n (2 ≤ n ≤ 20) là số phần tử của mảng.</p>
+<p>- Dòng tiếp theo gồm n số nguyên a<sub>1</sub>, a<sub>2</sub>,..., a<sub>n</sub> (1 ≤ a<sub>i</sub> ≤ 100), mỗi số cách nhau một khoảng trắng.</p>
+<p><strong>Dữ liệu xuất: </strong>gồm n - 1 dòng</p>
+<p>- Tại dòng thứ i là n số cách nhau một khoảng trắng thể hiện tình trạng của mảng sau bước sắp xếp thứ i, có đánh dấu 2 số được hoán vị bằng cặp dấu [] (xem ví dụ).</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">6<br/>8 5 2 7 9 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">[2] 5 [8] 7 9 3<br/>2 [3] 8 7 9 [5]<br/>2 3 [5] 7 9 [8]<br/>2 3 5 [7] 9 8<br/>2 3 5 7 [8] [9]</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

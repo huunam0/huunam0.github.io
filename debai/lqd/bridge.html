@@ -1,0 +1,69 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">The Bridge on the River Kawaii</h2>
+</div><div class="content-description screen">
+<div><p>Ở vùng Midsommer xa xôi có một khu châu thổ xinh đẹp. Các con sông ở đây đều mang các dòng chảy acid nên người thường không thể bơi qua được. Ở vùng châu thổ này có rất nhiều hòn đảo cũng như các cây cầu nối một số cặp hòn đảo với nhau. Mỗi cây cầu được gán cho một <em> độ nguy hiểm</em> riêng, thể hiện mức độ rủi ro khi băng qua cây cầu đó.</p>
+<p>Thám tử Richard Hradecki thường xuyên phải di chuyển qua lại giữa các hòn đảo để xử lý các vụ án mà anh nhận được. Trong tất cả các lộ trình khả thi, anh ấy luôn chọn lộ trình <em>an toàn nhất</em> - tức là một lộ trình sao cho độ nguy hiểm lớn nhất trong các cây cầu là nhỏ nhất có thể.</p>
+<p>Richard luôn nhờ đến bạn trong việc tìm ra lộ trình an toàn nhất mỗi khi anh ấy cần di chuyển từ một hòn đảo bất kỳ đến một hòn đảo khác để phá án. Để đáp ứng yêu cầu của Richard, bạn phải liên tục xử lý ba loại sự kiện sau đây:</p>
+<ul>
+<li>Một cây cầu nối giữa hai hòn đảo vừa được xây dựng bởi các thành viên của một bộ lạc địa phương.</li>
+<li>Một cây cầu bị phá hủy.</li>
+<li>Richard nhờ bạn tìm ra lộ trình an toàn nhất giữa hai hòn đảo.</li>
+</ul>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu chứa hai số nguyên \(N\) và \(Q\) \(\left(2\leq N\leq 10^5, 1\leq Q\leq 10^5\right)\) thể hiện số lượng các hòn đảo (được đánh số \(0, 1, 2,..., N-1\)) và số lượng sự kiện.</p>
+<p>Mỗi dòng trong \(Q\) dòng tiếp theo thể hiện một sự kiện diễn ra ở vùng châu thổ, và được trình bày theo một trong các dạng:</p>
+<ul>
+<li>\(0\) \(X\) \(Y\) \(V\): một cây cầu nối giữa hòn đảo \(X\) và hòn đảo \(Y\) vừa được xây dựng với độ nguy hiểm \(V\) \(\left(0\leq V &lt; 10\right)\). </li>
+<li>\(1\) \(X\) \(Y\): cây cầu nối giữa hòn đảo \(X\) và hòn đảo \(Y\) vừa bị phá hủy.</li>
+<li>\(2\) \(X\) \(Y\): Richard nhờ bạn tìm ra lộ trình an toàn nhất từ hòn đảo \(X\) đến hòn đảo \(Y\).</li>
+</ul>
+<p>Trong tất cả các sự kiện, \(X\) và \(Y\) luôn thể hiện một cặp đảo hợp lệ \(\left(0\leq X, Y &lt; N\right.\) và \(\left.X\neq Y\right)\). Dữ liệu đảm bảo có tối đa một cây cầu nối hai hòn đảo bất kỳ và bất kỳ cây cầu nào cũng đều tồn tại trong thời điểm nó bị phá hủy.</p>
+<hr/>
+<h4>Output</h4>
+<p>Với mỗi sự kiện loại \(2\), in ra một số nguyên (trên một dòng riêng biệt) thể hiện độ nguy hiểm cao nhất trong lộ trình tìm được. Nếu không tồn tại lộ trình nào từ \(X\) đến \(Y\), in ra \(-1\).</p>
+<h4>Ví dụ</h4>
+<p><strong> Input: </strong></p>
+<pre><code>6 15
+0 1 2 1
+2 1 4
+2 1 5
+0 2 3 2
+2 1 4
+2 1 5
+0 3 4 3
+2 1 4
+2 1 5
+0 4 5 4
+2 1 4
+2 1 5
+1 4 5
+2 1 4
+2 1 5</code></pre>
+<p><strong> Output: </strong></p>
+<pre><code>-1
+-1
+-1
+-1
+3
+-1
+3
+4
+3
+-1</code></pre>
+<p><strong> Input: </strong></p>
+<pre><code>6 6
+0 2 0 4
+0 3 4 3
+0 0 4 1
+0 2 5 4
+2 3 2
+2 4 2</code></pre>
+<p><strong> Output: </strong></p>
+<pre><code>4
+4</code></pre>
+<hr/>
+<p><em>Nguồn bài: CERC 2018</em></p>
+</div>
+<hr/>
+</div>

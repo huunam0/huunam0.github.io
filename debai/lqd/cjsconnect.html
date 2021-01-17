@@ -1,0 +1,45 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Los Santos Vagos</h2>
+</div><div class="content-description screen">
+<div><p>Nhóm của CJ - tức là nhóm Grove Street Families và nhóm Los Santos Vagos trước giờ là kẻ thù của nhau, và bây giờ vẫn vậy. Và giờ nhóm Los Santos Vagos sẽ cố để chiếm lấy vùng của Grove Street Families mà trước đó CJ đã tịch thu từ Ballas. CJ thì đang tìm khu vực trọng điểm trong vùng để tập trung lực lượng chống trả nhóm Los Santos Vogas.</p>
+<p>Trên bản đồ vùng của Grove Street Families có \(N\) điểm căn cứ, các căn cứ được đánh số theo thứ tự từ \(1\) tới \(N\), và \(M\) tuyến đường một chiều nối trực tiếp giữa hai căn cứ. Khu vực trọng điểm là khu có nhiều căn cứ nhất, sao cho bất kỳ hai căn cứ nào cũng có thể đi đến để yểm trợ cho nhau. Định nghĩa căn cứ \(u\) có thể đi tới căn cứ \(v\) là tồn tại một đường đi từ \(u\) tới \(v\), tức là tồn tại dãy các căn cứ \(P=⟨u=p_0,p_1,...,p_k=v⟩\) sao cho \(∀i:1 \leq i \leq k\) thì tồn tại tuyến đường trực tiếp từ căn tứ \(p_{i-1}\) tới căn cứ \(p_i\).</p>
+<p><strong>Yêu cầu</strong>: Hãy tìm cho CJ khu vực trọng điểm trên. Nếu có nhiều khu vực trọng điểm như vậy, chỉ ra một khu vực bất kì.</p>
+<p><strong>Dữ liệu vào</strong>: Gồm \(M + 1\) dòng:</p>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương \(N\), \(M\) thể hiện số căn cứ và số con đường một chiều.</li>
+<li>\(M\) dòng tiếp theo, dòng thứ \(i\) chứa hai số \(u_i\) và \(v_i\) thể hiện có đường một chiều nối từ căn cứ \(u_i\) tới căn cứ \(v_i\).</li>
+</ul>
+<p><strong>Kết quả</strong>: Ghi ra hai dòng:</p>
+<ul>
+<li>Dòng đầu tiên ghi số \(K\) là số căn cứ lớn nhất trong khu vực trọng điểm tìm được</li>
+<li>Dòng tiếp theo là ghi ra số hiệu của \(K\) căn cứ trong khu vực trọng điểm theo <strong>thứ tự tăng dần</strong>.</li>
+</ul>
+<p><strong>Ví dụ</strong></p>
+<p><strong>Input</strong>:</p>
+<pre><code>11 15
+1 2
+1 8
+2 3
+3 4
+4 2
+4 5
+5 6
+6 7
+7 5
+8 9
+9 4
+9 10
+10 8
+10 11
+11 8</code></pre>
+<p>Output:</p>
+<pre><code>4
+8 9 10 11</code></pre>
+<p>Giới hạn:</p>
+<ul>
+<li>\(30\)% số test đầu tiên có \(N \leq 10^3, M \leq 2.10^3\)</li>
+<li>\(70\)% số test còn lại có \(N \leq 10^5, M \leq 2.10^5\)</li>
+</ul>
+</div>
+<hr/>
+</div>

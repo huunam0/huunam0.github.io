@@ -1,0 +1,42 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    STAIN - Xóa vết bẩn 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>      Nền nhà của bạn bị dính N vết bẩn. Giả sử nền nhà là mặt phẳng thì tọa độ của N vết bẩn lần lượt là (x<sub>1</sub>, y<sub>1</sub>), (x<sub>2</sub>, y<sub>2</sub>),..., (x<sub>N</sub>, y<sub>N</sub>). Bạn quyết định mua một tấm lụa để che đi các vết bẩn này, tấm lụa có hình chữ nhật và có cạnh đặt song song với trục. Gọi X là diện tích nhỏ nhất của tấm lụa mà che phủ được tất cả N vết bẩn trên. Vết bẩn nằm trên cạnh hình chữ nhật xem như cũng được che.</p>
+<p>       Tuy nhiên, lụa có giá rất cao, nên bạn quyết định là sẽ mua một ít thuốc tẩy, đủ để xóa được K vết bẩn, số vết bẩn còn lại sẽ được phủ bởi tấm lụa có kích thước nhỏ hơn X. Hãy đếm số cách xóa đi K trong N vết bẩn, để số vết bẩn còn lại có thể được phủ bởi miếng lụa có diện tích nhỏ hơn X.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu gồm 2 số nguyên N, K (1 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤</span> N <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ </span>1000, 1 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤</span> k <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ </span>N)</p>
+<p>- Trong N dòng tiếp theo, mỗi dòng có 2 số nguyên x, y thể hiện tọa độ của các vết bẩn. (|x|,|y| <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ </span>10<sup>5</sup>)</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Số nguyên duy nhất là kết quả của bài toán (được in ra theo modulo 10<sup>9</sup>+7 = 1.000.000.007).</p>
+<p>Nguồn (www.hackerrank.com)</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 2<br/>0 1<br/>3 3<br/>2 0<br/>0 3<br/>2 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">8</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Trong ví dụ trên có hình như sau:</p>
+<p style="text-align:center"><img alt="" src="images/STAIN.png" style="height:168px; width:191px"/></p>
+<p>Có 8 cách chọn 2 điểm để tẩy: (1 - 4), (2 - 1), (2 - 3), (2 - 4), (2 - 5), (3 - 1), (3 - 4), (3 - 5)</p>
+</div>
+</div></body></html>

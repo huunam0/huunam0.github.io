@@ -1,0 +1,50 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    DISC0 - Đĩa nhạc (dễ) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>      Nam có một bộ sưu tập n đĩa nhạc. Cậu đánh số hiệu các đĩa theo thứ tự từ 1 đến n. Ban đầu các đĩa được xếp chồng lên nhau theo đúng thứ tự từ 1 đến n, nghĩa là đĩa có số hiệu là 1 ở trên cùng, tiếp theo là đĩa 2,..., đĩa có số hiệu là n ở dưới cùng. Khi muốn nghe một đĩa nhạc nào đó, Nam sẽ rút đĩa đó ra, nghe xong thì để đĩa lại vào vị trí trên cùng. Hỏi sau m lần rút đĩa nghe nhạc, thứ tự chồng đĩa của Nam sẽ như thế nào?</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng thứ nhất gồm hai số nguyên n, m cách nhau một khoảng trắng (1 ≤ n, m ≤ <span style="color:#FF0000"><strong>100</strong></span>). n là số đĩa nhạc và m là số lần rút đĩa nghe nhạc.</p>
+<p>- Dòng tiếp theo gồm m số nguyên a<sub>1</sub>, a<sub>2</sub>,..., a<sub>m</sub> mỗi số cách nhau một khoảng trắng (1 ≤ a<sub>i</sub> ≤ n). a<sub>i</sub> là số hiệu của đĩa được rút ra trong lần nghe nhạc thứ i.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là n số nguyên, mỗi số cách nhau một khoảng trắng, thể hiện số hiệu các đĩa nhạc theo thứ tự từ trên xuống dưới sau m lần nghe nhạc.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 2<br/>5 4<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">4 5 1 2 3</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 4<br/>2 3 4 5 </div>
+<div class="sample-type">output</div>
+<div class="sample-value">5 4 3 2 1</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 3<br/>3 3 2 </div>
+<div class="sample-type">output</div>
+<div class="sample-value">2 3 1 4 5</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Trong test 1: ban đầu thứ tự các đĩa là 1 2 3 4 5. Sau khi nghe đĩa nhạc số 5, thứ tự là: 5 1 2 3 4. Sau khi nghe đĩa nhạc số 4, thứ tự là: 4 5 1 2 3</p>
+</div>
+</div></body></html>

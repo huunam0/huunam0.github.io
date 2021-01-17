@@ -1,0 +1,43 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">TRAVEL2</h2>
+</div><div class="content-description screen">
+<div><p>Tại một thời điểm nào đó trong tương lại, lúc này du lịch vũ trụ đang rất phát triển. Có \(N\) hành tinh đang được khai thác để du lịch. Hai hành tinh \(u\) và \(v\) có thể đi lại trực tiếp tới nhau bằng \(N - 1\) đường đi hai chiều đặc biệt, chi phí để sử dụng các đường đi này là 1 lqdcoin (đơn vị tiền tệ tại thời điểm này). Các đường đi được xây dựng sao cho luôn đảm bảo tồn tại cách đi giữa hai hành tinh bất kỳ.</p>
+<p>Ngoài cách xử dụng các đường đi đặc biệt để đi lại, người ta đã tạo ra một cách đi khác để có thêm lựa chọn cho khách du lịch, đó là sử dụng những cách cổng không gian, những cách cổng này sẽ giúp cho một người đang đứng tại hành tinh \(u\) có thể dịch chuyển ngay lập tức tới một hành tinh bất kỳ. Tuy nhiên vì chi phí để chế tạo những cách cổng này rất cao nên nhà đầu tư quyết định chỉ cho xây dựng cách cổng ở một vài hành tinh. Ngoài ra nếu muốn xử dụng cách cổng để di chuyển, khách du lịch phải trả thêm tiền, chi phí cho việc dịch chuyển giữa các cánh cổng khác nhau có thể khác nhau.</p>
+<p>Bạn là một sinh viên ngành du lịch mới ra trường và đang nộp đơn ứng tuyển một vị trí làm hướng dẫn viên du lịch. Để vào được công ty bạn phải trải qua một bài thử thách. Bài thử thách như sau: có \(Q\) thời điểm, tại một thời điểm bất kỳ có thể diễn ra một trong cách sự kiển sau:</p>
+<ul>
+<li>Sự kiện 1: một cách cổng không gian được xây dựng ở thành phố thứ \(v\) và để xử dụng cách cổng này bạn phải tốn \(c\) lqdcoin</li>
+<li>Sự kiện 2: Bạn đang hiện tại đang đường tại hành tinh \(v\) và bạn cần di chuyển về hình tinh \(1\), bạn hãy tìm cách đi để tốn ít lqdcoin nhất.</li>
+</ul>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li>Dòng đầu tiên gồm hai số nguyên dương \(N\) và \(Q\) lần lượt là số hành tinh, và \(Q\) thời điểm trong thử thách (\(N, Q \leq 10^{5}\))</li>
+<li>\(N – 1\) dòng tiếp theo, mỗi dòng gồm hai số nguyên dương \(u\) và \(v\) thể hiện các một đường đi đặc biệt giữa hai hành tinh \(u\) và \(v\) (\(1 \leq u, v \leq N\), \(u \neq v\))</li>
+<li>\(Q\) dòng tiếp theo, gồm một vài số nguyên đương, số đầu tiên là t (\(1 \leq t \leq 2\)). Nếu \(t = 1\), hai số tiếp thao sẽ là \(v\) và \(c\) (\(1 \leq v \leq N\), \(1 \leq c \leq 10^{9}\)). Nếu \(t = 2\), số tiếp theo sẽ là \(v\) (\(1 \leq v \leq N\)).</li>
+</ul>
+<p>Dữ liệu đảm bảo: luôn tồn tại một đường đi đặc biệt giữa hành tinh thứ \(i\) đến hành tinh thứ \(i + 1\).</p>
+<p><strong>Dữ liệu ra:</strong></p>
+<ul>
+<li>Gồm một vài dòng là các cách đi tốn ít lqdcoin nhất cho từng sự kiện 2, mỗi câu trả lợi in trên một dòng.</li>
+</ul>
+<p><strong>Ví dụ</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>6 6    
+1 2    
+2 3    
+3 4    
+4 5    
+5 6    
+2 4    
+1 5 3    
+2 4    
+1 3 1    
+2 4    
+2 6</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>3
+3
+2
+4</code></pre>
+</div>
+<hr/>
+</div>

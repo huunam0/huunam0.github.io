@@ -1,0 +1,42 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    TITO3 - Lại tính tổng 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">Phú hiện đang là một thành viên trong đội tuyển học sinh giỏi của trường và cậu ta đang được ôn tập để chuẩn bị cho kì thi học sinh giỏi sắp tới. Hôm nay là sinh nhật của mình nên Phú quyết định sẽ nghỉ xả hơi một ngày và mời Hằng - cô bạn gái của Phú cùng đi xem Fast and Furious 7 vừa được công chiếu. Tuy nhiên vì thời gian thi đã cận kề nên thầy giáo của Phú không muốn cậu ta nghỉ ngày nào, vì vậy ông ấy vẫn giao cho Phú một bài tập về nhà và yêu cầu cậu phải nộp bài vào ngày mai.</p>
+<p style="text-align:justify">Bài toán được mô tả như sau: Cho mảng A gồm N phần tử A<sub>0</sub>, A<sub>1</sub>, ... A<sub>N-1</sub> (0 ≤ A<sub>i</sub> &lt; 10<sup>9</sup>+7). Tổng cấp 1 (Sum) và tổng cấp 2 (siêu tổng - SSum) của mảng A được tính theo công thức sau:</p>
+<p style="text-align:center"><img alt="" src="images/ARRCOST.JPG" style="height:152px; width:264px"/></p>
+<p style="text-align:justify">Tuy nhiên, để tăng độ khó của đề bài, thầy giáo của Phú quyết định giấu mảng A đi và chỉ cho Phú một mảng B gồm N+1 phần tử và một con số X. Mảng B có dang như sau: {X, (A<sub>0</sub>*X) % m, (A<sub>0</sub>*A<sub>1</sub>*X) % m, ... , (A<sub>0</sub>*A<sub>1</sub>*..A<sub>N-1</sub>) % m}. Trong đó m = 10<sup>9</sup>+7 và % là phép chia lấy dư (mod).</p>
+<p style="text-align:justify">Thầy giáo yêu cầu Phú phải tìm được giá trị siêu tổng của mảng A từ mảng B và giá trị X cho trước. Giá trị này có thể rất lớn nên chỉ cần xuất ra phần dư của nó khi chia cho 10<sup>9</sup>+7. Vì đã lâu rồi Phú không được đi chơi với bạn của mình nên cậu ta muốn ở bên Hằng càng lâu càng tốt (và tất nhiên sẽ không có thời gian để làm bài tập mà thầy giáo giao) nên các bạn hãy giúp Phú giải quyết bài toán này nhé.</p>
+<p style="text-align:justify"><strong>Dữ liệu nhập:</strong> Dòng đầu tiên chứa một số nguyên <strong>N</strong> - số lượng phần tử của mảng B (2 ≤ N ≤ 10<sup>5</sup>). Dòng thứ hai chứa N số nguyên là giá trị các phần tử của mảng B (0 ≤ B<sub>i</sub> &lt; 10<sup>9</sup>+7).</p>
+<p style="text-align:justify"><strong>Dữ liệu xuất:</strong> Một con số duy nhất là giá trị siêu tổng của mảng A.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>3 9 36 180</div>
+<div class="sample-type">output</div>
+<div class="sample-value">496</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Mảng B gồm 4 phần tử: 3, 9, 36, 180</p>
+<p>Ta có mảng A gồm 3 phần tử: {3, 4, 5}.</p>
+<p>Sum(A) = 6 +10 + 15 = 31</p>
+<p>SSum(A) = 496</p>
+</div>
+</div></body></html>

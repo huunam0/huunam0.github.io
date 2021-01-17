@@ -1,0 +1,265 @@
+<h1 class="ui header">
+        
+          #1360. TREE - Đường kính cây
+        
+      </h1><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden; "><p><strong></strong></p><center><strong>ĐỀ KIỂM TRA ĐỘI TUYỂN HSG LẦN 2 Day 2- Hải Phòng 2020</strong></center><p></p>
+<p>Cho đồ thị vô hướng liên thông <span class="mjpage"><svg aria-labelledby="MathJax-SVG-2-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 888.5 936.9" width="2.064ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-2-Title">N</title>
+<defs aria-hidden="true">
+<path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="E2-MJMATHI-4E" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E2-MJMATHI-4E" y="0"></use>
+</g>
+</svg></span> đỉnh, <span class="mjpage"><svg aria-labelledby="MathJax-SVG-3-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 2056.2 936.9" width="4.776ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-3-Title">N – 1</title>
+<defs aria-hidden="true">
+<path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="E3-MJMATHI-4E" stroke-width="1"></path>
+<path d="M0 248V285H499V248H0Z" id="E3-MJMAIN-2013" stroke-width="1"></path>
+<path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="E3-MJMAIN-31" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E3-MJMATHI-4E" y="0"></use>
+<use x="888" xlink:href="#E3-MJMAIN-2013" y="0"></use>
+<use x="1555" xlink:href="#E3-MJMAIN-31" y="0"></use>
+</g>
+</svg></span> cạnh. Các đỉnh được đánh số từ <span class="mjpage"><svg aria-labelledby="MathJax-SVG-4-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-4-Title">1</title>
+<defs aria-hidden="true">
+<path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="E4-MJMAIN-31" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E4-MJMAIN-31" y="0"></use>
+</g>
+</svg></span> đến <span class="mjpage"><svg aria-labelledby="MathJax-SVG-5-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 888.5 936.9" width="2.064ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-5-Title">N</title>
+<defs aria-hidden="true">
+<path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="E5-MJMATHI-4E" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E5-MJMATHI-4E" y="0"></use>
+</g>
+</svg></span>. Độ dài đường đi từ đỉnh <span class="mjpage"><svg aria-labelledby="MathJax-SVG-6-Title" focusable="false" height="1.676ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -576.1 529.5 721.6" width="1.23ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-6-Title">a</title>
+<defs aria-hidden="true">
+<path d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z" id="E6-MJMATHI-61" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E6-MJMATHI-61" y="0"></use>
+</g>
+</svg></span> đến đỉnh <span class="mjpage"><svg aria-labelledby="MathJax-SVG-7-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 429.5 936.9" width="0.998ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-7-Title">b</title>
+<defs aria-hidden="true">
+<path d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z" id="E7-MJMATHI-62" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E7-MJMATHI-62" y="0"></use>
+</g>
+</svg></span> là số lượng đỉnh mà đường đi đi qua.</p>
+<p><strong>Ví dụ:</strong> Cho cây như hình vẽ:</p>
+<center><img src="../images/problems/1360/TREE.svg" width="320px"/></center>
+<p>Trong ví dụ trên, đường đi dài nhất trên cây là đường đi từ đỉnh <span class="mjpage"><svg aria-labelledby="MathJax-SVG-8-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-8-Title">1</title>
+<defs aria-hidden="true">
+<path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="E8-MJMAIN-31" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E8-MJMAIN-31" y="0"></use>
+</g>
+</svg></span> đến đỉnh <span class="mjpage"><svg aria-labelledby="MathJax-SVG-9-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-9-Title">5</title>
+<defs aria-hidden="true">
+<path d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" id="E9-MJMAIN-35" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E9-MJMAIN-35" y="0"></use>
+</g>
+</svg></span> (độ dài bằng <span class="mjpage"><svg aria-labelledby="MathJax-SVG-10-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-10-Title">4</title>
+<defs aria-hidden="true">
+<path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="E10-MJMAIN-34" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E10-MJMAIN-34" y="0"></use>
+</g>
+</svg></span>) hoặc là đường đi từ đỉnh <span class="mjpage"><svg aria-labelledby="MathJax-SVG-11-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-11-Title">2</title>
+<defs aria-hidden="true">
+<path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="E11-MJMAIN-32" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E11-MJMAIN-32" y="0"></use>
+</g>
+</svg></span> đến đỉnh <span class="mjpage"><svg aria-labelledby="MathJax-SVG-12-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-12-Title">5</title>
+<defs aria-hidden="true">
+<path d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" id="E12-MJMAIN-35" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E12-MJMAIN-35" y="0"></use>
+</g>
+</svg></span> cũng có độ dài bằng <span class="mjpage"><svg aria-labelledby="MathJax-SVG-13-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-13-Title">4</title>
+<defs aria-hidden="true">
+<path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="E13-MJMAIN-34" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E13-MJMAIN-34" y="0"></use>
+</g>
+</svg></span>. Như vậy có tất cả <span class="mjpage"><svg aria-labelledby="MathJax-SVG-14-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-14-Title">2</title>
+<defs aria-hidden="true">
+<path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="E14-MJMAIN-32" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E14-MJMAIN-32" y="0"></use>
+</g>
+</svg></span> con đường đều có độ dài dài nhất.</p>
+<p><strong>Yêu cầu:</strong> Hãy xác định độ dài đường đi dài nhất trên cây và số lượng con đường dài nhất này?</p>
+<h4>Dữ liệu vào:</h4>
+<ul>
+<li>Dòng đầu ghi số nguyên <span class="mjpage"><svg aria-labelledby="MathJax-SVG-15-Title" focusable="false" height="3.176ex" role="img" style="vertical-align: -0.838ex;" viewbox="0 -1006.6 9153 1367.4" width="21.259ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-15-Title">N\ (3≤N≤4×10^5)</title>
+<defs aria-hidden="true">
+<path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="E15-MJMATHI-4E" stroke-width="1"></path>
+<path d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z" id="E15-MJMAIN-28" stroke-width="1"></path>
+<path d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z" id="E15-MJMAIN-33" stroke-width="1"></path>
+<path d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z" id="E15-MJMAIN-2264" stroke-width="1"></path>
+<path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="E15-MJMAIN-34" stroke-width="1"></path>
+<path d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z" id="E15-MJMAIN-D7" stroke-width="1"></path>
+<path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="E15-MJMAIN-31" stroke-width="1"></path>
+<path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="E15-MJMAIN-30" stroke-width="1"></path>
+<path d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" id="E15-MJMAIN-35" stroke-width="1"></path>
+<path d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z" id="E15-MJMAIN-29" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E15-MJMATHI-4E" y="0"></use>
+<use x="1138" xlink:href="#E15-MJMAIN-28" y="0"></use>
+<use x="1528" xlink:href="#E15-MJMAIN-33" y="0"></use>
+<use x="2306" xlink:href="#E15-MJMAIN-2264" y="0"></use>
+<use x="3362" xlink:href="#E15-MJMATHI-4E" y="0"></use>
+<use x="4528" xlink:href="#E15-MJMAIN-2264" y="0"></use>
+<use x="5585" xlink:href="#E15-MJMAIN-34" y="0"></use>
+<use x="6307" xlink:href="#E15-MJMAIN-D7" y="0"></use>
+<g transform="translate(7308,0)">
+<use xlink:href="#E15-MJMAIN-31"></use>
+<use x="500" xlink:href="#E15-MJMAIN-30" y="0"></use>
+<use transform="scale(0.707)" x="1415" xlink:href="#E15-MJMAIN-35" y="557"></use>
+</g>
+<use x="8763" xlink:href="#E15-MJMAIN-29" y="0"></use>
+</g>
+</svg></span> là số lượng đỉnh của cây.</li>
+<li><span class="mjpage"><svg aria-labelledby="MathJax-SVG-16-Title" focusable="false" height="2.343ex" role="img" style="vertical-align: -0.505ex;" viewbox="0 -791.3 2611.9 1008.6" width="6.066ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-16-Title">N-1</title>
+<defs aria-hidden="true">
+<path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="E16-MJMATHI-4E" stroke-width="1"></path>
+<path d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z" id="E16-MJMAIN-2212" stroke-width="1"></path>
+<path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="E16-MJMAIN-31" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E16-MJMATHI-4E" y="0"></use>
+<use x="1110" xlink:href="#E16-MJMAIN-2212" y="0"></use>
+<use x="2111" xlink:href="#E16-MJMAIN-31" y="0"></use>
+</g>
+</svg></span> dòng tiếp theo, mỗi dòng ghi hai số nguyên <span class="mjpage"><svg aria-labelledby="MathJax-SVG-17-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 345.5 936.9" width="0.802ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-17-Title">i</title>
+<defs aria-hidden="true">
+<path d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z" id="E17-MJMATHI-69" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E17-MJMATHI-69" y="0"></use>
+</g>
+</svg></span> và <span class="mjpage"><svg aria-labelledby="MathJax-SVG-18-Title" focusable="false" height="2.509ex" role="img" style="vertical-align: -0.671ex; margin-left: -0.027ex;" viewbox="-11.5 -791.3 424 1080.4" width="0.985ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-18-Title">j</title>
+<defs aria-hidden="true">
+<path d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z" id="E18-MJMATHI-6A" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E18-MJMATHI-6A" y="0"></use>
+</g>
+</svg></span> tương ứng là có cạnh nối đỉnh <span class="mjpage"><svg aria-labelledby="MathJax-SVG-19-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 345.5 936.9" width="0.802ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-19-Title">i</title>
+<defs aria-hidden="true">
+<path d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z" id="E19-MJMATHI-69" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E19-MJMATHI-69" y="0"></use>
+</g>
+</svg></span> và đỉnh <span class="mjpage"><svg aria-labelledby="MathJax-SVG-20-Title" focusable="false" height="2.843ex" role="img" style="vertical-align: -0.838ex; margin-left: -0.027ex;" viewbox="-11.5 -863.1 6713.3 1223.9" width="15.592ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-20-Title">j\ (1≤i,j≤N)</title>
+<defs aria-hidden="true">
+<path d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z" id="E20-MJMATHI-6A" stroke-width="1"></path>
+<path d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z" id="E20-MJMAIN-28" stroke-width="1"></path>
+<path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="E20-MJMAIN-31" stroke-width="1"></path>
+<path d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z" id="E20-MJMAIN-2264" stroke-width="1"></path>
+<path d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z" id="E20-MJMATHI-69" stroke-width="1"></path>
+<path d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z" id="E20-MJMAIN-2C" stroke-width="1"></path>
+<path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="E20-MJMATHI-4E" stroke-width="1"></path>
+<path d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z" id="E20-MJMAIN-29" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E20-MJMATHI-6A" y="0"></use>
+<use x="662" xlink:href="#E20-MJMAIN-28" y="0"></use>
+<use x="1052" xlink:href="#E20-MJMAIN-31" y="0"></use>
+<use x="1830" xlink:href="#E20-MJMAIN-2264" y="0"></use>
+<use x="2886" xlink:href="#E20-MJMATHI-69" y="0"></use>
+<use x="3232" xlink:href="#E20-MJMAIN-2C" y="0"></use>
+<use x="3677" xlink:href="#E20-MJMATHI-6A" y="0"></use>
+<use x="4367" xlink:href="#E20-MJMAIN-2264" y="0"></use>
+<use x="5423" xlink:href="#E20-MJMATHI-4E" y="0"></use>
+<use x="6312" xlink:href="#E20-MJMAIN-29" y="0"></use>
+</g>
+</svg></span>.</li>
+</ul>
+<h4>Dữ liệu ra:</h4>
+<ul>
+<li>Đưa ra hai số nguyên tương ứng là độ dài đường đi dài nhất trên cây và số lượng đường đi dài nhất trên cây.</li>
+</ul>
+<h4>Ví dụ:</h4>
+<h5>Dữ liệu vào:</h5>
+<div class="ui existing segment"><pre style="margin-top: 0; margin-bottom: 0; "><code>5
+1 3
+2 3
+3 4
+4 5
+</code></pre></div>
+<h5>Dữ liệu ra:</h5>
+<div class="ui existing segment"><pre style="margin-top: 0; margin-bottom: 0; "><code>4 2
+</code></pre></div>
+<p><strong>Chú ý:</strong> Bài này chấm theo từng ý, trình chấm sẽ <strong>đọc hai số nguyên tương ứng với hai ý</strong>, mỗi ý đúng được $50% số điểm một test. (Bạn chỉ trả lời một ý cũng phải ghi ra hai số nguyên).</p>
+<h4>Giới hạn:</h4>
+<ul>
+<li><span class="mjpage"><svg aria-labelledby="MathJax-SVG-21-Title" focusable="false" height="2.343ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -863.1 1834.5 1008.6" width="4.261ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-21-Title">40\%</title>
+<defs aria-hidden="true">
+<path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="E21-MJMAIN-34" stroke-width="1"></path>
+<path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="E21-MJMAIN-30" stroke-width="1"></path>
+<path d="M465 605Q428 605 394 614T340 632T319 641Q332 608 332 548Q332 458 293 403T202 347Q145 347 101 402T56 548Q56 637 101 693T202 750Q241 750 272 719Q359 642 464 642Q580 642 650 732Q662 748 668 749Q670 750 673 750Q682 750 688 743T693 726Q178 -47 170 -52Q166 -56 160 -56Q147 -56 142 -45Q137 -36 142 -27Q143 -24 363 304Q469 462 525 546T581 630Q528 605 465 605ZM207 385Q235 385 263 427T292 548Q292 617 267 664T200 712Q193 712 186 709T167 698T147 668T134 615Q132 595 132 548V527Q132 436 165 403Q183 385 203 385H207ZM500 146Q500 234 544 290T647 347Q699 347 737 292T776 146T737 0T646 -56Q590 -56 545 0T500 146ZM651 -18Q679 -18 707 24T736 146Q736 215 711 262T644 309Q637 309 630 306T611 295T591 265T578 212Q577 200 577 146V124Q577 -18 647 -18H651Z" id="E21-MJMAIN-25" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use xlink:href="#E21-MJMAIN-34"></use>
+<use x="500" xlink:href="#E21-MJMAIN-30" y="0"></use>
+<use x="1001" xlink:href="#E21-MJMAIN-25" y="0"></use>
+</g>
+</svg></span> số điểm có <span class="mjpage"><svg aria-labelledby="MathJax-SVG-22-Title" focusable="false" height="2.343ex" role="img" style="vertical-align: -0.505ex;" viewbox="0 -791.3 4224.6 1008.6" width="9.812ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-22-Title">N≤5000</title>
+<defs aria-hidden="true">
+<path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="E22-MJMATHI-4E" stroke-width="1"></path>
+<path d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z" id="E22-MJMAIN-2264" stroke-width="1"></path>
+<path d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" id="E22-MJMAIN-35" stroke-width="1"></path>
+<path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="E22-MJMAIN-30" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E22-MJMATHI-4E" y="0"></use>
+<use x="1166" xlink:href="#E22-MJMAIN-2264" y="0"></use>
+<g transform="translate(2222,0)">
+<use xlink:href="#E22-MJMAIN-35"></use>
+<use x="500" xlink:href="#E22-MJMAIN-30" y="0"></use>
+<use x="1001" xlink:href="#E22-MJMAIN-30" y="0"></use>
+<use x="1501" xlink:href="#E22-MJMAIN-30" y="0"></use>
+</g>
+</g>
+</svg></span>.</li>
+</ul>
+</div>
+</div>

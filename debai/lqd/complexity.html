@@ -1,0 +1,39 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Phép tính và máy tính</h2>
+</div><div class="content-description screen">
+<div><p>Sau khi sửa máy tính xong, giờ học lại được tiếp tục. Và thế là các học sinh phải thực hiện những phép tính trên máy tính của mình. Thế nhưng, thật thiếu công bằng khi mỗi máy tính có khả năng tính toán khác nhau.</p>
+<p><strong>Máy tính có số hiệu \(a\) có thể thực hiện \(1 + 2 + ... + (a - 1) + a\) phép tính/giây.</strong></p>
+<p>Có thể coi phòng học có vô hạn máy tính.</p>
+<p>Yêu cầu : Với mỗi truy vấn \([L, R]\), gọi \(f(a)\) là tổng số phép tính/giây của máy có số hiệu \(a\) trong \(K\) giây. Hãy tính \(f(L) + f(L+1) + ... + f(R)\).</p>
+<p><strong>INPUT : </strong></p>
+<ul>
+<li>Dòng đầu tiên là \(T\) tương ứng với số truy vấn cần hỏi \((T \leq 5*10^5)\)</li>
+<li>\(T\) dòng tiếp theo, mỗi dòng là \(3\) số nguyên dương \(L, R, K\) tương ứng với truy vấn và thời gian cần hỏi và (\(L, R, K \leq 10^{18}, L \leq R)\)</li>
+</ul>
+<p><strong>OUTPUT :</strong></p>
+<ul>
+<li>In ra \(T\) dòng tương ứng với câu trả lời cho \(T\) truy vấn (Vì số có thể rất lớn nên hãy in kết quả <strong>modulo</strong> \(10^9+7\))</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>3
+1 2 23
+2 4 2
+1 4 3</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>92
+38
+60</code></pre>
+<hr/>
+<p>Subtask</p>
+<ul>
+<li>\(K &lt;= 10^{18}\)</li>
+<li>\(20\)% test : \(T = 1; \ L, R \leq 10^5\)</li>
+<li>\(20\)% test : \(T = 1; \ L,R \leq 10^{18}, R - L \leq 10^5\)</li>
+<li>\(20\)% test : \(T \leq 5*10^5; \ L, R \leq 10^{18}, R - L \leq 10\)</li>
+<li>\(20\)% test : \(T = 1; \ L,R \leq 10^{18}\)</li>
+<li>\(20\)% test : \(T \leq 5*10^5; \ L, R \leq 10^{18}\)</li>
+</ul>
+<hr/>
+</div>
+<hr/>
+</div>

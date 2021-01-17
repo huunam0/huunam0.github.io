@@ -1,0 +1,48 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Thử nghiệm robot</h2>
+</div><div class="content-description screen">
+<div><p>Công ty Long Vân đang sản xuất robot vận chuyển hàng hóa tự động. Để làm việc đó, công
+ty tiến hành huấn luyện các robot trên một địa hình được chia thành một lưới các ô vuông
+gồm \(𝑚\) dòng (đánh số từ 1 đến \(𝑚\) theo chiều từ trên xuống dưới) và \(𝑛\) cột (đánh số từ 1 đến \(n\)
+theo chiều từ trái sang phải). Ô giao giữa dòng \(i\), cột \(j\) được gọi là ô (\(i, j\)), có độ cao là
+\(ℎ_{𝑖𝑗}\ (|ℎ_{𝑖𝑗}| ≤ 10^9)\) và có điểm thưởng là \(𝑠_{𝑖𝑗}\ (|𝑠_{𝑖𝑗}| ≤ 10^9)\).</p>
+<p>Một thử nghiệm cho robot như sau: Đặt robot ở một ô nào đó, điểm thưởng của robot bằng
+điểm thưởng tại ô được đặt, mỗi bước robot được phép dừng lại hoặc di chuyển sang ô chung
+cạnh có độ cao cao hơn độ cao của ô hiện tại. Khi robot di chuyển sang ô nào đó, điểm thưởng
+của robot được cộng một lượng là điểm thưởng tại ô đó.</p>
+<p><strong>Yêu cầu</strong>: Cho địa hình thử nghiệm robot, hãy tìm vị trí đặt robot và cách di chuyển của robot để
+khi robot dừng lại, tổng điểm thưởng của robot là lớn nhất.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng đầu chứa hai số nguyên dương \(𝑚, 𝑛\);</li>
+<li>Tiếp theo là \(𝑚\) dòng mô tả độ cao của các ô trên địa hình, dòng thứ \(𝑖\) chứa \(𝑛\) số \(ℎ_{𝑖1}, ℎ_{𝑖2}, … , ℎ_{𝑖𝑛}\);</li>
+<li>Tiếp theo là \(𝑚\) dòng mô tả điểm thưởng của các ô trên địa hình, dòng thứ \(𝑖\) chứa \(𝑛\) số \(𝑠_{𝑖1}, 𝑠_{𝑖2}, … , 𝑠_{𝑖𝑛}\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Một dòng chứa một số là tổng điểm nhiều nhất mà robot có thể đạt được.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>3 4
+1 2 3 4
+4 5 5 7
+8 7 6 5
+1 1 1 1
+1 1 1 1
+1 1 1 1</code></pre>
+<p><strong>Sample Output </strong></p>
+<pre><code>7</code></pre>
+<p><strong><em>Ràng buộc:</em></strong></p>
+<ul>
+<li>Có 20% số test ứng với 20% số điểm của bài có \(𝑚 = 1; 𝑛 ≤ 10^3\);</li>
+<li>Có 20% số test khác ứng với 20% số điểm của bài có \(𝑚 = 1; 𝑛 ≤ 10^5\);</li>
+<li>Có 20% số test khác ứng với 20% số điểm của bài có \(𝑚 × 𝑛 ≤ 10^3\) và \(𝑠_{𝑖𝑗} = 1\);</li>
+<li>Có 20% số test khác ứng với 20% số điểm của bài có \(𝑚 × 𝑛 ≤ 10^5\) và \(𝑠_{𝑖𝑗} = 1\);</li>
+<li>Có 20% số test khác ứng với 20% số điểm của bài có \(𝑚 × 𝑛 ≤ 10^5\)
+.</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2019 chính thức</em></p>
+</div>
+<hr/>
+</div>

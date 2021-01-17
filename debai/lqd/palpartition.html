@@ -1,0 +1,44 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Phân tích đối xứng</h2>
+</div><div class="content-description screen">
+<div><p>Xét các cách chia một xâu ký tự \(s\) thành một hoặc nhiều xâu con <em>liên tiếp</em> và <em>không giao nhau</em>, ta gọi mỗi xâu con này là một <em>mảnh</em>. <em>Độ dài</em> của cách phân tích sẽ bằng số lượng mảnh trong cách phân tích đó.</p>
+<p>Chúng ta có thể biểu diễn một cách phân tích bằng cách viết ra mỗi mảnh của nó trong một cặp ngoặc đơn. Ví dụ, xâu <code>decode</code> có thể được phân tích thành <code>(d)(ec)(ode)</code> hoặc <code>(d)(e)(c)(od)(e)</code>.</p>
+<p>Một cách phân tích gọi là <em>đối xứng</em> nếu các mảnh của nó tuần tự hợp thành một dãy đối xứng. Ví dụ, hai cách phân tích đối xứng duy nhất cho xâu <code>decode</code> là <code>(de)(co)(de)</code> và <code>(decode)</code>. Hiển nhiên mỗi từ bất kỳ đều có thể được phân tích đối xứng thành một dãy có độ dài bằng \(1\).</p>
+<p>Với một xâu \(s\) cho trước, bạn hãy xác định cách phân tích đối xứng có độ dài lớn nhất của nó nhé!</p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa số nguyên dương \(t\) thể hiện số câu hỏi.</p>
+<p>\(t\) dòng tiếp theo, mỗi dòng chứa duy nhất một xâu \(s\) chỉ gồm các ký tự latin in thường và không có dấu cách nào, thể hiện một câu hỏi.</p>
+<hr/>
+<h4>Output</h4>
+<p>Gồm \(t\) dòng, mỗi dòng in ra một số nguyên là độ dài lớn nhất của một cách phân tích đối xứng cho xâu ký tự tương ứng.</p>
+<hr/>
+<h4>Output</h4>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>4
+bonobo
+deleted
+racecar
+racecars</code></pre>
+<h5>Ouput</h5>
+<pre><code>3
+5
+7
+1</code></pre>
+<hr/>
+<h4>Giới hạn</h4>
+<p>Gọi \(n\) là độ dài của xâu \(s\).</p>
+<ul>
+<li>\(1\leq t\leq 10\).</li>
+<li>\(1\leq n\leq 10^6\).</li>
+<li>\(15\%\) số test có \(n\leq 30\).</li>
+<li>\(20\%\) số test khác có \(n\leq 300\).</li>
+<li>\(25\%\) số test khác có \(n\leq 10,000\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn bài: CEOI 2017</em></p>
+</div>
+<hr/>
+</div>

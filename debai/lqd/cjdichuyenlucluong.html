@@ -1,0 +1,38 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">CJ di chuyển lực lượng</h2>
+</div><div class="content-description screen">
+<div><p>Bản đồ vùng Los Santos có \(N\) căn cứ, được đánh số từ \(1\) tới \(N\) và \(M\) tuyến đường hai chiều, đánh số từ \(1\) tới \(M\). Mỗi tuyến đường chỉ chịu đựng số người đi qua cùng lúc nhất định, nếu quá số người đi qua cùng một lúc sẽ bị hư hỏng và không thể đi qua được.</p>
+<p>CJ vừa mới khảo sát tình hình ở các khu vực trong vùng Los Santos và nhận thấy rằng ở căn cứ \(t\) vẫn còn yếu thế nên CJ đã huy động thêm lực lượng, xuất phát từ căn cứ \(s\), và đến căn cứ \(t\) để căn cứ \(t\) được tăng lên sức mạnh phòng thủ cũng như tấn công.</p>
+<p>Nhưng tất cả tuyến đường đều bị giới hạn số người đi qua cùng lúc, nên CJ phải tính toán xem tối đa bao nhiêu người có thể đi từ \(s\) tới \(t\) và hành trình đi tương ứng như thế nào. Biết rằng tất cả lực lượng tập hợp lại và đi theo một nhóm và không tách rời, vì tách rời có khả năng bị nhóm khác dòm ngó và tiêu diệt.</p>
+<p><strong>Yêu cầu</strong>: Tìm số người lớn nhất mà CJ có thể tính toán và di chuyển lực lượng và chỉ ra hành trình tương ứng. Nếu có nhiều hành trình, in ra một hành trình bất kì.</p>
+<p><strong>Dữ liệu vào</strong>: Gồm \(M + 1\) dòng:</p>
+<ul>
+<li>Dòng thứ nhất chứa bốn số nguyên dương \(N\), \(M\), \(s\), \(t\)  \((1 \leq s, t \leq N, s \neq t)\).</li>
+<li>\(M\) dòng tiếp theo, dòng thứ \(i\) chứa ba số nguyên dương \(u_i\), \(v_i\) và \(c_i\) thể hiện có tuyến đường nối trực tiếp giữa \(u_i\) và \(v_i\) và sức chịu đựng là \(c_i\) \((c_i \leq 10^9, u_i \neq v_i)\).</li>
+</ul>
+<p><strong>Kết quả</strong>: Gồm hai dòng:</p>
+<ul>
+<li>Dòng thứ nhất là số người lớn nhất mà CJ có thể tính toán và di chuyển lực lượng.</li>
+<li>Dòng thứ hai là số hiệu của các căn cứ theo thứ tự hành trình, bắt đầu từ căn cứ \(s\), và kết thúc ở căn cứ \(t\).</li>
+</ul>
+<p><strong>Ví dụ</strong>:</p>
+<p><strong>Input</strong>:</p>
+<pre><code>6 6 1 6
+2 5 15
+6 5 9
+2 6 16
+4 1 17
+3 1 14
+4 6 7</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>7
+1 4 6</code></pre>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>\(30\)% số test đầu tiên có \(N \leq 10^3, M \leq 2.10^3\).</li>
+<li>\(70\)% số test còn lại có \(N \leq 10^5, M \leq 2.10^5\).</li>
+</ul>
+<p><strong>Chú ý</strong>: Nếu ai làm được bài CJ Dự tiệc thì khá dễ dàng để làm được bài này.</p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,56 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    MOCO - Khu mộ cổ (OLP Không chuyên 2008) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">     Khảo sát vùng Amazon người ta tìm thấy dấu vết các ngôi mộ, mỗi ngôi mộ có dạng một hình tứ giác lồi với tọa độ các đỉnh được ghi nhận lại là (x<sub>1</sub>, y<sub>1</sub>), (x<sub>2</sub>, y<sub>2</sub>), (x<sub>3</sub>, y<sub>3</sub>) và (x<sub>4</sub>, y<sub>4</sub>). Qua khảo sát, người ta nhận thấy mỗi ngôi mộ có những tính chất lịch sử khác nhau, tuy nhiên về hình dạng chúng chỉ thuộc vào một trong 5 loại:<br/>
+     •  Loại 1: Hình vuông;<br/>
+     •  Loại 2: Hình chữ nhật nhưng không là hình vuông;<br/>
+     •  Loại 3: Hình thoi nhưng không là hình vuông;<br/>
+     •  Loại 4: Hình bình hành nhưng không là hình vuông, không là hình chữ nhật và không là hình thoi;<br/>
+     •  Loại 5: Tứ giác không thuộc một trong 4 loại trên.</p>
+<p style="text-align:center"><img alt="" src="images/MOCO.PNG" style="height:176px; width:518px"/></p>
+<p>    Chẳng hạn, nếu ngôi mộ tìm thấy có tọa độ của 4 đỉnh là: (0, 0), (2, 0), (1, 3) và (1, -3) thì nó thuộc loại 3.</p>
+<p><strong>Yêu cầu:</strong> Cho tọa độ 4 đỉnh của ngôi mộ, hãy xác định xem nó thuộc loại nào.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Là 8 số nguyên: x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, x<sub>3</sub>, y<sub>3</sub>, x<sub>4</sub>, y<sub>4</sub>, mỗi số đều nằm trong phạm vi từ -10.000 tới 10.000. Dữ liệu cho đảm bảo 4 điểm trên hình thành 1 tứ giác lồi.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Số nguyên k là loại của ngôi mộ.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2 3 6 0 6 3 2 0</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">0 2 3 1 1 -2 1 4</div>
+<div class="sample-type">output</div>
+<div class="sample-value">5</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">0 0 2 0 1 3 1 -3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

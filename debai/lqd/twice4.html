@@ -1,0 +1,42 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">TWICE4 (bản khó của 3)</h2>
+</div><div class="content-description screen">
+<div><p><span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> là một chú ếch sống trong một đầm lầy. Trong đầm lầy, có N lá sen được đánh số từ 1 đến N. Các lá sen có tọa độ nguyên trên mặt phẳng tọa độ. <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> chỉ có thể nhảy từ lá sen này qua lá sen khác khi xảy ra 1 trong 2 trường hợp sau:</p>
+<ul>
+<li>\(x_{2}\) &gt; \(x_{1}\) và \(y_{2}\) = \(y_{1}\)</li>
+<li>\(x_{2}\) = \(x_{1}\) và \(y_{2}\) &gt; \(y_{1}\)</li>
+</ul>
+<p>Trên mỗi chiếc lá có một số con ruồi và <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> có thể dùng lưỡi của mình để ăn chúng.
+<span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> hấp thụ một đơn vị năng lượng cho mỗi con ruồi ăn được và sử dụng K đơn vị năng lượng cho mỗi lần nhảy. <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> không thể nhảy nếu không có đủ đơn vị năng lượng trước đó.</p>
+<p><span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> muốn đi từ chiếc lá 1 đến chiếc lá N và có lượng năng lượng lớn nhất có thể sau khi đến. <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> ban đầu không có năng lượng và phải thu thập năng lượng cho lần nhảy đầu tiên của mình từ những con ruồi xung quanh chiếc lá 1.</p>
+<p>Hãy giúp <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> có thể đi từ 1 đến N với năng lượng lớn nhất.</p>
+<p><strong>INPUT</strong></p>
+<ul>
+<li>Dòng một là hay số nguyên dương N, K ( 2 ≤ N ≤ 300000, 1 ≤ K ≤ 1000)</li>
+<li>i dòng tiếp theo (1 ≤ i ≤ N), mỗi dòng là 3 số nguyên dương X, Y, Z (0 ≤ X, Y ≤ 100000, 0 ≤ Z ≤ 1000) với X, Y là tọa độ lá thứ i, Z là số lượng con ruồi trên chiếc lá mà <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> có thể ăn để tích năng lượng. Lưu ý rằng sẽ không có hai chiếc lá nào cùng tọa độ.</li>
+</ul>
+<p><strong>OUTPUT</strong></p>
+<ul>
+<li>Dòng đầu tiên in ra số năng lượng của <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> khi đến chiếc lá N.</li>
+<li>Dòng thứ hai in ra M là số lá cây <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> đi qua, biết rằng nếu có nhiều đường đi, <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> sẽ chọn đường đi qua ít lá nhất</li>
+<li>M dòng tiếp theo, in ra tọa độ các lá cây mà <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> đã đi qua, theo thứ tự từ nhỏ đến lớn</li>
+</ul>
+<h4><strong>Ví Dụ</strong></h4>
+<p><strong>INPUT</strong></p>
+<pre><code>6 5
+1 1 5
+2 1 5
+1 2 4
+2 3 5
+3 2 30
+3 3 5</code></pre>
+<p><strong>OUTPUT</strong></p>
+<pre><code>5
+4
+1 1
+2 1
+2 3
+3 3</code></pre>
+</div>
+<hr/>
+</div>

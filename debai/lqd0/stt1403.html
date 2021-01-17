@@ -1,0 +1,43 @@
+<div class="tm-box2">
+<div class="problem-name">
+    STT1403 - Mua quà 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 5.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Kì nghỉ tết vừa qua, Caiwinlau đã có một chuyến đi chơi đáng nhớ ở thành phố ABCXYZ. Tại đây, Caiwinlau đã đến tham quan một cửa hàng lưu niệm đặc biệt chỉ trưng bày và bán các bức tượng hình người. Các bức tượng trong cửa hàng được xếp liên tiếp theo một hàng từ trái sang phải. Đột nhiên Caiwinlau nhớ đến các bạn cấp 3 của mình nên đã quyết định mua một món quà đặc biệt tặng các bạn.  Caiwinlau rút trong túi áo ra tấm ảnh lớp cấp 3 mà Caiwinlau luôn mang theo bên mình và phát hiện ra một điều đặc biệt là tất cả các bạn trong hình đều đứng xếp theo một hàng từ trái sang phải như dãy tượng được trưng bày trong cửa hàng. Vì Caiwinlau là một anh chàng hài hước :v nên đã quyết định mua một dãy tượng con liên tiếp trong cửa hàng có số lượng tượng bằng đúng số lượng các bạn có trong ảnh lớp  sao cho chiều cao của các bức tượng này được xếp theo đúng như thứ tự chiều cao của các bạn trong ảnh lớp. Các bạn hãy giúp Caiwinlau đếm xem có bao nhiêu dãy tượng con <strong>liên tiếp</strong> trong cửa hàng thỏa mãn yêu cầu mà Caiwinlau đưa ra nhé !</p>
+<p><strong>INPUT :</strong></p>
+<p>Dòng đầu gồm 2 số nguyên dương N và M (<span style="color:rgb(73, 73, 73)"><span style="font-family:mathjax_main; font-size:16.64px">1 </span><span style="font-family:mathjax_main; font-size:16.64px">≤ </span><span style="font-family:mathjax_math-italic; font-size:16.64px">n </span><span style="font-family:mathjax_main; font-size:16.64px">≤ </span><span style="font-family:mathjax_main; font-size:16.64px">1 </span><span style="font-family:mathjax_main; font-size:16.64px">000 </span><span style="font-family:mathjax_main; font-size:16.64px">000</span><span style="font-size:16px">,</span></span><span style="color:rgb(73, 73, 73); font-family:roboto,helvetica,arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji; font-size:16px"><span style="font-size:16.64px"><span style="font-family:mathjax_main">1 </span><span style="font-family:mathjax_main">≤ </span><span style="font-family:mathjax_math-italic">m </span><span style="font-family:mathjax_main">≤ 1 0</span><span style="font-family:mathjax_main">00 </span><span style="font-family:mathjax_main">000), </span></span></span>trong đó N là số lượng bạn xuất hiện trong ảnh lớp của Caiwinlau, M là số lượng bức tượng có trong cửa hàng.</p>
+<p>Dòng hai gồm N số nguyên dương <span style="color:rgb(73, 73, 73); font-size:16px"><span style="font-size:16.64px"><span style="font-family:mathjax_main">1 </span><span style="font-family:mathjax_main">≤ </span>Pi <span style="font-family:mathjax_main">≤ </span><span style="font-family:mathjax_math-italic">n</span></span></span><span style="color:rgb(73, 73, 73); font-size:16px"> </span>là vị trí của bạn thấp thứ i trong ảnh (Nếu <span style="color:rgb(73, 73, 73); font-family:mathjax_math-italic; font-size:16.64px">Pi = k</span> thì bạn ở vị trí thứ k tính từ trái sang phải là bạn thấpthứ i trong ảnh).</p>
+<p>Dòng cuối cùng gồm M số nguyên dương 1 <span style="color:rgb(73, 73, 73)"><span style="font-family:mathjax_main; font-size:16.64px">≤ </span>Hj <span style="font-family:mathjax_main; font-size:16.64px">≤ </span><span style="font-family:mathjax_main"><span style="font-size:16.64px">10^9 </span></span></span>là chiều cao của các bức tượng trong cửa hàng tính từ trái sang phải.</p>
+<p><strong>OUTPUT :</strong></p>
+<p>Dòng đầu in ra số lượng dãy tượng liên tiếp thỏa mãn yêu cầu của Caiwinlau.</p>
+<p>Dòng hai in ra tất cả các vị trí của bức tượng đầu tiên của các dãy tượng con thỏa mãn yêu cầu (theo thứ tự xuất hiện từ trái sang phải).</p>
+<div> </div>
+<div> </div>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 10<br/>4 5 1 3 2<br/>9 11 10 1 7 12 8 3 6 5</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2<br/>1 5</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Có hai dãy tượng thỏa mãn yêu cầu đề là : (9 11 10 1 7) và (7 12 8 3 6)</p>
+<p>trong cả hai dãy tượng trên chúng ta có thể thấy rằng bức tượng thấp thứ ba nằm ở vị trí đầu tiên, bức tượng thấp thứ năm ở vị trí số 2, bức tượng thấp thứ tư ở vị trí số 3, etc giống hệt như cách sắp xếp chiều cao của các bạn trong ảnh.</p>
+</div>
+</div>

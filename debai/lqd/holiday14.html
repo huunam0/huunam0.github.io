@@ -1,0 +1,36 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">HOLIDAY</h2>
+</div><div class="content-description screen">
+<div><p>Jian-Jia lên kế hoạch cho kỳ nghỉ tiếp theo tại Đài Loan. Trong kỳ nghỉ này, Jian-Jia di chuyển từ thành phố này đến thành phố khác và thăm các điểm du lịch tại các thành phố.</p>
+<p>Có \(N\) thành phố tại Đài Loan, tất cả nằm dọc theo một con đường cao tốc. Các thành phố được đánh số liên tiếp bắt đầu từ \(0\) đến \(N-1\). Thành phố \(i\) với \(0 &lt; i &lt; N-1\), liền kề với thành phố \(i-1\) và \(i+1\). Thành phố duy nhất liền kề với thành phố \(0\) là thành phố \(1\) và thành phố duy nhất liền kề với thành phố \(N-1\) là thành phố \(N-2\).</p>
+<p>Mỗi thành phố có một số điểm du lịch. Jian-Jia có \(d\) ngày cho kỳ nghỉ và lên kế hoạch để thăm được nhiều điểm du lịch nhất. Jian-Jia đã chọn một thành phố làm thành phố xuất phát cho kỳ nghỉ của mình. Mỗi ngày trong kỳ nghỉ, Jian-Jia hoặc di chuyển đến thành phố liền kề hoặc đi thăm tất cả các điểm du lịch của thành phố mà nó đang dừng chân, nhưng không thực hiện cả hai điều này. Jian-Jia sẽ không bao giờ thăm các điểm du lịch trong
+cùng một thành phố hai lần ngay cả khi Jian-Jia ở trong thành phố nhiều lần. Hãy giúp Jian-Jia lên kế hoạch cho kỳ nghỉ của mình để thăm được nhiều điểm du lịch khác nhau nhất.</p>
+<p><strong>Ví dụ:</strong></p>
+<p>Giả sử Jian-Jia có \(7\) ngày cho kỳ nghỉ, có \(5\) thành phố (được liệt kê trong bảng dưới đây) và Jian-Jia xuất phát từ thành phố \(2\). Trong ngày thứ nhất, Jian-Jia thăm quan \(20\) điểm du lịch ở thành phố \(2\). Trong ngày thứ haiJian-Jia di chuyển từ thành phố \(2\) đến thành phố \(3\) và trong ngày thứ ba thăm \(30\) điểm du lịch ở thành phố \(3\). Jian-Jia dành ba ngày tiếp theo để di chuyển từ thành phố \(3\) đến thành phố \(0\) và thăm \(10\) điểm du lịch ở thành phố \(0\) vào ngày thứ bảy. Tổng số điểm du lịch mà Jian-Jia thăm là \(20 + 30 + 10 = 60\), đó là số lượng lớn nhất các điểm du lịch mà Jian-Jia có thể thăm trong \(7\) ngày nếu xuất phát từ thành phố \(2\).</p>
+<p><img alt="enter image description here" src="https://i.imgur.com/BVPoogK.jpg"/></p>
+<p><strong>Yêu cầu:</strong> Tính số lượng nhiều nhất các điểm du lịch mà Jian-Jia có thể thăm</p>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li>Dòng thứ nhất: \(N, start, d\) (\(N:\) là số thành phố, \(start:\) thành phố xuất phát, \(d:\) số lượng ngày nghỉ) </li>
+<li>Dòng thứ hai: \(attraction[0], . . . , attraction[N − 1]\). (\(attraction[i]:\) là số lượng điểm du lịch tại thành phố \(i\), với \(0 \leq i \leq N-1\)).</li>
+</ul>
+<p><strong>Kết quả</strong>: In ra một số duy nhất là số lượng nhiều nhất các điểm du lịch mà Jian-Jia có thể thăm.</p>
+<p><strong>Sample Input:</strong></p>
+<pre><code>5 2 7
+10 2 20 30 1</code></pre>
+<p><strong>Sample Output:</strong></p>
+<pre><code>60</code></pre>
+<p><strong>Ràng buộc:</strong></p>
+<ul>
+<li>Trong tất cả các test, \(0 ≤ d ≤ 2n + ⌊n/2⌋\), và số điểm du lịch tại mỗi thành phố là không âm.</li>
+<li>Các ràng buộc thêm:<ul>
+<li>Subtask \(1\) (Số điểm: \(7\)): \(2 \leq N \leq 20\), số điểm du lịch lớn nhất trong một thành phố là \(10^9\).</li>
+<li>Subtask \(2\) (Số điểm: \(23\)): \(2 \leq N \leq 10^5\), số điểm du lịch lớn nhất trong một thành phố là \(10^2\), thành phố xuất phát luôn là \(0\).</li>
+<li>Subtask \(3\) (Số điểm: \(17\)): \(2 \leq N \leq 3.10^3\), số điểm du lịch lớn nhất trong một thành phố là \(10^9\).</li>
+<li>Subtask \(4\) (Số điểm: \(53\)): \(2 \leq N \leq 10^5\), số điểm du lịch lớn nhất trong một thành phố là \(10^9\).</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

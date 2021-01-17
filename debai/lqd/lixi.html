@@ -1,0 +1,42 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Lì Xì</h2>
+</div><div class="content-description screen">
+<div><p>Nhân dịp Tết, ba bé Bo chuẩn bị \(n\) túi lì xì cho bé Bo. Trong túi thứ \(i\) có số tiền là \(a_i\) và một số nguyên \(b_i\) \((b_i ≥ 0)\). Nếu \(b_i &gt; 0\) thì bé Bo được phép chọn thêm \(b_i\) túi lì xì khác. Việc chọn thêm này là tích lũy. Đầu tiên, bé Bo chọn một túi bất kỳ, sau đó giả sử bé Bo đang có tổng số tiền là \(A\) và số túi được phép chọn thêm là \(B\) \((B &gt; 0)\), nếu bé Bo chọn thêm túi thứ \(i\) thì tổng số tiền là \(A + a_i\) và tổng số túi được chọn thêm là \(B -1 + b_i\). Cứ như vậy cho đến khi không được phép chọn thêm \((B=0)\) hoặc đã chọn hết \(n\) túi.</p>
+<p><strong>Yêu cầu:</strong> Bạn hãy giúp bé Bo xác định thứ tự chọn túi sao cho tổng số tiền bé có được là lớn nhất nhé.</p>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li><p>Dòng đầu tiên là số nguyên \(n\) \((1 ≤ n ≤ 100)\).</p>
+</li>
+<li><p>Trong \(n\) dòng tiếp theo, dòng thứ \(i\) gồm \(2\) số nguyên \(a_i\) và \(b_i\) cách nhau một khoảng trắng \((1 ≤ a_i ≤ 100, 0 ≤ b_i ≤ 100)\).</p>
+</li>
+</ul>
+<p><strong>Kết quả:</strong></p>
+<ul>
+<li>Là số nguyên xác định số tiền nhiều nhất mà bé Bo có được.</li>
+</ul>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>3
+1 0
+2 0
+0 2</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>3</code></pre>
+<p><strong>Sample Input 2</strong></p>
+<pre><code>5
+0 0
+2 0
+2 0
+3 0
+5 1</code></pre>
+<p><strong>Sample Output 2</strong></p>
+<pre><code>8</code></pre>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li><p>Trong test 1, do chỉ chọn được 1 túi nên chọn túi có số tiền nhiều nhất là 2.</p>
+</li>
+<li><p>Trong test 2, đầu tiên chọn túi 3, sau đó chọn túi 1 và tiếp theo là túi 2.</p>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

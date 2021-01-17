@@ -1,0 +1,44 @@
+<h2>VM10HNTW - Xây tháp Hà Nội</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/D" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/D </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/272622/problem/N" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/272622/problem/N </a><p>Để chào mừng đại lễ kỉ niệm 1000 năm Thăng Long Hà Nội, bạn bè trên khắp thế giới đã quyết định góp Q phiến đá quý (1 ≤ 30,000 ≤ Q) giúp thủ đô xây dựng một tòa tháp gồm K tầng (1 ≤ K ≤ Q), mỗi tầng làm từ một phiến đá quý. Những phiến đá này có hình dạng và kích thước giống hệt nhau, nhưng lại có “độ quý” C khác nhau (1 ≤ C ≤ 10,000).</p>
+<p>Đá quý được tập kết về thủ đô thành M chồng xếp liền nhau theo một hàng dài, chồng đá thứ i gồm H<sub>i</sub> phiến đá (H<sub>i</sub> &gt; 0, và do kích thước các phiến đá là như nhau nên cũng có thể coi H<sub>i</sub> là “chiều cao” của chồng đá thứ i).</p>
+<p align="center"> </p>
+<p><img alt="" height="424" src="../../../content/voj:VM10HNTW_01.png" width="496"/></p>
+<p> </p>
+<p>Sau đó các phiến đá lần lượt được “gắp” vào công trường để xây dựng tòa tháp (xây từ dưới lên trên) bằng một chiếc cần cẩu chuyên dụng (chiếc loại I). Chiếc ngoàm của cần cẩu được thiết kế chỉ có thể gắp mỗi lượt một phiến đá đang nằm trên cùng của một chồng đá bất kì, với điều kiện hai chồng đá liền kề phải có chiều cao nhỏ hơn chiều cao của chồng đó (nếu phía bên nào không có đá thì coi như chồng bên đó có chiều cao bằng 0). Để khắc phục nhược điểm đó, có một chiếc cần cẩu khác (chiếc loại II) được thiết kế đặc biệt có thể gắp bất kì phiến đá nào (tất nhiên phải là phiến đá nằm trên cùng của một chồng, và cũng chỉ có thể gắp mỗi lượt một phiến); tuy nhiên chiếc cần cẩu này lại làm “xước” phiến đá mà nó gắp, nên độ quý của phiến đá đó chỉ còn là C x P% (0 &lt; P &lt; 100).</p>
+<p>Mặt khác, do các phiến đá cùng loại nếu được đặt chồng lên nhau sẽ tạo ra “hiệu ứng ánh sáng” rất đẹp mắt nên khi đó độ quý của phiến đá nằm trên sẽ tăng so với độ quý của phiến đá nằm dưới là D% (D &gt; 0), nếu phiến đá nằm trên bị xước (do sử dụng cần cẩu loại II) thì độ quý của phiến đá sau khi tăng D% mới được nhân với P% để nhận được độ quý cần tính.</p>
+<p>Tổng độ quý S của tòa tháp là tổng các độ quý của K phiến đá tạo nên tòa tháp theo cách tính nói trên. Vấn đề đặt ra là hãy lựa chọn một phương án xây tháp sao cho S càng lớn càng tốt!</p>
+<p align="center"> </p>
+<p><img alt="" height="284" src="../../../content/voj:VM10HNTW_02.png" width="500"/></p>
+<p> </p>
+<h3>Dữ liệu</h3>
+<ul>
+<li>Dòng đầu tiên chứa 5 số nguyên N, M, K, P, D trong đó N là số loại đá khác nhau (các loại đá được đánh số từ 1..N).</li>
+<li>Dòng thứ hai chứa N số thực R<sub>i</sub> là độ quý của loại đá thứ i (i = 1..N).</li>
+<li>M dòng cuối cùng, dòng thứ j (j = 1..M) có định dạng:                       
+<ul>
+<li>Bắt đầu bằng số nguyên H là số phiến đá ở chồng đá thứ j.</li>
+<li>Tiếp theo là H số nguyên T<sub>v</sub> (v = 1..H) với ý nghĩa phiến đá thứ v (tính từ dưới lên) thuộc chồng đá thứ j là loại đá T<sub>v</sub> (T<sub>v</sub> = 1..N).</li>
+</ul>
+</li>
+</ul>
+<h3>Kết quả</h3>
+<ul>
+<li>Ghi ra trên K dòng, dòng thứ i (i = 1..K) ghi số nguyên L<sub>i</sub> (L<sub>i</sub> = 1..M) thể hiện: lần gắp thứ i (theo thứ tự thời gian) chọn gắp phiến đá trên cùng của chồng đá thứ L<sub>i</sub>.</li>
+</ul>
+<p>Các cần cẩu sẽ được sử dụng theo nguyên tắc: ưu tiên sử dụng cần cẩu loại I, trong trường hợp một trong các điều kiện để sử dụng cần cẩu loại I không được thỏa mãn thì sẽ sử dụng đến chiếc cần cẩu loại II.</p>
+<p><em>(Mỗi số trên cùng một dòng của input/output được/phải ghi cách nhau ít nhất một dấu cách trống)</em></p>
+<h3>Cách tính điểm</h3>
+<ul>
+<li>Số điểm bạn nhận được sẽ tỉ lệ với tổng độ quý S của tòa tháp bạn xây được.</li>
+</ul>
+<h3>Ví dụ</h3>
+<p> </p>
+<pre>Dữ liệu:<br/>13 7 7 70 30<br/>1.7 2.3 3.4 5.5 7.8 1.0 4.6 6.1 9.9 1.3 7.3 8.2 2.5<br/>2 1 1<br/>5 2 3 3 3 2<br/>4 4 4 4 5<br/>7 6 7 7 8 7 9 9<br/>6 10 10 11 11 11 10<br/>1 12<br/>3 13 13 13<br/><br/>Kết quả:<br/>4<br/>4<br/>5<br/>4<br/>5<br/>5<br/>5<br/></pre>
+<p> </p>
+<h3>Giải thích</h3>
+<p align="center"> </p>
+<p><img alt="" src="../../../content/voj:VM10HNTW_03.png"/></p>
+<p> </p>
+<p>Như vậy với phương án xây tháp này bạn sẽ nhận được <span style="font-size: large;"><strong>S = 43.41</strong></span></p>
+<p>Một phương án khác với thứ tự gắp lần lượt là <strong>4, 4, 5, 4, 4, 5, 5</strong> sẽ cho <span style="font-size: large;"><strong>S = 44.49</strong></span></p>
+</div>

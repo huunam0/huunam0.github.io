@@ -1,0 +1,39 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    FOOL - Cá tháng tư 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">Hôm nay là ngày Cá tháng tư và An nhận được một bài tập đặc biệt từ thầy giáo của mình.</p>
+<p style="text-align:justify">Cho N điểm trên mặt phẳng tọa độ <a href="http://vi.wikipedia.org/wiki/H%E1%BB%87_t%E1%BB%8Da_%C4%91%E1%BB%99_Descartes"><strong>Descartes</strong></a>, điểm p có tọa độ là p<sub>x</sub>, p<sub>y</sub>. Khoảng cách giữa 2 điểm a và b lúc này không còn được tính theo <a href="http://vi.wikipedia.org/wiki/Kho%E1%BA%A3ng_c%C3%A1ch_Euclid"><strong>khoảng cách Euclid</strong></a> mà có giá trị bằng <strong>min(|a<sub>x</sub> - b<sub>x</sub>|, |a<sub>y</sub> - b<sub>y</sub>|)</strong>. Bạn phải chọn điểm bắt đầu và đi qua tất cả các điểm còn lại, mỗi điểm đúng một lần, và tổng khoảng cách của đường đi đó phải là nhỏ nhất, nếu có nhiều đường đi thì chọn đường đi có thứ tự từ điển nhỏ nhất (Dãy A được xem là có thứ tự từ điển nhỏ hơn dãy B nếu tồn tại một điểm <strong>k</strong> nào đó mà <strong>A<sub>1</sub> = B<sub>1</sub>, A<sub>2</sub> = B2, ... A<sub>k-1</sub> = B<sub>k-1</sub> và A<sub>k</sub> &lt; B<sub>k</sub></strong>). Nhưng thầy giáo lại không muốn An trả lời cho ông đường đi tìm được vì cho rằng như thế thì nó sẽ trờ thành bài toán tìm đường đi <strong>Hamilton</strong> và không còn gì là thú vị. Ông ấy muốn xuất ra tổng <strong>XOR</strong> của các đỉnh trên đường đi đó: <strong>H<sub>P</sub> = </strong><strong>P<sub>1</sub> xor P<sub>2</sub> xor ... xor P<sub>N</sub>, P<sub>i</sub> </strong>là đỉnh thứ i trong đường đi (xem ví dụ để hiểu rõ hơn). Thầy giáo yêu cầu An phải giải bài toán với giới hạn N <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤</span> 100) nhưng An cho rằng với N điểm sẽ tạo thành là N! với các chu trình khác nhau và cho rằng đây là một trò đùa của thầy. Tuy nhiên, thầy giáo lại nói rằng nếu An không giải được bài này trong ngày hôm nay (1/4) thì sẽ bị đánh rớt môn học (và tất nhiên An không hề muốn như thế). Cậu bắt đầu nhờ những người bạn của mình nhưng oái ăm thay hôm nay lại là Cá tháng tư và tất cả đều cho rằng đó chỉ là một trò đùa. Còn các bạn - những <strong>NTUCoder</strong> thì sao? Các bạn nghĩ đây chỉ là một trò đùa hay thật sự là một bài toán hay?</p>
+<p style="text-align:justify"><strong>Dữ liệu nhập:</strong> gồm nhiều bộ test:</p>
+<p style="text-align:justify">-  Dòng đầu tiên chứa một số nguyên T - số bộ test (T <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ 10)</span></p>
+<p style="text-align:justify">- Tiếp theo là T bộ test, mỗi bộ test gồm nhiều dòng: dòng đầu tiên là N - số điểm trên mặt phẳng tọa độ (0 &lt; N <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤100)</span>, dòng thứ i trong N dòng tiếp theo chứa 2 số nguyên x, y (|x|, |y|  <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ 10<sup>9</sup>)</span></p>
+<p style="text-align:justify"><strong>Dữ liệu xuất:</strong> gồm T dòng, mỗi dòng chứa một số nguyên duy nhất là tổng XOR của đường đi ngắn nhất tìm được.</p>
+<p style="text-align:justify"> </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2<br/>2<br/>1 2<br/>0 0<br/>3<br/>3 3<br/>0 0<br/>0 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3<br/>0</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Ở bộ test thứ hai, 2 đường đi <strong>[2, 3, 1]</strong> và <strong>[1, 3, 2]</strong> đều có tổng khoảng cách là nhỏ nhất (bằng 0) nhưng đường đi thứ hai có thứ tự từ điển nhỏ hơn, nên kết quả sẽ là <strong>H([1, 3, 2]) = 1 XOR 3 XOR 2 = 0</strong></p>
+</div>
+</div></body></html>

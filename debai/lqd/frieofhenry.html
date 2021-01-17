@@ -1,0 +1,31 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Người bạn của Henry</h2>
+</div><div class="content-description screen">
+<div><p><strong>Kaninho</strong> là hậu duệ đời thứ \(15\) của \(2\) đại dòng dõi \(Kante\) và \(Mourinho\), đồng thời cũng là bạn chung lớp với <strong>Henry</strong>. Vì biết <strong>Henry</strong> là người học giỏi về lập trình, nên một hôm sang nhà <strong>Henry</strong> chơi, <strong>Kaninho</strong> đã đố cậu ấy một bài toán như sau:</p>
+<p>Cho xâu \(S\) được biểu diễn dưới dạng sau: \(a_0a_1a_2...a_{n}\) trong đó \(a_i\) là kí tự số (tức là \(a_i\in \left\{'0'...'9'\right\}\)). <strong>Kaninho</strong> đã xây dựng xâu \(T\) từ xâu \(S\) và được biểu diễn dưới dạng: \(b_0b_1b_2...b_n\) trong đó \(b_i\) là kí tự số (tức là \(b_i\in \left\{'0'..'9'\right\}\)) theo quy tắc sau:</p>
+<ul>
+<li><p>\(b_0\) là một kí tự số bất kì thuộc tập \(\left\{'0'...'9'\right\}\)</p>
+</li>
+<li><p>\(b_i=\left \lceil{\frac{b_{i-1}+a_{i}}{2}}\right\rceil\) hoặc \(b_i=\left \lfloor{\frac{b_{i-1}+a_{i}}{2}}\right\rfloor\) với mọi \(1\le i\le n\).</p>
+</li>
+</ul>
+<p>Hỏi có bao nhiêu xâu \(T\) khác nhau được sinh ra từ \(S\) theo quy tắc trên và \(T\ne S\)</p>
+<p>Là người bạn tốt của \(Henry\), hãy giúp anh ấy một tay nhé !</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li>Một dòng duy nhất chứa xâu \(S(1\le |S|\le 50)\)</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>Số lượng xâu \(T\) khác nhau được sinh ra từ \(S\)</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>1</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>9</code></pre>
+<p><strong>Giải thích:</strong> Ứng với \(S=1\). Ta có thể sinh ra \(9\) xâu \(T\) khác nhau và tất cả chúng đều khác \(S=1\). Đó là \(T\in \left\{'0','2','3','4','5','6','7','8','9'\right\}\)</p>
+<p><strong>Nguồn:</strong> Tham khảo từ codeforces - Tag : DP</p>
+</div>
+<hr/>
+</div>

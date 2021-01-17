@@ -1,0 +1,56 @@
+<div class="tm-box2">
+<div class="problem-name">
+    INCMAT - Học toán  
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"><span style="font-size:14px">Nam được mẹ giao nhiệm vụ rèn luyện phép tính cộng cho em trai. Nam dự định vừa rèn luyện tính cộng vừa tạo niềm yêu thích tin học bằng cách cho em trai giải bài toán sau: </span></p>
+<p style="text-align:justify"><span style="font-size:14px">Cho một bảng số nguyên gồm có 𝑚 hàng và 𝑛 cột. Các hàng của bảng được đánh số từ 1 tới 𝑚 từ trên xuống dưới, các cột của bảng số được đánh số từ 1 tới 𝑛 từ trái qua phải. Giá trị của số nằm ở hàng 𝑖, cột 𝑗 (1 ≤ 𝑖 ≤ 𝑚; 1 ≤ 𝑗 ≤ 𝑛) được ký hiệu là 𝑎(𝑖,𝑗). Cần thực hiện lần lượt 𝑄 thao tác, thao tác thứ 𝑡 (1 ≤ 𝑡 ≤ 𝑄) được mô tả bằng bộ năm số 𝑥<sub>𝑡</sub> , 𝑦<sub>𝑡</sub> , 𝑢<sub>𝑡</sub> , 𝑣<sub>𝑡</sub> , 𝑐<sub>𝑡</sub> , thao tác này sẽ tăng tất cả các phần tử 𝑎(𝑖,𝑗) với mọi 𝑥<sub>𝑡</sub> ≤ 𝑖 ≤ 𝑢<sub>𝑡</sub> , 𝑦<sub>𝑡</sub> ≤ 𝑗 ≤ 𝑣<sub>𝑡 </sub>lên một lượng là 𝑐<sub>𝑡</sub> (𝑐<sub>𝑡</sub> &gt; 0). </span></p>
+<p style="text-align:justify"><span style="font-size:14px">Nam sẽ yêu cầu em trai ghi ra giấy tất cả các phần tử của bảng số sau khi đã thực hiện cả 𝑄 thao tác. Để kiểm tra xem em mình làm có đúng không, Nam phải tự mình tính toán ra được kết quả đúng trước đã. Sau một hồi tính toán, Nam đã có được bảng số sau khi thực hiện 𝑄 thao tác. Tuy nhiên, giá trị của các phần tử của bảng số kết quả khá lớn! Nam sợ rằng em trai mình sẽ gặp khó khăn khi thực hiện phép cộng giữa hai số lớn, do đó Nam quyết định bỏ đi một thao tác sao cho sau khi thực hiện 𝑄 − 1 thao tác còn lại, giá trị lớn nhất của bảng số là nhỏ nhất có thể. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Yêu cầu</strong>: Cho bảng số và dãy 𝑄 thao tác, gọi 𝑊𝑡 là giá trị lớn nhất trong bảng sau bỏ đi thao tác thứ 𝑡 (1 ≤ 𝑡 ≤ 𝑄), tính Min{𝑊<sub>1</sub>,𝑊<sub>2</sub>, … , 𝑊<sub>𝑄</sub>}. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Dữ liệu</strong>: </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">- Dòng đầu chứa số hai số nguyên dương 𝑚, 𝑛;<br/>
+- Tiếp theo là 𝑚 dòng, dòng thứ 𝑖 (1 ≤ 𝑖 ≤ 𝑚) gồm 𝑛 số nguyên không âm 𝑎(𝑖, 1), 𝑎(𝑖, 2), …, 𝑎(𝑖, 𝑛), các số có giá trị không vượt quá 10<sup>9</sup>.<br/>
+- Dòng tiếp theo chứa số nguyên 𝑄 (𝑄 &gt; 1);<br/>
+- Tiếp theo là 𝑞 dòng, dòng thứ 𝑡 (1 ≤ 𝑡 ≤ 𝑄) gồm 5 số nguyên 𝑥<sub>𝑡</sub> , 𝑦<sub>𝑡</sub> , 𝑢<sub>𝑡</sub> , 𝑣<sub>𝑡</sub> , 𝑐<sub>𝑡</sub> (1 ≤ 𝑥<sub>𝑡</sub> ≤ 𝑢<sub>𝑡</sub> ≤ 𝑚, 1 ≤ 𝑦<sub>𝑡</sub> ≤ 𝑣<sub>𝑡</sub> ≤ 𝑛, 1 ≤ 𝑐<sub>𝑡</sub> ≤ 1000). </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Kết quả</strong>: </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">Ghi ra một dòng duy nhất là giá trị nhỏ nhất của giá trị lớn nhất của bảng số sau khi loại bỏ đi đúng một thao tác.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px; text-align:justify">4 4<br/>
+1 0 0 1<br/>
+0 0 0 0<br/>
+0 0 0 0<br/>
+1 0 0 1<br/>
+3<br/>
+1 1 3 3 2<br/>
+2 2 3 4 1<br/>
+3 1 4 3 2</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">3</p>
+<p><strong>Giới hạn</strong> </p>
+<p style="margin-left:40px">- Có 20% số test có 𝑚 = 1; 𝑛, 𝑞 ≤ 500;<br/>
+- Có 20% số test khác có 𝑞, 𝑚, 𝑛 ≤ 500;<br/>
+- Có 25% số test khác có 𝑚 = 1; 𝑛 ≤ 10<sup>6</sup> ; 𝑄 ≤ 10<sup>6</sup> ;<br/>
+- Có 25% số test khác có 𝑚, 𝑛 ≤ 1000; 𝑄 ≤ 10<sup>6</sup> ;<br/>
+- Có 10% số test còn lại có 𝑚 × 𝑛 ≤ 10<sup>6</sup> ; 𝑄 ≤ 10<sup>6</sup> .</p>
+<hr/>
+<p><em>Nguồn: 3D '1819</em></p>
+</div>
+</div>

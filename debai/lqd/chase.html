@@ -1,0 +1,49 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Tom và Jerry</h2>
+</div><div class="content-description screen">
+<div><p>Tom và Jerry lại sa đà vào một cuộc đuổi bắt khốc liệt! Jerry chạy vào công viên trung tâm thành phố Ljubljana để lẩn trốn. Lần này, Jerry có ý đồ len lỏi vào một số đàn bồ câu đông đúc nhằm đẩy Tom vào thế khó khăn khi muốn đuổi theo cậu ấy. Công viên có \(n\) bức tượng được đánh số từ \(1\) đến \(n\) và \(n-1\) lối đi không giao nhau để kết nối các bức tượng đó sao cho từ bức tượng nào cũng có thể di chuyển đến một bức tượng bất kỳ khác bằng cách băng qua một số lối đi có sẵn. Có đúng \(p_i\) chú chim bồ câu đang vây quanh bức tượng thứ \(i\). Jerry mang theo \(v\) mẩu bánh mỳ trong túi của cậu ấy. Nếu cậu ấy ném một mẩu bánh mỳ xuống chân bức tượng mà cậu ấy đang đứng cạnh, toàn bộ những chú chim bồ câu từ các bức tượng <em>liền kề</em> sẽ lập tức bay tới để tranh giành mẩu bánh mỳ này. Kết cục là, số lượng chim bồ câu vây quanh bức tượng hiện tại và các bức tượng liền kề với nó sẽ bị thay đổi.</p>
+<p>Cuộc đuổi bắt giữa Tom và Jerry sẽ luôn diễn ra theo trình tự như sau: Đầu tiên, Jerry tiến đến bức tượng thứ \(i\) và gặp \(p_i\) chú chim bồ câu. Sau đó, cậu ấy thả một mẩu bánh mỳ xuống dưới và rời khỏi bức tượng này. Những chú chim bồ câu từ các bức tượng liền kề lập tức di chuyển đến bức tượng thứ \(i\) trước khi Jerry kịp chạy tới một trong các bức tượng liền kề đó (vì vậy số lượng chim bồ câu ở bức tượng tiếp theo sẽ không được tính vào tổng số chim bồ câu mà Jerry đã chạm trán).</p>
+<p>Jerry có thể tiến vào công viên từ bất kỳ bức tượng nào, sau đó băng qua một số lối đi (nhưng không bao giờ băng qua cùng một lối đi hai lần trở lên), và cuối cùng rời khỏi công viên từ một bức tượng bất kỳ mà cậu ấy muốn. Sau khi Jerry rời khỏi công viên thì Tom mới bắt đầu tiến vào công viên và di chuyển theo lộ trình y hệt Jerry. Vì muốn cắt đuôi Tom nên Jerry nhờ bạn lên kế hoạch rải tối đa \(v\) mẩu bánh mỳ sao cho <em>chênh lệch</em> giữa tổng số chim bồ câu mà Jerry và Tom chạm trán phải là cao nhất có thể. Lưu ý rằng chỉ những chú chi bồ câu mà Jerry gặp sau khi cậu tiến đến một bức tượng nào đó mới được tính vào tổng số chim bồ câu mà cậu chạm trán. Bạn có thể xem phần giải thích test ví dụ để hiểu rõ hơn.</p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu chứa hai số nguyên dương \(n\) và \(v\).</p>
+<p>Dòng thứ nhì chứa \(n\) số nguyên \(p_1\), \(p_2\),..., \(p_n\).</p>
+<p>Dòng thứ \(i\) trong \(n-1\) dòng tiếp theo chứa cặp số nguyên dương \(a_i\) và \(b_i\) mô tả một lối đi nối bức tượng \(a_i\) và bức tượng \(b_i\).</p>
+<hr/>
+<h4>Output</h4>
+<p>In ra một số nguyên duy nhất là độ chênh lệch lớn nhất có thể.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>12 2
+2 3 3 8 1 5 6 7 8 3 5 4
+2 1
+2 7
+3 4
+4 7
+7 6
+5 6
+6 8
+6 9
+7 10
+10 11
+10 12</code></pre>
+<h5>Output</h5>
+<pre><code>36</code></pre>
+<h5>Giải thích</h5>
+<p>Một kế hoạch khả thi là Jerry tiến vào công viên thông qua bức tượng số \(6\). Lúc đó cậu ấy chạm trán với \(5\) chú chim bồ câu. Sau đó cậu ấy rải \(1\) mẩu bánh mỳ xuống chân bức tượng. Lúc này, \(p_6=27\) và \(p_5=p_7=p_8=p_9=0\). Tiếp theo, cậu ấy chạy đến bức tượng số \(7\) và chạm trán \(0\) chú chim bồ câu. Cậu ấy bắt đầu rải xuống đất mẩu bánh mỳ thứ nhì và \(p_7\) lúc đó sẽ là \(41\) (tương tự, \(\left. p_2=p_4=p_6=p_{10}=0\right)\). Cuối cùng, cậu ấy rời khỏi công viên và đã chạm trán tổng cộng \(5+0=5\) chú chim bồ câu. Tom tiến vào và rời khỏi công viên theo một lộ trình y hệt nhưng chạm trán đúng \(p_6+p_7=0+41=41\) chú chim bồ câu. Độ chênh lệch là \(41-5=36\).</p>
+<hr/>
+<h4>Giới hạn</h4>
+<ul>
+<li>\(1\leq n\leq 10^5\).</li>
+<li>\(0\leq v\leq 100\).</li>
+<li>\(0\leq p_i\leq 10^9\).</li>
+<li>\(20\%\) số test có \(n\leq 10\).</li>
+<li>\(20\%\) số test khác có \(n\leq 1000\).</li>
+<li>\(30\%\) số test khác đảm bảo tồn tại một lộ trình tối ưu bắt đầu từ bức tượng \(1\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn bài: CEOI 2017</em></p>
+</div>
+<hr/>
+</div>

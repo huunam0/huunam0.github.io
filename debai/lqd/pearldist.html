@@ -1,0 +1,72 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Khoảng cách ngọc (Chọn ĐT'20-21)</h2>
+</div><div class="content-description screen">
+<div><p>Đi qua hết bốn khu phố \(A,B,C,D\), Ngọc sẽ đến với một địa điểm khác là cầu trượt. Cầu trượt có \(n\) cái lỗ, Ngọc đánh số những các lỗ từ 1 đến \(n\). Một lỗ sẽ có ống trượt thông đến các lỗ khác. Từ một lỗ, Ngọc có thể trượt đến tất cả các lỗ còn lại, đặc biệt hơn, có đúng n-1 ống trượt để nối giữa các lỗ. Có thể xem mô hình của cầu trượt này là một cái cây, với mỗi lỗ là một đỉnh.</p>
+<p>Ngọc cũng có những số yêu thích của riêng mình. Tạm gọi tập số yêu thích của Ngọc là tập \(S\), và tập \(S\) chỉ chứa các số có giá trị không vượt quá \(n\). Ngọc muốn tìm một lỗ được đánh số \(X\) sao cho tổng khoảng cách khi trượt từ lỗ \(X\) đến một lỗ có giá trị nằm trong tập yêu thích của Ngọc là lớn thứ nhì.</p>
+<p>Đễ dễ hiểu hơn, có thể mô hình hoá ý tưởng của Ngọc theo phong cách máy tính như sau. Ngọc có tập \(S\) chứa \(k\) số yêu thích \(S_1,S_2,…,S_k\). Với mỗi một lỗ \(T\), Ngọc sẽ đi tính tổng \(dist(T ,S_i)\) với mọi \(i ≤ k\), tạm gọi tổng này là \(Q_T\). Ngọc muốn tìm một lỗ \(X\) mà tổng \(Q_X\) của nó là lớn thứ nhì trong tất cả các \(Q_T\) có thể có.</p>
+<p>\(dist(x ,y)\) chính là số ống trượt ít nhất mà Ngọc cần phải trượt qua nếu muốn trượt từ \(x\) đến \(y\).</p>
+<p><strong>Yêu cầu</strong>: In ra một số nguyên \(Q_X\) như Ngọc mong muốn.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương \(n\) và \(k\) (\(2 ≤ k ≤ n ≤ 3 × 10^5\)) là số lỗ trong cầu trượt và số lượng các số yêu thích của Ngọc</li>
+<li>\(n-1\) dòng tiếp theo, mỗi dòng chứa 2 số nguyên dương \(u\) và \(v\) với ý nghĩa có một ống trượt từ \(u\) đến \(v\) (\(1 ≤ u ,v ≤ n,u ≠ v)\).</li>
+<li>Dòng cuối cùng chứa \(k\) số nguyên khác nhau \(S_1,S_2,…,S_k\  (1 ≤ S_i  ≤ n)\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra một số nguyên là kết quả bài toán.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>2 1
+1 2
+1</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>0</code></pre>
+<p><strong>Sample input</strong></p>
+<pre><code>3 2
+1 2
+2 3
+1 3</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>2</code></pre>
+<p><strong>Sample input</strong></p>
+<pre><code>3 1
+1 2
+2 3
+1</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>1</code></pre>
+<p><strong><em>Giải thích:</em></strong></p>
+<ul>
+<li>Ở ví dụ 1, ta có \(dist(1,1) = 0\). (Ngọc không cần trượt qua ống nào nếu muốn trượt từ 1 đến 1) và \(dist(1,2) = dist(2,1) = 1\). Ngọc chỉ có một số yêu thích là 1. <ul>
+<li>Nếu chọn \(X\) là 1, ta có \(Q_X  = dist(1,1) = 0\). </li>
+<li>Nếu chọn \(X\) là 2, ta có \(dist(1,2) = 1\). </li>
+<li>Nhận thấy rằng 0 là số lớn nhì trong tập \(\{0,1\}\), đây là kết quả bài toán.</li>
+</ul>
+</li>
+<li>Ở ví dụ 2, <ul>
+<li>Nếu chọn \(X = 1,Q_X  = dist(1,1) + dist(1,3) = 0 + 2 = 2\)</li>
+<li>Nếu chọn \(X = 2,Q_X  = dist(2,1) + dist(2,3) = 1 + 1 = 2\)</li>
+<li>Nếu chọn \(X = 3,Q_X   = dist(3,1) + dist(3,3) = 2 + 0 = 2\)</li>
+<li>Số lớn thứ 2 trong tập \(\{2, 2, 2\}\) chính là 2.</li>
+</ul>
+</li>
+<li>Ở ví dụ 3, <ul>
+<li>Nếu chọn \(X = 1,Q_X  = dist(1,1) = 0\)</li>
+<li>Nếu chọn  \(X = 2,Q_X  = dist(1,2) = 1\)</li>
+<li>Nếu chọn \(X = 3,Q_X   = dist(3,1) = 2\)</li>
+<li>Số lớn thứ 2 trong tập \(\{0, 1, 2\}\) chính là 1.</li>
+</ul>
+</li>
+</ul>
+<p>Ràng buộc:</p>
+<ul>
+<li>Có 10% điểm tương ứng với trường hợp \(k = 1\) và \(1 ≤ n ≤ 3*10^5.\)</li>
+<li>Có 40% điểm tương ứng với trường hợp \(1 ≤ k ,n ≤ 5000.\)</li>
+<li>Có 50% điểm tương ứng với trường hợp \(1 ≤ k ,n ≤ 3*10^5.\)</li>
+</ul>
+<hr/>
+<p><em>Nguồn: Bài 2 Chọn ĐT HSG TP.ĐN 2020-2021</em></p>
+</div>
+<hr/>
+</div>

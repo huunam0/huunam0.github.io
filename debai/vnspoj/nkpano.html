@@ -1,0 +1,46 @@
+<h2>NKPANO - Billboard painting</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274825/problem/B" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274825/problem/B </a>
+<table class="problems" width="100%"><tr class="navigation">
+<td width="50%"><a href="/problems/NKPANO/en/">English</a></td>
+<td width="50%"><a href="/problems/NKPANO/vn/">Vietnamese</a></td>
+</tr></table>
+<p>Một đội thợ sơn gồm K người cần thực hiện sơn một bức pano dành cho quảng cáo có dạng một hình chữ nhật kích thước 1xN được chia ra làm N vạch kích thước 1x1. Các vạch được đánh số từ trái 
+
+sang phải bắt đầu từ 1. Thợ i (1 ≤ i ≤ K) đang ngồi trước vạch S<sub>i</sub> của pano và anh ta chỉ có thể sơn một dãy các vạch liên tiếp của pano trong đó phải có vạch S<sub>i</sub>. Thợ i chỉ có thể 
+
+sơn không quá L<sub>i</sub> vạch và tiền công mà anh ta nhận được từ việc sơn một vạch là P<sub>i</sub> . Mỗi vạch được sơn bởi không quá một thợ.
+</p><p>Yêu cầu: Tìm cách phân công thợ sơn các vạch của pano sao cho tổng tiền công của tất cả các thợ nhận được là lớn nhất.
+
+
+</p><h3>Dữ liệu</h3>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương N, K (N ≤ 16000; K ≤ 100).
+</li><li>Dòng thứ i trong số K dòng tiếp theo chứa ba số nguyên  L<sub>i </sub>, P<sub>i</sub>, S<sub>i</sub> (i = 1, 2, … K) được ghi cách nhau bởi dấu cách (1 ≤  P<sub>i</sub> ≤ 10000, 1 ≤ 
+
+L<sub>i</sub> , S<sub>i</sub> ≤  N ).
+</li></ul>
+<p>Chú ý:
+</p><ul>
+<li>Cách phân công tìm được không nhất thiết phải đảm bảo sơn hết tất cả các vạch của pano.
+</li><li>Nếu thợ i không sơn vạch nào cả thì việc sơn vạch S<sub>i</sub> có thể được phân công cho thợ khác.
+</li><li>Các số S<sub>1</sub>, S<sub>2</sub>, . . . S<sub>K</sub> giả thiết là khác nhau từng đôi.
+</li></ul>
+<h3>Kết quả</h3>
+<p>Ghi ra tổng tiền công nhận được từ cách phân công thợ tìm được.
+
+</p><h3>Ví dụ</h3>
+<pre>
+<b>Dữ liệu:</b>
+8 4
+3 2 2
+3 2 3
+3 3 5
+1 1 7  
+
+<b>Kết qủa</b>
+17
+</pre>
+<p>(Cách phân công: Thợ 1 sơn các vạch 1, 2; thợ 2 sơn các vạch 3, 4; thợ 3 sơn các vạch 5, 6, 7; thợ 4 không sơn vạch nào).
+
+
+	</p></div>

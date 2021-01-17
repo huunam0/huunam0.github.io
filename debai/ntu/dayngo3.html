@@ -1,0 +1,51 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    DAYNGO3 - Dãy ngoặc 3 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Bạn Nam là người yêu thích dấu mở ngoặc '(' hơn là dấu đóng ngoặc ')'. Với một dãy ngoặc bất kỳ, giả sử A là số lượng dấu mở ngoặc và B là số lượng dấu đóng ngoặc, nếu A &gt; B thì Nam gán cho dãy ngoặc đó một độ yêu thích là Y = A - B. Nếu A ≤ B thì độ yêu thích Y = 0.</p>
+<p>Giả sử Nam có một dãy ngoặc S bất kỳ gồm hai dấu mở ngoặc và đóng ngoặc, S có chiều dài là n. Bây giờ Nam muốn tính tổng độ yêu thích của <em>tất cả</em> các dãy ngoặc con của dãy S, bạn hãy giúp Nam nhé (dãy ngoặc con là dãy bắt đầu từ vị trí p và kết thúc tại vị trí r, với 1 ≤ p ≤ r ≤ n)</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên là số nguyên n, chiều dài của dãy S (1 ≤ n ≤ 10<sup>5</sup>)</p>
+<p>- Dòng thứ hai là n ký tự của dãy S</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là số nguyên xác định tổng độ yêu thích của tất cả các dãy ngoặc con của S.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>(())</div>
+<div class="sample-type">output</div>
+<div class="sample-value">5</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>((((</div>
+<div class="sample-type">output</div>
+<div class="sample-value">20</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Test 1 có 04 dãy ngoặc con độ yêu thích &gt; 0 như sau:</p>
+<p><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">(: Y=1</span></span></p>
+<p><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">(: Y=1</span></span></p>
+<p><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">((: Y=2</span></span></p>
+<p><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">((): Y=1</span></span></p>
+<p>Tổng cộng độ yêu thích là 5.</p>
+<p> </p>
+</div>
+</div></body></html>

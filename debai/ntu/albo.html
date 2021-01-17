@@ -1,0 +1,48 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    ALBO - Alice và Bob 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Alice và Bob chơi một trò chơi đơn giản như sau: Với một số nguyên dương N ban đầu, đến lượt người nào chơi thì sẽ chọn một số nguyên X trong phạm vi từ 1 đến K, sau đó lấy N trừ đi X. Ai trừ được N về đến 0 trước thì người đó thắng. Alice luôn đi trước. Alice và Bob đều rất thông minh, sẽ chọn chiến lược tối ưu đảm bảo cho mình thắng nếu có khả năng.</p>
+<p>Ví dụ nếu N =5 và K=3, tại lần đi đầu tiên Alice có khả năng chọn X là 1, 2 hoặc 3:</p>
+<p>- Nếu Alice chọn 1, N = 4. Đến lượt Bob, Bob cũng có khả năng chọn X là 1, 2, 3 (N sẽ được là 3, 2, 1 tương ứng). Dù Bob chọn phương án nào đi nữa thì đến phiên mình Alice chọn X = N và trừ được N về 0, Alice thắng</p>
+<p>- Nếu Alice chọn X là 2 hoặc 3 thì được N là 3 hoặc 2 tương ứng. Trong trường hợp này, đến lượt Bob sẽ chọn X = N và Bob thắng.</p>
+<p>Vì Alice thông minh, nên Alice sẽ chọn X=1. Bob cũng rất thông minh, nhưng trong trường hợp này Bob không thể thắng được. Cho trước hai số N và K, bạn hãy giúp xác định xem Alice hay Bob thắng.</p>
+<p>Dữ liệu vào:</p>
+<p>- Gồm 2 số nguyên N và K cách nhau 1 khoảng trắng (1 &lt;= N, K &lt;= 10<sup>6</sup>)</p>
+<p>Dữ liệu ra:</p>
+<p>- Nếu Alice thắng, in ra "Alice will win", không in dấu nháy.</p>
+<p>- Nếu Bob thắng, in ra "Bob will win", không in dấu nháy.</p>
+<p> </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">Alice will win</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">Bob will win</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

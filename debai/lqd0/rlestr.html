@@ -1,0 +1,61 @@
+<div class="tm-box2">
+<div class="problem-name">
+    RLESTR - Xử lý xâu  
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Xét xâu S độ dài không vượt quá 10<sup>18</sup> chỉ gồm các ký tự ‘a’ đến ’z’ được mã hoá thành xâu SE (chỉ gồm các ký tự ‘a’ đến ‘z’ và ký tự ‘0’ đến ‘9’) như sau: Đi từ trái qua phải, mã hoá dãy các ký tự liên tiếp bằng nhau trong S thành ký tự đại diện và số lượng. Độ dài các xâu mã hoá không vượt quá 1000.</p>
+<p>Ví dụ, xâu S=aaabbbbaaaaaaaaaaz thì SE=a3b4a10z1</p>
+<p><strong>Giải quyết các vấn đề sau: </strong></p>
+<p>1) Cho xâu X được mã hoá thành XE và xâu Y được mã hoá thành YE. Tính Z=X+Y và đưa ra ZE. Ví dụ: XE=a1b10, YE=b3c9 thì ZE=a1b13c9</p>
+<p>2) Cho xâu X được mã hoá thành XE và 2 số nguyên dương p, c. Xoá c ký tự của X bắt đầu từ vị trí p (1≤p; p+c-1≤length(X)) và đưa ra XE.<br/>
+Ví dụ: XE=a10b20, p=2, c=10 thì sau khi xoá XE=a1b19</p>
+<p>3) Cho xâu X được mã hoá thành XE và 2 số nguyên dương p, c. Y nhận được từ X bằng cách copy c ký tự của X bắt đầu từ vị trí p (1≤p; p+c-1≤length(X)) và đưa ra YE.<br/>
+Ví dụ: XE=a10b20, p=2, c=10 thì YE=a9b1</p>
+<p>4) Cho xâu X được mã hoá thành XE, xâu Y được mã hoá thành YE và vị trí p (1≤p; p≤length(X)+1). Hãy chèn Y vào X tại vị trí p và đưa ra XE.<br/>
+Ví dụ: XE=a10b20, YE=d1b2 và p=11 thì sau khi chèn XE=a10d1b22</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Ví dụ về vào ra dữ liệu</p>
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">@1<br/>
+a1b10<br/>
+b3c9<br/>
+@2<br/>
+a10b20<br/>
+2 10<br/>
+@3<br/>
+a10b20<br/>
+2 10<br/>
+@4<br/>
+a10b20<br/>
+d1b2<br/>
+11<br/>
+@1<br/>
+a1<br/>
+b3</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">@1: a1b13c9</p>
+<p style="margin-left:40px">@2: a1b19</p>
+<p style="margin-left:40px">@3: a9b1</p>
+<p style="margin-left:40px">@4: a10d1b22</p>
+<p style="margin-left:40px">@1: a1b3 </p>
+<hr/>
+<p><em>Nguồn: 3D 20152016</em></p>
+</div>
+</div>

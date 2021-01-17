@@ -1,0 +1,33 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Giả giai thừa</h2>
+</div><div class="content-description screen">
+<div><p>Giai thừa của một số tự nhiên là tích của tất cả các số nguyên dương nhỏ hơn hoặc bằng nó. Ví dụ, giai thừa của 4 là \(1 × 2 × 3 × 4 = 24\). Giả giai thừa của \(n\) giống với giai thừa của \(n\), nhưng có một điểm khác là có đúng một thừa số bị thay thế bởi một số nguyên dương nhỏ hơn nó. Ví dụ: !1 × 2 × 2 × 4 = 16~ là một giả giai thừa của 4.</p>
+<p><strong>Yêu cầu</strong>: Cho số tự nhiên \(n\), một môđun nguyên tố \(p\) và một số dư \(r\), hãy tìm giả giai thừa của \(n\) sao cho nó có số dư \(r\) khi chia cho \(p\).</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Một dòng chứa 3 số nguyên \(n, p\) và \(r\) (\(2 ≤ n ≤ 10^{18}, 2 ≤ p &lt; 10^7, 0 ≤ r &lt; p\)) như mô tả ở trên.</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Nếu không có giả giai thừa nào thỏa mãn thì ghi ra “-1 -1”. Ngược lại ghi ra hai số nguyên tương ứng là thừa số \(k\) (\(2 ≤ k ≤ n\)) và giá trị \(v\) của số thay thế thừa số (\(1 ≤ v &lt; k\)). Nếu có nhiều cặp (\(k, v\)) thỏa mãn thì đưa ra cặp (\(k, v\)) nhỏ nhất theo thứ tự từ điển.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>4 5 1</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>3 2</code></pre>
+<p><strong>Sample input</strong></p>
+<pre><code>4 127 24</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>-1 -1</code></pre>
+<p><strong><em>Giải thích</em></strong>: Với ví dụ đầu tiên, dữ liệu ra mô tả giả giai thừa là \(1 × 2 × 2 × 4 = 16 ≡ 1 (\mod 5)\).</p>
+<p><strong><em>Ràng buộc</em></strong></p>
+<ul>
+<li>Subtask 1 (41%): \(n ≤ 14.\)</li>
+<li>Subtask 2 (21%): \(r = 0.\)</li>
+<li>Subtask 3 (38%): Như ràng buộc gốc.</li>
+</ul>
+<hr/>
+<p><em>Nguồn: Central Europe Regional Contest 2017</em></p>
+</div>
+<hr/>
+</div>

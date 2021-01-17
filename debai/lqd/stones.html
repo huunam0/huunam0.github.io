@@ -1,0 +1,31 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Trò chơi với những viên đá</h2>
+</div><div class="content-description screen">
+<div><p>Cho tập hợp gồm \(N\) số nguyên dương \(A=\left\{a_1,a_2,...,a_N\right\}\). \(Kaninho\) và \(Henry\) chơi với nhau một trò chơi như sau:</p>
+<p>Ban đầu, chúng ta có một cái cột rỗng chứa \(K\) viên đá. Hai người chơi sẽ lần lượt thực hiện phép toán sau, bắt đầu từ \(Kaninho\):</p>
+<ul>
+<li>Chọn một phần tử \(x\) của tập \(A\), và loại bỏ đi chính xác \(x\) hòn đá từ cột đó.</li>
+</ul>
+<p>Người nào không thể thực hiện được phép toán trên, thì đó là người thua cuộc. Giả sử cả hai người đều chơi tối ưu, xác định người chiến thắng.</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa hai số nguyên dương \(N,K(1\le N\le 100,1\le K\le 10^5)\)</p>
+</li>
+<li><p>Dòng thứ hai chứa \(N\) số nguyên dương thỏa mãn \(1\le a_1&lt;a_2&lt;a_3&lt;..&lt;a_N\le K.\)</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>Nếu \(Kaninho\) là người thắng cuộc, in ra "First", ngược lại nếu \(Henry\) thắng in ra "Second".</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>2 4 
+2 3</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>First</code></pre>
+<p><strong>Giải thích:</strong> Nếu \(Kaninho\) loại bỏ đi \(3\) hòn đá đầu tiên, khi đó \(Henry\) không thể đi được nữa. Do đó, \(Kaninho\) là người chiến thắng.</p>
+<p><strong>Nguồn:</strong> DP Contest Atcoder</p>
+</div>
+<hr/>
+</div>

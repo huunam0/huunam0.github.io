@@ -1,0 +1,42 @@
+<div class="tm-box2">
+<div class="problem-name">
+    FUEL1902 - Đổ xăng 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Phi thuyền ABCXYZ đang trong một cuộc hành trình thám hiểm không gian trong D ngày.</p>
+<p>Mỗi ngày phi thuyền cần phải tiếp nhiên liệu một lần. Nơi tiếp nhiên liệu là các hành tinh, ở thiên hà 123456, có t loại hành tinh khác nhau được đánh số từ 0 tới t-1. Ở ngày thứ i của cuộc hành trình, phi thuyền ABCXYZ chỉ có thể tiếp nhiên liệu ở hành tinh loại mission[i].</p>
+<p>Có n tiểu hành tinh trong thiên hà 123456, mỗi hành tinh được biểu diễn bởi cặp tọa độ (x,y) và loại hành tinh của nó trong t loại hành tinh. Tìm độ dài đường đi tiếp nhiên liệu của phi thuyền ABCXYZ sao cho độ dài này là ngắn nhất để tiết kiệm thời gian và nhiên liệu.</p>
+<p>Khoảng cách giữa hai hành tinh được tính theo khoảng cách Manhattan. (Ex : có hai cặp tọa độ (1,5) (9,3). Khoảng cách Manhattan của cặp tọa độ này là : |1-9|+|5-3| = 10).</p>
+<p>Lưu ý có thể tiếp nhiên liệu ở một hành tinh e trong n hành tinh nhiều hơn một lần.</p>
+<p>Input :</p>
+<p>Dòng đầu : số loại hành tinh t trong thiên hà 123456 (1 &lt;= t &lt;= 500)</p>
+<p>Dòng hai : n : số hành tinh trong thiên hà 123456 (0 &lt;= n &lt;= 500)</p>
+<p>n dòng tiếp theo, môi dòng gồm bộ 3 số (x,y,l) trong đó, x,y là tọa độ của hành tinh, l là loại của hành tinh đó. (0 &lt;= x &lt;= 1000000, 0 &lt;= y &lt;= 1000000, 0&lt;=k &lt; t)</p>
+<p>Dòng tiếp theo, số ngày D của cuộc hành trình (1 &lt;= D &lt;= 500)</p>
+<p>Dòng cuối gồm D số, loại hành tinh mission[i] nơi phi thuyền phải tiếp nhiên liệu cho mỗi ngày trong cuộc hành trình. (1 &lt;= D &lt;= 500, 0 &lt;= mission[i] &lt;= 500)</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3<br/>4<br/>0 0 0<br/>2 0 1<br/>0 3 1<br/>1 3 2<br/>5<br/>0 1 2 1 2<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">6</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div>

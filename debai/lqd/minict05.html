@@ -1,0 +1,35 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">minict05</h2>
+</div><div class="content-description screen">
+<div><p>Cho một binary string (xâu nhị phân) s chỉ bao gồm các kí tự '0' và '1'.</p>
+<p>Một phép biến đổi được định nghĩa như sau:</p>
+<ul>
+<li>Chọn một kí tự trong string s và đảo kí tự đó, tức là '0' đảo thành '1', còn '1' đảo thành '0'.</li>
+</ul>
+<p>Một string được gọi là <strong>good</strong> nếu như nó <strong>không</strong> chứa bất kì đoạn con (không cần liên tục) nào bằng "010" hoặc "101". Ví dụ, s="1001" chứa "101" là đoạn con nên "1001" không phải là <strong>good string</strong>, trong khi s="1000" là <strong>good string</strong>.</p>
+<p>Một đoạn con không liên tục của một string s là một string thu được bằng cách xóa đi một số kí tự (có thể không xóa) của s.</p>
+<p><strong>Yêu cầu</strong></p>
+<ul>
+<li>Hãy cho biết số lần biến đổi tối thiểu để làm cho string s trở thành <strong>good string</strong>.</li>
+</ul>
+<p><strong>Input</strong></p>
+<ul>
+<li>Dòng đầu in ra một số nguyên là \(T\) (\(1 &lt;= T &lt;= 100\)) - số lượng bộ test.</li>
+<li>T dòng tiếp theo mỗi dòng chứa một binary string \(s\) (\(1 &lt;= s.size() &lt;= 1000\)).</li>
+</ul>
+<p><strong>Output</strong></p>
+<ul>
+<li>Mỗi bộ test in trên một dòng là một số nguyên - số lần biến đổi tối thiểu để làm cho string s trở thành <strong>good</strong>.</li>
+</ul>
+<p><strong>Input</strong></p>
+<pre><code>3
+001
+110
+01011001</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>0
+0
+3</code></pre>
+</div>
+<hr/>
+</div>

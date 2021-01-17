@@ -1,0 +1,110 @@
+<div class="tm-box2">
+<div class="problem-name">
+    FINDTEXT  - Trò chơi tìm chữ  
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Tý viết một chương trình tạo ra một số nguyên có N chữ số và ghi vào tệp văn bản. Sau đó mở tệp này trong một chương trình soạn thảo văn bản, chọn một khối gồm các số chữ số đầu tiên (bên trái) và chơi trò chơi tìm kiếm văn bản FindText. Nếu chương trình FindText tìm thấy khối được chọn ở vị trí khác (các khối không giao nhau) thì khối chọn sẽ di chuyển đến vị trí tìm thấy đó, nếu không tìm thấy thì khối chọn không di chuyển.</p>
+<p>Ví dụ:</p>
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width:542px">
+<tbody>
+<tr>
+<td style="width:237px">
+<p>Đoạn văn bản được chọn</p>
+</td>
+<td style="width:305px">
+<p>Dấu chọn di chuyển sau khi tìm kiếm</p>
+</td>
+</tr>
+<tr>
+<td style="width:237px">
+<p>12312312312</p>
+</td>
+<td style="width:305px">
+<p>123<strong>1</strong>2312312</p>
+</td>
+</tr>
+<tr>
+<td style="width:237px">
+<p>12312312312</p>
+</td>
+<td style="width:305px">
+<p>123<strong>12</strong>312312</p>
+</td>
+</tr>
+<tr>
+<td style="width:237px">
+<p>12312312312</p>
+</td>
+<td style="width:305px">
+<p>123123<strong>12312</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width:237px">
+<p>12312312312</p>
+</td>
+<td style="width:305px">
+<p>12312312312</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div> </div>
+<p>Tý muốn biết khối chọn ban đầu có nhiều nhất bao nhiêu chữ số để sau khi dùng chức năng FindText thì khối chọn sẽ di chuyển. Các chữ số được đánh số thứ tự từ 1 bắt đầu từ trái sáng phải.</p>
+<p><strong><em>Dữ liệu vào:</em></strong> Vào từ file văn bản FINDTEXT.INP có cấu trúc như sau:</p>
+<p>Một dòng chứa số nguyên a có n chữ số (1 &lt; n ≤ 10<sup>7</sup>)</p>
+<p><strong><em>Dữ liệu ra:</em></strong> Ghi ra file văn bản FINDTEXT.OUT có cấu trúc như sau:</p>
+<p>- Dòng 1 chứa số nguyên là số chữ số lớn nhất mà tý có thể chọn</p>
+<p>- Dòng 2 là vị trí mà khối chọn di chuyển đến (lấy vị trí chữ số đầu tiên trong khối chọn), nếu không di chuyển thì ghi 1.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<table align="center" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width:182px">
+<h3>FINDTEXT.INP</h3>
+</td>
+<td style="width:180px">
+<h3>FINDTEXT.OUT</h3>
+</td>
+</tr>
+<tr>
+<td style="width:182px">
+<p>1231212312</p>
+</td>
+<td style="width:180px">
+<p>5</p>
+<p>6</p>
+</td>
+</tr>
+<tr>
+<td style="width:182px">
+<p>123456789</p>
+</td>
+<td style="width:180px">
+<p>0</p>
+<p>1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div> </div>
+<p> </p>
+</div>
+</div>

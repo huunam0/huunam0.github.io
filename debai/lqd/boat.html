@@ -1,0 +1,38 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chèo thuyền</h2>
+</div><div class="content-description screen">
+<div><p>Ở thành phố Seoul có một con sông được gọi là sông Hàn chảy theo hướng đông-tây. Trên bờ phía bắc của sông có \(N\) trường chèo thuyền được đánh số từ \(1\) đến \(N\) theo chiều di chuyển từ đầu phía tây sang đầu phía đông của bờ sông. Tất cả các tàu của cùng một trường có màu giống hệt nhau và do đó là không thể phân biệt. Các tàu từ các trường khác nhau luôn có màu sắc khác nhau
+và do đó chúng luôn được phân biệt. Trường với chỉ số \(i\) có thể quyết định không gửi bất kỳ tàu nào đến lễ hội. Nhưng nếu quyết định gửi tàu đến lễ hội, trường có thể gửi một số bất kỳ từ \(a_i\) đến \(b_i\) tàu, bao gồm cả hai mút. \(\left(a_i\leq b_i\right)\)</p>
+<p>Một điều kiện quan trọng là số lượng tàu được gửi bởi trường với chỉ số \(i\), nếu trường quyết định gửi tàu, phải <em>lớn hơn</em> số lượng tàu được gửi bởi bất kỳ trường với chỉ số nhỏ hơn \(i\), nếu có trường như vậy đã quyết định gửi tàu.</p>
+<hr/>
+<h4>Task</h4>
+<p>Cho biết các số \(a_i\) và \(b_i\) đối với mỗi trường, hãy tìm số lượng tất cả các cách mà các trường có thể gửi tàu đến tham gia lễ hội với điều kiện có ít nhất một trường quyết định gửi tàu.</p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu tiên của dữ liệu vào chứa một số nguyên \(N\) là số lượng trường. Dòng thứ \(i\) trong số \(N\) dòng tiếp theo chứa hai số nguyên \(a_i\) và \(b_i\). \(\left(1\leq a_i\leq b_i\leq 10^9\right)\)</p>
+<hr/>
+<h4>Output</h4>
+<p>Đưa ra trên một dòng phần dư của phép chia số lượng tất cả các cách mà các trường có thể gửi tàu tham gia lễ hội cho \(1,000,000,007\).</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>2
+1 2
+2 3</code></pre>
+<h5>Output</h5>
+<pre><code>7</code></pre>
+<h5>Giải thích</h5>
+<p>Có \(4\) cách mà trong đó chỉ có một trường quyết định gửi tàu và \(3\) cách mà trong đó cả hai trường đều gửi tàu, do đó câu trả lời là \(7\).</p>
+<hr/>
+<h4>Ràng buộc</h4>
+<ul>
+<li><strong>Subtask 1 (20 tests):</strong> \(1\leq N\leq 500\) và với mọi \(1\leq i\leq N\), \(a_i=b_i\).</li>
+<li><strong>Subtask 2 (20 tests):</strong> \(1\leq N\leq 500\) và \(\sum_{1\leq i\leq N}(b_i-a_i)\leq 10^6\).</li>
+<li><strong>Subtask 3 (20 tests):</strong> \(1\leq N\leq 100\).</li>
+<li><strong>Subtask 4 (20 tests):</strong> \(1\leq N\leq 500\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn bài: APIO 2016</em></p>
+</div>
+<hr/>
+</div>

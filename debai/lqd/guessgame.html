@@ -1,0 +1,33 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Đoán số</h2>
+</div><div class="content-description screen">
+<div><p><strong>Đây là bài toán giao tiếp với máy chấm (Interactive problem)</strong></p>
+<p><span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> có một con số \(n\) bí mật. Điều duy nhất bạn biết về con số này là \(1 \leq n \leq 2 \times 10^9\). <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> và bạn sẽ chơi một trò chơi như sau: Bạn sẽ được chọn một số bất kỳ và nói cho <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> nghe số đó. <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> sẽ cho bạn biết con số của bạn lớn hơn, nhỏ hơn, hay bằng \(n\).  Hãy đoán xem \(n\) là số nào trong không quá \(31\) câu hỏi.</p>
+<h4>Cách Thức Giao Tiếp</h4>
+<p>Mỗi lượt, bạn sẽ in ra một số \(x\) trên một dòng (\(1\leq x \leq 2 \times 10^9\)). Máy tính sẽ đọc \(x\) và in ra màn hình một chuỗi tương ứng với các trường hợp sau:</p>
+<ul>
+<li>"BIGGER" nếu \(n &gt; x\)</li>
+<li>"SMALLER" nếu \(n &lt; x\)</li>
+<li>"HOLA" nếu \(n = x\). </li>
+</ul>
+<p><em>Lưu ý</em>:</p>
+<ul>
+<li>Chuỗi mà máy in ra màn hình không có dấu "</li>
+<li>Nếu các bạn in ra một output không hợp lệ (không phải là một số, số ngoài đoạn \([1, 2 \times 10^9]\) thì nhiều khả năng bị TLE.</li>
+<li>Sau khi in mỗi số, bạn phải xuống dòng (ví dụ in <code>endl</code> trong C++) </li>
+<li>Khi in ra một dòng, các bạn phải flush output bằng cách <code>cout.flush</code> hoặc dùng <code>endl</code> thay vì <code>\n</code></li>
+</ul>
+<h4>Sample Input 1</h4>
+<pre><code>SMALLER
+BIGGER
+HOLA</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>1
+9
+5</code></pre>
+<h4>Giải thích</h4>
+<p>Máy và bạn giao tiếp như sau: Bạn hỏi 1 -&gt; máy nói SMALLER -&gt; bạn hỏi 9 -&gt; máy nói BIGGER -&gt; bạn hỏi 5 -&gt; máy nói HOLA.</p>
+<p>Con số bí mật trong test này là \(n=5\). Ban đầu bạn in ra \(1\), máy tính thấy rằng \(1 &lt; 5\) nên in ra SMALLER. Sau đó bạn in ra \(9\), máy tính in ra BIGGER vì \(9 &gt; 5\). Bạn chiến thắng khi bạn in ra \(5\) và chỉ dùng \(3\) câu hỏi.</p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,29 @@
+<h2>XOR - Phép Xor</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274707/problem/R" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274707/problem/R </a><p>Cho 1 tập N số nguyên dương A[1] , … A[N] . Tập số này được gọi là phụ thuộc tuyến tính nếu tồn tại 1 số nguyên A[i] nào đó thoả mãn : <br/>
+A[i] = A[j1] xor A[j2] … xor A[jk] ( với i , j1 , j2 , … , jk  đôi một khác nhau và k là 1 số tuỳ ý ) . Nếu tập số này không phụ thuộc tuyến tính thì được gọi là độc lập tuyến tính . <br/>
+Hãy kiểm tra tập N số nguyên dương A[1] … A[N] có phải là độc lập tuyến tính hay không ? Nếu không hãy chỉ ra phải loại đi ít nhất bao nhiêu phần tử để tập còn lại là 1 tập độc lập tuyến tính .
+<br/>
+<br/>
+<i>Download test tại <a href="http://vn.spoj.com/content/XOR.rar">đây</a>. Solution của bài này sẽ không được upload , các bạn phải tự giải.</i>
+</p><h3>Input</h3>
+<p>Dòng 1 : số nguyên dương T là số bộ test .<br/>
+Tiếp theo là T bộ test , mỗi bộ test có format như sau :<br/>
+Dòng 1 : số N ( 1 ≤ N ≤ 10000 ) .<br/>
+Dòng 2 : N số nguyên dương A[1] … A[N] .( 1 ≤ A[i] ≤ 2000000000 ) .<br/>
+</p><h3>Output</h3>
+<p>Với mỗi test , nếu tập N số là độc lập tuyến tính thì ghi ra “YES” ngược lại ghi ra “NO X” với X là số số ít nhất cần phải bỏ đi để tập còn lại trở thành độc lập tuyến tính .
+
+</p><h3>Example</h3>
+<pre>
+<b>Input:</b>
+2
+2
+1 2
+3
+1 2 3
+
+<b>Output:</b>
+YES
+NO 1
+</pre>
+</div>

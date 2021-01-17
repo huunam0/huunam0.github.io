@@ -1,0 +1,58 @@
+<div class="tm-box2">
+<div class="problem-name">
+    NEWLANG - Ngôn Ngữ Lập Trình 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 3.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>ami và cuom1999 đang tạo ra một ngôn ngữ lập trình mới. Ngôn ngữ hiện tại chỉ hỗ trợ các phép tính +, -, &lt;&lt; (trong C++). Trong đó: </p>
+<p>a + b trả về tổng 2 số</p>
+<p>a - b trả về hiệu 2 số</p>
+<p>a &lt;&lt; b trả về a * (2<sup>b</sup>)</p>
+<p>Ví dụ 1 &lt;&lt; 5 = 32, 3 &lt;&lt; 0 = 3.</p>
+<p>ami và cuom1999 muốn cài đặt phép nhân cho ngôn ngữ dựa trên 3 phép toán trên. Chẳng hạn</p>
+<p>a * 7  có thể tính bằng a * 8 - a hoặc a * 4 + a * 2 + a. Phép tính thứ nhất chỉ có 2 số hạng, trong khi phép tính thứ 2 có 3 số hạng. Từ đó 2 bạn đặt ra bài toán: làm sao để phép nhân sử dụng ít phép toán nhất có thể. Nói cách khác, cho một số tự nhiên n, hãy biểu diễn n thành tổng và hiệu của ít số hạng có dạng 2<sup>k</sup> nhất.</p>
+<p><strong>Input:</strong></p>
+<p>Gồm một số tự nhiên n (0 &lt;= n &lt;= 10<sup>6</sup>).</p>
+<p><strong>Output:</strong></p>
+<p>In ra số lượng số hạng ít nhất cần dùng để biểu diễn n.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">7</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2020</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Giải thích</strong></p>
+<p>7 = 2<sup>3</sup> - 2<sup>0</sup></p>
+<p>5 = 2<sup>2</sup> + 2<sup>0</sup></p>
+<p>2020 = 2<sup>11</sup> - 2<sup>5</sup> + 2<sup>2</sup></p>
+</div>
+</div>

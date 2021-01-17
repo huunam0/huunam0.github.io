@@ -1,0 +1,60 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    CoTreeGame - Colored Tree Game 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 5.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Nguồn: <a href="http://acm.ntu.edu.vn/Contest/Enter/20" style="line-height: 20.8px;"><strong>ACM-ICPC Vietnam Central Provincial Contest </strong></a></p>
+<p><strong>Ch</strong>ú ý: bộ test do mình make(có thể có lỗi), không phải bộ test chính thức của kì thi</p>
+<p> </p>
+<p>Jack recently discovered a game called Colored Tree. The game is played on a tree containing N nodes in which nodes are numbered from 0 to N - 1 and edges are of four colors: red (R), green (G), blue (B) and white (W). An order of four colors is also given. The player are required to answer multiple questions, each of them is described as below:</p>
+<p>    •    Given two distinct nodes X and Y, we now consider the path connecting X and Y in the tree.</p>
+<p>    •    In each turn, the player can select two adjacent edges (edges are adjacent iff they have a common node), merge them into a new edge and remove the common node.</p>
+<p>    •    Let u and v be the colors of the selected edges, the new edge's color will be determined by these rules:</p>
+<p>            •    If either u or v is white, it will be the other color.</p>
+<p>            •    If u and v are the same, it will be white.</p>
+<p>            •    Otherwise, if u and v are different, it will be the remaining color in (red, green, blue). For example: if u is red and v is blue then the new color will be green.</p>
+<p>    •    The player will keep merging edges until only one edge remains. The last edge's color should be as good as possible. Color u is better than color v iff u appears before v in the color order.</p>
+<p>Being a smart kid, Jack soon finds that the game is not challenging enough for him. Hence, he invents a new version which is played on a dynamic tree. Specifically, the tree initially contains only one node and there are two types of operations: adding a new edge to the existing tree and answering a question.</p>
+<p>Let D be a variable we will use to generate input. D is initally 0. Also, let count(c) be the number of times color c has been the answer so far. All the count values are initially 0, too.</p>
+<p>Initially, the tree only has one node, numbered 0.</p>
+<p><strong>Input</strong></p>
+<p>The first line contains the number of tests T.</p>
+<p>Each test contains:</p>
+<p>    •    The first line contains the number of queries Q and the color order S.</p>
+<p>    •    Line i of the following Q lines contains:</p>
+<p>            •    0 K c: This describes a query of adding a new edge. Let N be the current number of nodes. We will add a new edge of color c between N and X where X = (D + K) mod N.</p>
+<p>            •    1 X Y: This describes a question for the path connecting X and Y. Let c be the answer for this question, we will first increase count(c) by 1, then set D = count(c) after this query.</p>
+<p><strong>Output</strong></p>
+<p>Print T lines, each line contains all characters (R, G, B, W) representing the answers for one test.</p>
+<p><strong>Limits</strong></p>
+<p>T ≤ 10</p>
+<p>1 ≤ Q ≤ 500000</p>
+<p>0 ≤ K ≤ 1000000</p>
+<p>0 ≤ X, Y &lt; current number of nodes and X ≠ Y</p>
+<p>S contains exactly 4 different characters from {R, G, B, W}</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2<br/>5 RGBW<br/>0 0 W<br/>0 1 R<br/>1 0 2<br/>0 0 R<br/>1 2 3<br/>4 RGBW<br/>0 0 R<br/>0 1 B<br/>0 2 W<br/>1 0 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">RW<br/>G</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

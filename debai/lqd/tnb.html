@@ -1,0 +1,33 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Ấn Nút</h2>
+</div><div class="content-description screen">
+<div><p>Nhân ngày quốc tế thiếu nhi, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đã tặng em gái của Flow God <em>xấu-trai-hơn-ami</em> một chiếc máy thần kì. Trên chiếc máy là 2 nút màu tím và hồng, cùng 2 số \(H\) và \(I\). Nếu ấn nút màu tím, số \(H\) sẽ tăng 1 đơn vị, nếu ấn nút màu hồng, số \(I\) sẽ tăng 1 đơn vị. Flow God ghen tuông vì <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đã tặng cho em gái cưng của mình một món quà cool ngầu như thế, bèn tìm ra cách để <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> phải mất mặt.</p>
+<p>Flow God <em>xấu-trai-hơn-ami</em> muốn <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> ấn các nút tím và hồng tổng cộng không quá F lần. Sau khi thực hiện các thao tác, giả sử 2 số mà <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> nhận được là \(N\) và \(R\), Flow God muốn \(gcd(N,R)\) là lớn nhất có thể. Nhắc lại, \(gcd(a,b)\) là một số \(c\) lớn nhất mà cả \(a\) và \(b\) đều chia hết cho \(c\) (quy ước \(gcd(0, n)=gcd(n, 0)=n\) với mọi số nguyên dương \(n\)). Tuy nhiên, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> quá thần thánh, đã tìm ra kết quả siêu nhanh. Flow God tức tối, giận <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> chém ma. "ma" ở đây chính là các bạn tham gia contest.</p>
+<p>Các bạn cần trả lời \(q\) câu hỏi của Flow God, mỗi câu hỏi có dạng <strong>\(H\) \(I\) \(F\)</strong>. Cần in ra \(gcd(N,R)\) lớn nhất, \(N\) và \(R\) là các số nhận được, sau khi ấn hai nút tím và hồng không quá \(F\) lần.</p>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa một số nguyên dương \(q\) là số câu hỏi của Flow God <em>xấu-trai-hơn-ami</em>.</p>
+<p>Tiếp theo là \(q\) dòng, mỗi dòng chứa một bộ số nguyên không âm <strong>\(H\) \(I\) \(F\)</strong> là một câu hỏi.</p>
+<h4>Output</h4>
+<p>In ra \(q\) dòng, mỗi dòng là một số nguyên là \(gcd(N,R)\) lớn nhất có thể đạt được.</p>
+<p>Dữ liệu đảm bảo luôn có kết quả.</p>
+<h4>Sample Input 1</h4>
+<pre><code>3
+0 1 1
+1 1 2
+2 4 1</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>2
+2
+2</code></pre>
+<h4>Giải thích</h4>
+<p>Với 0 1, có thể ấn nút hồng 1 lần để thành 0 2. \(Gcd(0,2)\) = 2. Có thể chứng minh đây là kết quả lớn nhất.
+Với 1 1, có thể ấn nút hồng 1 lần, nút tím 1 lần để thành 2 2. \(Gcd(2,2)\) = 2. Có thể chứng minh đây là kết quả lớn nhất.
+Với 2 4, có thể không ấn nút nào. \(Gcd(2,4)\) = 2. Có thể chứng minh đây là kết quả lớn nhất.</p>
+<h4>Giới hạn</h4>
+<p>\(5\%\) test có \(H = 0, I \leq 10^5, F \leq 10^{13}, q \leq 10^2\)</p>
+<p>\(20\%\) test có \(H, I \leq 10^5, q \leq 10^2, F \leq 10^{5}\)</p>
+<p>\(10\%\) test có \(H, I \leq 10^5, q \leq 10^2, F = 0\)</p>
+<p>\(65\%\) test có \(H, I \leq 10^5, q \leq 10^2, F \leq 10^{13}\)</p>
+</div>
+<hr/>
+</div>

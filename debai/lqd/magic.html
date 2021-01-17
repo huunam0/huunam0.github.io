@@ -1,0 +1,40 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">MAGIC</h2>
+</div><div class="content-description screen">
+<div><p>Kế tục thành công của trò chơi với khối lập phương thần bí, ngài Rubik sáng tạo ra dạng phẳng của trò chơi này gọi là trò chơi các ô vuông thần bí. Đây là một bảng gồm 8 ô vuông bằng nhau. Trong bài này chúng ta xét bảng trong đó mỗi ô vuông có một màu khác nhau. Các mầu được ký hiệu bởi 8 số nguyên dương đầu tiên. Trạng thái của bảng được cho bởi dãy ký hiệu màu của các ô được viết lần lượt theo chiều kim đồng hồ bắt đầu từ ô ở góc trái trên và kết thúc tại ô ở góc trái dưới. Ví dụ, trạng thái của bảng trong hình 1 được cho bởi dãy \((1,2,3,4,5,6,7,8)\). Trạng thái này được gọi là trạng thái khởi đầu.</p>
+<p>Có thể dùng 3 phép biến đổi cơ bản đối với bảng có tên là A,B,C:</p>
+<ul>
+<li>A: Đổi chỗ dòng trên và dòng dưới.</li>
+<li>B: Thực hiện một hoán vị vòng quanh sang phải.</li>
+<li>C: Quay theo chiều kim đồng hồ 4 ô giữa.</li>
+</ul>
+<p>Biết rằng từ trạng thái khởi đầu luôn có thể chuyển về một trạng thái bất kỳ bằng cách dùng các phép biến đổi cơ bản nói trên.</p>
+<p>Tác động của 3 phép biến đổi được mô tả trong hình 2, với giả thiết trước khi thực hiện một phép biến đổi bất kỳ bảng đều đang ở trạng thái khởi đầu.</p>
+<pre><code>Hình 1:        Hình 2:
+
+1 2 3 4 -----&gt; 8 7 6 5
+8 7 6 5   A    1 2 3 4
+
+        -----&gt; 4 1 2 3
+          B    5 8 7 6
+
+        -----&gt; 1 7 2 4
+          C    8 6 3 5</code></pre>
+<p>Bạn phải viết chương trình tính số phép biến đổi cơ bản ít nhất để chuyển bảng từ trạng thái khởi đầu trong hình 1 về một trạng thái đích cho trước.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Chứa 8 số nguyên dương trong dòng đầu tiên mô tả trạng thái đích.</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Số phép biến đổi ít nhất. </li>
+</ul>
+<p><strong>Input</strong></p>
+<pre><code>2 6 8 4 5 7 3 1</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>7</code></pre>
+<hr/>
+<p><em>Nguồn: 3D 20172018</em></p>
+</div>
+<hr/>
+</div>

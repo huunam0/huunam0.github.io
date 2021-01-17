@@ -1,0 +1,44 @@
+<h2>VMSUDOKU - Sudoku</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274857/problem/O" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274857/problem/O </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/J" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/J </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/272944/problem/Q" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/272944/problem/Q </a><p>Sudoku là một trò chơi trí tuệ dành cho 1 người, được chơi trên bảng 9x9, chia thành 9 hình vuông nhỏ 3x3.</p>
+<p style="text-align: center;"><img alt="Bảng sudoku" height="200" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/500px-Sudoku-by-L2G-20050714.svg.png" style="vertical-align: middle;" width="200"/></p>
+<p>Ban đầu có một số ô của bảng chứa các chữ số 1 đến 9. Những ô còn lại rỗng.</p>
+<p>Nhiệm vụ của người chơi Sudoku là điền các chữ số từ 1 đến 9 vào bảng, sao cho trong mỗi hàng, mỗi cột, và trong 9 ô vuông 3x3 của bảng có đủ tất cả các chữ số từ 1 đến 9 (nói cách khác, mỗi chữ số từ 1 đến 9 xuất hiện đúng một lần trong mỗi hàng, mỗi cột, và trong 9 ô vuông 3x3).</p>
+<p>Nhiệm vụ của bạn trong bài toán này hơi khác một chút: thay vì điền tiếp các chữ số vào bảng Sudoku, bạn cần tạo ra 1 bảng Sudoku hợp lệ (nghĩa là mỗi hàng, mỗi cột, và 9 ô vuông 3x3 đều có đủ các chữ số từ 1 đến 9).</p>
+<h3>Input</h3>
+<p>Bài này không có input</p>
+<h3>Output</h3>
+<p>In ra đúng 9 dòng, mỗi dòng gồm 9 ký tự là 9 chữ số của dòng tương ứng.</p>
+<h3>Cách tính điểm</h3>
+<ul>
+<li>Nếu bạn đưa ra một bảng Sudoku không hợp lệ, bạn được 0 điểm.</li>
+<li>Ngược lại, điểm của bạn được tính như sau:                       
+<ul>
+<li>Gọi ô ở hàng u, cột v là ô (u, v).</li>
+<li>Với mỗi số i từ 1 đến 9, ta định nghĩa  <br/> <img alt="sum(i) = tổng(|u - x| * |v - y|), " src="../../../content/voj:VMSUDOKU2.png"/> <br/> với tất cả các cặp ô (u, v) và (x, y) chứa số i. </li>
+<li>Điểm của bạn được tính theo công thức:<br/> <img alt="max(0, tổng(i * sum(i) với i = 1..9) - 17,000)" src="../../../content/voj:VMSUDOKU1.png"/> </li>
+</ul>
+</li>
+<li>Điểm càng cao càng tốt. Vì đây là bài challenge, điểm cuối cùng mà bạn nhận được trong VM14 sẽ được tính theo công thức:                 
+<ul>
+<li>Giả sử bạn đứng thứ i (nghĩa là có i-1 người điểm cao hơn bạn).</li>
+<li>Điểm của bạn nhận được sẽ là  <br/> <img alt="max(log(100.0 / (i+1)) * (100.0 / log(100.0 / 2)), 0)" src="../../../content/voj:VMSUDOKU3.png"/> <br/> với log là log cơ số e.</li>
+</ul>
+</li>
+</ul>
+<h3>Example</h3>
+<pre><strong>Output:</strong>
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 453px; width: 1px; height: 1px; overflow: hidden;">683459172</div>683459172
+241673859
+759182364
+492836715
+536217498
+817594236
+928361547
+174925683
+365748921
+
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 453px; width: 1px; height: 1px; overflow: hidden;">241673859</div>
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 453px; width: 1px; height: 1px; overflow: hidden;">759182364</div>Với output này, sum(1) = 398, sum(2) = 404, ..., sum(9) = 374, <span style="white-space: normal;">tổng(i * sum(i)) = 17056. Điểm bạn nhận được là 56.</span>
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 453px; width: 1px; height: 1px; overflow: hidden;">492836715</div>
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 453px; width: 1px; height: 1px; overflow: hidden;">536217498</div><div id="_mcePaste" style="position: absolute; left: -10000px; top: 453px; width: 1px; height: 1px; overflow: hidden;">594236</div><div id="_mcePaste" style="position: absolute; left: -10000px; top: 453px; width: 1px; height: 1px; overflow: hidden;">928361547</div><div id="_mcePaste" style="position: absolute; left: -10000px; top: 453px; width: 1px; height: 1px; overflow: hidden;">74925683</div><div id="_mcePaste" style="position: absolute; left: -10000px; top: 453px; width: 1px; height: 1px; overflow: hidden;">36574892</div></pre>
+</div>

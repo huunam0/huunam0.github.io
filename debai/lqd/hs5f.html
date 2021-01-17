@@ -1,0 +1,32 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">LN ngắm trai</h2>
+</div><div class="content-description screen">
+<div><p>Cho một bàn cờ \(m \times n\) và 1 con hậu trên bàn cờ. LN tưởng tượng mình là con hậu và muốn đặt \(k\) con vua lên bàn cờ. LN muốn \(k\) con vua ở các vị trí khác nhau và con hậu ngắm nhìn được nhiều con vua nhất. Một con vua nằm trong tầm ngắm của con hậu nếu nó 2 quân nằm trên cùng 1 hàng, cột hoặc đường chéo, đồng thời giữa chúng không có con vua nào cản đường. LN tự hỏi con hậu có thể ngắm được nhiều nhất bao nhiêu con vua. <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cảm thấy bài toán quá đơn giản nên thêm vào: Có bao nhiêu cách xếp để con hậu ngắm được nhiều con vua nhất?</p>
+<p>Hai cách xếp được gọi là khác nhau nếu có một ô cờ mà trong cách xếp này có vua, và trong cách kia không có vua.</p>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa 3 số nguyên dương \(m, n, k \ (1 \leq m, n \leq 1000; 1 \leq k &lt; mn)\)</p>
+<p>Dòng thứ hai chứa 2 số nguyên dương \(x, y \ (1 \leq x \leq m, 1 \leq y \leq n)\) - vị trí của con hậu</p>
+<h4>Output</h4>
+<p>In ra 2 số nguyên dương \(a, b\) trên 1 dòng. Trong đó \(a\) là số con vua tối đa LN có thể ngắm, \(b\) là số cách xếp để LN ngắm được nhiều con vua nhất sau khi \(\mod 10^9+7\)</p>
+<h4>Sample Input 1</h4>
+<pre><code>2 2 2
+1 1</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>2 3</code></pre>
+<h4>Sample Input 2</h4>
+<pre><code>3 3 4
+1 1</code></pre>
+<h4>Sample Output 2</h4>
+<pre><code>3 28</code></pre>
+<h4>Giải thích</h4>
+<p>Trong test ví dụ đầu tiên, có 2 con vua và có thể đặt chúng vào 3 vị trí. Bất kể có đặt thế nào thì LN vẫn ngắm được 2 con vua. Số cách đặt là \(C^2_3=3\)</p>
+<h4>Giới hạn</h4>
+<p>\(10\)% test có \(m = 1\)</p>
+<p>\(10\)% test có \(m, n \leq 4\)</p>
+<p>\(10\)% test có \(m, n \leq 20; k \leq 3\)</p>
+<p>\(10\)% test có \(m, n \leq 20\)</p>
+<p>\(10\)% test có \(m, n \leq 100\)</p>
+<p>\(50\)% test có \(m, n \leq 1000\)</p>
+</div>
+<hr/>
+</div>

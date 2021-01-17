@@ -1,0 +1,21 @@
+<h2>HBTLCA - dynamic LCA</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274710/problem/G" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274710/problem/G </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/274493/problem/F" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274493/problem/F </a><p>Cho một đồ thị cây có N đỉnh N-1 cạnh, có gốc là đỉnh 1. và M truy vấn. Mỗi truy vấn thuộc một trong hai loại sau:</p>
+<p>1 root: Chọn root làm gốc của cây</p>
+<p>2 u v: Yêu cầu tìm cha chung gần nhất của hai đỉnh u và v.</p>
+<p>Hãy lập trình và đưa ra câu trả lời ứng với các truy vấn loại 2.</p>
+<h3>Input</h3>
+<p>Gồm nhiều bộ test:</p>
+<p>Dòng 1: Số nguyên N, số đỉnh của cây (1≤N≤10<sup>5</sup>).</p>
+<p>N-1 dòng tiếp theo: Mỗi dòng gồm hai số nguyên u và v là hai đỉnh của đồ thị.</p>
+<p>Dòng tiếp theo: Số nguyên M, số truy vấn (1≤M≤10<sup>5</sup>).</p>
+<p>M dòng tiếp theo, mỗi dòng thuộc một trong hai loại truy vấn đã cho: "! root" ứng với truy vấn loại 1 và "? u v" ứng với truy vấn loại 2.</p>
+<p>Kết thúc bộ test là số 0.</p>
+<h3>Output</h3>
+<p>Đưa ra các câu trả lời ứng với các bộ, mỗi câu trả lời in ra trên một dòng.</p>
+<h3>Example</h3>
+<pre><strong>Input:</strong>
+<p>9</p><p>1 2</p><p>1 3</p><p>2 4</p><p>2 5</p><p>3 6</p><p>3 7</p><p>6 8</p><p>6 9</p><p>5</p><p>? 4 5</p><p>? 5 6</p><p>? 8 7</p><p>! 6</p><p>? 8 7</p><p>0</p>
+
+<strong>Output:</strong>
+<p>2</p><p>1</p><p>3</p><p>6</p></pre>
+</div>

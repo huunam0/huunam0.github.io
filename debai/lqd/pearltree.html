@@ -1,0 +1,37 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Cây ngọc (Chọn ĐT'20-21)</h2>
+</div><div class="content-description screen">
+<div><p>Tèo cảm thấy bài toán mà Tí giải ở trên quá đơn giản nên thách đố thêm bài toán sau. Thay vì đặt các viên ngọc trên đường thẳng, Tèo đặt chúng lên một cái cây (đồ thị liên thông vô hướng và không có chu trình). Để đơn giản, Tèo chỉ chọn ra các viên ngọc thuộc một trong 4 màu: đỏ, xanh, lục, vàng.</p>
+<p>Tèo muốn chia nhỏ cây thành các thành phần liên thông bằng cách bỏ đi vài cạnh. Đồng thời Tèo không muốn thấy thành phần liên thông nào chứa ba màu đỏ, xanh, lục cùng lúc (vì theo Tèo, chúng làm mất vẻ đẹp của nhau). Nhiệm vụ của Tí là đếm xem có bao nhiêu bỏ đi một vài cạnh của cây (có thể không bỏ cạnh nào) sao cho trong các thành phần liên thông còn lại, không có thành phần liên thông nào chứa cả 3 màu đỏ, xanh, lục.</p>
+<p>Hai cách chia được xem là khác nhau nếu có một cạnh bị bỏ trong cách chia này mà không bị bỏ trong cách chia còn lại.</p>
+<p><strong>Yêu cầu</strong>: In ra số cách chia sau khi \(\mod 10^9+7\)</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên là số tự nhiên \(n\) (\(n ≤ 3*10^5\)), số viên ngọc. </li>
+<li>Dòng thứ hai chứa một xâu miêu tả màu các viên ngọc. Chữ cái thứ \(i\) trong xâu tương ứng với màu của viên ngọc thứ \(i\) (<code>D</code>: Đỏ, <code>X</code>: Xanh, <code>L</code>: Lục, <code>V</code>: vàng)</li>
+<li>\(n-1\) dòng tiếp theo chứa hai số nguyên \(u,v\) (\(1 ≤ u,v ≤ n\)) miêu tả một cạnh nối viên ngọc thứ \(u\) và thứ \(v\). <em>Dữ liệu đảm bảo đồ thị là một cây.</em></li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra một số nguyên duy nhất - số cách chia.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>4
+DXLV
+1 2
+2 3
+3 4</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>6</code></pre>
+<p><strong><em>Giải thích:</em></strong> Các cách chia thỏa mãn là: (12)(34), (1)(234), (1)(23)(4), (1)(2)(3)(4), (1)(2)(34), (12)(3)(4). Lưu ý các viên ngọc 1, 2, 3 không được xuất hiện trong cùng một thành phần liên thông.</p>
+<p><strong><em>Ràng buộc:</em></strong></p>
+<ul>
+<li>30% điểm ứng trường hợp cây là đường thẳng, các cạnh trên cây có dạng (\(i,i+1\)) với (\(0&lt;i&lt;n\)) .</li>
+<li>30%  điểm ứng với trường hợp không có đỉnh nào màu đỏ.</li>
+<li>40%  điểm còn lại ứng không có thêm dữ kiện nào cả.</li>
+</ul>
+<hr/>
+<p><em>Nguồn: Bài 6 Chọn ĐT HSG TP.ĐN 2020-2021</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,57 @@
+<div class="tm-box2">
+<div class="problem-name">
+    G2W - Đi làm 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;"><span style="font-size:14px">Bài 2 của đề <a href="../../ckfinder/userfiles/files/TEST2.pdf">/ckfinder/userfiles/files/TEST2.pdf</a></span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Tom sống ở thành phố XYZ, hàng ngày anh thường chọn đường đi ngắn nhất từ nhà tới cơ quan và từ cơ quan về nhà. Thành phố XYZ mà Tom ở có 𝑛 nút giao thông được đánh số từ 1 đến 𝑛. Nhà Tom nằm ở nút giao thông 1 còn cơ quan nằm ở nút giao thông 𝑛. Từ nút giao thông 𝑖 đến nút 𝑗 có không quá một đường đi một chiều độ dài 𝑑<sub>𝑖𝑗</sub> , tất nhiên, có thể có đường đi một chiều khác đi từ nút 𝑗 đến nút 𝑖. Trong thời gian tới, thành phố sẽ tổ chức nhiều sự kiện văn hóa và Tom biết rằng, khi đi làm từ nhà đến cơ quan thì có 𝑝 nút sẽ bị ùn tắc là 𝑎<sub>1</sub>, 𝑎<sub>2</sub>, . . , 𝑎<sub>𝑝</sub>, còn khi đi từ cơ quan về nhà thì có 𝑞 nút sẽ bị ùn tắc là 𝑏<sub>1</sub>, 𝑏<sub>2</sub>, . . , 𝑏<sub>𝑞</sub>. Tom băn khoăn muốn biết độ dài đường ngắn nhất đi từ nhà đến cơ quan mà không đi qua các nút 𝑎<sub>1</sub>, 𝑎<sub>2</sub>, . . , 𝑎<sub>𝑝</sub> và độ dài đường ngắn nhất đi từ cơ quan về nhà mà không đi qua các nút 𝑏<sub>1</sub>, 𝑏<sub>2</sub>, . . , 𝑏<sub>𝑞</sub> là bao nhiêu? </span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Ví dụ, thành phố có 5 nút giao thông và các đường đi một chiều với độ dài tương ứng như hình bên. Giả sử nút 4 là nút bị ùn tắc khi đi từ nhà đến cơ quan, nút 2 và nút 4 là nút bị ùn tắc khi đi từ cơ quan về nhà, khi đó độ dài đường đi ngắn nhất từ nhà đến cơ quan là 19 (đường đi 1→2→3→5, không đi qua nút 4), độ dài đường đi ngắn nhất từ cơ quan về nhà là 17 (đường đi 5→3→1, không đi qua nút 2 và nút 4) </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Yêu cầu</strong>: Cho biết các đường đi một chiều với độ dài tương ứng mô tả hệ thống giao thông thành phố XYZ và các nút sẽ bị ùn tắc 𝑎<sub>1</sub>, 𝑎<sub>2</sub>, . . , 𝑎<sub>𝑝</sub>, 𝑏<sub>1</sub>, 𝑏<sub>2</sub>, . . , 𝑏<sub>𝑞</sub>. Hãy tìm độ dài đường đường đi ngắn nhất để đi từ nhà (nút giao thông 1) đến cơ quan (nút giao thông 𝑛) mà không đi qua các nút 𝑎<sub>1</sub>, 𝑎<sub>2</sub>, . . , 𝑎<sub>𝑝</sub> và từ cơ quan về nhà mà không qua các nút 𝑏<sub>1</sub>, 𝑏<sub>2</sub>, . . , 𝑏<sub>𝑞</sub>. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Dữ liệu vào</strong></span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">- Dòng đầu ghi bốn số nguyên dương 𝑛, 𝑚, 𝑝, 𝑞 (3 ≤ 𝑛 ≤ 10000, 𝑚 ≤ 10<sup>5</sup> , 1 ≤ 𝑝, 𝑞 ≤ 𝑛 − 2)<br/>
+- Dòng thứ hai ghi 𝑝 số nguyên 𝑎<sub>1</sub>, 𝑎<sub>2</sub>, . . , 𝑎<sub>𝑝</sub> (1 &lt; 𝑎<sub>𝑖</sub> &lt; 𝑛)<br/>
+- Dòng thứ ba ghi 𝑞 số nguyên 𝑏<sub>1</sub>, 𝑏<sub>2</sub>, . . , 𝑏<sub>𝑞</sub> (1 &lt; 𝑏𝑖 &lt; 𝑛)<br/>
+- 𝑚 dòng tiếp theo, mỗi dòng 3 số nguyên 𝑖,𝑗, 𝑑<sub>𝑖𝑗</sub> (1 ≤ 𝑖,𝑗 ≤ 𝑛, 0 &lt; 𝑑<sub>𝑖𝑗</sub> ≤ 30000) mô tả có đường đi một chiều từ 𝑖 đến 𝑗 có độ dài 𝑑<sub>𝑖𝑗</sub>. Hai số liên tiếp trên một dòng cách nhau một dấu cách. Dữ liệu bảo đảm luôn có nghiệm. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Kết quả </strong></span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Một dòng chứa 2 số nguyên cách nhau một dấu cách, số thứ nhất là độ dài đường đi ngắn nhất từ nhà đến cơ quan, số thứ hai là độ dài ngắn nhất từ cơ quan về nhà thỏa mãn điều kiện đã nêu.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="text-align: justify; margin-left: 40px;">5 11 1 2<br/>
+4<br/>
+2 4<br/>
+1 2 10<br/>
+1 4 3<br/>
+2 3 6<br/>
+2 5 10<br/>
+3 1 12<br/>
+3 4 6<br/>
+3 5 3<br/>
+4 1 5<br/>
+4 3 5<br/>
+5 3 5<br/>
+5 4 10</p>
+<p><strong>Output</strong></p>
+<p style="margin-left: 40px;">19 17</p>
+<p><strong>Giới hạn:</strong></p>
+<p style="margin-left: 40px;"><span style="font-size:14px"><em>50% số test ứng với 50% số điểm  n&lt;=100.</em></span></p>
+<hr/>
+<p><em>Nguồn: 3D '1819</em></p>
+</div>
+</div>

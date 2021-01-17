@@ -1,0 +1,60 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">[Python_Training] Vết của ma trận</h2>
+</div><div class="content-description screen">
+<div><ul>
+<li><p>Cho ma trận \(A\) có kích thước \(n\text { x }n\) với \(n\in \mathbb{N}^{*}\)</p>
+<ul>
+<li>Vết của ma trận \(A\) có kí hiệu là \(tr(A)\) và được định nghĩa như sau: \(tr(A)=\sum\limits_{i=1}^{n}A[i][i]\) (tổng các phần tử trên đường chéo chính).</li>
+</ul>
+</li>
+</ul>
+<p>Xét tất cả các ma trận vuông con (của ma trận \(A\)) có kích thước \(k\text{ x }k\) (bằng cách bỏ đi một số hàng( hoặc không bỏ hàng nào) và một số cột (hoặc không bỏ cột nào) của ma trận \(A\) ) với \(1\le k\le n\), hãy tìm ma trận con có vết lớn nhất và in giá trị đó ra màn hình.</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa hai số nguyên \(n,k(1\le n\le 50;1\le k\le n)\)</p>
+</li>
+<li><p>\(n\) dòng tiếp theo, mỗi dòng là một chuỗi gồm \(n\) kí tự số (\('0'..'9'\))</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra kết quả thỏa mãn yêu cầu bài toán.</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input 1:</strong></p>
+<pre><code>3 3
+123
+456
+789</code></pre>
+<p><strong>Output 1:</strong></p>
+<pre><code>15</code></pre>
+<p><strong>Input 2:</strong></p>
+<pre><code>5 3
+12689
+55555
+55555
+55555
+55555</code></pre>
+<p><strong>Output 2:</strong></p>
+<pre><code>16</code></pre>
+<p><strong>Input 3:</strong></p>
+<pre><code>3 2
+233
+111
+233</code></pre>
+<p><strong>Output 3:</strong></p>
+<pre><code>6</code></pre>
+<p><strong>Input 4:</strong></p>
+<pre><code>5 3
+23333
+11111
+23333
+11111
+23333</code></pre>
+<p><strong>Output 4:</strong></p>
+<pre><code>9</code></pre>
+<p><strong>Giải thích:</strong> Ở ví dụ 3, ta bỏ đi hàng \(2\) và cột \(1\). Ta sẽ còn lại ma trận con \(2\text{ x }2\) có vết lớn nhất là \(6\). Còn ở ví dụ \(4\), ta bỏ đi các cột \(1,2\) và các hàng \(2,4\). Khi đó ta thu được ma trận \(3\text{ x } 3\) có vết lớn nhất là \(9\)</p>
+<p><strong>Nguồn:</strong> Topcoder</p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,34 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Be Geeks!</h2>
+</div><div class="content-description screen">
+<div><p>Cho trước \(A\) là một dãy số nguyên dương có ít nhất một phần tử, \(A=(a_1, a_2,..., a_N)\).</p>
+<p>Đặt \(G(i, j)=\gcd\left(a_i, a_{i+1},..., a_j\right)\) với \(1\leq i\leq j\leq N\).</p>
+<p>Đặt \(M(i, j)=\max\left(a_i, a_{i+1},..., a_j\right)\) với \(1\leq i\leq j\leq N\).</p>
+<p>Đặt \(P(i, j)=G(i, j)*M(i, j)\) với \(1\leq i\leq j\leq N\).</p>
+<p>Đặt \(F(A)=\sum P(i, j)\) với tất cả các cặp \(1\leq i\leq j\leq N\).</p>
+<h5>Ghi chú</h5>
+<p>\(\gcd(a, b, c, d,...)\) trả về ước số chung lớn nhất của các giá trị \(a\), \(b\), \(c\), \(d\), etc.</p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa số nguyên \(N\) (\(1\leq N\leq 2.10^5\)).</p>
+<p>Dòng tiếp theo chứa \(N\) số nguyên \(a_1, a_2,..., a_N\) (\(1\leq a_i\leq 10^9\)).</p>
+<hr/>
+<h4>Output</h4>
+<p>Gồm một số nguyên duy nhất là giá trị \(F(A) \mod 1000000007\).</p>
+<hr/>
+<h4>Ví dụ:</h4>
+<p><strong> Input: </strong></p>
+<pre><code>4
+1 2 3 4</code></pre>
+<p><strong> Output: </strong></p>
+<pre><code>50</code></pre>
+<p><strong> Input: </strong></p>
+<pre><code>5
+2 4 6 12 3</code></pre>
+<p><strong> Output: </strong></p>
+<pre><code>457</code></pre>
+<hr/>
+<p><em>Nguồn bài: CERC 2019</em></p>
+</div>
+<hr/>
+</div>

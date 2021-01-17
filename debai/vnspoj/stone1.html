@@ -1,0 +1,30 @@
+<h2>STONE1 - Rải sỏi</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274522/problem/T" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274522/problem/T </a><p>
+Xét trò chơi rải sỏi với một người chơi như sau:
+</p><p>
+Cho cây T và một đống sỏi gồm K viên. Ở mỗi bước người ta lấy 1 viên sỏi từ đống sỏi và đặt vào một nút lá tuỳ ý.
+Nếu nút p có r nút lá và tất cả các nút lá đều đã có sỏi thì người ta gom tất cả các viên sỏi ở các nút lá lại, đặt 1 viên ở nút p, xoá các nút lá và trả r - 1 viên sỏi còn lại vào đống sỏi.
+</p><p>
+Trò chơi kết thúc khi đã đặt được 1 viên sỏi vào nút gốc
+</p><p>Yêu cầu: cho cây T, xác định số viên sỏi tối thiểu cần có để trò chơi có thể kết thúc. Cây có n nút (N &lt;= 400), nút gốc được đánh số 1.
+
+</p><h3>Input</h3>
+<ul>
+<li> Dòng đầu: số n.
+</li><li> Một số dòng tiếp theo, mỗi dòng có dạng: i m i1 i2 ... im. Trong đó m là số nút con của nút i; i1, i2, ..., im: các nút con của nút i.
+</li></ul>
+<h3>Output</h3>
+<p>
+Số lượng viên sỏi ít nhất cần có.
+</p><h3>Example</h3>
+<pre>
+<b>Input:</b>
+7
+1 2 2 3
+2 2 5 4
+3 2 6 7
+
+<b>Output:</b>
+3
+</pre>
+</div>

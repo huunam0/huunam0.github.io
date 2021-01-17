@@ -1,0 +1,72 @@
+<div class="tm-box2">
+<div class="problem-name">
+    SOAO. - SỐNG ẢO. 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>ABCXYZ muốn update ảnh đại điện trên FB, nhưng FB lại bị  hạn chế về chất lượng ảnh tải lên. ABCXYZ rất kĩ tính, cô muốn biết chính xác bức ảnh nào up lên sẽ không gặp vấn đề về chất lượng ảnh. </p>
+<p>Kích thước tối thiểu của hình ảnh là L x L, với L là độ dài cạnh hình vuông.</p>
+<p>Bây giờ ABCXYZ có N hình ảnh của các kích thước khác nhau.<br/>
+Kích thước của mỗi bức ảnh được ký hiệu là W x H<br/>
+Trong đó:</p>
+<p style="margin-left:40px">W - chiều rộng của ảnh và H - Chiều cao của ảnh.</p>
+<p>Khi bất kỳ ảnh nào được tải lên, có thể rơi vào các trường hợp sau:</p>
+<p>[1] Nếu bất kỳ chiều rộng hoặc chiều cao nào nhỏ hơn L, người dùng sẽ được nhắc tải lên một chiều rộng khác. In "<span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif; font-size:14px">UPLOAD ANOTHER</span>" trong trường hợp này.</p>
+<p><br/>
+[2] Nếu chiều rộng và chiều cao đều đủ lớn :</p>
+<ul>
+<li>(a) nếu ảnh đã vuông thì nó được chấp nhận. In "<span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif; font-size:14px">ACCEPTED</span>" trong trường hợp này.</li>
+<li>(b) Ngược lại, người dùng phải thay đổi kích thước của bức ảnh. In "CROP IT" trong trường hợp này.</li>
+</ul>
+<p><strong>INPUT:</strong></p>
+<p>-Dòng đầu là kích thước L. </p>
+<p>- Dòng thứ hai là số nguyên N, chính là số lượng bức ảnh.</p>
+<p>- N dòng tiếp theo, mỗi dòng gôm 2 số nguyên W và H.</p>
+<p><strong>OUTPUT:</strong></p>
+<p><strong>- </strong>In ra <span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif; font-size:14px">UPLOAD ANOTHER / ACCEPTED/ </span>CROP IT thích hợp cho mỗi bức ảnh.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+<tbody>
+<tr>
+<td>input</td>
+<td>output</td>
+</tr>
+<tr>
+<td>
+<pre>
+180
+3
+640 480
+120 300
+180 180</pre>
+</td>
+<td>
+<pre>
+CROP IT
+UPLOAD ANOTHER
+ACCEPTED</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>* Giới hạn:</p>
+<p><span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif; font-size:14px">1 &lt;= </span><span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif; font-size:14px">L,W,H</span><span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif; font-size:14px"> &lt;= 10000</span><br/>
+<span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif; font-size:14px">1 &lt;= </span><span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif; font-size:14px">N</span><span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif; font-size:14px"> &lt;= 1000</span></p>
+</div>
+</div>

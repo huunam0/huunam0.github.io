@@ -1,0 +1,50 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Query-Max 3</h2>
+</div><div class="content-description screen">
+<div><p>Cho dãy \(A\) gồm \(N\) phần tử là các số nguyên dương \(A_1, A_2, ..., A_N\) (\(A_i \leq 10^9\)). Cho \(Q\) thao tác thực liện lần lượt, thao tác thứ \(i\) sẽ có một trong \(4\) loại như sau:</p>
+<ul>
+<li>\(1\) \(p_i\) \(x_i\): Chèn giá trị \(x_i\) vào giữa hai vị trí \(p_i - 1\) và \(p_i\) trong dãy \(A\) (\(1 \leq x_i \leq 10^9\), \(1 \leq p_i \leq T + 1\), với \(T\) là số phần tử hiện có trong dãy \(A\). Nếu \(p_i = T + 1\), chèn \(x_i\) vào cuối dãy \(A\)).</li>
+<li>\(2\) \(u_i\) \(l_i\) \(v_i\): Chuyển tất cả các phần tử liên tiếp, bắt đầu từ vị trí \(u_i\), kết thúc ở vị trí \(u_i + l_i - 1\), chèn vào trước vị trí \(v_i\) trong số còn lại (\(1 \leq u_i \leq T\), \(u_i + l_i - 1 \leq T\) \(1 \leq v_i \leq T - l_i + 1\), với \(T\) là số phần tử hiện có trong dãy \(A\). Nếu \(v_i = T - l_i + 1\) thì chuyển tất cả các phần tử liên tiếp, bắt đầu từ vị trí \(u_i\), kết thúc ở vị trí \(u_i + l_i - 1\) vào cuối dãy \(A\)). </li>
+<li>\(3\) \(p_i\): Xoá phần tử ở vị trí \(p_i\) (\(1 \leq p_i \leq T\), với \(T\) là số phần tử hiện có trong dãy \(A\)).</li>
+<li>\(4\) \(u_i\) \(v_i\): Tìm giá trị lớn nhất trong các phần tử từ vị trí \(u_i\) tới vị trí \(v_i\) (\(1 \leq u_i \leq v_i \leq T\), với \(T\) là số phần tử hiện có trong dãy \(A\)).</li>
+</ul>
+<h4>Yêu cầu</h4>
+<p>Thực hiện tất cả lần lượt \(Q\) thao tác, và in ra kết quả của thao tác loại \(4\).</p>
+<h4>Dữ liệu vào</h4>
+<ul>
+<li>Dòng thứ nhất gồm hai số nguyên dương \(N, Q\).</li>
+<li>Dòng thứ hai gồm \(N\) số nguyên dương \(A_1, A_2, ..., A_N\).</li>
+<li>\(Q\) dòng tiếp theo, với dòng thứ \(i\) chứa một trong \(4\) thao tác:<ul>
+<li>\(1\) \(p_i\) \(x_i\).</li>
+<li>\(2\) \(u_i\) \(l_i\) \(v_i\).</li>
+<li>\(3\) \(p_i\).</li>
+<li>\(4\) \(u_i\) \(v_i\).</li>
+</ul>
+</li>
+</ul>
+<h4>Kết quả</h4>
+<p>Với thao tác loại \(4\) có dạng \(4\) \(u\) \(v\), in ra giá trị lớn nhất trong các phần tử từ vị trí \(u\) tới vị trí \(v\).</p>
+<h4>Ràng buộc</h4>
+<ul>
+<li>\(30\%\) số test đầu tiên tương ứng với \(30\%\) số điểm có \(N \leq 10^3\), \(Q \leq 10^3\).</li>
+<li>\(30\%\) số test tiếp theo tương ứng với \(30\%\) số điểm có \(N \leq 10^5\), \(Q \leq 10^5\), chỉ có các thao tác loại \(4\).</li>
+<li>\(40\%\) số test còn lại tương ứng với \(40\%\) số điểm có  \(N \leq 10^5\), \(Q \leq 10^5\).</li>
+</ul>
+<h4>Ví dụ</h4>
+<p><strong>Input</strong>:</p>
+<pre><code>3 6
+2 3 1
+1 3 2
+2 2 1 3
+3 1
+4 1 3
+1 4 5
+4 2 4</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>3
+5</code></pre>
+<h4>Lưu ý</h4>
+<p>Nên làm bài <a href="http://lqdoj.edu.vn/problem/querymax2" rel="nofollow">Query-Max 2</a> trước khi làm bài này.</p>
+</div>
+<hr/>
+</div>

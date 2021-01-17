@@ -1,0 +1,32 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Tìm k lớn nhất</h2>
+</div><div class="content-description screen">
+<div><p>Cho \(n\) số nguyên dương \(c_1,c_2,...,c_n\) và số nguyên dương \(X\). Tìm số nguyên \(k\) không âm lớn nhất sao cho tồn tại \(k\) chỉ số \(i_1,i_2,...,i_k\) thỏa mãn:</p>
+<ul>
+<li><p>\(1\le i_1&lt;i_2&lt;...&lt;i_k\le n\)</p>
+</li>
+<li><p>\(\sum\limits_{j=1}^{k}c_{i_j}(n-i_j+1)\le X\)</p>
+</li>
+</ul>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa \(2\) số nguyên \(n,k(1\le n\le 100;1\le X\le 10000)\).</p>
+</li>
+<li><p>Dòng thứ hai chứa \(n\) số nguyên: \(c_1,c_2,...,c_n (1\le c_i\le 300 \forall 1\le i\le n)\)</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra số \(k\) lớn nhất cần tìm</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3 4 
+1 2 1</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>2</code></pre>
+<p><strong>Giải thích:</strong> Ở ví dụ này ta chọn tìm được \(k=2\) là lớn nhất thỏa mãn yêu cầu bài toán , 2 chỉ số đó là \(i_1=1;i_2=3\).</p>
+<p>Nguồn: Tham khảo từ codeforces - Tag: DP</p>
+</div>
+<hr/>
+</div>

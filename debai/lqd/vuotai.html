@@ -1,0 +1,40 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Vượt Ải</h2>
+</div><div class="content-description screen">
+<div><p><span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đang đi vượt ải Codeforces. Để trở thành master, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> phải vượt qua \(n\) con quái vật. Con quái vật thứ \(i\) sẽ làm <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> hao tổn \(a_i\) công lực. Và vì các ải này diễn ra liên tiếp, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> không có thời gian để hồi phục công lực. <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ gục ngã nếu sau một trận chiến, công lực còn lại bé hơn hoặc bằng \(0\).</p>
+<p>Ví dụ: nếu ban đầu <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> có \(10\) công lực, và con quái vật đầu tiên có sức mạnh \(a_1 = 4\), <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ vượt ải thành công và còn \(6\) công lực. Nếu con quái vật thứ hai có sức mạnh ít nhất là \(6\), <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ bị đánh gục ở ải này.</p>
+<p><span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đã nghiên cứu rất kỹ về đối thủ của mình. Anh biết rằng sức mạnh của chúng tương ứng là \(a_1, a_2, ..., a_n\). Và để thêm phần kỹ càng, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ mang theo một bộ giáp có thể chống được \(k\) sát thương. Nói cách khác, nếu <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sử dụng bộ giáp này khi đấu với quái vật thứ \(i\) thì chỉ mất đi \(max(0, a_i - k)\) công lực. Tuy nhiên, bộ giáp này chỉ sử dụng được cho \(1\) ải duy nhất và <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> phải tính toán sử dụng sao cho tối ưu.</p>
+<p><span class="rating rate-none admin"><a href="/user/ami">ami</a></span> muốn vượt qua cả \(n\) ải này. Hỏi ban đầu anh phải chuẩn bị ít nhất bao nhiêu công lực? Biết rằng <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> rất bá đạo nên sẽ sử dụng giáp một cách tối ưu.</p>
+<h4>Input</h4>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương \(n, k \ (k \leq 10^9)\) tương ứng là số quái vật và sức mạnh của giáp.</li>
+<li>Dòng thứ hai chứa \(n\) số nguyên dương \(a_1, a_2, ..., a_n \ (1 \leq a_i \leq 10^9)\) là sức mạnh của \(n\) con quái vật.</li>
+</ul>
+<h4>Output</h4>
+<p>In ra một số nguyên là công lực ít nhất <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cần chuẩn bị trước khi vượt ải.</p>
+<h4>Ví dụ</h4>
+<p><strong>Input 1</strong></p>
+<pre><code>5 5
+1 2 6 7 3</code></pre>
+<p><strong>Output 1</strong></p>
+<pre><code>15</code></pre>
+<p><strong>Input 2</strong></p>
+<pre><code>5 3 
+1 1 1 1 1</code></pre>
+<p><strong>Output 2</strong></p>
+<pre><code>5</code></pre>
+<h4>Giới hạn</h4>
+<ul>
+<li>Có \(50\%\) số test có \(n \leq 1000\).</li>
+<li>Có \(50\%\) số test có \(n \leq 10^5\).</li>
+</ul>
+<h4>Giải thích</h4>
+<ul>
+<li><p>Trong test ví dụ 1, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ chuẩn bị \(15\) công lực và dùng giáp ở ải thứ 3. Qua ải 1, anh còn \(14\) công lực. Qua ải 2, anh còn \(12\) công lực. Nhờ sử dụng giáp ở ải 3, anh chỉ mất 1 công lực và còn \(11\) công lực. Quả ải 4 và 5, anh mất thêm \(7+3=10\) công lực. Cuối cùng, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> còn đúng \(1\) công lực, vừa đủ để sống sót.</p>
+</li>
+<li><p>Trong test ví dụ 2, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> có thể dùng giáp ngay ải đầu tiên và sẽ không mất công lực nào ở ải đó. \(4\) ải còn lại tiêu hao \(4\) công lực nên <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> vượt ải thành công.</p>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

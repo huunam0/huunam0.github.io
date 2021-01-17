@@ -1,0 +1,44 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chia Dãy Số</h2>
+</div><div class="content-description screen">
+<div><p>Một hôm <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> và <span class="rating rate-master user"><a href="/user/bin9638">bin9638</a></span> đang đi chơi thì bị lạc vào một khu rừng tăm tối , đi được một hồi thì gặp người đàn ông , \(2\) người hỏi lối ra của khu rừng thì ông ta nói rằng nếu giải được bài toán này thì cả hai người đều được chỉ lối thoát , còn không thì một trong hai người phải ở lại . Vì tính đoàn kết nên hai người này nhất quyết phải thoát ra ngoài cùng nhau . Hãy giúp hai anh chàng này thoát ra khỏi khu rừng nhé !</p>
+<p><strong>Bài toán như sau</strong> : Cho một dãy số nguyên \(A\) gồm \(n\) phần tử và một số nguyên \(k\) , hãy chia dãy số thành các dãy con không giao nhau sao cho các dãy con có tổng bằng \(k\) là <strong>nhiều nhất</strong> .</p>
+<p><strong>Ví dụ</strong> : Dãy số là <strong>{ 2 , 1 , 1 , 1 , 1 , 2 }</strong> và \(k =\) <strong>4</strong> ;
+Chúng ta sẽ chia dãy thành <strong>{2,1,1}</strong> và <strong>{1,1,2}</strong> =&gt; có hai dãy con có <strong>tổng bằng k</strong>.</p>
+<p><strong>Yêu cầu</strong> : <em>Hãy đưa ra số lượng dãy có tổng bằng \(k\) khi chia tối ưu.</em></p>
+<ul>
+<li><strong>Input</strong> :<ul>
+<li>Dòng thứ nhất gồm \(2\) số nguyên \(n\) và \(k\) (\(1 ≤ |k| ≤\) \(10^{15}\))</li>
+<li>Dòng tiếp theo là dãy số (\(|A_i|\) ≤ \(10^9\))</li>
+</ul>
+</li>
+<li><strong>Output</strong> :<ul>
+<li>Gồm một số nguyên duy nhất là kết quả của bài toán .</li>
+</ul>
+</li>
+</ul>
+<p><strong>Sampleinput 1</strong> :</p>
+<pre><code>6 4
+2 1 1 1 1 2</code></pre>
+<p><strong>Sampleoutput 1</strong> :</p>
+<pre><code>2</code></pre>
+<p><strong>Sampleinput 2</strong> :</p>
+<pre><code>7 3
+1 3 2 1 1 1 2</code></pre>
+<p><strong>Sampleoutput 2</strong> :</p>
+<pre><code>3</code></pre>
+<ul>
+<li><strong>Giải thích</strong> :<ul>
+<li>Với Testcase \(2\) chúng ta sẽ chia dãy thành {1},{3},{2,1},{1},{1,2} , như vậy ta sẽ có được \(3\) dãy con có tổng bằng \(k\).</li>
+</ul>
+</li>
+<li><strong>Giới hạn</strong> :<ul>
+<li>20% Test : \(n ≤\) \(10^2\) , \(|A_i|\) ≤ \(10^3\) .</li>
+<li>20% Test : \(n ≤\) \(10^3\) , \(|A_i|\) ≤ \(10^6\) .</li>
+<li>60% Test : \(n ≤\) \(10^6\) , \(|A_i|\) ≤ \(10^9\)</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

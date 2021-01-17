@@ -1,0 +1,81 @@
+<h2>VMFLOW - Nối điểm</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/H" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/H </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/272727/problem/H" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/272727/problem/H </a><p>Với đồ họa và cách thức chơi vô cùng đơn giản, trò chơi <a href="https://chrome.google.com/webstore/detail/flow-free/fkkkloddfalabncnhbhmbekpmkgjcgfl">Flow</a> đang trở nên rất thịnh hành trong thời gian gần đây. Trong bài toán này, chúng ta sẽ cùng nhau thử tìm lời giải cho trò chơi này!</p>
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 0px; width: 1px; height: 1px; overflow: hidden;">Trên một bảng kích thước N * N, có một số cặp điểm cần được nối với nhau. Như hình vẽ dưới đây, hai ô </div>
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 0px; width: 1px; height: 1px; overflow: hidden;">cùng màu là hai ô cần được nối với nhau.</div>
+<p>Trên một bảng kích thước N * N, có một số cặp điểm cần được nối với nhau. Như hình vẽ dưới đây, hai ô cùng màu là hai ô cần được nối với nhau.</p>
+<p style="text-align: center;"><img alt="VMFLOW" src="../../../content/voj:VMFLOW_h0.PNG" title="VMFLOW"/></p>
+<p>Việc nối hai ô bất kì với nhau được thực hiện bằng cách đi theo các ô kề cạnh tạo thành một <strong>đường đi không tự cắt</strong> (đường đi không được đi qua một ô hai lần) và tới ô đích. Hình 1 dưới đây môt tả một đường đi hợp lệ nối hai ô đỏ.</p>
+<p style="text-align: center;"><img alt="VMFLOW" src="../../../content/voj:VMFLOW_h12.PNG" title="VMFLOW"/></p>
+<p>Các đường đi nối các cặp khác điểm khác nhau cũng không được phép có điểm chung với nhau. Hình 2 là một cách nối không hợp lệ. Vì vậy với cách nối cặp điểm màu đỏ như hình 1, chúng ta không có cách nối cặp điểm màu xanh lá.</p>
+<p>Nhiệm vụ của bạn là hãy tìm một phương pháp nối các cặp điểm sao cho:</p>
+<ul>
+<li>Số lượng cặp điểm nối được là nhiều nhất có thể.</li>
+<li>Số lượng ô có đường đi đi qua là nhiều nhất có thể.</li>
+</ul>
+<h3>Input</h3>
+<ul>
+<li>Dòng đầu tiên ghi số N.</li>
+<li>N dòng tiếp theo, mỗi dòng ghi một xâu N kí tự mô tả bảng ban đầu. Trong đó ô trống được kí hiệu bởi dấu chấm (.), các ô màu được kí hiệu bởi một chữ cái in hoa. </li>
+<li>Dữ liệu đảm bảo với mỗi màu (chữ cái in hoa) sẽ chỉ có đúng hai ô chứa nó.</li>
+</ul>
+<h3>Output</h3>
+<p>In ra bảng gồm N * N số mô tả cách nối, trong đó ô ở dòng u, cột v ghi thông tin về cách nối ở ô (u, v). Cách nối ở mỗi ô được mô tả bằng một số nguyên X trong đó:</p>
+<ul>
+<li>Nếu ô (u, v) có nối lên trên thì bít thứ 0 (từ phải sang) của X bằng 1.</li>
+<li>Nếu ô (u, v) có nối sang phải thì bít thứ 1 (từ phải sang) của X bằng 1.</li>
+<li>Nếu ô (u, v) có nối xuống dưới thì bít thứ 2 (từ phải sang) của X bằng 1.</li>
+<li>Nếu ô (u, v) có nối sang trái thì bít thứ 3 (từ phải sang) của X bằng 1.</li>
+</ul>
+<h3>Chấm điểm</h3>
+<p>Bài toán có 50 test, mỗi test tối đa 2 điểm. Điểm của mỗi test được làm tròn đến 6 chữ số sau dấu phẩy, điểm của cả bài là tổng điểm của các test sau đó làm tròn đến 2 chữ số sau dấu phẩy.</p>
+<p>Nếu có bất kì một sự không hợp lệ nào trong output (đường đi cắt nhau, hai ô kề nhau không khớp nhau, ô biên nối ra ngoài, có các cạnh nối nhưng không dùng để nối hai điểm…) bạn sẽ nhận 0 điểm. Nếu coi </p>
+<ul>
+<li>M là số lượng màu khác nhau</li>
+<li>X là số lượng màu bạn nối được</li>
+<li>N^2 là số lượng ô tối đa có thể phủ được.</li>
+<li>Y là số ô mà bạn phủ được</li>
+</ul>
+<p>Điểm của bạn được tính như sau:</p>
+<ul>
+<li>Nếu M=X và N^2=Y bạn được 2 điểm (dữ liệu luôn đảm bảo có cách làm như vậy)</li>
+<li>Nếu không điểm bạn sẽ được tối đa 1.5 điểm. Điểm của bạn bằng:</li>
+</ul>
+<p style="text-align: center;"><img alt="Formula" height="64" src="../../../content/voj:VMFLOW_formula" title="VMFLOW" width="180"/></p>
+<h3>Giới hạn</h3>
+<ul>
+<li>Trong tất cả các test, 2 ≤ N ≤ 50</li>
+<li>Trong 10% số test đầu tiên, chỉ có một cặp điểm phải nối, N ≤ 50.</li>
+<li>Trong 20% số test tiếp theo, chỉ có không quá 4 cặp điểm phải nối, N ≤ 50.</li>
+<li>Trong 30% số test tiếp theo, N ≤ 15.</li>
+<li>Trong 40% số test cuối cùng, không có thêm bất kì giới hạn nào.</li>
+</ul>
+<h3>Ví dụ</h3>
+<pre><strong>Input:</strong>
+<span style="font-family: 'courier new', courier;"><span style="font-size: medium;"><span style="font-family: 'courier new', courier;">4
+R...</span><span style="font-family: 'courier new', courier;">
+G.G.
+R</span><span style="font-family: 'courier new', courier;">.</span><span style="font-family: 'courier new', courier;">.</span><span style="font-family: 'courier new', courier;">.</span><span style="font-family: 'courier new', courier;">
+..BB</span></span><span style="font-family: 'courier new', courier;">
+</span></span><span style="font-weight: bold;"><br/></span></pre>
+<pre><span style="font-weight: bold;">Dưới đây là 3 output cho ví dụ trên, mỗi output sẽ cho một số điểm nhất định:</span></pre>
+<pre><strong>Output 1: (1.312500 điểm)</strong></pre>
+<pre><span style="font-size: medium;"><span style="font-family: 'courier new', courier;">2 10 10 12
+2 10 8 5
+2 10 10 9
+0 0 2 8</span></span></pre>
+<pre><span style="font-size: medium;"><span style="font-family: 'courier new', courier;"><img alt="VMFLOW" height="237" src="../../../content/voj:VMFLOW_h3.PNG" title="VMFLOW" width="248"/></span></span></pre>
+<pre><span style="font-weight: bold;">Output 2: (2.000000 điểm)</span></pre>
+<pre><span style="font-size: medium;"><span style="font-family: 'courier new', courier;">2 10 10 12
+2 10 8 5
+4 6 10 9
+3 9 2 8</span></span></pre>
+<pre><span style="font-size: medium;"><span style="font-family: 'courier new', courier;"><img alt="VMFLOW" height="235" src="../../../content/voj:VMFLOW_h4.PNG" title="VMFLOW" width="251"/></span></span></pre>
+<pre><span style="font-size: medium;"><span style="font-family: 'courier new', courier;"><br/></span></span></pre>
+<pre><span style="font-weight: bold;">Output 3: (0.437500 điểm)</span></pre>
+<pre><span style="font-size: medium;"><span style="font-family: 'courier new', courier;">2 12 0 0
+0 5 0 0
+2 9 0 0
+0 0 2 8</span></span></pre>
+<pre><span style="font-size: medium;"><span style="font-family: 'courier new', courier;"><img alt="VMFLOW" height="235" src="../../../content/voj:VMFLOW_h5.PNG" title="VMFLOW" width="251"/></span></span></pre>
+<pre><span style="font-size: medium;"><span style="font-family: 'courier new', courier;"><br/></span></span></pre>
+</div>

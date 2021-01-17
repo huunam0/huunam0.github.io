@@ -1,0 +1,43 @@
+<div class="tm-box2">
+<div class="problem-name">
+    852B - Neural Network country 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;"><span style="font-size:14px">Do sự phổ biến gần đây của Deep learning các quốc gia mới đang bắt đầu trông giống như mạng thần kinh. Đó là, các nước đang được xây dựng với nhiều lớp, mỗi lớp có thể có nhiều thành phố. Mỗi nước cũng có một điểm đầu và một điểm cuối.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Mỗi nước có chính xác L lớp, mỗi lớp có N thành phố. Quan sát hai lớp kề nhau L1 và L2. Mỗi thành phố thuộc lớp L1 được nối với một thành phố thuộc lớp L2 với một chi phí di chuyển là c<sub>ij</sub>  với mọi i, j thuộc {1, 2, ..., N} và mỗi cặp lớp lân cận có cùng chi phí ở giữa các thành phố của chúng với nhau như bất kỳ cặp nào khác. Chi phí di chuyển của mọi thành phố thuộc lớp L1 đến một thành phố thuộc lớp L2 là giống nhau, nghĩa là c<sub>ij</sub> là như nhau với mọi i thuộc {1, 2, ..., N} và j cố định.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Yêu cầu:</strong> Tìm số lượng đường đi để một người bắt đầu đi tại điểm đầu và kết thúc tại điểm cuối sao cho chi phí đi lại của người đó có thể chia hết cho số M cho trước.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Dữ liệu</strong></span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Dòng đầu chứa số <em>N</em> (1 ≤ <em>N</em> ≤ 10<sup>6</sup>), <em>L</em> (2 ≤ <em>L</em> ≤ 10<sup>5</sup>) và <em>M</em> (2 ≤ <em>M</em> ≤ 100), là số lượng thành phố trong từng lớp, số lượng lớp và số M là chi phí của đường đi cần phải chia hết.</span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Dòng thứ hai, ba, bốn chứa N số nguyên (mỗi số biểu thị chi phí di chuyển <em>cost</em> mà 0 ≤ <em>cost</em> ≤ <em>M</em>) lần lượt là chi phí tới lớp đầu tiên, chi phí giữa hai lớp kề nhau như mô tả ở trên và chi phí từ lớp cuối cùng tới điểm kết thúc.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Kết quả</strong></span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Chứa một số nguyên là số lượng đường đi mà tổng chi phí chia hết cho M, modulo 10<sup>9</sup> + 7.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Input <img alt="" src="../../ckfinder/userfiles/images/852B.png" style="float:right; height:111px; width:311px"/></strong></span></p>
+<p style="margin-left: 40px; text-align: justify;"><span style="font-size:14px">2 3 13 <br/>
+4 6<br/>
+2 1<br/>
+3 4</span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Output</strong></span></p>
+<p style="margin-left: 40px; text-align: justify;"><span style="font-size:14px">2</span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Đây là một đất nước có 3 lớp, mỗi lớp có 2 thành phố. Chỉ có hai đường đi 6 → 2 → 2 → 3 và 6 → 2 → 1 → 4 có tổng chi phí chia hết cho 13. Chú ý các cạnh đầu vào cho các thành phố trong một lớp có chi phí như nhau, và giống nhau cho tất cả các lớp.</span></p>
+<hr/>
+<p style="text-align: justify;"><em><span style="font-size:14px">Nguồn: </span><a href="https://codeforces.com/contest/852/problem/B">https://codeforces.com/contest/852/problem/B</a></em></p>
+</div>
+</div>

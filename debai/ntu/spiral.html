@@ -1,0 +1,44 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    SPIRAL - Bảng xoắn ốc (ACMVN 10-2016 J) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 3.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"><img alt="" src="images/SpiralBoard.PNG" style="float:right; height:172px; margin-left:6px; margin-right:6px; width:200px"/>Tùng có một bảng gồm N dòng N cột. Các dòng được đánh số từ 1 đến N từ trên xuống dưới, các cột được đánh số từ 1 đến N từ trái sang phải. Tùng điền bảng này với các con số từ 1 đến NxN theo hình xoắn ốc, bắt đầu từ ô (1, 1). Hình xoắn ốc đi từ ngoài vào trong theo chiều kim đồng hồ. Hình bên phải là ví dụ với bảng N = 5. Hiện tại, Tùng đang ở vị trí của ô số X và Tùng muốn chuyển đến ô của số Y bằng cách thực hiện một số bước di chuyển. Trong mỗi bước, Tùng chỉ có thể di chuyển từ ô số A đến ô số B nếu:</p>
+<p>- A và B nguyên tố cùng nhau.<br/>
+- Ô chứa số A và ô chứa số B có chung một cạnh.</p>
+<p>Cho N, X, Y, Tùng muốn biết số bước di chuyển ít nhất để chuyển từ ô số X đến ô số Y.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên chứa số nguyên T là số lượng test. (<span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:12.8px">1 ≤ T ≤ 10)</span></p>
+<p>- Trong T dòng tiếp theo, mỗi test trên một dòng là 03 số nguyên N, X và Y (<span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:12.8px">1 ≤ N ≤ 1.000, 1 ≤ X, Y ≤ N<sup>2</sup></span>).</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Với mỗi test, in ra số bước ít nhất để di chuyển từ ô số X đến ô số Y. Nếu không di chuyển được in ra -1</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">1<br/>5 3 18</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Thực hiện 3 bước:</p>
+<p>- Từ ô số 3 chuyển qua ô số 4 (3 và 4 nguyên tố cùng nhau)<br/>
+- Từ ô số 4 chuyển qua ô số 19 (4 và 19 nguyên tố cùng nhau)<br/>
+- Từ ô số 19 chuyển qua ô số 18 (19 và 18 nguyên tố cùng nhau) </p>
+</div>
+</div></body></html>

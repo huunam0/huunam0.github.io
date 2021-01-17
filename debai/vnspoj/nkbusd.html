@@ -1,0 +1,56 @@
+<h2>NKBUSD - Điều độ xe buýt</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274823/problem/P" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274823/problem/P </a><p>Có n xe buýt chạy trên tuyến là một đường vòng khép kín có độ dài S. Các xe buýt được đánh số từ 1 đến n theo thứ tự nối đuôi nhau trên tuyến đường. Xe số n chạy sau xe số 1. 
+</p><p>Các xe chạy cùng với vận tốc V<sub>0</sub> và khoảng cách giữa hai xe liên tiếp là như nhau.
+</p><p>Có k xe buýt đồng thời rời khỏi tuyến. Để trở lại khoảng cách đều nhau giữa các xe, cần phải có một khoảng thời gian t và một số xe cần phải thay 
+
+đổi tốc độ. Trong khoảng thời gian này, các xe phải chạy với tốc độ không đổi trong khoảng [V<sub>min</sub>, V<sub>max</sub>] theo lệnh của 
+
+trung tâm.
+</p><p>Hết khoảng thời gian t các xe lại quay về vận tốc V<sub>0</sub>.
+</p><p>Yêu cầu: giúp trung tâm tìm khoảng thời gian bé nhất T<sub>min</sub> để khôi phục sự cân bằng khoảng cách giữa hai xe liên tiếp trên tuyến và 
+
+vận tốc của mỗi xe trong khoảng thời gian ấy. Biết rằng, trong quá trình điều chỉnh, không có xe nào vượt qua xe trước mặt.</p>
+<h3>Dữ liệu vào</h3>
+<ul>
+<li>Dòng thứ nhất chứa N, K ,S , V<sub>min</sub>, V<sub>max</sub>, V<sub>0</sub>.
+</li><li>Dòng thứ hai chứa K số nguyên dương được ghi theo thứ tự tăng dần là chỉ số của các xe rời khỏi tuyến.
+</li><li>Các dữ liệu trên cùng một dòng được ghi cách nhau bởi ít nhất một dấu cách.
+</li></ul>
+<h3>Kết qủa</h3>
+<ul>
+<li>Dòng đầu tiên: T<sub>min</sub>
+</li><li>Mỗi một trong số N-K dòng tiếp theo chứa hai số, số thứ nhất là chỉ số của xe buýt, số thứ hai là tốc độ của nó trong khoảng thời gian 
+
+T<sub>min</sub>. Các dòng này phải sắp xếp theo thứ tự tăng dần của chỉ số xe buýt.
+</li></ul>
+<p>Kết quả cần được in ra với độ chính xác cao (khoảng 6 chữ số thập phân).</p>
+<h3>Giới hạn</h3>
+<ul>
+<li>K &lt; N &lt; 10000
+</li><li>S ≤ 10000
+</li><li>V<sub>min</sub> &lt; V<sub>max</sub> ≤ 10000
+</li><li>V<sub>min</sub> ≤ V<sub>0</sub> ≤ V<sub>max</sub>
+</li></ul>
+<h3>Ví dụ</h3>
+<pre>
+<b>Dữ liệu mẫu</b>
+4 1 60 21 70 60
+3
+
+<b>Kết qủa</b>
+0.2041
+1 45.5
+2 70
+4 21
+
+<b>Dữ liệu mẫu</b>
+4 2 40 30 80 50
+2 4
+
+<b>Kết qủa</b>
+0
+1 50
+3 50
+</pre>
+<p>
+</p></div>

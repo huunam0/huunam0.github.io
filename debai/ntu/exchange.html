@@ -1,0 +1,45 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    EXCHANGE - Đổi tiền 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Vì là một học sinh ngoan nên TSL sắp được thầy 333 cho đi du lịch qua Singapore và Korea (để thăm Tú oppa). Thật may mắn, nhà của TSL đã có sẵn 2 loại tiền của 2 nước này với giá trị lần lượt là N và M. Nhưng theo tính toán, TSL cần phải mang theo đúng X giá trị tiền Singapore và Y giá trị tiền Korea để có thể tận hưởng niềm vui trọn vẹn (và vì bản tính ăn chơi tiêu xài vô độ nên TSL không muốn sau khi có X tiền Singapore và Y tiền Korea thì còn dư bất kỳ đồng nào nữa). Máy đổi tiền trước nhà của TSL có 2 loại chức năng:</p>
+<p>-     L x y mang ý nghĩa đổi đúng x tiền Singapore sang đúng y tiền Korea</p>
+<p>-     R x y mang ý nghĩa đổi đúng y tiền Korea sang đúng x tiền Singapore</p>
+<p>Vì muốn tiết kiệm thời gian để đi chơi với gái, à không, để chuẩn bị đồ đạc cần thiết cũng như nghỉ ngơi, TSL muốn biết được số bước ít nhất sau một số lần quy đổi để có thể đạt được đúng X tiền Singapore và Y tiền Korea cũng như số cách đổi ít nhất như vậy (để đề phòng cách này có vấn đề thì vẫn còn cách khác), ngoài ra thì thời gian của TSL chỉ còn lại t đơn vị. Vì vậy, nếu sau t đơn vị thời gian mà không có cách đổi ra thì in ra 2 số -1. Biết rằng một lần máy đổi tiền hoạt động sẽ tốn 1 đơn vị thời gian và thời điểm ban đầu TSL đi đổi tiền là thời điểm 0.</p>
+<p><strong>Input:</strong></p>
+<p>-   Dòng đầu là 3 số nguyên N, M và t (1 ≤ N,M ≤ 100, 1 ≤ t ≤500) là số tiền Singapore và Korea mà TSL hiện đang có và thời gian t.</p>
+<p>-   Dòng 2 là số nguyên K (1 ≤ K ≤ 5) là số chức năng của máy đổi tiền.</p>
+<p>-   K dòng tiếp theo mỗi dòng sẽ có dạng: L (hoặc R) và 2 số nguyên x và y (1 ≤ x,y ≤ 10)</p>
+<p>-   Dòng tiếp theo là số nguyên Q (1 ≤ Q ≤ 10<sup>6 </sup>) là số truy vấn.</p>
+<p>-   Q dòng tiếp theo mỗi dòng gồm 2 số nguyên X và Y là số tiền Singapore và Korea mà TSL muốn có (1 ≤ X,Y ≤ 1000).</p>
+<p><strong>Ouput:</strong></p>
+<p>Gồm Q dòng trả lời cho từng truy vấn trong input:</p>
+<p> -    Nếu truy vấn này sau thời gian t vẫn chưa có được cách đổi thì in ra 2 số -1.</p>
+<p> -    Nếu có cách đổi thì in ra 2 số lần lượt là số bước ít nhất để có được tiền thỏa mãn của từng truy vấn và số cách đổi như vậy. Vì kết quả số cách đổi có thể rất lớn nên in ra phần dư khi chia số cách đổi cho 10<sup>6</sup> + 3.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">1 1 5<br/>3<br/>L 1 2<br/>R 1 1<br/>L 2 3<br/>2<br/>1 2<br/>2 1<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">2 2<br/>3 2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

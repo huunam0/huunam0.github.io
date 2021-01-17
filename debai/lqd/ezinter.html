@@ -1,0 +1,46 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Đoán Số Dễ Dàng</h2>
+</div><div class="content-description screen">
+<div><p><strong>Đây là bài toán interactive.</strong></p>
+<p><strong>Các bạn có thể tìm hiểu về dạng này này tại <a href="http://lqdoj.edu.vn/problem/guessgame/editorial" rel="nofollow">đây</a></strong></p>
+<p><span class="rating rate-none admin"><a href="/user/ami">ami</a></span> có một số \(n\), \(n \leq 10000\). Các bạn sẽ không biết số này. Các bạn cần đoán số này dùng không quá 30 thao tác sau.</p>
+<ul>
+<li>Các bạn có thể hỏi <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> một dãy số \(A\) gồm \(k\) phần tử nguyên dương (\(k \leq 5000\)). <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ trả về một số bất kì \(A_i\) trong dãy số mà n chia hết cho \(A_i\) (\(n\) % \(A_i\) = 0)</li>
+</ul>
+<p>Để hỏi <span class="rating rate-none admin"><a href="/user/ami">ami</a></span>, các bạn cần in ra câu hỏi có dạng sau :</p>
+<ul>
+<li>? \(n\) \(A_1\) \(A_2\) \(A_3\) ... \(A_n\).</li>
+</ul>
+<p>Ví dụ, để hỏi dãy có 4 phần tử là 1 2 3 4, các bạn cần in ra <strong>"? 4 1 2 3 4"</strong> (dấu ngoặc kép chỉ để nhấn mạnh).</p>
+<p>Đương nhiên, sau khi in ra câu hỏi, các bạn cần phải xuống dòng và \(flush\) câu hỏi này. Sau đó <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ trả lời lại các bạn, câu trả lời có dạng sau :</p>
+<ul>
+<li>\(x\).</li>
+</ul>
+<p>Nếu \(x\) = \(-1\), điều này có nghĩa rằng câu hỏi mà các bạn hỏi là không hợp lệ. Các bạn cần dừng chương trình ngay và nhận kết quả là "Wrong answer". Nếu chương trình không dừng lại, các bạn sẽ nhận được một thông báo bất kì, vì các bạn đang tương tác với <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đã đi gánh team.</p>
+<p>Nếu \(x\) = 0, điều này có nghĩa rằng, không tồn tại x mà n chia hết \(A_x\).</p>
+<p>Nếu \(x &gt; 0\), <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ đảm bảo rằng \(n\) chia hết \(A_x\).</p>
+<p>Sau khi các bạn đã đoán ra số \(n\), các bạn cần thông báo cho <span class="rating rate-none admin"><a href="/user/ami">ami</a></span>. Thông báo như sau :</p>
+<ul>
+<li>! \(n\).</li>
+</ul>
+<p>Ví dụ, số các bạn đoán là 69, các bạn cần thông báo <strong>"! 69"</strong> (dấu ngoặc kép chỉ để nhấn mạnh).</p>
+<h4>Sample Input 1</h4>
+<pre><code>1
+2
+4
+3
+0</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>? 4 4 2 3 1
+? 4 1 2 3 4
+? 4 1 2 3 4
+? 4 1 2 3 4
+? 4 69 96 69 96
+! 12</code></pre>
+<h4>Giải thích</h4>
+<p>Số \(n\) của <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> là 12. Nếu các bạn hỏi "? 4 1 2 3 4", <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ chọn ra 1 số bất kì vì 12 đều chia hết cho 1,2,3,4. Ở câu hỏi đầu, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cho các bạn số \(A_1\) = 4. Với câu hỏi "? 4 69 96 69 96", <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đưa ra số 0 vì 12 không chia hết cho 69 và 96.</p>
+<h4>Cách tính điểm</h4>
+<p>Để dễ dàng cho các bạn, nếu <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cần \(a\) câu hỏi, các bạn hỏi \(b\) và \(b \leq 30\) câu thì số điểm nhận được là max(1, \(\frac{a}{b}\)). Nếu \(b &gt; 30\), các bạn sẽ nhận được 0 điểm.</p>
+</div>
+<hr/>
+</div>

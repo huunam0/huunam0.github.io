@@ -1,0 +1,126 @@
+<h1 class="ui header">
+        
+          #1196. BRIDGE - Cầu đá
+        
+      </h1><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden; "><p><strong></strong></p><center><strong>Nguồn: Ôn Thầy Hiếu Hưng Yên - T11/2019</strong></center><p></p>
+<p>Trên đường đi khảo sát đoàn thám hiểm phải vượt qua một cây cầu đá bắc qua miệng núi lửa. Cây cầu gồm <span class="mjpage"><svg aria-labelledby="MathJax-SVG-2-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-2-Title">2</title>
+<defs aria-hidden="true">
+<path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="E2-MJMAIN-32" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E2-MJMAIN-32" y="0"></use>
+</g>
+</svg></span> dãy phiến đá - dãy Ác quỷ và dãy Thiên thần.</p>
+<center><img src="../images/problems/1195/bridge1.svg" width="300px"/></center>
+<p><strong>Hình 1</strong> nêu ví dụ về một cầu độ dài <span class="mjpage"><svg aria-labelledby="MathJax-SVG-3-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-3-Title">6</title>
+<defs aria-hidden="true">
+<path d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" id="E3-MJMAIN-36" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E3-MJMAIN-36" y="0"></use>
+</g>
+</svg></span>. Dãy trên là dãy phiến đá Ác quỷ và dãy dưới là dãy phiến đá thiên thần. Hai dãy phiến đá có độ dài như nhau. Từng cặp phiến đá Ác  quỷ và Thiên thần được gắn với nhau tạo thành một tấm lát, tương ứng với một cột trên hình vẽ. Trên mỗi phiến đã có khắc một ký tự trong tập {R, I, N, G, S}.</p>
+<p>Đoàn thám hiểm phải đi từ bờ trái sang bờ phải. Để vượt cầu, cần phải lần lượt dẫm  lên các tảng đã theo một hướng dẫn cho trước dưới dạng một xâu ký tự. Nếu đi sai, cầu sẽ sập xuống núi lửa phía dưới. Ngoài ra phải bảo đảm các qui tắc sau:</p>
+<ul>
+<li>Các ký tự trên những phiến đá được dẫm ghi theo trình tự bước tạo thành xâu hướng dẫn;</li>
+<li>Phải bước đan xen giữa các phiến đá Ác quỷ và Thiên thần bắt đầu từ loại nào không quan trọng.</li>
+<li>Luôn tiến sang các tấm lát bên phải, độ lớn của mỗi bước đi (số tấm lát giữa hai lần bước liên tiếp) là không quan trọng.</li>
+</ul>
+<p><strong>Ví dụ:</strong> với cầu ở <strong>hình 1</strong> và hướng dẫn 'RGS' <strong>hình 2</strong>, nêu các cách vượt cầu và <strong>hình 3</strong> nêu các cách vượt cầu sai:</p>
+<center><img src="../images/problems/1195/bridge2.svg" width="700px"/></center>
+<p><strong>Yêu cầu:</strong> Cho mô tả cầu và hướng dẫn đi. Hãy xác định số cách vượt cầu.</p>
+<h4>Dữ liệu vào:</h4>
+<ul>
+<li>Dòng đầu tiên chứa xâu hướng dẫn;</li>
+<li>Dòng thứ hai chứa xâu <span class="mjpage"><svg aria-labelledby="MathJax-SVG-4-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 1396 936.9" width="3.242ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-4-Title">SA</title>
+<defs aria-hidden="true">
+<path d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z" id="E4-MJMATHI-53" stroke-width="1"></path>
+<path d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z" id="E4-MJMATHI-41" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E4-MJMATHI-53" y="0"></use>
+<use x="645" xlink:href="#E4-MJMATHI-41" y="0"></use>
+</g>
+</svg></span> mô tả các phiến đã Ác quỷ <span class="mjpage"><svg aria-labelledby="MathJax-SVG-5-Title" focusable="false" height="2.843ex" role="img" style="vertical-align: -0.838ex;" viewbox="0 -863.1 7402.1 1223.9" width="17.192ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-5-Title">(5≤|SA|≤100)</title>
+<defs aria-hidden="true">
+<path d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z" id="E5-MJMAIN-28" stroke-width="1"></path>
+<path d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" id="E5-MJMAIN-35" stroke-width="1"></path>
+<path d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z" id="E5-MJMAIN-2264" stroke-width="1"></path>
+<path d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z" id="E5-MJMAIN-7C" stroke-width="1"></path>
+<path d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z" id="E5-MJMATHI-53" stroke-width="1"></path>
+<path d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z" id="E5-MJMATHI-41" stroke-width="1"></path>
+<path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="E5-MJMAIN-31" stroke-width="1"></path>
+<path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="E5-MJMAIN-30" stroke-width="1"></path>
+<path d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z" id="E5-MJMAIN-29" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E5-MJMAIN-28" y="0"></use>
+<use x="389" xlink:href="#E5-MJMAIN-35" y="0"></use>
+<use x="1167" xlink:href="#E5-MJMAIN-2264" y="0"></use>
+<use x="2224" xlink:href="#E5-MJMAIN-7C" y="0"></use>
+<use x="2502" xlink:href="#E5-MJMATHI-53" y="0"></use>
+<use x="3148" xlink:href="#E5-MJMATHI-41" y="0"></use>
+<use x="3898" xlink:href="#E5-MJMAIN-7C" y="0"></use>
+<use x="4454" xlink:href="#E5-MJMAIN-2264" y="0"></use>
+<g transform="translate(5511,0)">
+<use xlink:href="#E5-MJMAIN-31"></use>
+<use x="500" xlink:href="#E5-MJMAIN-30" y="0"></use>
+<use x="1001" xlink:href="#E5-MJMAIN-30" y="0"></use>
+</g>
+<use x="7012" xlink:href="#E5-MJMAIN-29" y="0"></use>
+</g>
+</svg></span>;</li>
+<li>Dòng thứ ba chứa xâu mô tả các phiến đá Thiên thần.</li>
+</ul>
+<h4>Dữ liệu ra:</h4>
+<ul>
+<li>Ghi ra một số nguyên duy nhất là số lượng cách vượt <span class="mjpage"><svg aria-labelledby="MathJax-SVG-6-Title" focusable="false" height="2.843ex" role="img" style="vertical-align: -0.838ex;" viewbox="0 -863.1 7924.5 1223.9" width="18.405ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-6-Title">(\text{mod }1000000007)</title>
+<defs aria-hidden="true">
+<path d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z" id="E6-MJMAIN-28" stroke-width="1"></path>
+<path d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" id="E6-MJMAIN-6D" stroke-width="1"></path>
+<path d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" id="E6-MJMAIN-6F" stroke-width="1"></path>
+<path d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z" id="E6-MJMAIN-64" stroke-width="1"></path>
+<path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="E6-MJMAIN-31" stroke-width="1"></path>
+<path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="E6-MJMAIN-30" stroke-width="1"></path>
+<path d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z" id="E6-MJMAIN-37" stroke-width="1"></path>
+<path d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z" id="E6-MJMAIN-29" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E6-MJMAIN-28" y="0"></use>
+<g transform="translate(389,0)">
+<use xlink:href="#E6-MJMAIN-6D"></use>
+<use x="833" xlink:href="#E6-MJMAIN-6F" y="0"></use>
+<use x="1334" xlink:href="#E6-MJMAIN-64" y="0"></use>
+</g>
+<g transform="translate(2530,0)">
+<use xlink:href="#E6-MJMAIN-31"></use>
+<use x="500" xlink:href="#E6-MJMAIN-30" y="0"></use>
+<use x="1001" xlink:href="#E6-MJMAIN-30" y="0"></use>
+<use x="1501" xlink:href="#E6-MJMAIN-30" y="0"></use>
+<use x="2002" xlink:href="#E6-MJMAIN-30" y="0"></use>
+<use x="2502" xlink:href="#E6-MJMAIN-30" y="0"></use>
+<use x="3003" xlink:href="#E6-MJMAIN-30" y="0"></use>
+<use x="3503" xlink:href="#E6-MJMAIN-30" y="0"></use>
+<use x="4004" xlink:href="#E6-MJMAIN-30" y="0"></use>
+<use x="4504" xlink:href="#E6-MJMAIN-37" y="0"></use>
+</g>
+<use x="7535" xlink:href="#E6-MJMAIN-29" y="0"></use>
+</g>
+</svg></span></li>
+</ul>
+<h4>Ví dụ:</h4>
+<h5>Dữ liệu vào:</h5>
+<div class="ui existing segment"><pre style="margin-top: 0; margin-bottom: 0; "><code>RGS
+RINGSR
+GRGGNS
+</code></pre></div>
+<h5>Dữ liệu ra:</h5>
+<div class="ui existing segment"><pre style="margin-top: 0; margin-bottom: 0; "><code>3
+</code></pre></div>
+</div>
+</div>

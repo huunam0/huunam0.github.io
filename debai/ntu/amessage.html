@@ -1,0 +1,48 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    AMESSAGE - Tín hiệu ngoài hành tinh 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Tại năm 2060, Khoa là một nhà khoa học lừng danh. Ông ta rất thích nghiên cứu về ngôn ngữ. Trong một lần phóng tên lửa lên Mặt Trăng, máy tính của ông tình cờ nhận được một tệp tin và M tín hiệu rất kì lạ. Tệp tin chứa N dãy nhị phân và M tín hiệu nhận được cũng là những dãy nhị phân. Khoa cho rằng đây chính là tín hiệu của những người ngoài hành tinh đang gửi cho nhau và bức thông điệp kia có thể là một cuốn từ điển để giải mã các tín hiệu ấy. Với bản tính say mê khoa học của mình, Khoa muốn đếm xem với mỗi dãy nhị phân có trong tệp tin nhận được, có bao nhiêu tín hiệu có phần đầu khớp với phần đầu của dãy nhị phân đó, hay nói cách khác: Nếu độ dài tín hiệu nhỏ hơn hoặc bằng độ dài dãy nhị phân đó thì dãy nhị phân đó phải bắt đầu bằng tín hiệu, ngược lại thì tín hiệu phải bắt đầu bằng dãy nhị phân đó. Tuy nhiên dữ liệu được gửi về có thể rất lớn nên Khoa cần một chương trình để thực hiện công việc này. Bạn hãy giúp Khoa nhé!</p>
+<p> </p>
+<p><strong>Input</strong></p>
+<p>Dòng đầu chứa 2 số nguyên M, N (1 &lt;= M, N &lt;= 50000)</p>
+<p>M dòng tiếp theo, mỗi dòng ghi một số L (1 &lt;= L &lt;= 10000) là độ dài của mỗi dãy nhị phân trong các tín hiệu, tiếp theo là L kí tự 0 hoặc 1 phân cách với nhau bởi một khoảng trắng là dãy nhị phân đó.</p>
+<p>N dòng tiếp theo, mỗi dòng ghi một số L (1 &lt;= L &lt;= 10000) là độ dài của mỗi dãy nhị phân trong tệp tin, tiếp theo là L kí tự 0 hoặc 1 phân cách với nhau bởi một khoảng trắng là dãy nhị phân đó.</p>
+<p><strong><span style="color:#FF0000">Lưu ý: Tổng độ dài các dãy nhị phân trong input không vượt quá 500000</span></strong></p>
+<p><strong>Output</strong></p>
+<p>Gồm N dòng, mỗi dòng in ra số tín hiệu khớp với phần đầu của dãy nhị phân đó.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 5<br/>3 0 1 0<br/>1 1<br/>3 1 0 0<br/>3 1 1 0<br/>1 0<br/>1 1<br/>2 0 1<br/>5 0 1 0 0 1<br/>2 1 1<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">1<br/>3<br/>1<br/>1<br/>2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Giải thích ví dụ</strong></p>
+<p>Có 4 tín hiệu nhận được là 010, 1, 100 và 110</p>
+<p>Có 5 dãy nhị phân trong tập tin là 0, 1, 01, 01001, và 11</p>
+<p>Dãy 0 khớp với phần đầu của tín hiệu 010 nên kết quả là 1</p>
+<p>Dãy 1 khớp với phần đầu của tín hiệu 1, 100 và 110 nên kết quả là 3</p>
+<p>Dãy 01 khớp với phần đầu của tín hiệu 010 nên kết quả là 1</p>
+<p>Dãy 01001 khớp với tín hiệu 010 nên kết quả là 1</p>
+<p>Dãy 11 khớp với tín hiệu 1 và 110 nên kết quả là 2</p>
+</div>
+</div></body></html>

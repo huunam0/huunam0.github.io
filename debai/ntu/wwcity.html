@@ -1,0 +1,40 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    WWCITY - Thành phố WW 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Thành phố WW có n khu đất được đánh số từ 1 đến n và m đường nối trực tiếp giữa hai khu đất. Biết rằng giữa hai khu đất bất kỳ luôn tồn tại đường đi từ khu đất này đến khu đất kia. Chính phủ muốn phong tỏa một khu đất để thực hiện dự án ACM. Khi một khu đất được chọn để thực hiện dự án, tất cả các đường nối trực tiếp giữa nó và các khu đất khác sẽ bị phá hủy. Để giảm thiệt hại cho người dân, Chính phủ sẽ chọn khu đất mà khi phá hủy đường để thực hiện dự án, số cặp khu đất còn lại không thể đi đến được nhau là bé nhất. Bạn đang làm trợ lý cho Chính phủ, hãy tính toán xem nên chọn khu đất nào để số cặp các khu đất còn lại không thể đi đến được nhau là bé nhất.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<p>Dòng đầu gồm 2 số n, m</p>
+<p>m dòng tiếp theo, mỗi dòng gồm 2 số u và v với ý nghĩa có đường nối trực tiếp giữa khu đất u và khu đất v</p>
+<p><strong>Dữ liệu ra</strong></p>
+<p>Gồm n dòng, dòng thứ i in ra số lượng các cặp khu đất không thể đi đến được nhau nếu như chọn khu đất thứ i để thực hiện dự án.</p>
+<p><strong>Giới hạn</strong></p>
+<p>1 &lt;= n &lt;= 10<sup>5</sup>, 1 &lt;= m &lt;= 5x10<sup>5</sup></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2 1<br/>1 2<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">2<br/>2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Nếu chọn thành phố 1 làm dự án, khi đó khu đất 1 không thể đến khu đất 2 và khu đất 2 không thể đến khu đất 1 nên kết quả là 2. Nếu chọn thành phố 2 ta có thể giải thích tương tự.</p>
+</div>
+</div></body></html>

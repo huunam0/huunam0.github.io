@@ -1,0 +1,43 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Kangaroo</h2>
+</div><div class="content-description screen">
+<div><p>Một khu vườn được biểu diễn dưới dạng một hàng ngang gồm \(N\) ô đánh số từ \(1\) đến \(N\). Ban đầu, tất cả các ô đều có chứa trái cây. Một con kangaroo chạy tới khu vườn từ ô \(\text{cs}\). Sau đó nó bắt đầu nhảy đến từng ô trong vườn để ăn hết trái cây ở các ô đó. Nó sẽ luôn kết thúc lộ trình ăn uống của mình ở ô \(\text{cf}\), sau khi nhảy qua đúng \(N\) ô khác nhau, mỗi ô được nhảy vào đúng một lần, bao gồm cả ô \(\text{cs}\) và ô \(\text{cf}\). Hiển nhiên, con kangaroo này sẽ nhảy tổng cộng \(N-1\) bước.</p>
+<p>Vì con kangaroo không muốn bị bắt nên sau mỗi bước nhảy nó đều sẽ đổi hướng nhảy so với lần nhảy trước: Nếu nó đang đứng ở ô \(\text{current}\) sau khi nhảy đến từ ô \(\text{prev}\), và từ ô này nó sẽ tiếp tục nhảy đến ô \(\text{next}\), thì những điều kiện sau bắt buộc phải được thỏa mãn:</p>
+<ul>
+<li>Nếu \(\text{prev} &lt; \text{current}\) thì \(\text{next} &lt; \text{current}\);</li>
+<li>Nếu \(\text{current} &lt; \text{prev}\) thì \(\text{current} &lt; \text{next}\).</li>
+</ul>
+<p>Cho trước \(N\) là số lượng ô trong vườn, \(\text{cs}\) là ô xuất phát của kangaroo và \(\text{cf}\) là ô cuối cùng mà nó nhảy tới, bạn hãy tính số lượng lộ trình phân biệt mà con kangaroo này có thể nhảy được trong khu vườn.</p>
+<hr/>
+<h4>Input</h4>
+<p>Gồm một dòng duy nhất chứa ba số nguyên \(N\), \(\text{cs}\) và \(\text{cf}\).</p>
+<hr/>
+<h4>Output</h4>
+<p>Ghi ra một số nguyên duy nhất là phần dư sau khi chia số lộ trình phân biệt cho \(10^9+7\).</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>4 2 3</code></pre>
+<h5>Output</h5>
+<pre><code>2</code></pre>
+<h5>Giải thích</h5>
+<p>Con kangaroo xuất phát ở ô \(2\) và kết thúc ở ô \(3\). Hai lộ trình mà nó có thể nhảy qua là \(2\rightarrow 1\rightarrow 4\rightarrow 3\) và \(2\rightarrow 4\rightarrow 1\rightarrow 3\).</p>
+<hr/>
+<h4>Ràng buộc</h4>
+<ul>
+<li>\(2\leq N\leq 2000\).</li>
+<li>\(1\leq \text{cs}\leq N\).</li>
+<li>\(1\leq \text{cf}\leq N\).</li>
+<li>\(\text{cs}\neq\text{cf}\).</li>
+<li>Các lộ trình được xác định bằng thứ tự các ô mà con kangaroo nhảy đến.</li>
+<li>Dữ liệu đảm bảo tồn tại ít nhất một lộ trình thỏa mãn các ràng buộc.</li>
+<li>Con kangaroo có thể nhảy theo bất kỳ hướng nào khi nó xuất phát ở ô \(\text{cs}\).</li>
+<li>\(6\%\) số test có \(N\leq 8\).</li>
+<li>\(36\%\) số test có \(N\leq 40\).</li>
+<li>\(51\%\) số test có \(N\leq 200\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn bài: CEOI 2016</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,38 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Xếp Hộp</h2>
+</div><div class="content-description screen">
+<div><p>Hôm nay <strong>Roronoa Zoro</strong>, thợ săn quỷ mạnh nhất đang đến <strong>tiki</strong> shop để mua nhận luân kiếm cho trận chiến sống còn với chúa quỷ <strong>Muzan</strong> sắp tới. Khi <strong>Zoro</strong> tới thì chủ tiệm là <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> đang loay hoay xếp kiếm, <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> mãi chưa xếp xong kiếm nên đành nhờ <strong>Zoro</strong> giúp xếp hộ kiếm.</p>
+<p>Trong tiệm \(N\) thanh kiếm có trọng lượng , độ dài , độ cao lần lượt là \(C_i , W_i , H_i\) , chiều rộng của mỗi thanh kiếm bằng với chiều rộng của tủ kiếm. Trọng lượng và độ dài của mỗi ngăn mà tủ kiếm có thể chứa là \(P\) và \(Q\) .</p>
+<p>Bây giờ <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> muốn nhờ <strong>Zoro</strong> chia \(N\) hộp thành các đoạn liên tiếp để xếp vào ngăn. Biết độ cao của mỗi ngăn là độ cao của thanh kiếm cao nhất trong các hộp đã được xếp vào ngăn. Nếu <strong>Zoro</strong> giúp được thì <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> sẽ tặng cho anh \(1\) thanh kiếm Trung Quốc hàng xịn, hãy giúp anh ấy nhé !</p>
+<ul>
+<li><strong>Yêu cầu :</strong> <em>Hãy tính chiều cao tối thiểu của tủ khi xếp các kiếm vào tủ 1 cách tối ưu .</em></li>
+<li><strong>Input</strong> : <ul>
+<li>Dòng đầu tiên gồm 3 số nguyên dương \(N , P , Q\) . \((N \le 9999, (P,Q) \le 10^{12})\) </li>
+<li>N dòng tiếp theo gồm 3 số nguyên dương \(C_i , W_i , H_i\) . \((C_i \le P,W_i \le Q,H_i \le 10^9)\)</li>
+</ul>
+</li>
+<li><strong>Output</strong> :<ul>
+<li>Gồm 1 số nguyên dương duy nhất là kết quả của bài toán .</li>
+</ul>
+</li>
+<li><strong>Sample input</strong> :
+<pre><code>5 18 16
+5 7 3
+6 5 4
+2 1 9
+8 4 2
+3 2 3</code></pre>
+</li>
+<li><strong>Sample output</strong> :
+<pre><code>12</code></pre>
+</li>
+<li><strong>Giải thích :</strong> Chúng ta sẽ chia thanh 2 đoạn \(-&gt;\) \((1,2,3)\) và \((4,5)\)</li>
+<li><strong>Giới hạn :</strong> <ul>
+<li><em>40% số điểm tương ứng với : \(N \le 400 , P \le 10^3 , Q \le 10^3 , H_i \le 10^3 .\)</em></li>
+<li><em>60% số điểm còn lại không có ràng buộc gì thêm .</em></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

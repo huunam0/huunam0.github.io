@@ -1,0 +1,49 @@
+<div class="tm-box2">
+<div class="problem-name">
+    CARPET - Trải thảm 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<h1 style="text-align:justify"><span style="font-size:14px">Giáo sư X làm một tấm thảm hình chữ nhật kích thước 𝑚 × 𝑛 được lắp ghép từ những mảnh xốp hình vuông đơn vị tạo thành một lưới với các hàng đánh số từ 1 tới 𝑚 từ trên xuống và các cột đánh số từ 1 tới 𝑛 từ trái qua phải. Mảnh xốp nằm trên giao của hàng 𝑖 và cột 𝑗 được gọi là mảnh (𝑖, 𝑗) và trên đó in một số nguyên 𝑓<sub>𝑖𝑗</sub>. Trên tấm thảm, ta gọi miền (𝑎, 𝑏, 𝑐, 𝑑) là một vùng hình chữ nhật có cạnh song song với cạnh thảm, góc trái trên là ô (𝑎, 𝑏), góc phải dưới là ô (𝑐, 𝑑) (1 ≤ 𝑎 ≤ 𝑐 ≤ 𝑚; 1 ≤ 𝑏 ≤ 𝑑 ≤ 𝑛), miền này chứa tất cả các mảnh (𝑖, 𝑗) trong đó 𝑎 ≤ 𝑖 ≤ 𝑐 và 𝑏 ≤ 𝑗 ≤ 𝑑.</span></h1>
+<p style="margin-left:0.9pt; text-align:justify"><span style="font-size:14px">Những bé ở trường mầm non SuperKids thông minh nhưng rất tinh nghịch, các bé đã thực hiện 𝑘 thao tác trên tấm thảm, mỗi thao tác thuộc một trong hai dạng:</span></p>
+<ul>
+<li style="text-align:justify"><span style="font-size:14px">H 𝑎 𝑏 𝑐 𝑑: Tách rời miền (𝑎, 𝑏, 𝑐, 𝑑), lật úp miền này lại sao cho mép phải của miền trở thành mép trái và mép trái trở thành mép phải, sau đó đặt lại miền đã lật úp vào đúng chỗ vừa lấy  ra.</span></li>
+<li style="text-align:justify"><span style="font-size:14px">V 𝑎 𝑏 𝑐 𝑑: Tách rời miền (𝑎, 𝑏, 𝑐, 𝑑), lật úp miền này lại sao cho mép trên của miền trở thành mép dưới và mép dưới trở thành mép trên, sau đó đặt lại miền đã lật úp vào đúng chỗ vừa lấy ra.</span></li>
+</ul>
+<p style="margin-left:0.9pt; text-align:justify"><span style="font-size:14px">Sau 𝑘 thao tác, các bé xét từng hàng từ trên xuống và trên mỗi hàng thì lần lượt tháo rời từng mảnh theo thứ tự từ trái qua phải. Điều tình cờ là các số in trên các mảnh theo thứ tự tháo rời như vậy lập thành dãy số nguyên liên tiếp từ 1 tới 𝑚 × 𝑛.</span></p>
+<p style="margin-left:0.9pt; text-align:justify"><span style="font-size:14px">Giáo sư X yêu cầu các bé phải xếp lại các mảnh thành tấm thảm theo đúng vị trí ban đầu. Mặc dù không nhớ vị trí ban đầu của các mảnh, các bé đã ghi lại đầy đủ và chính xác dãy 𝑘 thao tác đã thực hiện. Hãy giúp các bé xác định các giá trị 𝑓<sub>𝑖𝑗</sub> nhé (∀𝑖, 𝑗: 1 ≤ 𝑖 ≤ 𝑚; 1 ≤ 𝑗 ≤ 𝑛).</span></p>
+<p style="margin-left:0.9pt; text-align:justify"><span style="font-size:14px"><strong>Dữ liệu:</strong> </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">- Dòng 1 chứa ba số nguyên dương 𝑚, 𝑛, 𝑘 cách nhau bởi dấu cách (𝑚, 𝑛 ≤ 1000; 𝑘 ≤ 2000)<br/>
+- 𝑘 dòng tiếp theo, mỗi dòng chứa một ký tự ∈ {H,V} và 4 số nguyên 𝑎, 𝑏, 𝑐, 𝑑 cách nhau bởi dấu cách ứng với một thao tác (1 ≤ 𝑎 ≤ 𝑐 ≤ 𝑚; 1 ≤ 𝑏 ≤ 𝑑 ≤ 𝑛), các thao tác được liệt kê theo đúng thứ tự thực hiện</span></p>
+<p style="margin-left:0.9pt; text-align:justify"><span style="font-size:14px"><strong>Kết quả:</strong></span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">Ghi ra 𝑚 dòng, dòng thứ 𝑖 ghi 𝑛 số cách nhau bởi dấu cách, số thứ 𝑗 là 𝑓<sub>𝑖𝑗</sub>.  </span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input<img alt="" src="../../ckfinder/userfiles/images/CARPET.png" style="float:right; height:130px; width:450px"/></strong></p>
+<p style="margin-left:40px">4 4 2<br/>
+H 2 2 3 4<br/>
+V 1 1 4 2 </p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">13 14 3 4<br/>
+9 8 7 10<br/>
+5 12 11 6<br/>
+1 2 15 16 </p>
+<hr/>
+<p>Nguồn: LMH '1819</p>
+</div>
+</div>

@@ -1,0 +1,47 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    TABGAME - Trò chơi với bảng số 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Trong quá trình học tập thuật toán và tham gia các diễn đàn thuật toán, An đã quen được một người bạn nước ngoài tên Vasya giới thiệu cho một trò chơi trí tuệ, Vasya nói rằng trò chơi ngày có thể giúp ích rất nhiều trong việc phát triển tư duy thuật toán của mỗi người. Trò chơi được mô tả như sau: Cho một tấm bảng gồm các ô vuông với các quy tắc sau:</p>
+<p> - Các ô trên mỗi dòng và mỗi cột được đặt liên tục nhau.</p>
+<p> - Các hàng ngang đều được căn theo lề trái.</p>
+<p> - Số ô vuông ở dòng dưới không được lớn hơn số ô vuông của dòng trên nó.</p>
+<p> - Mỗi ô vuông trong bảng chứa một con số nguyên dương X bất kì mà 1 ≤ X ≤ N.</p>
+<p> - Giá trị chứa trong ô vuông bên trái không được lớn hơn ô bên phải nó.</p>
+<p> - Giá trị chứa trong ô vuông ở hàng trên phải nhỏ hơn hàng bên dưới.</p>
+<p>Ví dụ: với một bảng gồm 2 dòng và kích thước của 2 dòng lần lượt là 2, 1, N = 3 thì ta sẽ có 8 cách đánh số như sau:</p>
+<p><img alt="" src="images/TABGAME.JPG" style="height:223px; width:627px"/></p>
+<p>Yêu cầu của trò chơi là cho kích thước của bảng và giới hạn N, phải tìm ra được số cách đánh số cho bảng tương ứng.</p>
+<p>Mặc dù An đã tìm ra cách đánh số bằng tay, nhưng để có thể tìm ra được số cách đánh số tổng quát một cách nhanh chóng thì cậu ta lại không thể tìm ra được, vì thế cũng không thể kiểm tra được đáp án của mình đưa ra có đúng hay không.</p>
+<p>Bạn hãy giúp An tính bằng một cách nhanh nhất xem với kích thước bảng và số N cho trước, có bao nhiêu cách đánh số lên bảng mà thỏa yêu cầu trên nhé.</p>
+<p><strong>Dữ liệu nhập:</strong> Gồm nhiều test case, mỗi test case được biểu diễn trên 2 dòng:</p>
+<p> - Dòng đầu tiên chứa một số nguyên dương M - số lượng hàng ngang của bảng. Tiếp theo là M số nguyên dương A<sub>1</sub>, A<sub>2</sub>, ... A<sub>M</sub> với A<sub>i</sub> là số lượng ô vuông tại hàng ngang thứ i tính từ trên xuống (dữ liệu đảm bảo 1 ≤ A<sub>M</sub> ≤ A<sub>M-1</sub> ≤ ... ≤ A<sub>2</sub> ≤ A<sub>1</sub> ≤ 7).</p>
+<p> - Dòng thứ hai chứa số nguyên dương N - giới hạn tối đa của các giá trị mà các ô có thể chứa (M ≤ N ≤ 7).</p>
+<p><strong>Dữ liệu xuất:</strong> Với mỗi test case xuất ra trên một dòng, chứa một số nguyên duy nhất là kết quả tìm được.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">1 1<br/>1<br/>1 1<br/>2<br/>2 2 1<br/>4<br/>2 2 1<br/>3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1<br/>2<br/>20<br/>8</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

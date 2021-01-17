@@ -1,0 +1,39 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chơi bóng</h2>
+</div><div class="content-description screen">
+<div><p>An có một hộp gồm \(N\) quả bóng, trên mỗi quả bóng được viết một số nguyên dương (các số này không nhất thiết phải khác nhau). An chọn 1 tập hợp \(K\) quả bóng, đánh dấu tập hợp này, đặt chúng lại vào hộp và tiếp tục quá trình này cho đến khi tất cả các tập hợp như trên được đánh dấu. Với mỗi tập hợp như vậy, An ghi lại hiệu giữa số lớn nhất và số bé nhất trong nó.</p>
+<p>Lưu ý: 2 tập khác nhau nếu có ít nhất 1 quả bóng thuộc tập này và không thuộc tập kia.</p>
+<p><strong>Yêu cầu:</strong> Bạn hãy tính tổng tất cả các số được An ghi lại. In ra số dư của kết quả khi chia cho \(10^9+7\).</p>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li>Dòng đầu chứa 2 số nguyên dương \(N\) và \(K\).</li>
+<li>Dòng tiếp theo chứa \(N\) số được ghi trên bóng.</li>
+<li>Trong đó \(1 \leq K \leq N\), các số trên bóng \(\leq 10^9\)</li>
+</ul>
+<p><strong>Dữ liệu ra:</strong> Ghi một số nguyên duy nhất là kết quả bài toán.</p>
+<h4>Ví dụ</h4>
+<p><strong>Input</strong></p>
+<pre><code>4 2
+10 20 30 40</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>100</code></pre>
+<p><strong>Giải thích:</strong> Có tổng cộng 6 cách chọn:</p>
+<ol>
+<li>10 20</li>
+<li>20 30</li>
+<li>30 40</li>
+<li>10 30</li>
+<li>20 40</li>
+<li>10 40</li>
+</ol>
+<p>Tổng của chúng : \(10+10+10+20+20+30=100\).</p>
+<p><strong>Giới hạn:</strong></p>
+<ul>
+<li>\(20\)% số test có \(N \leq 20\).</li>
+<li>\(30\)% số test có \(N \leq 5000\).</li>
+<li>\(50\)% số test có \(N \leq 10^5\).</li>
+</ul>
+<p><em>Nguồn: Hackerrank</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,52 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Cây tiền tố</h2>
+</div><div class="content-description screen">
+<div><p>Một cây tiền tố (còn gọi là trie) là một cấu trúc dữ liệu dùng để biểu diễn tất cả các tiền tố của các từ trong một tập hợp từ hữu hạn theo cách sau:</p>
+<ul>
+<li>Mỗi cạnh của cây được ký hiệu bằng một chữ cái latin.</li>
+<li>Gốc (root) của cây thể hiện một tiền tố rỗng (empty prefix).</li>
+<li>Trừ đỉnh gốc, mỗi đỉnh còn lại của cây tượng trưng cho một tiền tố khác rỗng. Cụ thể, mỗi đỉnh tượng trưng cho tiền tố nhận được bằng cách ghép lần lượt tất cả các chữ cái trên các cạnh thuộc đường đi từ đỉnh gốc tới đỉnh đó.</li>
+<li>Không bao giờ tồn tại hai cạnh cùng đi ra từ một đỉnh mà chúng được ký hiệu bằng cùng một chữ cái.</li>
+</ul>
+<p>Hình dưới đây minh họa một cây tiền tố của tập hợp các từ <code>A</code>, <code>to</code>, <code>tea</code>, <code>ted</code>, <code>ten</code>, <code>i</code>, <code>in</code> và <code>inn</code>.</p>
+<p><img alt="prefix tree" src="https://i.ibb.co/N77JvgC/tmp.jpg"/></p>
+<p>Cho trước một tập hợp gồm \(N\) từ, bạn hãy xác định <strong>số đỉnh tối thiểu</strong> cần có của một cây tiền tố để nó có thể biểu diễn được tập hợp từ này, biết rằng với mỗi từ chúng ta có thể hoán vị các chữ cái của nó theo một trật tự tùy ý.</p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa số nguyên \(N\) \((1\leq N\leq 16)\).</p>
+<p>\(N\) dòng tiếp theo mô tả các từ trong tập hợp, mỗi dòng chứa một từ đơn chỉ gồm các chữ cái latin in thường.</p>
+<p>Tổng độ dài của tất cả các từ không vượt quá \(1,000,000\).</p>
+<hr/>
+<h4>Output</h4>
+<p>Một số nguyên duy nhất là số đỉnh tối thiểu tìm được.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Sample input 1</h5>
+<pre><code>3
+a
+ab
+abc</code></pre>
+<h5>Sample output 1</h5>
+<pre><code>4</code></pre>
+<h5>Sample input 2</h5>
+<pre><code>3
+a
+ab
+c</code></pre>
+<h5>Sample output 2</h5>
+<pre><code>4</code></pre>
+<h5>Sample input 3</h5>
+<pre><code>4
+baab
+abab
+aabb
+bbaa</code></pre>
+<h5>Sample output 3</h5>
+<pre><code>5</code></pre>
+<h5>Giải thích</h5>
+<p>Tất cả các từ có thể được hoán vị về <code>aabb</code>, vì vậy cây tiền tố chỉ cần \(5\) đỉnh để biểu diễn tất cả tiền tố của chúng (\(4\) tiền tố + \(1\) đỉnh gốc).</p>
+<hr/>
+<p><em>Nguồn bài: COCI</em></p>
+</div>
+<hr/>
+</div>

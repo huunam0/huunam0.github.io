@@ -1,0 +1,43 @@
+<h2>MSE07B - Double Queue</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274710/problem/Z" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274710/problem/Z </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/274509/problem/L" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274509/problem/L </a>
+<table class="problems" width="100%"><tr class="navigation">
+<td width="50%"><a href="/problems/MSE07B/en/">English</a></td>
+<td width="50%"><a href="/problems/MSE07B/vn/">Vietnamese</a></td>
+</tr></table>
+<p>
+Ngân hàng  BIG-Bank mở một chi nhánh ở Bucharest và được trang bị một máy tính hiện đại với các công nghệ mới nhập, C2#,VC3+ ... chỉ chuối mỗi cái là không ai biết lập trình.</p><p>
+Họ cần một phần mềm mô tả hoạt động của ngân hàng như sau: mỗi khách hàng có một mã số là số nguyên K, và khi đến ngân hàng giao dịch, họ sẽ nhận được 1 số P là thứ tự ưu tiên của họ. Các thao tác chính như sau </p><p>
+0  Kết thúc phục vụ</p><p>
+1  K P Thêm khách hàng K vào hàng đợi với độ ưu tiên P </p><p>
+2  Phục vụ người có độ ưu tiên cao nhất và xóa khỏi danh sách hàng đợi </p><p>
+3  Phục vụ người có độ ưu tiên thấp nhất và xóa khỏi danh sách hàng đợi.</p><p>
+Tất nhiên là họ cần bạn giúp rồi.</p><p>
+</p><h3>Input</h3>
+<p>
+Mỗi dòng của input là 1 yêu cầu, và chỉ yêu cầu cuối cùng mới có giá trị là 0. Giả thiết là khi có yêu cầu 1 thì không có khách hàng nào khác có độ ưu tiên là P. </p><p>
+K&lt;=10^6, và P&lt;= 10^7.Một khách hàng có thể yêu cầu phục vụ nhiều lần và với các độ ưu tiên khác nhau.
+</p><p>
+</p><h3>Output</h3>
+<p>
+Với mỗi yêu cầu 2 hoặc 3, in ra trên 1 dòng mã số của khách hàng được phục vụ tương ứng. Nếu có yêu cầu mà hàng đợi rỗng, in ra số 0. 
+</p><p>
+</p><h3>Sample</h3>
+<pre>
+Input :
+2 
+1 20 14 
+1 30 3 
+2 
+1 10 99 
+3 
+2 
+2 
+0 
+Ouput: 
+0 
+20 
+30 
+10 
+0 
+</pre>
+</div>

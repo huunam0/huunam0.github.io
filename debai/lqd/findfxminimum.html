@@ -1,0 +1,31 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Tìm x tối thiểu</h2>
+</div><div class="content-description screen">
+<div><p>Trong bài tập này nhiệm vụ của bạn là tìm số nguyên dương \(x\) tối thiểu và bạn được cung cấp một danh sách tất cả các ước của \(x\), <strong>trừ 1 và</strong> \(x\). Nếu không thể tìm được \(x\) thỏa mãn danh sách ước thì có thể coi danh sách là <strong>mâu thuẫn</strong>.</p>
+<p>Nói cách khác, gọi \(S(x)\) là tập hợp các ước khác \(1\) và \(x\) của \(x\). Bạn được cho tập \(D\), hãy tìm số \(x\) nhỏ nhất có \(S(x) = D\) là tập đã cho.</p>
+<p><strong>INPUT:</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa số \(T\) \((T \leq 25)\) là số lượng truy vấn. Sau đó \(T\) dòng tiếp theo.</li>
+<li>Dòng đầu tiên của mỗi truy vấn chứa số nguyên \(n\) \((n \leq 300)\) là số lượng của danh sách.</li>
+<li>Dòng thứ hai của mỗi truy vấn chứa \(n\) số nguyên \(d_1, d_2, ... d_n\), với \(d_i\) \((d_i \leq 10^6)\) là một trong những ước của số đang đoán và tất cả \(d_i\) là khác biệt. Nói cách khác \(D = \{d_1, d_2, ..., d_n\}\)</li>
+</ul>
+<p><strong>OUTPUT: </strong></p>
+<ul>
+<li>Gồm \(T\) dòng mỗi dòng in ra \(-1\) nếu danh sách là <strong>mâu thuẫn</strong>, ngược lại in ra \(x\) tối thiểu.</li>
+</ul>
+<p><strong>Sample input: </strong></p>
+<pre><code>2
+8
+8 2 12 6 4 24 16 3
+2
+4 7</code></pre>
+<p><strong>Sample output: </strong></p>
+<pre><code>48
+-1</code></pre>
+<hr/>
+<p><strong>Giải thích:</strong></p>
+<p>\(S(48) = \{2, 3, 4, 6, 8, 12, 16, 24\}\) là các ước khác \(1\) và \(48\) của \(48\).</p>
+<hr/>
+</div>
+<hr/>
+</div>

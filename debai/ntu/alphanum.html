@@ -1,0 +1,46 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    ALPHANUM - Chỉ số Alpha 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Vì quá nhàm chán với cách chơi cờ vua cổ điển, Mai và Sang đã nghĩ ra một kiểu chơi mới, ở kiểu chơi này mỗi người chỉ sử dụng các con vua. Ở mỗi lượt đi, một con vua có thể di chuyển từ ô đang đứng sang 1 trong 8 ô kề cạnh. Ta gọi chỉ số Alpha của một người chơi là tổng các "khoảng cách" giữa các quân cờ của người chơi đó, "khoảng cách" giữa hai quân cờ ở đây là số lượt di chuyển ít nhất để quân cờ này có thể đến được vị trí của quân cờ kia, trong đó, quân cờ có thể di chuyển qua những ô có quân cờ của người chơi khác (nghĩa là không bị quân của người chơi khác chặn)</p>
+<p> </p>
+<p>Sau một hồi suy ngẫm, Mai nhận thấy rằng chỉ số Alpha ảnh hưởng đến kết quả của ván cờ, vì vậy cậu ta cần biết chỉ số Alpha của mình và của Sang để suy nghĩ một chiến thuật phù hợp. Tuy nhiên vì thời gian suy nghĩ có hạn nên Mai muốn nhờ bạn tính toán giùm cậu ấy.</p>
+<p> </p>
+<p><strong>Input</strong></p>
+<p>Dòng đầu chứa hai số n và m (1 &lt;= n, m &lt;= 1000) lần lượt là số dòng và số cột của bàn cờ</p>
+<p>n dòng tiếp theo, mỗi dòng gồm m cột thể hiện mỗi ô của bàn cờ, nếu ô đó là kí tự M thì đó là quân cờ của Mai, còn nếu là kí tự S thì đó là quân cờ của Sang, nếu là kí tự . thì đó ô đó không có quân cờ</p>
+<p> </p>
+<p><strong>Output</strong></p>
+<p>Một dòng gồm 2 số nguyên lần lượt là chỉ số Alpha của Mai và Sang</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2 3<br/>SMS<br/>MMS</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3 5</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Gải thích ví dụ</strong></p>
+<p>* Chỉ số Alpha của Mai</p>
+<p>- "Khoảng cách" từ quân ở vị trí (1,2) và (2,2) là 1, vị trí (1,2) và (2,1) là 1 và vị trí (2,1) và (2,2) là 1, vậy chỉ số Alpha bằng 1 + 1 + 1 = 3</p>
+<p>* Chỉ số Alpha của Sang</p>
+<p>- "Khoảng cách" từ quân ở vị trí (1,1) và (1,3) là 2, vị trí (1,1) đến (2,3) là 2, vị trí (1, 3) đến (2, 3) là 1, vậy chỉ số Alpha bằng 2 + 2 + 1 = 5</p>
+</div>
+</div></body></html>

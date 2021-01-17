@@ -1,0 +1,55 @@
+<div class="tm-box2">
+<div class="problem-name">
+    HANOI - Tháp Hà Nội 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.5 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Trò chơi tháp Hà nội là trò chơi nổi tiếng với những chiếc đĩa có kích thước đôi một khác nhau, có lỗ ở giữa, nằm xuyên trên ba chiếc cọc A, B, C. </p>
+<p style="text-align:center"><img alt="" src="../../ckfinder/userfiles/images/hanoi(1).png" style="height:200px; width:430px"/></p>
+<p>Trò chơi bắt đầu bằng trạng thái các đĩa được chồng lên nhau ở cọc A, đĩa nhỏ nằm trên đĩa lớn, tức là đĩa nhỏ nhất nằm trên cùng, tạo ra một dạng hình nón. Yêu cầu của trò chơi là chuyển toàn bộ số đĩa từ cọc A sang cọc C, tuân theo các quy tắc sau:</p>
+<p>-Chỉ sử dụng 3 cọc để chuyển;</p>
+<p>-Một lần chỉ được di chuyển một đĩa nằm trên cùng từ cọc này sang cọc khác;</p>
+<p>-Một đĩa chỉ được đặt lên một đĩa lớn hơn.</p>
+<p>Trong bài toán này, chúng ta sẽ có n chiếc đĩa, đánh số từ 1 đến n theo thứ tự kích thước đĩa tăng dần, đĩa 1 là đĩa có kích thước nhỏ nhất, đĩa n là đĩa có kích thước lớn nhất. Ban đầu, các đĩa nằm rải rác ở ba cọc nhưng vẫn thỏa mãn điều kiện đĩa nhỏ nằm trên đĩa lớn và mục tiêu là chuyển toàn bộ đĩa thành một chồng đĩa ở cọc C.</p>
+<p><strong>Yêu cầu:</strong> Cho trạng thái của các đĩa nằm ở các cọc, hãy tìm cách chuyển toàn bộ đĩa thành một<br/>
+chồng đĩa ở cọc C.</p>
+<p><strong>Dữ liệu:</strong></p>
+<p>-Dòng đầu chứa số nguyên dương n;</p>
+<p>-Dòng thứ hai chứa một xâu gồm n kí tự, kí tự thứ i (i = 1,2,...,n) bằng ‘A’ hoặc ‘B’ hoặc ‘C’ cho biết đĩa thứ i đang nằm ở cọc A hoặc cọc B hoặc cọc C.</p>
+<p><strong>Kết quả:</strong></p>
+<p>-Dòng đầu chứa số nguyên s là số lần chuyển đĩa;</p>
+<p>-Dòng thứ j (j = 1,2,...,s) trong s dòng tiếp theo, mỗi dòng gồm đúng hai kí tự mô tả một thao tác chuyển đĩa. Cụ thể, kí tự thứ nhất là tên cọc chứa đĩa cần chuyển, kí tự thứ hai là tên cọc mà đĩa chuyển tới.</p>
+<p><strong>Ràng buộc:</strong></p>
+<p>-Có 20% số test ứng với 20% số điểm của bài có n = 3;</p>
+<p>-Có 30% số test khác ứng với 30% số điểm của bài có n ≤ 10 và cả n đĩa ban đầu ở cọc A;</p>
+<p>-Có 20% số test khác ứng với 20% số điểm của bài có n ≤ 10;</p>
+<p>-Có 30% số test còn lại với 30% số điểm còn lại của bài có n ≤ 20.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p>3</p>
+<p>AAC</p>
+<p><strong>Output</strong></p>
+<p>3</p>
+<p>AB</p>
+<p>AC</p>
+<p>BC</p>
+<hr/>
+<p><em>Nguồn bài: DHBB '18</em></p>
+</div>
+</div>

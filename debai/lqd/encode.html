@@ -1,0 +1,46 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Mã hóa dãy ngoặc</h2>
+</div><div class="content-description screen">
+<div><ul>
+<li><p>Giả sử ta có một chuỗi ngoặc đơn đúng, ta gọi chuỗi này là \(S\), khi đó \(S\) có hai cách giải mã sau đây:</p>
+<ul>
+<li><p>Cách 1: \(S\) sẽ được mã hóa dưới dạng \(P=p_1,p_2,...,p_n\). Trong đó \(p_i\) là số lượng ngoặc đơn trái "(" đứng trước ngoặc đơn phải ")" thứ \(i\) tính từ trái.</p>
+</li>
+<li><p>Cách 2: \(S\) sẽ được mã hóa dưới dạng \(W=w_1,w_2,...,w_n\). Gọi \(r\) là vị trí dấu ngoặc đơn ")" thứ \(i\) tính từ trái sang. Gọi \(l\) là vị trí của dấu ngoặc đơn trái "(" tương thích với dấu ngoặc ")" đó. Khi đó \(w_i\) chính bằng số lượng dấu ngoặc đơn phải ")" nằm trong đoạn từ \(l\) tới \(r\).</p>
+</li>
+</ul>
+</li>
+<li><p>Ví dụ: Ta có chuỗi \(S=(((()()())))\). Khi đó ta có dãy \(P\) tương ứng là: \(P=4,5,6,6,6,6\) và dãy \(W\) tương ứng là \(W=1,1,1,4,5,6\). \(W[1] = 1\) vì dấu ngoặc đơn ")" thứ nhất nằm ở vị trí \(5\) tương ứng với dấu ngoặc "(" nằm ở vị trí \(4\). Trong đoạn \(4\) tới \(5\) của \(S\) có \(1\) dấu ngoặc đơn ")".</p>
+</li>
+</ul>
+<p><strong>Yêu cầu:</strong> Cho dãy \(P\) bất kì, tìm dãy \(W\) tương ứng.</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa chứa số nguyên dương \(n(1\le n\le 10^5)\) - Là độ dài của dãy \(P\)</p>
+</li>
+<li><p>Dòng thứ hai chứa \(n\) số nguyên dương \(p_i(1\le p_i\le n)\) - Mỗi số cách nhau bởi dấu cách.</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>Nếu không tồn tại dãy \(W\) thỏa mãn yêu cầu bài toán, in ra "-1". Ngược lại, in ra dãy \(W\) cần tìm</li>
+</ul>
+<p><strong>Ví du:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3
+2 2 3</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>1 2 1</code></pre>
+<ul>
+<li><p><strong>Subtask 1:</strong> \(1\le n\le 10\). (10%)</p>
+</li>
+<li><p><strong>Subtask 2:</strong> \(11 \le n \le 100\).(20%)</p>
+</li>
+<li><p><strong>Subtask 3:</strong> \(101 \le n \le 5000\).(30%)</p>
+</li>
+<li><p><strong>Subtask 4:</strong> \(5001 \le n \le 10^5\). (40%)</p>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

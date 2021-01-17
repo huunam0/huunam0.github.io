@@ -1,0 +1,177 @@
+<h2>FARMING - Nuga làm ruộng</h2><div class="prob">
+<p> </p>
+<table border="0" class="problems" style="width: 100%;">
+<tbody>
+<tr class="navigation">
+<td width="50%"><a href="/problems/FARMING/en/">English</a></td>
+<td width="50%"><a href="/problems/FARMING/vn/">Vietnamese</a></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Nuga có<strong> </strong><strong><em>M thửa ruộng</em></strong> rất rộng trên cánh đồng. Nhân dịp hè rảnh rỗi, Nuga quyết định sẽ trồng cây trên các thửa ruộng này để kiếm tiền đi du lịch.</p>
+<p>Nuga sẽ canh tác trên các thửa ruộng một cách <strong><em>song song</em></strong>. Mỗi thửa ruộng có thể dùng để canh tác <strong><em>nhiều vụ</em></strong>, nhưng mỗi vụ chỉ được phép trồng <strong><em>một loại</em></strong> cây nhất định trên ruộng đó. Khi thu hoạch xong một vụ, Nuga có thể bắt đầu trồng vụ mới vào ngay <strong>ngày hôm sau</strong>, hoặc cũng có thể <strong><em>để không</em></strong> ruộng một thời gian rồi mới trồng vụ mới.</p>
+<p>Có <strong><em>N loại cây trồng</em></strong> đánh số từ 1 đến N. Mỗi loại cây trồng có một đặc điểm riêng về giá hạt giống, thời gian canh tác, thu nhập hứa hẹn. Nuga dùng <strong>tiền vốn</strong> để mua hạt giống. Sau khi thu hoạch, thu nhập hứa hẹn sẽ được<strong> cộng vào</strong> số vốn mà bạn ấy có. Ngoài ra còn có đòi hỏi về kinh nghiệm canh tác, do mỗi loại cây cần có phương pháp chăm sóc riêng. Kinh nghiệm thu được khi trồng mỗi loại cây cũng khác nhau. Trồng càng nhiều vụ thì càng có nhiều kinh nghiệm, tức là kinh nghiệm thu được sau mỗi vụ sẽ được <strong><em>cộng vào</em></strong> tổng kinh nghiệm. Chi tiết về các thông tin trên được cho trong bảng sau:</p>
+<table align="center" border="1" style="text-align: center; width: 600px;">
+<tbody>
+<tr>
+<th width="16%">Loại cây</th> <th width="16%"> Đòi hỏi kinh nghiệm </th> <th width="16%">Thời gian canh tác (Ngày)</th> <th width="16%">Giá hạt giống (Đồng)</th> <th width="16%">Thu nhập hứa hẹn (Đồng)</th> <th width="16%">Kinh nghiệm thu được</th>
+</tr>
+<tr>
+<td>1</td>
+<td>R<sub>1</sub></td>
+<td>T<sub>1</sub></td>
+<td>S<sub>1</sub></td>
+<td>P<sub>1</sub></td>
+<td>E<sub>1</sub></td>
+</tr>
+<tr>
+<td>2</td>
+<td>R<sub>2</sub></td>
+<td>T<sub>2</sub></td>
+<td>S<sub>2</sub></td>
+<td>P<sub>2</sub></td>
+<td>E<sub>2</sub></td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>N</td>
+<td>R<sub>N</sub></td>
+<td>T<sub>N</sub></td>
+<td>S<sub>N</sub></td>
+<td>P<sub>N</sub></td>
+<td>E<sub>N</sub></td>
+</tr>
+</tbody>
+</table>
+<p>Ban đầu Nuga chỉ có <strong><em>F đồng tiền vốn</em></strong> và <strong><em>G kinh nghiệm</em></strong>. Do thời gian nghỉ hè của Nuga có hạn nên bạn ấy chỉ muốn canh tác <strong><em>không quá D ngày</em></strong> để còn dành thời gian đi du lịch. </p>
+<p>Bạn hãy giúp Nuga lập lịch canh tác sao cho thu được <strong><em>nhiều tiền nhất</em> </strong>nhé!</p>
+<h3>Dữ liệu</h3>
+<p>- Dòng đầu chứa 5 số nguyên M, N, D, F, G.</p>
+<p>- N dòng tiếp theo, dòng thứ i ghi 5 số nguyên R<sub>i</sub>, T<sub>i</sub>, S<sub>i</sub>, P<sub>i</sub>, E<sub>i</sub>.</p>
+<h3>Kết quả</h3>
+<p>- Dòng đầu ghi <strong><em>tổng số tiền lớn nhất</em></strong> mà Nuga thu được sau không quá D ngày canh tác.</p>
+<p>- M nhóm dòng tiếp theo, mỗi nhóm dòng ghi mô tả về quá trình canh tác trên một ruộng:</p>
+<p>  + Dòng đầu tiên là một số nguyên X thể hiện <strong><em>số vụ</em></strong> cần canh tác trên ruộng đó.</p>
+<p>  + Theo theo là X dòng mô tả về các vụ <strong><em>lần lượt</em></strong> theo thứ tự canh tác: Dòng thứ i gồm 2 số nguyên j, k thể hiện rằng Nuga cần trồng <strong><em>cây loại k</em></strong> trong <strong><em>vụ thứ i</em></strong>, bắt đầu từ <strong><em>ngày thứ j</em><span style="font-weight: normal;"> (tính từ lúc Nuga bắt đầu canh tác ruộng đầu tiên).</span></strong></p>
+<h3>Giới hạn</h3>
+<p>- 1 ≤ M ≤ 50</p>
+<p>- 1 ≤ N ≤ 50</p>
+<p>- 1 ≤ D, T<sub>i </sub>≤ 100</p>
+<p>- 1 ≤ G, R<sub>i</sub>, E<sub>i</sub> ≤ 1,000</p>
+<p>- 1 ≤ F, S<sub>i</sub>, P<sub>i </sub>≤ 100,000</p>
+<h3>Ví dụ</h3>
+<p><strong>Dữ liệu</strong></p>
+<pre>3 3 5 10000 5
+5 3 3000 5000 2
+10 2 7000 10000 3
+10 1 6000 8000 2
+</pre>
+<p><strong>Kết quả 1</strong></p>
+<pre>22000
+2
+1 1
+4 2
+2
+1 1
+4 2
+1
+1 1
+</pre>
+<p><strong>Kết quả 2</strong></p>
+<pre>24000
+3
+1 1
+4 3
+5 3
+3
+1 1
+4 3
+5 3
+1
+1 1
+</pre>
+<p><strong>Kết quả 3</strong></p>
+<pre>23000
+3
+1 1
+4 3
+5 3
+2
+1 1
+4 2
+1
+1 1</pre>
+<p><strong>Giải thích kết quả 3</strong></p>
+<table align="center" border="1" style="text-align: center; width: 600px;">
+<tbody>
+<tr>
+<th width="16%">Ngày canh tác thứ</th> <th width="16%">Ruộng 1</th> <th width="16%">Ruộng 2</th> <th width="16%">Ruộng 3</th> <th width="16%">Tổng tiền (Đồng)</th> <th width="16%">Tổng kinh nghiệm</th>
+</tr>
+<tr>
+<td>Ban đầu</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>10,000</td>
+<td>5</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Trồng cây 1</td>
+<td>Trồng cây 1</td>
+<td>Trồng cây 1</td>
+<td>1,000</td>
+<td>5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Chăm sóc</td>
+<td>Chăm sóc</td>
+<td>Chăm sóc</td>
+<td>1,000</td>
+<td>5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Thu hoạch</td>
+<td>Thu hoạch</td>
+<td>Thu hoạch</td>
+<td>16,000</td>
+<td>11</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Trồng cây3<br/> Thu hoạch</td>
+<td>Trồng cây 2</td>
+<td>Để trống</td>
+<td>11,000</td>
+<td>13</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Trồng cây3 <br/> Thu hoạch</td>
+<td>Thu hoạch</td>
+<td>Để trống</td>
+<td>23,000</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+<h3>Tính điểm</h3>
+<p>- Với mỗi test, bạn chỉ được tính điểm nếu lịch gieo trồng hợp lí, đúng với số tiền kiếm được.</p>
+<p>- Điểm mỗi test đúng đắn được tính dựa trên kết quả tốt nhất của tất cả các thí sinh (và của cả BTC)</p>
+<p>  Cụ thể, nếu kết quả tốt nhất là best, và chương trình của bạn đưa ra result thì:</p>
+<p>  Điểm = result/best * hệ số điểm. (Trong đó hệ số điểm = 100/tổng số test)</p>
+<p>- Tổng điểm của bạn là tổng điểm các test đúng đắn.</p>
+<p>- Với test ví dụ, best = 24000. Nếu hệ số điểm = 5, kết quả 1 sẽ được 4.58 điểm, kết quả 2 sẽ được 5.00 điểm, và kết quả 3 sẽ được 4.79 điểm.</p>
+<p></p>
+<p> </p>
+</div>

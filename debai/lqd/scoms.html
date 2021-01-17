@@ -1,0 +1,49 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Hiệu quả</h2>
+</div><div class="content-description screen">
+<div><p>Một công ty phần mềm có \(n\) nhân viên đánh số từ 1 đến \(n\). Nhân viên 1 luôn là giám đốc của công ty, mỗi nhân viên khác đều có duy nhất một lãnh đạo trực tiếp. Ta nói nhân viên \(A\) là cấp trên của nhân viên \(B\) nếu như tồn tại một dãy \(A=p_0,p_1,p_2,…,p_k=B\) sao cho \(p_i\) là lãnh đạo trực tiếp của \(p_{i+1} (i=0,1,2,…,k-1)\); đồng thời ta cũng nói \(B\) là cấp dưới của \(A\). Mỗi nhân viên đều có một khả năng lập trình được đo bằng một số nguyên</p>
+<p>Mỗi nhân viên khi phụ trách một dự án đều có quyền yêu cầu toàn bộ cấp dưới của mình làm việc. Hiệu quả dự án khi đó được tính bằng tổng khả năng lập trình của anh (cô) ta cùng với tất cả cấp dưới của anh (cô) ta.</p>
+<p>Tất nhiên thỉnh thoảng khả năng lập trình của mỗi nhân viên được đánh giá lại.</p>
+<p><strong>Yêu cầu</strong>: Bạn được cho cấu trúc của công ty. Hãy giúp giám đốc (nhân viên 1) giải quyết các nhiệm vụ thuộc một trong hai loại sau:</p>
+<ul>
+<li>\(Q\ A\): Đánh giá hiệu quả của dự án do nhân viên \(A\) phụ trách</li>
+<li>\(U\ A\ x\): Nhân viên \(A\) được đánh giá lại kỹ năng lập trình và kỹ năng này được đặc trưng bởi số nguyên \(x\).</li>
+</ul>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng đầu ghi hai số nguyên dương \(n,m\) (\(1≤ n,m≤ 10^5\)) lần lượt là số nhân viên trong công ty và số nhiệm vụ cần phải giải quyết.</li>
+<li>Dòng tiếp theo chứa \(n\) số nguyên không âm - khi năng lập trình của các nhân viên 1, 2, ..., \(n\). Giá trị các số nguyên này nằm trong khoảng [\(0,20000\)]</li>
+<li>\(n-1\) dòng tiếp theo, mỗi dòng ghi hai số nguyên \(u,v\) thể hiện \(u\) là lãnh đạo trực tiếp của \(v\) hoặc \(v\) là lãnh đạo trực tiếp của \(u\).</li>
+<li>Cuối cùng là \(m\) dòng, mỗi dòng mô tả một nhiệm vụ gồm một trong hai dạng "\(U\ A\ x\)" hoặc "\(Q\ A\)". Chú ý \(1≤ A≤ n\) và \(x\) nguyên và \(x ∈ [0,20000]\)</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Với mỗi nhiệm vụ dạng "\(Q\ A\)" in ra hiệu quả của dự án do \(A\) phụ trách</li>
+</ul>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>5 8
+7 2 0 5 8
+1 2
+2 3
+2 4
+1 5
+Q 1
+Q 2
+U 2 4
+Q 1
+Q 2
+U 5 3
+Q 1
+Q 2</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>22
+7
+24
+9
+19
+9</code></pre>
+<hr/>
+<p><em>Nguồn: 2019 CHY</em></p>
+</div>
+<hr/>
+</div>

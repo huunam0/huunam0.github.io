@@ -1,0 +1,31 @@
+<h2>NKONEARC - Mạng máy tính</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274824/problem/Y" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274824/problem/Y </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/266261/problem/E" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/266261/problem/E </a><p>Một hệ thống n máy tính (các máy tính được đánh số từ 1 đến n) được nối lại thành một mạng bởi m kênh nối, mỗi kênh nối hai máy nào đó và cho phép ta truyền tin một chiều từ máy này đến máy kia. Giả sử s và t là 2 máy tính trong mạng. Ta gọi đường truyền từ máy s đến máy t là một dãy các máy tính và các kênh nối chúng có dạng:</p>
+<p>s = u<sub>1</sub>, e<sub>1</sub>, u<sub>2</sub>, ..., u<sub>i</sub>, e<sub>i</sub>, u<sub>i+1</sub>, ..., u<sub>k-1</sub>, e<sub>k-1</sub>, u<sub>k</sub> = t</p>
+<p>trong đó u<sub>1</sub>, u<sub>2</sub>, ..., u<sub>k</sub> là các máy tính trong mạng, e<sub>i</sub> - kênh truyền tin từ máy u<sub>i</sub> đến máy u<sub>i+1</sub>. (i = 1, 2,... , k-1).</p>
+<p>Mạng máy tính được gọi là thông suốt nếu như đối với hai máy u, v bất kỳ ta luôn có đường truyền tin từ u đến v và đường truyền tin từ v đến u. Mạng máy tính được gọi là hầu như thông suốt nếu đối với hai máy u, v bất kỳ, hoặc là có đường truyền từ u đến v, hoặc là có đường truyền từ v đến u.</p>
+<p>Biết rằng mạng máy tính đã cho là hầu như thông suốt nhưng không thông suốt.</p>
+<p>Yêu cầu: hãy xác định xem có thể bổ sung đúng một kênh truyền tin để biến mạng đã cho trở thành thông suốt được không?</p>
+<h3>Dữ liệu</h3>
+<ul>
+<li>Dòng đầu tiên ghi 2 số nguyên n và m. </li>
+<li>Dòng thứ i trong số m dòng tiếp theo mô tả kênh nối thứ i bao gồm 2 số nguyên dương u<sub>i</sub> và v<sub>i</sub> cho biết kênh nối thứ i cho phép truyền tin từ máy u<sub>i</sub> đến máy v<sub>i</sub>, i=1,2,...,m. </li>
+</ul>
+<p>Các số trên cùng một dòng được ghi cách nhau bởi dấu cách.</p>
+<h3>Kết qủa</h3>
+<ul>
+<li>Dòng đầu tiên ghi 'YES' nếu câu trả lời là khẳng định, ghi 'NO' nếu câu trả lời là phủ định. </li>
+<li>Nếu câu trả lời là khẳng định thì dòng thứ hai ghi hai số nguyên dương u, v cách nhau bởi dấu cách cho biết cần bổ sung kênh truyền tin từ máy u đến máy v để biến mạng thành thông suốt. </li>
+</ul>
+<h3>Hạn chế</h3>
+<p>Trong tất cả các test, n ≤ 2000, m ≤ 30000.</p>
+<h3>Ví dụ</h3>
+<pre><strong>Dữ liệu:</strong>
+3 2
+1 2
+2 3
+
+<strong>Kết qủa</strong>
+YES
+3 1
+</pre>
+</div>

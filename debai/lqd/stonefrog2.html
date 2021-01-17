@@ -1,0 +1,31 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chú ếch và hòn đá 2</h2>
+</div><div class="content-description screen">
+<div><p>Có \(N\) hòn đá được đánh số \(1,2,3,...,N\). Với mỗi \(i(1\le i\le N)\), chiều cao của hòn đá thứ \(i\) là \(h_i\)</p>
+<p>Có một con ếch ban đầu ở hòn đá \(1\). Nó lặp lại hành động sau với một số lần bất kì cho đến khi nó đến được hòn đá \(N\).</p>
+<ul>
+<li>Nếu con ếch đang ở hòn đá \(i\), thì nó có thể nhảy sang hòn đá thứ \(i+1\) hoặc \(i+2\) hoặc ... hoặc \(i+K\) với chi phí là \(|h_i-h_j|\), trong đó \(j\) là vị trí nó muốn nhảy tới.</li>
+</ul>
+<p>Tìm chi phí tối thiểu để nó đến được hòn đá thứ \(N\).</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa hai số nguyên \(N,K(2\le N\le 10^5,1\le K\le 100)\)</p>
+</li>
+<li><p>Dòng thứ hai chứa \(N\) số nguyên : \(h_1,h_2,...,h_N\) với \(1\le h_i\le 10^4\)</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra chi phí tối thiểu cần tìm</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>5 3
+10 30 40 50 20</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>30</code></pre>
+<p><strong>Giải thích:</strong> Con ếch sẽ nhảy như sau: \(1\rightarrow 2 \rightarrow 5\), với chi phí là \(|10-30|+|30-20|=30\)</p>
+<p><strong>Nguồn:</strong> DP Contest Atcoder</p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,48 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    FSTR - Tính hàm 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Cho xâu ký tự S. Với mọi xâu con s của S, tính giá trị hàm f sau:</p>
+<p style="text-align:center"><span style="font-size:14px"><span style="font-family:arial,helvetica,sans-serif">f(s) = |s| * (số lần s xuất hiện trong S)</span></span></p>
+<p>(|s| là độ dài xâu s)</p>
+<p>Tìm xâu con s của S sao cho f(s) là lớn nhất. Nếu có nhiều xâu s như vậy thì in ra xâu có thứ tự từ điển nhỏ nhất.</p>
+<p><strong>Input:</strong> Gồm 2 dòng:</p>
+<p>- Dòng 1: Chứa số nguyên duy nhất n là độ dài xâu S (1 ≤ n ≤ 10<sup>5</sup>)</p>
+<p>- Dòng 2: Chứa xâu ký tự S (chỉ gồm các ký tự in được từ 0x20 tới 0x7E).</p>
+<p><strong>Output:</strong></p>
+<p>- Gồm 1 dòng duy nhất chứa xâu kết quả.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">6<br/>aaaaaa</div>
+<div class="sample-type">output</div>
+<div class="sample-value">aaa</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Giải thích:</strong></p>
+<p><span style="font-family:courier new,courier,monospace">f(‘a’)      = 1 * 6 = 6</span></p>
+<p><span style="font-family:courier new,courier,monospace">f(‘aa’)     = 2 * 5 = 10</span></p>
+<p><span style="font-family:courier new,courier,monospace">f(‘aaa’)    = 3 * 4 = 12</span></p>
+<p><span style="font-family:courier new,courier,monospace">f(‘aaaa’)   = 4 * 3 = 12</span></p>
+<p><span style="font-family:courier new,courier,monospace">f(‘aaaaa’)  = 5 * 2 = 10</span></p>
+<p><span style="font-family:courier new,courier,monospace">f(‘aaaaaa’) = 6 * 1 = 6</span></p>
+<p>Xâu <em>‘aaa’</em> và <em>‘aaaa’</em> có cùng giá trị f(s), nhưng <em>‘aaa’</em> &lt; <em>‘aaaa’</em> nên ta lấy <em>‘aaa’</em> làm kết quả.</p>
+</div>
+</div></body></html>

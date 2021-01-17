@@ -1,0 +1,28 @@
+<h2>NDCCARD - Các lá bài Blackjack</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274823/problem/B" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274823/problem/B </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/274711/problem/A" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274711/problem/A </a><p><span style="font-size: small;"><span style="white-space: pre;"> <span style="white-space: pre;"> </span></span>Blackjack là trò chơi đánh bài khá phổ biến, mục tiêu là có được những lá bài mà tổng của nó là lớn nhất nhưng không vượt quá 21. Lấy ý tưởng từ trò chơi này các bạn <span style="margin: 0px; padding: 0px; background-color: transparent; color: #ddcc00;"><a href="http://vnoi.info/index.php?option=com_voj2&amp;page=user&amp;user=khaihanhdk" style="margin: 0px; padding: 0px; color: #3b5998; text-decoration: none; cursor: pointer; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 11px; line-height: 16px;">khaihanhdk</a> <span style="margin: 0px; padding: 0px; background-color: transparent; color: #9966cc;"><a href="http://vnoi.info/index.php?option=com_voj2&amp;page=user&amp;user=huytion156" style="margin: 0px; padding: 0px; color: #3b5998; text-decoration: none; cursor: pointer; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 11px; line-height: 16px;">huytion156</a> <span style="margin: 0px; padding: 0px; background-color: transparent; color: #9966cc;"><a href="http://vnoi.info/index.php?option=com_voj2&amp;page=user&amp;user=thanhdat01234" style="margin: 0px; padding: 0px; color: #3b5998; text-decoration: none; cursor: pointer; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 11px; line-height: 16px;">thanhdat01234</a> </span><span style="margin: 0px; padding: 0px; background-color: transparent;"><span style="color: #000000;">đã sáng tạo ra một phiên bản mới của trò chơi cho riêng mình.</span></span></span></span></span></p>
+<p><span style="font-size: small;"> </span></p>
+<p><span style="font-size: small;"><span style="margin: 0px; padding: 0px; background-color: transparent; color: #ddcc00;"><span style="margin: 0px; padding: 0px; background-color: transparent; color: #9966cc;"><span style="margin: 0px; padding: 0px; background-color: transparent;"><span style="color: #000000;"><span style="white-space: pre;"> </span><span style="white-space: pre;"><span style="white-space: pre;"> </span></span>Trong phiên bản trò chơi mới này các bạn đã viết lên mỗi lá bài một số nguyên dương. Người tham gia trò chơi được cung cấp một tập gồm N lá bài và một số nguyên dương M. Nhiệm vụ của người chơi là phải chọn ra 3 lá bài từ tập lá bài đã cho sao cho tổng các số trên 3 lá bài đã chọn là lớn nhất và không vượt quá M.</span></span></span></span></span></p>
+<p><span style="font-size: small;"> </span></p>
+<h3 style="text-align: left;"><span style="font-size: small;"><span style="text-decoration: underline;">Yêu cầu:</span>  <span style="font-weight: normal;">Bạn hãy tìm kết quả tốt nhất có thể có của trò chơi trên.</span></span></h3>
+<p style="text-align: left;"><span style="font-size: small;"> </span></p>
+<h3 style="text-align: left;"><span style="font-size: small;"><span style="text-decoration: underline;">Dữ liệu:</span></span></h3>
+<p style="text-align: left;"><span style="font-size: small;"> </span></p>
+<ul style="text-align: left;">
+<li><span style="font-size: small;">Dòng đầu ghi số nguyên dương N,M (N&lt;=10000 , M&lt;=500000).</span></li>
+<li><span style="font-size: small;">N dòng sau ghi N số nguyên dương đôi một khác nhau là các số được ghi trên N lá bài ( 1 ≤ a[i] ≤ 10000).</span></li>
+</ul>
+<p style="text-align: left;"><span style="font-size: small;"> </span></p>
+<h3 style="text-align: left;"><span style="font-size: small;"><span style="text-decoration: underline;">Kết quả:</span></span></h3>
+<p style="text-align: left;"><span style="font-size: small;"> </span></p>
+<p style="text-align: left;"><span style="font-size: small;">Ghi trên một dòng duy nhất là kết quả bài toán. Test luôn đảm bảo có kết quả.</span></p>
+<p style="text-align: left;"><span style="font-size: small;"> </span></p>
+<h3 style="text-align: left;"><span style="font-size: small;"><span style="text-decoration: underline;">Ví dụ:</span></span></h3>
+<p style="text-align: left;"><span style="font-size: small;"> </span></p>
+<p style="text-align: left;"><span style="font-size: small;"><strong>Dữ liệu:</strong></span></p>
+<p style="text-align: left;"><span style="font-size: small;">6 20  7 9 6 2 1 5</span></p>
+<p style="text-align: left;"><span style="font-size: small;"><strong>Kết quả:</strong> 20</span></p>
+<p><span style="font-size: small;"> </span></p>
+<p style="text-align: left;"><span style="font-size: small;"> </span></p>
+<p style="text-align: left;"><span style="font-size: small;">=&gt; Giải thích: Chọn các lá bài mang số 9 , 6 , 5 ta có 9+6+5 = 20 &lt;= M </span></p>
+<p style="text-align: left;"> </p>
+</div>

@@ -1,0 +1,48 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    MiMaTable - Min max trên bảng số 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 3.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">    Cho bảng số kích thước N x N. Mỗi ô trong bảng có chứa một số nguyên. Có hai loại truy vấn như sau:</p>
+<p style="text-align:justify"><strong>- Loại 1</strong>:  'c' x y w : ô (x,y) nhận giá trị mới là w</p>
+<p style="text-align:justify"><strong>- Loại 2</strong>: 'q' x y u v: Tìm giá trị lớn nhất và nhỏ nhất trong tất cả các ô thuộc vào hình chữ nhật con có ô trái trên là (x,y) và ô phải dưới là (u,v). (Các dòng được đánh số từ trên xuống dưới, các cột được đánh số từ trái qua phải)</p>
+<p style="text-align:justify">    Bạn hãy lập trình giải quyết vấn đề trên. Với mỗi truy vấn loại 2 xuất ra trên một dòng giá trị lớn nhất và giá trị nhỏ nhất tìm được.</p>
+<p style="text-align:justify"><strong>input:</strong></p>
+<p style="text-align:justify">-  Dòng 1 là số nguyên dương N</p>
+<p style="text-align:justify">- N dòng sau là bảng số kích thước N x N.</p>
+<p style="text-align:justify">- Dòng tiếp theo là số nguyên q (số lượng truy vấn)</p>
+<p style="text-align:justify">- q dòng tiếp theo là q truy vấn (cả 2 loại).</p>
+<p style="text-align:justify"><strong>output:</strong></p>
+<p style="text-align:justify">- Với mỗi truy vấn loại 2 xuất ra 1 dòng gồm 2 giá trị cách nhau 1 kí tự trắng.</p>
+<p style="text-align:justify"><strong>Ràng buộc:</strong></p>
+<p style="text-align:justify"><strong>- </strong>q ≤ 50.000</p>
+<p style="text-align:justify">- 50% test N ≤ 500</p>
+<p style="text-align:justify">- 50% test N  ≤ 1.000</p>
+<p style="text-align:justify">- Các số trong bảng ≤ 10<sup>9</sup>.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>10 5 21 12 <br/>7 8 19 16 <br/>13 11 14 15 <br/>6 9 20 18 <br/>5<br/>c 1 2 5<br/>c 2 3 16<br/>q 1 2 4 4<br/>q 3 1 4 3<br/>c 1 1 15<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">21 5<br/>20 6</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>- Một bài tập hay để học về CTDL.</strong></p>
+</div>
+</div></body></html>

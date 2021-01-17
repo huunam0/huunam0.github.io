@@ -1,0 +1,48 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">TWOEARRAY</h2>
+</div><div class="content-description screen">
+<div><p>Cho 2 dãy số nguyên \(A, B\) đều gồm \(N\) phần tử. Ban đầu tất cả các phần tử của dãy \(A\) đều bằng 0.</p>
+<p>Bạn cần biến dãy \(A\) thành dãy \(B\) bằng cách thực hiện nhiều lần thao tác sau: chọn ra \(K\) phần tử của dãy \(A\) và tăng mỗi phần tử thêm 1 đơn vi.</p>
+<p><strong>Yêu cầu</strong> Kiểm tra xem có thể biến dãy \(A\) thành dãy \(B\) được hay không?</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa số nguyên \(T\) là số bộ thử nghiệm. Mỗi bộ thử nghiệm gồm 2 dòng, dòng đầu chứa 2 số nguyên dương \(N\) và \(K\), dòng thứ 2 chứa dãy \(B\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Với mỗi bộ thử nghiệm, in kết quả ra 1 dòng, in <code>YES</code> nếu dãy \(A\) có thể biến thành dãy \(B\) và <code>NO</code> nếu ngược lại.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>2
+5 3
+1 2 3 4 5
+3 2
+1 1 4</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>YES
+NO</code></pre>
+<p><strong><em>Giải thích test ví dụ</em></strong></p>
+<ul>
+<li>Ở test ví dụ 1, ta có thể thực hiện biến đổi như sau:<ul>
+<li>\(A = 0, 0, 0, 0, 0, B = 1, 2, 3, 4, 5\);</li>
+<li>Chọn 3 chỉ số 1, 2, 5 \rightarrow A = 1, 1, 0, 0, 1; </li>
+<li>Chọn 3 chỉ số \(2, 4,  5   \rightarrow A=  1,  2,  0,  1,  2\);</li>
+<li>Chọn 3 chỉ số \(3, 4,  5   \rightarrow A=  1,  2,  1,  2,  3\);</li>
+<li>Chọn 3 chỉ số \(3, 4,  5   \rightarrow A=  1,  2,  2,  3,  4\);</li>
+<li>Chọn 3 chỉ số \(3, 4,  5   \rightarrow A=  1,  2,  3,  4,  5\);</li>
+<li>Như vậy ta có thể biến đổi dãy \(A\) thành dãy \(B\) sau 5 thao tác như trên.</li>
+</ul>
+</li>
+</ul>
+<p><strong><em>Ràng buộc</em></strong></p>
+<ul>
+<li>\(T &lt; 1000\).</li>
+<li>\(K &lt; N &lt; 10^5\).</li>
+<li>\(B[i] &lt; 10^9\).</li>
+<li>Tổng \(N\) trong tất cả bộ thử nghiệm không quá \(10^6\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn: FC115</em></p>
+</div>
+<hr/>
+</div>

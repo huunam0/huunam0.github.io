@@ -1,0 +1,65 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Cặp số "đẹp đôi"</h2>
+</div><div class="content-description screen">
+<div><p>Cặp số \((a,n)\) được gọi là "<strong>đẹp đôi</strong>" nếu chúng thỏa mãn những điều kiện sau:</p>
+<ul>
+<li><p>\(a,n\in \mathbb{N}\) và \(a\ge 2,n\ge 2\)</p>
+</li>
+<li><p>Tồn tại một dãy số \(\left\{u\right\}\) thỏa mãn:</p>
+<ul>
+<li><p>\(u_1=p+1;u_i=u_{i-1}+1\) với \(1\le i\le n-1\) và \(p\in \mathbb{P}\)</p>
+</li>
+<li><p>\(u_i\notin \mathbb{P}\) với \(1\le i\le n-1\)</p>
+</li>
+<li><p>\(u_{n-1}+1 \in \mathbb{P}\)</p>
+</li>
+<li><p>Tồn tại chỉ số \(j(1\le j\le n-1)\) thỏa mãn: \(u_j=a\)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>(trong đó: \(\mathbb{P}\) là tập hợp các số nguyên tố)</p>
+<p>Hay nói cách khác tồn tại dãy \(u\) gồm các số tự nhiên liên tiếp bắt đầu từ \(p + 1\) và kết thúc tại \(p+n-1\) (với \(p\) và \(p+n\) là các số nguyên tố) thỏa mãn \(u\) chỉ chứa hợp số và \(u\) chứa số \(a\)</p>
+<p><strong>Yêu cầu:</strong> Cho số nguyên dương \(a(a\ge 2)\). Tìm số nguyên dương \(n(n\ge 2)\) thỏa mãn \((a,n)\) là cặp "<strong>đẹp đôi</strong>". Nếu không tồn tại \(n\) thỏa mãn thì in ra \(0\)</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Input gồm nhiều truy vấn, mỗi truy vấn là một dòng chứa một số nguyên dương \(a(a\ge 2)\)</p>
+</li>
+<li><p>Input kết thúc bởi số 0.</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>Ứng với mỗi dòng chứa số nguyên dương \(a\), in ra đáp án tương ứng </li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>2
+4
+0</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>0
+2</code></pre>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li><p>Ta nhận thấy rằng, ứng với \(a=2\), không tồn tại \(n\) nào thỏa mãn để \((a,n)\) là cặp "<strong>đẹp đôi</strong>" nên đáp án là \(0\).</p>
+</li>
+<li><p>Ứng với \(a=4\), ta tìm được \(n=2\) thỏa mãn \((4,2)\) là cặp đẹp đôi vì ta tìm được dãy \(\left\{u\right\}=\left\{4\right\}\) vì \(3, 5\) là các số nguyên tố.</p>
+</li>
+</ul>
+<p><strong>Subtask:</strong></p>
+<ul>
+<li><p>\(20\text{%}\) test có \(2\le a\le 10\)</p>
+</li>
+<li><p>\(80\text{%}\) test có \(2\le a\le 10^6\)</p>
+</li>
+</ul>
+<p><strong>Gợi ý:</strong> Phần đọc input có thể dùng như sau:</p>
+<pre><code>int a;
+while(cin &gt;&gt; a) {
+    if (a == 0) break;
+    // ...
+}</code></pre>
+</div>
+<hr/>
+</div>

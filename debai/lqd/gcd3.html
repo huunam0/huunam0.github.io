@@ -1,0 +1,47 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">GCD</h2>
+</div><div class="content-description screen">
+<div><p>Cho một tập hợp rỗng, bạn sẽ lần lượt thực hiện \(N\) thao tác. Có hai loại thao tác được thực hiện:</p>
+<ul>
+<li>Thao tác 1 có dạng \(1\ x\): thêm số \(x\) vào tập hợp.</li>
+<li>Thao tác 2 có dạng \(2\ x\): loại bỏ một số \(x\) ra khỏi tập hợp, dữ liệu luôn đảm bảo tồn tại ít nhất một số \(x\) trước khi thực hiện thao thao tác này.</li>
+</ul>
+<p>Sau mỗi lần thực hiện thao tác, hãy đưa ra ước chung lớn nhất của tập hợp này. Với trường hợp tập hợp con rỗng hãy in ra số 1.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên một số tự nhiên \(N\ (1 &lt; N &lt; 10^5)\).</li>
+<li>\(N\) dòng tiếp theo, mỗi dòng là gồm 2 số \(t\) và \(x\) với \(t\) là loại thao tác và \(x\) là số cần được xử lí (\(1 \leq t \leq 2, 1 &lt; x &lt; 10^9\)).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Gồm \(N\) dòng là ước chung lớn nhất của tập hợp sau mỗi lần thực hiện một thao tác.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>6   
+1 8 
+1 12    
+1 10    
+1 8 
+2 8 
+2 8</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>8
+4
+2
+2
+2
+2</code></pre>
+<h5>Giải thích:</h5>
+<p>Tập hợp sau mỗi thao tác:</p>
+<ul>
+<li>Thao tác 1: 8</li>
+<li>Thao tác 2: 8, 12</li>
+<li>Thao tác 3: 8, 12, 10</li>
+<li>Thao tác 4: 8, 12, 10, 8</li>
+<li>Thao tác 5: 8, 12, 10</li>
+</ul>
+<hr/>
+<p><em>Nguồn: FC</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,38 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">CJ và vùng đất mới</h2>
+</div><div class="content-description screen">
+<div><p>CJ đang cùng Sweet - trùm băng nhóm Grove Street Families, đồng thời cũng là anh trai CJ, cùng nhau đi nhiều nơi khác của vùng San Andreas. Trên đường đi, CJ và Sweet phát hiện được vùng đất mới mà chưa ai sinh sống ở đó, mà địa thế rất có lợi cho nhóm, nên CJ và Sweet đã quyết định khai phá, xây dựng lực lượng hùng mạnh ở đây. Sau mấy ngày liền, thì đã có \(N\) căn cứ nhỏ, các căn cứ được đánh số theo thứ tự từ \(1\) tới \(N\) và \(M\) tuyến đường hai chiều kết nối trực tiếp giữa hai căn cứ, đánh số từ \(1\) tới \(M\). Định nghĩa căn cứ \(u\) có thể qua lại với căn cứ \(v\) nếu tồn lại một số đường đi từ \(u\) tới \(v\), tức là tồn tại dãy \(P = 〈u = p_1, p_2, …, p_k = v〉\) sao cho \(\forall i: 1 &lt; i \leq k\) thì tồn tại tuyến đường nối trực tiếp giữa hai căn cứ \(p_{i-1}\) và \(p_i\).</p>
+<p>Bây giờ, CJ và Sweet đang bàn bạc để khoanh vùng một số căn cứ nhỏ làm khu căn cứ trung tâm, để tạo một lực lượng khá mạnh ở đây, tiện cho chiến lược phòng thủ khi bị tấn công. CJ và Sweet tìm khu chứa nhiều căn cứ nhất có thể sao cho bất kỳ \(2\) căn cứ nhỏ nào cũng có thể qua lại với nhau, và lỡ không may một trong các căn cứ trong khu vực đấy có bị đánh chiếm, thì các căn cứ còn lại vẫn có thể qua lại, yểm trợ nhau.</p>
+<p><a href="https://imgur.com/vwJnAdk"><img src="https://i.imgur.com/vwJnAdk.png" style="width:300px;" title="source: imgur.com"/></a></p>
+<p><strong>Ví dụ</strong>: Bản đồ các căn cứ của CJ và Sweet như trên, xét khu vực chứa các căn cứ (\(1\), \(3\), \(5\)). Khu vực ấy nếu căn cứ \(3\) gặp nguy hiểm thì căn cứ \(1\) và \(5\) vẫn có thể qua lại, yểm trợ nhau. Tương tự, nếu khu vực \(1\) hoặc \(5\) gặp nguy hiểm thì hai căn cứ còn lại vẫn có thể qua lại, yểm trợ nhau.</p>
+<p><strong>Yêu cầu</strong>: Hãy chỉ ra cho CJ và Sweet khu căn cứ trung tâm tìm được. Nếu có nhiều khu như vậy, chỉ ra một khu bất kỳ.</p>
+<p><strong>Dữ liệu vào</strong>: Gồm \(M + 1\) dòng:</p>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương \(N\), \(M\) thể hiện số căn cứ và số tuyến đường hai chiều</li>
+<li>\(M\) dòng tiếp theo, dòng thứ \(i\) chứa hai số \(u_i\) và \(v_i\) thể hiện có tuyến đường hai chiều nối từ căn cứ \(u_i\) tới căn cứ \(v_i\)</li>
+</ul>
+<p><strong>Kết quả</strong>: Ghi ra hai dòng:</p>
+<ul>
+<li>Dòng đầu tiên ghi ra số \(K\) là số căn cứ lớn nhất trong khu căn cứ trung tâm tìm được.</li>
+<li>Dòng thứ hai ghi ra số hiệu của \(K\) căn cứ lớn nhất trong khu căn cứ trung tâm tìm được theo <strong>thứ tự tăng dần</strong>.</li>
+</ul>
+<p><strong>Ví dụ</strong>:</p>
+<p><strong>Input</strong>:</p>
+<pre><code>6 6
+1 3
+1 5
+2 3
+3 4
+3 5
+4 6</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>3
+1 3 5</code></pre>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>\(30\)% số test đầu tiên có \(N \leq 10^3, M \leq 11.10^2\)</li>
+<li>\(70\)% số test còn lại có \(N \leq 10^5, M \leq 11.10^4\)</li>
+</ul>
+</div>
+<hr/>
+</div>

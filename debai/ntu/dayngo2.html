@@ -1,0 +1,43 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    DAYNGO2 - Dãy ngoặc 2 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Khái niệm dãy ngoặc đúng được định nghĩa dưới dạng đệ quy như sau:</p>
+<p>1. <span style="font-size:16px"><strong><span style="font-family:courier new,courier,monospace">()</span></strong></span> là dãy ngoặc đúng</p>
+<p>2. <strong><span style="font-size:16px"><span style="font-family:courier new,courier,monospace">C</span></span></strong> là dãy ngoặc đúng nếu <strong><span style="font-size:16px"><span style="font-family:courier new,courier,monospace">C = (A)</span></span></strong> hay <span style="font-family:courier new,courier,monospace"><span style="font-size:16px"><strong>C = AB</strong></span></span> với <span style="font-family:courier new,courier,monospace"><span style="font-size:16px"><strong>A, B</strong></span></span> là các dãy ngoặc đúng.</p>
+<p>Ví dụ dãy ngoặc đúng: <span style="font-family:courier new,courier,monospace"><span style="font-size:16px"><strong>(), (()), ()(), (())()</strong></span></span></p>
+<p>Ví dụ dãy ngoặc sai: <span style="font-family:courier new,courier,monospace"><span style="font-size:16px"><strong>)(, ((((, ()((, )))), )()(</strong></span></span></p>
+<p>Cho trước một dãy ngoặc<strong><em> bất kỳ</em></strong> gồm n dấu ngoặc được đánh số từ 1 đến n. Có m câu hỏi, mỗi câu gồm hai số nguyên 1 ≤ p ≤ r ≤ n, yêu cầu xác định xem <strong><em>dãy ngoặc con</em></strong> từ vị trí p đến vị trí r có phải là dãy ngoặc đúng hay không. Hãy cho biết kết quả của m câu hỏi trên.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên là hai số nguyên n, m cách nhau một khoảng trắng (1 ≤ n, m ≤ 10<sup>5</sup>)</p>
+<p>- Dòng thứ hai là dãy ngoặc ban đầu gồm n dấu ngoặc <strong><span style="font-size:16px"><span style="font-family:courier new,courier,monospace">'('</span></span></strong> hay <strong><span style="font-size:16px"><span style="font-family:courier new,courier,monospace">')'</span></span></strong>.</p>
+<p>- Trong m dòng tiếp theo, tại dòng thứ i là hai số p<sub>i</sub> và r<sub>i</sub> của câu hỏi thứ i tương ứng, hai số cách nhau một khoảng trắng. (1 ≤ p<sub>i</sub> ≤ r<sub>i</sub> ≤ n).</p>
+<p><strong>Dữ liệu xuất: </strong></p>
+<p>- Gồm m dòng ứng với m câu hỏi, nếu dãy ngoặc con tương ứng là dãy ngoặc đúng, in ra YES, nếu dãy ngoặc con tương ứng là không phải dãy ngoặc đúng, in ra NO.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">8 5<br/>(((())))<br/>1 4<br/>3 6<br/>4 8<br/>4 5<br/>2 7<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">NO<br/>YES<br/>NO<br/>YES<br/>YES</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

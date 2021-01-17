@@ -1,0 +1,60 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">MAKE EQUAL</h2>
+</div><div class="content-description screen">
+<div><ul>
+<li><p>Cho mảng \(a\) gồm \(n\) số nguyên dương được đánh số từ \(1\) đến \(n\). Bạn có thể thực hiện phép biến đổi dưới đây không quá \(3*n\) lần:</p>
+<ul>
+<li>Chọn \(3\) số nguyên \(i,j\) và \(x\) (\(1\le i,j\le n;0\le x\le 10^9\)). Sau đó gán \(a_i:=a_i-x*i,a_j:=a_j+x*i\)</li>
+</ul>
+</li>
+</ul>
+<p>Hỏi: Bạn có thể tìm được một dãy biến đổi (không quá \(3*n\) lần biến đổi) sao cho tất cả các phần tử của mảng \(a\) bằng nhau hay không ?</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa số nguyên \(t(1\le t\le 10^4)\) - Số lượng testcase.</p>
+</li>
+<li><p>Tiếp theo là \(t\) block, mỗi block có dạng như sau:</p>
+<ul>
+<li><p>Dòng thứ nhất chứa số nguyên \(n(1\le n\le 10^4)\)</p>
+</li>
+<li><p>Dòng thứ hai chứa \(n\) số nguyên \(a_1,a_2,...,a_n(1\le a_i\le 10^5)\)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>(Biết rằng: Tổng các giá trị của \(n\) ở tất cả các testcase đều không quá \(10^4\))</p>
+<p><strong>Output:</strong></p>
+<ul>
+<li><p>Ứng với mỗi testcase, câu trả lời có dạng như sau:</p>
+<ul>
+<li><p>Nếu không tồn tại dãy biến đổi nào thỏa mãn yêu cầu bài toán thì in ra \(-1\)</p>
+</li>
+<li><p>Ngược lại, in ra số nguyên \(k(0\le k\le 3*n)\) - Thể hiện số lượng phép biến đổi trong dãy. Và \(k\) dòng tiếp theo, mỗi dòng chứa \(3\) số nguyên \(i,j\) và \(x(1\le i,j\le n ; 0\le x\le 10^9)\) - Thể hiện phép biến đổi ta dùng.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Nếu có nhiều đáp án, in ra đáp án bất kì. Chú ý rằng, bạn không nhất thiết phải giảm thiểu số \(k\).</p>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3
+4
+2 16 4 18
+6
+1 2 3 4 5 6
+5
+11 19 1 1 3</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>2
+4 1 2
+2 3 3
+-1
+4
+1 2 4
+2 4 5
+2 3 3
+4 5 1</code></pre>
+<p><strong>Nguồn:</strong> Codeforces</p>
+</div>
+<hr/>
+</div>

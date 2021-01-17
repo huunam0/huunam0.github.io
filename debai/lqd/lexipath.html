@@ -1,0 +1,36 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Đường đi đẹp nhất</h2>
+</div><div class="content-description screen">
+<div><p>Cho đồ thị có hướng \(G = (V, E)\) gồm \(N\) đỉnh và \(M\) cung, \(s\) và \(t\) là hai đỉnh của đồ thị \(G\). Một dãy các đỉnh \(P = 〈s = p_0, p_1, ..., p_k = t〉\) sao cho \((p_{i-1}, p_i) \in E\) , được gọi là một đường đi từ \(s\) tới \(t\) . Một đường đi gọi là đơn giản (hay đường đi đơn) nếu tất cả các đỉnh trên đường đi là hoàn toàn phân biệt. Biết rằng tồn tại ít nhất một đường đi từ \(s\) tới \(t\), hãy chỉ ra đường đi đơn có thứ tự
+từ điển nhỏ nhất.</p>
+<p><img alt="drawing" src="https://imgur.com/WGpvPpp.png" style="width:300px;"/></p>
+<p><strong>INPUT:</strong> Gồm \(M + 1\) dòng:</p>
+<ul>
+<li>Dòng \(1\) chứa số đỉnh \(N\), số cung \(M\), đỉnh xuất phát \(s\), đỉnh cần đến \(t\). </li>
+<li>\(M\) dòng tiếp theo, mỗi dòng chứa hai số nguyên dương \(u, v\) thể hiện có cung nối từ đỉnh \(u\) tới đỉnh \(v\) trong đồ thị. </li>
+</ul>
+<p><strong>OUTPUT:</strong> Ghi ra trên một dòng các đỉnh theo đúng thứ tự trên đường đi tìm được, bắt đầu từ đỉnh \(s\), kết thúc ở đỉnh \(t\) theo thứ tự từ điển nhỏ nhất (Ví dụ \(10\) có thứ tự từ điển lớn hơn \(5\), \(5\) có thứ tự từ điển lớn hơn \(1\)).</p>
+<p><strong>SAMPLE INPUT:</strong></p>
+<pre><code>8 12 1 8
+1 2
+1 3
+2 3
+2 4
+3 1
+3 5
+3 7
+4 6
+6 2
+6 8
+7 8
+7 6</code></pre>
+<p><strong>OUTPUT:</strong></p>
+<pre><code>1 2 3 7 6 8</code></pre>
+<p><strong>GIỚI HẠN:</strong></p>
+<ul>
+<li>\(30\)% số test đầu tiên có \(N \leq 10^3, M \leq 10^4\)</li>
+<li>\(70\)% số test còn lại có \(N \leq 10^5, M \leq 10^6\)</li>
+</ul>
+</div>
+<hr/>
+</div>

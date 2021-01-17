@@ -1,0 +1,64 @@
+<div class="tm-box2">
+<div class="problem-name">
+    RROAD - Giá trị đường thay thế 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"><span style="font-size:14px">Thành phố Alpha có <em>n</em> đầu mút giao thông và <em>m</em> đoạn đường hai chiều, mỗi đoạn kết nối hai đầu mút. Các đầu mút được đánh số từ 1 đến <em>n</em>. Mỗi đoạn đường đường có độ dài là một số nguyên dương. Trong những giờ cao điểm các đoạn đường có mật độ giao thông tăng chóng mặt. Do đó, để đánh giá khả năng tìm đường thay thế tránh mỗi đoạn đường (<em>x, y</em>), Ban giải pháp chống tắc nghẽn của thành phố mới đưa vào một đại lượng gọi là <em><strong>giá trị thay thế</strong></em> <em>r<sub>x,y</sub></em> được tính bởi công thức sau:</span></p>
+<p style="margin-left:80px; text-align:justify"><img alt="" src="../../ckfinder/userfiles/images/RROAD.png" style="height:66px; width:412px"/></p>
+<p style="text-align:justify"><span style="font-size:14px">với </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">• <em>f(u, v, x, y)</em> là độ dài đường đi ngắn nhất từ <em>u</em> đến <em>v</em> khi mà đoạn <em>(x, y</em>) bị nghẽn không di chuyển qua được.<br/>
+• <em>g(u, v) </em>là độ dài đường đi ngắn nhất từ <em>u</em> đến <em>v</em> mà không có đoạn đường nào bị nghẽn. Đặt <em>r<sub>xy</sub> = −1 </em>nếu không có đường đi nào giữa hai đầu mút <em>u, v</em> bất kỳ khi đoạn (<em>x, y</em>) bị nghẽn. Nhắc lại độ dài đường đi từ <em>u</em> đến <em>v</em> là tổng tất cả độ dài các đoạn đường trên đường đi đó.</span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Yêu cầu</strong>: Hãy tìm đoạn đường có giá trị thay thế lớn nhất. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Dữ liệu vào </strong></span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">• Dòng đầu tiên chứa hai số nguyên <em>n, m</em><br/>
+• Dòng thứ <em>i<sup>th</sup></em> trong số <em>m</em> dòng tiếp theo chứa ba số nguyên dương <em>x<sub>i</sub> , y<sub>i</sub> , d<sub>i</sub> ,(1 ≤ x<sub>i</sub> , yi &lt; n, d<sub>i</sub> ≤ 10<sup>6</sup> với i = 1, 2, ..., m)</em> mô tả một đoạn đường hai chiều có các đầu mút <em>x<sub><sup>i</sup></sub></em> và <em>y<sub>i</sub></em> với khoảng cách <em>d<sub>i</sub></em> . </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Kết quả </strong></span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">Ghi ra trên một dòng duy nhất giá trị <em>r<sub>max</sub></em> tìm được với sai số nhỏ hơn 10<sup>−6</sup>. </span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">5 7<br/>
+1 2 1<br/>
+1 3 2<br/>
+1 4 1<br/>
+2 3 5<br/>
+2 5 1<br/>
+5 3 1<br/>
+3 4 6</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">8.000000</p>
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">3 2<br/>
+1 2 8<br/>
+2 3 5</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">1.000000</p>
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">2 1<br/>
+1 2 10</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">-1.000000</p>
+<p><strong>Giới hạn</strong>:</p>
+<p style="margin-left: 40px;">- Subtask 1: Có 20% số test ứng với (2 ≤ n ≤ 200, 1 ≤ m ≤ 2000);<br/>
+- Subtask 2: Có 30% số test ứng với (2 ≤ n ≤ 1000, 1 ≤ m ≤ 2000);<br/>
+- Subtask 3: Có 50% số test ứng với (2 ≤ n ≤ 1000, 1 ≤ m ≤ 10000);</p>
+<hr/>
+<p><em>Nguồn: ĐPT '1819</em></p>
+</div>
+</div>

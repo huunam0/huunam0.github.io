@@ -1,0 +1,52 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+     ROBOT3 -  ROBOT (OLP Không chuyên 2013) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">      Trung tâm XYZ có nhiệm vụ khảo sát mức độ phóng xạ của một khu vực nhiễm xạ gồm n địa điểm. Các địa điểm nằm trên một đường thẳng, được đánh số từ 1 đến n từ trái qua phải. Trung tâm sử dụng một robot để đo mức độ nhiễm xạ. Robot có khả năng nhận hai loại lệnh để di chuyển: Loại 1, di chuyển sang phải a bước; Loại 2, di chuyển sang trái b bước. Cụ thể, nếu robot đang đứng ở địa điểm v, robot có thể thực hiện lệnh loại 1 để di chuyển đến địa điểm v + a nếu v + a ≤ n, hoặc robot có thể thực hiện lệnh loại 2 để di chuyển đến địa điểm v - b nếu v - b ≥ 1. Khi robot dừng lại tại một địa điểm, robot có thể bật máy đo mức độ nhiễm xạ và gửi kết quả đo được về trung tâm. Tuy nhiên, do pin của robot có hạn, robot chỉ có thể thực hiện được không quá k lệnh di chuyển. Ban đầu robot được đặt ở địa điểm 1.</p>
+<p style="text-align:justify">      Ví dụ, với n = 6, a = 2, b = 3 và k = 3 có thể sử dụng robot để đo được mức độ nhiễm xạ tại các địa điểm 1, 2, 3, 5 (bao gồm cả địa điểm ban đầu của nó). Như vậy, robot không thể đo được mức độ nhiễm xạ tại các địa điểm 4 và 6.</p>
+<p style="text-align:justify"><strong>Yêu cầu:</strong> Cho n, a, b và k, hãy đếm số địa điểm mà robot không thể đo được mức độ nhiễm xạ trong trường hợp tối ưu (nghĩa là trong trường hợp đó, số điểm đo được là nhiều nhất). Lưu ý là chỉ thực hiện <em><strong>trong một lần đi duy nhất</strong></em> (robot hết pin bỏ luôn chứ không quay về được, trung tâm cũng chỉ có một con robot mà thôi) và mỗi điểm có thể đi qua nhiều lần.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Gồm bốn số nguyên dương n, a, b, k (a, b, n ≤ 10<sup>9</sup>; 1 ≤ k ≤ 1000).</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là số lượng địa điểm mà robot không thể đo được mức độ nhiễm xạ. </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">6 2 3 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">100 99 1 100 </div>
+<div class="sample-type">output</div>
+<div class="sample-value">0</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">14 4 6 10</div>
+<div class="sample-type">output</div>
+<div class="sample-value">7</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Test 1: đi theo thứ tự: 1 -&gt; 3 -&gt; 5 -&gt; 2.</p>
+<p>Test 3: đi theo thứ tự: 1 -&gt; 5 -&gt; 9 -&gt; 13 -&gt; 7 -&gt; 1 -&gt; 5 -&gt; 9 -&gt; 3 -&gt; 7 -&gt; 11. Tổng cộng qua 7 điểm (1, 5, 9, 13, 7, 3, 11) với 10 bước di chuyển. Còn lại 7 điểm không đến được.</p>
+</div>
+</div></body></html>

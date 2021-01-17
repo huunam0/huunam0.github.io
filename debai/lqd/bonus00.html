@@ -1,0 +1,46 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Phần thưởng</h2>
+</div><div class="content-description screen">
+<div><p>Theo truyền thuyết, vua Sêram rất khâm phục và đã tặng thưởng cho nhà thông thái Sêta vì đã
+sáng tạo ra cờ vua. Phần thưởng mà Sêta mong muốn là tất cả các hạt lúa mì đặt trên bàn cờ theo
+quy tắc sau: Ô thứ nhất đặt một hạt, ô thứ hai đặt 2 hạt, ô thứ ba đặt 4 hạt, … , tiếp tục theo quy
+luật ô sau có số hạt gấp đôi số hạt của ô trước, cho tới khi đặt đến ô thứ 64 trên bàn cờ vua. Rất
+thích thú với truyền thuyết này, Long và Vân cùng nhau giải quyết bài toán sau:</p>
+<p>Xét một bảng số kích thước \(𝑚 × 𝑛\), các hàng được đánh số từ 1 đến \(𝑚\) từ trên xuống dưới, các
+cột được đánh số từ 1 đến \(𝑛\) từ trái sang phải. Ô nằm giao giữa hàng \(𝑖\) và cột \(𝑗\) được gọi là ô (\(𝑖,𝑗\)).
+Với một số nguyên dương \(𝑘\) (\(𝑘 ≤ 10\)), lần lượt điền các số vào các ô của bảng theo nguyên tắc
+sau:</p>
+<ul>
+<li>Bắt đầu điền từ ô (\(1,1\)) ghi số \(1\);</li>
+<li>Điền lần lượt từng ô từ trên xuống dưới, từ trái qua phải. Ô tiếp theo điền giá trị gấp \(𝑘\) lần
+giá trị điền ô trước.</li>
+</ul>
+<p>Với bộ \(4\) số nguyên dương (\(𝑥, 𝑦, 𝑢, 𝑣\)) thỏa mãn \(1 ≤ 𝑥 ≤ 𝑢 ≤ 𝑚\) và \(1 ≤ 𝑦 ≤ 𝑣 ≤ 𝑛\), hai bạn Long
+và Vân muốn tính tổng các số nằm trong các ô (\(𝑖,𝑗\)) mà \(𝑥 ≤ 𝑖 ≤ 𝑢\) và \(𝑦 ≤ 𝑗 ≤ 𝑣\).</p>
+<p><strong>Yêu cầu</strong>: Cho \(7\) số nguyên dương \(𝑚, 𝑛, 𝑘, 𝑥, 𝑦, 𝑢, 𝑣\), hãy tính tổng các số nằm trong các ô (\(𝑖,𝑗\))
+mà \(𝑥 ≤ 𝑖 ≤ 𝑢\) và \(𝑦 ≤ 𝑗 ≤ 𝑣\) của bảng số được điền theo quy tắc trên.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Một dòng chứa 7 số nguyên dương \(𝑚, 𝑛, 𝑘, 𝑥, 𝑦, 𝑢, 𝑣\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Một dòng chứa một số là phần dư của phép chia tổng các số được tính chia cho \(111539768\).</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>4 4 2 1 2 2 3</code></pre>
+<p><strong>Sample Output </strong></p>
+<pre><code>102</code></pre>
+<p><strong><em>Ràng buộc:</em></strong></p>
+<ul>
+<li>Có 30% số test ứng với 30% số điểm của bài có \(𝑚 = 1\) và \(𝑛 ≤ 10\);</li>
+<li>Có 20% số test khác ứng với 20% số điểm của bài có \(𝑚 = 1\) và \(𝑛 ≤ 10^3\);</li>
+<li>Có 20% số test khác ứng với 20% số điểm của bài có \(𝑚 = 1\); \(𝑛 ≤ 10^9\) và \(𝑣 − 𝑦 ≤ 10^7\);</li>
+<li>Có 20% số test khác ứng với 20% số điểm của bài có \(𝑚 = 1\) và \(𝑛 ≤ 10^9\);</li>
+<li>Có 10% số test còn lại với 10% số điểm còn lại của bài có \(𝑚, 𝑛 ≤ 10^9\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2019 chính thức</em></p>
+</div>
+<hr/>
+</div>

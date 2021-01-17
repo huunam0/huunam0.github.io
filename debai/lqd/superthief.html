@@ -1,0 +1,37 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Siêu trộm</h2>
+</div><div class="content-description screen">
+<div><p>Kaito là một tên trộm tài ba, chuyên trộm những món đồ quý giá. Tuy nhiên, hắn lại có sở thích kì dị là công khai món đồ mình chuẩn bị lấy trộm.
+Chính điều này đã đẩy Kaito vào thế tiến thoái lưỡng nan bởi chủ sở hữu món đồ Kaito chuẩn bị đánh cắp đã đầu tư vào căn nhà với công nghệ chống trộm tiên tiến.Với sự trợ giúp của trợ thủ, Kaito biết trước được một số thông tin sau : Ngôi nhà có thể được biểu diễn bởi một hình chữ nhật được chia làm \(M\) cột và \(N\) hàng. Các cột được đánh số từ 1 tới \(M\) theo chiều từ trái qua phải (chiều hướng Tây đến Đông). Các hàng được đánh số từ 1 tới \(N\) theo chiều từ dưới lên trên (chiều hướng Nam đến Bắc). Ngôi nhà có \(M\times N\) phòng, phòng nằm trên cột \(i\) hàng \(j\) được ký hiệu là (\(i, j\)).Hai phòng có chung cạnh sẽ có một cửa nối giữa chúng. Ngôi nhà chỉ có một lối vào duy nhất là cửa chính (ô (1,1)).  Dù được canh giữ sát sao nhưng nhờ tài hóa trang thiên bẩm Kaito có thể dễ dàng tiến vào ngôi nhà. Tuy nhiên Kaito không ngờ rằng lối vào lại được đặt thiết bị báo động khi có kẻ xâm nhập và cảnh sát đang truy lùng Kaito khắp mọi ngõ ngách trong căn nhà. Để tránh bị phát hiện, Kaito mất 1p để đi qua mỗi cánh cửa (khi mà thiết bị báo động ở cánh cửa đó đã tắt). Ở một số căn phòng đã được đặt công tắc kiểm soát trạng thái của các thiết bị báo động ở các cửa, Kaito có thể hack thiết bị đó và chỉ mất 1p, mọi thiết bị báo động đang bật thì tắt và ngược lại. Ban đầu, tất cả thiết bị ở cửa nối 2 phòng theo hướng Nam-Bắc được bật, và các thiết bị còn lại thì tắt.</p>
+<p>Nhằm tránh bị bắt, Kaito phải đi đến phòng (\(M,N\)) nhanh nhất có thể để đánh tráo báu vật và chuẩn bị hóa trang thoát ra ngoài. Bạn hãy giúp Kaito xác định thời gian ngắn nhất đi từ phòng (1, 1) tới phòng (\(M, N\)). Nếu không thể đến được phòng (\(M,N\)) thì in ra -1 để anh ấy hủy kế hoạch trộm cắp.</p>
+<p><strong>Yêu cầu</strong>:  Xác định thời gian ngắn nhất đi từ phòng (1, 1) tới phòng (\(M, N\)).</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa 3 số nguyên \(M, N, K\) (\(2 ≤ M, N ≤ 100000, 1 ≤ K ≤ 200000\)). </li>
+<li>\(K\) dòng sau, mỗi dòng gồm 2 số nguyên \(x, y\) (\(1 ≤ x ≤ M, 1 ≤ y ≤ N\)) mô tả phòng (\(x, y\)) có đặt công tắc. \(K\) tọa độ phòng là phân biệt. </li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>In ra số phút ít nhất để đi từ phòng (1, 1) tới phòng (\(M, N\)). Nếu không đi được, in ra \(-1\). </li>
+</ul>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>3 2 1 
+1 2</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>4</code></pre>
+<p><strong>Sample Input 2</strong></p>
+<pre><code>3 2 1 
+2 1</code></pre>
+<p><strong>Sample Output 2</strong></p>
+<pre><code>-1</code></pre>
+<p><strong><em>Ràng buộc:</em></strong></p>
+<ul>
+<li>Subtask 1:​ \(M, N ≤ 1000\) </li>
+<li>Subtask 2:​ \(K ≤ 2000\) </li>
+<li>Subtask 3:​ Không có ràng buộc gì thêm. </li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2019 CLC-LC</em></p>
+</div>
+<hr/>
+</div>

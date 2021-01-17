@@ -1,0 +1,52 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    SOCCER - Lịch thi đấu 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Một giải đấu bóng đá có n đội tham dự (n là lũy thừa của 2). Các đội được đánh số từ 0 tới n - 1.</p>
+<p>Hình dưới đây mô tả cách thức thi đấu của giải:</p>
+<p><img alt="" src="https://lh3.googleusercontent.com/q1TbWYNpEnegbhOmFf5XA5-BzLhOTgZbH1P79Ooj5YA=w305-h244-no" style="height:244px; width:305px"/></p>
+<p>Cho biết kết quả trận đấu giữa 2 đội bất kỳ theo dạng mảng w kích thước n x n. w[i, j] = 'Y' nếu đội i thắng đội j, w[i, j] = 'N' nếu đội i thua đội j.</p>
+<p>Có tổng cộng n! cách để sắp xếp các đội ở vòng đầu tiên. Mỗi cách sắp xếp sẽ dẫn tới một kết quả khác nhau. Vì vậy, với mỗi đội i, bạn cần xác định xem có bao nhiêu cách sắp xếp để dẫn tới đội i vô địch.</p>
+<p><strong>Input:</strong></p>
+<p>- Dòng đầu tiên ghi số n.</p>
+<p>- n dòng tiếp theo, mỗi dòng gồm n ký tự mô tả mảng w.</p>
+<p><strong>Output:</strong></p>
+<p>- Gồm n dòng, dòng thứ i ghi số cách sắp xếp để đội i vô địch.</p>
+<p><strong>Giới hạn:</strong></p>
+<p>- n &lt;= 16.</p>
+<p>- Với mọi i, w[i, i] = 'N'.</p>
+<p>- Với mọi i, j (i != j), có đúng một trong hai w[i, j] và w[j, i] là 'Y'.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2<br/>NN<br/>YN</div>
+<div class="sample-type">output</div>
+<div class="sample-value">0<br/>2</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>NYNY<br/>NNYN<br/>YNNY<br/>NYNN</div>
+<div class="sample-type">output</div>
+<div class="sample-value">8<br/>0<br/>16<br/>0</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Nguồn bài:</strong> Topcoder</p>
+</div>
+</div></body></html>

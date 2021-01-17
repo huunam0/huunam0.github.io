@@ -1,0 +1,36 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Xây cầu</h2>
+</div><div class="content-description screen">
+<div><p>Ở một dòng sông rất rộng có \(n\) trụ cầu được dựng ở giữa dòng nước. Mỗi trụ có một chiều cao ngẫu nhiên và tất cả các trụ được xếp thẳng hàng từ bờ này đến bờ bên kia. Mọi người đang lên kế hoạch xây dựng một cây cầu bắt qua sông từ những trụ cầu này. Để làm được điều đó, ta sẽ chọn ra một tập con các trụ cầu và kết nối đỉnh của chúng thành các nhịp cầu riêng biệt. Tập con này <em>bắt buộc</em> phải bao gồm trụ đầu tiên và trụ cuối cùng trong \(n\) trụ đó.</p>
+<p>Chi phí để xây dựng nhịp cầu nối trụ thứ \(i\) và trụ thứ \(j\) là \(\left(h_i-h_j\right)^2\), với \(h_i\) là chiều cao của trụ thứ \(i\). Ngoài ra, chúng ta sẽ phải loại bỏ đi những trụ cầu không phải là một phần của cây cầu, bởi chúng sẽ làm cản trở dòng nước sông. Chi phí để loại bỏ trụ cầu thứ \(i\) là \(w_i\). Chi phí này có thể là số âm bởi vì nhiều bên liên quan tình nguyện thanh toán thêm tiền để ta giúp họ phá bỏ những trụ cầu vô dụng. Dù là số âm hay dương thì tất cả các số đo \(h_i\) và chi phí \(w_i\) đều sẽ là các số nguyên.</p>
+<p>Bạn hãy tính xem chi phí tối thiểu để xây dựng một cây cầu nối liền trụ đầu tiên và trụ cuối cùng là bao nhiêu nhé!</p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa số nguyên dương \(n\) là số lượng trụ cầu.</p>
+<p>Dòng thứ nhì chứa \(n\) số nguyên, số thứ \(i\) thể hiện chiều cao \(h_i\) của trụ cầu thứ \(i\).</p>
+<p>Dòng thứ ba chứa \(n\) số nguyên, số thứ \(i\) thể hiện chi phí \(w_i\) để loại bỏ trụ cầu thứ \(i\).</p>
+<hr/>
+<h4>Output</h4>
+<p>In ra chi phí nhỏ nhất để xây dựng cây cầu. Lưu ý rằng chi phí này có thể là một số nguyên âm.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>6
+3 8 7 1 6 6
+0 -1 9 1 2 0</code></pre>
+<h5>Output</h5>
+<pre><code>17</code></pre>
+<hr/>
+<h4>Giới hạn</h4>
+<ul>
+<li>\(2\leq n\leq 10^5\).</li>
+<li>\(0\leq h_i\leq 10^6\).</li>
+<li>\(0\leq \left|w_i\right|\leq 10^6\).</li>
+<li>\(30\%\) số test có \(n\leq 1000\).</li>
+<li>\(30\%\) số test khác có \(\left|w_i\right|\leq 20\) và đảm bảo phương án xây cầu tối ưu chỉ cần dùng tối đa \(2\) trụ cầu (ngoại trừ trụ đầu và trụ cuối). </li>
+</ul>
+<hr/>
+<p><em>Nguồn bài: CEOI 2017</em></p>
+</div>
+<hr/>
+</div>

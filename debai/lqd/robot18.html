@@ -1,0 +1,36 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Robot</h2>
+</div><div class="content-description screen">
+<div><p>Cho lưới ô vuông kích thước \(n\) dòng và \(n\) cột. Các dòng của lưới được đánh số từ 1 đến \(n\). Các cột của lưới cũng được đánh số từ 1 đến \(n\). Ô nằm trên giao của dòng \(i\) và cột \(j\) của lưới được gọi là ô (\(i,j\)) và (\(i, j\)) được gọi là tọa độ của nó. Mỗi ô của lưới chứa một số thuộc tập {\(0, 1\)}. Ô chứa số \(0\) được gọi là ô tự do còn ô chứa số \(1\) được gọi là ô bị cản. Robot được đặt ở ô (\(L_1,C_1\)) cần phải di chuyển đến ô (\(L_2,C_2\)). Robot chỉ có thể di chuyển theo hướng thẳng đứng hoặc hướng nằm ngang.</p>
+<p><strong>Yêu cầu</strong>: Cần xác định:</p>
+<ol>
+<li>Số lần đổi hướng ít nhất để robot có thể di chuyển từ ô (\(L_1,C_1\)) tới ô (\(L_2,C_2\))</li>
+<li>Số lần đổi hướng ít nhất để robot có thể di chuyển từ ô (\(L_1,C_1\)) tới ô (\(L_2,C_2\)) trong tình huống được phép biến một ô bị cản thành ô tự do.</li>
+<li>Số lượng các ô bị cản mà việc loại bỏ bất cứ một ô nào trong số chúng, ta đều đạt được số lần đổi hướng như trong câu 2).</li>
+</ol>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng thứ nhất chứa số nguyên \(n,(&lt;n&lt; 1000)\); </li>
+<li>\(n\) dòng tiếp mỗi dòng chứa \(n\) số \(0\) hoặc \(1\) được ghi cách nhau bởi dấu cách mô tả trạng thái của lưới;
+• Dòng thứ \(n+2\) chứa 4 số \(L_1,C_1, L_2,C_2\) (đảm bảo là các ô (\(L_1,C_1\)) và (\(L_2,C_2\)) là các ô tự do). </li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra ba số nguyên là các câu trả lời cho 3 yêu cầu tương ứng nêu trong đầu bài.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>5
+0 1 1 0 0
+0 0 0 1 0
+1 0 1 1 0
+0 0 0 1 0
+0 0 0 0 0
+1 1 1 5</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>4 2 2</code></pre>
+<p><img alt="enter image description here" src="https://i.imgur.com/Zigx4dp.png?1"/></p>
+<hr/>
+<p><em>Nguồn: Thầy Nghĩa '18</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,41 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chơi bi da 1 lỗ</h2>
+</div><div class="content-description screen">
+<div><p>Mike chơi bi-a 1 lỗ rất giỏi nên kiếm được rất nhiều tiền độ banh. Nhà Cái mất nhiều tiền vì Mike lắm nên cú lắm nên họ quyết phải kiểm tra xem liệu Mike có chơi gian hay không?</p>
+<p>Thể thức chơi bi-a 1 lỗ là như này: Có \(N\) viên bi được đánh số từ \(1 → N\), đặt trên bàn, người chơi phải đánh sao cho các viên bi này lọt lỗ theo đúng thứ tự từ \(1→N\). Viên \(i\) sẽ phải vào lỗ trước viên \(i+1\). Để kiểm tra Mike, nhà Cái thuê 1 tay thám tử. Tay thám tử này sẽ kiểm tra bằng cách là thỉnh thoảng lại tiến lại cái lỗ và bốc lên viên ở trên cùng trong lỗ. Sau khi Mike đã đánh hết các bi vào lỗ rồi thì thám tử sẽ bốc hết các viên ở trong lỗ ra từ viên trên cùng tới viên dưới cùng. Hãy giúp thám tử xác định xem liệu Mike có chơi gian không? (Xem test ví dụ để hiểu rõ hơn).</p>
+<p><strong>Input</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa 1 số nguyên dương \(N\) (\(N≤100000\)).</li>
+<li>\(N\) dòng tiếp theo mỗi dòng gồm 1 số nguyên ghi ra số chỉ trên trái bi mà thám tử lần lượt bốc lên được.</li>
+</ul>
+<p>\(Output\)</p>
+<ul>
+<li>Nếu xác định được Mike chơi gian thì ghi ra <code>YES</code>, ngược lại ghi <code>NO</code>.</li>
+</ul>
+<p><strong>input</strong></p>
+<pre><code>3
+3
+1
+2</code></pre>
+<p><strong>output</strong></p>
+<pre><code>YES</code></pre>
+<p><strong>input</strong></p>
+<pre><code>6
+1
+3
+5
+6
+4
+2</code></pre>
+<p><strong>output</strong></p>
+<pre><code>NO</code></pre>
+<p><em>Giải thích ví dụ</em></p>
+<ul>
+<li>Ở test ví dụ 1: Khi thám tử bốc được bi số 3 lên thì có nghĩa là bi số 1, 2 đã vào lỗ rồi. Và như vậy bi trên cùng sau khi bốc bi số 3 ra phải là bi số 2 nhưng thám tử lại bốc ra được bi số 1 ⇒ vô lý ⇒ Mike đã ăn gian.</li>
+<li>Ở test ví dụ 2: Có thể xảy ra trường hợp thám tử bốc viên bi 1, 3, 5 ngay khi Mike vừa đánh chúng vào lỗ. Sau đó thám tử bốc những viên bi còn lại. Do đó không khẳng định được Mike đã ăn gian!</li>
+</ul>
+<hr/>
+<p><em>Nguồn: SPOJ</em></p>
+</div>
+<hr/>
+</div>

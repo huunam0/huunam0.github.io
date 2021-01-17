@@ -1,0 +1,47 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    MAZE - Mê cung 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Hôm nay lớp của Misaki tổ chức chuyến vui chơi tại công viên giải trí Yomiyama. Cả lớp hào hứng chơi rất nhiều trò chơi. Cuối ngày, khi cả lớp điểm danh thì thiếu Misaki, hóa ra cô ấy đã bị lạc trong mê cung của công viên. Rất may công viên có một Robot có thể tìm đến vị trí của người bị lạc và trở về vị trí ban đầu. Bạn là một nhân viên bảo vệ của công viên và có trong tay bản đồ mê cung cũng như vị trí của Misaki, bạn hãy điều khiển Robot đến vị trí của Misaki để giúp cô ấy ra khỏi mê cung nhé! <img alt="wink" src="http://laptrinh.ntu.edu.vn/Scripts/ckeditorf/plugins/smiley/images/wink_smile.png" style="height:23px; width:23px" title="wink"/></p>
+<p><br/>
+<strong>Yêu cầu: </strong> Cho bản đồ mê cung và vị trí của Misaki, bạn hãy điều khiển Robot tìm <strong>đường đi ngắn nhất</strong> để đến vị trí của cô ấy. Nếu có nhiều đường đi ngắn nhất, in ra đường đi có <strong>số lần chuyển hướng ít nhất. </strong>Nếu có nhiều đường đi thỏa cả 2 điều kiện trên, <strong>in ra một đường bất kì.</strong></p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>  - Dòng thứ nhất là 2 số nguyên N,M là số dòng và số cột của mê cung (1 ≤ N,M ≤ 100).</p>
+<p>  - N dòng tiếp theo, mỗi dòng chứa M số nguyên 0 hoặc 1. Số 0 nghĩa là không có tường chắn, số 1 là có tường.</p>
+<p>  - Dòng cuối gồm 2 số nguyên u,v là vị trí hiện tại của Misaki.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>  - Dòng thứ nhất chứa 2 số nguyên P,Q với P là số câu lệnh điều khiển và Q là số lần chuyển hướng của Robot.</p>
+<p>  - P dòng tiếp theo, mỗi dòng là một câu lệnh cho Robot, cụ thể: In ra "S" nếu Robot đi thẳng, "L" nếu Robot rẽ trái, "R" nếu Robot rẽ phải. (Ban đầu Robot ở vị trí (1,1) và hướng xuống).</p>
+<p><strong>Chú ý:</strong></p>
+<p><strong>  </strong>- Dữ liệu cho đảm bảo luôn có đường đi.</p>
+<p>  - Các output phải bỏ dấu <strong>" "</strong>.</p>
+<p><strong>Ảnh minh họa:</strong></p>
+<p style="text-align:center"><img alt="" src="images/120.jpg" style="height:193px; width:421px"/></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 5<br/>0 1 0 1 0<br/>0 0 0 0 0<br/>1 1 0 1 1<br/>0 0 0 0 0<br/>4 5</div>
+<div class="sample-type">output</div>
+<div class="sample-value">7 3<br/>S<br/>L<br/>S<br/>R<br/>S<br/>L<br/>S</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Robot chuyển hướng ở (2,1), (2,3) và (4,3)</p>
+</div>
+</div></body></html>

@@ -1,0 +1,37 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Pascal's Triangle Problem</h2>
+</div><div class="content-description screen">
+<div><p>Trong toán học, tam giác Pascal là một mảng tam giác của các hệ số nhị thức. Các hàng của tam giác Pascal được liệt kê theo quy ước bắt đầu bằng hàng \(n = 0\) ở trên cùng (hàng \(0\)). Các mục trong mỗi hàng được đánh số từ đầu bên trái với \(k = 0\) và thường được đặt so le so với các số trong các hàng liền kề. Tam giác có thể được xây dựng theo cách sau: Trong hàng \(0\) (hàng trên cùng), có một số \(1\) duy nhất. Mỗi số của mỗi hàng tiếp theo được xây dựng bằng cách thêm số ở trên và bên trái với số ở trên và sang bên phải, coi các mục trống là \(0\). Ví dụ: số ban đầu trong hàng đầu tiên (hoặc bất kỳ số nào khác) là \(1\) (tổng của \(0\) và \(1\)), trong khi các số \(1\) và \(3\) trong hàng thứ ba được thêm vào để tạo ra số \(4\) ở hàng thứ tư.</p>
+<p><img alt="Pascal's Triangle" src="https://qph.fs.quoracdn.net/main-qimg-21afe27ede3c662e18b11937a5d8c3c5"/></p>
+<p><strong>Ta gọi \(P(n)=A[0,n-1]+A[1,n-2]+...+A[C(n/2)-1,n-C(n/2)]\)</strong></p>
+<p>Trong đó :</p>
+<ul>
+<li>\(n\) là số nhập trong input</li>
+<li>\(A[i,j]\) là số thứ \(i\) của hàng thứ \(j\) (Tính từ trái qua phải, số đầu tiên là <strong>số thứ 0</strong>)</li>
+<li>\(C(x)\) = Giá trị của \(x\) khi làm tròn lên. Ví dụ \(C(2.5) = 3\).</li>
+</ul>
+<p><strong>Yêu cầu</strong> : Nhập số \(n\). Hãy xuất \(P(n)\). Bạn phải trả lời \(t\) câu hỏi</p>
+<p><strong>INPUT :</strong></p>
+<ul>
+<li>Dòng đầu nhập số \(t\) là số truy vấn \((t \leq 10^5)\)</li>
+<li>\(t\) dòng tiếp theo, mỗi dòng là mỗi số nguyên dương \(n\) \((n \leq 10^{18})\)</li>
+</ul>
+<p><strong>OUTPUT:</strong></p>
+<ul>
+<li>Xuất ra \(t\) dòng, mỗi dòng là kết quả \(P(n)\) tìm được. <strong>Vì \(P(n)\) có thể rất lớn nên hãy in ra \(P(n)\) chia lấy dư cho \(10^9+7\)</strong></li>
+</ul>
+<p><strong>Sample input :</strong></p>
+<pre><code>2
+1
+2</code></pre>
+<p><strong>Sample output :</strong></p>
+<pre><code>1
+1</code></pre>
+<p><strong>Testcase :</strong></p>
+<ul>
+<li>\(40\)% test : \(T = 1\), \(\dfrac{1}{2}\) số test trong số này : \(N \leq 10^6\)</li>
+<li>\(60\)% test : \(T \leq 10^5\), \(\dfrac{1}{2}\) số test trong số này : \(N \leq 10^6\)</li>
+</ul>
+</div>
+<hr/>
+</div>

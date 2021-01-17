@@ -1,0 +1,46 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Ma thuật giai thừa</h2>
+</div><div class="content-description screen">
+<div><p>Trên một vòng tròn ma thuật gồm \(X\) ô cách đều nhau được đánh số từ \(0 \rightarrow X - 1\) theo chiều kim đồng hồ.</p>
+<p>Mỗi lần pháp sư sẽ niệm phép trong \(X - 1\) giây và thời gian sẽ thiết lập lại <strong>ở mốc thời điểm 0</strong>. Lúc đầu (tại thời điểm \(0\)) có một <strong>đốm sáng nhỏ ở ô số \(1\)</strong>, mặc định rằng sẽ <strong>luôn di chuyển theo chiều thuận kim đồng hồ dù ở bất kì thời điểm nào</strong>. Pháp sư luôn đảm bảo đốm sáng không đi ra khỏi vòng tròn ma thuật, nó luôn nằm trên một ô bất kì được đánh số từ \(0 \rightarrow X - 1\)</p>
+<p>Vị pháp sư luyện pháp quá quen tay nên luôn biết được một quy luật thú vị của ma pháp trận tròn: Tại thời điểm \(t\) từ lúc bắt đầu luyện pháp mỗi lần, đốm sáng sẽ đi đúng \(t!\) bước.</p>
+<hr/>
+<p><strong>Dữ liệu nhận vào:</strong></p>
+<ul>
+<li>Dòng đầu gồm số tự nhiên \(n\) là số lần mà pháp sư niệm phép</li>
+<li>Dòng tiếp theo gồm \(n\) số nguyên dương \(X_i\) là số ô trong vòng tròn ma thuật</li>
+</ul>
+<p><strong>Dữ liệu xuất ra:</strong></p>
+<ul>
+<li>Gồm \(n\) dòng, mỗi dòng chỉ vị trí mà đốm sáng đứng tại thời điểm \(X_i\)</li>
+</ul>
+<hr/>
+<p><strong>Đầu vào mẫu</strong></p>
+<pre><code>6
+1 3 5 7 9 11</code></pre>
+<p><strong>Đầu ra mẫu</strong></p>
+<pre><code>0
+2
+4
+6
+0
+10</code></pre>
+<p><strong> Giải thích </strong></p>
+<p>Xét trong trường hợp \(X = 5\)</p>
+<ul>
+<li>Giây thứ \(1\) đốm sáng ở vị trí \(1\) (bước thứ 1  - f(1) = f(0) + 0 * f(0))</li>
+<li>Giây thứ \(2\) đốm sáng ở vị trí \(2\) (bước thứ 2  - f(2) = f(1) + 1 * f(1))</li>
+<li>Giây thứ \(3\) đốm sáng ở vị trí \(1\) (bước thứ 6  - f(3) = f(2) + 2 * f(2))</li>
+<li>Giây thứ \(4\) đốm sáng ở vị trí \(4\) (bước thứ 24 - f(4) = f(3) + 3 * f(3))</li>
+</ul>
+<hr/>
+<p><strong>Giới hạn:</strong></p>
+<ul>
+<li>Có \(20\)% subtask mà pháp sư luyện không quá \(1000\) lần, mỗi lần không quá \(10^4\) giây</li>
+<li>Có \(20\)% subtask mà pháp sư luyện không quá \(1000\) lần, mỗi lần không quá \(10^9\) giây</li>
+<li>Có \(20\)% subtask mà pháp sư luyện không quá \(10^5\) lần, mỗi lần không quá \(10^{7}\) giây</li>
+<li>Có \(40\)% subtask mà pháp sư luyện không quá \(10^5\) lần, mỗi lần không quá \(10^{18}\) giây</li>
+</ul>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,24 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chuyến đi dã ngoại</h2>
+</div><div class="content-description screen">
+<div><p>Sau một thời gian ôn thi học kì mệt mỏi, thầy <strong>Hùng</strong> quyết định cho lớp TIN K18 đi một chuyến dã ngoại để xả stress. Mọi người trong lớp ai cũng hào hứng, và đưa ra rất nhiều địa điểm khác nhau, cuối cùng cả lớp đều chốt về quê của thầy để vui chơi. Đến ngày khởi hành, cả lớp ai cũng thích thú và sẵn sàng chuẩn bị cho cuộc đi chơi xa. Đi được một đoạn đường thì xe đột nhiên bị hết xăng, may thay gần đó có vài trạm xăng công cộng, nhưng mỗi trạm xăng đều cùng có tối đa là \(a\) lít, và chi phí cho \(a\) lít của mỗi trạm xăng là khác nhau. Lớp TIN K18 chỉ có \(K\) đồng để phục vụ cho chuyến đi và quyết định cử <span class="rating rate-candidate-master user"><a href="/user/vanquy">vanquy</a></span> - ông thần tốc độ đi mua xăng, biết mỗi trạm xăng phân bố đều trên ma trận \(M\)*\(N\) (\(M\) hàng \(N\) cột). Nhiệm vụ của <span class="rating rate-candidate-master user"><a href="/user/vanquy">vanquy</a></span> là phải chỉ ra đường đi có chi phí đổ xăng ít nhất từ ô mà lớp TIN K18 bị hết xăng \((x;y)\) đến ô địa điểm cần đến \((M,N)\), biết tại mỗi bước, anh ấy chỉ có thể di chuyển sang ô kề bên phải hoặc ô kề bên dưới của ô hiện tại. Hỏi với số tiền mua lượng xăng của <span class="rating rate-candidate-master user"><a href="/user/vanquy">vanquy</a></span> mua được có đáp ứng được nhu cầu của lớp hay không ? <span class="rating rate-candidate-master user"><a href="/user/vanquy">vanquy</a></span> vô cùng bối rối và muốn nhờ các bạn đam mê lập trình trên LQDOJ giúp đỡ. Hãy giúp anh ấy vượt qua thử thách này nhé !</p>
+<p><strong>Dữ liệu vào:</strong></p>
+<p><strong>•</strong> Dòng đầu chứa hai số nguyên dương \(M\) và \(N\) \((1 ≤ M,N ≤ 100)\) và 2 số nguyên \(a\) \((1 ≤ a ≤ 100)\) và \(K\) \((1 ≤ K ≤ 10^{18})\) lần lượt là lượng xăng tối đa của mỗi trạm và chi phí tối đa của lớp TIN K18.</p>
+<p><strong>•</strong> \(M\) dòng sau, mỗi dòng chứa \(N\) số nguyên dương mô tả chi phí cho \(a\) lít xăng của mỗi trạm. Các số này có giá trị không vượt quá \(10^6\).</p>
+<p><strong>•</strong> Dòng tiếp theo chứa tọa độ \((x;y)\) là địa điểm mà lớp TIN K18 bị hết xăng.</p>
+<p><strong>Kết quả:</strong></p>
+<p><strong>•</strong> In ra chi phí ít nhất thỏa mãn yêu cầu của lớp TIN K18, nếu không, in ra \(-1\).</p>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3 3 1 10
+1 3 2
+2 4 1
+3 2 1
+1 1</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>8</code></pre>
+<p><strong>Giải thích:</strong></p>
+<p>Đường đi tối ưu : \((1;1) \rightarrow (1;2) \rightarrow (1;3) \rightarrow (2;3) \rightarrow (3;3)\) có chi phí là \(1 + 3 + 2 + 1 + 1 = 8\), chi phí mua mua xăng là \(8 * 1 = 8 ≤ 10\) (thõa mãn vì lớp TIN có thể chi trả được).</p>
+</div>
+<hr/>
+</div>

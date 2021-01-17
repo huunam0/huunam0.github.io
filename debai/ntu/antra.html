@@ -1,0 +1,48 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    ANTRA - Ăn trắng 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"><img alt="" src="images/ANTRA2.jpg" style="float:right; height:85px; margin-left:10px; margin-right:10px; width:156px"/>Trong bộ bài tiến lên có 13 dạng lá bài đánh số theo thứ tự 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A, 2. Mỗi dạng lá bài có 4 loại: cơ (C), rô (R), chuồng(G), bích(B). Tổng cộng bộ bài có 52 lá. Trong trò chơi tiến lên, một người được chia 13 lá bài theo thứ tự ngẫu nhiên. Sau khi chia bài, một người được gọi là<strong> ăn trắng</strong> nếu 13 lá bài của người đó thỏa mãn một trong bốn tính chất sau:</p>
+<p>    - Gồm đầy đủ 13 lá khác nhau: 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A, 2 (không phân biệt cơ, rô, chuồng, bích).</p>
+<p>    - Có đủ 4 lá bài tứ quý 2: 2 cơ, 2 rô, 2 chuồng, 2 bích. Các bộ tứ quý khác không tính.</p>
+<p>    - Có 5 đôi thông liên tiếp (không phân biệt cơ, rô, chuồng, bích). Liên tiếp ở đây tính theo đúng thứ tự trên, nghĩa là 3 nhỏ nhất và 2 lớn nhất. Ví dụ 5 đôi thông liên tiếp: (3C 3R), (4G 4B), (5R 5B), (6C 6G), (7R 7G). Các đôi J, Q, K, A, 2 cũng được xem là 5 đôi liên tiếp.</p>
+<p>    - Có 6 đôi bất kỳ không cần liên tiếp. <span style="color:#FF0000"><strong>Tứ quý được tính là 2 đôi.</strong></span></p>
+<p>Nam đang có 13 lá bài mà không biết mình có được ăn trắng hay không, bạn hãy giúp Nam nhé. Để đơn giản cho việc nhập liệu, ta sẽ ký hiệu lá bài 10 là ký tự T.</p>
+<p><strong>Dữ liệu nhập: </strong></p>
+<p>- Gồm 13 dòng, mỗi dòng gồm 2 ký tự liên tiếp thể hiện lá bài. Ký tự đầu tiên là dạng lá bài, ký tự thứ hai là loại lá bài (ví dụ: 3C -&gt; 3 cơ, KR -&gt; già rô, TB -&gt; 10 bích). Dữ liệu cho đảm bảo hợp lệ.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Nếu Nam được ăn trắng in ra YES.</p>
+<p>- Nếu không được ăn trắng in ra NO.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2C<br/>3R<br/>4G<br/>5B<br/>6C<br/>7R<br/>8G<br/>9B<br/>TC<br/>JR<br/>QG<br/>KB<br/>AC</div>
+<div class="sample-type">output</div>
+<div class="sample-value">YES</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">7G<br/>2C<br/>3R<br/>8C<br/>TC<br/>KR<br/>5R<br/>AG<br/>AB<br/>QB<br/>9C<br/>5C<br/>KC</div>
+<div class="sample-type">output</div>
+<div class="sample-value">NO</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

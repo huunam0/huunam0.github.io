@@ -1,0 +1,55 @@
+<div class="tm-box2">
+<div class="problem-name">
+    FWATER - Tưới nước đồng cỏ 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"><span style="font-size:14px">Nông dân John quyết định mang nước tới cho N (1 &lt;= N &lt;= 300) đồng cỏ của mình, để thuận tiện ta đánh số các đồng cỏ từ 1 đến N. Để tưới nước cho 1 đồng cỏ John có thể chọn 2 cách, 1 là đào ở đồng cỏ đó 1 cái giếng hoặc lắp ống nối dẫn nước từ những đồng cỏ trước đó đã có nước tới.</span></p>
+<p style="text-align:justify"><span style="font-size:14px">Để đào một cái giếng ở đồng cỏ i cần 1 số tiền là W<sub>i</sub> (1 &lt;= W<sub>i</sub> &lt;= 100,000). Lắp ống dẫn nước nối 2 đồng cỏ i và j cần 1 số tiền là P<sub>ij</sub> (1 &lt;= P<sub>ij</sub> &lt;= 100,000; P<sub>ij</sub> = P<sub>ji</sub>; P<sub>ii</sub>=0).</span></p>
+<p style="text-align:justify"><span style="font-size:14px">Tính xem nông dân John phải chi ít nhất bao nhiêu tiền để tất cả các đồng cỏ đều có nước.</span></p>
+<h3><span style="font-size:14px"><strong>Dữ liệu</strong></span></h3>
+<ul>
+<li><span style="font-size:14px">Dòng 1: Một số nguyên duy nhất: N</span></li>
+<li><span style="font-size:14px">Các dòng 2..N + 1: Dòng i+1 chứa 1 số nguyên duy nhất: W<sub>i</sub></span></li>
+<li><span style="font-size:14px">Các dòng N+2..2N+1: Dòng N+1+i chứa N số nguyên cách nhau bởi dấu cách; số thứ j là P<sub>ij</sub></span></li>
+</ul>
+<h3><span style="font-size:14px"><strong>Kết quả</strong></span></h3>
+<ul>
+<li><span style="font-size:14px">Một số nguyên duy nhất là chi phí tối thiểu để cung cấp nước cho tất cả các đồng cỏ.</span></li>
+</ul>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><span style="font-size:14px"><strong>Input</strong></span></p>
+<p style="margin-left:40px"><span style="font-size:14px">4<br/>
+5<br/>
+4<br/>
+4<br/>
+3<br/>
+0 2 2 2<br/>
+2 0 3 3<br/>
+2 3 0 4<br/>
+2 3 4 0</span></p>
+<p><span style="font-size:14px"><strong>Output</strong></span></p>
+<p style="margin-left:40px"><span style="font-size:14px">9</span></p>
+<p><span style="font-size:14px"><strong>Giải thích:<em> </em></strong><em>Có 4 đồng cỏ. Mất 5 tiền để đào 1 cái giếng ở đồng cỏ 1, 4 tiền để đào ở đồng cỏ 2, 3 và 3 tiền để đào ở đồng cỏ 4. Các ống dẫn nước tốn 2, 3, và 4 tiền tùy thuộc vào nó nối đồng cỏ nào với nhau.</em></span></p>
+<p> </p>
+<p><span style="font-size:14px">Nông dân John có thể đào 1 cái giếng ở đồng cỏ thứ 4 và lắp ống dẫn nối đồng cỏ 1 với tất cả 3 đồng cỏ còn lại, chi phí tổng cộng là 3 + 2 + 2 + 2 = 9.</span></p>
+<hr/>
+<p><span style="font-size:14px"><em>Nguồn: vn.spoj.com</em></span></p>
+</div>
+</div>

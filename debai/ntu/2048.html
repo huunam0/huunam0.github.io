@@ -1,0 +1,54 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    2048 - Trò chơi 2048 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Trò chơi 2048 là một bảng gồm 4 dòng và 4 cột như hình bên dưới. Tại mỗi ô có thể có một tấm thẻ chứa một con số nguyên dương nào đó. Khi người chơi quẹt xuống các tấm thẻ sẽ rơi xuống dưới và hai thẻ giống nhau sẽ nhập lại thành một thẻ có giá trị gấp đôi.  </p>
+<p style="text-align:center"><img alt="" src="images/2048.jpg" style="height:149px; width:309px"/></p>
+<p>Cho một bảng trò chơi 2048 tổng quát hình vuông kích thước n x n, bạn hãy tính giá trị các thẻ sau khi quẹt xuống.</p>
+<p><strong>Dữ liệu nhập:</strong> gồm hai dòng</p>
+<p>- Dòng thứ nhất là số nguyên n (2 ≤ n ≤ 10) là kích thước bảng trò chơi.</p>
+<p>- Trong n dòng tiếp theo là ma trận các phần tử a<sub>ij</sub> thể hiện tình trạng bảng trò chơi. Mỗi dòng gồm n số nguyên mỗi số cách nhau một khoảng trắng (0 ≤ a<sub>ij</sub> ≤ 2048, nếu a<sub>ij</sub> = 0 nghĩa là ô dòng i cột j không có thẻ) </p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>-  Là ma trận gồm n dòng thể hiện tình trạng bảng trò chơi sau khi quẹt xuống. Mỗi dòng gồm n số nguyên mỗi số cách nhau một khoảng trắng. Ô không có thẻ có giá trị là 0. </p>
+<p><span style="color:#FF0000">Lưu ý: </span></p>
+<p><span style="color:#FF0000">- Không sáp nhập nhiều hơn 2 thẻ cùng lúc. </span></p>
+<p><span style="color:#FF0000">- 2 thẻ giống nhau cách xa nhau, nhưng khi rớt xuống nếu nằm sát nhau trên cùng cột cũng sáp nhập.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>2 8 2 8<br/>8 4 2 0<br/>4 0 0 0<br/>4 0 0 0</div>
+<div class="sample-type">output</div>
+<div class="sample-value">0 0 0 0<br/>2 0 0 0<br/>8 8 0 0<br/>8 4 4 8</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>2 2 2 0<br/>2 2 0 2<br/>2 0 2 2<br/>0 2 2 2 </div>
+<div class="sample-type">output</div>
+<div class="sample-value">0 0 0 0<br/>0 0 0 0<br/>2 2 2 2<br/>4 4 4 4</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>2 4 2 2<br/>2 2 2 4<br/>2 2 4 4<br/>2 4 4 2</div>
+<div class="sample-type">output</div>
+<div class="sample-value">0 0 0 0<br/>0 4 0 2<br/>4 4 4 8<br/>4 4 8 2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

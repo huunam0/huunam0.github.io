@@ -1,0 +1,62 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    TREE - Cây NP tìm kiếm (ACMVN 9-2014) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Cây nhị phân là một cấu trúc dữ liệu gồm các nút mà mỗi nút có tối đa 2 nút con (nút trái và nút phải). Cây nhị phân tìm kiếm là cây nhị phân thỏa mãn các điều kiện sau:</p>
+<p>     - Giá trị của các nút trong cây nhị phân tìm kiếm khác nhau từng đôi một, không có 2 nút có giá trị bằng nhau.</p>
+<p>     - Giá trị của các nút trong cây con bên trái đều nhỏ hơn giá trị nút gốc.</p>
+<p>     - Giá trị của các nút trong cây con bên phải đều lớn hơn giá trị nút gốc.</p>
+<p>     - Cây con bên trái và cây con bên phải cũng là cây nhị phân tìm kiếm</p>
+<p>Cho một cây nhị phân, bạn hãy tìm một tập S các nút của cây sao cho các nút này liên thông với nhau và tạo thành một cây nhị phân tìm kiếm. Các mối quan hệ (con bên trái, con bên phải) của các nút trong S giữ nguyên như trong cây ban đầu. S có số lượng nút là lớn nhất.</p>
+<p><strong>Dữ liệu vào:</strong> gồm các dòng sau</p>
+<p>- Dòng thứ nhất là số nguyên N biểu thị số lượng nút trong cây (1 ≤ N ≤ 10<sup>5</sup>)</p>
+<p>- Trong N dòng tiếp theo, dòng thứ <em><span style="font-size:16px"><span style="font-family:times new roman,times,serif">i</span></span></em> được biểu thị bởi ba số <span style="font-size:16px"><em><span style="font-family:times new roman,times,serif">l<sub>i</sub> , r<sub>i </sub>, v<sub>i</sub></span></em></span> tương ứng với một nút, trong đó <em><span style="font-size:16px"><span style="font-family:times new roman,times,serif">l<sub>i</sub></span></span></em> là chỉ số (vị trí dòng) của nút con bên trái, <em><span style="font-size:16px"><span style="font-family:times new roman,times,serif">r<sub>i</sub></span></span></em> là chỉ số của nút con bên phải, <em><span style="font-size:16px"><span style="font-family:times new roman,times,serif">v<sub>i</sub></span></span></em> là giá trị của nút. (1 ≤ <em><span style="font-size:16px"><span style="font-family:times new roman,times,serif">v<sub>i</sub></span></span></em> ≤ 10<sup>9</sup>). Nếu nút <em><span style="font-size:16px"><span style="font-family:times new roman,times,serif">i</span></span></em> không có nút con bên trái (hoặc phải) thì chỉ số <em><span style="font-size:16px"><span style="font-family:times new roman,times,serif">l<sub>i</sub></span></span></em> (hoặc <em><span style="font-size:16px"><span style="font-family:times new roman,times,serif">r<sub>i</sub></span></span></em> ) bằng 0. Nút gốc có chỉ số là 1.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là một số nguyên xác định số lượng lớn nhất của tập S.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">8<br/>2 3 10<br/>4 5 5<br/>6 7 15<br/>0 0 3<br/>0 0 7<br/>0 0 17<br/>0 8 13<br/>0 0 14</div>
+<div class="sample-type">output</div>
+<div class="sample-value">5</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3<br/>0 2 5<br/>0 3 6<br/>0 0 7</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">6<br/>2 3 4 <br/>0 5 2 <br/>4 0 6 <br/>0 0 3 <br/>6 0 7 <br/>0 0 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">7<br/>2 3 3<br/>0 4 1<br/>0 6 5<br/>0 5 3<br/>0 0 5<br/>0 7 7<br/>0 0 9</div>
+<div class="sample-type">output</div>
+<div class="sample-value">5</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p style="text-align:center"><img alt="" src="images/Tree(1).png" style="height:213px; width:565px"/></p>
+<p style="text-align:center"><img alt="" src="images/tree3.png" style="height:270px; width:566px"/></p>
+</div>
+</div></body></html>

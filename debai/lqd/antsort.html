@@ -1,0 +1,51 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Kiến xếp hàng</h2>
+</div><div class="content-description screen">
+<div><p>Có \(n\) con kiến trên một sợi dây. Chúng được đánh số thứ tự từ \(1\) đến \(n\). Quy ước tọa độ của sợi dây là một trục \(Ox\) với hai đầu mút là \(-10^9\) và \(10^9\). Ban đầu các con kiến đứng tại tọa độ \(a_1, a_2, ..., a_n\). Mỗi giây, mỗi con kiến có thể bò sang trái \(1\) đơn vị, sang phải \(1\) đơn vị, hoặc đứng yên. Nói cách khác, sau mỗi giây, \(a_i=a_i + 1, a_i - 1\) hoặc \(a_i\).</p>
+<p>Kiến Vua rất không hài lòng vì thứ tự các con kiến đứng rất lộn xộn, vì vậy ông muốn chúng di chuyển về lại trật tự để dễ quản lý. Ông muốn con kiến thứ nhất đứng bên trái con thứ hai, con thứ hai đứng bên trái con thứ ba, ... Hay nói cách khác, \(a_1 &lt; a_2 &lt; ... &lt; a_n\).</p>
+<p>Hỏi cần ít nhất bao nhiêu giây để các con kiến tạo thành trật tự như nhà vua mong muốn nếu chúng di chuyển một cách tối ưu? Biết rằng nhà vua chỉ kiểm tra trật tự tại các thời điểm là số nguyên. Giả sử sợi dây đủ rộng để các con kiến không bị rơi xuống đất khi gặp nhau.</p>
+<h4>Input</h4>
+<ul>
+<li>Dòng đầu chứ một số nguyên dương \(n\) là số lượng kiến trên dây.</li>
+<li>Dòng thứ hai chứa \(n\) số nguyên \(a_1, a_2, ..., a_n \ (-10^8 \leq a_i \leq 10^8)\) là tọa độ ban đầu của các con kiến. </li>
+</ul>
+<h4>Output</h4>
+<ul>
+<li>Dòng đầu in ra một số nguyên dương là thời gian ít nhất để các con kiến di chuyển và tạo thành trật tự nhà vua mong muốn.</li>
+<li><p>Dòng thứ hai in ra \(n\) số nguyên \(b_1, b_2, ..., b_n \ (-10^9 \leq b_i \leq 10^9)\) là tọa độ của các con kiến sau khi di chuyển xong.</p>
+</li>
+<li><p>Lưu ý:</p>
+<ul>
+<li>Nếu in đúng đáp án dòng 1, bạn sẽ được \(50\%\) số điểm của test tương ứng. </li>
+<li>Nếu có nhiều phương án cho dòng 2, bạn chỉ cần in một đáp án bất kỳ</li>
+</ul>
+</li>
+</ul>
+<h4>Ví dụ</h4>
+<p><strong>Input 1</strong></p>
+<pre><code>3
+3 2 1</code></pre>
+<p><strong>Output 1</strong></p>
+<pre><code>2
+1 2 3</code></pre>
+<p><strong>Input 2</strong></p>
+<pre><code>4
+1 2 3 4</code></pre>
+<p><strong>Output 2</strong></p>
+<pre><code>0
+1 2 3 4</code></pre>
+<h4>Giới hạn</h4>
+<ul>
+<li>Có \(40\%\) số test có \(n \leq 3000\).</li>
+<li>Có \(60\%\) số test có \(n \leq 3 \times 10^5\).</li>
+</ul>
+<h4>Giải thích</h4>
+<ul>
+<li><p>Trong test ví dụ 1, các con kiến cần 2 giây. Tọa độ của chúng thay đổi như sau: \([3, 2, 1] \rightarrow [2, 2, 2] \rightarrow [1, 2, 3]\)</p>
+</li>
+<li><p>Trong test ví dụ 2, các con kiến đã đúng trật tự nên không cần di chuyển thêm.</p>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

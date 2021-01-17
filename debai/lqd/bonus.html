@@ -1,0 +1,49 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Phần thưởng (DHBB CT)</h2>
+</div><div class="content-description screen">
+<div><p>Vào ngày 19 tháng 5, là ngày sinh nhật Bác, thầy Phương sẽ tổ chức một buổi liên hoan và
+tặng thưởng cho các bạn có nhiều tiến bộ khi tham HCC. Có \(𝑛\) bạn được mọi người đánh giá
+cao, các bạn này sẽ được nhận quà của thầy Phương. Thầy Phương đã chuẩn bị \(𝑚\) món quà,
+đồng thời thu thập thông tin mong muốn nhận quà của từng bạn. Các bạn được đánh số từ 1
+đến \(𝑛\), các món quà được đánh số từ 1 đến \(𝑚\), với bạn thứ \(𝑖\ (𝑖 = 1, 2, … , 𝑛)\) và món quà \(𝑗\ (𝑗 =1, 2, … , 𝑚)\) thầy Phương có thông tin \(𝑠_{𝑖𝑗}\) là một số nguyên dương đánh giá nguyện vọng của bạn \(𝑖\) muốn nhận món quà \(𝑗\).</p>
+<p>Mỗi một món quà sẽ được tặng cho đúng một bạn, mỗi bạn sẽ được nhận ít nhất một món
+quà. Gọi \(𝑟_𝑖\ (𝑖 = 1, 2, . . . , 𝑛)\) là tổng đánh giá nguyện vọng của các món quà mà người \(𝑖\) nhận
+được và \(𝑤 = min \{𝑟_1, 𝑟_2, … , 𝑟_𝑛\}\). Thầy Phương muốn tìm cách tặng quà để giá trị \(𝑤\) đạt giá trị
+càng lớn càng tốt.</p>
+<p><strong>Yêu cầu</strong>: Cho \(𝑛, 𝑚\) và các giá trị \(𝑠_{𝑖𝑗}\), em hãy giúp thầy Phương tìm phương án tặng quà để
+giá trị \(𝑤\) đạt giá trị càng lớn càng tốt.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng đầu chứa hai số nguyên dương \(𝑛, 𝑚\ (𝑛 ≤ 𝑚)\);</li>
+<li>Dòng thứ \(𝑖\ (𝑖 = 1, 2, … , 𝑛)\) trong \(𝑛\) dòng tiếp theo chứa \(𝑚\) số nguyên dương \(𝑠_{𝑖1}, 𝑠_{𝑖2}, … , 𝑠_{𝑖𝑚}\). Các số có giá trị không vượt quá 1000.</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra \(𝑛\) dòng, dòng thứ \(𝑖\ (𝑖 = 1, 2, … , 𝑛)\) có dạng:<ul>
+<li>Số đầu tiên ghi số \(𝑝_𝑖\) là số món quà mà bạn \(𝑖\) nhận được;</li>
+<li>Tiếp theo là \(𝑝_𝑖\) số là chỉ số những món quà mà bạn \(𝑖\) được nhận. Các chỉ số được liệt kê theo thứ tự tăng dần.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tính điểm:</strong></p>
+<p>Với mỗi test, gọi \(𝑤_𝑃\) là giá trị theo phương án mà thầy Phương tìm được (giá trị này em không
+được biết, chỉ dùng khi chấm), \(𝑤\) giá trị theo phương án của em, khi đó em sẽ nhận được  \(\dfrac{1000 \times w - 999 × 𝑤_𝑃}{w_p}\) trên tổng số 1 điểm của test đó, nếu \(1000 × 𝑤 &lt; 999 × 𝑤_p\) em sẽ nhận 0 điểm. <strong>Khác với kỳ thi chính thức, các bạn sẽ được bonus nếu đáp án lớn hơn đáp án của thầy.</strong></p>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>2 5
+1 2 3 4 5
+3 3 4 2 1</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>2 4 5
+3 1 2 3</code></pre>
+<p><strong><em>Giải thích:</em></strong> Theo phương án trên, bạn thứ nhất nhận hai món quà có chỉ số 4 và 5, bạn thứ hai nhận ba món quà có chỉ số 1, 2, 3. Khi đó \(𝑟_1 = 4 + 5 = 9, 𝑟_2 = 3 + 3 + 4 = 9\) và \(𝑤 = min \{9,10\} = 9\). Nếu \(𝑤_𝑃 = 9\) thì em sẽ được \(\dfrac{1000 \times 9 - 999 × 9}{9}\ = 1\) điểm.</p>
+<p><strong><em>Giới hạn</em></strong></p>
+<ul>
+<li>Có 30% số lượng test ứng với 30% số điểm thỏa mãn điều kiện: \(𝑚, 𝑛 ≤ 12\);</li>
+<li>Có 40% số lượng test khác ứng với 40% số điểm thỏa mãn điều kiện: \(𝑚 ≤ 1200, 𝑛 = 2\);</li>
+<li>Có 30% số lượng test còn lại ứng với 30% số điểm thỏa mãn điều kiện: \(𝑚 = 𝑛 ≤ 1200\)</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2020 Chính thức</em></p>
+</div>
+<hr/>
+</div>

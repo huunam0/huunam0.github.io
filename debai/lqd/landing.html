@@ -1,0 +1,99 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Hạ cánh (DHBB CT)</h2>
+</div><div class="content-description screen">
+<div><p>Sau khi khống chế thành công COVID 19, các đường bay đã được mở lại, nhu cầu đi lại tăng cao sau kì nghỉ Tết dài nhất trong lịch sử. Hiện tại là thời điểm \(0\), có \(N\) máy bay đang tiếp cận để hạ cánh tại sân bay Cát Bi. Máy bay thứ \(i\) (\(1≤ i≤ N\)) có thể điều chỉnh tốc độ để hạ cánh ở một mốc thời điểm nguyên trong khoảng thời gian [\(L_i,R_i\)]. Trong đó \(L_i\) là thời điểm sớm nhất máy bay có thể hạ cánh, \(R_i\) là thời điểm muộn nhất máy bay phải hạ cánh, quá thời gian \(R_i\), máy bay sẽ chuyển hướng hạ cánh tại sân bay khác. Khoảng thời gian \(R_i-L_i\) được gọi là giới hạn chờ của máy bay thứ \(i\) và giới hạn này tất cả \(N\) máy bay là giống nhau.</p>
+<p>Sân bay có \(K\) đường băng, có thể hoạt động độc lập và tiếp nhận các máy bay hạ cánh. Các máy bay phải thực hiện lệnh giãn cách \(X\) giây. Hay 2 máy bay liên tiếp hạ cánh trên một đường băng phải cách nhau ít nhất \(X\) giây.</p>
+<p><strong>Yêu cầu</strong>: Hãy lên phương án sắp xếp các máy bay, sao cho số lượng máy bay hạ cánh là nhiều nhất có thể. Nếu có cùng phương án đảm bảo số lượng máy bay hạ cánh nhiều nhất, tìm phương án tối ưu sao cho thời gian chênh lệch nhỏ nhất giữa 2 máy bay cùng hạ cánh trên một đường băng là lớn nhất.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng đầu tiên ghi 3 số nguyên dương \(N,K,X\) (\(N≤ 10^5  ,K≤ 4 ,X≤ 10^9\))</li>
+<li>Tiếp theo là \(N\) dòng, mỗi dòng ghi 2 số \(L_i,R_i\)  (\(0≤ L_i≤ R_i≤ 10^9\))
+<em>Dữ liệu đảm bảo giá trị \(R_i-L_i\) của tất cả các máy bay là giống nhau.</em></li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra 2 số nguyên \(T\) và \(P\) được ghi trên một dòng, phân tách bởi dấu cách. Số thứ nhất \(P\)- là số máy bay lớn nhất có thể hạ cánh được. Số thứ hai \(T\)- là giá trị của chênh lệch nhỏ nhất giữa 2 máy bay bất kỳ trên cùng một đường băng trong phương án tối ưu tìm được. Nếu mỗi đường băng chỉ tiếp nhận không quá 1 máy bay thì ghi ra -1.</li>
+</ul>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>5 1 60
+0 20
+0 20
+100 120
+60 80
+110 130</code></pre>
+<p><strong>Sample Output 2</strong></p>
+<pre><code>3 65</code></pre>
+<p><strong>Sample Input 2</strong></p>
+<pre><code>5 2 60
+0 20
+0 20
+100 120
+60 80
+110 130</code></pre>
+<p><strong>Sample Output 2</strong></p>
+<pre><code>5 65</code></pre>
+<p><strong>Sample Input 3</strong></p>
+<pre><code>5 3 60
+0 20
+0 20
+100 120
+60 80
+110 130</code></pre>
+<p><strong>Sample Output 3</strong></p>
+<pre><code>5 120</code></pre>
+<p><strong><em>Giải thích:</em></strong></p>
+<p><strong>Sample 1</strong></p>
+<ul>
+<li>Đường băng 1:<ul>
+<li>MB 1 thời điểm 0</li>
+<li>MB 4 thời điểm 65</li>
+<li>MB 5 thời điểm 130</li>
+</ul>
+</li>
+</ul>
+<p><strong>Sample 2</strong></p>
+<ul>
+<li>Đường băng 1:<ul>
+<li>MB 1 thời điểm 0</li>
+<li>MB 4 thời điểm 65</li>
+<li>MB 5 thời điểm 130
+Đường băng 2:</li>
+<li>MB 2 thời điểm 0</li>
+<li>MB 3 thời điểm 100</li>
+</ul>
+</li>
+</ul>
+<p><strong>Sample 3</strong></p>
+<ul>
+<li><p>Đường băng 1:</p>
+<ul>
+<li>MB 1 thời điểm 0</li>
+<li>MB 3 thời điểm 120</li>
+</ul>
+</li>
+<li><p>Đường băng 2:</p>
+<ul>
+<li>MB 4 thời điểm 60</li>
+</ul>
+</li>
+<li><p>Đường băng 3:</p>
+<ul>
+<li>MB 2 thời điểm 0</li>
+<li>MB 5 thời điểm 120</li>
+</ul>
+</li>
+</ul>
+<p><strong><em>Giới hạn</em></strong></p>
+<ul>
+<li>Subtask 1. (16 điểm) \(N≤ 8,K=1\)</li>
+<li>Subtask 2. (12 điểm) \(N≤ 8,K=2\)</li>
+<li>Subtask 3. (20 điểm) \(N≤ 16,K=1,0≤  L_i≤ R_i≤ 100\)</li>
+<li>Subtask 4. (16 điểm) \(N≤ 16,K=2,0≤ L_i≤ R_i≤ 100\)</li>
+<li>Subtask 5. (20 điểm) \(N≤ 10^5,K=1\)</li>
+<li>Subtask 6. (16 điểm) \(N≤ 10^5,2≤ K≤ 4\)</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2020 Chính thức</em></p>
+</div>
+<hr/>
+</div>

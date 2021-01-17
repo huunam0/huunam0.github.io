@@ -1,0 +1,73 @@
+<h2>VMGROUP2 - Phân nhóm đồ thị</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/N" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/N </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/272945/problem/K" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/272945/problem/K </a><p><span id="docs-internal-guid-578b8535-2143-f338-3892-fee428ed878c"> </span></p>
+<p>Đất nước xinh đẹp X có <strong>N</strong> thành phố và có <strong>M</strong> mối quan hệ kinh tế giữa các thành phố. Mối quan hệ kinh tế này là song phương, do đó thành phố u có mối quan hệ kinh tế với thành phố v tức là thành phố v có mối quan hệ kinh tế với u.</p>
+<p>Tổng thống của nước X muốn chia đất nước của mình thành <strong>K</strong> bang nhỏ (N chia hết cho K), nhưng ông lại muốn tối thiểu hóa quan hệ kinh tế giữa các bang với nhau. Tổng số lượng quan hệ kinh tế giữa các bang là số lượng cặp (u, v) với thành phố u, v thuộc 2 bang khác nhau và có mối quan hệ kinh tế với nhau</p>
+<p>Do đó nhiệm vụ được đặt ra là: Chia N thành phố thành K bang sao cho:</p>
+<ul>
+<li>Mỗi bang có số lượng thành phố bằng nhau</li>
+<li>Tổng số lượng quan hệ kinh tế giữa các bang là nhỏ nhất.</li>
+</ul>
+<ul>
+</ul>
+<h3>Input</h3>
+<ul>
+<li>Dòng 1: chứa 3 số nguyên dương <strong>N</strong> , <strong>M </strong>và <strong>K</strong> (1 ≤ <strong>N</strong> ≤ 500, 0 ≤ <strong>M</strong> ≤ <strong>N</strong> * (<strong>N</strong> - 1) / 2).</li>
+</ul>
+<ul>
+<li><strong>M</strong> dòng tiếp theo, mỗi dòng chứa 2 số nguyên <strong>u</strong> và <strong>v</strong> thể hiện có mối quan hệ kinh tế trực tiếp giữa <strong>u</strong> và <strong>v</strong><strong>.</strong></li>
+</ul>
+<h3>Output</h3>
+<ul>
+<li>Dòng 1: Tổng số lượng quan hệ kinh tế giữa các bang.</li>
+<li><strong>K </strong>dòng tiếp theo, dòng thứ i gồm N/K số nguyên dương là các thành phố thuộc bang thứ i</li>
+</ul>
+<h3>Chấm điểm</h3>
+<ul>
+<li>Trong quá trình thi, bài của bạn được chấm với 15% test. Sau khi kỳ  thi kết thúc, bài của bạn sẽ được chấm lại với toàn bộ 100% test.</li>
+<li>Cách tính điểm mỗi test:        
+<ul>
+<li>Gọi Tổng số lượng kinh tế giữa các bang của lời giải ban tổ chức là X</li>
+</ul>
+<ul>
+<li>Gọi Tổng số lượng kinh tế giữa các bang của lời giải bạn là Y</li>
+<li>Điểm của bạn nhận được là (X + 1) / (Y + 1)</li>
+</ul>
+</li>
+<li>Sau khi thi, điểm của bạn sẽ được tính lại theo % so với thí sinh cao điểm nhất.</li>
+<li>Các bạn không được phép nộp quá 20 lần, nếu bạn nộp quá 20 lần thì chúng mình sẽ không tính kết quả của bạn.</li>
+<li>Bạn được phép nộp bài nhiều lần, kết thúc kỳ thi điểm lần nộp bài cuối của bạn sẽ là điểm của bạn.</li>
+</ul>
+<p> </p>
+<ul>
+</ul>
+<ul>
+</ul>
+<h3>Example</h3>
+<p><strong>Input:</strong></p>
+<pre>6 10 3
+1 3
+1 4
+2 3
+2 4
+2 5
+2 6
+3 4
+3 5
+4 5
+4 6</pre>
+<p><strong>Output 1:</strong></p>
+<pre>9
+1 2
+3 4
+5 6</pre>
+<p><strong>Output 2:</strong></p>
+<pre>8
+1 4
+2 5
+3 6</pre>
+<p>Giả sử tổng số lượng kinh tế giữa các bang của ban tổ chức là 9:</p>
+<ul>
+<li>Với Output 1: Bạn được 1 điểm</li>
+<li>Với Output 2: Bạn được 1.11 điểm</li>
+</ul>
+</div>

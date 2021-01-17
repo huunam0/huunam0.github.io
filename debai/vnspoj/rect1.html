@@ -1,0 +1,31 @@
+<h2>RECT1 - Các hình chữ nhật</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274521/problem/R" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274521/problem/R </a><p>
+Cho N hình chữ nhật trên mặt phẳng. Các cạnh hình chữ nhật song song với các trục tọa độ. Những hình chữ nhật này có thể gối lên nhau, trùng hoặc là bên trong nhau. Đỉnh của chúng có tọa độ nguyên, hoành độ x không vượt quá xmax và tung độ y không vượt quá ymax.<br/>
+Một đoạn thẳng có một đầu là điểm A(0, 0) và đầu kia là điểm B. Điểm B thỏa mãn các điều kiện sau:<br/>
++) Các tọa độ của B là những số nguyên.<br/>
++) Điểm B thuộc đoạn [(0, ymax), (xmax, ymax)] hoặc đoạn [(xmax, 0), (xmax, ymax)].<br/>
+Viết chương trình tìm một điểm B sao cho đoạn AB cắt qua nhiều hình chữ nhật nhất. (AB cắt 1 hình chữ nhật khi chúng có ít nhất 1 điểm chung với nhau).
+</p><h3>Input</h3>
+<p>
+- Dòng đầu chứa 3 số nguyên xmax, ymax (0 &lt; xmax, ymax &lt; 10^9) và N (1 &lt;= N &lt;= 10000).<br/>
+- Mỗi dòng trong N dòng tiếp theo chứa 4 số nguyên: x1, y1, x2, y2. (x1, y1) là tọa độ đỉnh trái dưới, (x2, y2) là tọa độ đỉnh phải trên của hình chữ nhật tương ứng.
+</p><h3>Output</h3>
+<p>
+Dòng duy nhất ghi số lượng lớn nhất các hình chữ nhật cắt được.
+</p><h3>Example</h3>
+<pre>
+<b>Input:</b>
+22 14 8
+1 8 7 11
+18 10 20 12
+17 1 19 7
+12 2 16 3
+16 7 19 9
+8 4 12 11
+7 4 9 6
+10 5 11 6
+
+<b>Output:</b>
+5
+</pre>
+</div>

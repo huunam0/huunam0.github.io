@@ -1,0 +1,43 @@
+<div class="tm-box2">
+<div class="problem-name">
+    UH - Unhappy 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Thầy giáo CàiWinDạo cho n bạn học sinh làm bài kiểm tra trắc nghiệm gồm m câu hỏi. Mỗi câu trả lời đúng, học sinh được 2005 điểm. Hiệu trưởng Cuốm1999 sẽ kỉ luật thầy giáo CàiWinDạo nếu có một học sinh bất kì bị 0 điểm, và thầy giáo sẽ kém vui (unhappy). M câu hỏi kiểm tra trắc nghiệm chỉ có đáp án True hoặc False, và thầy giác CàiWinDạo biết câu trả lời của n học sinh cho từng câu hỏi. Thầy giáo cần các bạn tìm một đáp án cho m câu hỏi để không bạn học sinh nào được 0 điểm.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<p>Dòng đầu tiên gồm 2 số n và m lần lượt là số học sinh và số câu trắc nghiệm(m &lt;= 50 , n &lt;= 20000).</p>
+<p>N dòng tiếp theo, mỗi dòng chứa một dãy nhị phân độ dài m. Với mỗi học sinh i, bit j là 1 nếu đáp án của học sinh i cho câu hỏi thứ j là True, và là 0 nếu ngược lại.</p>
+<p><strong>Dữ liệu ra</strong></p>
+<p>Một đáp án <strong>bất kỳ</strong> cho m câu hỏi để đảm bảo không có bạn học sinh nào bị 0 điểm. Đáp án được đưa ra dưới dạng dãy nhị phân độ dài m. Bit j là 1 nếu kết quả của câu hỏi thứ j là True và 0 nếu ngược lại. Hoặc in ra "LN" nếu không tồn tại đáp án.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p> </p>
+<p><strong>Input</strong></p>
+<p>3 4</p>
+<p>0000</p>
+<p>0001</p>
+<p>1000</p>
+<p><strong>Output</strong></p>
+<p>0000</p>
+<p><strong>Giải thích</strong></p>
+<p>Một vài đáp án hợp lý 0000 , 0001, 1000, 1110, ...</p>
+<p>Nếu chọn đáp án 0000, học sinh thứ nhất được 2005 * 4 điểm, học sinh thứ 2 được 2005*3 điểm và học sinh thứ 3 được 2005*3 điểm.</p>
+<p>Nếu chọn đáp án 1110, học sinh thứ nhất được 2005 điểm, học sinh thứ 2 được 2005 điểm và học sinh thứ 3 được 2005 * 2 điểm.</p>
+</div>
+</div>

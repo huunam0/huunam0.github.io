@@ -1,0 +1,49 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    BUS2 - Xe khách 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 6.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">      Thành phố Y có hệ thống giao thông gồm n đường ngang và m đường dọc chạy 2 chiều. Các đường ngang được đánh số từ 1 đến n từ trên xuống dưới và đường dọc được đánh số từ 1 đến m từ trái sang phải. Các đường ngang và đường dọc cắt nhau tạo thành n x m giao lộ (ngã hai, ngã ba, ngã tư) như hình bên dưới. Tại các giao lộ (kể cả ngã hai) đều có bố trí đèn giao thông gồm hai màu xanh đỏ. Đèn xanh là được đi và đèn đỏ là đứng lại. Điểm đặc biệt của đèn ở đây là khi đèn đỏ thì xe ở cả bốn hướng đều phải dừng lại chờ, khi đèn xanh thì xe ở bốn hướng đều được đi (thẳng, rẽ trái, rẽ phải đều được). Cứ sau mỗi 1 phút thì đèn sẽ chuyển từ xanh sang đỏ và ngược lại.</p>
+<p style="text-align:center"><img alt="" src="images/BUS2.png" style="height:144px; width:248px"/></p>
+<p style="text-align:justify">       Một chiếc xe khách muốn vào thành phố ở giao lộ (1,1) và ra khỏi thành phố ở giao lộ (n, m).  Thời gian để xe khách di chuyển từ một giao lộ đến giao lộ kế cận là 1 phút. Khi xe vừa trờ tới một giao lộ thì lúc đó đèn cũng chuyển màu, nếu là màu xanh thì xe tiếp tục đi, nếu là màu đỏ thì xe phải dừng lại chờ 1 phút để chuyển xanh thì mới được đi tiếp. Bạn hãy tính xem thời gian nhanh nhất để xe đi ra khỏi thành phố là bao nhiêu nhé.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên là hai số nguyên n và m (2 ≤ n, m ≤ 1000)</p>
+<p>- Trong n dòng tiếp theo, tại dòng thứ i gồm m số nguyên a<sub>ij</sub> là tình trạng đèn tại thời điểm xe bắt đầu vào thành phố: a<sub>ij</sub> = 1 nghĩa là tại giao lộ (i, j) có đèn màu xanh, a<sub>ij</sub> = 0 là có đèn màu đỏ.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là một số nguyên xác định số phút sớm nhất mà xe ra khỏi thành phố.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 5<br/>0 0 0 0 0<br/>0 0 0 0 0<br/>0 0 0 0 0</div>
+<div class="sample-type">output</div>
+<div class="sample-value">13</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 5<br/>1 0 0 0 0<br/>0 0 0 0 0<br/>1 0 1 0 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">6</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Test 1: Đi theo hướng (1, 1) -&gt; (1, 5) -&gt; (3, 5)</p>
+<p>Khi xe đến mỗi giao lộ thì đèn đều màu đỏ nên phải chờ ở tất cả 7 đèn tốn 7 phút. Cộng thêm thời gian di chuyển là 6 phút. Tổng cộng 13 phút.</p>
+<p>Test 2: Đi theo hướng (1, 1) -&gt; (3, 1) -&gt; (3, 5)</p>
+<p>Khi xe đến mỗi giao lộ thì đèn đều màu xanh nên không phải chờ đèn nào. Chỉ tính thời gian di chuyển là 6 phút.</p>
+</div>
+</div></body></html>

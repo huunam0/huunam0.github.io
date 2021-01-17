@@ -1,0 +1,28 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Xóa xâu</h2>
+</div><div class="content-description screen">
+<div><p>Cho xâu ký tự \(S\) chỉ gồm các chữ cái latin in thường. Mỗi lần thực hiện, bạn được phép xóa một hoặc một dãy ký tự liên tiếp giống nhau khỏi xâu. Đối với xâu thu được sau khi ta lại có thể thực hiện phép xóa nói trên. Quá trình sẽ được tiếp tục như vậy cho đến khi thu được xâu rỗng.</p>
+<p>Ví dụ: Cho xâu \(S = “aabbbacaa”\), ta có thể thực hiện xóa như sau (ở mỗi bước các ký tự được gạch dưới sẽ được xóa để thu được xâu tiếp theo):</p>
+<p>\(aabbb \underline{a}caa \rightarrow aa \underline{bbb}caa   \rightarrow \underline{aa}caa \rightarrow \underline{c}aa   \rightarrow \underline{aa} \rightarrow “”\)</p>
+<p>Cách xóa này đòi hỏi 5 lần thực hiện phép xóa. Cách xóa sau đây đòi hỏi 3 lần thực hiện xóa:</p>
+<p>\(aabbba\underline{c}aa \rightarrow  aa\underline{bbb}aaa \rightarrow  \underline{aaaaa} \rightarrow “”\)</p>
+<p><strong>Yêu cầu</strong>: Hãy xác định cách xóa đòi hỏi ít lần thực hiện phép xóa nhất.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa số nguyên \(n\) là độ dài của xâu \(S\) (\(1 &lt; n &lt; 1000\));</li>
+<li>Dòng thứ hai chứa xâu \(S\) gồm \(n\) ký tự, mỗi ký tự chỉ là chữ cái latin in thường (từ <code>a</code> đến <code>z</code>).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra môt số nguyên là số phép xóa ít nhất cần thực hiện để xóa được tất cả các ký tự của xâu đã cho.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>9   
+aabbbacaa</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>3</code></pre>
+<hr/>
+<p><em>Nguồn: Thầy Nghĩa '18</em></p>
+</div>
+<hr/>
+</div>

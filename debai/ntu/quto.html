@@ -1,0 +1,55 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    QUTO - Quân Tốt cờ tướng 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p><span style="color:#FF0000">(Post giúp </span><u><a href="http://laptrinh.ntu.edu.vn/Coder/Details/VietNamVoDich"><span style="color:#FF0000">VietNamVoDich</span></a></u><span style="color:#FF0000">)</span></p>
+<p>Cho bàn cờ tướng với một dòng sông như hình vẽ. Khác với cờ Vua, trong cờ Tướng, các quân cờ không được đặt ở giữa các ô vuông mà được đặt ở giữa các đường kẻ ngang và dọc.</p>
+<p style="text-align:center"><img alt="" src="images/QUTO.png" style="height:370px; width:360px"/></p>
+<p>Trong cờ tướng, quân Tốt là quân di chuyển từng ô một tiến về phía trước, không đi lùi. Sau khi sang sông, quân Tốt có thể đi sang trái một ô, sang phải một ô hoặc tiến về trước một ô. Ban đầu, có 5 vị trí đặt quân Tốt là A, B, C, D, E như hình vẽ.</p>
+<p><strong>Yêu cầu:</strong> Giả sử có một quân địch đang ở vị trí (y, x), dòng y cột x. Hỏi quân tốt nào có thể đi tiêu diệt quân địch nhanh nhất (số bước di chuyển đến vị trí quân địch ít nhất).</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Là hai số nguyên y, x, mỗi số cách nhau một khoảng trắng (0 ≤ y ≤ 9 và 0 ≤ x ≤ 8), dữ liệu cho đảm bảo quân địch không nằm ở vị trí nào của 5 quân tốt.</p>
+<p><strong>Dữ liệu xuất: </strong>gồm 2 dòng:</p>
+<p>Nếu có quân Tốt tiêu diệt được quân địch, in ra 2 dòng:</p>
+<p>- Dòng 1: Số bước đi ngắn nhất đến vị trí quân địch.</p>
+<p>- Dòng 2: quân Tốt nào trong 5 quân tốt A, B, C, D, E đến vị trí đó (nếu có hai quân Tốt có số bước bằng nhau thì in ra quân Tốt bất kỳ)</p>
+<p>Nếu không có quân Tốt nào đến được vị trí quân địch, in ra -1.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">7 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">5<br/>A</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">9 8</div>
+<div class="sample-type">output</div>
+<div class="sample-value">6<br/>E</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">1 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">-1</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

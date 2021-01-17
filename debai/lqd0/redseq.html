@@ -1,0 +1,82 @@
+<div class="tm-box2">
+<div class="problem-name">
+    REDSEQ - Dãy số rút gọn 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"><span style="font-size:14px">Một dãy số có thể được biểu diễn bởi một mẫu rút gọn theo nhiều cách. Trong bài toán này ta quan tâm đến các dãy số với các phần tử được sắp xếp tăng dần và có hiệu bằng nhau của hai phần tử liên tiếp bất kỳ trong dãy. Khi đó mẫu rút gọn bao gồm ba thành phần: phần tử nhỏ nhất, phần tử lớn nhất và hiệu của hai phần tử liên tiếp. Ví dụ dãy số L = {10, 13, 16, 19, 22} được biểu diễn bởi mẫu rút gọn L = 10 − 22/3. </span></p>
+<p style="text-align:justify"><span style="font-size:14px">Cho N dãy, mỗi dãy có tên gọi được ký hiệu bởi một chữ cái viết hoa trong bảng chữ cái tiếng Anh, các dãy số có thể được tính toán trong một biểu thức bởi các toán tử và ký hiệu sau: </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">• các ký tự tương ứng với các dãy số đã cho;<br/>
+• các dấu ngoặc;<br/>
+• toán tử hợp hai dãy số, ký hiệu bởi ‘+’. Ta gọi hợp của 2 dãy <em>A</em> và <em>B</em> là tập tất cả các số có trong <em>A</em> và <em>B</em>. Ví dụ: <em>A</em> = {4, 8, 12, 16}, <em>B</em> = {11, 14, 17, 20, 23}, <em>A + B</em> = {4, 8, 11, 12, 14, 16, 17, 20, 23};<br/>
+• toán tử giao giữa hai dãy số, ký hiệu bởi dấu ‘*’. Ta gọi hợp của 2 dãy <em>A</em> và <em>B</em> là tập tất cả các số xuất hiện trong cả <em>A</em> và <em>B</em>. Ví dụ: <em>A</em> = {2, 3, 4, 5, 6, 7}, <em>B</em> = {1, 2, 3, 4, 5}, <em>A ∗ B</em> = {2, 3, 4, 5}. Biết rằng thứ tự ưu tiên tính toán trong biểu thức là: dấu ngoặc rồi đến toán tử giao ‘*’ rồi đến toán tử hợp ‘+’. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Yêu cầu:</strong> Cho biết mẫu rút gọn của mỗi dãy số và một biểu thức, hãy cho biết dãy số là kết quả tính toán biểu thức đó. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Dữ liệu vào </strong></span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">• Dòng đầu tiên chứa một số nguyên <em>N</em> là số lượng dãy số;<br/>
+• Mỗi dòng trong số <em>N</em> dòng tiếp theo là mô tả mẫu rút gọn của một dãy số;<br/>
+• Dòng thứ <em>N</em> + 2 mô tả biểu thức cần tính. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Kết quả </strong></span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">• Dòng đầu tiên chứa một số nguyên là số lượng phần tử của dãy số kết quả tìm được;<br/>
+• Dòng thứ hai ghi ra các phần tử được sắp xếp tăng dần của dãy số đó, cách nhau bởi dấu cách.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">3<br/>
+A=2-8/2<br/>
+C=11-23/3<br/>
+B=4-16/4<br/>
+A*(B+C)</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">2<br/>
+4 8</p>
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">3<br/>
+A=2-7/1<br/>
+B=1-5/1<br/>
+C=3-9/3<br/>
+B*A+A*C</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">5<br/>
+2 3 4 5 6</p>
+<p style="text-align: justify;"><em><strong><span style="font-size:14px">Giải thích </span></strong></em></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">• Trong ví dụ thứ nhất, các dãy số là:<br/>
+A = {2, 4, 6, 8}<br/>
+B = {4, 8, 12, 16}<br/>
+C = {11, 14, 17, 20, 23}<br/>
+Biểu thức được tính toán như sau:<br/>
+B + C = {4, 8, 11, 12, 14, 16, 17, 20, 23} và<br/>
+A ∗ (B + C) = 4, 8 </span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">• Trong ví dụ thứ hai, các dãy số là:<br/>
+A = {2, 3, 4, 5, 6, 7}<br/>
+B = {1, 2, 3, 4, 5}<br/>
+C = {3, 6, 9}<br/>
+Biểu thức được tính toán như sau:<br/>
+B ∗ A = {2, 3, 4, 5},<br/>
+A ∗ C = {3, 6}, và<br/>
+B ∗ A + A ∗ C = {2, 3, 4, 5, 6} </span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Hạn chế </span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">• 1 &lt; <em>N</em> ≤ 16;<br/>
+• Các phần tử trong dãy là các số nguyên trong khoảng từ 0 đến 10<sup>9</sup> ;<br/>
+• Số lượng phần tử trong một dãy không quá 10000;<br/>
+• Số lượng các ký tự trong một biểu thức trong khoảng từ 3 đến 1000;<br/>
+• Các mẫu rút gọn trong dữ liệu vào không có dấu cách giữa các ký tự;<br/>
+• Dữ liệu đảm bảo dãy số kết quả không phải là dãy rỗng.</span></p>
+<hr/>
+<p><em>Nguồn: ĐPT '1819</em></p>
+</div>
+</div>

@@ -1,0 +1,45 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Ma trận ngọc (Chọn ĐT'20-21)</h2>
+</div><div class="content-description screen">
+<div><p>Sau khi rời khỏi khu cầu trượt, Ngọc đến với ma trận bí ẩn. Ma trận kích thước \(m * n\), các hàng được đánh số từ 1 đến \(m\) và các cột được đánh số từ 1 đến \(n\). Ở trong ma trận có một cái hồ, cái hồ sẽ trải dài trong hình chữ nhật con của trận có góc trái trên là (\(h_1,c_1\)) và góc phải dưới là (\(h_2,c_2\)). Ngọc sẽ di chuyển từ ô (1, 1), vì bản chất ngại di chuyển, Ngọc sẽ chỉ đi xuống ô bên dưới hoặc đi qua ô bên phải (từ ô (\(i,j\)) Ngọc sẽ chọn đi ô đến ô (\(i +1,j\)) hoặc (\(i,j + 1\))). Dù ngại di chuyển nhưng lại tò mò, Ngọc muốn tính xem có bao nhiêu lộ trình khác nhau để di chuyển từ ô (1,1) đến ô (\(m,n\)) thông qua cách đi đã nêu trên.</p>
+<p>Đảm bảo rằng cái hồ sẽ không chứa 2 ô (1,1) và (\(m,n\)). Vì số lộ trình là quá lớn, các bạn hãy chia dư \(10^9  + 7\) trước khi đưa cho Ngọc nhé.</p>
+<p><strong>Yêu cầu</strong>: In ra số lộ trình sau khi \(\mod\ 10^9+7\)</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên là số tự nhiên \(m\) và \(n\) (\(1 ≤ n,m ≤ 10^5\)) là kích thước của ma trận</li>
+<li>Dòng thứ hai chứa 4  nguyên dương \(h_1,c_1,h_2,c_2\) (\(1≤ h_1  ≤ h_2  ≤ m ,1≤ c_1  ≤ c_2  ≤ n\)) là góc trái trên và phải dưới của cái hồ.</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra một số nguyên duy nhất - số cách chia.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>3 4
+2 2 2 3</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>2</code></pre>
+<p><strong>Sample input</strong></p>
+<pre><code>1 5
+2 2 2 2</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>0</code></pre>
+<p><strong><em>Giải thích:</em></strong>
+Ở ví dụ 1, ma trận có dạng sau</p>
+<pre><code>0000
+0110
+0000</code></pre>
+<p>Có 2 lộ trình, đi từ \((1, 1) → (1, 2) → (1, 3) → (1, 4) → (2, 4) → (3, 4)\) hoặc \((1, 1) → (2, 1) → (3, 1) → (3, 2) → (3, 3) → (3, 4)\).</p>
+<p>Ở ví dụ 2, ma trận có dạng sau</p>
+<pre><code>01000</code></pre>
+<p>Rõ ràng không có cách đi nào mà không đi qua hồ.</p>
+<p><strong><em>Ràng buộc:</em></strong></p>
+<ul>
+<li>20% điểm ứng với \(1 ≤ m ,n ≤ 10^3\)</li>
+<li>30%  điểm ứng với trường hợp \(h_1= h_2,c_1  = c_2 và 1 ≤ m ,n ≤ 10^5\)</li>
+<li>50%  điểm còn lại ứng không có thêm dữ kiện nào cả.</li>
+</ul>
+<hr/>
+<p><em>Nguồn: Bài 2 Chọn ĐT HSG TP.ĐN 2020-2021</em></p>
+</div>
+<hr/>
+</div>

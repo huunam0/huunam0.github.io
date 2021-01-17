@@ -1,0 +1,39 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    STONE - Trò chơi bốc đá 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Hôm nay không mưa nên Nam quyết định sang nhà An chơi. Trong sân nhà An có một đống đá rất to. Hai đứa mới nghĩ ra một trò chơi như sau: lần lượt mỗi đứa bốc ra một số lượng đá nhất định. Đứa nào bốc ra viên đá cuối cùng thì thắng. Đứa nào thắng thì đập vêu mỏ đứa kia (*ách).</p>
+<p>Tuy nhiên, mỗi lần bốc thì chỉ được bốc ra 1, hoăc 2, hoặc 4, hoặc 8, hoặc 2<sup>i</sup> viên đá thôi nhé. Chứ không phải muốn bốc bao nhiêu là bốc đâu à. Vậy, nếu chơi trước thì Nam nên bốc ra bao nhiêu viên để đảm bảo chiến thắng?</p>
+<p><strong><u>Input:</u></strong> n (số nguyên dương không quá <span style="color:#FF0000">10<sup>21</sup></span> thể hiện tổng số viên đá)</p>
+<p><strong><u>Output:</u></strong> x (số nguyên thể hiện số viên đá Nam nên bốc ra khi chơi trước, -1 nếu chơi sao cũng thua) <span style="color:#FF0000">Nếu có nhiều đáp án thì in ra đáp án nhỏ nhất (haha)</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">8</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Ban đầu có 8 viên đá. Nếu Nam bốc hết 8 thì thắng luôn. Nhưng mà vì bốc 2 viên cũng thắng nên đáp án sẽ là 2. Cụ thể, bốc 2 còn 6 nên An có thể bốc 1, 2 hoặc 4.</p>
+<p>Nếu An bốc 1: Còn 5, Nam bốc 2, còn 3. Lúc này An bốc 1 hay 2 đều thua cả.</p>
+<p>Nếu An bốc 2: Còn 4, Nam bốc 4 win luôn.</p>
+<p>Nếu An bốc 4: Còn 2, Nam bốc 2 win luôn.</p>
+</div>
+</div></body></html>

@@ -1,0 +1,42 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    AGEGAME - Trò chơi đoán tuổi 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Việt và Nam cùng chơi trò đoán tuổi, lần này Việt phải đoán tuổi mà Nam chọn. Việt biết rằng số tuổi đó là số nguyên nằm trong đoạn [1; n]. Để dễ dàng hơn, mỗi khi Việt đưa ra một số x (1 &lt;= x &lt;= n) và cho rằng đó là tuổi Nam chọn thì Nam sẽ cho Việt biết ước chung lớn nhất của x và tuổi mà Nam chọn.</p>
+<p>Ví dụ với n = 6, Việt đoán x = 3, Nam trả lời rằng ước chung lớn nhất của x và tuổi Nam chọn là 1, nghĩa là tuổi Nam chọn không thể là 3 hoặc 6. Việt tiếp tục đoán x = 2, Nam trả lời là 2, nghĩa là tuổi Nam chọn không thể là 1 hoặc 5. Việt tiếp tục đoán x = 4, Nam trả lời là 2, từ đây có thể đoán được tuổi Nam chọn là 2, trò chơi kết thúc.</p>
+<p>Trong ví dụ trên, để tìm ra đáp án, Việt phải đoán 3 lần. Tuy nhiên có thể tìm ra đáp án chỉ với 2 lần đoán, đó là:</p>
+<p>- Việt đoán x = 6, nếu Nam trả lời là 1 thì Việt sẽ đoán tiếp x = 1 hoặc x = 5, nếu Nam trả lời là 2 thì Việt sẽ đoán tiếp x = 2 hoặc x = 4, nếu Nam trả lời là 3 hoặc 6 thì đáp án chính là 3 hoặc 6, như vậy chỉ cần tối đa 2 lần đoán.</p>
+<p>Bài toán đặt ra là với một số n cho trước, hãy tìm số lần đoán ít nhất để tìm ra đáp án của Việt.</p>
+<p> </p>
+<p><strong>Input</strong></p>
+<p>Gồm số nguyên dương <strong>n</strong> (2 &lt;= <strong>n</strong> &lt;= 10^4)</p>
+<p><strong>Output</strong></p>
+<p>Số lần đoán ít nhất để tìm ra đáp án của Việt.</p>
+<p> </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">6<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

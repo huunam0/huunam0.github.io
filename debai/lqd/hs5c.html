@@ -1,0 +1,40 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Vua Mật Mã</h2>
+</div><div class="content-description screen">
+<div><p>Sau khi đả bại sứa xanh <span class="rating rate-newbie admin"><a href="/user/justys">justys</a></span>, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> hiện đang đối mặt với vua mật mã <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span>. <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span> cho <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> tên người yêu cũ thứ 96 của mình, và muốn <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> tìm một xâu kí tự có thứ tự từ điển nhỏ nhất và không nhỏ hơn tên người yêu cũ của <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span>. Tuy nhiên, vì căm ghét người yêu cũ, <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span> muốn <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> chỉ sử dụng không quá \(cnt_{c}\) kí tự \(c\). Đương nhiên <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đã đưa ra câu trả lời trong 6ms. Các bạn hãy thử sức giải câu đố của vua mật mã <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span> nhé.</p>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa 1 số nguyên dương \(n \ (n \leq 10^{3})\) là độ dài tên người yêu cũ của vua mật mã.</p>
+<p>Dòng tiếp theo một xâu kí tự \(S\) là tên người yêu cũ của <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span>, tên chỉ chứa các kí tự la tinh thường.</p>
+<p>Dòng tiếp theo chứa 26 số \(cnt_{c_{i}}\), \(c_{i}\) là kí tự la tinh thường thứ \(i\), \(cnt_{c}\) là số kí tự \(c\) tối đa mà <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> được phép sử dụng.</p>
+<h4>Output</h4>
+<p>In ra một xâu kí tự thoả mãn yêu cầu của vua mật mã <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span>. In ra \(-1\) nếu không có xâu kí tự thoả mãn.</p>
+<h4>Sample Input 1</h4>
+<pre><code>2
+aa
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>ab</code></pre>
+<h4>Sample Input 2</h4>
+<pre><code>10
+amideptrai
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1</code></pre>
+<h4>Sample Output 2</h4>
+<pre><code>az</code></pre>
+<h4>Sample Input 3</h4>
+<pre><code>10
+amideptrai
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</code></pre>
+<h4>Sample Output 2</h4>
+<pre><code>-1</code></pre>
+<h4>Giải thích</h4>
+<p>Ở ví dụ 1, mỗi kí tự chỉ được dùng 1 lần, riêng kí tự \(u\) được dùng 2 lần. Một số xâu thoả mãn là \(amisuper\), \(amibest\) , \(amiop\) , \(cuomngu\) , \(cuomnguthe\) , \(cuomgathiesu\), \(ab\). Xâu \(ab\) có thứ tự từ điển nhỏ nhất  và lớn hơn xâu \(aa\).</p>
+<p>Ở ví dụ 2, kí tự a được dùng 1 lần, kí tự z được dùng 1 lần. Các xâu thoả mãn là \(a\) , \(az\) , \(z\) , \(za\). Xâu \(az\) có thứ tự từ điển nhỏ nhất  và lớn hơn xâu \(amideptrai\). Lưu ý rằng \(a\) có thứ tự từ điểm nhỏ hơn \(amideptrai\) nên không hợp lệ.</p>
+<p>Ở ví dụ 3, kí tự a được dùng 1 lần, do đó chỉ có 1 xâu thoả mãn là \(a\). Xâu này có thứ tự từ điển nhỏ hơn \(amideptrai\), do đó không hợp lệ</p>
+<h4>Giới hạn</h4>
+<p>\(10\)% test có \(n \leq 20 \), \(cnt_{c_{i}} \leq 10^{5}\)</p>
+<p>\(20\)% test có \(n \leq 1000\), \(\Sigma cnt_{c_{i}} \leq 10 \)</p>
+<p>\(20\)% test có \(n \leq 1000\), \(cnt_{c_{i}} \leq 10^9 \) và vua mật mã chỉ cho phép sử dụng tối đa 2 kí tự.</p>
+<p>\(50\)% test có \(n \leq 10^{3} \), \(cnt_{c_{i}} \leq 10^{9}\)</p>
+</div>
+<hr/>
+</div>

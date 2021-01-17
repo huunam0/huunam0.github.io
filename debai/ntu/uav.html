@@ -1,0 +1,42 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    UAV - 30-4-11-2016 Bài 3 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Một cuộc đua dành cho các máy bay không người lái thông minh (UAV cỡ nhỏ) được tổ chức trên một đường băng dài gồm N vạch cách đều nhau, vạch cách vạch 10 mét. Các vạch được đánh số từ 1 đến N. Trên mỗi vạch đều có đặt một bộ cảm biến có nhiệm vụ gửi về Trung tâm điều khiển (TTĐK) của Ban tổ chức cuộc thi (BTC) số hiệu của vạch khi UAV đứng hay hạ cánh tại vạch này. Cuộc đua cho mỗi UAV được tiến hành như sau: UAV vào đứng tại vạch 1, có thời gian một giây để nạp dữ liệu mà BTC cung cấp. Dữ liệu gồm một số nguyên dương L và N số nguyên Xi (i = 1,..., N) với ý nghĩa: Xi là giá trị của vạch i. Ngay sau đó, UAV phải thực hiện hành trình bằng cách liên tục di chuyển như sau: </p>
+<p>Trong hành trình lượt đi, UAV (đứng tại vạch 1) cần bay đến được vạch N theo quy tắc: nếu đang đứng tại vạch i (1 ≤ i &lt; N) thì nó sẽ chỉ được phép hạ cánh tại vạch j (j &gt; i) mà Xj lẻ (ấn 3 định rằng XN =1001) đồng thời vạch j cách vạch i không quá L vạch (tức là, 1 ≤ j - i ≤ L). Tổng số lần UAV đứng hay hạ cánh trong hành trình lượt đi, bao gồm cả tại vạch 1 và vạch N, được ký hiệu bởi U. </p>
+<p>Trong hành trình lượt về, bắt đầu với số điểm được BTC cung cấp bằng XN = 1001, UAV từ vạch N bay tiếp về vạch 1 theo quy tắc: Nếu đang đứng ở vạch i (1 &lt; i ≤ N) thì nó sẽ chỉ được phép hạ cánh tại vạch k (k &lt; i) mà Xk chẵn (ấn định rằng X1 = 1000). UAV sẽ nhận được thêm Xk điểm nếu vạch k cách vạch i đúng L vạch (tức là, i - k = L) và bị trừ Xk điểm trong trường hợp trái lại. Tổng số điểm mà UAV thu được trong hành trình lượt về, được ký hiệu bởi V.</p>
+<p><strong>Lưu ý: </strong></p>
+<p>          Các UAV được lập trình sẵn để tiếp nhận và xử lý dữ liệu của BTC rồi tự động thực hiện toàn bộ hành trình (lượt đi và về). </p>
+<p>           Dữ liệu mà BTC đưa ra luôn đảm bảo để các UAV có thể thực hiện được cuộc đua. </p>
+<p><strong>Dữ liệu:</strong> Vào từ file văn bản UAV.INP có cấu trúc: </p>
+<p>             Dòng đầu ghi số nguyên L (10 ≤ L ≤ 100). </p>
+<p>             Dòng thứ hai ghi số nguyên N (L &lt; N ≤ 500000). </p>
+<p>             Dòng thứ ba ghi lần lượt các số nguyên X2,..., XN-1 (0 ≤ Xi ≤ 106, i = 2,..., N-1). Các số cách nhau bởi dấu cách</p>
+<p><strong>Yêu cầu:</strong> Hãy lập trình cho UAV để nó đạt được giá trị nhỏ nhất của U và lớn nhất của V.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">10<br/>19<br/>6 3 15 2 30 7 8 6 10 2 4 9 9 15 0 18 10<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">4<br/>1999</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

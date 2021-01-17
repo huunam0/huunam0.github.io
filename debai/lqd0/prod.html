@@ -1,0 +1,50 @@
+<div class="tm-box2">
+<div class="problem-name">
+    PROD - Tích lớn nhất  
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;"><span style="font-size:14px">Cho 𝑘 ma trận có cùng kích thước 𝑚 ∗ 𝑛 (𝑚 hàng, 𝑛 cột). Các ma trận được đánh số từ 1 tới 𝑘. Các hàng của ma trận được đánh số từ 1 tới 𝑚 từ trên xuống dưới, các cột của ma trận được đánh số từ 1 tới 𝑛 từ trái qua phải. Phần tử nằm ở hàng 𝑖 (1 ≤ 𝑖 ≤ 𝑚), cột 𝑗 (1 ≤ 𝑗 ≤ 𝑛) của ma trận thứ 𝑡 (1 ≤ 𝑡 ≤ 𝑘) là một số nguyên, được ký hiệu là 𝑎<sub>𝑡</sub>(𝑖,𝑗). </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Yêu cầu</strong>: Hãy xác định giá trị lớn nhất của tích sau: </span></p>
+<p style="text-align: justify;"><span style="font-size:14px">𝑆 = 𝑎<sub>𝑡</sub> (𝑥, 𝑦) × 𝑎<sub>𝑡</sub> (𝑥, 𝑣) × 𝑎<sub>𝑡</sub> (𝑢, 𝑦) × 𝑎<sub>𝑡</sub> (𝑢, 𝑣) × 𝑎<sub>𝑡′</sub> (𝑥, 𝑦) × 𝑎<sub>𝑡′</sub> (𝑥, 𝑣) × 𝑎<sub>𝑡′</sub> (𝑢, 𝑦) × 𝑎<sub>𝑡′</sub> (𝑢, 𝑣) </span></p>
+<p style="text-align: justify;"><span style="font-size:14px">trong đó 𝑡,𝑡′, 𝑥, 𝑦, 𝑢, 𝑣 là các số nguyên bất kỳ thỏa mãn: 1 ≤ 𝑡 &lt; 𝑡′ ≤ 𝑘, 1 ≤ 𝑥 &lt; 𝑢 ≤ 𝑚, 1 ≤ 𝑦 &lt; 𝑣 ≤ 𝑛. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Dữ liệu</strong>: </span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">- Dòng đầu chứa ba số nguyên 𝑘, 𝑚, 𝑛 (𝑘, 𝑚, 𝑛 ≥ 2).<br/>
+- 𝑘 nhóm dòng sau mô tả 𝑘 ma trận. Nhóm dòng thứ 𝑡 (1 ≤ 𝑡 ≤ 𝑘) gồm 𝑚 dòng, dòng thứ 𝑖 (1 ≤ 𝑖 ≤ 𝑚) gồm 𝑛 số nguyên 𝑎<sub>𝑡</sub>(𝑖, 1), 𝑎<sub>𝑡</sub>(𝑖, 2), … , 𝑎<sub>𝑡</sub>(𝑖, 𝑛) cách nhau bởi dấu cách. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Kết quả</strong>: </span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Ghi ra một nguyên duy nhất là giá trị lớn nhất của 𝑆. </span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="text-align: justify; margin-left: 40px;">2 3 3<br/>
+1 2 1<br/>
+1 2 1<br/>
+1 1 1<br/>
+4 1 2<br/>
+4 1 1<br/>
+2 3 1</p>
+<p><strong>Output</strong></p>
+<p style="margin-left: 40px;">64</p>
+<p><strong>Giới hạn</strong> </p>
+<p style="margin-left: 40px;">- Có 30% số test có 𝑚, 𝑛 ≤ 10; 𝑘 ≤ 10; 0 &lt; 𝑎<sub>𝑡</sub>(𝑖,𝑗) ≤ 10;<br/>
+- Có 30% số test khác có 𝑚, 𝑛 ≤ 10; 𝑘 ≤ 1000; 0 &lt; 𝑎<sub>𝑡</sub> (𝑖,𝑗) ≤ 100;<br/>
+- Có 40% số test còn lại có 𝑚, 𝑛 ≤ 10, 𝑘 ≤ 1000; 0 &lt; |𝑎<sub>𝑡</sub> (𝑖,𝑗)| ≤ 1000;</p>
+<hr/>
+<p><em>Nguồn: 3D '1819</em></p>
+</div>
+</div>

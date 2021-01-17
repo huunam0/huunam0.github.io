@@ -1,0 +1,41 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Giải thoát</h2>
+</div><div class="content-description screen">
+<div><p>Một thiết bị thăm dò điều khiển từ xa được thả xuống khảo sát mặt đáy của một bể hóa chất hình
+chữ nhật kích thước \(n×m\) ô vuông. Thiết bị có thể được điều khiển để đi từ một ô sang ô kề cạnh.
+Trục chuyển động theo chiều ngang (sang ô cùng hàng) được kết nối với thiết bị làm lạnh, cứ mỗi
+lần di chuyển sang ô kề cạnh cùng hàng nhiệt độ bên trong thiết bị giảm đi 1. Trục chuyển động
+theo chiều dọc (sang ô cùng cột) được gắn với thiết bị làm nóng, cứ mỗi lần di chuyển sang ô kề
+cạnh cùng cột nhiệt độ bên trong thiết bị tăng thêm 1.</p>
+<p>Sau khi hoàn thành nhiệm vụ khảo sát thiết bị đang ở ô được đánh dấu là <code>s</code>. Thật không may ống
+hút đưa thiết bị lên trên bị kẹt và chỉ có thể thu hồi thiết bị khảo sát nếu nó ở ô được đánh dấu <code>f</code>.
+Ngoài ra, khi đưa lên thiết bị cần có nhiệt độ gần 0 nhất có thể.</p>
+<p>Tình trạng đáy của bể hóa chất được xác định bởi bản đồ \(B\) kích thước \(n×m\). \(B_{i,j}\) được đánh dấu
+<code>.</code> nếu là ô trống và thiết bị thăm dò có thể đi qua. Nếu ô (\(i, j\)) có vật cản, không thể đi vào thì
+\(B_{i,j}\) được đánh dấu là <code>#</code>. Tồn tại một ô được đánh dấu <code>s</code> và một ô khác – đánh dấu <code>f</code>.</p>
+<p>Hãy xác định chênh lệch nhiệt độ tối thiểu (so với 0) thiết bị thăm dò có thể đạt được khi thoát ra
+khỏi bể.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa 2 số nguyên \(n\) và \(m\) (\(1 ≤ n, m ≤ 1000\)),</li>
+<li>Dòng thứ \(i\) trong \(n\) dòng sau chứa xâu độ dài \(m\) chứa các ký tự đã nêu, mô tả dòng thứ \(i\)
+của bản đồ \(B\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Đưa ra một số nguyên – chênh lệch nhiệt độ tối thiể có thể
+đạt được. Nếu không thể cứu được thiết bị thì đưa ra số -1.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>4 3
+..f
+..#
+s##
+...</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>0</code></pre>
+<hr/>
+<p><em>Nguồn: Thầy Tùng</em></p>
+</div>
+<hr/>
+</div>

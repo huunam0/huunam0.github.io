@@ -1,0 +1,69 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    PHASO - Phân số (ACMVN 9-2014) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Một phân số khi viết dưới dạng số thực thì nó sẽ là một số thập phân hữu hạn hay một số thập phân vô hạn tuần hoàn. Khi biểu diễn một số thập phân vô hạn tuần hoàn, người ta dùng cặp dấu ngoặc để đánh dấu phần thập phân tuần hoàn (phần được lặp lại với số lần lặp không xác định). Ví dụ:</p>
+<p><sup>             1</sup>/<sub>6</sub> = 0.1666666... = 0.1(6) = 0.1666(6) = 0.166(66)</p>
+<p>Cả ba 0.1(6) hoặc 0.1666(6) hoặc 0.166(66) đều là biểu diễn đúng của phân số 1/6. Cho một biểu diễn số thập phân hữu hạn hay vô hạn tuần hoàn, bạn hãy tìm phân số tối giản tương ứng.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Là một chuỗi biểu diễn số thập phân hữu hạn hay vô hạn tuần hoàn, chiều dài chuỗi tối đa là 15. Số liệu cho đảm bảo là một biểu diễn đúng.</p>
+<p><strong>Dữ liệu xuất: </strong></p>
+<p>- Gồm tử số và mẫu số của phân số tối giản tương ứng, hai số cách nhau bởi một dấu /</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">0.125</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1/8</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">0.(142857)</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1/7</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">0.1(6)</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1/6</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">.2</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1/5</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2/1</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3.</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3/1</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Dùng cấp số nhân: 1 + q<sup>2 </sup>+ q<sup>3</sup> + q<sup>4 </sup>+ ... + q<sup>n</sup> + ... = 1/(1-q)  với q &lt; 1.</p>
+</div>
+</div></body></html>

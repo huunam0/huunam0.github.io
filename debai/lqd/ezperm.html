@@ -1,0 +1,49 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Hoán Vị Dễ Dàng</h2>
+</div><div class="content-description screen">
+<div><p>Hàm \(F(a)\) với a là một dãy số nguyên \(n \geq 1\) phần tử \(a_1\), \(a_2\), \(a_3\), ... \(a_n\) được định nghĩa thông qua đoạn code sau :</p>
+<pre><code>    F(a) = 0;
+    Duyệt i từ 2 đến n
+    {
+       k = 0;
+       Duyệt e từ 1 đến i-1
+       {
+           Nếu a[e] &lt; a[i] thì
+           {
+               k = k + 1;
+           }
+       }
+       F(a) = F(a) + k * a[i];
+    }</code></pre>
+<p><span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> thích những thứ nhỏ bé (ví dụ như <span class="rating rate-none user"><a href="/user/Small">Small</a></span>), do đó <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> muốn <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> tính hàm F với tất cả các dãy số tự nhiên có độ dài bằng 2. Quá dễ, đáp án luôn là +∞. Còn <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> thích những ghứ vĩ đại, do đó <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> muốn các bạn tính tổng tất cả các hàm F(a) với a là một hoán vị n phần tử. Vì kết quả có thể lớn, các bạn cần in ra đáp số chia dư 1000000007.</p>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa 1 số nguyên dương \(q\) là số câu hỏi.
+q tiếp theo, mỗi dòng dòng chứa 1 số nguyên dương \(n\).</p>
+<h4>Output</h4>
+<p>In ra \(q\) dòng, mỗi dòng ứng với một câu hỏi.</p>
+<h4>Sample Input 1</h4>
+<pre><code>4
+1
+2
+3
+4</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>0
+2
+24
+240</code></pre>
+<h4>Giải thích</h4>
+<p>\(F ([1, 2, 3]) = 2*1 + 3*2 = 8\)</p>
+<p>\(F ([1, 3, 2]) = 3 * 1 + 2 * 1 = 5\)</p>
+<p>\(F ([2, 3, 1]) = 3 * 1 = 3\)</p>
+<p>\(F ([2, 1, 3]) = 3 * 2 = 6\)</p>
+<p>\(F ([3, 1, 2]) = 2\)</p>
+<p>\(F ([3, 2, 1]) = 0\)</p>
+<p>Do đó đáp án = 8 + 5 + 3 + 6 + 2 = 24</p>
+<h4>Giới hạn</h4>
+<p>\(10\)% test có \(1 \leq n \leq 10\), \(q\) = 1.</p>
+<p>\(30\)% test có \(1 \leq n \leq 100\), \(q\) = 1.</p>
+<p>\(60\)% test có \(1 \leq n \leq 10^6\), \(1 \leq q \leq 10^6\).</p>
+</div>
+<hr/>
+</div>

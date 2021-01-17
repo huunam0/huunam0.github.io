@@ -1,0 +1,78 @@
+<div class="tm-box2">
+<div class="problem-name">
+    FT - Vé xe miễn phí 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;"><span style="font-size:14px">An sống ở thành phố XYZ, hàng ngày anh phải đi làm từ nhà tới cơ quan bằng xe buýt. Thành phố XYZ có </span><em style="font-size:14px">n</em><span style="font-size:14px"> nút giao thông được đánh số từ 1 đến </span><em style="font-size:14px">n</em><span style="font-size:14px"> và </span><em style="font-size:14px">m</em><span style="font-size:14px"> tuyến xe buýt hai chiều.  Mỗi cặp nút giao thông </span><em style="font-size:14px">i, j</em><span style="font-size:14px"> có không quá một tuyến xe buýt hai chiều, nếu có thì để đi từ nút </span><em style="font-size:14px">i</em><span style="font-size:14px"> đến nút </span><em style="font-size:14px">j </em><span style="font-size:14px">(hoặc từ nút </span><em style="font-size:14px">j</em><span style="font-size:14px"> đến nút </span><em style="font-size:14px">i</em><span style="font-size:14px">) với giá vé là </span><em><span style="font-size:14px">c</span><sub><span style="font-size:11.6667px">ij</span></sub><span style="font-size:14px">=c</span><sub style="font-size:14px">ji</sub></em><span style="font-size:14px"> đồng. Vị trí nhà An nằm ở nút giao thông 1 còn cơ quan nằm ở nút giao thông <em>n</em></span><span style="font-size:14px">. Để lựa chọn đường đi từ nhà đến cơ quan An luôn chọn theo đường đi với chi phí ít nhất.</span></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width:482px">
+<p style="text-align: justify;"><span style="font-size:14px">Ví dụ: thành phố có 5 nút giao thông và 6 tuyến xe buýt:<br/>
+			Tuyến 1: 1-2 giá vé 10 đồng;<br/>
+			Tuyến 2: 2-5 giá vé 10 đồng,<br/>
+			Tuyến 3: 1-4 giá vé 3 đồng;<br/>
+			Tuyến 4: 3-4 giá vé 5 đồng,<br/>
+			Tuyến 5: 3-5 giá vé 3 đồng;<br/>
+			Tuyến 6: 1-3 giá vé 20 đồng.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Đường đi<span style="font-family:courier new,courier,monospace"> 1 -&gt; 4 -&gt; 3 -&gt; 5</span> hết 11 đồng là ít nhất.</span></p>
+</td>
+<td style="width:223px">
+<p style="text-align: justify;"><span style="font-size:14px"><img src="../../ckfinder/userfiles/images/FT.png" style="height:117px; width:210px"/></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"><span style="font-size:14px">Vừa qua An nhận được một vé đi xe buýt miễn phí. Vé có thể dùng để đi xe buýt miễn phí một lần trên một tuyến bất kỳ. Với vé xe miễn phí này An muốn biết chi phí ít nhất để đi từ nhà đến cơ quan là bao nhiêu.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Với ví dụ trên, đường đi </span><span style="font-family:courier new,courier,monospace; font-size:14px">1 -&gt; 3 -&gt; 5 </span><span style="font-size:14px">có sử dụng vé xe miễn phí (tại tuyến 1-3) hết 3 đồng là ít nhất.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong><em>Yêu cầu:</em></strong> Cho biết các tuyến xe buýt và giá vé tương ứng. Hãy tìm chi phí ít nhất để đi từ nhà (nút giao thông 1) đến cơ quan (nút giao thông <em>n</em>) với vé xe miễn phí mà An có.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong><em>Dữ liệu vào </em></strong></span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-size:14px">Dòng đầu tiên ghi hai số nguyên dương <em>n</em> và <em>m</em> (3&lt;=<em>n</em>&lt;=5000)</span></li>
+<li style="text-align: justify;"><em style="font-size:14px">m </em><span style="font-size:14px">dòng sau, mỗi dòng 3 số nguyên </span><em style="font-size:14px">i, j, c<sub>ij</sub></em><sub style="font-size:14px"> </sub><span style="font-size:14px">(1 &lt;= </span><em style="font-size:14px">i, j </em><span style="font-size:14px">&lt;=</span><em><span style="font-size:14px">n, 0&lt;=c</span><sub><span style="font-size:11.6667px">ij </span></sub><span style="font-size:11.6667px">&lt;=30000) </span></em><span style="font-size:14px">mô tả có tuyến xe buýt  <em>i -&gt; j</em> hết </span><em> c<sub>ij</sub></em><sub> </sub><span style="font-size:14px"> đồng.</span></li>
+</ul>
+<p style="text-align: justify;"><span style="font-size:14px"><em>Hai số liên tiếp trên một dòng cách nhau một dấu cách. </em></span><span style="font-size:14px">Dữ liệu bảo đảm luôn có đường đi từ  1 đến <em>n.</em></span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong><em>Kết quả </em></strong></span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Ghi ra một số duy nhất là chi phí ít nhất để đi từ nhà (nút giao thông 1) đến cơ quan (nút giao thông <em>n</em>) với vé xe miễn phí mà An có.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><span style="font-size:14px"><strong>Input</strong></span></p>
+<p style="margin-left: 40px;">5 6<br/>
+1 2 10<br/>
+2 5 10<br/>
+1 4 3<br/>
+3 4 5<br/>
+3 5 3<br/>
+1 3 20</p>
+<p><span style="font-size:14px"><strong>Output</strong></span></p>
+<p style="margin-left:40px"><span style="font-size:14px">3</span></p>
+<p style="margin-left:40px"> </p>
+<p><span style="font-size:14px"><strong>Input</strong></span></p>
+<p style="margin-left: 40px;">5 5<br/>
+1 2 10<br/>
+2 5 10<br/>
+1 4 3<br/>
+4 3 5<br/>
+3 5 3</p>
+<p><span style="font-size:14px"><strong>Output</strong></span></p>
+<p style="margin-left: 40px;"><span style="font-size:14px">6</span></p>
+<hr/>
+<p><span style="font-size:14px"><em>Nguồn: 3D '1819</em></span></p>
+</div>
+</div>

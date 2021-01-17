@@ -1,0 +1,34 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">CJ ở vùng cao</h2>
+</div><div class="content-description screen">
+<div><p>Một ngày, Sweet nổi hứng lên, và đi ra khiêu chiến với nhóm Ballas mà CJ không hề biết gì. Tới khi Sweet bị trọng thương thì mới báo CJ biết, và CJ tới cứu viện. Nhưng khi đó cảnh sát tới, và tất cả mọi người chạy trốn hết trừ Sweet và CJ. Sweet thì vào tù, còn CJ thì bị nhóm cảnh sát Frank Tenpenny (C.R.A.S.H) bắt cóc, và đưa đến vùng cao, hẻo lánh ở Whetstone.</p>
+<p>CJ bị nhóm C.R.A.S.H bắt phải làm nhiệm vụ: là tìm kẻ The Imforman để thanh toán. Và CJ phải làm, vì nếu không sẽ bị nhóm tiêu diệt. Được biết, ở vùng Whetstone có \(N\) đỉnh núi, được đánh số từ \(1\) tới \(N\), đỉnh núi \(i\) có độ cao là \(h[i]\), giữa hai đỉnh khác nhau bất kỳ đều có một đường đi. CJ đang ở đỉnh núi thứ \(s\), và The Imforman đang ở đỉnh núi thứ \(t\).</p>
+<p>Nếu tồn tại con đường từ đỉnh núi \(u\) tới đỉnh núi \(v\), tức là tồn tại dãy các đỉnh núi \(P=⟨u=p0,p1,...,pk=v⟩\) sao cho \(\forall i:1 \leq i \leq k\)  thì tồn tại tuyến đường trực tiếp giữa hai đỉnh núi \(p_{i−1}\) và \(p_i\), thì định nghĩa độ nguy hiểm trên đường đi từ \(u\) tới \(v\) là \(max(|h[p_1] - h[p_0]|, |h[p_2] - h[p_1]|, …, |h[p_k] - h[p_{k-1}]|)\).</p>
+<p>Vì CJ muốn an toàn cho mình khi di chuyển nên hãy chỉ ra cho CJ độ nguy hiểm nhỏ nhất và hành trình trên đường đi tương ứng từ \(s\) tới \(t\). Nếu có nhiều đường đi, chỉ ra một hành trình trên đường đi bất kỳ.</p>
+<p><strong>Dữ liệu vào</strong>: Gồm hai dòng:</p>
+<ul>
+<li>Dòng thứ nhất chứa ba số nguyên dương \(N\), \(s\), \(t\). \((1 \leq s, t \leq N, s \neq t)\)</li>
+<li>Dòng thứ hai chứa \(N\) số nguyên dương \(h[1], h[2], … h[N]\), với \(h[i]\) là độ cao của đỉnh núi \(i\) \((1 \leq i \leq N, h[i] \leq 10^9)\).</li>
+</ul>
+<p><strong>Kết quả</strong>: Gồm hai dòng:</p>
+<ul>
+<li>Dòng thứ nhất là độ nguy hiểm nhỏ nhất mà CJ trên con đường tìm được.</li>
+<li>Dòng thứ hai là số hiệu của các đỉnh núi theo thứ tự hành trình, bắt đầu từ đỉnh \(s\), và kết thúc ở đỉnh \(t\).</li>
+</ul>
+<p><strong>Ví dụ</strong>:</p>
+<p><strong>Input</strong>:</p>
+<pre><code>6 1 6
+7 7 1 1 3 1</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>4
+1 5 6</code></pre>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>\(20\)% số test đầu tiên có \(N \leq 10^2\).</li>
+<li>\(30\)% số test tiếp theo có \(N \leq 10^3\).</li>
+<li>\(50\)% số test còn lại có \(N \leq 10^4\).</li>
+</ul>
+<p><strong>Chú ý</strong>: Hãy cân nhắc thật kĩ khi sử dụng thuật toán vào bài này nhé :V.</p>
+</div>
+<hr/>
+</div>

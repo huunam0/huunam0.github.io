@@ -1,0 +1,46 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    SEMINAR - Xếp lịch hội nghị 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Một hội nghị chuyên đề có M tiểu ban (đánh số từ 1 đến M), được tổ chức tại một khu hội nghị có N phòng (đánh số từ 1 đến N). Theo yêu cầu chuyên môn, mỗi tiểu ban cần được bố trí <strong><em>một số lượt phòng, mỗi phòng trong một ngày</em></strong> tại một số phòng nào đó phù hợp với nó đồng thời không được có quá một tiểu ban làm việc cùng lúc tại cùng một phòng (như vậy, mỗi tiểu ban có thể làm việc cùng lúc tại nhiều hơn một phòng nếu bố trí được phòng phù hợp).</p>
+<p><strong>Yêu cầu: </strong>Cho biết số lượt phòng cần làm việc của mỗi tiểu ban và danh sách phòng mà mỗi tiểu ban là phù hợp với chúng, hãy tìm một cách bố trí sao cho hội nghị diễn ra trong một số ít nhất ngày có thể được.</p>
+<p><strong>Dữ liệu nhập:</strong> </p>
+<p>- Dòng đầu ghi hai số nguyên dương M, N (1 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:12.8000001907349px">≤</span> M, N <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:12.8000001907349px">≤ </span>100).</p>
+<p>- Dòng thứ <strong><em>i</em></strong> trong M dòng tiếp theo: bắt đầu bởi một số<strong> <em>p<sub>i</sub></em></strong> là số lượt phòng mà tiểu ban <strong><em>i</em></strong> cần để làm việc, sau đó là số <em><strong>q<sub>i </sub></strong> </em>thể hiện số các phòng phù hợp với tiểu ban i, <em><strong>q<sub>i  </sub></strong></em>số tiếp theo là danh sách các phòng phù hợp với tiểu ban <strong><em>i</em></strong>.</p>
+<p><strong>Ràng buộc:</strong> 1 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:12.8000001907349px">≤</span> <em>p<sub>i</sub></em> <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:12.8000001907349px">≤ </span>3, 1 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:12.8000001907349px">≤ <em>q<sub>i</sub></em></span> <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:12.8000001907349px">≤ N</span></p>
+<p><strong>Dữ liệu xuất:</strong> Một số duy nhất là số ngày ít nhất cần để hội nghị hoàn thành công việc.</p>
+<p> </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 4<br/>1 2 2 3<br/>1 1 4<br/>2 2 1 3<br/>1 1 3<br/>3 2 2 4 <br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><em><strong>Giải thích: Có thể xếp lịch như sau để hội nghị diễn ra trong 2 ngày:</strong></em></p>
+<p><em><strong>- Tiểu ban 1 dùng phòng 3 vào ngày 1</strong></em></p>
+<p><em><strong>- Tiểu ban 2 dùng phòng 4 vào ngày 1</strong></em></p>
+<p><em><strong>- Tiểu ban 3 dùng phòng 1 vào ngày 1 và ngày 2</strong></em></p>
+<p><em><strong>- Tiểu ban 4 dùng phòng 3 vào ngày 2</strong></em></p>
+<p><em><strong>- Tiểu ban 5 dùng phòng 2 vào ngày 1,2 và phòng 4 vào ngày 2</strong></em></p>
+<p> </p>
+</div>
+</div></body></html>

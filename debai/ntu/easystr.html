@@ -1,0 +1,46 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    EASYSTR - Một bài tập về xâu 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 0.3 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Cho 2 xâu a, b cùng độ dài n. Xét hàm f() sau:</p>
+<p style="text-align:center">f(S, i, j) = S(i + 1, j - 1) + rev(S(j, n)) + rev(S(1, i))</p>
+<p>Trong đó:</p>
+<p>- S(i, j) là xâu con từ i tới j của S. Quy ước nếu i &gt; j thì S(i, j) là xâu rỗng.</p>
+<p>- rev(S) là xâu đảo ngược của S.</p>
+<p>Đếm số lượng cặp số (i,j) thỏa mãn 1 &lt;= i &lt; j &lt;= n và f(a, i, j) = b.</p>
+<p><strong>Input:</strong></p>
+<p>- Dòng đầu tiên ghi xâu a.</p>
+<p>- Dòng thứ hai ghi xâu b.</p>
+<p><strong>Output:</strong></p>
+<p>- Gồm một số nguyên duy nhất là kết quả bài toán.</p>
+<p><strong>Giới hạn:</strong></p>
+<p>- n &lt;= 3.10<sup>5</sup>.</p>
+<p>- 2 xâu a, b gồm các ký tự in được (các ký tự có mã ASCII từ 32 tới 126).</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">aba<br/>aba</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>2 cặp số là (1, 2) và (2, 3).</p>
+</div>
+</div></body></html>

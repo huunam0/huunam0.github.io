@@ -1,0 +1,56 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    CCAY - Chặt cây (Jakarta 2014 - E) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Cây (tree) trong lý thuyết đồ thị là một đồ thị liên thông không chu trình, rừng (forest) là tập hợp của một hay nhiều cây. Trong bài này, bạn được nhận một rừng (tạo thành từ các cây) gôm N nút và K truy vấn. Có 2 loại truy vấn:<br/>
+• C x : Xóa cạnh nối giữa nút x và cha của nó. Nếu x không có cha (x là gốc), truy vấn này được bỏ qua.<br/>
+• Q a b : Xuất ra "YES" nếu có một đường đi từ nút a đến nút b, ngược lại xuất ra "NO" (không có dấu ngoặc kép)</p>
+<p>.Ví dụ: giả sử ta có một rừng như <strong>Hình 1</strong> bên dưới:</p>
+<p><img alt="" src="images/Cat%20Cay.jpg" style="height:311px; width:800px"/></p>
+<p>Và danh sách các truy vấn theo thứ tự sau:</p>
+<p> - Q 5 7: xuất ra <strong>YES</strong> - đường đi: 5 - 2 - 1 - 3 - 7</p>
+<p> - C 2: xóa cạnh nối giữa 2 và 1, đồ thị trở thành <strong>Hình 2</strong></p>
+<p> - Q 5 7: xuất ra <strong>NO</strong> - không còn đường đi từ 5 đến 7 nữa (theo Hình 2)</p>
+<p> - Q 4 6: xuất ra <strong>YES</strong> - đường đi: 4 - 2 - 6</p>
+<p><strong>Dữ liệu nhập:</strong> Dòng đầu tiên chứ một số nguyên T (0 &lt; T <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ 50), m</span>ỗi bộ test sẽ gồm nhiều dòng:</p>
+<p><span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif"> - D</span>òng đầu tiên của mỗi bộ test chứ 2 số nguyên T và K (1 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ </span>N <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ </span>20000, 1 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ </span>K <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ </span>10000) - số nút của đồ thị và số lượng truy vấn.</p>
+<p> - Dòng tiếp theo chứ N số nguyên Pi, (0 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ </span>Pi <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ N), Pi l</span>à đỉnh cha của đỉnh i, nếu Pi = 0 thì đỉnh i là nút gốc của cây. Dữ liệu luôn đảm bảo rằng đây là một rừng.</p>
+<p> - Dòng thứ i trong K dòng tiếp theo, mỗi dòng là một tuy vấn, dạng "C x" hoặc "Q a b" (1 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ x, a, b</span> <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ N)</span></p>
+<p><strong><span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">D</span>ữ liệu xuất:</strong> với mỗi bộ test, xuất ra "Case #X:" trên dòng đầu tiên, trong đó X là số thứ tự của bộ test (bắt đầu từ 1). Với mỗi truy vấn "Q a b" xuất ra trên 1 dòng, "YES" hoặc "NO" (không có dấu ngoặc kép)</p>
+<p> </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>7 4<br/>0 1 1 2 2 2 3<br/>Q 5 7<br/>C 2<br/>Q 5 7<br/>Q 4 6<br/>4 4<br/>2 0 2 3<br/>C 3<br/>Q 1 2<br/>C 1<br/>Q 1 2<br/>3 5<br/>0 3 0<br/>C 1<br/>Q 1 2<br/>C 3<br/>C 1<br/>Q 2 3<br/>1 1<br/>0<br/>Q 1 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">Case #1:<br/>YES<br/>NO<br/>YES<br/>Case #2:<br/>YES<br/>NO<br/>Case #3:<br/>NO<br/>YES<br/>Case #4:<br/>YES</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Bộ test thứ hai (Hình 2)</p>
+<p> - C 3: xóa cạnh (3, 2) - kết quả thu được là đồ thị trong Hình 4</p>
+<p> - Q 1 2: kết quả là <strong>YES</strong></p>
+<p> - C 1: xóa cạnh (1 , 2) - kết quả thu được là đồ thị trong Hình 5</p>
+<p> - Q 1 2: kết quả là <strong>NO</strong></p>
+<p><strong><img alt="" src="images/Cat%20cay%202.jpg" style="height:307px; width:792px"/></strong></p>
+<p><span style="color:#FF0000"><strong><span style="font-size:14px">The 2014 ACM-ICPC Asia Jakarta Regional Contest - Problem E</span></strong></span></p>
+<p><span style="color:#FF0000"><u><strong>Ghi chú:</strong></u></span> Vì kích thước file tối đa khi upload bị hạn chế nên không thể upload được bộ test có dữ liệu lớn, vì vậy bộ test được sử dụng ở đây không được sát với giới hạn đề bài. Bộ test có kích thước lớn nhất là gồm 21 test case, mỗi test case có N = 20000, K = 5000 (số lượnt test case tối đa là 50). Nên các bạn khi AC ở đây nhưng vẫn có thể bị TLE ở bộ test chuẩn hơn. Sau khi đã AC tại đây, các bạn có thể submit bài lên trang ACM-ICPC Live Archive với bộ test lớn hơn, sát với đề bài hơn để có thể biết được thuật toán của mình dùng đã có thể AC bài này thật sự chưa :D</p>
+<p>Link: <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=4922">6910 - Cutting Tree</a></p>
+</div>
+</div></body></html>

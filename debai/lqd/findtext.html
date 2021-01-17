@@ -1,0 +1,55 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Trò chơi tìm chữ</h2>
+</div><div class="content-description screen">
+<div><p>Tý viết một chương trình tạo ra một số nguyên có \(N\) chữ số và ghi vào tệp văn bản. Sau đó mở tệp này trong một chương trình soạn thảo văn bản, chọn một khối gồm các số chữ số đầu tiên (bên trái) và chơi trò chơi tìm kiếm văn bản <strong>FindText</strong>. Nếu chương trình <strong>FindText</strong> tìm thấy khối được chọn ở vị trí khác (các khối không giao nhau) thì khối chọn sẽ di chuyển đến vị trí tìm thấy đó, nếu không tìm thấy thì khối chọn không di chuyển.</p>
+<p>Ví dụ:</p>
+<table class="table">
+<thead><tr>
+<th style="text-align:center">Đoạn văn bản được chọn</th>
+<th style="text-align:center">Dấu chọn di chuyển sau khi tìm kiếm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>1</strong>2312312312</td>
+<td style="text-align:center">123<strong>1</strong>2312312</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>12</strong>312312312</td>
+<td style="text-align:center">123<strong>12</strong>312312</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>12312</strong>312312</td>
+<td style="text-align:center">123123<strong>12312</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>123123</strong>12312</td>
+<td style="text-align:center">12312312312</td>
+</tr>
+</tbody>
+</table>
+<p>Tý muốn biết khối chọn ban đầu có nhiều nhất bao nhiêu chữ số để sau khi dùng chức năng FindText thì khối chọn sẽ di chuyển. Các chữ số được đánh số thứ tự từ 1 bắt đầu từ trái sáng phải.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Một dòng chứa số nguyên \(a\) có \(n\) chữ số (\(1 &lt; n ≤ 10^7\))</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Dòng 1 chứa số nguyên là số chữ số lớn nhất mà tý có thể chọn</li>
+<li>Dòng 2 là vị trí mà khối chọn di chuyển đến (lấy vị trí chữ số đầu tiên trong khối chọn), nếu không di chuyển thì ghi 1.</li>
+</ul>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>1231212312</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>5
+6</code></pre>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>123456789</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>0
+1</code></pre>
+<hr/>
+<p><em>Nguồn: NTU Coder</em></p>
+</div>
+<hr/>
+</div>

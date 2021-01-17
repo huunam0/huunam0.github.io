@@ -1,0 +1,36 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Số Catalan</h2>
+</div><div class="content-description screen">
+<div><p>Ở lớp \(10\) chuyên Tin, Nhật và Vy tuy là đôi bạn thân nhưng trong chuyện học hành lại cạnh tranh nhau rất khốc liệt. Một hôm, thầy Hùng khen ngợi rằng Vy có khả năng tính nhẩm tốt hơn Nhật làm cậu bạn vô cùng ấm ức và ghen tức. Nhật không chấp nhận thực tế này nên đã mời hai đàn anh, đàn chị là Công Huân và Ly Na đứng ra làm giám khảo cho một cuộc tỉ thí công khai về trình độ tính nhẩm giữa cậu ấy và Vy. Huân và Na quyết định chọn <strong>dãy số Catalan</strong> nổi tiếng làm đề bài cho cuộc so tài: Số Catalan thứ \(n\) được định nghĩa là \(C_n = \dfrac{1}{n+1} \displaystyle{{2n}\choose {n}} = \dfrac{(2n)!}{(n+1)!n!}\) và hai bạn thí sinh cần kiểm tra xem với mỗi cặp số nguyên không âm \(m\) và \(K\) thì \(K\) có <em>bằng</em> với \(C_m\) hay không, ai trả lời chính xác và nhanh nhất sẽ giành chiến thắng. Nhật muốn thắng cuộc tỉ thí bằng mọi giá nên đã nhờ các bạn lập trình tính toán giúp câu trả lời. Hãy giúp cậu ấy đạt được thắng lợi nhé!</p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu chứa số nguyên dương \(T\leq 100\) là số lượng câu hỏi.</p>
+<p>\(T\) dòng sau, mỗi dòng chứa hai số nguyên không âm \(m\) và \(K\) thể hiện một câu hỏi từ Huân và Na.</p>
+<hr/>
+<h4>Output</h4>
+<p>Gồm \(T\) dòng, mỗi dòng in ra <code>YES</code> nếu \(K=C_m\) với \(m\), \(K\) tương ứng, hoặc in ra <code>NO</code> trong trường hợp ngược lại.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>5
+0 1
+1 1
+3 5
+5 42
+6 130</code></pre>
+<h5>Output</h5>
+<pre><code>YES
+YES
+YES
+YES
+NO</code></pre>
+<hr/>
+<h4>Ràng buộc</h4>
+<ul>
+<li><strong>Subtask 1 (30 điểm):</strong> \(m\leq 10\), \(K\leq 20,000\).</li>
+<li><strong>Subtask 2 (30 điểm):</strong> \(m\leq 5000\), \(K\) có không quá \(5000\) chữ số.</li>
+<li><strong>Subtask 3 (40 điểm):</strong> \(m\leq 50,000\), \(K\) có không quá \(50,000\) chữ số.</li>
+</ul>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,42 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    OKHOA2 - Ổ khóa 2 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">Có vẻ như ổ khóa lần trước không làm khó được An, nên lần này người bạn của cậu ta quyết định gửi sang một món quà được giấu trong chiếc hộp lớn hơn (và tất nhiên ổ khóa của nó cũng nhiều nút hơn). Cách mở khóa vấn giống lần trước (<a href="http://laptrinh.ntu.edu.vn/Problem/Details/1196">xem tại đây</a>)</p>
+<p style="text-align:justify">Nhiệm vụ của bạn vẫn là cho biết trong trường hợp xấu nhất thì An phải mất bao nhiêu lần bấm nút để có thể mở được ổ khóa.</p>
+<p style="text-align:justify"><strong>Dữ liệu nhập:</strong> Một số nguyên dương N duy nhất là số nút trên hộp quà (1  <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ N ≤ 10<sup>9</sup>)</span></p>
+<p style="text-align:justify"><strong>Dữ liệu xuất:</strong> Một số nguyên dương duy nhất là số lần bấm nút trong trường hợp xấu nhất. Vì kết quả có thể rất lớn, nên bạn chỉ cần xuất ra phần dư của kết quả sau khi chia cho 10<sup>9</sup>+7</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">7</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p style="text-align:justify">Trong bộ test thứ hai: gọi thứ tự bấm nút đúng là (3, 2, 1). An có thể bấm lần lượt 2 nút 1, 2 và no sẽ sai (đã bấn 2 lần: 1 2) lúc này An biết chắc rằng nút đầu tiên theo thứ tự là 3. Cậu ta nhấn nút số 3, còn lại 2 nút, cậu ta có thể bấm nút số 1 và sai (đã bấm 4 lần) Như vậy cậu ta biết rằng nút đầu tiên theo thứ tự là 3, nút tiếp theo là 2, còn lại nút cuối cùng chính là 1, bây giờ cậu ta chỉ cần bấm đúng thứ tự (3, 2 ,1) là mở được ở khóa, như vậy trường hợp xấu nhất là 7 lần bấm nút, phần dư sau khi chia 7 cho 10<sup>9</sup>+7 cũng là 7 nên kết quả xuất ra là 7</p>
+</div>
+</div></body></html>

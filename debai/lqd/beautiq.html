@@ -1,0 +1,33 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Số BEAUTIQ</h2>
+</div><div class="content-description screen">
+<div><p>Cho một số \(X\). Ta gọi \(BQ(X)\) là số BeautiQ thứ \(X\).</p>
+<p>Số BeautiQ được xác định qua công thức như sau:</p>
+<ul>
+<li>\(BQ(0) = A, BQ(1) = B\), với \(A, B\) cho trước. </li>
+<li>\(BQ(X) = BQ(X-1) + BQ(X-2) + BQ(X-1)*BQ(X-2)\). \((X \ge 2)\) </li>
+</ul>
+<p>Cho \(Q\) truy vấn, truy vấn thứ \(i\) gồm \(3\) số nguyên dương \(N_i, A_i, B_i\). Với truy vấn thứ \(i\), tính \(BQ(N_i)\) \(mod\) \((10^9+7)\) với \(BQ(0) = A_i, BQ(1) = B_i\).</p>
+<p><strong>Dữ liệu vào</strong>: Gồm \(Q+1\) dòng:</p>
+<ul>
+<li>Dòng đầu tiên chứa số nguyên dương \(Q\) là số truy vấn.</li>
+<li>\(Q\) dòng tiếp theo, dòng thứ \(i\) chứa \(3\) số nguyên dương \(N_i, A_i, B_i\) thể hiện cho truy vấn thứ \(i\).</li>
+</ul>
+<p><strong>Kết quả</strong>: Ghi ra \(Q\) dòng, dòng thứ \(i\) là kết quả cho truy vấn thứ \(i\).</p>
+<p><strong>Ví dụ</strong>:</p>
+<p><strong>Sample Input</strong></p>
+<pre><code>2
+5 1 1
+4 2 5</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>255
+1943</code></pre>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>\(30\)% số test đầu tiên có \(Q \leq 10^2; N_i, A_i, B_i \leq 5.10^5\).</li>
+<li>\(70\)% số test còn lại có \(Q \leq 10^4; N_i \leq 10^{18}; A_i, B_i \leq 10^{12}\)</li>
+</ul>
+<p><strong>Nguồn</strong>: Huysmith :V</p>
+</div>
+<hr/>
+</div>

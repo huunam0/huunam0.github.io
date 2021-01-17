@@ -1,0 +1,56 @@
+<div class="tm-box2">
+<div class="problem-name">
+    TREECOL - Tô màu cây 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;"><span style="font-size:14px">Thành vẽ một cây (đồ thị vô hướng liên thông không có chu trình) với <em>N</em> nút được đánh số từ 1 đến <em>N</em> và muốn tô màu các nút của cây bằng màu đen hoặc trắng. Trên cây, hai nút có thể ghép đôi với nhau khi và chỉ khi chúng thỏa mãn các điều kiện sau: </span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">• cả hai cùng được tô bởi màu trắng, và<br/>
+• hoặc là có cạnh nối trực tiếp giữa chúng hoặc là có thể nối chúng bởi một đường đi đơn chỉ gồm toàn nút màu đen ngoại trừ hai nút đầu mút là màu trắng. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Yêu cầu</strong>: hãy giúp Thành tô màu các nút của cây bằng màu đen hoặc trắng sao cho số lượng cặp nút có thể ghép đôi với nhau là lớn nhất. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Dữ liệu vào </strong></span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Dòng đầu tiên chứa một số nguyên dương <em>T</em> (<em>T</em> ≤ 10) là số lượng bộ test, mỗi bộ test chứa thông tin về một cây cần tô màu có cấu trúc như sau: </span></p>
+<p style="text-align: justify; margin-left: 80px;"><span style="font-size:14px">• Dòng thứ nhất chứa một số nguyên dương <em>N</em> (<em>N</em> ≤ 5000) là số lượng nút của cây;<br/>
+• Mỗi dòng trong số <em>N</em> − 1 dòng tiếp theo chứa hai số nguyên <em>x, y</em> cách nhau bởi dấu cách cho biết có cạnh nối trực tiếp giữa hai nút <em>x</em> và <em>y</em>. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Kết quả </span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Ghi ra <em>T</em> dòng, mỗi dòng một số nguyên là kết quả tìm được tương ứng với các bộ test trong dữ liệu vào.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left: 40px;">2 <img alt="" src="../../ckfinder/userfiles/images/TREECOL.png" style="float:right; height:246px; width:155px"/><br/>
+8<br/>
+1 2<br/>
+2 3<br/>
+2 4<br/>
+4 5<br/>
+5 6<br/>
+6 7<br/>
+6 8<br/>
+2<br/>
+1 2 </p>
+<p><strong>Output</strong></p>
+<p style="margin-left: 40px;">7<br/>
+1</p>
+<p><strong>Giải thích</strong></p>
+<p>Có 2 bộ test trong dữ liệu vào (T = 2).</p>
+<p>Đối với bộ test thứ nhất, cây có 8 nút và 7 cạnh, trong hình vẽ (hình ở trên)  là cách tô màu cho số lượng cặp nút có thể ghép đôi là lớn nhất (7 cặp). Các cặp đó là: (1, 3), (1, 4), (3, 4), (4, 5), (5, 7) (5, 8), (7, 8).</p>
+<p>Đối với bộ test thứ hai, cây chỉ có 2 nút và được nối với nhau bởi một cạnh duy nhất. Vì vậy cần tô cả 2 nút đó bằng màu trắng và tạo ra duy nhất một cặp nút có thể ghép đôi.</p>
+<hr/>
+<p><em>Nguồn: ĐPT '1819</em></p>
+</div>
+</div>

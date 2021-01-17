@@ -1,0 +1,42 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Tổng Ngoặc Đúng</h2>
+</div><div class="content-description screen">
+<div><p>Ơ trong 1 lần đi chơi với đám bạn (Khánh, Hòa, Khoa, Quân, Ngạn), cả 5 thanh niên này đều muốn chơi game, nhưng mà ai cũng không có tiền nhưng cạnh bên quán game lại có 1 cô gái tên là Thảo, cô gái này đưa ra nhưng bài toán, nếu giải được bài toán thì sẽ được thưởng 1 số tiền random(10K -&gt; 100K), thế là 5 thanh niên này liền bắt tay vào giải bài toán để kiếm tiền chơi game. Nhưng bài toán quá khó, bạn có thể giải giúp 5 thanh niên này được không?</p>
+<p>Cho 1 chuỗi kí tự \(S\) chỉ gồm kí tự '(' và ')' và \(m\) truy vấn, mỗi truy vấn là 2 số nguyên dương \(l , r \ (1 \leq l \leq r \leq S.size())\).</p>
+<p><em>Lưu ý</em>: \(S.size()\) là số lượng kí tự của chuỗi \(S\)</p>
+<p><strong>Yêu cầu:</strong> Hãy xác định dãy ngoặc đúng dài nhất trong đoạn \((l, r)\)</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li>Dòng thứ nhất là chuỗi kí tự \(S \ (1 \leq S.size() \leq 10^6)\)</li>
+<li>Dòng thứ 2 là số nguyên dương \(m\) là số lượng truy vấn \((1 \leq m \leq 10^5)\)</li>
+<li>\(m\) dòng tiếp theo là 2 số nguyên dương \(l, r \ (1 \leq l \leq r \leq S.size())\)</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>m dòng số nguyên dương , tương ứng với kết quả của đáp án</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>(((())((((()()((((((()((()(((((((((((()((
+6
+20 37
+28 32
+12 18
+7 25
+21 33
+4 5</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>4
+0
+2
+6
+4
+2</code></pre>
+<p><strong>Giải thích:</strong> Trong truy vấn thứ 1 ta có chuỗi <code>((()((()(((((((((</code>, ta thấy chuỗi có dãy ngoặc đúng dài nhất là <code>()()</code> . Vậy kết quả là 4</p>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>\(1 \leq S.size(), m \leq 1000\) tương ứng với \(43.33\)% test</li>
+<li>\(56.67\)% test còn lại không có ràng buộc gì thêm</li>
+</ul>
+</div>
+<hr/>
+</div>

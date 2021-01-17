@@ -1,0 +1,51 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    NGUYEN - Điểm nguyên 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Nam là một sinh viên rất ham học hỏi. Mặc dù chỉ mới học được cách tô màu 1 pixel bằng thư viện graphics.h, nhưng Nam có thể vẽ được 1 hình tròn dễ dàng nếu biết bán kính và tọa độ tâm. Nam làm như thế nào? Đương nhiên là Nam tô màu từng pixel một rồi. Cứ tô từng pixel, từng pixel, cứ pixel nào <span style="color:#FF0000">ở trong hoặc nằm trên</span> đường tròn thì tô, tô hết là được hình tròn thôi. Vậy theo bạn, Nam đã tô tổng cộng bao nhiêu pixel?</p>
+<p style="text-align:center"><img alt="" src="images/Nguyen2.png" style="height:210px; width:210px"/></p>
+<p><span style="color:#0000FF"><u>Dữ liệu nhập:</u></span> 1 số tự nhiên không quá <span style="color:#FF0000">1 triệu</span>, thể hiện bán kính (tất nhiên đơn vị là pixel).</p>
+<p><u><span style="color:#0000FF">Dữ liệu xuất:</span></u> 1 số nguyên dương, thể hiện số pixel mà Nam đã tô.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">0</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">5</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">29</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Với bán kính là 0. Nam tô 1 pixel là tâm hình tròn.</p>
+<p>Với bán kính là 1. Nam tô 1 pixel là tâm và 4 pixel chung quanh. 4 pixel ở đường chéo không tô vì đã nằm ngoài đường tròn bán kính 1.</p>
+<p>Với bán kính 5:</p>
+<p style="text-align:center"><img alt="" src="images/nguyen3.png" style="height:236px; width:234px"/></p>
+</div>
+</div></body></html>

@@ -1,0 +1,34 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">ami và Bài Toán Tặng Quà</h2>
+</div><div class="content-description screen">
+<div><p>Tại một buổi tiệc nọ, có \(n\) chàng hoàng tử và \(n\) nàng công chúa. Họ đã chuẩn bị một số món quà để tặng cho nhau. Tuy nhiên, một vấn đề nhỏ nảy sinh: nếu mọi người tặng quà lẫn nhau thì sẽ tốn rất nhiều thời gian. Vì vậy người tổ chức <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> nghĩ ra một kế hoạch:</p>
+<ul>
+<li>Mỗi người chỉ tặng quà cho người khác giới. Tức là hoàng tử chỉ tặng quà cho các nàng công chúa, và công chúa chỉ tặng quà cho các chàng hoàng tử.</li>
+<li>Các cặp đôi sẽ trao đổi quà với nhau. Nghĩa là nếu hoàng tử A tặng quà cho công chúa B thì công chúa B cũng sẽ tặng lại cho A.</li>
+<li>Với mỗi cặp đôi, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ nhờ máy tính quyết định xem họ có trao đổi quà cho nhau không. Bằng kiến thức tin học đỉnh cao của mình, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đã tạo ra một chương trình nói "Tặng" với xác suất \(\dfrac{1}{k}\) hoặc nói "Không tặng". Tất nhiên, bí kíp lập trình này <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> không thể tiết lộ với các bạn. </li>
+</ul>
+<p><span class="rating rate-none admin"><a href="/user/ami">ami</a></span> không muốn các vị khách phải buồn, anh muốn rằng mọi người đến đây đều có quà mang về. Vì vậy trước khi quyết định, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> muốn nhờ các bạn tư vấn: Nếu thực hiện theo kế hoạch trên, thì xác suất để mọi người đều có quà là bao nhiêu?</p>
+<h4>Input</h4>
+<p>Gồm một dòng chứa hai số nguyên dương \(n\) và \(k\)</p>
+<h4>Output</h4>
+<p>Gọi \(p\) là xác suất các bạn tính được. Bằng kiến thức toán đỉnh cao của mình, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đã chứng minh được rằng \(p \times k^{n^2}\) luôn là số nguyên (chứng minh chi tiết nhường lại cho các bạn). Vì vậy <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> muốn các bạn hãy in ra một số là số dư của phép tính \(p \times k^{n^2}\) chia cho \(10^9+7\).</p>
+<h4>Sample Input 1</h4>
+<pre><code>2 2</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>7</code></pre>
+<h4>Sample Input 2</h4>
+<pre><code>100 100</code></pre>
+<h4>Sample Output 2</h4>
+<pre><code>828467084</code></pre>
+<h4>Giải thích</h4>
+<p>Trong test ví dụ 1, xác suất để mọi người đều có quà là \(\dfrac{7}{16}\) nên chúng ta phải in ra  \(\dfrac{7}{16}\times 2^4=7\)</p>
+<h4>Ràng buộc</h4>
+<ul>
+<li>20% số test ứng với 20% số điểm có \(1\leq n \leq 4\) và \(k=2\);</li>
+<li>30% số test ứng với 30% số điểm có \(1\leq n \leq 300\) và \(2 \leq k \leq 10^9\);</li>
+<li>30% số test ứng với 30% số điểm có \(1\leq n \leq 3000\) và \(2 \leq k \leq 10^9\);</li>
+<li>20% số test ứng với 20% số điểm có \(1\leq n \leq 300,000\) và \(2 \leq k \leq 10^9\);</li>
+</ul>
+</div>
+<hr/>
+</div>

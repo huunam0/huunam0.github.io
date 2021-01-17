@@ -1,0 +1,41 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Trò chơi 0-1</h2>
+</div><div class="content-description screen">
+<div><p><span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> là một người đam mê lập trình. Và hôm nay, <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> đã tạo ra một trò để chơi với <span class="rating rate-candidate-master user"><a href="/user/Monarchuwu">Monarchuwu</a></span>: <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> sẽ dùng máy tính để tạo ngẫu nhiên 1 dãy bit nhị phân <strong>trên đường tròn</strong> với độ dài \(k\) không quá \(1000\), và <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> luôn là người đi trước.</p>
+<p>Sẽ có \(k\) lượt tương ứng với độ dài của dãy :</p>
+<ul>
+<li>Lượt đầu tiên, <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> có thể chọn và xóa \(1\) số bất kì trong dãy bit</li>
+<li>\(k - 1\) lượt tiếp theo, mỗi bên sẽ chọn xóa số liền kề trên đường tròn (trái hoặc phải) so với số mà đối phương lựa chọn ở lượt trước. </li>
+</ul>
+<p>Các lưu ý :</p>
+<ul>
+<li>Bên thắng là bên xóa được nhiều bit số \(1\) hơn</li>
+<li>Sau khi xóa, dãy sẽ tự động lại gần với nhau. Ví dụ : Xóa ký tự thứ \(2\) của '010' -&gt; '00'</li>
+<li>2 bên luôn chơi tối ưu.</li>
+</ul>
+<p>Nhưng sau khi đọc luật chơi, <span class="rating rate-candidate-master user"><a href="/user/Monarchuwu">Monarchuwu</a></span> cho rằng trò chơi quá OP nên anh ta đã đề nghị ở lượt đầu, <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> phải chọn một vị trí ngẫu nhiên để trò chơi trở lại vị trí cân bằng. Và nhiệm vụ của bạn (với vai trò là cộng sự của <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span>) là hãy tính giúp <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> tỉ lệ phần trăm mà <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> có thể thắng <span class="rating rate-candidate-master user"><a href="/user/Monarchuwu">Monarchuwu</a></span> (Biết sau lượt thứ nhất, cả hai người đều chơi tối ưu)</p>
+<p><strong>INPUT :</strong></p>
+<ul>
+<li>Nhập 1 dòng duy nhất là dãy bit được tạo ngẫu nhiên bởi máy tính (Độ dài của dãy bit không vượt quá \(1000\))</li>
+</ul>
+<p><strong>OUTPUT: </strong></p>
+<ul>
+<li>Đáp án của bài toán (Làm tròn đến \(2\) chữ số thập phân)</li>
+</ul>
+<p><strong>Sample input :</strong></p>
+<pre><code>1010</code></pre>
+<p><strong>Sample output :</strong></p>
+<pre><code>50.00</code></pre>
+<hr/>
+<p><strong>Giải thích :</strong></p>
+<p><span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> có thể thắng nếu bắt đầu từ vị trí 1 hoặc 3 và không thể thắng nếu bắt đầu từ vị trí 2 hoặc 4</p>
+<ul>
+<li>Nếu <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> bắt đầu từ vị trí 1, lượt tiếp theo <span class="rating rate-candidate-master user"><a href="/user/Monarchuwu">Monarchuwu</a></span> phải chọn xóa vị trí 4 hoặc 2 (đều là số 0). Bất kể thế nào, lượt tiếp theo <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> sẽ xóa vị trí 3 và thắng với 2 điểm.</li>
+<li>Nếu <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> bắt đầu từ vị trí 2, lượt tiếp theo <span class="rating rate-candidate-master user"><a href="/user/Monarchuwu">Monarchuwu</a></span> phải chọn xóa vị trí 3 hoặc 1. <span class="rating rate-candidate-master user"><a href="/user/Monarchuwu">Monarchuwu</a></span> sẽ chọn xóa vị trí 1. Lượt tiếp theo, <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> sẽ xóa vị trí 3. Cuối cùng <span class="rating rate-candidate-master user"><a href="/user/Monarchuwu">Monarchuwu</a></span> xóa vị trí 4. Hai bạn hòa nhau vì cùng có 1 điểm. </li>
+</ul>
+<p>Dưới đây là minh họa cho trường hợp <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> bắt đầu từ vị trí 1. Các hình tròn màu xanh là các ô <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> chọn xóa, các hình tròn màu đỏ là các ô <span class="rating rate-candidate-master user"><a href="/user/Monarchuwu">Monarchuwu</a></span> chọn.</p>
+<p><img alt="game01" src="https://imgur.com/IdiBvpo.png"/></p>
+<hr/>
+</div>
+<hr/>
+</div>

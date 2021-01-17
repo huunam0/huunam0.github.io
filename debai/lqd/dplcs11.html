@@ -1,0 +1,43 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Dãy con chung zigzag dài nhất</h2>
+</div><div class="content-description screen">
+<div><p>Cho dãy \(A\) gồm \(N\) phần tử gồm các số nguyên dương \(A_1, A_2, ..., A_N\) và dãy \(B\) gồm \(M\) phần tử gồm các số nguyên dương \(B_1, B_2, ..., B_M\). Dãy \(C\) được gọi là dãy con chung zigzag độ dài \(K\) của \(A, B\) nếu tồn tại hai dãy chỉ số như sau:</p>
+<ul>
+<li>\(1 \leq i_1 &lt; i_2 &lt; ... &lt; i_K \leq N\).</li>
+<li>\(1 \leq j_1 &lt; j_2 &lt; ... &lt; j_K \leq M\).</li>
+</ul>
+<p>Sao cho \(C_p = A_{i_p} = B_{j_p}\) và thoả mãn một trong hai điều kiện sau:</p>
+<ul>
+<li>\(C_1 &gt; C_2 &lt; C_3 &gt; ... \)</li>
+<li>\(C_1 &lt; C_2 &gt; C_3 &lt; ... \)</li>
+</ul>
+<p><strong>Yêu cầu</strong>: Tìm dãy \(C\) là dãy con chung zigzag của \(A, B\) sao cho độ dài \(K\) lớn nhất có thể.</p>
+<p><strong>Dữ liệu vào</strong>: Gồm ba dòng:</p>
+<ul>
+<li>Dòng thứ nhất chứa hai số nguyên dương \(N, M\).</li>
+<li>Dòng thứ hai gồm \(N\) số nguyên dương \(A_1, A_2, ..., A_N\) \((A_i \leq 10^6)\).</li>
+<li>Dòng thứ ba gồm \(M\) số nguyên dương \(B_1, B_2, ..., B_M\) \((B_i \leq 10^6)\).</li>
+</ul>
+<p><strong>Kết quả</strong>: Gồm hai dòng:</p>
+<ul>
+<li>Dòng thứ nhất in ra số \(K\) là độ dài dãy con chung \(C\) dài nhất tìm được.</li>
+<li>Dòng thứ hai in ra \(K\) số nguyên dương \(C_1, C_2, ..., C_K\). Nếu có nhiều dãy \(C\) thoả mãn, in ra một dãy bất kì.</li>
+</ul>
+<p><strong>Ví dụ</strong>:</p>
+<p><strong>Sample input</strong>:</p>
+<pre><code>6 8
+4 3 6 5 8 7
+2 4 1 6 5 1 8 7</code></pre>
+<p><strong>Sample Output</strong>:</p>
+<pre><code>5
+4 6 5 8 7</code></pre>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>\(30\)% số test đầu tiên tương ứng với \(30\)% số điểm có \(N, M \leq 10^2\).</li>
+<li>\(30\)% số test tiếp theo tương ứng với \(30\)% số điểm có \(N, M \leq 10^3\).</li>
+<li>\(40\)% số test còn lại tương ứng với \(40\)% số điểm có \(N, M \leq 5.10^3\).</li>
+<li>Nếu in ra đúng số \(K\) thì sẽ được \(50\)% số điểm của test. Nếu in ra thêm được dãy \(C_1, C_2, ..., C_K\) mà đúng sẽ được thêm \(50\)% số điểm của test.</li>
+</ul>
+</div>
+<hr/>
+</div>

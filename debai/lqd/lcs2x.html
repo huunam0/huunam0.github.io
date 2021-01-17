@@ -1,0 +1,40 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Dãy con chung bội hai dài nhất</h2>
+</div><div class="content-description screen">
+<div><p>Dãy \(C = c_1, c_2,..., c_k\) được gọi là dãy con của dãy \(A = a_1, a_2,..., a_n\) nếu \(C\) có thể nhận được bằng cách xóa bớt một số phần tử của dãy \(A\) và giữ nguyên thứ tự của các phần tử còn lại, nghĩa là tìm được dãy các chỉ số \(1 \leq l_1 &lt; l_2 &lt; ... &lt; l_k \leq n\) sao cho \(c_1 = a_{l_1}\), \(c_2 = a_{l_2}\),..., \(c_k\) = \(a_{l_k}\). Ta gọi độ dài của dãy là số phần tử của dãy.</p>
+<p>Cho hai dãy \(A = a_1, a_2,..., a_m\) và \(B = b_1, b_2,..., b_n\). Dãy \(C = c_1, c_2,..., c_k\) được gọi là dãy con chung bội hai của dãy \(A\) và \(B\) nếu \(C\) vừa là dãy con của dãy \(A\), vừa là dãy con của dãy \(B\) và thỏa mãn điều kiện \(2 * c_i ≤ c_{i+1}\) (\(i = 1, 2,..., k – 1\)).</p>
+<h4>Yêu cầu</h4>
+<p>Cho hai dãy \(A\) và \(B\). Hãy tìm độ dài dãy con chung bội hai có độ dài lớn nhất của hai dãy \(A\) và \(B\).</p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa \(T\) là số lượng bộ dữ liệu. Tiếp đến là \(T\) nhóm dòng, mỗi nhóm cho thông tin về một bộ dữ liệu theo khuôn dạng sau:</p>
+<ul>
+<li>Dòng đầu chứa \(2\) số nguyên dương \(m\) và \(n\).</li>
+<li>Dòng thứ hai chứa \(m\) số nguyên không âm \(a_1\), \(a_2\), ..., \(a_m\) mỗi số không vượt quá \(10^9\).</li>
+<li>Dòng thứ ba chứa \(n\) số nguyên không âm \(b_1\), \(b_2\), ..., \(b_n\) mỗi số không vượt quá \(10^9\).</li>
+</ul>
+<p>Các số trên cùng một dòng được ghi cách nhau ít nhất một dấu cách.</p>
+<hr/>
+<h4>Giới hạn</h4>
+<ul>
+<li>\(30\%\) số test có \(m, n \leq 15\).</li>
+<li>\(30\%\) số test khác có \(m, n \leq 150\).</li>
+<li>Có \(40\%\) số test còn lại có \(m, n \leq 1500\).</li>
+</ul>
+<hr/>
+<h4>Output</h4>
+<p>Ghi ra \(T\) dòng, mỗi dòng ghi một số nguyên là độ dài dãy con chung bội hai dài nhất của dãy \(A\) và \(B\) tương ứng với bộ dữ liệu vào.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>1
+5 5
+5 1 6 10 20
+1 8 6 10 20</code></pre>
+<h5>Output</h5>
+<pre><code>3</code></pre>
+<hr/>
+<p><em>Nguồn bài: VOI 2014</em></p>
+</div>
+<hr/>
+</div>

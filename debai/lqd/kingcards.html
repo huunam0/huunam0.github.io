@@ -1,0 +1,53 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Vua Bài</h2>
+</div><div class="content-description screen">
+<div><p>Trong một lần tham gia chương trình <strong>"Ai thông minh hơn học sinh mẫu giáo"</strong>, <span class="rating rate-master user"><a href="/user/bin9638">bin9638</a></span> và <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> cùng chơi trò rút bài với nhau, trò chơi có luật như sau:</p>
+<p>-Bộ bài có các lá bài được xếp theo thứ tự, không quá \(400\) lá, mỗi lượt chơi mỗi người sẽ rút \(1\) lá bài ở \(2\) đầu bộ bài.</p>
+<p>-Bộ bài gồm những lá sau:</p>
+<ul>
+<li>Lá bình thường, kí hiệu là <strong>"#"</strong>.</li>
+<li>Lá cộng điểm , mỗi lần rút lá này người rút sẽ được cộng thêm số điểm nguyên \(x\) ghi trên lá bài <strong>(1≤x≤9)</strong>, được kí hiệu \("1","2",...,"9"\) ứng với số điểm trên lá.</li>
+<li>Lá chìa khóa, gồm các màu xanh, đỏ, tím, vàng dùng để mở các lá cửa cùng màu, được kí hiệu lần lượt là \(“G”, “R”, “P”, “Y”\). \(1\) lá chìa khóa có thể mở nhiều lá cửa cùng màu tương ứng.</li>
+<li>Lá cửa gồm các màu xanh, đỏ, tím, vàng; người bốc phải có lá chìa khóa cùng màu mới được bốc lá này. Kí hiệu lần lượt là \(“g”, “r”, “p”, “y”\). </li>
+</ul>
+<p>-Trò chơi sẽ kết thúc khi có \(1\) người <strong>không thể rút bài</strong> nữa hoặc khi <strong>hết bài</strong> (nếu có thể rút được thì bắt buộc phải rút).</p>
+<p>-Người chiến thắng sẽ là người có <strong>số điểm cao hơn</strong>.</p>
+<p>Trong trò chơi này <span class="rating rate-master user"><a href="/user/bin9638">bin9638</a></span> là người bốc trước. Biết cả \(2\) người đều chơi <strong>tối ưu</strong> ( <strong>tối ưu</strong> ở đây là làm sao cho mình hơn điểm số đối phương <strong>nhiều nhất</strong>), hãy xác định xem ai là người chiến thắng nhé!</p>
+<p><strong>Yêu cầu:</strong> xác định xem ai là người chiến thắng.</p>
+<p><strong>Input:</strong> gồm \(1\) dòng duy nhất là xâu \(S\) biểu thị bộ bài \((|S|≤400)\)</p>
+<p><strong>Output:</strong> gồm \(2\) dòng, dòng thứ nhất in ra “<span class="rating rate-master user"><a href="/user/bin9638">bin9638</a></span>” nếu <span class="rating rate-master user"><a href="/user/bin9638">bin9638</a></span> thắng hoặc “<span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span>” nếu ngược lại, trường hợp cả \(2\) người hòa thì in ra \(“draw”\). Dòng thứ \(2\) in ra hiệu số điểm của \(2\) người khi kết thúc trò chơi (điểm <span class="rating rate-master user"><a href="/user/bin9638">bin9638</a></span> trừ điểm <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span>)</p>
+<p><strong>Input</strong></p>
+<pre><code>#4##</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>bin9638
+4</code></pre>
+<p><strong>Input</strong></p>
+<pre><code>1g11g</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>bin9638
+1</code></pre>
+<p><strong>Input</strong></p>
+<pre><code>Gr#1#gR</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>algorit
+-1</code></pre>
+<p><strong>Input</strong></p>
+<pre><code>Gy9gg</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>draw
+0</code></pre>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li>Trường hợp \(1\), <span class="rating rate-master user"><a href="/user/bin9638">bin9638</a></span> thắng với \(4\) điểm còn <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> có \(0\) điểm.</li>
+<li>Trường hợp \(2\), Sau khi <span class="rating rate-master user"><a href="/user/bin9638">bin9638</a></span> rút là bài đầu tiên thì <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> không thể rút bài nên trò chơi kết thúc, <span class="rating rate-master user"><a href="/user/bin9638">bin9638</a></span> thắng với \(1\) điểm.</li>
+<li>Trường hợp \(3\) thì cả \(2\) người sẽ phải rút hết các lá cửa và chìa khóa, khi đó bộ bài còn lại là <strong>“#1#”</strong> trong lượt của <span class="rating rate-master user"><a href="/user/bin9638">bin9638</a></span>, sau cùng <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> thắng với \(1\) điểm.</li>
+<li>Trường hợp \(4\), <span class="rating rate-master user"><a href="/user/bin9638">bin9638</a></span> sau khi rút lá \(“G”\) thì <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> không thể rút bài nên trò chơi kết thúc, cả \(2\) hòa với \(0\) điểm.</li>
+</ul>
+<p><strong>Giới hạn:</strong></p>
+<ul>
+<li>40% test có \(|S|≤20\).</li>
+<li>60% test không có ràng buộc gì thêm.</li>
+</ul>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,46 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Đếm tập con chẵn</h2>
+</div><div class="content-description screen">
+<div><p>Cho dãy số \(a_1, a_2, …, a_n\) và \(q\) thao tác thuộc 1 trong 2 loại sau:</p>
+<p><code>1 k b</code>: gán \(a_k=b\)</p>
+<p><code>2 l r</code>: Tính số lương tập con \(\{k_1, k_2, ..., k_m\}\) khác rỗng của tập \(\{l,l+1,…,r\}\) sao cho \(a_{k_1} + a_{k_2} + ... + a_{k_m}\) là số chẵn.</p>
+<p><strong>Yêu cầu:</strong> Với thao tác loại 2,  hãy in ra số dư của kết quả khi chia cho \(10^9+7\).</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu chứa 2 số nguyên \(n,q\).</li>
+<li><p>Dòng tiếp theo chứa \(n\) số \(a_1,a_2,…,a_n (1\leq a_i \leq 10^9)\).</p>
+</li>
+<li><p>\(q\) dòng tiếp theo mỗi dòng chứa một trong hai loại thao tác :</p>
+<ul>
+<li><code>1 k b</code> \((1 \leq k \leq n; 1 \leq b \leq 10^9)\)</li>
+<li><code>2 l r</code> \((1\leq l \leq r \leq n)\)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Kết quả</strong>: Với mỗi thao tác loại 2, in ra số lượng tập con thỏa mãn \((mod \ 10^9+7)\)  trên một dòng.</p>
+<h4>Ví dụ</h4>
+<p><strong>Input</strong></p>
+<pre><code>5 6
+2 4 6 8 10
+2 1 3
+2 4 4
+2 4 5
+1 4 7
+2 4 4
+2 4 5</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>7
+1
+3
+0
+1</code></pre>
+<p><strong>Giới hạn:</strong></p>
+<ul>
+<li>20% số test có \(n,q \leq 20\).</li>
+<li>20% số test có \(n,q \leq 5000\).</li>
+<li>20% số test có \(n \leq 10^5, q \leq 100\).</li>
+<li>40% số test có \(n,q \leq 10^5\).</li>
+</ul>
+</div>
+<hr/>
+</div>

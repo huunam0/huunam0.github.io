@@ -1,0 +1,51 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Đường một chiều</h2>
+</div><div class="content-description screen">
+<div><p>Ở một đất nước nọ có \(n\) thành phố và \(m\) con đường hai chiều kết nối các thành phố đó với nhau. Sự phát triển nhanh chóng về khoa học kỹ thuật đã tạo ra những phương tiện giao thông nhanh hơn và to lớn hơn kéo theo một vấn đề nan giải về cơ sở hạ tầng: các con đường bây giờ đã quá chật hẹp để cho phép hai phương tiện giao thông lưu thông ngược chiều trong cùng một thời điểm. Một giải pháp được đặt ra là chuyển đổi tất cả các con đường hai chiều này thành đường một chiều.</p>
+<p>Việc định chiều các con đường cũng gặp nhiều khó khăn vì một số cặp thành phố trước đây được kết nối với nhau thì sau khi định chiều đã không còn nữa. Chính phủ đã ban hành một danh sách những bộ đôi thành phố quan trọng mà quá trình định chiều bắt buộc phải thỏa mãn việc tồn tại một đường đi từ thành phố thứ nhất đến thành phố thứ hai của mỗi bộ. Nhiệm vụ của bạn là xác định xem từng con đường sẽ phải được chuyển đổi thành chiều nào. Dữ liệu đảm bảo tồn tại ít nhất một phương án định chiều thỏa mãn tất cả các yêu cầu.</p>
+<p>Đối với một số con đường, chúng ta chỉ có một lựa chọn duy nhất (về hướng) nếu muốn định chiều nó. Các phương tiện giao thông bắt buộc phải lưu thông từ thành phố thứ nhất đến thành phố thứ hai của con đường (chiều bên <em>phải</em>, ký hiệu bằng ký tự <code>R</code>) hoặc từ thành phố thứ hai về thành phố thứ nhất (chiều bên <em>trái</em>, ký hiệu bằng ký tự <code>L</code>). Tuy nhiên, với nhiều con đường khác, chúng ta có thể vừa tìm được một phương án định chiều nó bên trái, vừa tìm được một phương án khác định chiều nó bên phải. Những con đường như vậy sẽ được ký hiệu là <code>B</code>.</p>
+<p>Bạn phải xuất ra một xâu độ dài \(m\), trong đó ký tự thứ \(i\) phải là:</p>
+<ul>
+<li><code>R</code> nếu tất cả phương án đều yêu cầu con đường \(i\) phải được định chiều bên phải.</li>
+<li><code>L</code> nếu tât cả phương án đều yêu cầu con đường \(i\) phải được định chiều bên trái.</li>
+<li><code>B</code> nếu vừa tồn tại một phương án yêu cầu con đường \(i\) định chiều bên trái, vừa tồn tại một phương án yêu cầu con đường \(i\) định chiều bên phải. </li>
+</ul>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa hai số nguyên dương \(n\) và \(m\) thể hiện số thành phố và số con đường hai chiều ban đầu.</p>
+<p>\(m\) dòng tiếp theo mô tả các con đường bằng các cặp số nguyên \(a_i\) và \(b_i\) - thể hiện con đường nối giữa thành phố \(a_i\) và thành phố \(b_i\). Có thể tồn tại nhiều hơn một con đường nối cùng một cặp thành phố với nhau và cũng có thể tồn tại một con đường nối một thành phố với chính nó.</p>
+<p>Dòng tiếp theo chứa số nguyên \(p\) thể hiện số cặp thành phố phải được kết nối trực tiếp với nhau.</p>
+<p>\(p\) dòng tiếp theo chứa các cặp số nguyên \(x_i\) và \(y_i\), với ý nghĩa rằng phải tồn tại một con đường bắt đầu ở thành phố \(x_i\) và kết thúc ở thành phố \(y_i\).</p>
+<hr/>
+<h4>Output</h4>
+<p>In ra một xâu độ dài \(m\) như yêu cầu trên đề bài.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>5 6
+1 2
+1 2
+4 3
+2 3
+1 3
+5 1
+2
+4 5
+1 3</code></pre>
+<h5>Output</h5>
+<pre><code>BBRBBL</code></pre>
+<h5>Giải thích</h5>
+<p>Con đường <code>1 3</code> có thể định chiều theo cả hai hướng. Hai phương án đáp ứng cả hai hướng là <code>LLRLRL</code> và <code>RLRRLL</code>.</p>
+<hr/>
+<h4>Giới hạn</h4>
+<ul>
+<li>\(1\leq n, m, p\leq 100,000\).</li>
+<li>\(1\leq a_i, b_i, x_i, y_i\leq n\)</li>
+<li>\(30\%\) số test có \(n,m\leq 1000\) và \(p\leq 100\).</li>
+<li>\(30\%\) số test khác có \(p\leq 100\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn bài: CEOI 2017</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,43 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chia Bò Sữa</h2>
+</div><div class="content-description screen">
+<div><p>Sau khi trải qua kì thi quan trọng xong, Sắn về quê bắt tay làm kinh doanh với mảnh đất quê hương. Sắn bắt đầu làm nông trại với \(N\) chú bò sữa. Theo số lượng thống kê, chú bò thứ \(i\) sản xuất \(a[i]\) đơn vị sữa mỗi ngày.</p>
+<p>Mỗi sáng sớm Sắn lùa lũ bò ra đồng cỏ để ăn những ngọn cỏ ngon nhất, tối Sắn lại lùa bò về chuồng. Lần này Sắn nâng cấp máy và mua thêm một máy nữa. Bây giờ Sắn có hai máy vắt sữa phục vụ để vắt hết \(N\) chú bò. Để đảm bảo công suất hoạt động của hai máy vắt sữa, mỗi lần vắt Sắn sẽ chia đều \(N\) chú bò vào hai máy sao cho lượng sữa hai máy vắt được tương đương nhau. Bạn hãy lập trình giúp cho Sắn liệt kê tất cả cách sắp \(N\) chú bò vào vắt ở hai máy để sản lượng sữa hai máy vắt được là như sau ở mỗi cách.</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất là số nguyên dương \(N \ (1 \leq N \leq 20)\)</p>
+</li>
+<li><p>Dòng thứ hai là là \(N\) số nguyên dương \(a_1, a_2, ... a_N \ (1 \leq a_i \leq 10^9)\) là sản lượng sữa của \(N\) chú bò.</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li><p>Nếu không có cách nào phù hợp hãy in \(-1\)</p>
+</li>
+<li><p>Nếu có đáp án, mỗi dòng ghi một cách: Mỗi cách sẽ gồm \(N\) số nguyên \(x_1, x_2, ...x_N\). \(x[i] = 1\) tức sẽ bố trí chú bò thứ \(i\) vào máy \(1\). \(x[i] = 2\) thì bố trí chú bò \(i\) vào máy \(2\). Các cách được in theo thứ tự từ điển.</p>
+</li>
+</ul>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>5
+2 1 2 1 2</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>11212
+12122
+12221
+21112
+21211
+22121</code></pre>
+<p><strong>Sample Input 2</strong></p>
+<pre><code>5
+2 1 2 1 8</code></pre>
+<p><strong>Sample Output 2</strong></p>
+<pre><code>-1</code></pre>
+<p><strong>Sample Input 3</strong></p>
+<pre><code>5
+1 5 1 3 4</code></pre>
+<p><strong>Sample Output 3</strong></p>
+<pre><code>11122
+22211</code></pre>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,40 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">BRIDGES</h2>
+</div><div class="content-description screen">
+<div><p>Tại một vương quốc xa xăm nào đó có một dòng sông cắt ngang và chia vương quốc này thành hai bờ, bờ trái và bờ phải. Ở mỗi bờ sẽ có \(10^9\) ngôi làng. Trong bài toán này ta sẽ xem mỗi ngôi làng là một điểm trên mặt phẳng toạ độ Descartes, ngôi làng thứ \(x\) ở bờ trái sẽ có toạ độ là (\(0,x\)), ngồi làng thứ \(y\) ở bờ phải sẽ có toạ độ là (\(1, y\)) (\(1 &lt; x,y &lt; 10^9, x, y \in N*\)).</p>
+<p>Để tăng trưởng kinh tế nhà vua của vương quốc đã quyết đinh xây dựng \(N\) cây cầu bắt ngang qua dòng sông để nối các ngôi làng lại với nhau. Cây cầu có dạng (\(u, v\)) có nghĩa là người dân ở làng thứ \(u\) ở bờ trái và người dân ở ngôi làng thứ \(v\) ở bờ phải có thể đi lại bằng cây cầu này. Với một cây cầu (\(u, v\)) bất kì, những người dân sử dụng cây cầu này sẽ cảm thấy không hài lòng nếu tồn tại một cây cầu (\(x, y\)) (\(x = u\) và \(y = v\)) bất kì cắt với cây cầu này.</p>
+<p>Hai cây cầu là (\(u, v\)) và (\(x, y\)) được gọi là cắt nhau nếu như đoạn thẳng nối hai điểm (\(0, u\)) và (\(1, v\)) cắt với đoạn thẳng nối hai điểm (\(0, x\)) và (\(1, y\)). Bạn hãy tính tổng độ không hài lòng của người dân ở vương quốc với tổng độ không hài lòng được đinh nghĩa là: tổng số cặp (\(u, v\)) và (\(x,
+y\)) thoả mãn điều kiện trên. <strong><em>Chú ý</em></strong>: cặp {\((u, v), (x, y)\)} và {\((x, y), (u, v)\)} chỉ tính là một. Hãy tính tổng độ không hài lòng của người dân.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên gồm một số nguyên \(N\) (\(1 &lt; N &lt; 10^5\))</li>
+<li>\(N\) dòng tiếp theo, mỗi dòng gồm hai số tự nhiên \(u, v\) (\(1 &lt; u, v &lt; 10^9\))</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Một số duy nhất là kết quả của bài toán.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>3
+1 3
+2 2
+3 1</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>3</code></pre>
+<p><strong><em>Giải thích</em></strong>
+Các cặp cây cầu cắt nhau là:</p>
+<ul>
+<li>\((1, 3), (2, 2)\)</li>
+<li>\((1, 3), (3, 1)\)</li>
+<li>\((2, 2), (3, 1)\)</li>
+</ul>
+<p><strong><em>Ràng buộc</em></strong></p>
+<ul>
+<li>Subtask 1 (50% sŁ test): \(N ≤ 5 × 10^3\),</li>
+<li>Subtask 2 (50% sŁ test): Không có ràng buộc gì thêm</li>
+</ul>
+<hr/>
+<p><em>Nguồn: BFC</em></p>
+</div>
+<hr/>
+</div>

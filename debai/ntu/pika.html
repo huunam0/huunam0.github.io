@@ -1,0 +1,54 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    PIKA - Pikachu 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Trong trò chơi Pikachu, để có thể ăn được 2 tấm hình giống nhau, thì cần tồn tại một đường đi từ hình này đến hình kia mà chỉ đổi hướng tối đa 2 lần (xem hình bên dưới).</p>
+<p style="text-align:center"><img alt="" src="images/PIKA2.jpg" style="height:376px; width:447px"/></p>
+<p>Cho một trạng thái của trò chơi Pikachu là ma trận gồm n dòng m cột và vị trí của hai tấm hình giống nhau. Bạn hãy xác định xem từ tấm hình này đế tấm hình kia tối thiểu phải đổi hướng mấy lần nhé.</p>
+<p><strong>Dữ liệu nhập: </strong>gồm các dòng sau:</p>
+<p>- Dòng thứ nhất là hai số nguyên n, m cách nhau một khoảng trắng (1 ≤ n, m ≤ 100) là số dòng và số cột của trò chơi.</p>
+<p>- Trong n dòng tiếp theo, tại mỗi dòng gồm m số nguyên 0 hoặc 1 cách nhau một khoảng trắng thể hiện trạng thái của trò chơi, 0 là ô không có thẻ hình, 1 là ô có thẻ hình.</p>
+<p>- Trong dòng tiếp theo gồm 4 số nguyên y<sub>1</sub>, x<sub>1</sub>, y<sub>2</sub>, x<sub>2</sub> (1 ≤ y<sub>1</sub>, y<sub>2</sub> ≤ n, 1 ≤ x<sub>1</sub>, x<sub>2</sub> ≤ m) mỗi số cách nhau một khoảng trắng. (y<sub>1</sub>, x<sub>1</sub>) là vị trí dòng và vị trí cột của hình thứ nhất,  (y<sub>2</sub>, x<sub>2</sub>) là vị trí dòng và vị trí cột của hình thứ hai. Dữ liệu cho đảm bảo hai ô trên không trùng nhau và tại hai ô đều có thẻ hình.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Nếu tồn tại đường đi giữa 2 thẻ hình, in ra số lần chuyển hướng của đường đi có số lần chuyển hướng ít nhất.</p>
+<p>- Nếu không tồn tại đường đi, in ra -1.</p>
+<p>Lưu ý: đánh số các dòng từ 1 đến n theo thứ tự từ trên xuống dưới, đánh số các cột từ 1 đến m theo thứ tự từ trái qua phải.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 5<br/>0 0 0 0 0<br/>0 1 1 1 0<br/>0 1 1 1 0<br/>0 1 1 1 0<br/>0 0 0 0 0<br/>2 2 2 4</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 5<br/>0 0 0 0 0<br/>0 1 1 1 0<br/>0 1 1 1 0<br/>0 1 1 1 0<br/>0 0 0 0 0<br/>4 2 4 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">0</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 5<br/>0 0 0 0 0<br/>0 1 1 1 0<br/>0 1 1 1 0<br/>0 1 1 1 0<br/>0 0 0 0 0<br/>3 2 2 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

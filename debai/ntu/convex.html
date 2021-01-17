@@ -1,0 +1,47 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    CONVEX - Hình giả lồi 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Cho một lưới gồm <em>n</em> dòng <em>m</em> cột, trong đó mỗi ô được tô màu đen hoặc màu trắng. Từ một ô bất kỳ ta có thể đi sang bốn ô liền kề trên, dưới, trái, phải. Ta định nghĩa một đường đi màu đen là đường đi mà có ô đầu, ô cuối và các ô trung gian đều là các ô màu đen.</p>
+<p>Ta gọi tập hợp các ô màu đen trong lưới là <em><strong>hình lồi</strong> </em>nếu giữa hai ô màu đen bất kỳ tồn tại một đường đi màu đen mà chỉ đổi hướng tối đa <strong><em>một</em></strong> lần.</p>
+<p style="text-align:center"><img alt="" src="images/CONVEX.png" style="height:121px; width:300px"/></p>
+<p style="margin-left:1cm; text-align:center">Hình lồi                           Hình không lồi</p>
+<p>Từ lưới <em>n</em> dòng <em>m</em> cột ban đầu, hãy viết chương trình xác định xem các ô màu đen có phải là hình lồi hay không.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên lưu hai số nguyên <em>n</em> và <em>m</em> (1 ≤ <em>n</em>, <em>m</em> ≤ 50) — là kích thước của lưới.</p>
+<p>- Trong n dòng tiếp theo mỗi dòng chứa m số 0 hay 1, mỗi số cách nhau một khoảng trắng. Số 0 biểu diễn ô màu trắng và số 1 biểu diễn ô màu đen trong cột tương ứng. Dữ liệu vào bảo đảm có ít nhất một ô màu đen.</p>
+<p><strong>Dữ liệu xuất</strong></p>
+<p>- In ra YES nếu lưới là hình lồi, NO nếu lưới không phải hình lồi.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 4<br/>0 0 1 0<br/>0 1 1 1<br/>1 1 1 1<br/>0 1 1 0 <br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">YES</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 4<br/>0 1 1 0<br/>0 1 1 0<br/>0 1 0 0<br/>0 1 1 0 <br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">NO</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

@@ -1,0 +1,47 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Xâu tương đồng</h2>
+</div><div class="content-description screen">
+<div><p>Người ta định nghĩa xâu \(X\) và xâu \(Y\) là tương đồng bậc \(k\) nếu:</p>
+<ul>
+<li>Hai xâu có độ dài bằng nhau \(\left(|X|=|Y|\right)\).</li>
+<li>Ký tự \(X_i\) và \(Y_i\) cách nhau không quá \(k\) vị trí trong bảng mã ASCII \(\left(i=1, 2,..., |X|\right)\).</li>
+</ul>
+<hr/>
+<h4>Yêu cầu</h4>
+<p>Cho số nguyên \(k\) và \(2\) xâu \(S_1\), \(S_2\) có độ dài bằng nhau (xâu chỉ gồm ký tự từ <code>a</code> đến <code>z</code>). Hãy xác định số cách cắt \(S_1\) thành \(3\) xâu khác rỗng, sau đó ghép tạo thành xâu \(S_3\) mà xâu \(S_3\) tương đồng bậc \(k\) với xâu \(S_2\). Hai cách cắt được gọi là khác nhau nếu tồn tại một vị trí cắt khác nhau.</p>
+<hr/>
+<h4>Input</h4>
+<ul>
+<li>Dòng 1: chứa số nguyên \(k\);</li>
+<li>Dòng 2: chứa xâu \(S_1\);</li>
+<li>Dòng 3: chứa xâu \(S_2\).</li>
+</ul>
+<hr/>
+<h4>Output</h4>
+<p>Số cách cắt thỏa mãn.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Sample input 1</h5>
+<pre><code>0
+beast
+betas</code></pre>
+<h5>Sample output 1</h5>
+<pre><code>1</code></pre>
+<h5>Sample input 2</h5>
+<pre><code>1
+aaaaa
+bbbbb</code></pre>
+<h5>Sample output 2</h5>
+<pre><code>6</code></pre>
+<hr/>
+<h4>Ràng buộc</h4>
+<ul>
+<li><em>Subtask 1:</em> \(|S_1|=|S_2|\leq 300\); \(k\leq 25\); [40 test]</li>
+<li><em>Subtask 1:</em> \(|S_1|=|S_2|\leq 3000\); \(k=0\); [30 test]</li>
+<li><em>Subtask 1:</em> \(|S_1|=|S_2|\leq 3000\); \(k\leq 25\); [30 test]</li>
+</ul>
+<hr/>
+<p><em>Nguồn bài: thầy Đỗ Đức Đông.</em></p>
+</div>
+<hr/>
+</div>

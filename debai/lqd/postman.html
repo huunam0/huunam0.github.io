@@ -1,0 +1,40 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Postman</h2>
+</div><div class="content-description screen">
+<div><p>Chuyền phát hàng là một công việc quan trọng trong thương mại điện tử là lĩnh vực phát triển bùng nổ trong thời gian hiện nay. Ta xét công việc của một nhân viên giao hàng của Công ty XYZ chuyên bán hàng trên mạng. Nhân viên giao hàng cần phát các kiện hàng (được đóng gói trong các hộp cùng kích thước) đến các khách hàng có địa chỉ trên một đại lộ có dạng một đường thẳng.</p>
+<p>Nhân viên giao hàng sẽ nhận các kiện hàng tại trụ sở công ty ở vị trí \(x = 0\), và cần chuyền phát hàng đến \(n\) khách hàng, được đánh số từ 1 đến \(n\). Biết \(x_i\) và \(m_i\) là vị trí của khách hàng \(i\) và số lượng kiện hàng cần chuyển cho khách hàng này. Do các kiện hàng là khá cồng kềnh nên mồi lần đi chuyển phát nhân viên giao hàng chi có thê mang theo không quá k kiện hàng.</p>
+<p>Nhân viên giao hàng xuất phát từ trụ sở, nhận một số (không quá \(k\)) kiện hàng và di chuyên theo đại lộ đê chuyên phát cho một số khách hàng. Khi giao hết các kiện hàng mang theo, nhân viên giao hàng lại quay trờ về trụ sở và lặp lại công việc nói trên cho đến khi chuyển phát được tất cà các kiện hàng cho khách hàng. Sau khi kết thúc công việc chuyền phát, nhân viên phải quay trở lại trụ sở công ty để nộp cho phòng kế toán tất cả các hóa đơn giao nhận có ký nhận của khách hàng. Giả thiết là: tốc độ di chuyền của nhân viên là 1 đơn vị khoảng cách trên một đơn vị thời gian. Thời gian nhận hàng ở trụ sở công ty và thời gian bàn giao hàng cho khách hàng được coi là bằng 0.</p>
+<p><strong>Yêu cầu</strong>: Giả sử thời diêm mà nhân viên giao hàng bắt đầu công việc là 0. Hãy giúp nhân viên giao hàng tìm cách hoàn thành công việc đã mô tả ở trên tại thời điềm sớm nhất.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương được ghi cách nhau bởi dấu cách \(n\) và \(k\) \(( n &lt; 1000; k&lt; 10^7)\).</li>
+<li>Dòng thứ \(i\) trong số \(n\) dòng tiếp theo chứa hai số nguyên được ghi cách nhau bởi dấu cách \(x_i, m_i\) (\(|x_i| &lt; 10^7, 1 &lt; m_i &lt; 10^7\)).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra một số nguyên là thời điểm sớm nhất mà người giao hàng có thể hoàn thành nhiệm vụ của mình.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>4 10 
+-7 5 
+-2 3
+5 7
+9 5</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>42</code></pre>
+<p><strong>Sample input</strong></p>
+<pre><code>7 1
+9400000 10000000
+9500000 10000000
+9600000 10000000
+9700000 10000000
+9800000 10000000
+9900000 10000000 
+10000000 10000000</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>1358000000000000</code></pre>
+<hr/>
+<p><em>Nguồn: Thầy Nghĩa '18</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,46 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">FINDMAX1</h2>
+</div><div class="content-description screen">
+<div><p>Cho một dãy \(a\) gồm \(N\) số nguyên, được đánh số từ 1 đến \(N\), số thứ \(i\) có giá trị là \(a_i\) ban đầu tất cả các số đều có giá trị bằng 0. Ta có \(Q\) thao tác. Có hai loại thao tác</p>
+<ul>
+<li>Loại 1: Gồm hai số \(i\), \(v\): gán \(a_i = v\)</li>
+<li>Loại 2: Gồm hai số \(l\), \(r\): trả về số có giá trị lớn nhất trong đoạn từ \(l\) đến \(r\).</li>
+</ul>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li>Dòng đầu tiền gồm 2 hai số nguyên dương \(N\), \(Q\) (\(N, Q \leq 2000\))</li>
+<li>Dòng thứ hai gồm \(N\) số, là giá trị ban đầu của dãy \(a\)</li>
+<li>\(Q\) dòng tiếp theo mỗi dòng là gồm 3 số, số đầu tiên là \(t\) (\(1 \leq t \leq 2\)), là loại thao tác của thao tác hiện tại. Nếu \(t = 1\), hai số tiếp theo sẽ là \(i\) và \(v\) (\(1 \leq i \leq N\), \(1 \leq v \leq 10^{9}\)). Nếu \(t = 2\), hai số tiếp theo sẽ là \(l\) và \(r\) \((1 \leq l \leq r \leq n)\).</li>
+</ul>
+<p><strong>Dữ liệu ra:</strong></p>
+<ul>
+<li>Dòng nhiều dòng là đáp án cho các thao tác loại 2, mỗi số in trên một dòng.</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>5 6
+
+1 2 3 4 5
+
+2 1 5
+
+1 1 6
+
+2 1 5
+
+2 2 4
+
+1 2 5
+
+2 2 4</code></pre>
+<p>Output:</p>
+<pre><code>5
+
+6
+
+4
+
+5</code></pre>
+</div>
+<hr/>
+</div>

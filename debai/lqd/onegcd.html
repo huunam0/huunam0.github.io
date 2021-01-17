@@ -1,0 +1,43 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">OneGCD</h2>
+</div><div class="content-description screen">
+<div><p>Cho \(G\) là đồ thị vô hướng liên thông không chứa khuyên (khuyên là cạnh nối một đỉnh với chính nó) với \(N\) đỉnh và \(M\) cạnh. Các đỉnh của đồ thị được đánh số từ l đến \(N\). Hãy tìm cách gán cho mỗi cạnh của \(G\) một nhãn là một số từ 1 đến \(M\) sao cho không có hai cạnh nào có cùng nhãn, và mồi đỉnh với bậc lớn hơn 1, ước chung lớn nhất của các nhãn trên các cạnh kề nó là 1.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương \(N\) và \(M\) được ghi cách nhau bởi dấu cách (\(N &lt; 10^5; M &lt; 250000\));</li>
+<li>Mỗi dòng trong số \(M\) dòng tiếp theo chứa hai số \(x\) và \(y\) được ghi cách nhau bởi dấu cách, cho biết có cạnh nối giữa các nút \(x\) và \(y\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra M dòng, mỗi dòng chứa ba số nguyên dương \(x,y,v\) được ghi cách nhau bởi dấu cách cho biết cạnh (\(x, y\)) được gán nhãn \(v\).</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>5 6
+1 2
+2 3
+1 3
+4 1
+3 4
+3 5</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>1 2 2
+1 4 1
+1 3 3
+3 2 5
+3 4 4 
+3 5 6</code></pre>
+<p><img alt="enter image description here" src="https://i.imgur.com/9GT6Xew.jpg?1"/></p>
+<p><strong><em>Giải thích:</em></strong></p>
+<p>Đồ thị có 5 đinh và 6 cạnh. Một cách gán nhãn cho các cạnh được cho trong hình vẽ minh họa (nhãn là các số màu dở bên cạnh các cạnh) thỏa mãn điều kiện đầu bài. Thực vậy:</p>
+<ul>
+<li>Với đỉnh 1: Nhãn của ba cạnh kề nó là 2, 1 và 3 có \(UCLN (2, 1,3)= 1\).</li>
+<li>Với đỉnh 2: Nhãn của hai cạnh kề nó là 2 và 5 có \(UCLN (2, 5) = 1\).</li>
+<li>Với đỉnh 3: Nhãn của bốn cạnh kề nó là 3, 4, 5 và 6 có \(UCLN (3, 4, 5, 6) = 1\).</li>
+<li>Với đỉnh 4: Nhãn của hai cạnh kề nó là 1,4 có \(UCLN (2, 1,3)= 1\).</li>
+<li>Với đỉnh 5: Đỉnh này có bậc bằng 1, do đó không cần kiểm tra điều kiện.</li>
+</ul>
+<hr/>
+<p><em>Nguồn: Thầy Nghĩa '18</em></p>
+</div>
+<hr/>
+</div>

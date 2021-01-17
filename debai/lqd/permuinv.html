@@ -1,0 +1,38 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Tổng nghịch thế</h2>
+</div><div class="content-description screen">
+<div><p>Gọi \(\pi=\left(p_1, p_2,..., p_n\right)\) là một hoán vị của \((1, 2,...,n)\), một cặp chỉ số \((i, j)\) được gọi là <em>nghịch thế</em> nếu \(i &lt; j\) nhưng \(p_i &gt; p_j\).</p>
+<p>Cho một hoán vị \(\pi_0\) và số nguyên dương \(k\), xét \(k\) hoán vị liên tiếp \(\pi_0\), \(\pi_1\),..., \(\pi_{k-1}\) kể từ hoán vị \(\pi_0\), hãy tính tổng \(f(\pi_0)+f(\pi_1)+...+f(\pi_{k-1})\) với \(f(\pi)\) là số lượng cặp nghịch thế trong hoán vị \(\pi\).</p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu chứa hai số nguyên dương \(n\), \(k\) lần lượt là kích thước của hoán vị \(\pi_0\) và số lượng hoán vị liên tiếp cần xét.</p>
+<p>Dòng tiếp theo chứa \(n\) số nguyên dương \(p_1\), \(p_2\),..., \(p_n\) mô tả hoán vị \(\pi_0\).</p>
+<p>Dữ liệu đảm bảo luôn tồn tại ít nhất \(k\) hoán vị hợp lệ kể từ hoán vị \(\pi_0\) trở đi.</p>
+<hr/>
+<h4>Output</h4>
+<p>Một số nguyên duy nhất là kết quả của bài toán.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>5 4
+1 2 3 4 5</code></pre>
+<h5>Output</h5>
+<pre><code>4</code></pre>
+<h5>Giải thích</h5>
+<ul>
+<li>Hoán vị \(\pi_0=(1,2,3,4,5)\) không có cặp nghịch thế nào.</li>
+<li>Hoán vị \(\pi_1=(1,2,3,5,4)\) có một cặp nghịch thế là \((4, 5)\).</li>
+<li>Hoán vị \(\pi_2=(1,2,4,3,5)\) có một cặp nghịch thế là \((3, 4)\).</li>
+<li>Hoán vị \(\pi_3=(1,2,4,5,3)\) có hai cặp nghịch thế là \((3, 5)\) và \((4, 5)\).</li>
+</ul>
+<p>Vậy tổng số nghịch thế là \(0+1+1+2=4\).</p>
+<hr/>
+<h4>Ràng buộc</h4>
+<ul>
+<li><strong>Subtask 1 (40 điểm):</strong> \(n\leq 10^3, k\leq 10\).</li>
+<li><strong>Subtask 2 (40 điểm):</strong> \(n\leq 10^5, k\leq 10\).</li>
+<li><strong>Subtask 3 (20 điểm):</strong> \(n\leq 10^5, k\leq 10^5\).</li>
+</ul>
+</div>
+<hr/>
+</div>

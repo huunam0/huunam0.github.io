@@ -1,0 +1,36 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Doraemon tự kỷ với trò chơi mới</h2>
+</div><div class="content-description screen">
+<div><p>Hôm nay Nobita phải đi học bù từ sáng tới khuya cho kì nghỉ dịch Covid-19 dài kỷ lục, Doraemon ở nhà một mình cả ngày quá cô đơn nên nó đã bày ra một trò chơi mới - Lật Bánh Rán. Nó chuẩn bị 64 cái bánh rán có 2 mặt là 2 màu khác nhau : một mặt màu nâu, mặt còn lại màu trắng. Doraemon sẽ chơi với một con robot AI. Mèo ta và robot sẽ thay phiên nhau đi. Doraemon luôn đặt những chiếc bánh rán có mặt màu nâu nằm ngửa xuống bàn cờ khi chơi lượt của mình, còn robot thì ngược lại. Doraemon sẽ đi trước.</p>
+<p>Bàn cờ là một bàn ăn vuông vức được chia thành \(8\) hàng và \(8\) cột (tức là \(64\) ô vuông nhỏ): các hàng được đánh số từ \(1\) tới \(8\) theo chiều từ trên xuống dưới, các cột được đánh các chữ cái từ \(a\) tới \(h\) theo chiều từ trái sang phải.</p>
+<p>Đây là 1 ví dụ của bàn cờ:</p>
+<p><img alt="" src="https://i.imgur.com/QdSWRzC.png"/></p>
+<p>Tới lượt một người chơi, người đó phải đặt bánh rán theo màu của mình tại 1 vị trí trống sao cho nó liền kề với một dãy các bánh rán khác màu (theo đường chéo hoặc hàng ngang, hàng dọc) và ở đầu kia của dãy bánh rán khác màu ấy là một bánh rán cùng màu với bánh mà người chơi này vừa đặt xuống. Nói cách khác, chiếc bánh rán người chơi này mới đặt xuống cùng với một chiếc bánh rán cũ (cùng màu) bất kì kẹp ngay 2 đầu của một dãy các bánh rán khác màu. Trong hình trên, những ô có vòng tròn viền đỏ là những vị trí mà Doraemon có thể đặt bánh xuống. Mỗi khi người chơi đặt bánh xuống như vậy, tất cả những bánh rán khác màu ở giữa sẽ được lật ngược lại và đổi màu thành màu của chiếc bánh rán mới được đặt xuống.</p>
+<p>Hiện tại là lượt chơi của Doraemon, nhưng vì vừa chơi vừa nhìn những chiếc bánh rán thơm ngon lật lên lật xuống nãy giờ nên mèo ta đã hoa mắt, đói xỉu và không thể nhìn ra được nước đi tối ưu có thể lật lên nhiều chiếc bánh rán màu nâu nhất (Doraemon thích ăn những bánh có mặt ngửa màu nâu). Bạn hãy giúp chú mèo máy tội nghiệp này nhé! Hãy in ra vị trí mà bạn sẽ chỉ cho Doraemon đặt bánh rán xuống. Trong hình trên, 2 hình tròn màu đỏ là ô đặt bánh rán tối ưu nhất.</p>
+<hr/>
+<h3>Input</h3>
+<p>Gồm 8 dòng chứa các xâu độ dài 8 chỉ gồm các kí tự \(B\), \(W\) và \(.\) mô tả bàn cờ. Những ô có bánh rán đang có màu nâu ở mặt ngửa biểu thị bởi chữ cái \(B\), bánh rán có màu trắng là chữ \(W\), còn lại là dấu chấm.</p>
+<hr/>
+<h3>Output</h3>
+<p>Gồm một tọa độ duy nhất là vị trí bạn sẽ đặt bánh rán xuống (VD: \(a1\), \(h8\), …) và số lượng bánh rán nâu sẽ lật lên được (2 thông tin ngăn nhau bởi dấu cách).</p>
+<hr/>
+<h3>Ví dụ</h3>
+<p><strong>Input:</strong></p>
+<pre><code>.WWWWWB.
+........
+...WWB..
+.WWWB...
+B.B.B...
+........
+....BWB.
+........</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>a1 5</code></pre>
+<p>In ra <code>c3 5</code> cũng được coi là đáp án đúng.</p>
+<hr/>
+<h3>Lưu ý</h3>
+<p>Nếu có nhiều tọa độ cùng lật được số lượng bánh rán nâu lớn nhất, bạn có thể in ra một tọa độ bất kì.</p>
+<p>Nếu bánh rán mà Doraemon vừa đặt xuống “kẹp” được nhiều dãy bánh rán khác màu khác nhau thì nó có thể lật hết số bánh rán khác màu trong tất cả các dãy đó!</p>
+</div>
+<hr/>
+</div>

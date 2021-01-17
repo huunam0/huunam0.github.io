@@ -1,0 +1,57 @@
+<div class="tm-box2">
+<div class="problem-name">
+    BALLGAME - Trò chơi đẩy bi 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">Trò chơi đẩy bi là một trò chơi trên lưới ô vuông vô hạn. Các dòng và cột của lưới được đánh số theo thứ tự bởi các số nguyên … -3 -2 -1 0 1 2 3 … Các cột được đánh số theo thứ tự từ trái sang phải, còn các dòng theo thứ tự từ dưới lên trên. Ô nằm trên giao của dòng <em>x </em>và cột <em>y</em> được gọi là ô (<em>x, y</em>). Trên lưới có một số ô cấm, các ô còn lại là tự do. Khi bắt đầu trò chơi, một số viên bi sẽ xuất hiện trên lưới, mỗi viên bi sẽ nằm gọn trong một ô và không có ô nào chứa nhiều hơn một viên bi. Người chơi sẽ phải chọn một ô tự do trên lưới làm ô hố, nếu ô được chọn làm ô hố có chứa bi thì viên bi đó sẽ biến mất. Mỗi bước, người chơi có thể chọn một ô chứa bi và đẩy viên bi đó sang một trong bốn ô chung cạnh (hiện đang không có bi), nếu viên bi bị đẩy vào ô hố thì viên bi này sẽ biến mất. Nhiệm vụ của người chơi là đẩy hết tất cả các viên bi trên lưới vào hố với số bước ít nhất.</p>
+<p style="text-align:justify"><strong>Yêu cầu:</strong> Cho biết vị trí các ô cấm trên lưới và vị trí các ô có chứa bi. Hãy chọn một ô tự do là ô hố và tìm cách đẩy tất cả các viên bi trên lưới vào hố với số bước ít nhất.</p>
+<p style="text-align:justify"><strong>Dữ liệu:</strong></p>
+<p style="margin-left:40px; text-align:justify">- Dòng thứ nhất ghi số nguyên dương 𝑛 là số ô cấm;<br/>
+- Dòng thứ 𝑖 (𝑖 = 1,2, … , 𝑛) trong 𝑛 dòng tiếp theo, mỗi dòng chứa hai số nguyên 𝑥<sub>𝑖</sub> , 𝑦<sub>𝑖</sub> mô tả ô (𝑥<sub>𝑖</sub> , 𝑦<sub>𝑖</sub>) là ô cấm.<br/>
+- Dòng tiếp theo ghi số nguyên dương 𝑚 là số ô chứa bi;<br/>
+- Dòng thứ 𝑗 (𝑗 = 1,2, … , 𝑚) trong 𝑚 dòng tiếp theo, mỗi dòng chứa hai số nguyên 𝑢<sub>𝑗</sub> , 𝑢<sub>𝑗</sub> mô tả ô (𝑢<sub>𝑗</sub> , 𝑣<sub>𝑗</sub>) là ô chứa bi.</p>
+<p style="text-align:justify"><strong>Kết quả</strong>:</p>
+<p style="text-align:justify">Ghi ra một dòng chứa một số nguyên là số bước ít nhất cần thiết để đẩy tất cả các viên bi trên lưới vào hố. Ghi -1 nếu không tồn tại cách chọn hố để đẩy hết tất cả các viên bi trên lưới vào hố.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">1<br/>
+2 2<br/>
+2<br/>
+1 2<br/>
+3 2</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">4</p>
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">0<br/>
+2<br/>
+1 1<br/>
+5 5</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">8</p>
+<p><strong><em>Ràng buộc:</em></strong></p>
+<p>- Có 15% số lượng test thỏa mãn điều kiện: 𝑛 = 0; 𝑚 = 2 và các số 𝑢<sub>𝑖</sub> , 𝑣<sub>𝑖</sub> là số nguyên dương không vượt quá 100;<br/>
+- Có 15% số lượng test khác thỏa mãn điều kiện: 𝑛 = 1; 𝑚 = 2 và các số 𝑥<sub>𝑖</sub> , 𝑦<sub>𝑖</sub> , 𝑢<sub>𝑖</sub> , 𝑣<sub>𝑖</sub> là số nguyên dương không vượt quá 100;<br/>
+- Có 20% số lượng test khác thỏa mãn điều kiện: 𝑛 = 0; 𝑚 ≤ 100 và các số 𝑢<sub>𝑖</sub> , 𝑣<sub>𝑖</sub> là số nguyên dương không vượt quá 100;<br/>
+- Có 20% số lượng test khác thỏa mãn điều kiện: 𝑛 ≤ 1000; 𝑚 ≤ 100 và các số 𝑥<sub>𝑖</sub> , 𝑦<sub>𝑖</sub> , 𝑢<sub>𝑖</sub> , 𝑣𝑖 là số nguyên dương không vượt quá 100;<br/>
+- Có 30% số lượng test còn lại thỏa mãn điều kiện: 𝑛 = 0; 𝑚 ≤ 100 và các số 𝑢<sub>𝑖</sub> , 𝑣<sub>𝑖</sub> là số nguyên có giá trị tuyệt đối không vượt quá 10<sup>9</sup> ; </p>
+<hr/>
+<p><em>Nguồn: 3D 20162017</em></p>
+</div>
+</div>

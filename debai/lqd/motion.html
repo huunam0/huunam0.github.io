@@ -1,0 +1,46 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chuyển động</h2>
+</div><div class="content-description screen">
+<div><p>Giáo sư <em>X</em> đang dạy các bé trường mầm non SuperKids về chuyển động đều. Thí nghiệm hôm nay được thực hiện
+trên một mặt bàn hình chữ nhật kích thước \(𝑚 × 𝑛\) trên đó xác định hệ tọa độ Descartes vuông góc Ο𝑥𝑦. Góc trái
+dưới của mặt bàn nằm ở tọa độ (\(0,0\)) còn góc phải trên nằm ở tọa độ (\(𝑚, 𝑛\)).</p>
+<p>Giáo sư <em>X</em> đặt hai viên bi trên mặt bàn, kích thước và khối lượng các viên bi là không đáng kể, có thể coi là một
+chất điểm. Giáo sư đẩy hai viên bi cùng lúc tại thời điểm 0, một viên bi hướng từ điểm \(A\) tới điểm \(B\) và viên bi còn
+lại hướng từ điểm \(C\) tới điểm \(D\). Tốc độ của các viên bi được tính toán kỹ lưỡng sao cho trong 1 giây viên bi thứ
+nhất đi được quãng đường đúng bằng độ dài đoạn AB còn viên bi thứ hai đi được quãng đường đúng bằng độ dài
+đoạn \(CD\).</p>
+<p>Hai viên bi di chuyển theo đúng nguyên lý của chuyển động đều trong môi trường không có ma sát. Mỗi khi bi
+đập vào cạnh bàn, nó giữ nguyên tốc độ và đổi hướng (góc phản xạ đúng bằng góc tới), trường hợp bi đập vào góc
+bàn, nó sẽ di chuyển ngược lại với tốc độ không đổi.</p>
+<p>Nhiệm vụ của bạn là giúp các bé xác định thời điểm sớm nhất mà hai viên bi va chạm nhau (tức là thời điểm sớm
+nhất mà hai viên bi đến cùng một vị trí trên bàn)</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng 1 chứa số \(𝑇 ≤ 10^4\) là số tests,</li>
+<li>Các dòng sau, mỗi dòng chứa một test, gồm 10 số nguyên \(𝑚, 𝑛, 𝑥_𝐴, 𝑦_𝐴, 𝑥_𝐵, 𝑦_𝐵, 𝑥_𝐶, 𝑦_𝐶, 𝑥_𝐷, 𝑦_𝐷\) cách nhau bởi dấu
+cách, tương ứng là chiều ngang, chiều dọc của bảng, hoành độ và tung độ các điểm \(A, B, C, D\) theo đúng thứ tự
+đó. (\(1 ≤ 𝑚, 𝑛 ≤ 100\); tọa độ các điểm không nằm ngoài bảng, dữ liệu cũng đảm bảo đoạn thẳng \(AB\) cũng như
+đoạn thẳng \(CD\) không đi dọc cạnh bàn, các điểm \(A, B, C, D\) hoàn toàn phân biệt)
+<strong>Kết quả</strong> </li>
+<li>Với mỗi test, nếu hai viên bi không thể va chạm, in ra trên một dòng số -1. Nếu không in ra 2 số nguyên dương \(𝑝\)
+và \(𝑞\) là tử số và mẫu số của phân số tối giản \(𝑝/𝑞\) là thời điểm hai viên </li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>5
+7 2 0 0 1 2 7 2 6 0
+3 3 0 0 3 3 3 0 2 1
+4 4 0 2 2 4 3 2 2 2
+4 4 1 0 4 4 3 0 0 4
+9 7 0 0 1 1 9 0 8 7</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>7 2
+3 2
+-1
+1 3
+63 2</code></pre>
+<p><img alt="enter image description here" src="https://i.imgur.com/f6OeSA1.png"/></p>
+<hr/>
+<p><em>Nguồn: LMH-ĐHSP</em></p>
+</div>
+<hr/>
+</div>

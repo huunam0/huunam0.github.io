@@ -1,0 +1,51 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    LIXI - Lì xì 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>        Nhân dịp Tết, ba bé Bo chuẩn bị n túi lì xì cho bé Bo. Trong túi thứ i có số tiền là a<sub>i</sub> và một số nguyên b<sub>i</sub> (b<sub>i</sub> ≥ 0). Nếu b<sub>i</sub> &gt; 0 thì bé Bo được phép chọn thêm b<sub>i</sub> túi lì xì khác. Việc chọn thêm này là tích lũy. Đầu tiên, bé Bo chọn một túi bất kỳ, sau đó giả sử bé Bo đang có tổng số tiền là A và số túi được phép chọn thêm là B (B&gt;0), nếu bé Bo chọn thêm túi thứ i thì tổng số tiền là A + a<sub>i</sub> và tổng số túi được chọn thêm là B -1 + b<sub>i</sub> . Cứ như vậy cho đến khi không được phép chọn thêm (B=0) hoặc đã chọn hết n túi. Bạn hãy giúp bé Bo xác định thứ tự chọn túi sao cho tổng số tiền bé có được là lớn nhất nhé.   </p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên là số nguyên n (1 ≤ n ≤ 100)</p>
+<p>- Trong n dòng tiếp theo, dòng thứ i gồm 2 số nguyên a<sub>i</sub> và b<sub>i</sub> cách nhau một khoảng trắng (1 ≤ a<sub>i</sub> ≤ 100, 0 ≤ b<sub>i</sub> ≤ 100)</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là số nguyên xác định số tiền nhiều nhất mà bé Bo có được.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2<br/>1 0<br/>2 0</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3<br/>1 0<br/>2 0<br/>0 2</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5<br/>0 0<br/>2 0<br/>2 0<br/>3 0<br/>5 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">8</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>- Trong test 1, do chỉ chọn được 1 túi nên chọn túi có số tiền nhiều nhất là 2.</p>
+<p>- Trong test 2, đầu tiên chọn túi 3, sau đó chọn túi 1 và tiếp theo là túi 2.</p>
+</div>
+</div></body></html>

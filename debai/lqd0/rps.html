@@ -1,0 +1,53 @@
+<div class="tm-box2">
+<div class="problem-name">
+    RPS - Oẳn tù tì 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"><span style="font-size:14px">Oẳn tù tì (tiếng Anh: Rock-paper-scissors, viết tắt là RPS) là một trò chơi bằng tay mang tính đối nghịch giữa hai hoặc nhiều người chơi cùng lúc khi ra một trong ba hình dạng của bàn tay. Các kiểu đó là "kéo" (ngón trỏ và ngón giữa tạo thành hình chữ V), "búa" (cả bàn tay nắm chặt lại) và "bao" (nguyên bàn tay xoè ra). Trò chơi chỉ có ba kết quả duy nhất mang tính công bằng: nếu người ngươi này ra cây kéo thì sẽ thắng người ra cái bao (kéo cắt bao), còn đối phương ra cây búa thì người chơi thua (búa đập được cây kéo) và búa sẽ thua bao (búa bị bao vây chặt). Trong trường hợp các người chơi ra giống nhau thì sẽ hòa. (Theo Wikipedia tiếng Việt)</span></p>
+<p style="text-align:justify"><span style="font-size:14px">Lương và Định rất thích dùng trò chơi oẳn tù tì để phân định thắng thua trong những tình huống tranh cãi bế tắc hoặc đùn đẩy cho nhau một công việc gì đó. Theo thời gian, hai bạn đã dần nhàm chán với những hình dạng “búa”, “kéo”, “bao” truyền thống. Cả hai đã nhờ Mạnh Tân thiết kế ra thêm <em>N</em> hình dạng mới của bàn tay và đánh số cho chúng từ 1 đến <em>N</em>. Với hai hình dạng <em>p </em>và <em>q</em> bất kỳ (<em>p&lt;&gt;q</em>), Mạnh Tân sẽ quy ước rằng người chơi ra hình dạng  <em>p</em> sẽ luôn chiến thắng người chơi ra hình dạng <em>q</em> hoặc người chơi ra hình dạng <em>q</em> sẽ luôn chiến thắng người chơi ra hình dạng <em>p</em>. Khi được Mạnh Tân cung cấp thông tin chi tiết của <em>N</em> hình dạng mới, Lương và Định tiếp thu một cách rất thích thú. Tuy nhiên hai bạn cũng lập tức nhận ra rằng, theo cách quy ước của Tân, có một số hình dạng <em>x</em> không thể nào xuất hiện trong trò chơi oẳn tù tì được, bởi không tồn tại hai hình dạng <u>y</u> và <em>z</em> nào để người chơi ra <em>x</em> luôn thắng người chơi ra <em>y</em>, người chơi ra <em>y</em> luôn thắng người chơi ra z và người chơi ra <em>z</em> luôn thắng người chơi ra <em>x</em>. Lương và Định lại một lần nữa nhờ Tân loại bỏ tất cả những hình dạng bất ổn này (những hình dạng mà không tồn tại một mối quan hệ thắng-thua xoay vòng với hai hình dạng nào khác) khỏi danh sách để hai bạn được dễ dàng hơn trong việc quyết định những hình dạng mới sẽ xuất hiện trong trò chơi oẳn tù tì.</span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Yêu cầu:</strong> Cho thông tin về các quy ước thắng-thua giữa <em>N</em> hình dạng bàn tay, hãy giúp Tân xác <em>định số lượng hình dạng còn lại</em> trong danh sách sau khi đã loại đi các hình dạng mà Lương và Định yêu cầu.</span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Dữ liệu:</strong> </span></p>
+<ul style="margin-left:40px">
+<li style="text-align:justify"><span style="font-size:14px">Dòng đầu tiên chứa số nguyên dương <em>N&gt;=3</em> là số lượng hình dạng bàn tay.</span></li>
+<li style="text-align:justify"><span style="font-size:14px">Dòng thứ <em>i</em> trong <em>N</em> dòng sau chứa <em>N</em> ký tự 0/1 nằm liền kề nhau mô tả quy ước thắng-thua cho hình dạng thứ <em>i</em>: ký tự thứ <em>j</em> là <em>'1'</em> nếu người chơi ra <em>i</em> luôn thắng người chơi ra <em>j </em>và là <em>'0'</em> nếu người chơi ra <em>j</em> luôn thắng người chơi ra <em>i</em>. Dữ liệu đảm bảo ký tự thứ <em>i</em> tại dòng <em>i</em> luôn là <em>'0'</em> (<em>1&lt;=i,j&lt;=N</em>).</span></li>
+</ul>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Kết quả:</strong> </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">Ghi ra một số nguyên duy nhất là số lượng hình dạng còn lại.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">3<br/>
+010<br/>
+000<br/>
+110</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">0</p>
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">3<br/>
+001<br/>
+100<br/>
+010</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">3</p>
+<p><strong><em>Giải thích test 2</em></strong></p>
+<p style="margin-left:40px"><em>Người ra 1 luôn thắng người ra 3, người ra 3 luôn thắng người ra 2 và người ra 2 luôn thắng người ra 1. Vì vậy cả ba hình dạng 1, 2 và 3 đều không bị loại bỏ) </em></p>
+<hr/>
+<p><em>Nguồn: PREVNOI TEAM 20182019 Đà Nẵng</em></p>
+</div>
+</div>

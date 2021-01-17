@@ -1,0 +1,54 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Trại hè Tin học</h2>
+</div><div class="content-description screen">
+<div><p>Trong khu vực có \(n\) tỉnh, mỗi tỉnh có một trường chuyên. Giữa một số cặp 2 tỉnh (\(a, b\)) có tuyến
+xe tốc hành nối \(a\) với \(b\) và ngược lại. Ban Giám hiệu của một số trường chuyên có ký thỏa thuận
+hợp tác trao đổi kinh nghiệm với nhau. Hiện nay đã có \(m\) thỏa thuận được ký và có \(k\) tuyến tốc
+hành khác nhau. Giữa 2 cặp tỉnh có không quá một tuyến tốc hành.</p>
+<p>Hàng năm một trường sẽ đăng cai tổ chức trại hè. Những trường có quan hệ hợp tác với trường
+đăng cai sẽ cử giáo viên và học sinh của mình tới dự nếu từ đó có thể tới tỉnh có trường đăng cai,
+trực tiếp hoặc qua một số tỉnh trung gian bằng xe tốc hành.</p>
+<p>Theo thời gian, một số tuyến tốc hành mới được xác lập hòa vào mạng lưới tốc hành hiện có, một
+số cặp trường có thể ký thỏa thuận hợp tác, các quan hệ hợp tác cũ vẫn được giữ nguyên.</p>
+<p>Thông tin về cặp quan hệ mới được đưa dưới dạng thông báo \(F\ a\ b\) – hai trường \(a\) và \(b\) ký thỏa
+thuận hợp tác. Thông tin về tuyến tốc hành mới được đưa dưới dạng \(T\ a\ b\) – có tuyến nối tỉnh \(a\)
+với tỉnh \(b\) và ngược lại.</p>
+<p>Nếu trường đăng cai ở tỉnh \(v\) thì người ta cần biết trước sẽ có bao nhiêu trường từ các tỉnh bạn có
+thể tới tham dự và truy vấn sẽ có dạng \(?\ v\).</p>
+<p>Với nơi đăng cai cho trước hãy xác định số trường bạn tới dự.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa 3 số nguyên \(n, m, k\) (\(1 ≤ n ≤ 10^5, 0 ≤ m, k ≤ 10^5\)),</li>
+<li>Mỗi dòng trong \(m\) dòng tiếp theo chứa 2 số nguyên \(a\) và \(b\) xác định 2 trường \(a\) và \(b\) có
+quan hệ hợp tác (\(1 ≤ a, b ≤ n, a ≠ b\)), không có 2 dòng nào giống nhau,</li>
+<li>Mỗi dòng trong \(k\) dòng tiếp theo chứa 2 số nguyên \(a\) và \(b\) xác định giữa 2 tỉnh \(a\) và \(b\) có
+tuyến tốc hành (\(1 ≤ a, b ≤ n, a ≠ b\)), không có 2 dòng nào giống nhau,</li>
+<li>Dòng tiếp theo chứa số nguyên \(q\) – số truy vấn cần xử lý (\(1 ≤ q ≤ 10^5\)),</li>
+<li>Mỗi dòng trong \(q\) dòng sau chứa một truy vấn thuộc một trong các dạng đã nêu.</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Đưa ra, với mỗi truy vấn dạng \(?\ v\) – đưa ra số trường
+bạn tới dự.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>4 2 2
+1 2
+1 3
+1 2
+1 4
+5
+? 1
+F 4 1
+? 1
+T 4 3
+? 1</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>1
+2
+3</code></pre>
+<hr/>
+<p><em>Nguồn: Thầy Tùng</em></p>
+</div>
+<hr/>
+</div>

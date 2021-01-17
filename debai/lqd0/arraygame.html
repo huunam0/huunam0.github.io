@@ -1,0 +1,59 @@
+<div class="tm-box2">
+<div class="problem-name">
+    ARRAYGAME - Trò chơi trên mảng 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 3.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Vì dịch bệnh COVID19 đang diễn biến theo hướng xấu, caiwindao và người yêu là anh XYZ quyết định ở nhà tổ chức trò chơi tính nhẩm nhanh với dãy số để luyện tập cho cuộc thi Siêu trí tuệ mùa 2 :v. anh XYZ có một mảng A cho trước gồm N phần tử được đánh số từ 1 tới N. Ban đầu, tất cả các số trong mảng đều bằng 0. Anh XYZ đưa ra M truy vấn trên mảng để caiwindao thực hiện các phép tính nhanh, các truy vấn chỉ thuộc một trong 3 dạng sau đây:</p>
+<ul>
+<li>0 x y : caiwindao phải đưa ra kết quả của phép tính tổng tất cả các số trong mảng A từ vị trí x đến vị trí y modulo 10<sup>9</sup>+7.</li>
+<li>1 x y : caiwindao phải lần lượt cộng thêm 1*2*3 vào phần thử thứ x, cộng thêm 2*3*4 vào phần tử thứ x+1, ... , cộng thêm (i+1)*(i+2)*(i+3) vào phần tử thứ x+i, ... và tiếp tục cho đến y.</li>
+<li>2 x y : caiwindao phải lần lượt trừ đi 1*2*3 từ phần thử thứ x, trừ đi 2*3*4 từ phần tử thứ x+1, ... , trừ đi (i+1)*(i+2)*(i+3) từ phần tử thứ x+i, ... và tiếp tục cho đến y.</li>
+</ul>
+<p><strong>Input</strong> </p>
+<ul>
+<li>dòng đầu : gồm 2 số N và M (1 &lt;= N,M &lt;= 10<sup>5</sup>)</li>
+<li>dòng hai đến dòng M+1 : gồm 3 số x y z (0 &lt;= x &lt;= 2, 1 &lt;= y &lt;= z &lt;= N), x là loại truy vấn, y và z là hai đầu mút của đoạn con cần thực hiện truy vấn.</li>
+</ul>
+<p><strong>Output</strong> </p>
+<p>Với mỗi truy vấn loại 0, in ra câu trả lời theo yêu cầu trên từng dòng riêng biệt theo thứ tự xuất hiện của truy vấn trong file Input</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">8 4<br/>1 1 8<br/>0 2 8<br/>2 4 6<br/>0 5 6</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1974<br/>462</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Kết quả lần lượt sau mỗi truy vấn như sau :</p>
+<ul>
+<li>
+<p>sau truy vấn thứ nhất, giá trị của mảng lúc này là [6,24,60,120,210,336,504,720]</p>
+</li>
+<li>
+<p>câu trả lời cho truy vấn thứ hai là 24+60+120+210+336+504+720=1974</p>
+</li>
+<li>
+<p>sau truy vấn thứ ba, giá trị của mảng lúc này là [6,24,60,114,186,276,504,720]</p>
+</li>
+<li>
+<p>câu trả lời cho truy vấn thứ tư là 186+276=462</p>
+</li>
+</ul>
+</div>
+</div>

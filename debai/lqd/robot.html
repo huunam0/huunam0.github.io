@@ -1,0 +1,41 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Trò chơi với robot</h2>
+</div><div class="content-description screen">
+<div><p>Trên lưới ô vuông gồm \(𝑚\) dòng và \(𝑛\) cột. Các dòng được đánh số từ 1 đến \(𝑚\) từ trên xuống
+dưới, các cột được đánh số từ 1 đến \(𝑛\) từ trái sang phải. Ô nằm giao giữa dòng \(𝑖\) và cột \(𝑗\) gọi
+là ô (\(𝑖,𝑗\)). Ban đầu, tại thời điểm 0, máy tính sẽ đặt \(𝑘\) robot trên lưới, robot thứ \(𝑟\) (\(𝑟 =1,2, … , 𝑘\)) được đặt ở ô (\(𝑥_𝑟, 𝑦_𝑟\)), các ô khác của lưới có thể đặt vật cản hoặc không. <em>Mỗi đơn
+vị thời gian, người chơi phải điều khiển di chuyển một số con robot trong \(𝑘\) robot (có thể không điều khiển con nào).</em> Robot chỉ
+thực hiện di chuyển sang một trong các ô kề cạnh hoặc kề đỉnh với ô robot đang đứng và ô
+đó không có vật cản, việc di chuyển này mất đúng một đơn vị thời gian.</p>
+<p>Nhiệm vụ của người chơi là di chuyển để \(𝑘\) robot gặp nhau là sớm nhất, \(𝑘\) robot được gọi là
+gặp nhau nếu chúng cùng đứng trong một ô. Để trò chơi thêm thú vị, nếu ô (\(𝑖,𝑗\)) có vật cản
+thì ở thời điểm \(𝑑_{𝑖𝑗}\) vật cản sẽ biến mất và robot có thể đi vào ô (\(𝑖,𝑗\)) tính từ thời điểm \(𝑑_{𝑖j}\)</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa 3 số \(𝑚, 𝑛, 𝑘\) (\(𝑚 × 𝑛 ≤ 5000\));</li>
+<li>Dòng thứ \(𝑖\) trong \(𝑚\) dòng tiếp theo chứa \(𝑛\) số nguyên, số thứ \(𝑗\) trong dòng nhận giá trị
+0 mô tả ô (\(𝑖,𝑗\)) không có vật cản, hoặc -1 mô tả ô (\(𝑖,𝑗\)) có đặt robot, hoặc một số
+nguyên dương \(𝑑_{𝑖𝑗}\) mô tả ô (\(𝑖,𝑗\)) có vật cản và \(𝑑_{𝑖𝑗}\) là thời điểm vật cản ở ô đó biến mất
+(\(𝑑_{𝑖𝑗} ≤ 10^9\)).</li>
+</ul>
+<p><strong>Kết quả</strong>
+• Gồm một dòng chứa một số nguyên là thời điểm sớm nhất mà \(𝑘\) robot gặp nhau, nếu
+không tồn tại cách di chuyển ghi -1.</p>
+<p><strong>Sample input</strong></p>
+<pre><code>3 4 2
+-1 0 3 0
+19 9 9 0
+0 0 0 -1</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>3</code></pre>
+<p><strong><em>Ràng buộc</em></strong></p>
+<ul>
+<li>Có 25% số lượng test ứng với 25% số điểm thỏa mãn điều kiện: \(𝑘 = 2\) và không có ô nào đặt vật cản;</li>
+<li>Có 25% số lượng test khác ứng với 25% số điểm thỏa mãn điều kiện: \(𝑘 ≤ 5\) và không
+có ô nào đặt vật cản;</li>
+<li>Có 25% số lượng test ứng với 25% số điểm thỏa mãn điều kiện: \(𝑘 = 2\);</li>
+<li>Có 25% số lượng test còn lại ứng với 25% số điểm thỏa mãn điều kiện: \(𝑘 ≤ 5\).</li>
+</ul>
+</div>
+<hr/>
+</div>

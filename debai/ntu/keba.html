@@ -1,0 +1,51 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    KEBA - Kết bạn 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>       Có một nhóm n sinh viên đang chơi trò chơi kết bạn. Các bạn sinh viên trên được đánh số từ 1 đến n và xếp thành hình vòng tròn từ 1 đến n theo chiều kim đồng hồ. Trong quá trình chơi, khi người quản trò hô "x kết bạn với y", thì bạn có số hiệu là x sẽ chạy đến đứng bên tay trái của bạn có số hiệu là y. Vòng tròn sau đó được điều chỉnh để tròn đều trở lại. Bên dưới là vòng tròn ví dụ với n = 6 và câu hô là "2 kết bạn với 5".</p>
+<p style="text-align:center"><img alt="" src="images/keba.png" style="height:133px; width:338px"/></p>
+<p>Giả sử người quản trò hô câu kết bạn m lần. Hãy cho biết thứ tự của vòng tròn sau lần hô cuối cùng.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng thứ nhất gồm hai số nguyên n, m cách nhau một khoảng trắng (2 ≤ n ≤ 10<sup>5</sup>, 1 ≤ m ≤ 10<sup>5</sup>). n là số sinh viên và m là số lần hô kết bạn.</p>
+<p>- Dòng m dòng tiếp theo, dòng thứ i gồm hai số nguyên x<sub>i</sub> và y<sub>i</sub> của lần hô thứ i (1 ≤ x<sub>i</sub>,y<sub>i</sub> ≤ n và x<sub>i</sub> ≠ y<sub>i</sub>).</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là n số nguyên, mỗi số cách nhau một khoảng trắng, thể hiện số hiệu của các bạn sinh viên theo thứ tự trong vòng tròn sau m lần hô. Bạn được đếm đầu tiên là bạn có số hiệu 1.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">6 1<br/>2 5 </div>
+<div class="sample-type">output</div>
+<div class="sample-value">1 3 4 5 2 6</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">6 2<br/>2 5<br/>4 6</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1 3 5 2 6 4</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2 1<br/>1 2</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1 2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

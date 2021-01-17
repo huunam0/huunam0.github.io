@@ -1,0 +1,51 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    CSTRING - Xâu chung 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>- Có hai tập hợp A và B gồm các xâu, mỗi xâu chỉ chứa các kí tự từ 0 đến 9</p>
+<p>- Nhiệm vụ của bạn là đếm số xâu vừa xuất hiện trong A, vừa xuất hiện trong B</p>
+<p>- Tuy nhiên, số xâu trong A và B có thể rất lớn nên người ta "nén" A và B thành 2 xâu s1, s2 (1 &lt;= |s1|, |s2| &lt;= 9, |s1| = |s2|), trong đó quy tắc "nén" như sau:</p>
+<p>            + Xâu đã nén chỉ có thể chứa các kí tự {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, ?}</p>
+<p>            + Các kí tự từ 0 đến 9 đại diện cho chính nó</p>
+<p>            + Kí tự a có thể thay bằng kí tự bất kì trong tập {0, 1, 2, 3}</p>
+<p>            + Kí tự b có thể thay bằng kí tự bất kì trong tập {1, 2, 3, 4}</p>
+<p>            + Kí tự c có thể thay bằng kí tự bất kì trong tập {2, 3, 4, 5}</p>
+<p>            + Kí tự d có thể thay bằng kí tự bất kì trong tập {3, 4, 5, 6}</p>
+<p>            + Kí tự e có thể thay bằng kí tự bất kì trong tập {4, 5, 6, 7}</p>
+<p>            + Kí tự f có thể thay bằng kí tự bất kì trong tập {5, 6, 7, 8}</p>
+<p>            + Kí tự g có thể thay bằng kí tự bất kì trong tập {6, 7, 8, 9}</p>
+<p>            + Kí tự ? có thể thay bằng kí tự bất kì trong tập {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}</p>
+<p>- Ví dụ như ta có tập A = {1, 2, 3, 4}, ta có thể nén lại thành xâu s1 = b</p>
+<p><strong>Input</strong></p>
+<p>Gồm 2 xâu s1, s2 cách nhau bởi một khoảng trắng</p>
+<p><strong>Output</strong></p>
+<p>Số xâu vừa xuất hiện trong A, vừa xuất hiện trong B.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">9<br/>g</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Giải thích ví dụ</strong></p>
+<p><strong>-  </strong>Xâu s2 là g nên tập hợp B có các phần tử {6, 7, 8, 9}, trong đó có phần tử 9 chung với tập A, như vậy kết quả là 1</p>
+</div>
+</div></body></html>

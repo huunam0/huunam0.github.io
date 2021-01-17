@@ -1,0 +1,54 @@
+<div class="tm-box2">
+<div class="problem-name">
+    TMAXSET - Tìm tập độc lập cực đại trên cây 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;"><span style="font-size:14px">Cho một cây với trọng số trên mỗi đỉnh và một tập con <em>Q</em> các đỉnh của cây, hãy tìm tập độc lập có tổng trọng số lớn nhất trong <em>Q</em>. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Dữ liệu vào </strong></span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Dòng đầu chứa một số <em>T</em> ≤ 20 là số lượng bộ test; Mỗi test có cấu trúc như sau:<br/>
+• Dòng đầu chứa 2 số <em>n</em> và <em>m</em> là số đỉnh và số cạnh của đồ thị;<br/>
+• Dòng thứ 2 chứa <em>n</em> số là trọng số trên mỗi đỉnh;<br/>
+• Từ dòng 3 đến dòng <em>m</em> + 2, mỗi dòng chứa 2 số là các cặp đỉnh có cạnh nối giữa chúng, dữ liệu đảm bảo đồ thị đã cho là 1 cây;<br/>
+• Dòng <em>m</em> + 3 chứa 1 số nguyên <em>q</em> là số truy vấn, sau đó mỗi dòng trong số <em>q</em> dòng tiếp chứa 1 dãy số:<br/>
+          – Số đầu tiên trong dãy k chỉ số lượng của tập đỉnh truy vấn:<br/>
+          – k số tiếp theo chỉ số hiệu từng đỉnh trong tập (đánh số từ 0) là những đỉnh xét đến trong n đỉnh ban đầu </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Kết quả </strong></span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Mỗi truy vấn in ra 1 kết quả là trọng số tập độc lập lớn nhất trên 1 dòng. Sau mỗi một bộ test thì in ra một dòng trống.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left: 40px;">1<br/>
+3 2<br/>
+5 4 10<br/>
+0 2<br/>
+2 1<br/>
+1<br/>
+2 2 1 </p>
+<p><strong>Output</strong></p>
+<p style="margin-left: 40px;">10</p>
+<p><strong><em>Giải thích </em></strong></p>
+<p style="margin-left: 40px;">Trong ví dụ trên, có 1 bộ test với cây gồm 3 đỉnh có số hiệu là 0,1,2 và 2 cạnh (0 2) và (2 1). Có 1 truy vấn chỉ xét trên 2 đỉnh có số hiệu 1 và 2.</p>
+<p><strong>Giới hạn</strong></p>
+<p style="margin-left: 40px;"><em>• 50% số test 5 ≤ n ≤ 30, 1 ≤ q ≤ 100;<br/>
+• 25% số test tiếp theo có 10 ≤ n ≤ 200, 100 ≤ q ≤ 1000;<br/>
+• 25% số test còn lại có 150 ≤ n ≤ 200, q = 1000.</em></p>
+<hr/>
+<p><em>Nguồn: ĐPT '1819</em></p>
+</div>
+</div>

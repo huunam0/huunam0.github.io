@@ -1,0 +1,21 @@
+<h2>REL7 - Bảng quan hệ</h2><div class="prob">
+<p>Cho một ma trận A kích thước n*n chỉ gồm các giá trị { -1 , -2 , 0 , 1 , 2 , 3 } <br/> Giả thiết 2 &lt;= n &lt;= 300. <br/> Bảng A gọi là tương thích với dãy T = (t1, t2, ..., tn), hay dãy T tương thích với bảng A nếu: <br/> •	Aij = 0  :  	ti = tj <br/> •	Aij = 1  :  	ti &lt; tj <br/> •	Aij = -1 :  	ti &gt; tj <br/> •	Aij = 2  : 	ti &lt;= tj <br/> •	Aij = -2 :  	ti &gt;= tj <br/> •	Aij = 3  :  	ti khác tj <br/> (Với mọi i, j: 1 &lt;= i, j &lt;= n) <br/> Yêu cầu : cho trước bảng quan hệ A, hãy tìm dãy số nguyên dương T = (t1, t2, ..., tn) tương thích với bảng A mà max(T) là bé nhất có thể. Biết rằng luôn tồn tại một dãy như vậy .</p>
+<h3>Input</h3>
+<p>Dòng đầu tiên là số nguyên N .<br/> N dòng sau mỗi dòng gồm N số nguyên mô tả ma trận A.</p>
+<h3>Output</h3>
+<p>Dòng đầu tiên ghi ra max( T ) . Dòng thứ 2 ghi ra dãy số T1 , T2 , .. Tn . Mỗi số ghi cách nhau ít nhất một dấu cách .</p>
+<h3>Example</h3>
+<pre><strong>Input:</strong>
+6
+ 0  1  1  1  2  2
+-2  0  1  0  2  2
+-2 -1  0  3  0  1
+-2 -2  3  0  1  1
+-1 -2  0 -1  0  1
+-1 -2 -1 -1 -1  0
+
+<strong>Output:</strong>
+4
+1 2 3 2 3 4 
+</pre>
+</div>

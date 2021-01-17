@@ -1,0 +1,54 @@
+<div class="tm-box2">
+<div class="problem-name">
+    FIBSEQ - Dãy Fibonacci  
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;"><span style="font-size:14px">Năm 1202, Leonardo Fibonacci, nhà toán học người Ý, tình cờ phát hiện ra tỉ lệ bàng 0.618 được tiệm cận bằng thương của hai số liên tiếp trong một loại dãy số vô hạn được một số nhà toán học ẤN ĐỘ xét đến từ năm 1150. Sau đó dãy số này được đặt tên là dãy số Fibonacci {<em>F<sub>i</sub>: i=1, 2, ...</em>}, trong đó <em>F<sub>1</sub>=F<sub>2</sub>=1</em> và mỗi số tiếp theo trong dãy được tính bằng tổng của hai số ngay trước nó. Đây là 10 số đầu tiên của dãy số Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21, 34, 35. Người ta đã phám phá ra mối liên hệ chặt chẽ của số Fibonacci và tỉ lệ vàng với sự phát triển trong tự nhiên (cánh hoa, cành cây, vân gỗ), trong vũ trụ (hình xoáy trôn ốc dải ngân hà, khoảng cách giữa các hành tinh), hay sự cân đối của cơ thể con người. Đặc biệt số Fibonacci được ứng dụng mạnh mẽ trong kiến trúc (Kim tự tháp Ai Cập, tháp Eiffel), trong mỹ thuật (các bức tranh của Leonardo da Vinci), trong âm nhạc (các bản giao hưởng của Mozart) và trong nhiều lĩnh vực khoa học kĩ thuật.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Trong toán học, dãy Fibonacci là một đối tượng tổ hợp quan trọng có nhiều tính chất đẹp. có nhiều phương pháp hiệu quả liệt kê và tính các số Fibonacci như phương pháp lặp hay phương pháp nhân ma trận.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Sau khi được học về dãy số Fibonacci, Sơn rất muốn phát hiện thêm những tính chất của dãy số này. Vì thế Sơn đặt ra bài toán sau đây: Hỏi rằng có thể tìm được một tập con các số trong <em>n </em>số Fibonacci liên tiếp bắt đầu từ số thứ i, sao cho tổng của chúng chia hết cho một số nguyên dương <em>k (k&lt;=n)</em> cho trước hay không? Nhắc lại, một tập con <em>q</em> số của một dãy <em>n</em> số là một cách chọn ra <em>q </em>số bất kỳ trong <em>n </em>số của dãy đó, mỗi số được chọn không quá một lần.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Yêu cầu:</strong> Hãy giúp Sơn giải quyết bài toán đặt ra.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Dữ liệu </strong></span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-size:14px">Dòng thứ nhất ghi số nguyên dương <em>T</em> (<em>T</em>&lt;=10) là số lượng bộ dữ liệu.</span></li>
+<li style="text-align: justify;"><span style="font-size:14px">Mỗi dòng trong <em>T</em> dòng tiếp theo chứa ba số nguyên dương <em>n, i</em> và <em>k </em>là thông tin của một bộ dữ liệu.</span></li>
+</ul>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Kết quả:</strong> </span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Ghi ra <em>T </em>dòng tương ứng với kết quả của <em>T </em>bộ dữ liệu đầu vào, mỗi dòng có cấu trúc như sau: Đầu tiên ghi số nguyên q là số lượng các số trong tập con tìm được, tiếp đến ghi <em>q </em>số nguyên là các số thứ tự trong dãy Fibonacci của <em>q </em>số trong tập con tìm được. Nếu không tìm được tập con thỏa mãn điều kiện đặt ra thì ghi ra một số 0.</span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Nếu có nhiều cách chọn thì chỉ cần đưa ra một cách chọn bất kỳ.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><span style="font-size:14px"><strong>Input</strong></span></p>
+<p style="margin-left: 40px;"><span style="font-size:14px">1<br/>
+10 3 9</span></p>
+<p><span style="font-size:14px"><strong>Output</strong></span></p>
+<p style="margin-left: 40px;"><span style="font-size:14px">2 5 7</span></p>
+<p><span style="font-size:14px"><strong>Giải thích:</strong> Trong ví dụ trên một tập con thỏa mãn điều kiện đặt ra là tập gồm 2 số F<sub>5</sub>=5, F<sub>7</sub>=13 với tổng bằng 18.</span></p>
+<p><span style="font-size:14px"><strong>Ràng buộc:</strong></span></p>
+<ul>
+<li><span style="font-size:14px">Có 20% số lượng test thỏa mãn điều kiện: n≤20, i≤10<sup>6</sup></span></li>
+<li><span style="font-size:14px">Có 20% số lượng test thỏa mãn điều kiện: n≤10<sup>3</sup> , i≤10<sup>6</sup></span></li>
+<li><span style="font-size:14px">Có 20% số lượng test thỏa mãn điều kiện: n≤10<sup>6</sup>, i≤10<sup>6</sup></span></li>
+<li><span style="font-size:14px">Có 10% số lượng test thỏa mãn điều kiện: n≤20, i≤10<sup>15</sup></span></li>
+<li><span style="font-size:14px">Có 10% số lượng test thỏa mãn điều kiện: n≤10<sup>3</sup>, i≤10<sup>15</sup></span></li>
+<li><span style="font-size:14px">Có 20% số lượng test còn lại thỏa mãn điều kiện: n≤10<sup>6</sup>, i≤10<sup>15</sup></span></li>
+</ul>
+<hr/>
+<p><span style="font-size:14px"><em>Nguồn: VOI 2017</em></span></p>
+</div>
+</div>

@@ -1,0 +1,30 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Xâu thứ k</h2>
+</div><div class="content-description screen">
+<div><p>Hiếu vừa khám phá ra một khái niệm mới và khoe ngay với Quý: định nghĩa về xâu đẹp. Theo đó, một xâu \(s\) được gọi là <em>đẹp</em> nếu \(s\) có không quá \(n\) ký tự và \(f(s)\) chia hết cho \(m\), trong đó \(f(s)\) bằng tổng tất cả các \(g(c)\) với \(c\) là một ký tự trong \(s\), quy ước \(g(\text{'a'})=1\), \(g(\text{'b'})=2\), \(g(\text{'c'})=3\),..., \(g(\text{'z'})=26\). Ví dụ, với \(n=3\) và \(m=9\) thì <code>aap</code> là một xâu đẹp vì \(f(\text{"aap"})=1+1+16=18\) chia hết cho \(m=9\), còn <code>aah</code> không phải là một xâu đẹp vì \(f(\text{"aah"})=1+1+8=10\) không chia hết cho \(m=9\). Với xâu rỗng \(s=\emptyset\) thì \(f(s)=0\) (do đó \(s=\emptyset\) cũng là một xâu đẹp với mọi \(m\)).</p>
+<p>Quý hiểu ngay khái niệm mới của Hiếu và liền đố ngược lại cậu: hãy tìm ra xâu đẹp có <em>thứ tự từ điển nhỏ thứ \(k\)</em> với \(n\) và \(m\) cho trước. Nhắc lại, xâu \(A\) được xem là có thứ tự từ điển nhỏ hơn xâu \(B\) nếu tồn tại một vị trí \(t\) sao cho \(A[1..t-1]=B[1..t-1]\) và \(A[t] &lt; B[t]\).</p>
+<p>Vì số \(k\) của Quý đưa ra quá lớn nên Hiếu chỉ biết ấp úng và nhờ đến các bạn lập trình giải giúp câu đố này cho Hiếu. Hãy giúp Hiếu tìm ra xâu đẹp đó nhé!</p>
+<hr/>
+<h4>Input</h4>
+<p>Gồm một dòng duy nhất chứa ba số nguyên dương \(n\), \(m\) và \(k\) \(\left(2\leq k\leq 10^{15}\right)\).</p>
+<hr/>
+<h4>Output</h4>
+<p>In ra xâu đẹp nhỏ thứ \(k\) theo thứ tự từ điển. Nếu số lượng xâu đẹp nhỏ hơn \(k\), in ra \(-1\).</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>3 9 8</code></pre>
+<h5>Output</h5>
+<pre><code>ace</code></pre>
+<h5>Giải thích</h5>
+<p>Các xâu đẹp đầu tiên thứ tự từ điển là \(\emptyset\) (xâu rỗng), <code>aag</code>, <code>aap</code>, <code>aay</code>, <code>abf</code>, <code>abo</code>, <code>abx</code> và <code>ace</code>.</p>
+<hr/>
+<h4>Ràng buộc</h4>
+<ul>
+<li><strong>Subtask 1 (20 điểm):</strong> \(n\leq 4\).</li>
+<li><strong>Subtask 2 (20 điểm):</strong> \(n\leq 100, m=1\).</li>
+<li><strong>Subtask 3 (60 điểm):</strong> \(n, m\leq 100\).</li>
+</ul>
+</div>
+<hr/>
+</div>

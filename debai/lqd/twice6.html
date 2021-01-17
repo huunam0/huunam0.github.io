@@ -1,0 +1,45 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">TWICE6</h2>
+</div><div class="content-description screen">
+<div><p><span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> đang chơi một trò chơi với người chủ của mình. Người chủ cho <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> <strong>N</strong> xâu ký tự khác nhau và <strong>Q</strong> truy vấn:</p>
+<ul>
+<li><strong>\(1^{st}\)</strong> <strong>x</strong>: Người chủ sẽ cho <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> một xâu <strong>x</strong>.</li>
+<li><strong>\(2^{nd}\)</strong> <strong>k</strong>: Người chủ cho một số nguyên <strong>K</strong> là số thứ tự của xâu thứ <strong>K</strong> trong <strong>N</strong> xâu ban đầu. <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> sẽ phải trả lời câu hỏi rằng xâu thứ <strong>K</strong> đó là xâu con của tất cả bao nhiêu xâu <strong>x</strong> mà người chủ đã cho.</li>
+</ul>
+<p>Bạn hãy giúp <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> giải quyết các câu hỏi trên.</p>
+<p><strong>INPUT:</strong></p>
+<ul>
+<li>Dòng đầu tiên là số nguyên dương <strong>N</strong> là số xâu ban đầu. (<strong>1</strong>\(\leq\)<strong>N</strong>\(\leq\)<strong>\(10^6\)</strong>).</li>
+<li><strong>N</strong> dòng tiếp theo, mỗi dòng gồm một xâu là các chữ cái trong bảng chữ cái tiếng Pháp. Tổng độ dài tất cả các xâu sẽ không vượt quá \(2.10^6\) (Link sẽ được để trong phần mô tả của video, à lộn, phần comment).</li>
+<li>Dòng tiếp theo là số nguyên dương <strong>Q</strong> là số lượng truy vấn mà nguời chủ đặt ra.</li>
+<li><strong>Q</strong> dòng cuối cùng bao gồm các truy vấn loại <strong>\(1^{st}\)</strong> và <strong>\(2^{nd}\)</strong>. Biết rằng nếu là truy vấn loại <strong>\(1^{st}\)</strong>, tổng độ dài tất cả các xâu <strong>x</strong> sẽ không vượt quá \(2.10^6\).</li>
+</ul>
+<p><strong>OUTPUT</strong></p>
+<ul>
+<li>Gồm nhiều dòng, mỗi dòng là câu trả lời cho truy vấn loại <strong>\(2^{nd}\)</strong>.</li>
+</ul>
+<h4><strong>Ví dụ:</strong></h4>
+<p><strong>INPUT</strong></p>
+<pre><code>2
+ab
+b
+5
+1 baab
+2 2
+1 cdab
+1 bbbbaaa
+2 1</code></pre>
+<p><strong>OUTPUT</strong></p>
+<pre><code>1
+2</code></pre>
+<p><strong>Giải thích ví dụ:</strong></p>
+<ul>
+<li>Ở truy vấn đầu tiên, người chủ cho <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> xâu đầu tiên là <strong>baab</strong>.</li>
+<li>Ở truy vấn thứ hai, người chủ cho <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> số nguyên <strong>K</strong> = <strong>2</strong>, tức là xâu <strong>b</strong>. Ta thấy xâu <strong>b</strong> là xâu con duy nhất của xâu <em>baab</em> (Vì người chủ mới cho <strong>1</strong> xâu duy nhất) nên câu trả lời là <strong>1</strong>.</li>
+<li>Ở truy vấn thứ ba, người chủ cho <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> thêm một xâu nữa là là <strong>cdab</strong>.</li>
+<li>Ở truy vấn thứ tư, người chủ cho <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> thêm một xâu nữa là là <strong>bbbbaaa</strong>.</li>
+<li>Ở truy vấn thứ năm,  người chủ cho <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> số nguyên <strong>K</strong> = <strong>1</strong>, tức là xâu <strong>ab</strong>. Ta thấy rằng xâu <strong>ab</strong> là xâu con của hai xâu <strong>baab</strong> và <strong>cdab</strong> nhưng không phải xâu con của <strong>bbbbaaa</strong> nên câu trả lời là <strong>2</strong>.</li>
+</ul>
+</div>
+<hr/>
+</div>

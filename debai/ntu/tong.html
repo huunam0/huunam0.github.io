@@ -1,0 +1,89 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    TONG - Tổng A + B 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Cho hai số nguyên dương A và B, hãy tính tổng A+B.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Là hai số nguyên A, B ( 0 &lt; A, B &lt; 10<sup>9</sup>), A và B cách nhau một khoảng trắng.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là tổng của A và B</p>
+<p> </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">1 2<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">3</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><em><u>Bài giải:</u></em></p>
+<p><strong><u>Đối với C/C++:</u></strong> không sử dụng getchar(), getch(), system("pause"), fopen, freopen (xem thêm phần hỏi đáp). Mã thoát chương trình là 0.</p>
+<p><span style="font-family:courier new,courier,monospace">#include&lt;iostream&gt;<br/>
+using namespace std;</span><br/>
+<span style="font-family:courier new,courier,monospace">int main()<br/>
+{</span><br/>
+<span style="font-family:courier new,courier,monospace">#ifndef ONLINE_JUDGE<br/>
+   freopen ("input.txt", "r", stdin);<br/>
+   freopen ("output.txt", "w", stdout);<br/>
+#endif<br/>
+   int a, b;<br/>
+   cin&gt;&gt;a&gt;&gt;b;<br/>
+   cout&lt;&lt;a+b;<br/>
+   return 0;<br/>
+}</span></p>
+<p><strong><u>Đối với Pascal:</u></strong> không sử dụng thư viện crt, graph, sysutils, các thao tác trên file (xem thêm phần hỏi đáp). Mã thoát chương trình là 0.</p>
+<p><span style="font-family:courier new,courier,monospace">var a, b, c: longint;<br/>
+begin</span><br/>
+<span style="font-family:courier new,courier,monospace">{$ifndef ONLINE_JUDGE}<br/>
+    assign(input,'input.txt'); reset(input);<br/>
+    assign(output,'output.txt'); rewrite(output);<br/>
+{$endif}</span><br/>
+<span style="font-family:courier new,courier,monospace">    read(a, b);<br/>
+    c:= a+b;<br/>
+    write(c);</span><br/>
+<span style="font-family:courier new,courier,monospace">end.</span></p>
+<p><strong><u>Đối với Java:</u></strong></p>
+<p><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">import java.io.*;<br/>
+import java.util.Scanner;</span></span><br/>
+<span style="font-size:14px"><span style="font-family:courier new,courier,monospace">class Main {<br/>
+    public static void main(String[] args) throws IOException<br/>
+    {<br/>
+        if (!"true".equals(System.getProperty("ONLINE_JUDGE"))) {<br/>
+             System.setIn(new FileInputStream(new File("input.txt")));<br/>
+             System.setOut(new PrintStream(new File("output.txt")));<br/>
+        }<br/>
+        Scanner in = new Scanner(System.in);<br/>
+        PrintStream out = System.out ;<br/>
+<span style="font-size:14px"><span style="font-family:courier new,courier,monospace">        int a = in.nextInt();<br/>
+        int b = in.nextInt();<br/>
+        out.print(a+b);<br/>
+    }<br/>
+}</span></span></span></span></p>
+<p><strong><u>Đối với Python:</u></strong></p>
+<p><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">if __debug__:<br/>
+    import sys<br/>
+    sys.stdin = open('input.txt')<br/>
+    sys.stdout = open('output.txt', 'w')<br/>
+a, b= map(int, raw_input().split())<br/>
+print(a+b)</span></span><br/>
+ </p>
+<p> </p>
+</div>
+</div></body></html>

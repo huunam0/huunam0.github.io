@@ -1,0 +1,59 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chuyển đổi dãy số</h2>
+</div><div class="content-description screen">
+<div><ul>
+<li><p>Cho mảng \(A\) gồm \(n\) phần tử và các phần tử được sắp xếp tăng dần từ \(1\) đến \(n\) (Tức là \(A[]=\left\{1,2,3,...,n\right\}\)). Nhiệm vụ của ta là in ra số "tập lệnh" tối thiểu để chuyển mảng \(A\) thành mảng gồm các phần tử được sắp xếp theo thứ tự giảm dần (Tức là, sau khi biến đổi: \(A[]=\left\{n,n-1,n-2,...,1\right\}\))</p>
+</li>
+<li><p>Mảng \(A\) được đánh chỉ số bắt đầu từ \(1\).</p>
+</li>
+<li><p>Mỗi "tập lệnh" có cấu trúc như sau: \((p_1,len,p_2)\). Điều kiện:  \(1 \le p_1 \le n; 1 \le len \le n+1-p_1; 0 \le p_2 \le n-len \)</p>
+</li>
+<li><p>Ta áp dụng các "tập lệnh" đó vào \(A\) như sau: Lấy subarray (có nghĩa là mảng con gồm các phần tử liên tiếp) từ vị trí \(p_1\) đến \(p_1+len-1\), sau đó xóa chúng đi và thêm lại vào phía sau vị trí \(p_2\). Nếu \(p_2=0\), thì ta hiểu subarray đó được thêm vào phía trước đầu tiên của mảng \(A[]\).</p>
+</li>
+<li><p>Ví dụ: Giả sử ta có mảng \(A[]=1,2,3\), áp dụng tập lệnh \((1,1,2)\) vào \(A\), ta có quá trình biến đổi như sau:</p>
+<ul>
+<li><p>Ta tìm được \(subarray[]=1\).</p>
+</li>
+<li><p>Xóa đi subarray này, thì mảng \(A\) còn lại: \(A[]=2,3\)</p>
+</li>
+<li><p>Thêm subarray này lại vào vị trí sau vị trí thứ \(2\), ta được \(A[]=2,3,1\).</p>
+</li>
+</ul>
+</li>
+<li><p>Hoặc giả sử ta áp dụng tập lệnh \((2,2,0)\). Khi đó \(A[]\) sẽ trở thành \(A[]=2,3,1\).</p>
+</li>
+</ul>
+<p><strong>Yêu cầu:</strong> Cho số nguyên dương \(n\). In ra số "tập lệnh" tối thiểu cần dùng, và liệt kê chúng ra. Nếu có nhiều đáp án, in ra bất kì.</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li>Nhập số \(n(1\le n\le 1000)\)</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa số "tập lệnh" tối thiểu cần dùng</p>
+</li>
+<li><p>In ra các dòng liệt kê số "tập lệnh" trên, mỗi "tập lệnh" một dòng</p>
+</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>2
+1 1 2
+1 1 1</code></pre>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li><p>Ban đầu: \(A[]=1,2,3\)</p>
+</li>
+<li><p>Sau khi áp dụng "tập lệnh" thứ nhất, \(A\) trở thành: \(A[]=2,3,1\)</p>
+</li>
+<li><p>Sau khi áp dụng "tập lệnh" thứ hai, \(A\) trở thành: \(A[]=3,2,1\).</p>
+</li>
+<li><p><strong>Subtask 1:</strong> \(1\le n \le 100\).(30 %)</p>
+</li>
+<li><strong>Subtask 2:</strong> \(101\le n \le 1000\).(70%)</li>
+</ul>
+</div>
+<hr/>
+</div>

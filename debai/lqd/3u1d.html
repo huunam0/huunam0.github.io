@@ -1,0 +1,38 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">3U1D</h2>
+</div><div class="content-description screen">
+<div><p>Cho mảng <strong>A</strong> gồm <strong>N</strong> phần tử và <strong>Q</strong> truy vấn khác nhau, nhiệm vụ của bạn là thực hiện các truy vấn sau:</p>
+<ul>
+<li><code>1 L R X</code>: Thay thế tất cả các phần tử của mảng <strong>A</strong> trong đoạn [L;R] bằng <strong>X</strong>.</li>
+<li><code>2 L R X</code>: Cộng <strong>X</strong> vào <strong>A[L]</strong>; <strong>2*X</strong> vào <strong>A[L+1]</strong>, <strong>3*X</strong> vào <strong>A[L+2]</strong>, ... , <strong>(R-L+1)*X</strong> vào <strong>A[R]</strong>.</li>
+<li><code>3 C X</code>: Chèn <strong>X</strong> vào vị trí <strong>C</strong> của mảng <strong>A</strong>.</li>
+<li><code>4 L R</code>: Tính tổng các phần tử trong đoạn [L;R].</li>
+</ul>
+<p><strong>INPUT</strong></p>
+<ul>
+<li>Dòng đầu tiên là hai số nguyên dương N, Q là số phần tử mảng A và số lượng truy vấn (1\(\leq\)N, Q\(\leq\)\(10^5\)).</li>
+<li>Dòng thứ hai gồm N số nguyên là các giá trị của mảng A. Các phần tử của mảng không vượt quá \(10^5\).</li>
+<li>Q dòng tiếp theo, mỗi dòng là các truy vấn. Trong tất cả các truy vấn, 1\(\leq\)X\(\leq\)100, 1\(\leq\)L\(\leq\)R\(\leq\)Độ dài hiện tại của mảng và 1\(\leq\)C\(\leq\)Độ dài hiện tại của mảng + 1.</li>
+</ul>
+<p><strong>OUTPUT:</strong> Gồm nhiều dòng, mỗi dòng là kết quả của truy vấn loại <strong>4</strong>.</p>
+<h4><strong>Ví dụ</strong></h4>
+<p><strong>INPUT</strong></p>
+<pre><code>10 10
+1 2 3 4 5 6 7 8 9 10
+1 2 8 15
+2 3 7 26
+4 2 7
+3 6 100
+1 4 8 52
+2 2 9 18
+4 3 10
+2 1 8 45
+3 8 82
+4 1 11</code></pre>
+<p><strong>OUTPUT</strong></p>
+<pre><code>480
+955
+2691</code></pre>
+</div>
+<hr/>
+</div>

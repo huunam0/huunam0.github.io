@@ -1,0 +1,62 @@
+<div class="tm-box2">
+<div class="problem-name">
+    CASTLE - Lâu đài 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;">Nông dân John trúng thưởng sổ số độc đắc của Ailen và phần thưởng đó, thật ngạc nhiên, là một tòa lâu đài có nhiều phòng. John rất muốn biết tòa lâu đài của mình có bao nhiêu phòng và hơn thế nữa ông ta muốn phá một bức tường trong lâu đài để có thể có được một phòng lớn hơn (dành chỗ cho các con bò của ông ta tụ tập vui vẻ !!!).</p>
+<p style="text-align: justify;">Bạn hãy viết một chương trình giúp John xác định xem tòa lâu đài có bao nhiêu phòng và cần phải phá bức tường nào để có được một phòng lớn nhất có thể.</p>
+<p style="text-align: justify;">Sơ đồ lâu đài có thể mô tả như một lưới <em>M</em> cột và <em>N</em> hàng các modul. Mỗi một Modul như vậy có thể có 0, 1, 2, 3, 4 bức tường bao quanh nó. Tất nhiên các modul trên biên của lâu đài luôn có các bức tường ngăn nó với bên ngoài để cho modul không bị ảnh hưởng của gió và mưa: Chẳng hạn dưới đây là một sơ đồ lâu đài:  </p>
+<p style="text-align: justify; margin-left: 80px;"><span style="font-family:courier new,courier,monospace">    1   2   3   4   5   6   7</span></p>
+<p style="text-align: justify; margin-left: 80px;"><span style="font-family:courier new,courier,monospace">  #############################<br/>
+1 #   |   #   |   #   |   |   #<br/>
+  #####---#####---#---#####---#<br/>
+2 #   #   |   #   #   #   #   #<br/>
+  #---#####---#####---#####---#<br/>
+3 #   |   |   #   #   #   #   #<br/>
+  #---#########---#####---#---#<br/>
+4 # -&gt;#   |   |   |   |   #   #<br/>
+  #############################</span></p>
+<p style="text-align: justify; margin-left: 80px;"><span style="font-family:courier new,courier,monospace"># = tường -,| = không tường -&gt; = vị trí bức tường cần phá để có một phòng mới có diện tích lớn nhất  </span></p>
+<p style="text-align: justify;">Trong ví dụ trên, lâu đài có 4x7 modul. Nó có 5 phòng (có kích thước là 9, 7, 3, 1 và 8). Việc phá bức tường đánh dấu sẽ cho một phòng mới có diện tích lớn nhất trong số các phòng mới nhận được bằng cách phá đi chỉ một bức tường.</p>
+<p style="text-align: justify;">Tòa lâu đài có ít nhất hai phòng và luôn có một bức tường có thể bị phá</p>
+<p style="text-align: justify;"><strong>Input</strong>:</p>
+<p style="text-align: justify; margin-left: 40px;">- Dòng đầu tiên chứa hai số <em>M</em> và <em>N</em> (<em>1≤M,N≤50</em>) là số cột và số hàng của tòa lâu đài<br/>
+- Tiếp theo là <em>N x M</em> số nguyên (có thể có nhiều số trên một dòng cách nhau bằng dấu cách) lần lượt mô tả các modul của dòng 1 từ tây sang đông, các mô dul của dòng 2 từ tây sang đông,... mỗi modul được gán một giá trị nguyên theo qui tắc như sau: 1-có tường phía tây, 2- có tường phía bắc, 4-có tường phía đông, 8-có tường phía nam. Nếu có nhiều bức tường xung quanh một modul thì giá trị biểu diễn modul đó bằng tổng giá trị biểu diễn của các bức tường. Ví dụ nếu modul có tường phía tây, đông, nam thì giá trị của nó là 1+4+8 = 13 (!).</p>
+<p style="text-align: justify;"><strong>Output</strong>:</p>
+<p style="text-align: justify; margin-left: 40px;">- Dòng 1: Ghi số lượng phòng mà lâu đài có thể có<br/>
+- Dòng 2: Ghi số modul của phòng rộng nhất<br/>
+- Dòng 3: Ghi số modul của phòng rộng nhất sau khi phá đi một bức tường<br/>
+- Mô tả bức tường cần phá. Nếu có nhiều bức tường có thể chọn thì chọn bức tường xa nhất về hướng tây. Nếu vẫn còn nhiều bức tường cùng xa nhất về hướng tây có thể chọn thì chọn bức tường xa nhất về hướng nam. Vị trí của bức tường cần phá được xác định bởi (i,j) - chỉ số hàng và cột của modul chứa bức tường và hoặc N (nếu tường ở hướng bắc) hoặc E (nếu tường ở hướng đông)  </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">7 4<br/>
+11 6 11 6 3 10 6<br/>
+7 9 6 13 5 15 5<br/>
+1 10 12 7 13 7 5<br/>
+13 11 10 8 10 12 13</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px"> 5<br/>
+9<br/>
+16<br/>
+4 1 E </p>
+<hr/>
+<p><em>Nguồn: NTB Hải Dương</em></p>
+</div>
+</div>

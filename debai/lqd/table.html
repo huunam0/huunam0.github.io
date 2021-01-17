@@ -1,0 +1,66 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Thay đổi bảng</h2>
+</div><div class="content-description screen">
+<div><p>Cho bảng \(𝐴\) kích thước \(𝑚 × 𝑛\) các hàng của bảng được đánh số từ \(1\) tới \(𝑚\) và các cột của bảng được đánh số từ \(1\) tới \(𝑛\). Ô nằm trên hàng \(𝑖\) và cột \(𝑗\) được điền một số nguyên có giá trị \(a_{i,j}\). Có \(q\) thao tác và có 2 loại thao tác</p>
+<ul>
+<li>\(1\ d\ r\)</li>
+<li>\(2\ x\ y\ u\ v\)</li>
+</ul>
+<p><strong>Thao tác 1</strong>: Thực hiện \(d\)  lệnh \(D\) và \(r\)  lệnh \(R\)</p>
+<p><strong>Lệnh D</strong>: Dịch các hàng lên 1 hàng</p>
+<ul>
+<li>Hàng 2 lên hàng 1 </li>
+<li>Hàng 3 lên hàng 2 </li>
+<li>…. </li>
+<li>Hàng 1 xuống hàng m</li>
+</ul>
+<p><strong><em>Ví dụ</em></strong>: \(d=1\)</p>
+<p>\(\begin{matrix} &amp;1&amp;2&amp;3\\ &amp;4&amp;5&amp;6\\&amp;7&amp;8&amp;9\end{matrix}\)    \(\ \ \    \Rightarrow\)  \(\begin{matrix}  &amp;4&amp;5&amp;6\\&amp;7&amp;8&amp;9\\&amp;1&amp;2&amp;3\end{matrix}\)</p>
+<p><strong>Lệnh R</strong>: Dịch các cột sang trái 1 cột</p>
+<ul>
+<li>Cột 2 sang cột 1</li>
+<li>Cột 3 sang cột 2</li>
+<li>…</li>
+<li>Cột 1 sang cột n</li>
+</ul>
+<p><strong><em>Ví dụ</em></strong>: \(r=1\)</p>
+<p>\(\begin{matrix} &amp;1&amp;2&amp;3\\ &amp;4&amp;5&amp;6\\&amp;7&amp;8&amp;9\end{matrix}\)    \(\ \ \    \Rightarrow\)  \(\begin{matrix}  &amp;2&amp;3&amp;1\\&amp;5&amp;6&amp;4\\&amp;8&amp;9&amp;7\end{matrix}\)</p>
+<p><strong>Thao tác 2</strong>: Trả về giá trị lớn nhất của bảng trong khoảng góc trái trên \([x,y]\) và góc phải dưới \([u,v]\)</p>
+<p><strong>Dữ liệu vào</strong>:</p>
+<ul>
+<li>Dòng đầu gồm hai số nguyên dương \(m,n\)  (\(m,n   ≤  300\))</li>
+<li>\(m\) dòng tiếp theo chứa \(n\) số nguyên (\(a_{i,j} ≤ 10^6\)) </li>
+<li>Dòng tiếp theo chứa số \(q\) là số lượng thao tác (\(q ≤ 10^5\)) </li>
+<li><p>\(q\) dòng tiếp theo chứa lệnh 1 hoặc 2 cùng dữ kiện tương ứng</p>
+<p>\(1\ d\ r \) (\(d,r ≤ 10^6\))</p>
+<p>\(2\ x\ y\ u\ v\) (\(1 ≤ x ≤ u ≤ m , 1 ≤ y ≤ v ≤ n\))</p>
+</li>
+</ul>
+<p><strong>Kết quả</strong>:</p>
+<ul>
+<li>Với mỗi lệnh 2, in kết quả tìm được</li>
+</ul>
+<p><strong>Ví dụ</strong></p>
+<p><strong>Input</strong></p>
+<pre><code>3 3
+1 2 3
+4 5 6
+7 8 9
+4
+1 2 1
+2 2 3 3 3
+1 0 1
+2 1 1 3 3</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>4
+9</code></pre>
+<p><strong><em>Giới hạn</em></strong></p>
+<ul>
+<li>\(50%\) số test \(m,n,q ≤ 100\ d=r = 1\)</li>
+<li>\(50%\) số test không có giới hạn gì thêm</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2019YB</em></p>
+</div>
+<hr/>
+</div>

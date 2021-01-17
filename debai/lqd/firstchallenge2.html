@@ -1,0 +1,47 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Doraemon và thử thách đầu tiên [Bản khó]</h2>
+</div><div class="content-description screen">
+<div><p>Quay trở lại với Doraemon và đồng bọn, sau khi nghỉ ngơi thoải mái, cả bọn bắt đầu chuyến hành trình khám phá hòn đảo. Trong lúc đi tham quan, Suneo bỗng phát hiện được một phế tích bỏ hoang và thông báo cho cả bọn cùng khám phá nơi này vì có vẻ nó là nơi bắt đầu của cuộc hành trình tìm kiếm kho báu. Vừa bước chân vào phế tích, cửa ra liền đóng sầm lại làm cả bọn sợ hãi và trước mặt họ có vẻ là một câu đố. Một bức tranh có kích thước \(N \times M\) hiện lên trước mặt họ, các ô bên trong bức tranh đều có màu trắng và viền của bức tranh có màu xám. Bên cạnh bức tranh có vài dòng chữ: “Ta sẽ vẽ vào bức tranh này dùng những con quái vật. Ta sẽ sắp xếp một số quái vật ở viền ngoài của bức tranh và hướng mặt về phía bảng. Việc sắp xếp các con quái vật có thể được biểu diễn bởi 4 chuỗi \(A, B, C, D\):</p>
+<ul>
+<li>Nếu \(A_i=1\), có 1 con quái vật ở vị trí \((i,0) \, (1 \le i \le N)\).</li>
+<li>Nếu \(B_i=1\), có 1 con quái vật ở vị trí \((i,M+1) \, (1 \le i \le N)\). </li>
+<li>Nếu \(C_i=1\), có 1 con quái vật ở vị trí \((0,i) \, (1 \le i \le M)\).</li>
+<li>Nếu \(D_i=1\), có 1 con quái vật ở vị trí \((N+1,i) \, (1 \le i \le M)\).</li>
+</ul>
+<p>2 quái vật bất kì sẽ tô 2 màu khác nhau, và màu của mỗi quái vật đều khác trắng và xám.
+Lần lượt thực hiện các thao tác sau đến khi tất cả quái vật để đã được chọn:</p>
+<ul>
+<li>Chọn 1 quái vật bất kì</li>
+<li>Quái vật sẽ liên tục thực hiện thao tác sau nếu như ô trước mặt nó là 1 ô trắng: Đi sang ô trước mặt và tô màu ô đó với màu của nó. Nếu ô trước mặt nó có màu ko phải màu trắng thì quái vật sẽ dừng lại. <strong>May mắn cho các ngươi, lần này 2 chuỗi B và D đều không có quái vật</strong>. </li>
+</ul>
+<p>Các ngươi hãy cho biết có bao nhiêu trạng thái khác nhau của bức tranh (mod \( 10^9 + 7 \)). Hai trạng thái được coi là khác nhau nếu ở trạng thái này có ít nhất 1 ô khác màu với trạng thái kia."</p>
+<p>Vì quá bất ngờ và sợ hãi, cả bọn chả biết phải làm gì để vượt qua thử thách này nên nhờ các bạn giúp họ vượt qua thử thách để cả bọn có thể bình tĩnh lại.</p>
+<hr/>
+<h3>Input</h3>
+<p>Dòng đầu tiên chứa hai số \(N, M\) \((1 \le N, M \le 10^5)\) là số hàng và số cột của bức tranh.</p>
+<p>\(4\) dòng tiếp theo, Mỗi dòng chứa 1 chuỗi lần lượt là \(A, B, C, D\).</p>
+<hr/>
+<h3>Output</h3>
+<p>Gồm 1 dòng chứa số nguyên là kết quả của bài toán.</p>
+<hr/>
+<h3>Ví dụ</h3>
+<p><strong>Input</strong></p>
+<pre><code>4 5
+1100
+0000
+01001
+00000</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>6</code></pre>
+<p>Đây là vị trí của các con quái vật ban đầu:</p>
+<p><img alt="" src="https://i.imgur.com/wbI8Eow.png"/></p>
+<p>Với mọi cách tô màu thì ta có thể tô bảng theo 6 cách khác nhau như sau:</p>
+<p><img alt="" src="https://i.imgur.com/3YLctH1.png"/></p>
+<p><img alt="" src="https://i.imgur.com/xgPFDBr.png"/></p>
+<p><img alt="" src="https://i.imgur.com/6evB9Vg.png"/></p>
+<p><img alt="" src="https://i.imgur.com/oJ6HZTG.png"/></p>
+<p><img alt="" src="https://i.imgur.com/BRr95kf.png"/></p>
+<p><img alt="" src="https://i.imgur.com/aFw2qqW.png"/></p>
+</div>
+<hr/>
+</div>

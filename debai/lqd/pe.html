@@ -1,0 +1,37 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">PE</h2>
+</div><div class="content-description screen">
+<div><p>Sắp tới các bạn học sinh trường SuperKids dành cho các bạn từ 192 đến 216 tháng tuổi sẽ tổ chức kiểm tra học kỳ môn thể dục, nội dung kiểm tra năm nay là vượt rào, trường có N chiếc rào, chiếc rào thứ \(i\) sẽ có độ cao là hi và độ chênh lệch độ cao là \(a_i\), độ chênh lệch độ cao sẽ tính bằng công thức \(a_i\) = \(hi\) – \(h_{i - 1}\) , \(h_0\) = 0. Để vượt chiếc rào thức \(i\), học sinh phải có khả năng bật nhảy \(j\) sao cho \(j\) &gt;= \(h_i\). Thầy giáo yêu cầu để qua được môn học sinh ít nhất phải đi được hơn một nữa quảng đường, hay nói cách khác số lượng rào học sinh có thể vượt quá là lớn hơn \(n / 2\). Vì đây là một bài kiểm tra khá là khó nên các bạn học sinh đã lên một kế hoạch đột nhập vào hệ thống của trường để điều chỉnh lại độ chênh độ cao của các chiếc rào để tất cả cùng qua môn thể dục khó khăn này hoặc có thể làm nó khó hơn để tăng thêm tính thử thách nếu thấy bài thi quá dễ.</p>
+<p>Sau một thời gian nổ lực, các bạn học sinh đã đột nhập thành công vào hệ thống trường. Lúc này các bạn sẽ thực hiện \(Q\) thao tác, bao gồm hai loại:</p>
+<ul>
+<li>Loại 1: Gồm ba số \(l\), \(r\), \(v\): thay đổi độ chênh lệch của toàn bộ \(a_i\) = \(v\) (\(l \leq i \leq r\))</li>
+<li>Loại 2: Gồm một số \(j\): trả lời câu hỏi với khả năng bật nhảy là \(j\) thì các học sinh thể vượt qua được tất cả chiếc rào hay không.</li>
+</ul>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li>Dòng đầu tiền gồm 2 hai số nguyên dương \(N\), \(K\) (\(N \leq 10^{9}\), \(k \leq min(n, 100)\))</li>
+<li>Dòng thứ hai gồm \(K\) số, là \(K\) giá trị ban đầu của dãy \(a\), phần còn lại được mặc định ban đầu là 0</li>
+<li>Dòng thứ ba là số \(Q\), (\(Q \leq 10^{5}\))</li>
+<li>\(Q\) dòng tiếp theo mỗi dòng là gồm một vài số, số đầu tiên là \(t\) (\(1 \leq t \leq 2\)), là loại thao tác của thao tác hiện tại. Nếu \(t = 1\), ba số tiếp theo sẽ là \(l\), \(r\) và \(v\) (\(1 \leq l \leq r \leq N\), \(-10^{9} \leq v \leq 10^{9}\)). Nếu \(t = 2\), một số tiếp theo sẽ là \(j\) \((1 \leq j \leq 10^{9}\))</li>
+</ul>
+<p>Dữ liêụ luôn đảm bảo chiều cao của các chiếc xá luôn không âm ở bất kì thời điểm nào.</p>
+<p><strong>Dữ liệu ra:</strong></p>
+<ul>
+<li>Dòng nhiều dòng là đáp án cho các thao tác loại 2, mỗi số in trên một dòng, nếu có thì in ra “YES” và “NO” nếu ngược lại.</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>5 5 
+1 0 0 0 0    
+4
+2 6    
+1 1 5 4    
+2 6    
+2 15</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>YES    
+NO   
+YES</code></pre>
+</div>
+<hr/>
+</div>

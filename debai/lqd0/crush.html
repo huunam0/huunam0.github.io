@@ -1,0 +1,66 @@
+<div class="tm-box2">
+<div class="problem-name">
+    CRUSH - CRUSH 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Sau khi tốt nghiệp Đại học Sư phạm Đà Nẵng, Ngạn trở về công tác tại trường tiểu học làng Đo Đo. Tiếp thu những công nghệ tiến bộ ở thành phố, đồng thời muốn níu giữ những ký ức đẹp về cuộc tình đơn phương hàng thập kỷ của mình, thầy giáo Ngạn đã phổ cập cho học sinh trong trường về cách thức viết các <em>confession</em> để mỗi học sinh có cơ hội thú nhận ẩn danh tình cảm thầm kín với crush của mình. Nhưng vì kết nối internet còn khá chậm và chập chờn, các <em>confession</em> đều phải viết ra giấy, và thầy Ngạn cũng đành phải kiêm luôn công việc chuyển phát <em>confession</em> giúp các học sinh của mình.</p>
+<p>Vào niên khóa mà Ngạn chuyển về, trường tiểu học làng Đo Đo có <strong>N</strong> học sinh mới nhập học, được đánh số từ 1 đến <strong>N</strong>. Mỗi một ngày trong <strong>M</strong> ngày đầu tiên của năm học, tại trường đã xảy ra một trong ba loại sự kiện sau:</p>
+<p>- <u>Sự kiện loại 1</u>: Học sinh <strong>x</strong> bắt đầu <em>crush</em> học sinh <strong>y</strong> (<strong>x</strong> ≠ <strong>y</strong>, 1 ≤ <strong>x</strong>, <strong>y</strong> ≤ <strong>N</strong>). Nói cách khác, học sinh <strong>y</strong> chính thức trở thành <em>crush</em> của học sinh <strong>x</strong>. Trước thời điểm này, học sinh <strong>x</strong> chưa từng có một crush nào (bởi vì người làng Đo Đo vô cùng chung thủy với crush của mình nên không hề xảy ra một trường hợp <em>uncrush</em> hoặc <em>crush-</em>nhiều-người-cùng-lúc nào). Mỗi người làng Đo Đo cũng mang trong mình một <em>đẳng cấp</em> tiềm ẩn và ai trong số họ cũng chỉ crush người có <em>đẳng cấp cao</em> <em>hơn</em> <em>mình</em>.</p>
+<p>- <u>Sự kiện loại 2</u>: Học sinh <strong>x </strong>(1 ≤ <strong>x </strong>≤ <strong>N</strong>) nào đó được Ngạn chuyển cho một confession đến từ một <em>học sinh</em> <em>khác</em> <em>trường</em>. Sau khi đọc xong confession này, học sinh <strong>x</strong> sẽ đem khoe và chia sẻ cho crush của mình cùng đọc. Và sau khi crush của học sinh <strong>x</strong> đọc xong, cậu ấy sẽ tiếp tục chia sẻ cho <em>crush của cậu ấy</em> cùng đọc. Mọi chuyện sẽ lặp lại cho đến khi confession được đọc xong bởi một học sinh không có crush.</p>
+<p>- <u>Sự kiện loại 3</u>: Thầy Ngạn thắc mắc và tìm hiểu xem học sinh <strong>x</strong> đã đọc được <em>confession thứ</em> <strong>i</strong>, theo trình tự thời gian được gửi, hay chưa (1 ≤ <strong>x </strong>≤ <strong>N</strong>, <strong>i</strong> không vượt quá số confession đã được thầy Ngạn chuyển phát). </p>
+<p>Những thắc mắc của thầy Ngạn trở thành vấn đề nan giải vì <strong>N</strong> khá lớn, nên thầy đã gửi chúng, cùng thông tin chi tiết về tất cả các sự kiện loại 1 và loại 2, cho Định để nhờ giải đáp giúp. Nhưng giờ đây, quỹ thời gian của Định chỉ còn dành duy nhất cho những buổi nhảy đầm đầy hoan lạc và đê mê cùng Hà Lan và Bích Hoàng, nên cậu đành chuyển giao những tò mò đầy khó hiểu và tọc mạch của thầy Ngạn đến cho các bạn. Hãy giúp Định được dành trọn năng lượng và thời gian của mình để ăn chơi nhé!</p>
+<p> </p>
+<p><u><strong>Định dạng input:</strong></u></p>
+<p>- Dòng đầu chứa hai số nguyên dương <strong>N</strong> và <strong>M</strong>.</p>
+<p>- Dòng thứ <strong>i</strong> trong <strong>M</strong> dòng tiếp theo bắt đầu bằng số nguyên <strong>1</strong> nếu ngày thứ i diễn ra <em>sự kiện loại 1</em>, và theo sau đó là hai số nguyên dương <strong>x</strong>, <strong>y</strong>. Tương tự, nó sẽ bắt đầu bằng số nguyên <strong>2</strong> hoặc <strong>3</strong> cùng các dữ liệu theo sau tương ứng nếu ngày thứ <strong>i</strong> diễn ra <em>sự kiện loại 2</em> hoặc <em>sự kiện loại 3</em>.</p>
+<p> </p>
+<p><u><strong>Định dạng output:</strong></u></p>
+<div>- Với mỗi thắc mắc thuộc <em>sự kiện loại 3</em>, in ra số nguyên <strong>1</strong> nếu học sinh <strong>x</strong> đó đã đọc được confession thứ <strong>i</strong> tại thời điểm thầy Ngạn thắc mắc, và in ra số nguyên <strong>0</strong> trong trường hợp ngược lại. Các số nguyên được in trên cùng một dòng và cách nhau bởi <em>dấu cách</em>.</div>
+<div> </div>
+<div><u><strong>Ràng buộc:</strong></u></div>
+<div>- 50% số test có 1 ≤ <strong>N</strong>, <strong>M</strong> ≤ 1000.</div>
+<div>- 50% số test còn lại có <strong>N</strong>, <strong>M</strong> ≤ 10<sup>5</sup>.</div>
+<div> </div>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p> </p>
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Input</strong></td>
+<td style="text-align:center"><strong>Output</strong></td>
+</tr>
+<tr>
+<td>4 9<br/>
+			1 4 3<br/>
+			2 4<br/>
+			3 3 1<br/>
+			1 2 3<br/>
+			2 2<br/>
+			3 1 2<br/>
+			1 3 1<br/>
+			2 2<br/>
+			3 1 3</td>
+<td>1 0 1</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+</div>
+</div>

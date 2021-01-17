@@ -1,0 +1,46 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    HANA - Hái nấm 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>         Một cháu gái hàng ngày được mẹ giao nhiệm vụ đến thăm bà nội. Từ nhà mình đến nhà bà nội cô bé phải đi qua một khu rừng có rất nhiều loại nấm. Trong số các loại nấm, có ba loại có thể ăn được. Cô bé đánh số ba loại nấm ăn được lần lượt là 1, 2 và 3. Là một người cháu  hiếu thảo cho nên cô bé quyết định mỗi lần đến thăm bà, cô sẽ hái ít nhất hai loại nấm ăn được để nấu súp cho bà. Khu rừng mà cô bé đi qua được chia thành lưới ô vuông gồm n hàng và m cột. Các hàng của lưới được đánh số từ trên xuống dưới bắt đầu từ 1, còn các cột – đánh số từ trái sang phải, bắt đầu từ 1. Ô nằm giao của hàng i và cột j có tọa độ (i,  j). Trên mỗi ô vuông, trừ ô (1,1) và ô (n, m) các ô còn lại hoặc có nấm độc và  cô bé không dám  đi vào (đánh dấu là  -1), hoặc là có đúng một loại nấm có thể ăn được (đánh dấu bằng số hiệu của loại nấm đó). Khi cô bé đi vào một ô vuông có nấm ăn được thì cô bé sẽ hái loại nấm mọc trên ô đó. Xuất phát từ ô (1,1), để đến được nhà bà nội ở ô (n, m) một cách nhanh nhất cô bé <em>luôn đi theo hướng sang phải hoặc xuống dưới</em>.</p>
+<p style="text-align:center"><img alt="" src="images/hainam.png" style="height:153px; width:573px"/></p>
+<p>       Bạn hãy giúp cô bé tìm ra một đường đi theo yêu cầu trên (không qua nấm độc và qua ít nhất 2 loại nấm ăn được). Chú ý là đường đi sẽ dài n + m - 1 ô, kể cả nhà cô bé ở đầu và nhà bà nội ở cuối.</p>
+<p><strong>Dữ liệu vào: </strong>gồm các dòng sau:</p>
+<p>- Dòng thứ nhất là hai số nguyên n, m cách nhau một khoảng trắng ( 1 ≤ n,m ≤ <span style="color:#FF0000"><strong>20</strong></span>)</p>
+<p>- Trong n dòng tiếp theo, mỗi dòng là m số nguyên cách nhau một khoảng trắng. Các số nguyên biểu thị các loại nấm trong khu rừng (-1: nấm độc; 1, 2, 3: các nấm loại 1, 2, 3). Riêng 2 ô (1,1) và (n,m) có giá trị là 0 biểu thị nhà cô bé và nhà bà nội.</p>
+<p><strong>Dữ liệu ra:</strong></p>
+<p>- Nếu không có đường đi, in ra -1.</p>
+<p>- Nếu có đường đi, in ra n + m - 1 dòng. Tại dòng thứ i là hai số nguyên y<sub>i</sub> và x<sub>i</sub> xác định vị trí dòng và vị trí cột của ô thứ i trong đường đi, hai số cách nhau một khoảng trắng. (Nếu có nhiều đáp án, chỉ cần in ra một đáp án bất kỳ)</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 4<br/>0 3 -1 2<br/>3 3 3 3<br/>3 1 3 0</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1 1<br/>2 1<br/>3 1<br/>3 2<br/>3 3<br/>3 4</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 6<br/>0 1 3 -1 -1 -1 <br/>3 3 1 -1 -1 2 <br/>-1 2 1 2 2 -1 <br/>2 2 -1 2 3 0 </div>
+<div class="sample-type">output</div>
+<div class="sample-value">1 1<br/>1 2<br/>1 3<br/>2 3<br/>3 3<br/>3 4<br/>3 5<br/>4 5<br/>4 6</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

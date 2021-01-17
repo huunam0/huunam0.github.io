@@ -1,0 +1,53 @@
+<div class="tm-box2">
+<div class="problem-name">
+    STABLE - Ổn định 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">Trong mạng xã hội, mỗi trang web được tổ chức trên một máy tính thành viên và cung cấp dịch vụ truy nhập tới một số trang web khác. Để truy nhập tới một trang web nào đó không có trong danh mục kết nối trực tiếp của mình, người dùng phải truy nhập tới trang web khác có kết nối với mình, dựa vào danh mục dịch vụ của trang web này để chuyển tới trang web khác theo tùy chọn, cứ như thế cho đến khi tới được trang web mình cần. Thời gian để truy nhập tới một trang web phụ thuộc chủ yếu và số lần mở trang web trong quá trình truy nhập. Như vậy, người dùng cần chủ động chọn lộ trình truy nhập hợp lí.</p>
+<p style="text-align:justify">Sau một thời gian làm việc trên mạng, Sáng - một thành viên nhiệt thành đã tích lũy kinh nghiệm, tạo một cơ sở dữ liệu, cho biết từ một trang web có thể đi tới những trang web nào trong mạng. Trong cơ sở dữ liệu, các trang web được đánh số từ 1 đến n và có m bản ghi, mỗi bản ghi có dạng cặp có thứ tự <em>(u, v)</em> cho biết trang web u có kết nối tới trang web <em>v ( 1 ≤ u, v ≤ n, u ≠ v)</em>. Cơ sở dữ liệu chưa được chuẩn hóa, vì vậy có thể chứa các cặp<em> (u, v)</em> giống nhau.</p>
+<p style="text-align:justify">Trang web của Sáng có số hiệu là <em>s</em>. Dựa vào cơ sở dữ liệu, Sáng có thể xác định lộ trình truy nhập nhanh nhất (tức là số lần phải mở trang web là ít nhất) từ trang web s tới trang web <em>u</em> bất kì. Tuy vậy, ở mạng xã hội, mọi chuyện đều có thể xảy ra: một khu vực nào đó bị mất điện, máy của một thành viên bị hỏng, trang web đó đang bị đóng để nâng cấp, ... Kết quả là một vài trang web nào đó có thể tạm thời không hoạt động. Như vậy, nếu từ <em>s</em> có ít nhất hai lộ trình nhanh nhất khác nhau tới <em>u</em> thì khả năng thực hiện truy nhập được một cách nhanh nhất tới u là lớn hơn so với những trang web chỉ có duy nhất một lộ trình nhanh nhất. Hai lộ trình gọi là khác nhau nếu có ít nhất một trang web có ở lộ trình này mà không có ở lộ trình kia hoặc cả hai lộ trình cùng đi qua những trang web như nhau nhưng theo các trình tự khác nhau. Những trang web mà từ s tới đó có ít ra là hai lộ trình nhanh nhất khác nhau được gọi là ổn định đối với <em>s</em>. Trang web mà từ s không có lộ trình tới nó là không ổn định đối với <em>s</em>.</p>
+<p style="text-align:justify"> Ví dụ, với mạng nêu ở hình bên (<em>n</em> = 6, <em>m</em> = 9) các trang web 4 và 3 là ổn định với <em>s</em> = 1 (từ 1 tới 4 có 2 lộ trình nhanh nhất: 1 - 2 - 4 và 1 - 5 - 4, từ 1 tới 3 cũng có 2 lộ trình nhanh nhất: 1 - 2 - 4 - 3 và 1 - 5 - 4 - 3).</p>
+<p style="margin-left:160px; text-align:justify"><img alt="" src="../../ckfinder/userfiles/images/STABLE.png" style="height:157px; width:304px"/></p>
+<p style="text-align:justify"><strong>Yêu cầu</strong>: Cho các số nguyên dương <em>n, m, s</em> và m cặp số (<em>u, v</em>) xác định từ <em>u</em> có thể kết nối trực tiếp tới được <em>v</em>. Hãy xác định số lượng trang web ổn định đối với <em>s</em>.</p>
+<p style="text-align:justify"><strong>Input</strong>:</p>
+<p style="text-align:justify">- Dòng đầu tiên chứa 3 số nguyên n, m và s (2≤n ≤ 10000, 1 ≤ m ≤ 50000, 1 ≤ s ≤ n).<br/>
+- Mỗi dòng trong <em>m</em> dòng tiếp theo chứa 2 số nguyên <em>u</em> và <em>v</em> (1 ≤ <em>u, v ≤ n, u ≠ v</em>).</p>
+<p style="text-align:justify"><strong>Output</strong>:</p>
+<p style="text-align:justify">Một số nguyên - số trang web ổn định đối với <em>s</em>.   </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">6 11 1<br/>
+1 5<br/>
+1 5<br/>
+5 6<br/>
+1 2<br/>
+5 4<br/>
+2 4<br/>
+4 3<br/>
+5 4<br/>
+5 2<br/>
+3 2<br/>
+6 5 </p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">2</p>
+<hr/>
+<p><em>Nguồn: VOI 2010</em></p>
+</div>
+</div>

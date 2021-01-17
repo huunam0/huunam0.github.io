@@ -1,0 +1,54 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    DATA - Dãy tăng 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Cho một dãy n số nguyên a<sub>1</sub> a<sub>2</sub> a<sub>3</sub> ... a<sub>n</sub>. Thực hiện một phép biến đổi dãy như sau:</p>
+<p>1) Chọn một số i (2 ≤ i ≤ n) để chia dãy trên thành 2 dãy con:   a<sub>1</sub> a<sub>2</sub> ...  a<sub>i-1</sub> và dãy a<sub>i</sub>  a<sub>i+1</sub> ...  a<sub>n </sub></p>
+<p>2) Đem dãy con thứ 2 lên phía trước để tạo thành dãy:  a<sub>i</sub> a<sub>i+1 </sub>... a<sub>n </sub> a<sub>1</sub> a<sub>2</sub> ... a<sub>i-1</sub></p>
+<p>Cho dãy số ban đầu, hãy biến đổi sao cho dãy kết quả là một dãy số tăng dần nghiêm ngặt. (Dãy tăng dần nghiêm ngặt là dãy có a<sub>i</sub> &lt; a<sub>i+1</sub> với 1 ≤ i ≤ n-1).</p>
+<p><strong>Dữ liệu nhập: </strong>gồm 2 dòng</p>
+<p>- Dòng thứ nhất là số lượng phần tử n của mảng (2 ≤ n ≤ 10<sup>5</sup>).</p>
+<p>- Dòng thứ hai là n số a<sub>1</sub> a<sub>2</sub> a<sub>3 </sub>... a<sub>n</sub> (1 ≤ a<sub>i</sub> ≤ 10<sup>9</sup>), mỗi số cách nhau một khoảng trắng.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Nếu tồn tại cách biến đổi để mảng tăng dần nghiêm ngặt, in ra chỉ số i.</p>
+<p>- Nếu không tồn tại cách biến đổi, in ra -1.</p>
+<p> </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5<br/>3 4 5 1 2</div>
+<div class="sample-type">output</div>
+<div class="sample-value">4</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>8 2 3 4</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>1 2 3 4</div>
+<div class="sample-type">output</div>
+<div class="sample-value">-1</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

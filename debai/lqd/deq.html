@@ -1,0 +1,38 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Xây dựng mảng</h2>
+</div><div class="content-description screen">
+<div><p>Cho một dãy số nguyên \(A\) gồm \(n\) phần tử. Ta định nghĩa mảng \(B\) gồm \(n\) phần tử, với \(B[i]\) được tính như sau:</p>
+<ul>
+<li>Bằng \(A[j]\) là phần tử gần nhất bên trái \(A[i]\) và nhỏ hơn hoặc bằng \(A[i]\) (với \(1\le j&lt;i, j\) lớn nhất có thể, \(A[j] \le A[i]\)).</li>
+<li>Bằng \(0\) khi không tồn tại \(A[j]\) như trên.</li>
+</ul>
+<p>Ví dụ: \(A = {2,5,3,6}\) thì \(B = {0,2,2,3}\)</p>
+<ul>
+<li>\(A[1]\) là số đầu tiên trong dãy \(=&gt; B[1] = 0\)</li>
+<li>Số gần nhất bên trái nhỏ hơn hoặc bằng 5 là 2 \(=&gt; B[2] = 2\)</li>
+<li>Số gần nhất bên trái nhỏ hơn hoặc bằng 3 là 2 \(=&gt; B[3] = 2\)</li>
+<li>Số gần nhất bên trái nhỏ hơn hoặc bằng 6 là 3 \(= &gt; B[4] = 3\)</li>
+</ul>
+<p><strong>​Yêu cầu</strong>: Cho mảng \(A\), hãy tìm và in ra mảng \(B\) thõa mãn điều kiện trên.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>​Dòng đầu tiên là số nguyên \(n\ (1 \le n \le 10^5)\)</li>
+<li>Dòng thứ hai gồm \(n\) số nguyên là các phần tử của mảng \(A\) \((1 \le A[i] \le 10^9)\)</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Gồm \(n\) số nguyên là các phần tử của mảng \(B\)</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>4
+2 5 3 6</code></pre>
+<p><strong>Smaple output</strong></p>
+<pre><code>0 2 2 3</code></pre>
+<p><em>Giới hạn:</em></p>
+<ul>
+<li>Subtasks 1: \(n \le 10^4\)</li>
+<li>Subtasks 2: \(n \le 10^5\)</li>
+</ul>
+</div>
+<hr/>
+</div>

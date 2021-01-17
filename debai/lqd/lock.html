@@ -1,0 +1,43 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">LOCK</h2>
+</div><div class="content-description screen">
+<div><p>Thành phố Berland vừa thu thập được một bảo vật. Bảo vật đó hiện đang được cất giữ trong 1 két sắt, và chỉ có cách mở khóa két sắt thì mới lấy được bảo vật.</p>
+<p>Bạn là một tên trộm khét tiếng trong thành phố, và mục tiêu của bạn chính là bảo vật trong két sắt. Tuy nhiên, khả năng của bạn có giới hạn nên chỉ có thể lấy trộm được bảo vật nếu như mật khẩu mở khóa két sắt không <strong>khó đoán</strong>.</p>
+<p>Mật khẩu của két sắt được biểu diễn dưới dạng một dãy \(n\) chữ số, mỗi chữ số có giá tri từ \(0\) đến \(9\).</p>
+<p>Mật khẩu được cho là <strong>khó đoán</strong>, nếu không có 2 vị trí nào cạnh nhau trên dãy số mật mã cùng giá tri và mật khẩu phải chứa tối thiểu 5 chữ số khác nhau.</p>
+<p>Bài toán đặt ra cho bạn đó là tìm hiểu xem liệu mật khẩu mở khóa két sắt có <strong>khó đoán</strong> hay không?</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên gồm một số nguyên \(N\) (\(1 &lt; N &lt; 10^6\)) - độ dài dãy chữ số của mật khẩu.</li>
+<li>Dòng tiếp theo gồm \(N\) chữ số - mô tả mật khẩu của két sắt.</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>In ra "<strong>1</strong>" nếu mật khẩu khó đoán, còn nếu mật khẩu không khó đoán thì in ra "<strong>0</strong>".</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>5   
+12345</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>1</code></pre>
+<p><strong>Sample Input</strong></p>
+<pre><code>6   
+122345</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>0</code></pre>
+<p><strong>Sample Input</strong></p>
+<pre><code>5   
+12341</code></pre>
+<p>Sample Output</p>
+<pre><code>0</code></pre>
+<p><strong><em>Giải thích</em></strong></p>
+<ul>
+<li>ở ví dụ 1, mật khẩu không có 2 vi trí nào cạnh nhau có cùng giá tri, và có 5 chữ số khác nhau : 1, 2, 3, 4, 5. Nên mật khẩu sẽ khó đoán.</li>
+<li>ở ví dụ 2, tuy mật khẩu có 5 chữ số khác nhau, nhưng ở vi trí 2 và 3, mật khẩu có cùng giá tri là 2. Nên mật khẩu không khó đoán.</li>
+<li>ở ví dụ 3, tuy mật khẩu không có 2 vi trí nào cạnh nhau có cùng giá tri, nhưng mật khẩu chỉ có 4 chữ số khác nhau. Nên mật khẩu không khó đoán.</li>
+</ul>
+<hr/>
+<p><em>Nguồn: FC</em></p>
+</div>
+<hr/>
+</div>

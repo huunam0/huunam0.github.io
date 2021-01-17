@@ -1,0 +1,37 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Trò chơi với viên bi</h2>
+</div><div class="content-description screen">
+<div><p>Công ty X muốn tổ chức trò ziczac để tạo bầu không khí vui vẻ, hòa đồng trong công ty. Người chơi sẽ đứng trên cao và thả một viên bi xuống một cái bảng bậc thang hình chữ nhật. Bảng này được chia thành \(N*M\) hình chữ nhật nhỏ, mỗi hình chữ nhật nhỏ có gắn một bậc thang và trên đó có ghi một con số nguyên hoặc đặt một cái đinh làm bằng tấm bìa cứng. Người chơi đứng trên thả viên bi xuống, nếu viên bi lăn theo quy tắc: từ ô \((i, j)\) lăn xuống các ô \((i+1, j-1)\), \((i+1, j)\), \((i+1, j+1)\) thì ô mà viên bi lăn qua sẽ được cộng vào quỹ điểm của người chơi bằng số nguyên được ghi trên ô, nếu không theo quy tắc trên thì mất quyền chơi, còn nếu lăn vào ô có đinh thì số điểm bị trừ đi một nửa hoặc gần một nửa (phần nguyên của số điểm chia cho 2). Sau khi hoàn thành trò chơi ban tổ chức sẽ quy ra tiền để tặng người chơi. Để khuyến khích người chơi, BTC sẽ tặng một số điểm cho người chơi.</p>
+<hr/>
+<h4>Yêu cầu</h4>
+<p>Hãy cho người chơi biết số điểm ít nhất và nhiều nhất mà họ có thể nhận được.</p>
+<hr/>
+<h4>Dữ liệu</h4>
+<ul>
+<li>Dòng đầu chứa \(2\) số nguyên \(N\), \(M\) \((1\leq N, M\leq 1000)\).</li>
+<li>Dòng thứ \(2\) chứa số nguyên \(b\) là số điểm mà ban tổ chức tặng người chơi \((b &lt; 30000)\).</li>
+<li>Dòng \(i\) trong \(N\) dòng tiếp theo chứa \(M\) số nguyên không âm là \(M\) số của hàng \(i\); nếu ô ghi số \(0\) có nghĩa là ô đó có đinh còn ngược lại là các số trên ô (các số này \(\leq 30000\)).</li>
+</ul>
+<hr/>
+<h4>Kết quả</h4>
+<ul>
+<li>Dòng đầu ghi số điểm ít nhất mà người chơi có thể đạt được.</li>
+<li>Dòng hai ghi số điểm nhiều nhất mà người chơi có thể đạt được.</li>
+<li>Các số trên một dòng của input/output được ghi cách nhau ít nhất một dấu cách.</li>
+</ul>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>5 5
+100
+1 7 5 10 2
+6 8 4 1 9
+9 6 0 7 14
+10 18 3 2 0
+5 0 6 11 10</code></pre>
+<h5>Output</h5>
+<pre><code>28
+148</code></pre>
+</div>
+<hr/>
+</div>

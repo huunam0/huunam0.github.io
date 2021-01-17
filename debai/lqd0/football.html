@@ -1,0 +1,52 @@
+<div class="tm-box2">
+<div class="problem-name">
+    FOOTBALL - Lịch thi đấu bóng đá 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Một giải thi đấu bóng đá được tổ chức theo thể thức thi đấu vòng tròn, ở đó hai đội bóng bất kỳ sẽ được thi đấu với nhau đúng một trận.</p>
+<p>Trong mỗi trận đấu, đội thắng được 3 điểm, còn đội thua được 0 điểm. Không có kết qủa hòa (nếu hòa trong hai hiệp chính thì hai đội sẽ phải thi đấu luân lưu để phân định thắng thua).</p>
+<p>Kết thúc mùa giải, đội vô địch là đội có số điểm cao nhất. Trong trường hợp có nhiều hơn một đội được điểm cao nhất thì các đội này đồng đoạt chức vô địch.</p>
+<p>Giải đã diễn ra được một thời gian. Lúc này một bài toán nảy sinh: người ta cần biết mỗi đội bóng còn có khả năng đoạt chức vô địch nữa hay không?</p>
+<p>Yêu cầu</p>
+<p>Biết kết qủa các trận đấu đã diễn ra, bạn hãy cho biết mỗi đội bóng còn có khả năng đoạt chức vô địch mùa giải nữa hay không?</p>
+<p><strong>Dữ liệu</strong></p>
+<p style="margin-left:.5in">Dòng 1: chứa số nguyên dương N là số đội bóng tham gia giải đấu. Các đội bóng được đánh số thứ tự từ 1 đến N.</p>
+<p style="margin-left:.5in">N dòng tiếp theo, dòng i chứa N số nguyên dương a<sub>i1</sub>, a<sub>i2</sub>, ... , a<sub>iN</sub>, trong đó a<sub>ij</sub> cho biết trạng thái của trận đấu giữa đội i và đội j:</p>
+<p style="margin-left:1.0in">a<sub>ij</sub> = 0, nếu đội j thắng.</p>
+<p style="margin-left:1.0in">a<sub>ij</sub> = 1 nếu đội i thắng</p>
+<p style="margin-left:1.0in">a<sub>ij</sub> = 2 nếu trận đấu chưa diễn ra.</p>
+<p style="margin-left:.5in">Nếu i khác j, dữ liệu vào đảm bảo a<sub>ij</sub>= a<sub>ji</sub> = 2 hoặc a<sub>ij</sub> + a<sub>ji</sub> = 1. Dữ liệu vào đảm bảo a<sub>ii</sub> = 0 với mọi i</p>
+<p><strong>Kết quả</strong></p>
+<p>Gồm 1 dòng duy nhất, là một dãy nhị phân độ dài N, ở đó bit thứ i bằng 1 nếu đội bóng i còn khả năng vô địch mùa giải, và bằng 0 nếu đội bóng i không còn khả năng vô địch mùa giải.</p>
+<p>Giới hạn</p>
+<p>N là số nguyên dương trong phạm vi [1, 30]</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Dữ liệu</strong></p>
+<p>5</p>
+<p>0 2 0 2 1</p>
+<p>2 0 0 1 0</p>
+<p>1 1 0 2 1</p>
+<p>2 0 2 0 2</p>
+<p>0 1 0 2 0</p>
+<p> </p>
+<p><strong>Kết qủa</strong></p>
+<p>10110</p>
+</div>
+</div>

@@ -1,0 +1,44 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    CNHOM - Chia Nhóm  
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>                     Xét một tập hợp gồm N phần tử (các phần tử được đánh số từ 1 đến N). Khi hoạt động, một phần tử có thể ảnh hưởng đến những phần tử khác. Để đo tính "độc lập" giữa 2 phần tử, người ta định nghĩa "khoảng cách" giữa 2 phần tử x, y là một số nguyên dương D(x, y) = D(y, x) sao cho khoảng cách này càng lớn thì độ độc lập giữa 2 phần tử càng cao. Trong một số công việc, người ta phải chia các phần tử thành những nhóm hoạt động riêng rẽ, vì vậy việc chia nhóm cần đảm bảo tính độc lập giữa các nhóm càng cao càng tốt. Độ "phân tách" D(A, B) giữa 2 nhóm A, B được định nghĩa như là khoảng cách nhỏ nhất giữa một phần tử của A và một phần tử của B:</p>
+<p>                        D(A, B) = Min {D(x, y), x Î A, y Î B}</p>
+<p>và độ "phân tách" D của một cách chia được gọi là độ phân tách của 2 nhóm "gần nhất" thuộc cách chia này:</p>
+<p>                        D = Min {D(A, B)}</p>
+<p>            Bạn hãy viết một chương trình xác định độ phân tách lớn nhất có thể được, khi chia một tập hợp N phần tử với những khoảng cách đã cho, thành K nhóm.</p>
+<p>           <strong> Input File</strong>: NHOM.INP</p>
+<p style="margin-left:1.0in">- Dòng đầu ghi 2 số N và K,</p>
+<p style="margin-left:1.0in">- Dòng thứ i trong N dòng tiếp, i = 1, 2, ..., N ghi N số D(i, j), j = 1, 2, ..., N là khoảng cách giữa i và j. Chú ý D(i, j) = D(j, i); D(i, i) = 0.</p>
+<p>                        Các số trên cùng một dòng được ghi cách nhau ít nhất một dấu trắng.</p>
+<p>            <strong>Output File</strong>: NHOM.OUT: </p>
+<p>                         - Gồm 1 dòng ghi độ phân tách tìm được.</p>
+<p>            <strong>Giá trị giới hạn:</strong> N không quá 200, K lớn hơn 1 và nhỏ hơn N, các giá trị D(i, j) là những số nguyên không âm, nhỏ hơn 32768.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4  2<br/>0  4  5  2<br/>4  0  3  6<br/>5  3  0  3<br/>2  6  3  0<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">3</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>                       </strong></p>
+</div>
+</div></body></html>

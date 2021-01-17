@@ -1,0 +1,40 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Cuộc họp</h2>
+</div><div class="content-description screen">
+<div><p>Trong phòng họp, có \(m\) chiếc ghế xếp ngang. Có tối đa \(n\) người sẽ tham dự cuộc họp. Mỗi người sẽ ngồi một ghế hoặc hai ghế kề nhau (một ghế cho đồ dùng cá nhân). Cho trước \(m, n\), hãy xác định xem nếu có đúng \(i \ (1 \leq i \leq n)\) người thứ \(1, 2, ..., i\) tham gia cuộc họp thì có bao nhiêu cách sắp ghế cho họ. Biết rằng người \(x\) luôn ngồi phía bên trái người \(y\) nếu \(1 \leq x &lt; y \leq i\).</p>
+<p>Hai cách xếp được gọi là khác nhau nếu có một người ngồi ở vị trí khác nhau trong 2 cách đó.</p>
+<p><strong>Input</strong></p>
+<p>Gồm hai số \(m, n \ (0 &lt; m \leq 10^9, 0 &lt; n &lt; 2^{15})\) tương ứng là số ghế và số người tối đa sẽ tham gia.</p>
+<p><strong>Output</strong></p>
+<p>In ra \(n\) số, số thứ \(i\) là số cách xếp ghế nếu có \(i\) người tham gia. Vì đáp số rất lớn nên các bạn hãy ra số dư của nó khi chia cho \(998244353\).</p>
+<p><strong>Ví dụ</strong></p>
+<p><em>Input 1</em></p>
+<pre><code>3 3</code></pre>
+<p><em>Output 1</em></p>
+<pre><code>5 5 1</code></pre>
+<p><em>Input 2</em></p>
+<pre><code>1 1</code></pre>
+<p><em>Output 2</em></p>
+<pre><code>1</code></pre>
+<p><em>Input 3</em></p>
+<pre><code>5 10</code></pre>
+<p><em>Output 3</em></p>
+<pre><code>9 25 25 9 1 0 0 0 0 0</code></pre>
+<p><strong>Giải thích</strong></p>
+<p>Trong test ví dụ \(1\):</p>
+<ul>
+<li>Nếu có một người tham gia, các cách xếp là \([1, 0, 0], [0, 1, 0], [0, 0, 1], [1, 1, 0], [0, 1, 1]\)</li>
+<li>Nếu có hai người tham gia, các cách xếp là \([1, 2, 0], [0, 1, 2], [1, 0, 2], [1, 2, 2], [1, 1, 2]\)</li>
+</ul>
+<p>Trong đó \(0\) nghĩa là ghế đó không có người ngồi.</p>
+<p><strong>Giới hạn</strong></p>
+<ul>
+<li>\(30\)% test có \(n, m \leq 1000\)</li>
+<li>\(30\)% test có \(n \leq 1000\)</li>
+<li>\(40\)% test không có ràng buộc gì thêm</li>
+</ul>
+<p><strong>Nguồn</strong></p>
+<p><em>HSGS 2020</em></p>
+</div>
+<hr/>
+</div>

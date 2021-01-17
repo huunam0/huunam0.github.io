@@ -1,0 +1,48 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Kiểm soát dịch bệnh</h2>
+</div><div class="content-description screen">
+<div><p>Để phòng ngừa dịch cúm gia cầm mới, Bộ Nông nghiệp và phát triển nông thôn nghiên cứu,
+tìm hiểu cách thức lây lan của một loại virus mới, làm cơ sở để lên phương án phòng chống.
+Qua một thời gian nghiên cứu các nhà khoa học phát hiện ra cơ chế lây lan rất đơn giản sau
+đây: Trước hết, vùng lãnh thổ khảo sát được biểu diễn bởi một bảng kích thước \(𝑛 × 𝑚\) được
+chia thành lưới ô vuông đơn vị. Các cột của bảng được đánh số từ 1 tới \(𝑛\), từ trái qua phải và
+các dòng của bảng được đánh số từ 1 tới \(𝑚\), từ dưới lên trên. Ô nằm trên giao của cột \(𝑖\) và
+dòng \(𝑗\) được gọi là ô (\(𝑖,𝑗\)). Khi tại ô (\(𝑖,𝑗\)) có virus thì sau một đơn vị thời gian virus sẽ lây lan
+sang các ô chung cạnh và chung đỉnh với ô đó.</p>
+<p>Trên vùng lãnh thổ khảo sát, người ta quy hoạch \(𝑘\) khu đất để nuôi gia cầm. Mỗi khu là một
+hình chữ nhật chiếm trọn một số ô của bảng và các cạnh song song với cạnh của bảng. Khu
+thứ \(𝑖\) xác định bởi ô trái dưới (\(𝑎_𝑖, 𝑏_𝑖\)) và ô phải trên (\(𝑐_𝑖, 𝑑_𝑖\)). Các hình chữ nhật này không nhất
+thiết rời nhau vì có một số gia cầm có thể sống chung trên một vùng đất.</p>
+<p><strong>Yêu cầu</strong>: Với cơ chế lây lan của virus đã biết và bản đồ các khu đất đã quy hoạch để nuôi các
+gia cầm, hãy viết một chương trình để trả lời nhanh câu hỏi: Sau thời điểm \(𝑡\) tính từ lúc phát
+hiện virus tại ô (\(𝑥_0, 𝑦_0\)) có bao nhiêu ô trong các khu quy hoạch bị lây virus. Giả thiết rằng ô
+(\(𝑥_0, 𝑦_0\)) không nằm trong bất kỳ khu đất quy hoạch nào và thời điểm xuất hiện virus được
+tính là 0.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu là 5 số \(𝑛, 𝑚, 𝑘, 𝑥_0\) và \(𝑦_0\) (\(1 ≤ 𝑥_0 ≤ 𝑛; 1 ≤ 𝑦_0 ≤ 𝑚\));</li>
+<li>Dòng thứ \(i\) trong \(k\) dòng tiếp theo chứa 4 số \(𝑎_𝑖, 𝑏_𝑖, 𝑐_𝑖, 𝑑_𝑖\) (\(1 ≤ 𝑎_𝑖 ≤ 𝑐_𝑖 ≤ 𝑛; 1 ≤ 𝑏_𝑖 ≤ 𝑑_𝑖 ≤ 𝑚\));</li>
+<li>Dòng tiếp theo chứa số \(𝑞\) là số các câu hỏi cần trả lời (\(1 ≤ 𝑞 ≤ 𝑚𝑎𝑥(𝑛, 𝑚)\));</li>
+<li>Dòng cuối cùng chứa \(q\) số \(𝑡_1,𝑡_2, … ,𝑡_𝑞\) là thời điểm tương ứng với các câu hỏi, mỗi số có giá trị không lớn hơn \(10^6\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Gồm một dòng chứa \(𝑞\) số lần lượt là kết quả trả lời của <strong>𝑞</strong> câu hỏi.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>6 6 2 1 1
+2 2 4 4
+4 4 6 6
+3
+2 5 4</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>4 17 12</code></pre>
+<p><img alt="enter image description here" src="https://i.imgur.com/E0NtJGe.png"/></p>
+<p><strong><em>Ràng buộc</em></strong></p>
+<ul>
+<li>Có 50% số lượng test ứng với 50% số điểm thỏa mãn điều kiện: \(𝑛, 𝑚 ≤ 1000; 1 ≤ 𝑘 ≤ 100; 1 ≤ 𝑞 ≤ 100\);</li>
+<li>Có 50% số lượng test còn lại ứng với 50% số điểm thỏa mãn điều kiện: \(𝑛, 𝑚 ≤ 10^6; 1 ≤ 𝑘 ≤ 400\);</li>
+</ul>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,52 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    THAMAY - Thang máy (Codeforces) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>        Có n người đang đứng chờ trước một thang máy duy nhất tại tầng trệt trong một tòa cao ốc cao 2000 tầng, họ muốn đi đến các tầng trong tòa nhà. Các tầng của cao ốc được đánh số 1, 2, 3, 4, ..., 2000. Tầng trệt là tầng 1. Người thứ i muốn đi đến tầng a<sub>i</sub>. Thang máy chỉ chở được k người cùng lúc. Thời gian thang máy đi từ tầng x đến tầng y là |x - y| giây. Hãy tính thời gian tối thiểu để thang máy có thể vận chuyển hết n người đến tầng mà họ mong muốn và thang máy quay trở lại tầng trệt. (giả sử thời gian ra vào thang máy là không đáng kể)</p>
+<p><strong>Dữ liệu nhập:</strong> gồm 2 dòng</p>
+<p>- Dòng thứ nhất là 2 số nguyên n, k cách nhau một khoảng trắng (1 ≤ n, k ≤ 2000)</p>
+<p>- Dòng thứ hai gồm n số nguyên a<sub>i</sub>, mỗi số cách nhau một khoảng trắng (2 ≤ a<sub>i</sub> ≤ 2000)</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là một số nguyên xác định thời gian tối thiểu để đạt được mục đích.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 2<br/>2 3 4</div>
+<div class="sample-type">output</div>
+<div class="sample-value">8</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 2<br/>50 100 50 100</div>
+<div class="sample-type">output</div>
+<div class="sample-value">296</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">10 3<br/>2 2 2 2 2 2 2 2 2 2</div>
+<div class="sample-type">output</div>
+<div class="sample-value">8</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Ví dụ 1:<br/>
+- Lần thứ nhất chở 2 người lên tầng 3, 4 và quay lại trệt: 6 giây<br/>
+- Lần thứ hai chở 1 người lên tầng 2 và quay lại trệt: 2 giây.</p>
+</div>
+</div></body></html>

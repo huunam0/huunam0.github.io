@@ -1,0 +1,65 @@
+<div class="tm-box2">
+<div class="problem-name">
+    NNCWD - CaiWinDao và 3 em gái (phần 3) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p><img alt="" src="../../ckfinder/userfiles/images/bctc.jpg" style="height:450px; width:798px"/></p>
+<p>Trong khi mọi người đã bước những ngày làm việc căng thẳng thì CaiWinDao vẫn đang tận hưởng những ngày tháng nhởn nhơ cùng ba em gái (vì đại dịch Corona).</p>
+<p>Hôm nay, CaiWinDao mở sòng bầu cua tôm cá. Sau khi 3 em gái đã đặt tiền, CaiWinDao bắt đầu rung xúc xắc. Vốn là một trùm bịp, CaiWinDao có khả năng rung được bất kỳ khả năng nào cho 3 viên xúc xắc trong tay (tất nhiên CaiWinDao chỉ có thể qua mặt được các em gái ngây thơ thôi).</p>
+<p>Tuy là trùm bịp nhưng CaiWinDao rất thương các em, anh quyết định rung xúc xắc sao cho tổng số tiền các em gái thắng được là nhiều nhất (đồng nghĩa với CaiWinDao thua nhiều nhất...). Dù rất giỏi bịp nhưng CaiWinDao lại không thể tính toán kịp trong lúc bịp. Các bạn hãy giúp anh tạo ra một chương trình giúp tính toán số tiền CaiWinDao thua nhiều nhất nhé! </p>
+<p><strong>Luật chơi Bầu Cua Tôm Cá</strong>: Giả sử bạn là 1 em gái, bạn có thể đặt tiền vào một hay nhiều ô trong các ô Bầu, Cua, Tôm, Cá, Gà, Nai. Ví dụ bạn đặt <strong>a</strong> đồng vào ô Cá:</p>
+<p>    + Nếu không có xúc xắc nào là Cá thì bạn mất trắng <strong>a</strong> đồng đó vào tay CaiWinDao.</p>
+<p>    + Nếu có <strong>b (1 &lt;= b &lt;= 3) </strong>xúc xắc có hình Cá thì bạn lấy lại <strong>a</strong> đồng đã đặt và nhận thêm <strong>a * b</strong>       </p>
+<p>       đồng từ CaiWinDao.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<p>Dòng đầu tiền gồm ba số tự nhiên a[1], a[2], a[3] là số ô các em gái đặt (1 &lt;= a[i] &lt;= 6).</p>
+<p>Sau đó là 3 khối dữ liệu. Mỗi khối là a[i] dòng biểu diễn các ô mà em gái thứ i đặt tiền, Mỗi dòng chứa 2 số: <strong>x y.</strong></p>
+<p>Trong đó x là số thứ tự của ô và y là số tiền đặt vào ô đó (1 &lt;= x &lt;= 6, 1 &lt;= y &lt;= 20). Các số x trong mỗi khối khác nhau. Ta quy ước các ô là 1, 2, 3, 4, 5, 6 thay cho Bầu, Cua, Tôm, Cá, Gà, Nai. </p>
+<p><strong>Dữ liệu ra</strong></p>
+<p>In ra số tiền lớn nhất CaiWinDao có thể thua.</p>
+<p> </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input 1:</strong></p>
+<p>1 2 3</p>
+<p>1 10</p>
+<p>2 5</p>
+<p>6 5</p>
+<p>2 3</p>
+<p>3 2</p>
+<p>4 3</p>
+<p><strong>Output 1:</strong></p>
+<p>18</p>
+<p><strong>Giải thích:</strong></p>
+<p>Em gái 1 đặt 1 cửa: 10 đồng cho ô 1</p>
+<p>Em gái 2 đặt 2 cửa: 5 đồng cho ô 2 và 5 đồng cho ô 6</p>
+<p>Em gái 3 đặt 3 cửa: 3 đồng cho ô 2, 2 đồng cho ô 3, và 3 đồng cho ô 4.</p>
+<p>CaiWinDao sẽ rung ra các ô 1, 2, 6. Khi đó CaiWinDao sẽ đưa cho em thứ nhất 10đ, em thứ hai 10đ, và lấy của em thứ ba 2đ. Số tiền bỏ ra là 18đ.</p>
+<p><strong>Input 2:</strong></p>
+<p>1 1 1<br/>
+1 10<br/>
+1 10<br/>
+1 10</p>
+<p><strong>Output 2:</strong></p>
+<p>90</p>
+<p><strong>Lưu ý:</strong></p>
+<p>1. Tiền CaiWinDao và 3 em gái dùng ở đây là tiền đồ hàng, các bạn nên học hỏi để những ngày Tết trọn vẹn và không cay cú nhé!</p>
+<p>2. 3 bạn AC nhanh nhất nhớ liên hệ CWD để nhận phần thưởng bonus (hint: mp3).</p>
+</div>
+</div>

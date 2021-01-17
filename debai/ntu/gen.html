@@ -1,0 +1,42 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    GEN - GENOME (OLP 2010) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 10.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">DNA là thành phần cơ bản cấu tạo thành bộ genome của sinh vật. DNA bao gồm 4 loại khác nhau là {A,X,T,G}. Để nghiên cứu các sinh vật ở mức độ phân tử, người ta tiến hành giải mã bộ genome của chúng.</p>
+<p style="text-align:justify">Để giải mã bộ genome của một sinh vật, máy giải mã thế hệ mới sẽ sinh ra N <em>đoạn cơ sở</em>, mỗi <em>đoạn cơ sở</em> là một dãy bao gồm 30 DNA. Các <em>đoạn cơ sở</em> sẽ được ghép nối với nhau để tạo thành một bộ genome hoàn chỉnh.</p>
+<p style="text-align:justify">Ta nói một đoạn DNA X được bao phủ bởi một <em>đoạn cơ sở</em> Y nếu tồn tại một đoạn của Y trùng với X. Giả sử k là một số nguyên dương, một đoạn DNA X được gọi là<em><strong> đoạn tin tưởng cấp k</strong></em> nếu X được bao phủ bởi ít nhất k <em>đoạn cơ sở</em>.</p>
+<p><strong>Yêu cầu:</strong> Cho N đoạn cơ sở và số nguyên dương k, hãy tìm <em><strong>đoạn tin tưởng cấp k</strong></em> có độ dài lớn nhất.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu chứa hai số nguyên dương N và k (0&lt; k ≤ N ≤ <span style="color:#FF0000"><strong>30.000</strong></span>)</p>
+<p>- N dòng tiếp theo, mỗi dòng chứa một <em>đoạn cơ sở</em>.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là một số nguyên xác định độ dài của đoạn tin tưởng tìm được (ghi -1 nếu không tồn tại đoạn tin tưởng cấp k)</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 3<br/>AAAAAAAAATAAAATAAAAAAAAAAAAATG<br/>AAAAAAAAAAAAAAAAAAAATAAATGAAAA<br/>AAAAAAAAAAAAAAAAAAATGAAAAAAAAA<br/>AAAAAAAAAAAAATGAAAAAAAGGGGAAAA</div>
+<div class="sample-type">output</div>
+<div class="sample-value">15</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Đoạn tin tưởng dài nhất là: <strong>AAAAAAAAAAAAATG </strong>xuất hiện trong chuỗi 1,3 và 4.</p>
+<p><a href="http://www.olp.vn/luu-tru/2010/de-thi/DethiKhoiChuyenTin_OLP2010.pdf?attredirects=0&amp;d=1">http://www.olp.vn/luu-tru/2010/de-thi/DethiKhoiChuyenTin_OLP2010.pdf?attredirects=0&amp;d=1</a></p>
+</div>
+</div></body></html>

@@ -1,0 +1,56 @@
+<h2>KQUERY2 - K-query II</h2><div class="prob">
+<!--
+
+Note: this problem already appears in the main problemset as:
+http://www.spoj.com/problems/RACETIME/
+
+-->
+<table class="problems" width="100%"><tr class="navigation">
+<td width="50%"><a href="/problems/KQUERY2/en/">English</a></td>
+<td width="50%"><a href="/problems/KQUERY2/vn/">Vietnamese</a></td>
+</tr></table>
+<h3>Truy vấn-k II</h3>
+<p>Cho một dãy n phần tử a<sub>1</sub>, 
+
+a<sub>2</sub>, ..., a<sub>n</sub> và một số các truy vấn-k. Ngoài ra còn có một số thao tác cập nhật.</p>
+<p>Một thao tác cập nhật là một cặp (i, v) nghĩa là a<sub>i</sub> cần được gán giá trị v.</p>
+<p>Một truy vấn-k là một bộ ba (i, j, k) (1 ≤ i ≤ j ≤ n).</p>
+<p>Với mỗi truy vấn-k (i, j, k), bạn phải trả về số phần tử lớn hơn k nằm trong dãy con a<sub>i</sub>, 
+
+a<sub>i+1</sub>, ..., a<sub>j</sub>.</p>
+<h3>Dữ liệu</h3>
+<ul>
+<li>Dòng 1: n (1 ≤ n ≤ 30000).</li>
+<li>Dòng 2: n số a<sub>1</sub>, a<sub>2</sub>, ..., 
+
+a<sub>n</sub> (1 ≤ a<sub>i</sub> ≤ 
+
+10<sup>4</sup>).</li>
+<li>Dòng 3: q (1 ≤ q ≤ 200000), số truy vấn-k.</li>
+<li>q dòng tiếp theo, số đầu tiên trong mỗi dòng là 0 hoặc 1. Số 0 theo sau bởi 2 số i và v (1 ≤ i ≤ n, 1 ≤ v ≤ 10<sup>4</sup>) cho biết một thao tác cập nhật. Số 1 theo sau bởi 3 số nguyên i, j, k (1 ≤ i ≤ j ≤ n, 1 ≤ k ≤ 10<sup>4</sup>) cho biết một truy vấn-k.</li>
+</ul>
+<h3>Kết quả</h3>
+<ul>
+<li>Với mỗi truy vấn-k (i, j, k), in ra số phần tử lớn hơn k trong dãy con a<sub>i</sub>, 
+
+a<sub>i+1</sub>, ..., a<sub>j</sub> trên một dòng.
+</li></ul>
+<h3>Ví dụ</h3>
+<pre>
+<b>Dữ liệu</b>
+5
+5 1 2 3 4
+6
+1 2 4 1
+0 4 10
+1 4 4 4
+0 3 1
+0 1 2
+1 1 5 2  
+
+<b>Kết quả</b>
+2
+1
+2 
+</pre>
+</div>

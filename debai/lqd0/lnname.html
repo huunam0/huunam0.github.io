@@ -1,0 +1,47 @@
+<div class="tm-box2">
+<div class="problem-name">
+    LNNAME - Tên LN 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Ami có một xâu S chỉ chưa các kí tự 'A' - 'Z'. Ami cần tìm biệt danh của LN trong kí tự này.</p>
+<p>LN, tên thật là LTN có rất nhiều biệt danh. Mỗi tên của LN được viết theo 4 bước</p>
+<p>     1) Biệt danh của LN, hiện tại là một xâu T rỗng (T = "");</p>
+<p>     2) Chọn một số x bất kì (x ≥ 0), và ghép x kí tự 'L' vào T </p>
+<p>     3) Chọn một số y bất kì (y ≥ 0), và ghép y kí tự 'T' vào T</p>
+<p>     4) Chọn một số z bất kì (z ≥ 0), và ghép y kí tự 'N' vào T</p>
+<p>Ví dụ, x = 1 , y = 2 , z = 3 thì biệt danh là LTTNNN. Có thể giả định, mọi xâu T được tạo thành từ các bộ (x , y , z) bất kì đều là biệt danh của LN cute. Hãy tìm một xâu con dài nhất của S (có thể không liên tiếp) là một biệt danh của LN cute.</p>
+<p><strong>Input</strong></p>
+<p>Dòng đầu tiên là một số tự nhiên n (n &lt;= 10<sup>5</sup>) là độ dài của xâu S</p>
+<p>Dòng tiếp theo là xâu S, độ dài n và chứa các kí tự 'A' - 'Z'.</p>
+<p><strong>Output</strong></p>
+<p>Một số tự nhiên là biệt danh dài nhất của LN.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">13<br/>AMILUONYEULTN</div>
+<div class="sample-type">output</div>
+<div class="sample-value">4</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Giải thích</strong></p>
+<p>Ta có xâu S = "AMILUONYEULTN".</p>
+<p>Các biệt danh khác nhau của LN cute có trong xâu là L, T, N, LT, LN, TN, LTN, LLTN.</p>
+<p>Xâu LLTN có độ dài dài nhất. Do đó kết quả là 4.</p>
+</div>
+</div>

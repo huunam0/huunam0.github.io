@@ -1,0 +1,40 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    CITY2 - Thành phố (bản khó) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">Thành phố Alpha có một nền khoa học đạt đến trình độ cao, khi xây dựng thành phố, họ quyết định xây dựng một thành phố hình chữ nhật với kích thước NxM và chia thành phố thành NxM khu vực tương ứng, các dòng được đánh số từ trên xuống dưới, các cột được đánh số từ trái sang phải, bắt đầu từ 1. Mỗi khu vực có một khả năng sản xuất a<sub>i,j </sub>đơn vị lương thực.</p>
+<p style="text-align:justify">Khi bắt đầu xây dựng các khu dân cư, hội đồng thành phố quyết định rằng chỉ xây dựng khu dân cư vào ô đất có tọa độ (i, j) nếu tổng năng suất của các ô liền kề với nó (kề cạnh hoặc kề đỉnh, một ô sẽ kề tối đa với 8 ô) đáp ứng được nhu cầu của khu dân cư đó. Và để tối ưu hóa quy hoạch, hội đồng quyết định rằng chỉ xây dựng khu dân cư nếu tổng năng suất các ô liền kề với nó <strong>bằng </strong>nhu cầu của nó.</p>
+<p style="text-align:justify">Tuy nhiên, hội đồng thành phố lại là những người không giỏi tính toán và bạn - nhà toán học của thành phố, được giao nhiệm vụ với danh sách các khu dân cư dự kiến xây dựng, phải báo cáo cho hội đồng thành phố rằng khu dân cư đó có thể xây dựng được hay không?</p>
+<p style="text-align:justify"><strong>Dữ liệu nhập:</strong> gồm nhiều dòng</p>
+<p style="text-align:justify"> - Dòng đầu tiên chứa 3 số nguyên N, M, K - N, M là kích thước thành phố, K là số lượng khu dân cư cần kiểm tra. (3 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤</span> N, M <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ 1000, 1 ≤ K ≤ 100000)</span></p>
+<p style="text-align:justify"> - N dòng tiếp theo, mỗi dòng gồm M số nguyên, số thứ j trong dòng thứ i là giá trị khả năng sản xuất của khu vực a<sub>i,j </sub>(0 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ a<sub>i,j</sub> ≤ 10<sup>5</sup>)</span></p>
+<p style="text-align:justify"> - K dòng cuốii, mỗi dòng chứa một số nguyên c<sub>i</sub> - nhu cầu của khu dân cư thứ i ((0 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ <span style="font-size:11px">c<sub>i</sub></span> ≤ 10<sup>6</sup>)</span></p>
+<p style="text-align:justify"><strong>Dữ liệu xuất:</strong> Gồm K dòng, mỗi dòng chứa 1 số nguyên. Nếu khu dân cư thứ i có thể xây dựng thì xuất 1, ngược lại xuất 0</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 4 4<br/>1 9 7 1<br/>1 9 9 5<br/>2 0 0 3<br/>19<br/>100<br/>27<br/>50</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1<br/>0<br/>1<br/>0</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p style="text-align:justify">Khu dân cư thứ nhất có thể xây dựng tại khu vực (1, 1), khu dân cư thứ 3 có thể xây dựng tại khu vực (1, 2), 2 khu dân cư còn lại không có phương án xây.</p>
+</div>
+</div></body></html>

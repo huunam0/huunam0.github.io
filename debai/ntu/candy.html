@@ -1,0 +1,51 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    CANDY - Kẹo ba màu 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">Nói đến bài thơ thằng Bờm, không ai trong chúng ta là không biết tới. Nhưng câu chuyện ngày hôm nay thì lại khác, Phú Ông muốn đổi cây quạt mo của Bờm, sau khi ra đủ điều kiện "Ba bò chín trâu", "Ao sâu cá mè" mà Bờm không đồng ý, Phú Ông phát hiện ra lý do Bờm không đồng ý đổi những món đó là do Bờm là con nít và chỉ thích ăn kẹo thôi, và sau đó Phú Ông đề nghị đổi cây quạt mo của Bờm lấy kẹo thì Bờm đồng ý ngay. Tuy nhiên vị Phú Ông keo kiệt không muốn cho Bờm quá nhiều kẹo, thế là ông ta nghĩ ra một trò chơi để làm Bờm không lấy được nhiều kẹo như sau:</p>
+<p style="text-align:justify">Phú ông có <strong>N</strong> viên kẹo, xếp thành một hàng ngang. Tổng cộng có 3 loại màu kẹo khác nhau: <strong>Đỏ</strong>, <strong>Vàng</strong> và <strong>Xanh</strong>. Mỗi lượt chơi diễn ra như sau:</p>
+<p style="text-align:justify"> - Nếu chỉ còn 1 viên kẹo duy nhất thì trò chơi kết thúc.</p>
+<p style="text-align:justify"> - Nếu dãy kẹo còn <strong>N (N ≥ 2)</strong> viên kẹo, Bờm sẽ được chọn <strong>2 viên kẹo liên tiếp khác màu nhau</strong> và lấy được 2 viên kẹo đó. Tuy nhiên sau đó Bờm phải đặt 1 viên kẹo khác màu với màu của 2 viên kẹo vừa lấy được vào lại vị trí vừa lấy 2 viên kẹo ra và dãy kẹo sẽ còn lại N-1 viên. Ví dụ Bờm lấy 2 viên kẹo màu Đỏ và Vàng thì Bờm phải đặt lại 1 viên kẹo màu Xanh...</p>
+<p style="text-align:justify"> - Nếu Bờm không có cách nào để chọn 2 viện kẹo liên tiếp khác màu thì trò chơi sẽ kết thúc.</p>
+<p style="text-align:justify">Bờm hiện không có viên kẹo nào, do đó trước khi chơi trò chơi Bờm có thể mượn Phú Ông một số kẹo nhất định nhưng sau khi kết thúc trò chơi Bờm phải trả lại đúng số lượng kẹo này cho Phú Ông. Phú Ông không quan tâm về màu kẹo mà chỉ quan tâm đến số lượng viên kẹo mà Bờm trả lại có bằng số lượng kẹo mà Bờm đã mượn hay không, điều đó có nghĩa là nếu đầu trò chơi Bờm mượn 2 viên kẹo màu Đỏ thì cuối trò chơi Bờm có thể trả lại cho Phú Ông 2 viện kẹo màu Xanh cũng được.</p>
+<p style="text-align:justify"><strong>Ví dụ:</strong> ban đầu Phú Ông có 3 viên kẹo từ trái sang phải lần lợt là {Đỏ, Xanh, Vàng}</p>
+<ul>
+<li style="text-align:justify">Trước khi bắt đầu, Bờm mượn của Phú Ông 1 viên kẹo màu Vàng.</li>
+<li style="text-align:justify">Ở lượt chơi đầu tiên, Bờm lấy ra 2 viện kẹo liên tiếp ở vị trí thứ 1 và 2 từ trái sang: [Đỏ, Xanh], Bờm phải đặt lại viên kẹo màu Vàng. Dãy còn lại 2 viên kẹo [Vàng, Vàng].</li>
+<li style="text-align:justify">Lượt tiếp theo, Bờm không thể chọn được 2 viên kẹo liên tiếp khác màu và trò chơi kết thúc. Lúc này Bờm có 2 viên kẹo: Đỏ, Xanh, Bờm phải trả lại cho Phú Ông 1 viên kẹo. Kết quả là Bờm lấy được của Phú Ông 1 viên kẹo.</li>
+</ul>
+<p style="text-align:justify">Gặp trò chơi hóc búa mà Phú Ông đưa ra. Bờm không biết nên chơi như thế nào để lấy được nhiều kẹo của Phú Ông nhất. Biết được màu sắc của N viên kẹo từ trái sang phải, bạn hãy giúp Bờm tìm ra cách chơi để lấy được nhiều kẹo từ Phú Ông nhất nhé.</p>
+<p style="text-align:justify"><strong>Dữ liệu nhập:</strong> Dòng đầu tiên chứa số nguyên <strong>T</strong> - Số lượng test case (1 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ </span>T <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ 10). Ti</span>ếp theo là 2*T dòng, mỗi 2 dòng thể hiện cho 1 test case:</p>
+<ul>
+<li style="text-align:justify">Dòng đầu tiên chứa số nguyên N - số lượng viên kẹo  (1 <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ </span>N <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ 100).</span></li>
+<li style="text-align:justify">Dòng thứ 2 chữa một xâu N kí tự thể hiện màu của N viên kẹo từ trái sang phải. Xâu chỉ gồm 3 kí tự '<strong>D</strong>', '<strong>V</strong>' và '<strong>X</strong>' tượng trưng cho ;ần lượt 3 màu: Đỏ, Vàng và Xanh của viên kẹo.</li>
+</ul>
+<p style="text-align:justify"><strong>Dữ liệu xuất:</strong> Gồm T dòng, mỗi dòng là kết quả của test case tương ứng, chứa một số nguyên duy nhất là số kẹo mà Bờm có thể lấy được nhiều nhất từ Phú Ông.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3<br/>3<br/>DXV<br/>4<br/>DXVD<br/>5<br/>DDDDD</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1<br/>3<br/>0</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><span style="font-size:16px"><span style="font-family:times new roman,times,serif"><span style="color:#FF0000"><strong>Đề thi Olympic tin học trường Đại học Khoa Học Tự Nhiên th</strong></span></span></span><strong><span style="color:#FF0000">ành phố Hồ Chí Minh</span></strong><span style="font-size:16px"><span style="font-family:times new roman,times,serif"><span style="color:#FF0000"><strong> năm 2014 - bảng Chuyên Tin</strong></span></span></span></p>
+</div>
+</div></body></html>

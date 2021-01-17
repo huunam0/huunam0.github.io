@@ -1,0 +1,50 @@
+<div class="tm-box2">
+<div class="problem-name">
+    DANCE11 - Đồng diễn 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 5.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"><span style="font-size:14px">Được tin Sở Giáo dục và Đào tạo TP Đà Nẵng quyết định ngừng trợ cấp học bổng cho học sinh các lớp chuyên của trường Lê Quý Đôn để nâng mức tiền thưởng cho thí sinh đạt giải Học sinh giỏi quốc gia và Olympic quốc tế, Tuấn hết sức vui mừng vì giờ đây cậu đã có thêm một nguồn động lực mạnh mẽ để chăm chỉ ôn tập cho kỳ thi VOI 2019 sắp tới. Tuấn quyết định rủ toàn thể các học sinh trong đội tuyển của TP Đà Nẵng nghỉ một buổi học bồi dưỡng trên trường để cùng nhau ra gầm cầu Rồng nhảy Flashmob ăn mừng tin vui trên. Tuấn yêu cầu các bạn học sinh xếp thành một đội hình gồm<em> m</em> hàng ngang và <em>n</em> hàng dọc. Sau khi kiểm tra kỹ năng của từng người một, Tuấn rút ra kết luận rằng học sinh đứng ở giao điểm của hàng ngang thứ <em>i</em> và hàng dọc thứ <em>j</em> có kỹ năng nhảy là <em>T(i,j)</em>.</span></p>
+<p style="text-align:justify"><span style="font-size:14px">Đến tiết mục nhảy cuối cùng, Tuấn muốn tạo ra một điểm nhấn theo quan niệm toán học của cậu. Tuấn vẽ ra một bảng ô vuông gồm <em>m</em> hàng và <em>l</em> cột rồi viết ngẫu nhiên một trọng số nguyên không âm <em>P(i,j)</em> vào ô giao điểm của hàng thứ <em>i</em> và cột thứ <em>j</em>. Tuấn dự định chọn ra <em>l</em> hàng dọc liên tiếp trong đội hình học sinh và yêu cầu tất cả các học sinh đứng trong <em>l</em> hàng dọc này cùng di chuyển vào bảng ô vuông mà Tuấn đã vẽ ra, mỗi người đứng trên một ô sao cho vị trí tương đối của mỗi học sinh trong hàng ngang và hàng dọc ở đội hình mới phải giống y hệt với vị trí của họ ở đội hình học sinh ban đầu. Theo quan niệm của Tuấn, độ hài lòng của mỗi ô vuông trong bảng được tính bằng tích kỹ năng nhảy của học sinh đứng trên ô vuông đó và trọng số của nó. Độ hài lòng của mỗi cách chọn được tính bằng tổng độ hài lòng của tất cả ô vuông trong bảng trong cách chọn đó. Dưới đây là minh họa cho trường hợp <em>m</em>=2, <em>n</em>=5 và <em>l</em>=2.</span></p>
+<p style="text-align:justify"><span style="font-size:14px"><img alt="" src="../../ckfinder/userfiles/images/DANCE11.png" style="height:226px; width:555px"/></span></p>
+<p style="text-align:justify"><span style="font-size:14px">Tuấn sẽ cảm thấy hoàn toàn thỏa mãn với một cách chọn nếu như độ hài lòng của cách chọn đó lớn hơn số nguyên <em>W</em>. Cậu muốn biết có bao nhiêu cách chọn khiến cậu thỏa mãn nhưng số học sinh có vẻ quá lớn để cậu có thể tính toán được hết các phương án. Tuấn bèn nhờ đến Lương và Định nhưng cả hai vẫn còn đang mải mê chơi đùa với những con số đặc biệt nên lập tức từ chối giúp đỡ cậu. Bạn hãy giúp Tuấn tìm ra lời giải để cậu có được niềm vui trọn vẹn trong buổi nhảy flashmob này nhé!</span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Yêu cầu</strong>: Cho trước số nguyên <em>W</em> cùng thông tin chi tiết về kỹ năng nhảy của từng học sinh và trọng số của từng ô trong bảng ô vuông, hãy xác định số cách chọn <em>l</em> hàng dọc liên tiếp trong đội hình học sinh để sắp xếp họ đứng vào bảng ô vuông sao độ hài lòng của nó lớn hơn <em>W</em>.</span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Dữ liệu</strong>: </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">- Dòng đầu tiên chứa các số nguyên dương <em>n, l, m</em> và <em>W</em>. (<em>m</em>≤10; l≤<em>n</em>; <em>W</em>≤10^9)<br/>
+- <em>m</em> dòng tiếp theo chứa thông tin về kỹ năng nhảy của từng học sinh trong đội hình, số nguyên thứ <em>i</em> ở dòng thứ <em>j</em> biểu thị giá trị <em>T(i,j)</em>. (0≤<em>T(i,j)</em>≤100)<br/>
+- <em>m</em> dòng tiếp theo chứa thông tin về trọng số của các ô trong bảng ô vuông, số nguyên thứ <em>i</em> ở dòng thứ <em>j</em> biểu thị giá trị <em>P(i,j)</em>. (0≤<em>P(i,j)</em>≤100)</span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Kết quả:</strong> </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">Ghi ra một số nguyên duy nhất là số cách chọn có độ hài lòng lớn hơn <em>W</em>.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p style="text-align:justify"><span style="font-size:14px"><strong>Input</strong></span></p>
+<p style="margin-left:40px">5 2 2 10000<br/>
+0 45 72 0 26<br/>
+29 7 58 89 72<br/>
+56 70<br/>
+39 67</p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Output</strong></span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">3</span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Ràng buộc:</strong></span></p>
+<p style="margin-left:40px">- Có 40% số test ứng với 40% số điểm của bài có <em>l</em>≤3,000 và <em>n</em>≤7,000.  <br/>
+- 60% số test còn lại ứng với 60% số điểm của bài có <em>l</em>≤30,000 và <em>n</em>≤70,000.<br/>
+<em>Dữ liệu đảm bảo độ hài lòng của tất cả các cách chọn đều không vượt quá 2.10^9.</em></p>
+<hr/>
+<p style="text-align:justify"><span style="font-size:14px"><em>Nguồn: PREVNOI TEAM 20182019 Đà Nẵng</em></span></p>
+</div>
+</div>

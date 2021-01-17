@@ -1,0 +1,45 @@
+<h2>VMCUT - Cắt đồ thị</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/L" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/L </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/272945/problem/C" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/272945/problem/C </a><p>Cho một <strong>đơn đồ thị</strong> <span style="font-style: italic;">vô hướng</span> <strong>G</strong> = <strong>(V, E)</strong> có <strong>N</strong> đỉnh và <strong>M</strong> cạnh. Với mỗi tập con <strong>H</strong> của <strong>V</strong>, gọi <strong>G(H)</strong> là đồ thị thu được từ việc xoá tất cả các đỉnh và các cạnh có ít nhất 1 đầu mút không thuộc <strong>H</strong>. Tập <strong>H</strong> được gọi là liên thông, nếu như <strong>G(H)</strong> liên thông. Gọi <strong>D(H)</strong> là giá trị lát cắt ứng với <strong>H</strong>: số lượng cạnh <strong>(u, v)</strong> thoả mãn 1 trong 2 đỉnh thuộc tập <strong>H</strong>, và đỉnh còn lại không thuộc tập <strong>H</strong> (<strong>u</strong> thuộc <strong>H</strong> và <strong>v</strong> không thuộc <strong>H</strong>, hoặc <strong>v</strong> thuộc <strong>H</strong> và <strong>u</strong> không thuộc <strong>H</strong>). Nói cách khác, <strong>D(H)</strong> là số cạnh tối thiểu cần xoá sao cho <strong>H</strong> và <strong>(G - H) </strong>không còn liên thông với nhau (<strong>G - H</strong>) là đồ thị nhận được khi xóa các đỉnh của <strong>H</strong> và các cạnh tương ứng ra khỏi <strong>G</strong>).</p>
+<p>Xác định tập <strong>H</strong> liên thông sao cho <strong>D(H)</strong> lớn nhất có thể.</p>
+<p>Cách tính điểm:</p>
+<ul>
+<li>Với mỗi test: Nếu giá trị <strong>D(H)</strong> và tập <strong>H</strong> của bạn hợp lệ, điểm của bạn sẽ là <strong>D(H)</strong><sub>bạn</sub> / <strong>D(H)</strong><sub>ban tổ chức</sub>. Ngược lại, bạn đuợc 0 điểm.</li>
+</ul>
+<h3>Input</h3>
+<ul>
+<li>Dòng 1: chứa 2 số nguyên dương <strong>N</strong> và <strong>M</strong> (1 ≤ <strong>N</strong> ≤ 200, 0 ≤ <strong>M</strong> ≤ <strong>N</strong> * (<strong>N</strong> - 1) / 2).</li>
+<li><strong>M</strong> dòng tiếp theo, mỗi dòng chứa 2 số nguyên <strong>u</strong> và <strong>v</strong> thể hiện đồ thị có cạnh nối trực tiếp giữa <strong>u</strong> và <strong>v</strong><strong>.</strong></li>
+<li><em>Dữ liệu đảm bảo không có cạnh nào xuất hiện 2 lần trong input</em><strong><br/></strong></li>
+</ul>
+<h3>Output</h3>
+<ul>
+<li>Dòng 1: Giá trị của <strong>D(H)</strong><strong>.</strong></li>
+<li>Dòng 2: Kích thước tập <strong>H</strong><strong>.</strong></li>
+<li>Dòng 3: Những đỉnh thuộc tập <strong>H</strong>, mỗi số cách nhau bởi một khoảng trắng.</li>
+</ul>
+<h3>Chấm điểm</h3>
+<ul>
+<li>Trong quá trình thi, bài của bạn được chấm với 20% test. Sau khi kỳ thi kết thúc, bài của bạn sẽ được chấm lại với toàn bộ 100% test.</li>
+<li>Chú ý, test ví dụ phía dưới không nằm trong 20% test.</li>
+</ul>
+<h3>Ví dụ</h3>
+<h4>Input</h4>
+<pre>5 6
+1 2
+2 3
+3 1
+2 4
+3 5
+4 5
+</pre>
+<h4>Output 1</h4>
+<pre>4
+2
+2 3
+</pre>
+<h4>Output 2</h4>
+<pre>2
+3
+1 2 3
+</pre>
+</div>

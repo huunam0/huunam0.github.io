@@ -1,0 +1,34 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">minict03</h2>
+</div><div class="content-description screen">
+<div><p>Gọi phép dịch trái của một string \(t_1t_2t_3...t_{n-1}t_n\) là string \(t_2t_3...t_{n-1}t_nt_1\)</p>
+<p>Gọi phép dịch phải của một string \(t_1t_2t_3...t_{n-1}t_n\) là string \(t_nt_1t_2t_3...t_{n-1}\)</p>
+<p>Ví dụ: s = "4579" dịch trái là "5794", dịch phải là "9457"</p>
+<p>Một string được gọi là <strong>good</strong> nếu phép dịch trái và phép dịch phải của nó bằng nhau.</p>
+<p>Bạn được cho một string s chỉ bao gồm các kí tự từ 0 đến 9.</p>
+<p>Hãy tính toán số lượng kí tự ít nhất cần xóa để làm cho string s trở thành <strong>good</strong>.</p>
+<p><strong>Input</strong></p>
+<ul>
+<li>Dòng đầu tiên là số nguyên T (T &lt;= 10) - là số lượng bộ dữ liệu.</li>
+<li>Mỗi bộ dữ liệu gồm một string s (\(s.size() &lt;= 2*10^5\)).</li>
+</ul>
+<p><strong>Output</strong></p>
+<ul>
+<li>Mỗi bộ dữ liệu in ra một số nguyên là số lượng ít nhất kí tự cần xóa để làm cho string s trở thành <strong>good</strong>.</li>
+</ul>
+<p><strong>Input</strong></p>
+<pre><code>3
+95831
+100120013
+252525252525</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>3
+5
+0</code></pre>
+<p><strong>Giải thích</strong></p>
+<p>95831 xoá 3 kí tự còn 95 là good string</p>
+<p>100120013 xoá 5 kí tự còn 0000 là good string</p>
+<p>Test 3 đã là good string nên không cần xoá</p>
+</div>
+<hr/>
+</div>

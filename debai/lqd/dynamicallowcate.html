@@ -1,0 +1,65 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">[Python_Training] Bài toán cấp phát mảng động</h2>
+</div><div class="content-description screen">
+<div><ul>
+<li><p>Cho một mảng ban đầu rỗng và có sức chứa tối đa là \(C\).</p>
+</li>
+<li><p>Cho \(N\) phần tử có giá trị bằng nhau.</p>
+</li>
+<li><p>Tiếp theo, ta lặp lại quá trình dưới đây cho đến khi \(N\) phần tử được đưa hết vào mảng thì dừng:</p>
+<ul>
+<li><p>Nếu mảng chưa bị tràn, thêm vào mảng một phần tử, việc này tốn \(1\)VND (Việt Nam Đồng)</p>
+</li>
+<li><p>Nếu mảng bị tràn, thay mảng cũ bằng mảng mới có sức chứa gấp đôi mảng cũ, việc này không tốn chi phí</p>
+</li>
+<li><p>Sao chép từng phần tử của mảng cũ sang mảng mới, mỗi phần tử tốn \(1\) VND</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Để hiểu rõ hơn quá trình trên, ta có thể xem ví dụ dưới đây:</p>
+<ul>
+<li>Giả sử ta có \(C=1\) và \(N=3\), khi đó quá trình sẽ diễn ra như sau:</li>
+</ul>
+<pre><code>Hành động | Sức chứa | Số lượng phần tử hiện tại | Chi phí
+----------------------------------------------------------
+
+Bắt đầu   | C = 1    | 0                         | 0
+----------------------------------------------------------
+Thêm      | C = 1    | 1                         | 1
+---------------------------------------------------------- 
+Thêm      |Tràn mảng |                           | 
+----------------------------------------------------------
+Đổi mảng  | C = 2    | 0                         | 0
+----------------------------------------------------------
+Sao chép  | C = 2    | 1                         | 1
+----------------------------------------------------------
+Thêm      | C = 2    | 2                         | 1
+---------------------------------------------------------- 
+Thêm      |Tràn mảng |                           | 
+---------------------------------------------------------- 
+Đổi mảng  | C = 4    | 0                         | 0
+----------------------------------------------------------
+Sao chép  | C = 4    | 2                         | 2
+---------------------------------------------------------- 
+Thêm      | C = 4    | 3                         | 1
+----------------------------------------------------------</code></pre>
+<p>Vậy tổng chi phí để đưa \(N\) phần tử vào mảng là \(1+1+1+2+1=6\) VND</p>
+<p><strong>Yêu cầu:</strong> Cho hai số \(C\) và \(N\). In ra tổng chi phí để đưa \(N\) phần tử vào mảng.</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li>Một dòng duy nhất chứa hai số nguyên \(C,N(1\le C\le 1000,0\le N\le 5.10^8)\)</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra kết quả cần tìm</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>1 3</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>6</code></pre>
+<p><strong>Nguồn:</strong> Topcoder</p>
+</div>
+<hr/>
+</div>

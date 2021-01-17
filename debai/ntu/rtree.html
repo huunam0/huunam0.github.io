@@ -1,0 +1,40 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    RTREE - Chiều cao cây (ACMVN 10-2015 J) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p><img alt="" src="images/RTree.PNG" style="float:right; height:124px; width:184px"/>      Cây là một tập hợp các phần tử liên kết với nhau qua quan hệ cha con. Một nút cha có thể có nhiều nút con, nhưng một nút con chỉ có duy nhất một nút cha. Trong cây có một nút không có nút cha, nút này được gọi là nút gốc. Một nút được gọi là nút lá nếu nó không có nút con nào. Cây có N nút thì sẽ có N-1 cung cha-con.</p>
+<p>      Chiều cao của một cây được tính bằng khoảng cách dài nhất từ nút gốc đến một nút lá nào đó, cộng thêm 1. Trong ví dụ bên, chiều cao của cây là 4.</p>
+<p>      Ta định nghĩa C[v] là số lượng nút con của một nút v. Trong ví dụ trên, C = {3, 2, 0, 2, 2, 0, 2, 0, 0, 0, 0, 0}.</p>
+<p>      Cho trước một mảng C, ta không đủ thông tin để khôi phục lại chính xác cây ban đầu. Tuy nhiên, ta có để xác định chiều cao bé nhất và chiều cao lớn nhất trong các cây có thể khôi phục được. Bạn hãy tính các giá trị bé nhất và lớn nhất này.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên là số nguyên N, số lượng nút trong cây (1 ≤ n ≤ 100) </p>
+<p>- Dòng thứ hai là N số nguyên không âm của mảng C. Dữ liệu cho đảm bảo tổng các số của C bằng N-1.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là chiều cao bé nhất và chiều cao lớn nhất trong các cây có thể khôi phục lại được. Hai số cách nhau một khoảng trắng.     </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">12<br/>3 2 0 2 2 0 2 0 0 0 0 0</div>
+<div class="sample-type">output</div>
+<div class="sample-value">4 6</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

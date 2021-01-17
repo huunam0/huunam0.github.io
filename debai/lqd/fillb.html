@@ -1,0 +1,46 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Điền số cùng Ngọc</h2>
+</div><div class="content-description screen">
+<div><p>Văn Pearl và Khánh Đức là đôi bạn thân lâu ngày. Một hôm, Đức lỡ lời khiến Pearl nổi giận và ra tay block cậu một cách không thương tiếc. Thật may cho Đức là cậu vẫn còn một tài khoản clone để liên hệ với Pearl xin gỡ block. Sau màn năn nỉ sướt mướt của Đức thì Pearl cũng mủi lòng. Pearl hẹn Đức tới một quán cafe Highland thơ mộng rồi vẽ xuống bàn một bảng ô vuông gồm \(m\) hàng và \(n\) cột. Các hàng của bảng được đánh số từ trên xuống dưới còn các cột thì được đánh số từ trái sang phải. Pearl hứa với Đức sẽ gỡ block cậu nếu cậu có thể điền vào mỗi ô vuông trong bảng một số nguyên sao cho:</p>
+<ul>
+<li>Tổng các số được điền trên hàng \(i\) của bảng phải bằng đúng \(W_i\) \((\forall i, 1\leq i\leq m)\).</li>
+<li>Tổng các số được điền trên cột \(i\) của bảng phải bằng đúng \(H_i\) \((\forall i, 1\leq i\leq n)\).</li>
+<li>Số nguyên được điền ở ô giao điểm của hàng \(i\) và cột \(j\) phải không được nhỏ hơn \(L_{ij}\) và không được lớn hơn \(R_{ij}\).</li>
+</ul>
+<p>Vì những ràng buộc của Pearl quá phức tạp nên Đức không thể tự mình điền được bảng ô vuông. Đức phải cầu cứu các bạn trong đội tuyển tin học của Đà Nẵng lập trình giải giúp mình bài toán này. Các bạn hãy giúp Đức nhé!</p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu chứa hai số nguyên dương \(m\) và \(n\).</p>
+<p>Dòng tiếp theo chứa \(m\) số nguyên \(W_1\), \(W_2\),..., \(W_m\) \(\left(0\leq W_i\leq 10^4\right)\).</p>
+<p>Dòng tiếp theo chứa \(n\) số nguyên \(H_1\), \(H_2\),..., \(H_n\) \(\left(0\leq H_i\leq 10^4\right)\).</p>
+<p>Dòng thứ \(i\) trong số \(m\) dòng tiếp theo chứa \(n\) số nguyên không âm, trong đó số thứ \(j\) thể hiện giá trị \(L_{ij}\).</p>
+<p>Dòng thứ \(i\) trong số \(m\) dòng tiếp theo chứa \(n\) số nguyên không âm, trong đó số thứ \(j\) thể hiện giá trị \(R_{ij}\).</p>
+<hr/>
+<h4>Output</h4>
+<p>Gồm \(m\) dòng, mỗi dòng chứa \(n\) số nguyên là giá trị mà Đức cần điền vào ô vuông tương ứng để thỏa mãn các ràng buộc của Pearl. Dữ liệu đảm bảo luôn tồn tại một cách điền như vậy. Nếu có nhiều hơn một cách điền thì bạn chỉ cần in ra một cách bất kỳ.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Sample input</h5>
+<pre><code>3 3
+2 1 1
+2 1 1
+0 0 0
+0 0 0
+0 0 0
+1 1 1
+1 1 1
+1 1 1</code></pre>
+<h5>Sample output</h5>
+<pre><code>0 1 1
+1 0 0
+1 0 0</code></pre>
+<hr/>
+<h4>Ràng buộc</h4>
+<ul>
+<li>Có \(20\%\) số test thỏa \(m*n\leq 20\), \(L_{ij}=0\), \(R_{ij}=1\).</li>
+<li>Có \(20\%\) số test khác thỏa \(m\leq 100\), \(n\leq 100\), \(L_{ij}=0\), \(R_{ij}=100\), \(W_i\leq 100\), \(H_i\leq 100\).</li>
+<li>\(60\%\) số test còn lại thỏa \(m\leq 100\), \(n\leq 100\), \(0\leq L_{ij}\leq R_{ij}\leq 100\).</li>
+</ul>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,38 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Hàn tín điểm binh</h2>
+</div><div class="content-description screen">
+<div><p>Tương truyền rằng, Hàn Tín (danh tướng đời Hán) khi kiểm điểm quân số thường làm như sau. Ông cho lính xếp thành hàng 3, sau đó hàng 5, rồi hàng 7. Mỗi lần như vậy, quân lính báo cho Hàn Tín số người ở hàng cuối cùng (có thể không đủ 3, 5, 7). Từ đó ông suy ra số quân chính xác. Thực chất Hàn Tín đã giải một hệ đồng dư tuyến tính theo modun 3, 5, 7. Bài toán trên nổi tiếng dưới tên gọi “Hàn Tín điểm binh” và thuật toán mà ông dùng dựa trên một trong những định lý nổi tiếng nhất của toán học “Định lý Trung Quốc về số dư”.</p>
+<p>Cho trước số nguyên dương \(n\) và \(n\) số nguyên \(a_1, a_2, …, a_n\) và \(n\) số nguyên \(m_1, m_2, …, m_n\), trong đó \(m_1, m_2, …, m_n\) là các số nguyên tố cùng nhau từng đôi một. Nhiệm vụ của bạn là tìm nghiệm nguyên không âm nhỏ nhất \(x\) của hệ phương trình đồng dư tuyến tính sau:</p>
+<p>\(\left\{\begin{matrix}
+x \equiv a_1 (\mod m_1)
+\\x \equiv a_2 (\mod m_2)
+\\...
+\\x \equiv a_n (\mod m_n)
+\end{matrix}\right.\)</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa số nguyên \(n\) (\(1 ≤ n ≤ 8\)).</li>
+<li>Dòng thứ \(i\) trong số \(n\) dòng tiếp theo chứa hai số nguyên \(a_i\) (\(-10_9 ≤ a_i ≤ 10_9\)) và \(m_i\) (\(2 ≤ m_i ≤ 100\)). </li>
+</ul>
+<p><em>Dữ liệu vào đảm bảo \(m_1, m_2, …, m_n\) là các số nguyên tố cùng nhau từng đôi một.</em></p>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra một số nguyên là nghiệm nguyên không âm nhỏ nhất \(x\) tìm được.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>3
+2 3
+3 5
+2 7</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>23</code></pre>
+<p><strong>Sample input</strong></p>
+<pre><code>1
+-99 100</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>1</code></pre>
+<hr/>
+<p><em>Nguồn: CĐ DHBB</em></p>
+</div>
+<hr/>
+</div>

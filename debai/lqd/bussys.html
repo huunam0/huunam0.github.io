@@ -1,0 +1,41 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">HỆ THỐNG XE BUS</h2>
+</div><div class="content-description screen">
+<div><p>Hệ thống xe bus của thành phố nơi cậu sinh viên \(Z\) đang ở là một đồ thị vô hướng gồm có \(N\) trạm và \(M\) tuyển đường.</p>
+<p>Thành phố của cậu đang có kế hoạch bỏ đi một trạm và tuyến đường đã cũ và xây mới trong tương lại. Là một người thường xuyên sử dụng các phương tiện công cộng như xe bus để bảo vệ môi trường, \(Z\) nhận thấy một số trạm và tuyến đường khi nó bị gỡ bỏ sẽ lập tức ảnh hưởng tới việc đi lại.</p>
+<p>Hãy giúp \(Z\) đếm số trạm và số tuyến đường nếu bị gỡ bỏ sẽ có thể làm một vài cặp trạm không thể đi lại được như trước, một cặp trạm được gọi là không thể đi lại được như trước nếu như trước khi gỡ bỏ từ \(u\) có thể đi được với \(v\) nhưng sau khi bỏ đi một trạm hoặc tuyển đường nào đó thì \(u\) không thể đi được tới \(v\) nữa.</p>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li><p>Dòng đầu tiên gồm hai số \(N\) và \(M\) (\(1 \le n \le 10000, 1 \le m \le 50000\)) lần lượt là số trạm và số tuyến đường.</p>
+</li>
+<li><p>\(M\) dòng tiếp theo, mỗi dòng gồm \(2\) số \(u\) và \(v\) (\(1 \le u, v \le n\)) là hai trạm xe bus có đường đi trực tiếp tới nhau</p>
+</li>
+</ul>
+<p><strong>Dữ liệu ra:</strong></p>
+<ul>
+<li>Gồm hai số lần lượt là số trạm và số tuyến đường nếu bỏ sẽ ngay lập tức gây ảnh hưởng tới việc đi lại.</li>
+</ul>
+<p><strong>Ví dụ</strong>
+<strong>Input:</strong></p>
+<pre><code>10 12 
+1 10 
+10 2
+10 3
+2 4
+4 5
+5 2
+3 6
+6 7
+7 3
+7 8
+8 9
+9 7</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>4 3</code></pre>
+<p><em>Giải thích test ví dụ:</em></p>
+<p><em>Các trạm có thể gây ảnh hưởng khi bị bỏ là: 2 3 7 10
+Các tuyến đường có thể gây ảnh hưởng khi bị bỏ là: 2 10, 3 10, 1 10</em></p>
+<p><em>Nguồn : Tuấn</em></p>
+</div>
+<hr/>
+</div>

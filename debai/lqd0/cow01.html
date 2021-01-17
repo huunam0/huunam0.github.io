@@ -1,0 +1,54 @@
+<div class="tm-box2">
+<div class="problem-name">
+    COW01 - Trại bò 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"><span style="font-size:14px">Trang trại của ông Tuấn có một đàn bò <em>n</em> con thuộc <em>k</em> giống bò được nhốt mỗi con một chuồng trong dãy gồm <em>m</em> chuồng (m &gt;= n). Các giống bò được đánh số từ 1 đến <em>k</em>. Các chuồng bò được đánh số thứ tự từ 1 đến <em>m </em>từ trái qua phải. Ông Tuấn muốn sắp xếp lại việc nhốt bò vào chuồng đáp ứng hai điều kiện sau đây: </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">1. Dễ bảo vệ: Đàn bò được nhốt trong <em>n</em> chuồng đầu tiên, mỗi chuồng một con.<br/>
+2. Dễ chăm sóc: Các con bò cùng giống phải được nhốt trong các chuồng liên tiếp nhau. </span></p>
+<p style="text-align:justify"><span style="font-size:14px">Để thực hiện yêu cầu này, ông Tuấn có thể phải đổi chuồng nhốt cho một số con bò. Việc này có ảnh hưởng đến sức khỏe của bò. Giả sử bò thuộc giống bò thứ <em>j</em> có hệ số suy giảm sức khỏe <em>h<sub>j</sub></em> , (<em>j</em> = 1, 2, …, <em>k</em>). Khi di chuyển một con bò thuộc giống<em> j</em> từ chuồng thứ <em>p</em> sang chuồng thứ <em>q</em> thì giá trị giảm sút sức khỏe của nó được tính theo công thức<em> |p - q| × h<sub>j</sub></em> . </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Yêu cầu</strong>: Hãy giúp ông Tuấn sắp xếp lại chuồng nhốt cho đàn bò đáp ứng các điều kiện của ông Tuấn sao cho tổng giá trị giảm sút sức khỏe của cả đàn bò là nhỏ nhất. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Dữ liệu</strong>: </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">- Dòng thứ nhất chứa ba số nguyên dương <em>m, n, k</em> ( <em>n</em> ≤ 10<sup>5</sup> , <em>m</em> ≤ 10<sup>6</sup> , 1 ≤ <em>k</em> ≤ 20);<br/>
+- Dòng thứ hai chứa <em>k</em> số nguyên dương <em>h<sub>1</sub> , h<sub>2</sub> , …, h<sub>k</sub></em> , trong đó <em>h<sub>j</sub></em> (<em>h<sub>j</sub></em> ≤ 10<sup>5</sup> , 1 ≤ <em>j</em> ≤ <em>k</em>) là hệ số suy giảm sức khỏe của giống bò thứ <em>j</em>;<br/>
+- Mỗi dòng trong số <em>n</em> dòng tiếp theo chứa 2 số nguyên dương <em>c, g</em> cho biết chuồng thứ <em>c</em> đang nhốt con bò thuộc giống <em>g</em> (1≤ <em>c</em> ≤ <em>m</em>, 1 ≤ <em>g</em> ≤ <em>k</em>). </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">Hai số liên tiếp trên cùng một dòng được ghi cách nhau bởi ít nhất một dấu cách. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Kết quả</strong>: </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">Ghi ra một số nguyên là tổng giá trị giảm sút sức khỏe của cả đàn bò theo cách sắp xếp tìm được.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><span style="font-size:14px"><strong>Input</strong></span></p>
+<p style="margin-left:40px"><span style="font-size:14px">9 6 3<br/>
+10 5 1<br/>
+1 2<br/>
+2 3<br/>
+4 1<br/>
+6 1<br/>
+7 2<br/>
+8 3</span></p>
+<p><span style="font-size:14px"><strong>Output</strong></span></p>
+<p style="margin-left:40px"><span style="font-size:14px">40</span></p>
+<p><span style="font-size:14px"><em><strong>Giải thích: </strong></em></span><span style="font-size:14px">Cách sắp xếp bò cần tìm là </span></p>
+<p style="margin-left:40px"><span style="font-family:courier new,courier,monospace"><span style="font-size:16px">Chuồng bò                          1 2 3 4 5 6 7 8 9<br/>
+Giống của con bò nhốt trong chuồng 2 2 3 3 1 1 </span></span></p>
+<p style="margin-left:40px"><span style="font-size:14px">có tổng độ suy giảm sức khoẻ nhỏ nhất của cả đàn bò là 40.</span></p>
+<hr/>
+<p><span style="font-size:14px"><em>Nguồn: 3D '1819</em></span></p>
+</div>
+</div>

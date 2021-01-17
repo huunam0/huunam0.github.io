@@ -1,0 +1,53 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Dây cáp và máy tính</h2>
+</div><div class="content-description screen">
+<div><p>Có một số vấn đề xảy ra trong phòng tin học. Do đó, người ta đã kiểm tra lại hệ thống dây cáp của phòng học.</p>
+<p>Biết rằng:</p>
+<ul>
+<li>Máy chủ luôn kết nối với <strong>máy số 1</strong></li>
+<li>Mỗi sợi dây cáp chỉ kết nối giữa hai máy bất kỳ với nhau. Đồng nghĩa, thông tin có thể <strong>chuyển qua lại</strong> giữa 2 máy này</li>
+<li>Máy chủ có thể gửi thông tin đến các máy khác nếu máy chủ <strong>kết nối với máy đó</strong> hoặc <strong>kết nối trung gian</strong> qua 1 số máy khác.</li>
+</ul>
+<p><strong> Quan trọng nhất : Đường dây liên thông khi và chỉ khi máy chủ có thể chuyển thông tin đến tất cả các máy còn lại (Bằng cách trực tiếp hoặc gián tiếp)</strong></p>
+<p>Vì <span class="rating rate-master user"><a href="/user/DeMen100ms">DeMen100ms</a></span> là học sinh chuyên Tin, người ta đã nhờ anh thiết lập một chương trình trả lời câu hỏi :</p>
+<ul>
+<li>Nếu đường dây liên thông thì có thể <strong>cắt tối đa</strong> bao nhiêu sợi dây để đảm bảo đường dây liên thông (In ra <strong>ký tự “-“</strong> trước đáp án) (\(-0\) cũng là một đáp án có thể xảy ra)</li>
+<li>Ngược lại, thì phải <strong>gắn tối thiểu</strong> bao nhiêu sợi dây để đảm bảo đường dây liên thông (In ra <strong>ký tự “+”</strong> trước đáp án)</li>
+</ul>
+<p>Các bạn hãy giúp anh làm việc này nhé !</p>
+<p><strong>INPUT</strong></p>
+<ul>
+<li>Dòng đầu là 2 số nguyên dương \(n\) và \(k\) lần lượt là số máy và số dây cáp của phòng học \((n, k \leq 10^6)\)</li>
+<li>\(k\) dòng tiếp theo, dòng thứ \(i\) là \(2\) số nguyên dương \(a_i, b_i\) : Dây cáp thứ \(i\) nối 2 máy \(a_i\) và \(b_i\). \((a_i, b_i \leq n, a_i \neq b_i)\)</li>
+</ul>
+<p><strong>OUTPUT</strong></p>
+<ul>
+<li>In ra kết quả của câu hỏi trên</li>
+</ul>
+<p><strong>Sample input 1</strong></p>
+<pre><code>5 5
+1 2
+1 3
+1 4
+1 5
+2 3</code></pre>
+<p><strong>Sample output 1</strong></p>
+<pre><code>-1</code></pre>
+<p><strong>Sample input 2</strong></p>
+<pre><code>4 3
+1 2
+2 3
+3 1</code></pre>
+<p><strong>Sample output 2</strong></p>
+<pre><code>+1</code></pre>
+<hr/>
+<p>Subtask</p>
+<ul>
+<li>\(30\)% test : \(n \leq 5, k \leq 10\)</li>
+<li>\(30\)% test : \(n, k \leq 10^3\)</li>
+<li>\(40\)% test : \(n, k \leq 10^6\)</li>
+</ul>
+<hr/>
+</div>
+<hr/>
+</div>

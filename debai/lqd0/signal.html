@@ -1,0 +1,41 @@
+<div class="tm-box2">
+<div class="problem-name">
+    SIGNAL - Đo tín hiệu 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;"><span style="font-size:14px">Một thiết bị cảm biến có nhiệm vụ thu nhận dữ liệu về các đối tượng trong 1 khu vực để truyền về cho trung tâm xử lý. Mỗi đối tượng sẽ được biểu diễn bởi 1 dãy số nguyên dương. Như vậy, cảm biến sẽ truyền các dãy số về cho trung tâm xử lý. Tuy nhiên, do các đối tượng ở gần nhau và có tín hiệu nhiễu nên một dãy số gửi về cho trung tâm có thể là dữ liệu của 2 đối tượng. Dãy <em>a<sub>1</sub>, ..., a<sub>n</sub></em> sẽ là dữ liệu của 2 đối tượng nếu có 1 vị trí <em>i</em> <em>(1 &lt; i &lt; n)</em> sao cho <em>max<sub>1</sub> − a<sub>i</sub> ≥ b</em> và <em>max<sub>2</sub> − a<sub>i</sub> ≥ b </em>với <em>max<sub>1</sub> = max{a<sub>1</sub>, . . . , a<sub>i−1</sub>}, max<sub>2</sub> = max{a<sub>i+1</sub>, . . . , a<sub>n</sub>}</em>, và <em>b</em> là hằng số cho trước (xem minh hoạ trong Hình 1). Khi phát hiện một dãy số <em>a<sub>1</sub>, ..., a<sub>n</sub></em> là dữ liệu của 2 đối tượng thì cần phải tiến hành cắt dãy số đó thành 2 dãy, mỗi dãy là dữ liệu của một đối tượng. Khi đó vị trí cắt sẽ là vị trí <em>i</em> sao cho <em>max{a<sub>1</sub>, . . . , a<sub>i−1</sub>}−a<sub>i</sub>+max{a<sub>i+1</sub>, . . . , a<sub>n</sub>}</em>−<em>a<sub>i</sub></em> đạt giá trị lớn nhất (giá trị đó gọi là độ đo cắt tín hiệu). </span></p>
+<p style="text-align: justify; margin-left: 120px;"><img alt="" src="../../ckfinder/userfiles/images/signal.png" style="height:332px; width:383px"/></p>
+<p style="text-align: justify;"><span style="font-size:14px">Ví dụ: với giá trị <em>b = 5</em> thì dãy số 3, 5, 4, 7, 2, 5, 4, 6, 9, 8 là dữ liệu của 2 đối tượng vì tìm thấy vị trí <em>i = 5</em> tại đó max{3, 5, 4, 7} − 2 ≥ 5 và max{5, 4, 6, 9, 8} − 2 ≥ 5 và vị trí <em>i = 5</em> cũng chính là vị trí cắt. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Yêu cầu:</strong> cho trước giá trị <em>n, b</em> và dãy số nguyên dương <em>a<sub>1</sub>, . . . , a<sub>n</sub></em>. Hãy lập trình kiểm tra xem dãy số <em>a<sub>1</sub>, . . . , a<sub>n</sub></em> có phải là dữ liệu biểu diễn 2 đối tượng hay không và tính độ đo cắt tín hiệu nếu câu trả lời là có. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Dữ liệu vào </strong></span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">- Dòng thứ nhất chứa 2 số nguyên dương <em>n</em> và <em>b</em> <em>(3 ≤ n ≤ 200000, 1 ≤ b ≤ 50)</em><br/>
+- Dòng thứ 2 chứa <em>n</em> tự nhiên <em>a<sub>1</sub>, . . . , a<sub>n</sub></em> </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Kết quả </strong></span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Ghi ra độ đo cắt tín hiệu nếu dãy đầu vào là dữ liệu biểu diễn 2 đối tượng và giá trị -1 nếu ngược lại.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">10 5<br/>
+3 5 4 7 2 5 4 6 9 8</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">12</p>
+<hr/>
+<p><em>Nguồn: ĐPT 20172018</em></p>
+</div>
+</div>

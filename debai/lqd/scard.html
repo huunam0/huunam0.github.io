@@ -1,0 +1,34 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Thẻ thông minh</h2>
+</div><div class="content-description screen">
+<div><p>Tập đoàn Smart IT quyết định ứng dụng thẻ thông minh trong việc quản lý an ninh. Mỗi nhân viên của Smart IT được cấp một thẻ thông minh riêng, trong thẻ chứa một dãy số bí mật gồm \(m\) số nguyên dương \({k_1, k_2, … k_m}\).</p>
+<p>Trong nhà điều hành của SmartIT có \(n\) căn phòng được đánh số từ 1 đến \(n\). Ở cửa vào của căn phòng thứ \(i\ (1 ≤ i ≤ n)\) có một đầu đọc thẻ. Khi cần mở cửa phòng, người nhân viên sẽ đưa thẻ vào đầu đọc thẻ. Nếu thẻ phù hợp với phòng thì cửa sẽ mở.</p>
+<p>Trong đầu đọc thẻ ở phòng thứ \(i\) có lưu một dãy số nguyên dương {\(x_{i1}, x_{i2}, …, x_{im}\)}. Thẻ phù hợp với phòng thứ \(i\) nếu tích \(k_1 \times k_2 \times … \times k_m\) là bội số của tích \(x_{i1} \times x_{i2} \times … \times x_{im}\).</p>
+<p><strong>Yêu cầu</strong>: Cho biết dãy số bí mật trong thẻ thông minh và các dãy số trong đầu đọc thẻ của \(n\) căn phòng. Hãy cho biết thẻ thông minh này có thể dùng để mở được bao nhiêu phòng.</p>
+<p>\(Dữ liệu:\)</p>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương \(m\) và \(n\) (với \(1 ≤ m, n ≤ 100\)),</li>
+<li>Dòng thứ hai chứa \(m\) số nguyên dương \(k_1, k_2, …, k_m\) là dãy số bí mật trên thẻ. Mỗi số có giá trị không quá \(10^{15}\) ,</li>
+<li>Dòng thứ \(i\) trong số \(n\) dòng tiếp theo (\(1 ≤ i ≤ n\)), mỗi dòng gồm \(m\) số nguyên dương \(x_{i1}, x_{i2}, …, x_{im}\) là dãy số trong đầu đọc thẻ tại phòng \(x_{i1}, x_{i2}, …, x_{im}\). Mỗi số có giá trị không quá \(10^{15}\). </li>
+</ul>
+<p><em>Các số trên cùng một dòng được ghi cách nhau bởi 1 khoảng trắng.</em></p>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa một số nguyên \(C\) là số lượng những phòng có thể mở cửa được.</li>
+<li>Dòng thứ hai chứa \(C\) số nguyên là số thứ tự (theo thứ tự tăng dần) của các phòng mà bạn có thể mở cửa được. Các số trên cùng một dòng được ghi cách nhau bởi 1 khoảng trắng</li>
+</ul>
+<p><strong>Input</strong></p>
+<pre><code>3 4
+7 10 2011
+1 3 5
+2 2 7
+7 2 5
+14 1 2011</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>2
+3 4</code></pre>
+<hr/>
+<p><em>Nguồn: 3D 20172018</em></p>
+</div>
+<hr/>
+</div>

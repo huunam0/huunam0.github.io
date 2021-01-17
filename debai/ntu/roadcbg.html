@@ -1,0 +1,43 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    ROADCBG - Vượt qua đường 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>          Trong một buổi diễn tập quân sự đơn vị trinh sát có nhiệm vụ vượt qua phòng tuyến bảo vệ, thâm nhập vào hậu cứ của đối phương. Phòng tuyến bảo vệ là một đường thẳng trống trải, các vị trí trên đó được đánh số như một trục tọa độ. Có <strong>n</strong> đèn pha liên tục quét chiếu sáng các đoạn đường. Tại thời điểm 0, đèn thứ <strong>i </strong>bắt đầu bật chiếu sáng trong khoảng<strong> [a<sub>i</sub>, b<sub>i</sub>]</strong> (mét) và di chuyển theo đường bảo vệ với tốc độ <strong>v<sub>i</sub> </strong>(mét/giây).  Nếu<strong> a<sub>i </sub>&lt;b<sub>i</sub></strong> đoạn chiếu sáng di chuyển theo chiều tăng dần của trục tọa độ, còn nếu <strong>a<sub>i</sub> &gt; b<sub>i</sub></strong> - di chuyển theo chiều ngược lại (một đèn pha chỉ đi theo một hướng, không quay ngược lại). Các đoạn được chiếu sáng có thể rời nhau hoặc đè lên nhau.</p>
+<p>         Đơn vị trinh sát có <strong>m</strong> người, sẽ vượt qua đường ở điểm có tọa độ<strong> x</strong>. Người thứ<strong> j</strong> tới điểm cần vượt ở thời điểm <strong>t<sub>j</sub> </strong>(giây) và chỉ vượt qua đường khi điểm <strong>x</strong> không bị đèn nào chiếu sáng, không được vượt kể cả ở 2 đầu <strong>x = a<sub>i</sub></strong> hoặc <strong>x =  b<sub><span style="font-size:10.8333px">i.</span></sub></strong></p>
+<p><em>Thời gian vượt qua đường coi như không đáng kể.</em></p>
+<p>Với mỗi người hãy xác định thời điểm sớm nhất có thể vượt qua đường và đưa ra độ chính xác <strong>10<sup>-6</sup>.</strong></p>
+<p><strong>Dữ liệu:</strong></p>
+<p>- Dòng thứ nhất 3 số nguyên <strong>n, m, x</strong> (<strong>1 ≤ n, m ≤ 10<sup>5</sup>, -10<sup>9</sup> ≤ x ≤ 10<sup>9</sup></strong>).</p>
+<p>- Dòng thứ<strong> i</strong> trong <strong>n </strong>dòng tiếp theo chứa 3 số nguyên<strong> a, b, v</strong> (<strong>-10<sup>9</sup> ≤ a, b ≤ 10<sup>9</sup>, v ≤ 10<sup>9</sup>, a ≠ b</strong>).</p>
+<p>- Chứa m số t (<strong>0 ≤ t ≤ 10<sup>9</sup></strong>).</p>
+<p><strong>Kết quả:</strong></p>
+<p>- Gồm m dòng, mỗi dòng một số là kết quả tìm được. Kết quả được làm tròn đến <strong>6</strong> số sau dấu thập phân và phải in đủ<strong> 6</strong> số sau dấu thập phân.</p>
+<p>C++: dùng <strong><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">cout&lt;&lt;fixed&lt;&lt;setprecision(6);</span></span></strong></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 2 0<br/>-4 -1 1<br/>13 6 3<br/>-7 -6 1<br/>1 5</div>
+<div class="sample-type">output</div>
+<div class="sample-value">4.333333<br/>5.000000</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Tại thời điểm 4.333333... đèn số 2 quét xong tọa độ 0. Người thứ nhất có thể vượt đường sau đó một chút. Nhưng do làm tròn nên kết quả cũng là 4.333333</p>
+</div>
+</div></body></html>

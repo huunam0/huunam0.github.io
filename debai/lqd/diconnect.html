@@ -1,0 +1,35 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Liên Thông</h2>
+</div><div class="content-description screen">
+<div><p>Một quốc gia nọ có \(N\) thành phố. Người ta đã xây dựng \(M\) con đường một chiều để di chuyển giữa các thành phố. Quốc vương muốn đảm bảo rằng giữa hai thành phố bất kỳ, phải luôn tồn tại một cách di chuyển (trực tiếp hoặc gián tiếp) từ thành phố này đến thành phố kia. Bạn hãy kiểm tra xem ông có cần phải xây dựng các con đường mới không?</p>
+<h4>Dữ liệu vào:</h4>
+<ul>
+<li>Dòng một chứa số nguyên dương \(T\ (T \leq 5)\) là số lượng quốc gia bạn cần giúp đỡ.</li>
+<li>Tiếp theo là \(T\) bộ dữ liệu, mỗi bộ dữ liệu gồm:</li>
+<li>Dòng đầu chứa \(2\) số nguyên \(N, M\), số thành phố và số con đường \(1\) chiều</li>
+<li>Mỗi dòng trong \(M\) dòng tiếp theo gồm \(2\) số nguyên \(u, v\  (1 \leq u, v \leq n,\  u \neq v)\): người ta đã xây dựng con đường \(1\) chiều từ \(u\) đến \(v\).</li>
+</ul>
+<h4>Dữ liệu ra:</h4>
+<p>Mỗi dòng là câu trả lời cho một bộ dữ liệu tương ứng: in ra YES nếu quốc vương cần xây thêm đường mới, NO nếu những con đường hiện tại đã thỏa mãn yêu cầu của ông.</p>
+<h4>Input</h4>
+<pre><code>2
+3 3
+1 2
+2 3
+3 1
+3 2
+1 2
+2 3</code></pre>
+<h4>Output</h4>
+<pre><code>NO
+YES</code></pre>
+<h4>Ràng buộc:</h4>
+<ul>
+<li>Có \(40 \%\) điểm tương ứng với trường hợp \(N, M \leq 2000\).</li>
+<li>Có \(60 \%\) điểm tương ứng với trường hợp \(N, M \leq 100000\).</li>
+</ul>
+<h4>Giải thích:</h4>
+<p>Trong bộ dữ liệu thứ hai, có \(2\) con đường \(1 \rightarrow 2\) và \(2 \rightarrow 3\). Người ta không thể di chuyển từ  thành phố \(3\) đến thành phố \(1\) với hai con đường này.</p>
+</div>
+<hr/>
+</div>

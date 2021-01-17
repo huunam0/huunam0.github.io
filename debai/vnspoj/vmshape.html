@@ -1,0 +1,52 @@
+<h2>VMSHAPE - Xác định hình</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/M" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274709/problem/M </a><a href="https://codeforces.com/group/FLVn1Sc504/contest/272945/problem/P" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/272945/problem/P </a><p><span> </span></p>
+<p>Bé năm nay mới 1 tuổi, nhưng đã có thể nhận biết được hình tròn, hình vuông và hình tam giác. Bạn có làm được như bé không?</p>
+<p>Bạn được cho 1 số bức ảnh cấp độ xám (grayscale) của 1 trong 3 loại hình: hình tròn, hình vuông và hình tam giác.</p>
+<ul>
+<li>Mỗi bức ảnh có kích thước 100 * 100 pixel và được biểu diễn bởi 1 ma trận kích thước 100 * 100.</li>
+<li>Pixel (i, j) nhận giá trị trong khoảng [0, 255], trong đó 0 ứng với màu đen, 255 ứng với màu trắng, và các giá trị càng gần 0 thì càng đen.</li>
+</ul>
+<p>Bài này gồm có 50 test:</p>
+<ul>
+<li>Bạn được down về 10 test đầu <a href="https://www.dropbox.com/s/rmiayackco34itk/Archive.zip?dl=0">ở đây</a>. (chú ý 10 test này sẽ chỉ được dùng để chấm trong quá trình thi, và sẽ không được sử dụng khi tính kết quả cuối cùng).</li>
+<li>10 test tiếp theo không có hình tròn.</li>
+<li>10 test tiếp theo không có hình vuông.</li>
+<li>10 test tiếp theo không có hình tam giác.</li>
+<li>10 test cuối cùng có đủ cả 3 loại hình.</li>
+</ul>
+<p>Dưới đây là thang sáng tối của điểm ảnh. Phần bên trong của hình cần nhận diện sẽ có màu sáng hơn (giá trị điểm ảnh lớn hơn) so với phần bên ngoài của hình. Tuy nhiên các ảnh sẽ bị làm nhiễu đi bởi các điểm ảnh có giá trị bất kì (tải các test ví dụ về để xem chi tiết).</p>
+<p><img alt="" height="100" src="http://cs.calvin.edu/activities/connect/CompRenew/03programming/01grayscale.png" width="432"/></p>
+<p> </p>
+<h3>Input</h3>
+<p>Dòng đầu chứa số nguyên T:</p>
+<ul>
+<li>Nếu T = 0, trong test không có hình tròn.</li>
+<li>Nếu T = 1, trong test không có hình vuông.</li>
+<li>Nếu T = 2, trong test không có hình tam giác.</li>
+<li>Nếu T = -1, trong test có đủ cả 3 loại hình.</li>
+</ul>
+<p>Dòng thứ 2 chứa số nguyên dương S - số hình trong file input (S &lt; 10). Tiếp theo là mô tả của S hình, mỗi mô tả gồm 101 dòng:</p>
+<ul>
+<li>100 dòng đầu, mỗi dòng chứa đúng 100 số nguyên trong khoảng [0, 255] mô tả bức ảnh.</li>
+<li>Tiếp theo là 1 dòng trống.</li>
+</ul>
+<h3>Output</h3>
+<p>Với mỗi test, in ra đúng S dòng, dòng thứ i là:</p>
+<ul>
+<li>0 nếu hình tương ứng là hình tròn</li>
+<li>1 nếu hình tương ứng là hình vuông</li>
+<li>2 nếu hình tương ứng là hình tam giác</li>
+</ul>
+<h3>Cách tính điểm</h3>
+<ul>
+<li>Trong quá trình thi, điểm của bạn sẽ bằng % test mà bạn giải đúng.</li>
+<li>Đến lúc kết thúc vòng thi, điểm của bạn trong bảng xếp hạng sẽ được chỉnh lại, sao cho người làm tốt nhất được 100, những người khác sẽ được chỉnh lại dựa theo độ tốt của kết quả.</li>
+<li>Việc chấm bài này có 2 điểm đặc biệt:           
+<ul>
+<li>Chỉ kết quả của lần nộp cuối được tính.</li>
+<li>Nếu bạn nộp quá 20 lần, bạn sẽ không được tính điểm bài này (chú ý rằng hiện nay SPOJ không hỗ trợ giới hạn số lần nộp bài, nhưng BTC sẽ kiểm tra số lần nộp bài của các bạn và cho 0 điểm bài này đối với nhũng trường hợp vi phạm. Ví thế, các bạn phải tự theo dõi số lần nộp bài của mình một cách cẩn thận).</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+</div>

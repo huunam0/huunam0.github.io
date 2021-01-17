@@ -1,0 +1,46 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    DAOTAO -  Đào tạo từ xa (OLP 2009) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">       Một trong những vấn đề phải giải quyết trong đào tạo từ xa là tìm hiểu xem học viên có thực sự ngồi trước màn hình theo dõi các bài giảng bắt buộc hay không. Học viên có thể tải các bài giảng về và dùng các phần mềm chuyên dụng do Trung tâm đào tạo cung cấp để xem và học vào bất cứ thời điểm nào thuận tiện đối với mình. Vì vậy, cần có những phương pháp kiểm tra tế nhị và khoa học để biết chính xác tình hình học tập của học viên.</p>
+<p style="text-align:justify">       Thực tế cho thấy rằng, nếu thông tin hiện lên trên màn hình với khoảng thời gian ít hơn <sup>1</sup>/<sub>24</sub>  giây thì mắt người không kịp ghi nhận được hình ảnh nhưng não bộ vẫn tiếp nhận thông tin! Dựa vào tính chất này phần mềm giảng dạy thiết kế một cửa sổ nhỏ, trên đó cứ mỗi giây, nếu có xuất hiện câu hỏi trắc nghiệm ngắn cùng với câu trả lời thì chúng sẽ hiển thị trong khoảng thời gian <sup>1</sup>/<sub>80</sub>  cuối cùng của giây. Những học viên thực hiện chương trình học nghiêm túc sẽ tiếp nhận được các câu hỏi thi trong tình trạng vô thức và sẽ dễ dàng vượt qua kỳ thi hoặc kiểm tra. Ngân hàng đề có n câu hỏi trắc nghiệm và câu thứ i phải được hiển thị c<sub>i</sub> lần. Để củng cố kiến thức và tránh sự đơn điệu làm não bộ nhàm chán, việc hiển thị câu hỏi phải đảm bảo trong m giây liên tiếp bất kỳ không có 2 câu hỏi nào giống nhau. </p>
+<p><strong>Yêu cầu: </strong>Hãy xác định khoảng thời gian tối thiểu (tính theo giây) thực hiện yêu cầu trên.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên là 2 số nguyên n, m cách nhau một khoảng trắng (1 ≤ m ≤ n ≤ 100)</p>
+<p>- Dòng tiếp theo là n số nguyên c<sub>i</sub>, mỗi số cách nhau một khoảng trắng ( 0 &lt; c<sub>i</sub> ≤ 100)</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là khoảng thời gian tối thiểu tìm được.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 2<br/>2<br/>3<br/>1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">6</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Thực hiện theo thứ tự:</p>
+<p>- Giây 1: câu 3<br/>
+- Giây 2: câu 2<br/>
+- Giây 3: câu 1<br/>
+- Giây 4: câu 2<br/>
+- Giây 5: câu 1<br/>
+- Giây 6: câu 2</p>
+</div>
+</div></body></html>

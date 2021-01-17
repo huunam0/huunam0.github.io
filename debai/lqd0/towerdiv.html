@@ -1,0 +1,53 @@
+<div class="tm-box2">
+<div class="problem-name">
+    TOWERDIV - Trò chơi TowerDiv 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p><strong>Ys</strong> và <strong>NN</strong> đang chơi 1 trò chơi có tên gọi là <strong>TowerDiv</strong>. Trò chơi này có luật như sau</p>
+<p>Ban đầu sẽ có <strong>N</strong> tòa tháp, mỗi tòa tháp ban đầu đều có độ cao là<strong> M</strong></p>
+<p>Tại mỗi lượt chơi luân phiên, người chơi có thể chia đều 1 tòa tháp bất kỳ trong N tòa tháp thành các phần có chiều cao là nguyên dương bằng nhau (ít nhất chia ra làm 2 phần trở lên), Người chơi phải lấy ra tất cả các phần phía trên, chỉ chừa lại duy nhất 1 phần ở dưới đáy, lúc này chiều cao của tòa tháp sẽ giảm đi 1 lượng đúng với tổng chiều cao của số phần đã lấy ra.</p>
+<p>Ví dụ, chiều cao hiện tại của tòa tháp được <strong>Ys </strong>chọn đang là <strong>6</strong>, Ys có thể chia tòa tháp làm <strong>3 phần</strong>, mỗi phần có kích thước là 2, Theo quy định, Ys phải lấy đi <strong>2 phần</strong> trên cùng và chỉ giữ lại <strong>1 phần</strong> dưới đáy. Vì vậy chiều cao của tòa tháp hiện tại sẽ còn là <strong>2</strong>.</p>
+<p>Trò chơi chỉ kết thúc khi có 1 người không thể thực hiện được bước ở trên như đã quy định, và người đó sẽ thua.</p>
+<p>Vì Ys muốn nhường NN nên để cho NN đi trước. Giả sử 2 người đều chơi tối ưu, hãy xác định người thắng cuộc.</p>
+<p><strong>Input: </strong></p>
+<p style="margin-left:40px">- Dòng đầu tiên chứa 1 số T là số bộ test (T&lt;=100)</p>
+<p style="margin-left:40px">- T dòng tiếp theo, mỗi dòng chứa lần lượt 2 số N và M (N, M&lt;=10<sup>6</sup>) </p>
+<p><strong>Output:</strong></p>
+<p style="margin-left:40px">- Tương ứng mỗi bộ test, in ra<strong> 1</strong> nếu <strong>NN </strong>thắng, in ra <strong>2</strong> nếu <strong>Ys</strong> thắng.</p>
+<p style="margin-left:40px"> </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input:</strong></p>
+<p>2 </p>
+<p>2 2</p>
+<p>1 4</p>
+<p><strong>Output</strong>:</p>
+<p>2</p>
+<p>1</p>
+<p><strong>Giải thích: </strong></p>
+<p>Ở test 1, n=2,m=2</p>
+<p>- Lượt đầu tiên, NN có thể chọn 1 trong 2 tòa tháp và chia nó ra làm 2 và giữ lại phần đáy. </p>
+<p>Đương nhiên, dù chọn tòa tháp nào thì cũng sẽ còn lại 1 tòa tháp có chiều cao là 2.</p>
+<p>Lúc này chiều cao 2 tòa tháp lần lượt sẽ là: 1 2</p>
+<p>- Lượt tiếp theo, Ys chỉ cần chia tòa tháp còn lại có chiều cao 2 đó ra làm 2 và giữ lại phần đáy. </p>
+<p>Lúc này chiều cao của 2 tòa tháp là : 1 1</p>
+<p>- Lượt thứ 3, NN không thể chia được tòa tháp nào bởi vì cả 2 đều đã bằng 1. </p>
+<p>Vì vậy người chiến thắng là Ys</p>
+</div>
+</div>

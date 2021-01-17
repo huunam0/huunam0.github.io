@@ -1,0 +1,43 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    BOOL - Biểu thức Boolean 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">An rất thích thú với toán học và cậu ta nhận ra rằng giá trị của một biểu thức boolean có giá trị thay đổi phụ thuộc vào thứ tự thực hiện các phép toán của nó. Để dễ hình dung, hay xem xét ví dụ sau:</p>
+<p style="text-align:justify">Biểu thức: 1 xor 1 and 0</p>
+<p style="text-align:justify">An có thể thực hiện biểu thức trên theo 2 thức tự khác nhau:</p>
+<p style="text-align:justify">1. ((1 xor 1) and 0) = (0 and 0) = 0</p>
+<p style="text-align:justify">2. (1 xor (1 and 0)) = (1 xor 0) = 1</p>
+<p style="text-align:justify">Nhưng vì không có sự khác nhau về độ ưu tiên giữa các phép toán nên kết quả của biểu thức phụ thuộc vào cách đặt các cặp ngoặc để nhóm các hạng tử lại với nhau. Và An muốn biết rằng với một biểu thức con từ <strong>L</strong> đến <strong>R</strong> trong biểu thức <strong>S</strong> cho trước, có bao nhiêu cách biểu diễn biểu thức con đó để có kết quả thu được là   <strong>res</strong> - res bằng true hoặc false. Hai cách biểu diễn được gọi là khác nhau nếu như cách đặt các cặp ngoặc là khác nhau.</p>
+<p style="text-align:justify"><strong>Dữ liệu nhập:</strong> gồm nhiều dòng</p>
+<p style="text-align:justify"> - Dòng thứ nhất chứa 2 chuỗi S và T (1 ≤ |S| ≤ 300, |T| = |S| - 1). Chuỗi S biểu diễn giá trị của các hạng tử trong biểu thức (0 hoặc 1). Chuỗi T chỉ gồm các kí tự 'a', 'o' và 'x' tương ứng với and, or và xor, biểu diễn các phép toán nối giữa các hạng tử, T<sub>i</sub> là phép toán nối giữa S<sub>i</sub> và S<sub>i+1</sub>.</p>
+<p style="text-align:justify"> - Dòng thứ 2 chứa một số nguyên q (1 ≤ q ≤ 90000) - số lượng truy vấn</p>
+<p style="text-align:justify"> - q dòng tiếp theo, mỗi dòng chứa 2  số nguyên L, R và chuỗi res (1 ≤ L ≤ R ≤ |S|, res bằng "true" hoặc "false")</p>
+<p style="text-align:justify"><strong>Dữ liệu xuất:</strong> với mỗi truy vấn xuất ra trên 1 dòng là số cách biểu diễn biểu thức con [L, ,R] sao cho kết quả của nó là res. Vì số cách thu được có thể rất lớn nên chỉ cần xuất ra phần dư của kết quả thu được cho 1000000009 (10<sup>9</sup>+9)</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">110 ax<br/>3<br/>1 1 true<br/>1 2 false<br/>2 3 false</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1<br/>0<br/>0</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>    </p>
+</div>
+</div></body></html>

@@ -1,0 +1,50 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    DUHA - Du hành (ACMVN 10-2014 I) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">      Alpha Centauri-M (ACM) là một hành tinh với rất nhiều cảnh đẹp cho du khách từ Trái đất. Bản đồ của ACM được chia thành một lưới gồm M dòng, N cột. Các cột được đánh số từ 1 đến N theo chiều từ trái sang phải. Các dòng được đánh số từ 1 đến M theo chiều từ trên xuống dưới. Có một vài ô của lưới là núi lửa nên không thể viếng thăm được.  Các ô còn lại gọi là ô an toàn.</p>
+<p style="text-align:justify">      Khi tiến đến ACM, phi thuyền sẽ hạ cánh tại một ô an toàn nào đó. Sau đó du khách sẽ viếng thăm hành tinh bằng xe tự hành. Bắt đầu từ ô hạ cánh (r<sub>0</sub>, c<sub>0</sub>), xe tự hành có thể đi đến bốn ô lân cận là (r<sub>0</sub>-1, c<sub>0</sub>), (r<sub>0</sub>+1, c<sub>0</sub>), (r<sub>0</sub>, c<sub>0</sub>-1), (r<sub>0</sub>, c<sub>0</sub>+1). Sau đó xe tự hành sẽ tiếp tục di chuyển theo quy tắc sau:</p>
+<p>       1. Quẹo phải và tiến đến 1 ô.<br/>
+       2. Quẹo trái và tiến đến 1 ô.<br/>
+       3. Thực hiện lại bước 1.</p>
+<p style="text-align:justify">      Xe tự hành chỉ có thể viếng thăm ô an toàn, vì vậy nó sẽ dừng lại nếu ô kế tiếp là không an toàn hoặc đi ra ngoài bản đồ. Hình bên dưới minh họa một bản đồ gồm M= 6 dòng và N= 7 cột. Từ ô hạ cánh là ô (4, 3), bạn có thể viếng thăm 16 ô, kể cả ô hạ cánh.</p>
+<p style="text-align:center"><img alt="" src="images/AAA.jpg" style="height:285px; width:517px"/></p>
+<p style="text-align:justify">     Nhiệm vụ của bạn là tìm ô hạ cánh sao cho có thể viếng thăm nhiều ô nhất của Alpha Centauri-M.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên là hai số nguyên M, N cách nhau một khoảng trắng (1 ≤ M, N ≤ 1000).</p>
+<p>- Trong M dòng tiếp theo, mỗi dòng chứa các số 0, 1 thể hiện tình trạng bản đồ (1 là ô an toàn, 0 là ô không an toàn), các số xếp sát nhau.</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là số nguyên xác định số lượng ô có thể thăm nhiều nhất.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 3<br/>011<br/>111<br/>111</div>
+<div class="sample-type">output</div>
+<div class="sample-value">8</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">6 7<br/>1101011<br/>0111111<br/>1111101<br/>1111111<br/>1111110<br/>0111111</div>
+<div class="sample-type">output</div>
+<div class="sample-value">20</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

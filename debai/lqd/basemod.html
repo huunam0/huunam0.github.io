@@ -1,0 +1,42 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Cơ số và bài toán tìm dư</h2>
+</div><div class="content-description screen">
+<div><p>Cho một cơ số \(b\) và hai số nguyên dương \(p,m\) (\(p\) và \(m\) đều ở dạng cơ số \(b\)).</p>
+<p><strong>Yêu cầu:</strong> Tính \(r=p\text{%}m\) và xuất kết quả này ở dạng cơ số \(b\).</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Input gồm nhiều dòng, mỗi dòng có dạng: \(b\text{ }p\text{ }m\) với \(2\le b\le 10,1\le |p|\le 1000,1\le |m|\le 9\) (\(p,m\) đều ở dạng cơ số \(b\) ).</p>
+</li>
+<li><p>Input kết thúc bởi số \(0\)</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>Ứng với mỗi dòng, in ra đáp án cần tìm </li>
+</ul>
+<p><strong>Chú ý:</strong>  \(|p|,|m|\) lần lượt là độ dài của số \(p\) và \(m\)</p>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>7 17 2
+2 101 10
+0</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>0
+1</code></pre>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li><p>Đối với \(b=7,p=17,m=2\). Ta có \(p=17_{(7)}=14_{(10)}\) và \(m=2_{(7)}=2_{(10)}\implies r=p\text{%}m=14\text{%}2=0_{(10)}=0_{(7)}\). Vậy nên đáp án là \(0\)</p>
+</li>
+<li><p>Đối với \(b=2,p=101,m=10\). Ta có \(p=101_{(2)}=5_{(10)}\) và \(m=10_{(2)}=2_{(10)}\implies r=p\text{%}m=5\text{%}2=1_{(10)}=1_{(2)}\). Vậy nên đáp án là \(1\)</p>
+</li>
+</ul>
+<p><strong>Subtask:</strong></p>
+<ul>
+<li><p>\(20\text{%}\) test có \(1\le |p|\le 10\) và \(1\le |m|\le 3\)</p>
+</li>
+<li><p>\(80\text{%}\) test có \(1\le |p|\le 1000\) và \(1\le |m|\le 9\)</p>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

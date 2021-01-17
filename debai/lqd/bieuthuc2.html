@@ -1,0 +1,39 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Biểu thức 2</h2>
+</div><div class="content-description screen">
+<div><p>Cho một danh sách \(A\) gồm \(n\) số nguyên và một số nguyên \(m\). Bạn được quyền thực hiện các thao tác thỏa mãn điều kiện sau:</p>
+<ul>
+<li>Không được thay đổi thứ tự các phần tử của danh sách này</li>
+<li>Bạn phải chèn thêm một trong ba dấu {+, -, *} vào giữa các phần tử của tập hợp</li>
+<li>Có \(n-1\) khoảng giữa các phần tử mà bạn có thể chèn dấu vào.</li>
+</ul>
+<p>Ví dụ, với \(a = [3, 4, 5]\) bạn có thể thêm vào các dấu biến nó trở thành biểu thức \(3 + 4 - 5\). Biểu thức này có giá trị là \(2\).</p>
+<p>Nhiệm vụ của bạn trong bài tập này là hãy liệt kê tất cả các biểu thức có thể tạo thành từ danh sách \(A\) thỏa mãn biểu thức này có giá trị là \(m\).</p>
+<hr/>
+<h4>Input</h4>
+<ul>
+<li>Dòng thứ nhất gồm hai số nguyên \(n\) và \(m\) \(\left(1 \leq n &lt; 10, |m| \leq 10^{18}\right)\)</li>
+<li>Dòng thứ hai là \(n\) số nguyên \(A_1, A_2, ..., A_n\) \(\left(1 \leq A_i \leq 10^9\right)\)</li>
+</ul>
+<hr/>
+<h4>Output</h4>
+<p>In ra nhiều dòng, mỗi dòng là một biểu thức hợp lệ. Các biểu thức in tăng dần theo thứ tự từ điển. Xem ví dụ để in đáp án được chính xác.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input 1</h5>
+<pre><code>5 0
+4 1 2 3 10</code></pre>
+<h5>Output 1</h5>
+<pre><code>4*1+2*3-10
+4+1*2*3-10
+4+1+2+3-10</code></pre>
+<h5>Input 2</h5>
+<pre><code>5 42
+10 5 4 6 2</code></pre>
+<h5>Output 2</h5>
+<pre><code>10*5+4-6*2
+10*5-4-6+2
+10+5*4+6*2</code></pre>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,86 @@
+<div class="tm-box2">
+<div class="problem-name">
+    NGAN - Định, Ngạn và MST 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.5 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Từ hồi Ngạn ra ở trọ tại căn nhà của Định ở phường Cẩm Châu, Hội An để theo học ngôi trường THPT chuyên Lê Thánh Tông, Hà Lan chẳng thèm ghé thăm cậu đến một lần. Hà Lan không ghé, Ngạn càng mừng. Nhà Định tuy không sang bằng nhà cô của Hà Lan, Ngạn vẫn thấy tù túng và lạc lõng. Ngạn không muốn bạn bè lớp chuyên Văn của cậu đến đó chút nào.</p>
+<p>Chỉ gần đây, Hà Lan mới ghé qua một lần. Đang ôn thi cuối năm, thiếu tài liệu và hơi ấm, cô đến hỏi mượn tập chuyên đề "<em>Cây khung nhỏ nhất"</em> (<strong>M</strong>inimum <strong>S</strong>panning <strong>T</strong>ree - <strong>MST</strong>).</p>
+<p>Hôm đó, Ngạn đang ngồi học bài, thì nghe Định gọi trìu mến:</p>
+<p>- Ai đang tìm mày kìa!</p>
+<p>- Ai vậy?</p>
+<p>Định nháy mắt:</p>
+<p>- Một con bé thật xinh!</p>
+<p>Ngạn bước ra cửa và ngạc nhiên khi thấy Hà Lan.</p>
+<p>- Hà Lan đi đâu vậy? - Ngạn bồi hồi hỏi.</p>
+<p>- Hà Lan đi mượn chuyên đề.</p>
+<p>- Chuyên đề gì?</p>
+<p>- "Minimum Spanning Tree," Ngạn có không?</p>
+<p>Ngạn gật đầu:</p>
+<p>- Có. Hà Lan đợi một chút, tôi vào lấy.</p>
+<p>Ý Ngạn không muốn mời Hà Lan vào nhà. Nhưng Định đứng bên cạnh lại phá bĩnh. Cậu liếc Ngạn:</p>
+<p>- Sao không mời khách vào nhà chơi, mày?</p>
+<p>Rồi không đợi Ngạn trả lời, Định quay sang Hà Lan, niềm nở:</p>
+<p>- Hà Lan vào nhà ngồi chơi đi! Vừa hay tôi cũng mới đạt nick đỏ Codeforces nhờ AC một bài về MST. Hà Lan có vướng mắc gì về dạng bài đó thì cứ trao đổi với tôi, có khi tôi giúp được!</p>
+<p>Được lời như cởi tấm lòng, Hà Lan bước vào nhà. Ngạn chạy lên lầu lấy chuyên đề đem xuống, thấy Định và Hà Lan đang ngồi trò chuyện vui vẻ, ở phòng khách, về bài toán tìm cây khung nhỏ nhất của một <em>đơn đồ thị vô hướng</em> gồm <strong>N</strong> đỉnh và <strong>M</strong> cạnh - một bài toán mà Ngạn hoàn toàn mù tịt hướng giải. Một lúc sau, Hà Lan chợt nảy ra một thắc mắc với Định:</p>
+<p>- Rõ ràng trong đồ thị này có thể tồn tại nhiều cây khung nhỏ nhất. Hà Lan muốn liệt kê những cạnh của đồ thị <em>không nằm trong</em> <em>một cây khung nhỏ nhất nào</em>, đồng thời, tìm ra luôn những cạnh <em>nằm trong tất cả</em> <em>các cây khung nhỏ nhất</em>. Định có ý tưởng gì không?</p>
+<p>Định liền gãi đầu ú ớ. Cậu quay sang Ngạn ra hiệu cầu cứu. Nhưng đầu óc của Ngạn bây giờ chỉ đang âm ỉ câu hát "<em>Và hồn tôi từ đó là khúc ca vang trong ngần...</em>" Bạn hãy giúp Ngạn xây dựng một hình ảnh tài năng trước Hà Lan nhé!</p>
+<p> </p>
+<p><u><strong>Định dạng input:</strong></u></p>
+<p>- Dòng đầu chứa hai số nguyên dương <strong>N</strong> và <strong>M</strong>. </p>
+<p>- Dòng thứ <strong>i</strong> trong <strong>M</strong> dòng tiếp theo chứa ba số nguyên dương <strong>u<sub>i</sub></strong>, <strong>v<sub>i</sub></strong> và <strong>w<sub>i</sub></strong> - thể hiện một cạnh vô hướng nối hai đỉnh <strong>u<sub>i</sub></strong> và <strong>v<sub>i</sub></strong> với trọng số <strong>w<sub>i</sub></strong>.</p>
+<p> </p>
+<p><u><strong>Định dạng output:</strong></u></p>
+<p>- Ghi ra <strong>M</strong> số nguyên ghi trên một dòng duy nhất, cách nhau bởi <em>dấu cách</em>. Số thứ <strong>i</strong> bằng <strong>0</strong> nếu cạnh thứ <strong>i</strong> (theo thứ tự trong input) không nằm trong một cây khung nhỏ nhất nào, bằng <strong>1</strong> nếu cạnh thứ <strong>i</strong> nằm trong tất cả các cây khung nhỏ nhất, và bằng <strong>2</strong> trong trường hợp còn lại.</p>
+<p> </p>
+<p><u><strong>Ràng buộc:</strong></u></p>
+<p>- 50% số test có <strong>N</strong> &lt;= 10<sup>3</sup>, <strong>M</strong> &lt;= 10<sup>4</sup>.</p>
+<p>- 50% số test còn lại có <strong>N</strong>, <strong>M</strong> &lt;= 10<sup>5</sup>.</p>
+<p>- <strong>w<sub>i</sub></strong> &lt;= 10<sup>6</sup>.</p>
+<p>- Dữ liệu đảm bảo đồ thị luôn có ít nhất một cây khung.<br/>
+ </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p> </p>
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+<tbody>
+<tr>
+<td>Input</td>
+<td>Output</td>
+</tr>
+<tr>
+<td>3 3<br/>
+			1 2 1<br/>
+			2 3 1<br/>
+			1 3 1</td>
+<td>2 2 2</td>
+</tr>
+<tr>
+<td>3 3<br/>
+			1 2 1<br/>
+			2 3 1<br/>
+			1 3 2</td>
+<td>1 1 0</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><em><u>Nguồn bài</u>:</em> Codeforces Round #111</p>
+<p><em><u>Nguồn đề</u>:</em> <a href="../../doc-sach/mat-biec-nguyen-nhat-anh/chuong-5.html">https://sachvui.com/doc-sach/mat-biec-nguyen-nhat-anh/chuong-5.html</a></p>
+</div>
+</div>

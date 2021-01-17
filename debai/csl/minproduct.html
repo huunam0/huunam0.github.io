@@ -1,0 +1,95 @@
+<h1 class="ui header">
+        
+          #1025. MINPRODUCT - Tích nhỏ nhất
+        
+      </h1><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden; "><p><strong></strong></p><center><strong>NGUỒN: Ôn HN tháng 11/2017, Thầy Nguyễn Đức Nghĩa, Ngày 1</strong></center>
+<br/><p></p>
+<p>Cho dãy <span class="mjpage"><svg aria-labelledby="MathJax-SVG-2-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 888.5 936.9" width="2.064ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-2-Title">N</title>
+<defs aria-hidden="true">
+<path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="E2-MJMATHI-4E" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E2-MJMATHI-4E" y="0"></use>
+</g>
+</svg></span> số nguyên (mỗi phần tử của dãy có thể là số âm, dương hay bằng <span class="mjpage"><svg aria-labelledby="MathJax-SVG-3-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-3-Title">0</title>
+<defs aria-hidden="true">
+<path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="E3-MJMAIN-30" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E3-MJMAIN-30" y="0"></use>
+</g>
+</svg></span>). Cần chọn trong số các phần tử của dãy <span class="mjpage"><svg aria-labelledby="MathJax-SVG-4-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 500.5 936.9" width="1.162ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-4-Title">2</title>
+<defs aria-hidden="true">
+<path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="E4-MJMAIN-32" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E4-MJMAIN-32" y="0"></use>
+</g>
+</svg></span> phần tử khác nhau sao cho tích của chúng là nhỏ nhất có thể.</p>
+<h4>Dữ liệu vào:</h4>
+<ul>
+<li>Dòng đầu tiên chứa số nguyên <span class="mjpage"><svg aria-labelledby="MathJax-SVG-5-Title" focusable="false" height="2.843ex" role="img" style="vertical-align: -0.505ex;" viewbox="0 -1006.6 6650.5 1223.9" width="15.446ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-5-Title">N\ 2 ≤ N ≤ 10^6</title>
+<defs aria-hidden="true">
+<path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="E5-MJMATHI-4E" stroke-width="1"></path>
+<path d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" id="E5-MJMAIN-32" stroke-width="1"></path>
+<path d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z" id="E5-MJMAIN-2264" stroke-width="1"></path>
+<path d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" id="E5-MJMAIN-31" stroke-width="1"></path>
+<path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="E5-MJMAIN-30" stroke-width="1"></path>
+<path d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" id="E5-MJMAIN-36" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E5-MJMATHI-4E" y="0"></use>
+<use x="1138" xlink:href="#E5-MJMAIN-32" y="0"></use>
+<use x="1916" xlink:href="#E5-MJMAIN-2264" y="0"></use>
+<use x="2973" xlink:href="#E5-MJMATHI-4E" y="0"></use>
+<use x="4139" xlink:href="#E5-MJMAIN-2264" y="0"></use>
+<g transform="translate(5195,0)">
+<use xlink:href="#E5-MJMAIN-31"></use>
+<use x="500" xlink:href="#E5-MJMAIN-30" y="0"></use>
+<use transform="scale(0.707)" x="1415" xlink:href="#E5-MJMAIN-36" y="557"></use>
+</g>
+</g>
+</svg></span>  lòa số lượng phần tử của dãy số:</li>
+<li><span class="mjpage"><svg aria-labelledby="MathJax-SVG-6-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 888.5 936.9" width="2.064ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-6-Title">N</title>
+<defs aria-hidden="true">
+<path d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z" id="E6-MJMATHI-4E" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use x="0" xlink:href="#E6-MJMATHI-4E" y="0"></use>
+</g>
+</svg></span> dòng tiếp theo chứa các phần tử của dãy số là các số có trị tuyệt đối không vượt quá <span class="mjpage"><svg aria-labelledby="MathJax-SVG-7-Title" focusable="false" height="2.176ex" role="img" style="vertical-align: -0.338ex;" viewbox="0 -791.3 2502.5 936.9" width="5.812ex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title id="MathJax-SVG-7-Title">40000</title>
+<defs aria-hidden="true">
+<path d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" id="E7-MJMAIN-34" stroke-width="1"></path>
+<path d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" id="E7-MJMAIN-30" stroke-width="1"></path>
+</defs>
+<g aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+<use xlink:href="#E7-MJMAIN-34"></use>
+<use x="500" xlink:href="#E7-MJMAIN-30" y="0"></use>
+<use x="1001" xlink:href="#E7-MJMAIN-30" y="0"></use>
+<use x="1501" xlink:href="#E7-MJMAIN-30" y="0"></use>
+<use x="2002" xlink:href="#E7-MJMAIN-30" y="0"></use>
+</g>
+</svg></span>.</li>
+</ul>
+<h4>Dữ liệu ra:</h4>
+<ul>
+<li>Ghi ra một số nguyên là tích nhỏ nhất có thể của hai phần tử khác nhau được chọn từ dãy đã cho.</li>
+</ul>
+<h4>Ví dụ:</h4>
+<h5>Dữ liệu vào:</h5>
+<div class="ui existing segment"><pre style="margin-top: 0; margin-bottom: 0; "><code>3
+1
+-3
+2
+</code></pre></div>
+<h5>Dữ liệu ra:</h5>
+<div class="ui existing segment"><pre style="margin-top: 0; margin-bottom: 0; "><code>-6
+</code></pre></div>
+</div>
+</div>

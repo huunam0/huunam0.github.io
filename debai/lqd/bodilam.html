@@ -1,0 +1,50 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Bố Henry đi làm</h2>
+</div><div class="content-description screen">
+<div><p>Là người Bố đầy trách nhiệm với con cái, nên trước khi đi làm, bố đã cho Henry một bài toán và yêu cầu anh ấy phải hoàn thành trước khi Bố trở về nhà, bài toán như sau:</p>
+<p>Cho một bảng có kích thước \(n\text{ x }m\) (\(n\) hàng và \(m\) cột) gồm các ô vuông, và tại mỗi ô vuông chứa một số nguyên. Gọi \(S_{k_i}\) là tổng giá trị của \(k_i\) ô vuông đầu tiên của hàng thứ \(i(1\le i\le n,0&lt;k_i\le m)\) (tính từ trái sang). Nhiệm vụ của Henry là tìm các số \(k_i\) thỏa mãn 2 điều kiện sau:</p>
+<ul>
+<li><p>\(k_1&gt;k_2&lt;k_3&gt;k_4...k_n\) (các dấu \(&gt;,&lt;\) xen kẻ nhau)</p>
+</li>
+<li><p>\(Q= \sum\limits_{i=1}^{n}S_{k_i}\) đạt giá trị lớn nhất.</p>
+</li>
+</ul>
+<p>Nhưng vì không muốn làm khó con mình, nên bố Henry chỉ yêu cầu tìm ra \(Q\) là được rồi !</p>
+<p>Là người bạn tốt của \(Henry\), hãy giúp anh ấy một tay nhé !</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa 2 số nguyên \(n,m(2\le n,m\le 1500)\).</p>
+</li>
+<li><p>Dòng thứ hai là bảng có kích thước \(n\text{ x } m\) gồm các ô có chứa số nguyên. (Các số nguyên này có giá trị tuyệt đối không quá \(10000\))</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra giá trị \(Q\) lớn nhất cần tìm.</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input 1:</strong></p>
+<pre><code>3 3
+1 2 3
+2 3 1
+1 2 3</code></pre>
+<p><strong>Output 1:</strong></p>
+<pre><code>17</code></pre>
+<p><strong>Input 2:</strong></p>
+<pre><code>3 3
+1 2 3
+-1 -2 -3
+1 2 3</code></pre>
+<p><strong>Output 2:</strong></p>
+<pre><code>11</code></pre>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li><p>Ở ví dụ 1: Ta sẽ chọn \(k_1=3,k_2=2,k_3=3\). Khi đó \(Q\) đạt giá trị lớn nhất là \((1+2+3)+(2+3)+(1+2+3)=17\)</p>
+</li>
+<li><p>Ở ví dụ 2: Ta sẽ chọn \(k_1=3,k_2=1,k_3=3\). Khi đó \(Q\) đạt giá trị lớn nhất là \((1+2+3)+(-1)+(1+2+3)=11\)</p>
+</li>
+</ul>
+<p><strong>Nguồn:</strong> Tham khảo từ codeforces - Tag : DP</p>
+</div>
+<hr/>
+</div>

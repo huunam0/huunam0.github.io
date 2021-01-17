@@ -1,0 +1,59 @@
+<div class="tm-box2">
+<div class="problem-name">
+    CIRCUS - Biểu diễn xiếc  
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p> </p>
+<p style="text-align: justify;">Xe đạp một bánh là hình ảnh quen thuộc trong các tiết mục biểu diễn xiếc. Để tăng tính hấp dẫn cho <img alt="" src="../../ckfinder/userfiles/images/CIRCUS.png" style="float:right; height:155px; width:300px"/>tiết mục, đạo diễn quyết định "tin học hoá" nó: chia bánh xe đạp đặc (không có nan hoa) thành 5 sector, mỗi sector 720 và sơn 1 trong 5 màu khác nhau đánh số từ 1 đến 5. Sàn diễn được chia thành lưới M x N ô vuông, mỗi ô vuông có cạnh bằng 1/5 chu vi của bánh xe. Như vậy khi bánh xe tiếp xúc với sàn tại tâm của ô vuông theo một màu nào đó, thì sang ô bên cạnh - màu khác sẽ tiếp xúc với nó (Màu 5 thành 4, 4 thành 3, 3 thành 2, 2 thành 1, 1 thành 5).</p>
+<p>Diễn viên phải xuất phát từ ô ban đầu S tiến tới ô đích T sau khoảng thời gian ngắn nhất theo các qui<br/>
+tắc sau:</p>
+<ul>
+<li>Quay mặt về phía nào thì phải theo hướng đó</li>
+<li>Chỉ được phép đi qua các ô trống</li>
+<li>Tại tâm một ô có thể xoay 90<sup>0</sup> về phía phải hay trái</li>
+<li>Xuất phát ở trạng thái màu CS tiếp xúc với sàn và kết thúc ở T với màu cT tiếp xúc với sàn.</li>
+<li>Mỗi thao tác xoay hoặc chuyển sang ô mới mất 1 giây</li>
+<li>Ban đầu, diễn viên quay mặt về phía Bắc (Các dòng được dánh số từ 1 đến M theo chiều Bắc - Nam và các cột được đánh số từ 1 đến N theo chiều Tây - Đông)</li>
+</ul>
+<p><strong>Input:</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa 4 số nguyên M, N, cS, cT (0&lt;M,N&lt;=50)</li>
+<li>M dòng sau: mỗi dòng chứa một xâu N ký tự mô tả trạng thái của các dòng tương ứng với S - ô xuất phát, T - ô đích, # - ô có vật cản, dấu chấm (.) - ô trống.</li>
+</ul>
+<p><strong>Output</strong>:Thời gian hoặc -1, nếu không thể đi được. </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">10 10 1 1<br/>
+<span style="font-family:courier new,courier,monospace">#S.......#<br/>
+#..#.##.##<br/>
+#.##.##.##<br/>
+.#....##.#<br/>
+##.##..#.#<br/>
+#..#.##...<br/>
+#......##.<br/>
+..##.##...<br/>
+#.###...#.<br/>
+#.....###T </span></p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">49</p>
+<hr/>
+<p><em>Nguồn: NTB Hải Dương</em></p>
+</div>
+</div>

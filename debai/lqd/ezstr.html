@@ -1,0 +1,31 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Đoạn con bằng k</h2>
+</div><div class="content-description screen">
+<div><p><span class="rating rate-none admin"><a href="/user/ami">ami</a></span> có một xâu kí tự nhị phân <strong>\(S\)</strong> định làm quà tặng cho đội trưởng đội tuyển quốc gia tin học Thanh Ngọc nhân dịp đội trưởng đạt được một tầm cao mới trên Codeforces. Thanh Ngọc là một người đơn giản, nhưng vô cùng tinh tế, cậu không thích những thứ quá lớn. Do đó, Thanh Ngọc đã đánh giá mòn quà của <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> qua <strong>\(q\)</strong> câu hỏi, mỗi câu hỏi là một số tự nhiên <strong>\(k\)</strong>. <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cần trả lời xem, với mỗi số tự nhiên <strong>\(k\)</strong> có tồn tại một đoạn con liên tiếp của xâu <strong>\(S\)</strong> mà tổng các kí tự trong đoạn con này đúng bằng <strong>\(k\)</strong> hay không.</p>
+<p>Do <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> quá bận rộn, các bạn hãy giúp <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> trả lời câu hỏi này nhé.</p>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa một số nguyên dương \(n\) là độ dài xâu \(S\) của <span class="rating rate-none admin"><a href="/user/ami">ami</a></span>.
+Dòng tiếp theo chứ xâu \(S\) độ dài đúng bằng \(n\).
+Dòng tiếp theo là một số nguyên dương \(q\) là số câu hỏi mà Thanh Ngọc sẽ hỏi.
+\(q\) dòng cuồi cùng, mỗi dòng là một số nguyên không âm \(k\) là một câu hỏi của Thanh Ngọc.</p>
+<h4>Output</h4>
+<p>In ra \(q\) dòng, với mỗi dòng, in "Ami Dep Trai" nếu tồn tại một đoạn con liên tiếp của \(S\) có tổng bằng \(k\), hoặc in ra "Luong Xiao Lin" trong trường hợp ngược lại.</p>
+<h4>Sample Input 1</h4>
+<pre><code>3
+110
+3
+1
+2
+100000</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>Ami Dep Trai
+Ami Dep Trai
+Luong Xiao Lin</code></pre>
+<h4>Giải thích</h4>
+<p>Các xâu con của \(|110|\) là |11| , |10| , |1| , |1| , |0| , |110|, tương ứng với tổng là 2 , 1 , 1 , 1 , 0 , 2.</p>
+<h4>Giới hạn</h4>
+<p>\(30\)% test có \(n , k \leq 10^3, q \leq 10^5\)</p>
+<p>\(70\)% test có \(n, q , k \leq 10^5\)</p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,39 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    ZEROPATH - Phân tích số 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Mỗi một số nguyên dương đều có thể biểu diễn dưới dạng tích của 2 số nguyên dương X,Y sao cho X&lt;=Y . Nếu như trong phân tích này ta thay X bởi X-1 còn Y bởi Y+1 thì sau khi tính tích của chúng ta thu được hoặc là một số nguyên dương mới hoặc là số 0 .</p>
+<p>Ví Dụ : Số 12 có 3 cách phân tích 1*12 ,3*4 , 2*6  . Cách phân tích thứ nhất cho ta tích mới là 0 : (1-1)*(12+1) = 0 , cách phân tích thứ hai cho ta tích mới 10 : (3-1)*(4+1) = 10 , còn cách phân tích thứ ba cho ta 7 : (2-1)*(6+1)=7 . Nếu  kết quả là khác 0 ta lại lặp lại thủ tục này đối với số thu được . Rõ ràng áp dụng liên tiếp thủ tục trên , cuối cùng ta sẽ đến được số 0 , không phụ thuộc vào việc ta chọn cách phân tích nào để tiếp tục</p>
+<p><strong>Yêu cầu</strong> :    Cho trước số nguyên dương N ( 1&lt;=N&lt;=100000) , hãy đưa ra tất cả các số nguyên dương khác nhau có thể gặp trong việc áp dụng thủ tục đã mô tả đối với N .</p>
+<p><strong>Dữ liệu</strong> :     1 dòng chứa số nguyên dương N .</p>
+<p><strong>Kết quả</strong> :     Gồm 2 dòng</p>
+<p>Dòng đầu tiên ghi K là số lượng số tìm được</p>
+<p>Dòng tiếp theo chứa K số tìm được theo thứ tự tăng dần bắt đầu từ số 0 .</p>
+<p><strong>Lưu ý</strong> :        Có thể có số xuất hiện trên nhiều đường biến đổi khác nhau , nhưng nó chỉ được tính một lần trong kết quả .</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">12</div>
+<div class="sample-type">output</div>
+<div class="sample-value">6<br/>0 3 4 6 7 10</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

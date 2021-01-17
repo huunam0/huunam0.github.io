@@ -1,0 +1,38 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    PTSO3 - Phân tích số 3 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">Cho một số nguyên dương <strong>N</strong>, hãy phân tích N thành tổng của ít nhất 2 số nguyên  dương liên tiếp. Nếu có nhiều kết quả, xuất ra dãy có số lượng số hạng là ít nhất.</p>
+<p style="text-align:justify"><strong>Dữ liệu nhập:</strong> dòng đầu tiên chứa một số nguyên <strong>T</strong> - số lượng test case (T <span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif">≤ 50000)</span>. T dòng tiếp theo, mỗi dòng chứa một số nguyên dương <strong>N</strong> (1 <span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif">≤ N ≤ 10<sup>9</sup>)</span></p>
+<p style="text-align:justify"><span style="color:rgb(37, 44, 51); font-family:open sans,sans-serif"><strong>Dữ liệu xuất:</strong> mỗi test case xuất ra trên một dòng. Nếu không thể phân tích thì xuất -1. Nếu có kết quả thì xuất ra theo mẫu sau: </span><strong>N = l + (l+1) + ... + r</strong></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>8<br/>10<br/>24<br/>35<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">-1<br/>10 = 1 + 2 + 3 + 4<br/>24 = 7 + 8 + 9<br/>35 = 17 + 18</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p> - N = 8 không thể phân tích thành bất kì tổng của các số liên tiếp nên xuất ra là -1</p>
+<p> - N = 10 có thể phân tích thành 10 = 1 + 2 + 3 + 4</p>
+<p> - N = 24 = 7 + 8 + 9</p>
+<p> - N = 35 = 2 + 3 + 4 + 5 + 6 + 7 + 8 = 5 + 6 + 7 + 8 + 9 = 17 + 18. Kết quả xuất ra là 35 = 17 + 18 vì có số lượng số hạng là ít nhất.</p>
+</div>
+</div></body></html>

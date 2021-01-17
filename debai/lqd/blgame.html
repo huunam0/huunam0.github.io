@@ -1,0 +1,42 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Trò chơi khối hộp</h2>
+</div><div class="content-description screen">
+<div><p>Trò chơi khối hộp là một trò chơi với một khối hộp chữ nhật kích thước \(a × b × c\) đơn vị trên lưới hình chữ nhật \(H\) được chia thành \(m × n\) ô vuông đơn vị. Các hàng của lưới được đánh số từ 1 tới \(m\) từ trên xuống dưới và các cột của lưới được đánh số từ 1 tới \(n\) từ trái qua phải. Ô nằm trên giao của hàng \(i\) và cột \(j\) được gọi là ô \((i, j)\). Ban đầu, khối hộp được đặt ở góc trái trên của lưới \(H\), cụ thể mặt đáy khối hộp chiếm đúng \(a × b\) ô của lưới, là các ô nằm trong hình chữ nhật con của lưới \(H\) với ô ở góc trái trên là \((1,1)\) và ô ở góc phải dưới là \((a,b)\). Mỗi bước, người chơi có thể thực hiện một trong các loại thao tác sau:</p>
+<ul>
+<li>Đẩy khối hộp tịnh tiến lên trên, xuống dưới, sang trái hoặc sang phải một ô;</li>
+<li>Lật khối hộp lên trên, xuống dưới, sang trái hoặc sang phải một ô.</li>
+</ul>
+<p>Ví dụ, các hình vẽ trong <em>Hình 2</em> dưới đây mô tả vị trí của khối hộp kích thước \(1 × 2 × 1\) sau khi thực hiện từng loại thao tác.</p>
+<p><img alt="enter image description here" src="http://lequydon.ntucoder.net/ckfinder/userfiles/images/BLGAME.png"/></p>
+<p>Khi bắt đầu chơi, tất cả các ô mà khối hộp đè lên được bật sáng màu xanh và có \(k\) ô khác trên lưới được bật sáng màu đỏ, các ô còn lại ở trạng thái tắt. Một thao tác được gọi là hợp lệ, nếu sau khi thực hiện thao tác này, khối hộp vẫn nằm gọn trên lưới \(H\) và không đè lên ô sáng màu đỏ nào. Sau khi một thao tác được thực hiện, những ô bị khối hộp đè lên đang ở trạng thái tắt sẽ được bật sáng màu xanh, những ô đang sáng xanh vẫn giữ nguyên trạng thái bật sáng màu xanh. Nhiệm vụ của người chơi là tìm cách thực hiện dãy các thao tác hợp lệ để bật được nhiều ô sáng màu xanh nhất.</p>
+<p><strong>Yêu cầu</strong>: Cho kích thước khối hộp, kích thước của lưới \(H\) và vị trí của các ô sáng màu đỏ, hãy xác định số lượng nhiều nhất các ô được bật sáng màu xanh mà người chơi có thể đạt được.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng thứ nhất chứa sáu số nguyên dương \(a, b, c, m, n, k,\) các số được ghi cách nhau bởi dấu cách;</li>
+<li>Dòng thứ \(s\) trong số \(k\) dòng tiếp theo chứa hai số nguyên dương được ghi cách nhau bởi dấu cách \(x_s, y_s\) là tọa độ của một ô đã bật sáng màu đỏ \((s = 1, 2, ..., k)\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra một số nguyên duy nhất là số lượng nhiều nhất các ô được bật sáng màu xanh mà người chơi có thể đạt được.</li>
+</ul>
+<p><strong>Input</strong></p>
+<pre><code>1 2 1 3 3 2
+2 2
+3 3</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>7</code></pre>
+<p><strong><em>Giải thích</em></strong></p>
+<p>Hình vẽ bên phải mô tả trạng thái bắt đầu trò chơi, trong đó hai ô tô đen là các ô sáng màu đỏ. Người chơi có thể thực hiện dãy thao tác: Lật sang phải, đẩy xuống dưới, đẩy lên trên, đẩy sang trái, đẩy sang trái, đẩy xuống dưới, đẩy xuống dưới, cuối cùng đẩy sang phải để bật được 7 ô của lưới sáng màu xanh.</p>
+<p><img alt="enter image description here" src="http://lequydon.ntucoder.net/ckfinder/userfiles/images/BLGAME1.png"/></p>
+<p>Ràng buộc:</p>
+<ul>
+<li>Có 25% số test ứng với 25% số điểm của bài có \(a = b = c = 1; m, n ≤ 100\);</li>
+<li>Có 25% số test khác ứng với 25% số điểm của bài có \(a = b = c; m, n ≤ 100\);</li>
+<li>Có 25% số test khác ứng với 25% số điểm của bài có \(m, n ≤ 100\);</li>
+<li>25% số test còn lại ứng với 25% số điểm của bài có \(m, n ≤ 1000\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 3D 20172018</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,46 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    SUDO - Sudoku 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Cho ma trận Sudoku với kích thước 9x9 như hình vẽ.</p>
+<p style="text-align:center"><img alt="" src="images/Sudoku_1.png" style="height:236px; width:236px"/>  <img alt="" src="images/Sudoku2.png" style="height:236px; width:236px"/></p>
+<p>Luật chơi khá đơn giản. Với các ô đã cho trước ở hình 1, bạn hãy điền vào tất cả các ô còn lại trong ma trận sao cho trên các dòng, luôn xuất hiện tất cả các số từ 1 đến 9, tương tự, trên các cột và trong 9 ma trận nhỏ 3x3 cũng phải xuất hiện tất cả các số từ 1 đến 9 (như trong đáp án ở hình 2).</p>
+<p><strong>Yêu cầu:</strong> Cho ma trận kích thước 9x9, các ô trống được biểu diễn bằng chữ số 0, còn các ô chứa số cho trước thì biểu diễn chính số đó. Hãy xuất ra ma trận đáp án.</p>
+<p><strong>Dữ liệu nhập:</strong> Là ma trận 9x9, mỗi số trên một dòng cách nhau một khoảng trống, chứa các số từ 0 đến 9. Trong đó các số 0 là ô trống cần tìm. Dữ liệu đề bài cho đảm bảo là hợp lệ (không có 2 số giống nhau trên cùng dòng, cùng cột hay cùng ô vuông 3x3 nhỏ).</p>
+<p><strong>Dữ liệu xuất: </strong></p>
+<p>- Nếu không có đáp án in ra một số duy nhất là -1.</p>
+<p>- Nếu có đáp án, in ra ma trận 9x9 của trò chơi, các số trên một dòng cách nhau một khoảng trống. Nếu có nhiều đáp án, chỉ cần xuất một đáp án bất kỳ.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 3 0 0 7 0 0 0 0<br/>6 0 0 1 9 5 0 0 0<br/>0 9 8 0 0 0 0 6 0<br/>8 0 0 0 6 0 0 0 3<br/>4 0 0 8 0 3 0 0 1<br/>7 0 0 0 2 0 0 0 6<br/>0 6 0 0 0 0 2 8 0<br/>0 0 0 4 1 9 0 0 5<br/>0 0 0 0 8 0 0 7 9</div>
+<div class="sample-type">output</div>
+<div class="sample-value">5 3 4 6 7 8 9 1 2<br/>6 7 2 1 9 5 3 4 8<br/>1 9 8 3 4 2 5 6 7<br/>8 5 9 7 6 1 4 2 3<br/>4 2 6 8 5 3 7 9 1<br/>7 1 3 9 2 4 8 5 6<br/>9 6 1 5 3 7 2 8 4<br/>2 8 7 4 1 9 6 3 5<br/>3 4 5 2 8 6 1 7 9</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">0 0 0 0 0 0 0 0 0<br/>0 0 0 0 0 0 0 0 0<br/>0 0 0 0 0 0 0 0 0<br/>0 0 0 0 0 0 0 0 0<br/>0 0 0 0 0 0 0 0 0<br/>0 0 0 0 0 0 0 0 0<br/>0 0 0 0 0 0 0 0 0<br/>0 0 0 0 0 0 0 0 0<br/>0 0 0 0 0 0 0 0 0</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1 2 3 4 5 6 7 8 9<br/>4 5 6 7 8 9 1 2 3<br/>7 8 9 1 2 3 4 5 6<br/>2 1 4 3 6 5 8 9 7<br/>3 6 5 8 9 7 2 1 4<br/>8 9 7 2 1 4 3 6 5<br/>5 3 1 6 4 2 9 7 8<br/>6 4 2 9 7 8 5 3 1<br/>9 7 8 5 3 1 6 4 2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><span style="color:#FF0000">(Nguồn: </span><u><a href="http://laptrinh.ntu.edu.vn/Coder/Details/VietNamVoDich"><span style="color:#FF0000">VietNamVoDich</span></a></u><span style="color:#FF0000">)</span></p>
+</div>
+</div></body></html>

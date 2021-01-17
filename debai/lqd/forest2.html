@@ -1,0 +1,33 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Khu Rừng 2</h2>
+</div><div class="content-description screen">
+<div><p>Chúa đất vùng rừng <strong>AnLuuLand</strong> sau khi cho người anh hùng <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> chọn một vùng đất đã nhận ra sai lầm của mình khi cho phép phá rừng để làm nương rẫy, làm giảm diện tích rừng gây ảnh hưởng lớn đến biến đổi khí hậu.</p>
+<p>Để khắc phục hậu quả, chúa đất quyết định trồng cây vào khu vực trống trước đó. Khu vực trống có thể xem là một hình chữ nhật gồm \(m\) hàng và \(n\) cột. Ban đầu trên này chưa hề có cây. Chúa trồng lên mỗi ô một cây xanh, ban đầu mỗi cây cao \(1 cm\). Mỗi tuần chúa đất ra lệnh bón phân cho một khu hình chữ nhật: \((x, y, u, v, c)\) bón cho mỗi cây có tọa độ thuộc vào hình chữ nhật có góc trái trên là \((x,y\)) và góc phải dưới là \((u,v)\) thêm \(c\) <strong>(gr)</strong> phân bón. Mỗi cây xanh khi nhận được \(1\) <strong>(gr)</strong> phân bón sẽ cao thêm \(1 (cm).\)</p>
+<p>Sau \(k\) tuần chúa đất muốn biết tình trạng độ cao của cây xanh trong khu vực này. Nhiệm vụ của bạn thống kê điều đó cho chúa đất.</p>
+<hr/>
+<p><strong>Dữ liệu nhập:</strong></p>
+<ul>
+<li><p>Dòng 1: Gồm 3 số \(m, n , k (1 \leq m, n \leq 1000, 1 ≤ k ≤ 10^5).\)</p>
+</li>
+<li><p>\(k\) dòng sau, mỗi dòng gồm 5 số nguyên \((x,y,u,v,c)\) là một yêu cầu bón phân của chúa đất. \((1 ≤  x, u ≤  m, 1 ≤  y, v ≤  n, 1 ≤  c ≤ 10^6)\)</p>
+</li>
+</ul>
+<hr/>
+<p><strong>Kết quả:</strong></p>
+<ul>
+<li>in ra \(m\) dòng, mỗi dòng gồm \(n\) số nguyên cách nhau một dấu cách là tình trạng độ cao cây của khu rừng sau \(k\) tuần được bón phân.</li>
+</ul>
+<hr/>
+<p><strong>Sample Input</strong></p>
+<pre><code>4 5 3
+1 1 4 5 1
+1 1 2 2 2
+1 2 1 4 3</code></pre>
+<p><strong> Sample Output</strong></p>
+<pre><code>4 7 5 5 2
+4 4 2 2 2
+2 2 2 2 2
+2 2 2 2 2</code></pre>
+</div>
+<hr/>
+</div>

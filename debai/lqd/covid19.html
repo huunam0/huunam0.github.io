@@ -1,0 +1,54 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Covid'19 (DHBB CT)</h2>
+</div><div class="content-description screen">
+<div><p>Dịch Covid-19 đã được kiểm soát, trong gần một tháng qua, tại Việt nam không có ca nhiễm
+mới trong cộng đồng. Lệnh cách ly đã được nới lỏng, Hồng và các bạn được đi học trở lại, đó
+cũng là thời điểm thầy Phương mở trại HCC cho các bạn yêu thích lập trình, một hoạt động
+mà thầy đã duy trì trong nhiều năm qua. Tham gia HCC, Hồng rất thích thú với một bài toán
+của thầy Phương, bài toán mô phỏng việc di chuyển của virus, cụ thể bài toán như sau:
+Xét lưới ô vuông thước \(𝑚 × 𝑛\), các dòng được đánh số từ 1 đến \(𝑚\) từ trên xuống, các cột được
+đánh số từ 1 đến \(𝑛\) từ trái sang phải. Ô nằm trên giao của dòng \(𝑖\), cột \(𝑗\) được gọi là ô (\(𝑖,𝑗\)) và
+ô này chứa một số nguyên dương \(a(𝑖,𝑗)\). Nếu một virus đang ở ô \((𝑥, 𝑦)\), virus có thể thực
+hiện bước di chuyển sau:</p>
+<ul>
+<li>Virus di chuyển sang ô kề cạnh với ô (\(𝑥, 𝑦\)) nằm trong lưới, việc di chuyển này mất 1
+đơn vị thời gian;</li>
+<li>Virus di chuyển sang ô (\(𝑢, 𝑣\)) nằm trong lưới nếu \(𝑢 × 𝑣 = 𝑎(𝑥, 𝑦)\), việc di chuyển này
+mất 3 đơn vị thời gian.</li>
+</ul>
+<p>Bài toán yêu cầu tính thời gian nhỏ nhất để virus di chuyển từ ô \((𝑝, 𝑞)\) đến ô \((𝑟, 𝑠)\).</p>
+<p>Đây là bài toán khó đối với Hồng nên Hồng nhờ các anh chị tham gia kỳ thi Duyên Hải năm
+2020 giải giúp.</p>
+<p><strong>Yêu cầu</strong>: Cho lưới kích thước \(𝑚 × 𝑛\) và các số trên lưới. Có \(ℎ\) câu hỏi, với câu hỏi thứ \(𝑘\ (𝑘 =1, 2, . . . , ℎ)\) cần phải trả lời thời gian nhỏ nhất để virus di chuyển từ ô \((𝑝_𝑘, 𝑞_𝑘)\) đến ô \((𝑟_𝑘, 𝑠_𝑘)\)là bao nhiêu?</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng đầu chứa ba số nguyên dương \(𝑚, 𝑛, ℎ\ (ℎ ≤ 5)\);</li>
+<li>Dòng thứ \(𝑖\ (𝑖 = 1, 2, … , 𝑚)\) trong \(𝑚\) dòng tiếp theo chứa \(𝑛\) số nguyên dương \(𝑎(𝑖, 1), 𝑎(𝑖, 2), … , 𝑎(𝑖, 𝑛)\). Các số có giá trị không vượt quá \(10^6\).</li>
+<li>Dòng thứ \(𝑘\ (𝑘 = 1, 2, … , ℎ)\) trong \(ℎ\) dòng tiếp theo chứa bốn số nguyên \(𝑝_𝑘, 𝑞_𝑘, 𝑟_𝑘, 𝑠_𝑘\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra \(ℎ\) dòng, dòng thứ \(𝑘\ (𝑘 = 1, 2, … , ℎ)\) ghi một số nguyên là thời gian nhỏ nhất để virus di chuyển từ ô (\(𝑝_𝑘, 𝑞_𝑘\)) đến ô (\(𝑟_𝑘, 𝑠_𝑘\)).</li>
+</ul>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>2 5 2
+8 6 4 1 1
+1 1 1 1 1
+1 1 2 5
+2 5 1 1</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>4
+3</code></pre>
+<p><strong><em>Giới hạn</em></strong></p>
+<ul>
+<li>Có 20% số lượng test ứng với 20% số điểm thỏa mãn điều kiện: \(𝑚 × 𝑛 ≤ 10^2\);</li>
+<li>Có 20% số lượng test khác ứng với 20% số điểm thỏa mãn điều kiện: \(𝑚 × 𝑛 ≤ 10^3\);</li>
+<li>Có 20% số lượng test ứng khác với 20% số điểm thỏa mãn điều kiện: \(𝑚 × 𝑛 ≤ 10^4\);</li>
+<li>Có 20% số lượng test khác ứng với 20% số điểm thỏa mãn điều kiện: \(𝑚 × 𝑛 ≤ 10^5\);</li>
+<li>Có 20% số lượng test còn lại ứng với 20% số điểm thỏa mãn điều kiện: \(𝑚 × 𝑛 ≤ 10^6\)</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2020 Chính thức</em></p>
+</div>
+<hr/>
+</div>

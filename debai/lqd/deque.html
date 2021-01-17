@@ -1,0 +1,43 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Phép toán với ngăn xếp hai đầu</h2>
+</div><div class="content-description screen">
+<div><p>\(Kaninho\) và \(Henry\) chơi với nhau một trò chơi như sau:</p>
+<p>Ban đầu, họ được cho một dãy số \(a=(a_1,a_2,...,a_N)\). Họ lần lượt thực hiện phép toán dưới đây cho đến khi dãy \(a\) rỗng, bắt đầu từ \(Kaninho\):</p>
+<ul>
+<li>Loại bỏ phần tử đầu tiên hoặc cuối cùng của dãy \(a\). Người chơi đó sẽ kiếm được \(x\) điểm, với \(x\) là phần tử bị loại bỏ.</li>
+</ul>
+<p>Gọi \(X\) và \(Y\) lần lượt là số điểm của \(Kaninho\) và \(Henry\) sau khi trò chơi kết thúc. \(Kaninho\) cố gắng làm \(X-Y\) lớn nhất có thể, trong khi \(Henry\) muốn \(X-Y\) nhỏ nhất có thể.</p>
+<p>Giả sử cả hai người đều chơi tối ưu, tìm giá trị của \(X-Y\).</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa số nguyên \(N(1\le N\le 3000)\)</p>
+</li>
+<li><p>Dòng thứ hai, chứa \(n\) số nguyên \(a_1,a_2,...,a_N(1\le a_i\le 10^9)\)</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra giá trị cần tìm</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>4
+10 80 90 30</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>10</code></pre>
+<p><strong>Giải thích:</strong> Quá trình chơi tối ưu của hai người chơi như sau:</p>
+<ul>
+<li><p>\(Kaninho: (10,80,90,30)\rightarrow (10,80,90)\)</p>
+</li>
+<li><p>\(Henry: (10,80,90)\rightarrow (10,80)\)</p>
+</li>
+<li><p>\(Kaninho:(10,80)\rightarrow (10)\)</p>
+</li>
+<li><p>\(Henry: (10)\rightarrow ()\)</p>
+</li>
+</ul>
+<p>Ở đây \(X=30+80=110\) và \(Y=90+10=100\)</p>
+<p><strong>Nguồn:</strong> DP Contest Atcoder</p>
+</div>
+<hr/>
+</div>

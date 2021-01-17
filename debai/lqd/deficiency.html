@@ -1,0 +1,37 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Thiếu hụt</h2>
+</div><div class="content-description screen">
+<div><p>Trong quỹ của một Công ty còn \(s\) đồng. Trong \(m\) ngày tới sẽ có \(n\) giao dịch liên quan tới thu chi:
+một số công việc đã hoàn thành và đối tác sẽ chuyển khoản vào quỹ của công ty một số tiền trong
+khoảng các ngày từ \(a\) đến \(b\) (kể cả \(b\)) hoặc phải trả một khoản tiền thanh toán cho vật tư đã mua,
+yêu cầu chi trả sẽ đến trong khoảng các ngày từ \(x\) đến \(y\) (kể cả \(y\)).</p>
+<p>Khi có yêu cầu chi trả Công ty phải trả ngay trong ngày nhận được thông báo. Việc chuyển tiền
+vào tài khoảng của Công ty có thể được thực hiện ở ngày bất kỳ trong phạm vi từ \(a\) đến \(b\).</p>
+<p>Nếu trong một ngày xuất hiện nhiều giao dịch – có thể thực hiện chúng theo trình tự tùy chọn.</p>
+<p>Hãy xác định có thể xẩy ra tình trạng ở một ngày nào đó Công ty không có đủ tiền đáp ứng yêu
+cầu chi trả hay không.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa 3 số nguyên \(n, m, s\) (\(1 ≤ n, m ≤ 1000, 1 ≤ s ≤ 10^6\)),</li>
+<li>Mỗi dòng trong \(n\) dòng sau chứa 3 số nguyên \(t, d1, d2\), trong đó nếu \(t &gt; 0\) là số tiền sẽ
+được chuyển tới, \(t &lt; 0\) – cần chi trả, \(|t| ≤ 10^6, 1 ≤ d1 ≤ d2 ≤ m\) – phạm vi ngày có thể xuất
+hiện giao dịch.</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Đưa ra thông báo <strong>YES</strong> nếu có khả năng xẩy ra thiếu
+tiền hoặc <strong>NO</strong> trong trường hợp ngược lại.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>4 3 100
+100 1 2
+-100 1 2
+1 2 3
+1 2 2</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>YES</code></pre>
+<hr/>
+<p><em>Nguồn: Thầy Tùng</em></p>
+</div>
+<hr/>
+</div>

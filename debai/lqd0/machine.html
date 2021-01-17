@@ -1,0 +1,45 @@
+<div class="tm-box2">
+<div class="problem-name">
+    MACHINE - Xếp lịch thí nghiệm 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">Một kỹ sư cần lập lịch cho một máy chạy trên một số giai đoạn nằm trong <em>n</em> thời điểm <em>1, . . . , n</em> để làm thí nghiệm sản xuất ra chất <em><strong>B</strong></em>. Mỗi giai đoạn <em>i</em> được cho bởi thời điểm bắt đầu <em>s<sub>i</sub></em> và thời điểm kết thúc <em>t<sub>i</sub></em> (<em>s<sub>i</sub> &lt; t<sub>i</sub></em>). Vì lý do kỹ thuật nên không có hai giai đoạn nào giao nhau, (hai giai đoạn <em>i</em> và <em>j</em> là không giao nhau nếu <em>t<sub>i</sub> &lt; s<sub>j</sub></em> hoặc <em>t<sub>j</sub> &lt; s<sub>i</sub></em>). Nếu thí nghiệm chạy vào giai đoạn <em>i</em> thì lượng chất <strong><em>B</em></strong> được sản xuất ra sẽ bằng <em>t<sub>i</sub> − s<sub>i</sub></em> đơn vị.</p>
+<p style="text-align:justify"><strong>Yêu cầu</strong>: Hãy giúp anh kỹ sư chọn được <em>k (k ≤ 3)</em> giai đoạn không giao nhau sao cho tổng lượng chất <strong><em>B</em></strong> sản xuất được là lớn nhất.</p>
+<p style="text-align:justify"><strong>Dữ liệu vào</strong></p>
+<p style="margin-left:40px; text-align:justify">• Dòng 1: chứa hai số nguyên dương <em>n k</em> (<em>2 ≤ n ≤ 10<sup>6</sup> , k ≤ 3</em>);<br/>
+• Dòng i + 1:chứa hai số nguyên dương <em>s<sub>i</sub></em> và <em>t<sub>i</sub></em> (<em>s<sub>i</sub> &lt; t<sub>i</sub> ≤ 3 × 10<sup>6</sup></em> )</p>
+<p style="text-align:justify"><strong>Kết quả </strong></p>
+<p style="margin-left:40px; text-align:justify">Ghi ra duy nhất một số nguyên là lượng chất B thu được. Ghi ra -1 nếu không có phương án chọn.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">5 2<br/>
+8 12<br/>
+6 11<br/>
+3 9<br/>
+2 5<br/>
+1 4</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">8</p>
+<p><strong><em>Giải thích</em></strong></p>
+<p style="margin-left:40px">Máy sẽ chạy tốt nhất trên hai giai đoạn không giao nhau [2, 5] và [6, 11] và sẽ thu được 8 đơn vị chất <strong><em>B</em></strong>. </p>
+<hr/>
+<p><em>Nguồn: ĐPT '1819</em></p>
+</div>
+</div>

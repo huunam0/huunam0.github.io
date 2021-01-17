@@ -1,0 +1,38 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">00 và 11</h2>
+</div><div class="content-description screen">
+<div><p>Từ xâu nhị phân \(𝑆_0 = \)<code>1</code>, người ta sinh ra các xâu \(𝑆_1, 𝑆_2, … , 𝑆_𝑛\) trong đó \(𝑆_𝑖 = 𝑆_{𝑖−1} + \overline{𝑆_{𝑖−1}}\). Ở đây \(\overline{S_{i-1}}\) là xâu nhị
+phân tạo thành từ xâu \(\overline{S_{i-1}}\) bằng cách đảo hết các bit (bit 1 thành bit 0 và bit 0 thành bit 1). Ví dụ:</p>
+<p>\(𝑆_0 = \)"1"</p>
+<p>\(𝑆_1 = \)"10"</p>
+<p>\(𝑆_2 = \)"1001"</p>
+<p>\(𝑆_3 = \)"10010110"</p>
+<p>\(𝑆_4 = \)"1001011001101001"</p>
+<p><strong>Yêu cầu</strong>: Cho số nguyên dương \(𝑛\), hãy xác định trong xâu \(𝑆_𝑛\) có bao nhiêu vị trí có 2 bit liên tiếp bằng nhau (tức
+là đếm số lần xuất hiện của xâu “00” và “11” trong \(𝑆_𝑛\))</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng 1 chứa số nguyên dương \(𝑇 ≤ 10^5\) là số test</li>
+<li>\(𝑇\) dòng tiếp theo, mỗi dòng chứa một số nguyên dương \(𝑛 ≤ 10^9\) ứng với một test</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra \(𝑇\) dòng, mỗi dòng ghi một số nguyên duy nhất là số dư của kết quả tìm
+được khi chia cho \(123456789\)</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>4
+1
+2
+3
+4</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>0
+1
+2
+5</code></pre>
+<hr/>
+<p><em>Nguồn: LMH-ĐHSP</em></p>
+</div>
+<hr/>
+</div>

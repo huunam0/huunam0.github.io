@@ -1,0 +1,45 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    HMD03 - Công ti vận tải 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 32 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>            Vào một ngày đẹp trời bạn được giao quản lí một công ti vận tải. Công ti của bạn có N xe tải. Các xe chạy trên duy nhất một con đường duy nhất. Con đường này có một số lượng lối vào và lối ra xác định mà bạn không cần biết. Một tuyến xe được định nghĩa là một hành trình bắt đầu từ một lối vào và một lối ra của con đường đó.</p>
+<p>            Khi vào con đường trên các tài xế sẽ nhận được một tấm vé ở lối vào được đánh số là thứ tự lối vào mà tài xế đó sử dụng. Khi kết thúc hành trình ở lối ra, tài xế sẽ phải trả số tiền bằng độ chênh lệch thứ tự của lối ra và cé vào mà tài xế đó sử dụng. Ví dụ, tài vế vào ở lôi vào số 30 vào ra ở lối ra số 12 thì số tiền mà tài xế này phải trả là 18. Và tất cả số tiền các tài xế trả sẽ do công ti chi ra.</p>
+<p>            Bạn được giao tìm cách tiết kiệm chi phí nhiều nhất cho công ti. Bởi vì bất kì hai tài xế nào cũng có thể trao đổi vé của mình cho nhau trong quá trình di chuyển cho dù tuyến của họ không trùng nhau (bởi vì đây là vé điện tử). Các tài xế có thể đổi vé một số tùy ý lần. Tuy nhiên, một tài xế không thể qua một lối ra nếu tài xế này cầm trong tay tấm vé có cùng số thứ tự với lối ra này - tức là không bao giờ có tuyến xe nào miễn phí vì điều này sẽ khiến chính quyền nghi ngờ.</p>
+<p>            Ban cần tính tổng số tiền ít nhất phải trả để thực hiện N tuyến xe bằng cách trao đổi vé.</p>
+<p><strong><em>Dữ liệu vào</em></strong>:    - Dòng đầu tiên ghi một số duy nhất là N không lớn hơn 100000.</p>
+<p>                       - N dòng tiếp theo chứa hai số nguyên dương x và y không lớn hơn 1000000 – là lối vào và lối ra quy định của tuyến xe thứ i. Dữ liệu đảm bảo không có hai tuyến nào trùng lối vào hoặc lối ra.</p>
+<p><strong><em>Dữ liệu ra</em></strong>: Ghi ra một số duy nhất là kết quả của bài toán.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3<br/>3 65<br/>45 10<br/>60 25</div>
+<div class="sample-type">output</div>
+<div class="sample-value">32</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3<br/>5 5<br/>6 7<br/>8 8</div>
+<div class="sample-type">output</div>
+<div class="sample-value">5</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Trong ví dụ đầu tiên, tài xế chạy tuyến thứ nhất sẽ đổi vé với tài xế chạy tuyến thứ ba. Sau đó, tài sế thứ hai sẽ đổi với tài sế thứ ba. Cuối cùng, các tài xế với các vé tương ứng là 60, 3, 45. Chi phí ít nhất cần trả là    |65 - 60| + |10 - 3| + |25 - 45| = 32.</p>
+</div>
+</div></body></html>

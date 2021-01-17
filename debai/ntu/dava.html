@@ -1,0 +1,43 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    DAVA - Đào vàng 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 3.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">       Trên một vùng đất hình vuông các nhà địa chất phát hiện ra có trữ lượng vàng khá lớn. Để tiện việc khai thác, người ta chia vùng đất thành các lô nhỏ, tổng cộng có n x n lô (n dòng, n cột). Ta đánh số các dòng từ 1 đến n theo chiều từ trên xuống dưới, các cột từ 1 đến n theo chiều từ trái qua phải. Tại lô đất ở dòng i cột j, người ta đo được trữ lượng vàng là a<sub>i j</sub>. Tuy nhiên, do giới hạn về kỹ thuật chỉ cho phép khai thác trong một diện tích nhỏ gồm k x k lô mà thôi. Bạn hãy giúp chọn hình vuông k x k lô nào cần khai thác để có sản lượng vàng là lớn nhất.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng thứ nhất là 2 số nguyên n, k (1 ≤ k ≤ n ≤ 1000)</p>
+<p>- Trong n dòng tiếp theo, mỗi dòng gồm n số a<sub>i j</sub> xác định trữ lượng tại lô dòng i cột j (0 ≤ a<sub>i j</sub> ≤ 1000)</p>
+<p><strong>Dữ liệu xuất: </strong></p>
+<p>- Là một số nguyên duy nhất xác định sản lượng vàng lớn nhất khai thác được.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 3<br/>1 9 1 1<br/>9 9 9 9<br/>1 9 9 9<br/>1 9 9 14</div>
+<div class="sample-type">output</div>
+<div class="sample-value">86</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Giải thích: khai thác trong các lô đánh dấu đỏ</p>
+<pre>
+<span style="font-size:14px">1 9 1 1
+9 <strong><span style="color:rgb(255, 0, 0)">9 9 9</span></strong>
+1 <strong><span style="color:rgb(255, 0, 0)">9 9 9</span></strong>
+1 <strong><span style="color:rgb(255, 0, 0)">9 9 14</span></strong></span></pre>
+</div>
+</div></body></html>

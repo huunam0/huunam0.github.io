@@ -1,0 +1,51 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    TRUTIN - Truyền tin 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 3.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">       Nam là một học sinh rất yêu thích môn sinh học, cậu thích khám phá các loài động thực vật. Trong chuyến đi hang Sơn Đoòng mùa hè này, cậu đã khám phá được N loài động thực vật lạ. Một loài được mã hóa bởi một chuỗi K ký tự la tinh viết hoa (<span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">1 </span><span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ K ≤ 200</span>). Phấn khích với kết quả tìm được, Nam muốn gửi các chuỗi mã hóa này về cho thầy giáo của mình. Để tiết kiệm dung lượng 3G, Nam định gửi các chuỗi mã hóa ứng với từng loài như sau:</p>
+<p style="text-align:justify">1) Hoặc truyền đầy đủ K ký tự của chuỗi mã hóa đó, tốn dung lượng đường truyền là K byte.</p>
+<p style="text-align:justify">2) Nếu chuỗi gửi sau chỉ khác một chuỗi gửi trước nào đó m ký tự (m <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ K/2). </span>Nam chỉ cần gửi đi m ký tự khác nhau này, mỗi ký tự tốn 2 byte (1 byte vị trí và một byte nội dung ký tự), tổng cộng chỉ tốn 2*m byte (2*m <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤</span> K). <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif"> </span>Ví dụ:</p>
+<p style="text-align:justify">      Chuỗi gửi trước nào đó: <strong><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">ABCDE</span></span></strong></p>
+<p style="text-align:justify">      Chuỗi gửi sau: <strong><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">AXYDE</span></span></strong></p>
+<p style="text-align:justify">      Vậy thay vì gửi chuỗi đầy đủ <strong><span style="font-size:14px"><span style="font-family:courier new,courier,monospace">AXYDE </span></span></strong>tốn 5 byte thì chỉ cần gửi đi 2 cặp (2,X) và (3,Y) tốn 4 byte.</p>
+<p style="text-align:justify"><strong>Yêu cầu:</strong> Bạn hãy giúp Nam tìm cách truyền tin sao cho dung lượng đường truyền là thấp nhất.</p>
+<p style="text-align:justify"><strong>Dữ liệu nhập</strong>:</p>
+<p style="text-align:justify">- Dòng đầu tiên là 2 số nguyên N và K (<span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">1 </span><span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">≤ N ≤ 1000</span>, <span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif">1 ≤ K ≤ 200</span>)</p>
+<p style="text-align:justify">- Trong N dòng tiếp theo, dòng thứ i là K ký tự la tinh viết hoa tương ứng với các chuỗi mã hóa của loài động thực vật thứ i (dữ liệu cho đảm bảo các chuỗi mã hóa khác nhau từng đôi một)</p>
+<p style="text-align:justify"><strong>Dữ liệu xuất</strong>:</p>
+<p style="text-align:justify">- Dòng thứ nhất là tổng số byte ít nhất dùng để truyền tin.</p>
+<p style="text-align:justify">- Trong N dòng tiếp theo, dòng thứ i là hai số nguyên u<sub>i</sub> và v<sub>i</sub> thể hiện cách truyền tin trong lần truyền thứ i: u<sub>i</sub> là chỉ số của chuỗi truyền đi. Nếu v<sub>i</sub> = 0, chuỗi u<sub>i</sub> được truyền đầy đủ. Nếu v<sub>i</sub> ≠ 0, chuỗi u<sub>i</sub> được truyền theo cách thứ 2 dựa trên chuỗi v<sub>i</sub> (xem ví dụ để rõ hơn).</p>
+<p style="text-align:justify">(nếu có nhiều cách truyền tin có cùng số byte ít nhất, chỉ cần in ra một cách bất kỳ)</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 5<br/>ABCDE<br/>AXYDE<br/>ABUVE<br/>VWXYZ</div>
+<div class="sample-type">output</div>
+<div class="sample-value">18<br/>1 0<br/>4 0<br/>2 1<br/>3 1</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Giải thích:</p>
+<p>- Truyền chuỗi thứ nhất đầy đủ, tốn 5 byte.</p>
+<p>- Truyền chuỗi thứ tư đầy đủ, tốn 5 byte.</p>
+<p>- Truyền chuỗi thứ hai dựa theo chuỗi thứ nhất, tốn 4 byte.</p>
+<p>- Truyền chuỗi thứ ba dựa theo chuỗi thứ nhất, tốn 4 byte.</p>
+<p>Tổng cộng tốn 18 byte.</p>
+</div>
+</div></body></html>

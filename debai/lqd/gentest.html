@@ -1,0 +1,30 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Sinh Test</h2>
+</div><div class="content-description screen">
+<div><p>Gần đây <span class="rating rate-master user"><a href="/user/thoi_bay_corona">thoi_bay_corona</a></span> ra bài <a href="http://lqdoj.edu.vn/problem/ndivi" rel="nofollow">Không Chia Hết</a> trong đó input gồm hai số \(n, k\). Giới hạn bài toán như sau: \(2 \leq n \leq M; 1 \leq k \leq M\) (trong bài gốc \(M=10^9\)). Tuy nhiên <span class="rating rate-none admin"><a href="/user/admin">admin</a></span> phát hiện <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> làm thuật \(O(\frac{k}{n})\) nhưng lại AC. Các admin ngay lập tức ngồi lại tìm hiểu nguyên nhân. Họ nghi ngờ rằng chương trình sinh test của <span class="rating rate-master user"><a href="/user/thoi_bay_corona">thoi_bay_corona</a></span> có dạng như sau:</p>
+<pre><code>cout &lt;&lt; randInt(2, M) &lt;&lt; " " &lt;&lt; randInt(1, M);</code></pre>
+<p>trong đó <code>randInt(a, b)</code> là một hàm trả về một số nguyên ngẫu nhiên trong đoạn \([a, b]\). Nói cách khác chương trình in ra hai số \(n, k\) ngẫu nhiên trong đoạn \([2, M]\) và \([1, M]\)</p>
+<p>Biết rằng máy chấm của LQDOJ có thể tính được \(N\) phép tính trong 1s. Vì sao lời giải của <span class="rating rate-master user"><a href="/user/SPyofgame">SPyofgame</a></span> lại AC? Hãy giúp các admin tính xác suất mà \(\dfrac{k}{n} \leq N\) nhé.</p>
+<h4>Input</h4>
+<p>Gồm một dòng có 2 số nguyên \(M, N (M \geq 2, N \geq 1)\).</p>
+<h4>Output</h4>
+<p>In ra một số thực là kết quả bài toán. Kết quả sẽ được chấp nhận nếu chênh lệch so với đáp án không vượt quá \(10^{-6}\)</p>
+<h4>Sample Input 1</h4>
+<pre><code>100 15</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>0.9797979798</code></pre>
+<h4>Sample Input 2</h4>
+<pre><code>100 10</code></pre>
+<h4>Sample Output 2</h4>
+<pre><code>0.9636363636</code></pre>
+<h4>Giới hạn</h4>
+<ul>
+<li>\(30\)% test có \(M, N \leq 10^6\)</li>
+<li>\(30\)% test có \(M, N \leq 10^9\)</li>
+<li>\(40\)% test có \(M, N \leq 10^{18}\)</li>
+</ul>
+<h4>Gợi Ý</h4>
+<p>Xác suất cần tính là: \(\dfrac {\textbf{Số cặp (k, n) thỏa mãn}: \ \dfrac{k}{n} \leq N}{\textbf{Tổng số cặp (k, n)}}\)</p>
+</div>
+<hr/>
+</div>

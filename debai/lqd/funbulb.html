@@ -1,0 +1,47 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Ngày vui của Kaninho</h2>
+</div><div class="content-description screen">
+<div><p>Tối hôm qua có lẻ là ngày đầy kỉ niệm và đáng nhớ nhất đối với <strong>Kaninho</strong>, vì cậu đã nhận được danh hiệu cầu thủ trẻ xuất sắc nhất <strong>World Cup 2050</strong>, được tổ chức tại <strong>Việt Nam</strong>, trong niềm hân hoan tột cùng ấy, nhìn những bóng đèn lấp lánh đầy màu sắc, cậu ấy chợt nghĩ ra bài toán và đố <strong>Henry</strong> như sau:</p>
+<p>Cho \(n\) bóng đèn được đặt tại các tọa độ nguyên \(x_1,x_2,...,x_n\) trên trục số - được làm bằng tre (có chiều dương hướng sang phải). Để làm cho tất cả bóng đèn đều sáng, ông <strong>Alexender Anhbơvơ[1]</strong> đã thực hiện lần lượt hai bước sau:</p>
+<ul>
+<li><p>Bước 1: Chọn một số bóng đèn và bật trực tiếp chúng, và đánh dấu \(*\) trên mỗi bóng đèn đó. Biết rằng chi phí để bật trực tiếp bóng đèn thứ \(i\) là \(c_i\) (\(c_i\) có thể âm)</p>
+</li>
+<li><p>Bước 2: Đối với những chiếc bóng chưa được đánh dấu còn lại, ứng với mỗi chiếc ông sẽ dùng dây dẫn điện để nối nó với chiếc bóng đã được đánh dấu \(*\) gần nhất bên trái, và chúng mất chi phí chính bằng khoảng cách từ nó đến chiếc bóng gần nhất đó. Nếu không tồn tại chiếc bóng đã được đánh dấu \(*\) gần nhất bên trái, thì không có cách nào để chiếc đèn đó sáng.</p>
+</li>
+</ul>
+<p>(<strong>Chú ý:</strong> Ở bước 2, mặc dù các bóng không được đánh dấu \(*\) đã được nối dây , nhưng ta không được phép đánh dấu \(*\) lên chúng !)</p>
+<p>Gọi \(S\) là tổng chi phí để cho tất cả các đèn được sáng. Tìm giá trị nhỏ nhất có thể của \(S\).</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa số nguyên \(n(1\le n\le 3000)\) - Số bóng đèn.</p>
+</li>
+<li><p>\(n\) dòng tiếp theo, mỗi dòng chứa cặp số nguyên \(x_i,c_i(-10^9\le x_i,c_i\le 10^9)\) - Thể hiện tọa độ của bóng đèn thứ \(i\) và chi phí để bật sáng nó trực tiếp</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra giá trị \(S\) cần tìm </li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>4
+1 2
+2 1
+3 -1
+4 5</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>3</code></pre>
+<p><strong>Giải thích:</strong> <a href="https://i.imgur.com/n2WPGVE.png"><img src="https://i.imgur.com/n2WPGVE.png" style="width:300px;" title="source: imgur.com"/></a></p>
+<ul>
+<li><p>Bước 1: Ta bật trực tiếp các bóng \(1,2,3\) và đánh dấu \(*\) lên chúng.</p>
+</li>
+<li><p>Bước 2: Ta nối dây đèn \(4\) với đèn \(3\)</p>
+</li>
+<li><p>Từ hình vẽ ta có: \(S=2+1+(-1)+(4-3)=3\) là giá trị nhỏ nhất cần tìm.</p>
+</li>
+</ul>
+<p><strong>[1]</strong>: <strong>Alexender Anhbơvơ</strong> (là cậu ruột của <strong>Alexender Arnold</strong> - là đồng đội của <strong>Kaninho</strong> tại <strong>Liverpool</strong>), ông là một kĩ sư điện lực lâu năm, sinh ra tại London, nhưng lại sống và làm việc tại Việt Nam. Hiện tại ông đang ở một mình, và là Fan chân chính của Liverpool.</p>
+<p><strong>Nguồn:</strong> Tham khảo từ codeforces - Tag: DP</p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,36 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">minict09</h2>
+</div><div class="content-description screen">
+<div><p>Pi có n số nguyên \(a_1, a_2, ..., a_n\) có trong túi xách và Pi có k người bạn. Pi muốn phân phát <strong>tất cả</strong> số nguyên trong túi cho những người bạn, sao cho người bạn thứ i nhận được chính xác \(w_i\) số nguyên và mỗi số nguyên chỉ được phân phát cho chính xác một người bạn.</p>
+<p>Độ hạnh phúc của một người bạn là tổng của số nguyên lớn nhất và số nguyên nhỏ nhất mà người này nhận được.</p>
+<p>Pi muốn làm cho những người bạn của anh ấy hạnh phúc nhất có thể. Gọi <strong>s</strong> là tổng của các độ hạnh phúc của các người bạn sau khi được phân phát các số nguyên. Pi muốn <strong>s</strong> lớn nhất có thể. Hãy tìm số <strong>s</strong>.</p>
+<p><strong>Input</strong></p>
+<ul>
+<li><p>Dòng đầu tiên là hai số nguyên n và k (\(1&lt;=n&lt;=2*10^5, 1&lt;=k&lt;=n\)).</p>
+</li>
+<li><p>Dòng thứ hai chứa n số nguyên \(a_1a_2...a_n\) (\(-10^9&lt;=a_i&lt;=10^9\)).</p>
+</li>
+<li><p>Dòng thứ ba chứa k số nguyên \(w_1w_2...w_k\) (\(1&lt;=w_i&lt;=n, w_1+w_2+...+w_k = n\)).</p>
+</li>
+</ul>
+<p><strong>Output</strong></p>
+<ul>
+<li>In ra số nguyên <strong>s</strong>.</li>
+</ul>
+<p><strong>Input</strong></p>
+<pre><code>1 1
+-4 
+1</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>-8</code></pre>
+<p><strong>Input</strong></p>
+<pre><code>4 2
+10 10 11 11
+2 2</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>42</code></pre>
+<p><strong>Giải thích</strong></p>
+<p>Test 2: Người bạn 1 và 2 đều sẽ được phân phát {10, 11} có độ hạnh phúc là 10+11 = 21. Vậy s = 21*2 = 42.</p>
+</div>
+<hr/>
+</div>

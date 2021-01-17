@@ -1,0 +1,42 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Đón giáng sinh</h2>
+</div><div class="content-description screen">
+<div><p>Giáng sinh sắp đến, thầy Minh quyết định trang trí khu du lịch của mình. Trước cửa khu du lịch, có một hàng gồm \(N\) cây, đánh số từ 1 đến \(N\) theo chiều từ trái sang phải, cây thứ \(i\) có độ cao \(h_i\). Thầy Minh quyết định chọn một số cây để treo mỗi cây một đèn lồng đỏ trên ngọn, sao cho khi nhìn từ vịnh Hạ Long vào các đèn lồng sẽ tạo thành một chữ \(M\).</p>
+<p>Chữ \(M\) được định nghĩa như sau: Đó là một dãy các cây, khi xét từ trái sang phải, có thể chia thành 4 phân đoạn, trong đó độ cao các dãy trong đoạn đầu tiên tăng nghiêm ngặt, trong đoạn thứ hai giảm nghiêm ngặt, trong đoạn thứ ba tăng nghiêm ngặt và trong đoạn thứ tư giảm nghiêm ngặt.</p>
+<p>Tức là, có một dãy các chỉ số \(a_1 &lt; a_2 &lt; … &lt; a_i &lt; b_1 &lt; b_2 &lt;… &lt; b_j &lt; c_1 &lt; c_2 ... &lt; c_k &lt;d_1 &lt; d_2 ...&lt; d_l\) sao cho:</p>
+<ul>
+<li>Dãy \(h_{a_1}, h_{a_2}, … , h_{a_i}\) là dãy tăng nghiêm ngặt \(i ≥ 2\). </li>
+<li>Dãy \(h_{a_i}, h_{b_1}, … , h_{b_j}\) là dãy giảm nghiêm ngặt \(j ≥ 1\). </li>
+<li>Dãy \(h_{b_j}, h_{c_1}, … , h_{c_k}\) là dãy tăng nghiêm ngặt \(k ≥ 1\). </li>
+<li>Dãy \(h_{c_k}, h_{d_1}, … , h_{d_l}\) là dãy giảm nghiêm ngặt \(l ≥ 1\). </li>
+</ul>
+<p>Độ hoành tráng của chữ \(M\) là số lượng đèn lồng tạo thành chữ \(M\).</p>
+<p><strong>Yêu cầu</strong>: Hãy tìm độ hoành tráng lớn nhất của một chữ \(M\) mà thầy Minh có thể tạo được.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng 1 chứa số nguyên dương \(n ≤ 50000\) </li>
+<li>Dòng 2 chứa \(n\) số nguyên dương không vượt quá \(10^9\) </li>
+</ul>
+<p><em>Dữ liệu đảm bảo tồn tại ít nhất một cách treo đèn. Các số trên một dòng của input file được ghi cách nhau bởi dấu cách.</em></p>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>In ra độ hoành tráng lớn nhất của một chữ \(M\) có thể có.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>15 
+1 20 15 30 25 20 15 40 30 20 10 5 4 6 8</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>12</code></pre>
+<p><strong><em>Giải thích</em></strong>:  Các cây tạo thành hình chữ \(M\) có độ cao là \(1&lt;20&lt;30&gt;25&gt;20&gt;15&lt;40&gt;30&gt;20&gt; 10&gt; 5&gt; 4\). Độ hoành tráng là \(12\)</p>
+<p><strong><em>Giới hạn</em></strong></p>
+<ul>
+<li>Subtask 1: 20% số điểm: \(𝑛≤ 50\); </li>
+<li>Subtask 2: 50% số điểm: \(𝑛≤ 1000\);</li>
+<li>Subtask 3: 15% số điểm: \(ℎ𝑖≤ 1000\); </li>
+<li>Subtask 4: 15% số điểm: \(𝑛≤ 50000, ℎ𝑖≤ 10^9\)</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2019 CBG (Đề thi PreVOI 2015)</em></p>
+</div>
+<hr/>
+</div>

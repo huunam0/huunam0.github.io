@@ -1,0 +1,38 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">BALLON</h2>
+</div><div class="content-description screen">
+<div><p>Tới thời điểm hiện tại, \(Z\) đã là ông chủ sở hữu của một cửa hàng bóng chứa vô số những quả bóng bay. Vào một ngày ông \(Z\) muốn đa dạng hóa kho bóng của ông nên ông đã đặc N đơn hàng đến nhà cung cấp.</p>
+<p>Ban đầu tất cả bóng của ông có đều có chung một màu, mặc định là màu \(0\). Hôm nay có \(N\) xe tải tới giao bóng có dạng (\(x, y\)). Số bóng bay được giao bởi mỗi xe tải cũng là vô số và tất cả chúng sẽ có chung một màu \(y\). Mỗi quả bóng màu sẽ được thêm vào ngay sau màu \(x\). Nếu màu \(x\) không có sẵn trong kho thì số bóng trong lần giao này sẽ được chuyển về lại cho nhà cung cấp.</p>
+<p>Số lượng bóng được giao quá lớn nên chỉ một mình ông \(Z\) thì khó có thể quản lý được hết. Vì vậy ông chủ đã nhờ đến sự giúp đỡ của các bạn. Ông ấy muốn biết được màu của tất cả quả bóng thuộc đoạn [\(L, R\)] sau khi nhận được \(N\) đơn hàng.</p>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li><p>Dòng đầu tiên gồm \(3\) số: số lượt giao hàng \(N\) (\(N \le 2 \times 10^5\)) và đoạn [\(L, R\)] (\(0 \le L &lt; R \le 10^6 , R – L \le 10^5\)).</p>
+</li>
+<li><p>\(N\) dòng tiếp theo: mỗi dòng gồm \(2\) số \(x\) và \(y\) (\(0 \le x, y &lt; 2 \times 10^5\)).</p>
+</li>
+</ul>
+<p><strong>Dữ liệu ra:</strong></p>
+<p>Gồm một dòng duy nhất in ra tất cả bóng bay thuộc đoạn \([L, R]\).</p>
+<p><strong>Ví dụ</strong>
+<strong>Input:</strong></p>
+<pre><code>4 1 6
+
+0 1
+
+1 3
+
+0 1
+
+1 2</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>1 2 1 2 3</code></pre>
+<p><strong>Giải thích test ví dụ:</strong></p>
+<p><em>- Dãy bóng ban đầu: 0 0 0 0 0 …</em></p>
+<p><em>- Sau khi nhận được đơn hàng thứ nhất: 0 1 0 1 0 ...</em></p>
+<p><em>- Sau khi nhận được đơn hàng thứ hai: 0 1 3 0 1 3 0 1 …</em></p>
+<p><em>- Sau khi nhận được đơn hàng thứ ba: 0 1 1 3 0 1 1 3 0 1…</em></p>
+<p><em>- Sau khi nhận được đơn hàng cuối cùng: 0 1 2 1 2 3 0 …</em></p>
+<p><em>Nguồn: Tuấn</em></p>
+</div>
+<hr/>
+</div>

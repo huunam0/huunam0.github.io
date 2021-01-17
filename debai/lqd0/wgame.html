@@ -1,0 +1,57 @@
+<div class="tm-box2">
+<div class="problem-name">
+    WGAME - Trò chơi trên bảng chữ 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;">Cho một bảng chữ gồm 𝑚 hàng, 𝑛 cột. Các hàng được đánh số từ 1 đến 𝑚 theo thứ tự từ trên xuống dưới. Các cột được đánh số từ 1 đến 𝑛 theo thứ tự từ trái sang phải. Ô nằm giao giữa hàng 𝑖 (𝑖 = 1,2, … , 𝑚) và cột 𝑗 (𝑗 = 1,2, … , 𝑛) gọi là ô (𝑖,𝑗). Ô (𝑖,𝑗) có thể chứa một kí tự từ ′𝑎′ đến ′𝑧′ hoặc là ô cấm. Khi bắt đầu trò chơi, người chơi được cho một xâu 𝑆 và nhiệm vụ của người chơi là xuất phát từ ô (1,1) cần di chuyển tới ô (𝑚, 𝑛). Tại mỗi bước, người chơi chỉ được di chuyển sang ô bên phải hoặc ô nằm bên dưới ô hiện tại và không được phép di chuyển vào ô cấm. Người chơi được gọi là thắng cuộc nếu khi ghép lần lượt các kí tự trong các ô trên đường đi sẽ tạo thành một xâu đối xứng 𝑇 chứa xâu 𝑆 (xâu 𝑆 xuất hiện trong xâu 𝑇).</p>
+<p style="text-align: justify;"><strong>Yêu cầu: </strong>Cho bảng chữ và xâu 𝑆, đếm số cách đi để giành chiến thắng. Hai cách đi được gọi là khác nhau nếu tồn tại một ô thuộc cách đi này nhưng không thuộc cách đi kia.</p>
+<p><strong>Dữ liệu</strong>:  theo khuôn dạng:</p>
+<p> Dòng đầu tiên chứa ba số nguyên dương 𝑚, 𝑛,𝐷 (𝐷 ≤ 109 );</p>
+<p> Dòng thứ hai chứa xâu 𝑆 có độ dài không vượt quá 20 chỉ gồm các kí tự từ ′𝑎′ đến ′𝑧′.</p>
+<p> Dòng thứ 𝑖 + 1 chứa xâu 𝑛 kí tự mô tả hàng thứ 𝑖 của bảng (𝑖 = 1, 2, . . . , 𝑚). Các kí tự từ ′𝑎′ đến ′𝑧′, ô cấm được thể hiện bằng kí tự ‘#’.</p>
+<p><strong>Kết quả:</strong> Ghi ra một số nguyên là số cách đi khác nhau để giành chiến thắng chia dư cho 𝐷. </p>
+<p><strong>Ràng buộc:</strong></p>
+<p> Có 20% số test ứng với 20% số điểm của bài có 𝑚, 𝑛 ≤ 10;<br/>
+ Có 20% số test khác ứng với 20% số điểm của bài có 𝑚, 𝑛 ≤ 30, ngoài các ô cấm thì các ô còn lại chứa kí tự giống nhau và xâu 𝑆 chỉ có một kí tự giống với kí tự nằm ở ô (1,1);<br/>
+ Có 20% số test khác ứng với 20% số điểm của bài có 𝑚, 𝑛 ≤ 30 và xâu 𝑆 chỉ có một kí tự giống với kí tự nằm ở ô (1,1);<br/>
+ Có 20% số test khác ứng với 20% số điểm của bài có 𝑚, 𝑛 ≤ 30 và xâu 𝑆 chỉ có một kí tự;<br/>
+ Có 10% số test khác ứng với 10% số điểm của bài có 𝑚, 𝑛 ≤ 30;<br/>
+ Có 10% số test còn lại ứng với 10% số điểm của bài có 𝑚, 𝑛 ≤ 150.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">2 2 100<br/>
+b<br/>
+ab<br/>
+aa </p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">1</p>
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">4 4 100<br/>
+abc<br/>
+aabc<br/>
+ab#b<br/>
+acba<br/>
+aaaa</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">5</p>
+<hr/>
+<p><em>Nguồn: 3D 20182019</em></p>
+</div>
+</div>

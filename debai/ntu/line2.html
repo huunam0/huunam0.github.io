@@ -1,0 +1,56 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    LINE2 - Trò chơi Line 2 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">       Trò chơi Line là trò chơi di chuyển các viên bi trong một hình vuông 9 x 9 ô. Bi được ăn khi tạo thành các hàng, cột, đường chéo gồm 5 viên bi liên tiếp cùng màu.</p>
+<p style="text-align:center"><img alt="" src="images/Line.jpg" style="height:275px; width:276px"/></p>
+<p style="text-align:justify">        Một thuật toán được sử dụng trong trò chơi là tìm đường đi để di chuyển một viên bi. Giả sử trò chơi Line tổng quát có n dòng, n cột. Đánh số các dòng từ 1 đến n theo thứ tự từ trên xuống dưới, đánh số các cột từ 1 đến n theo thứ tự từ trái sang phải. Giả sử có một viên bi tại ô (y, x) - dòng y cột x, bi có thể di chuyển đến 1 trong 4 ô (y+1, x), (y-1, x), (y, x+1), (y, x-1), nếu ô đó đang trống. Cho vị trí bắt đầu và vị trí kết thúc của viên bi, hãy viết chương trình cho biết đường đi của viên bi.</p>
+<p><strong>Dữ liệu nhập: </strong>gồm các dòng sau</p>
+<p style="text-align:justify">- Dòng thứ nhất gồm năm số <span style="font-size:16px"><em><span style="font-family:times new roman,times,serif">n</span></em></span>, <span style="font-size:16px"><span style="font-family:times new roman,times,serif"><em>sy</em>, <em>sx</em>, <em>dy</em>, <em>dx</em></span></span>, mỗi số cách nhau một khoảng trắng (2 ≤ <span style="font-size:16px"><span style="font-family:times new roman,times,serif"><em>n</em></span></span> ≤ 9; 1 ≤ <span style="font-size:16px"><span style="font-family:times new roman,times,serif"><em>sy, sx, dy, dx</em></span></span> ≤ <em><span style="font-size:16px"><span style="font-family:times new roman,times,serif">n</span></span></em>). <span style="font-size:16px"><em><span style="font-family:times new roman,times,serif">sy</span></em></span> là chỉ số dòng, <em><span style="font-size:16px"><span style="font-family:times new roman,times,serif">sx</span></span></em> là chỉ số cột của viên bi cần di chuyển. <span style="font-size:16px"><em><span style="font-family:times new roman,times,serif">dy</span></em></span> là chỉ số dòng, <span style="font-family:times new roman,times,serif"><em><span style="font-size:16px">dx</span></em></span> là chỉ số cột của vị trí cần di chuyển viên bi đến.</p>
+<p style="text-align:justify">- Trong <span style="font-size:16px"><em><span style="font-family:times new roman,times,serif">n</span></em></span> dòng tiếp theo, mỗi dòng gồm <span style="font-size:16px"><em><span style="font-family:times new roman,times,serif">n</span></em></span> số nguyên 0 hoặc 1, mỗi số cách nhau một khoảng trắng, biểu thị tình trạng của trò chơi. Số 1 nghĩa là vị trí ô đó có bi, số 0 nghĩa là vị trí ô đó đang trống.</p>
+<p style="text-align:justify">(Dữ liệu cho bảo đảm tại ô (<span style="font-size:16px"><span style="font-family:times new roman,times,serif"><em>sy</em>, <em>sx</em></span></span>) có giá trị là 1, tại ô (<span style="font-size:16px"><span style="font-family:times new roman,times,serif"><em>dy</em>, <em>dx</em></span></span>) có giá trị là 0)</p>
+<p style="text-align:justify"><strong>Dữ liệu xuất:</strong></p>
+<p style="text-align:justify"><u>Nếu tìm được đường đi</u>:</p>
+<p style="text-align:justify">- Dòng đầu tiên in ra số nguyên m là số ô của đường đi. (bao gồm cả ô đầu tiên của viên bi và ô đích)</p>
+<p style="text-align:justify">- Trong m dòng tiếp theo, dòng thứ i in ra hai giá trị y<sub>i</sub>, x<sub>i</sub> là vị trí ô thứ i trong đường đi, hai số cách nhau một khoảng trắng.</p>
+<p style="text-align:justify">(Nếu có nhiều đường đi, có thể in ra đường đi bất kỳ)</p>
+<p style="text-align:justify"><u>Nếu không tìm được đường đi</u>: in ra 0.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2 1 1 2 2<br/>1 0<br/>1 0</div>
+<div class="sample-type">output</div>
+<div class="sample-value">3<br/>1 1<br/>1 2<br/>2 2</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2 1 1 2 2<br/>1 1<br/>1 0</div>
+<div class="sample-type">output</div>
+<div class="sample-value">0</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 1 1 3 3<br/>1 0 1<br/>1 0 0<br/>1 1 0</div>
+<div class="sample-type">output</div>
+<div class="sample-value">5<br/>1 1<br/>1 2<br/>2 2<br/>2 3<br/>3 3</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

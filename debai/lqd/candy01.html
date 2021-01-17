@@ -1,0 +1,32 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chia kẹo 01</h2>
+</div><div class="content-description screen">
+<div><p>Sau khi vượt qua một bài kiểm tra, Vasya được nhận một hộp gồm \(n\) cây kẹo. Anh quyết định ăn một lượng kẹo bằng nhau mỗi sáng cho đến khi không còn cây kẹo nào trong hộp nữa. Tuy nhiên, Petya đã phát hiện thấy chiếc hộp và quyết định "chôm" một ít kẹo cho mình.</p>
+<p>Quá trình ăn kẹo là như sau: ban đầu Vasya chọn một số nguyên duy nhất là \(k\), bằng nhau đối với tất cả các ngày. Sau đó, vào buổi sáng anh ấy ăn \(k\) cái kẹo từ chiếc hộp (nếu còn ít hơn k cái kẹo trong hộp, anh ấy ăn tất cả chúng), sau đó vào buổi tối Petya ăn \(10\%\) số kẹo còn lại trong hộp. Nếu vẫn còn kẹo trong hộp, quá trình này được lặp lại - ngày hôm sau Vasya ăn \(k\) kẹo một lần nữa, và Petya ăn \(10\%\) kẹo còn lại trong một hộp và cứ như vậy... Nếu số lượng kẹo trong hộp không chia hết cho \(10\), Petya làm tròn xuống theo số lượng anh ta lấy từ hộp. Ví dụ, nếu có \(97\) Kẹo trong hộp, Petya sẽ chỉ ăn 9 trong số chúng. Đặc biệt, nếu có ít hơn \(10\) cái kẹo trong hộp, Petya sẽ không ăn chút nào.</p>
+<p>Nhiệm vụ của bạn là tìm ra số lượng tối thiểu \(k\) mà Vasya có thể chọn để anh ta ăn ít nhất một nửa trong \(n\) cái kẹo anh ban đầu có trong hộp. Lưu ý rằng số \(k\) phải là số nguyên.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa một số nguyên duy nhất \(n\) (\(1 ≤ n ≤ 10^{18}\)) là số lượng kẹo ban đầu trong hộp.</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Xuất ra một số nguyên duy nhất là số lượng tối thiểu \(k\) điều đó sẽ cho phép Vasya ăn ít nhất một nửa số kẹo mà anh ta có.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>68</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>3</code></pre>
+<p><strong><em>Giải thích</em></strong>: Trong ví dụ, lượng kẹo với k = 3, sẽ thay đổi theo cách sau (Vasya ăn trước)
+\(68 → 65 → 59 → 56 → 51 → 48 → 44 → 41 → 37 → 34 → 31 → 28\)
+\( → 26 → 23 → 21 → 18 → 17 → 14 → 13 → 10 → 9 → 6 → 6 → 3 → 3 → 0\).</p>
+<p>Tổng cộng, Vasya sẽ ăn 39 viên kẹo, trong khi Petya ăn 29.</p>
+<p><em>Ràng buộc:</em></p>
+<ul>
+<li>Có 70% số điểm thỏa mãn điều kiện: \(n ≤ 10^6\).</li>
+<li>30% số điểm còn lại thỏa mãn điều kiện \(n ≤ 10^{18}\)</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2019 CLC</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,52 @@
+<div class="tm-box2">
+<div class="problem-name">
+    KNIGHTC - Con Mã 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 3.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Cho mặt phẳng tọa độ Oxy và 2 số nguyên dương a, b. Một con mã có thể đi từ ô (x, y) đến 1 trong các ô sau: (x + a, y + b), (x + a, y - b), (x - a, y - b), (x - a, y + b), (x + b, y - a), (x + b, y + a), (x - b, y - a), (x - b, y + a). Hình dưới biểu thị cho các ô con mã có thể đi nếu a = 1, b = 2. </p>
+<p><img alt="" src="../../images/alicev1978/alicev19781609/alicev1978160900066/63052145-knight-chess-rules.jpg" style="height:533px; width:528px"/></p>
+<p>Cho q truy vấn, mỗi truy vấn gồm 2 điểm A, B. Các bạn hãy kiểm tra xem con mã có thể đi từ A đến B không?</p>
+<p><strong>Dữ liệu vào</strong></p>
+<p>Dòng đầu tiên chứa 3 số nguyên dương n, a, b (n &lt;= 10<sup>5</sup>; a, b &lt;= 10<sup>9</sup>), tương ứng với số truy vấn và 2 số đặc trưng của con mã.</p>
+<p>n dòng tiếp theo, mỗi dòng chứa 4 số nguyên x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub> có trị tuyệt đối không vượt quá 10<sup>9</sup>. Trong đó (x<sub>1</sub>, y<sub>1</sub>) là tọa độ của điểm A và (x<sub>2</sub>, y<sub>2</sub>) là tọa độ của B.</p>
+<p><strong>Dữ liệu ra</strong></p>
+<p>Với mỗi truy vẫn, in ra YES nếu con mã có thể đi được, NO nếu ngược lại.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 1 2<br/>1 1 8 8<br/>4 5 19 99 <br/>-20 20 -20 20<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">YES<br/>YES<br/>YES</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 4 2<br/>1 1 8 8<br/>4 5 19 99 <br/>-20 20 -20 20<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">NO<br/>NO<br/>YES</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 32 429<br/>-692 -190<br/>818 -864<br/>43 623<br/>-10 -962<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">YES<br/>YES<br/>YES<br/>YES</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>.</p>
+</div>
+</div>

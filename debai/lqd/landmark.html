@@ -1,0 +1,37 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">LANDMARK</h2>
+</div><div class="content-description screen">
+<div><p>Bãi đậu xe của Landmark 81 gồm \(N\) vi trí được sắp xếp theo một đường thẳng được đánh số từ 1 đến \(N\). Mỗi ngày, có \(M\) xe ra vào vào tham quan Landmark. Chính vì vậy, bảo vệ ở đây đã tìm ra cách để sắp xếp xe sao cho thuận tiện nhất.</p>
+<p>Ban đầu, bãi đậu xe chưa có xe nào đậu. Khi có 1 xe đến, bảo vệ sẽ tìm vi trí đậu cho xe đó. Vi trí bảo vệ chọn là vi trí mà cách xa những vi trí đã có xe đỗ nhất. Nếu tồn tại nhiều vi trí thì sẽ chọn vi trí có số nhỏ nhất.</p>
+<p>Khoảng cách giữa hai vi trí \(i\) và \(j\) được tính theo công thức sau: \(D_{ij} = 4 \times |i — j |\).</p>
+<p>Vì một ngày lượng xe ra vào là quá lớn. Các bạn hãy giúp bảo vệ tìm vi trí cho xe mới vào tham quan Landmark.
+Biết rằng các xe được đánh số từ 1 đến \(10^6\) và dữ liệu đảm bảo rằng không có xe nào đi ra khi chưa đi vào hoặc không có xe nào đi vào mà đang ở trong bãi.
+Dữ liệu đảm bảo luôn còn chỗ cho các xe mới vào.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên gồm 2 số nguyên \(N, M\ (1 &lt; N,M &lt; 10^5)\).</li>
+<li>\(M\) dòng tiếp theo gồm 2 số nguyên \(T, X\ (1 &lt; T &lt; 2; 1 &lt; X &lt; 10^6)\) với \(T = 1\) thì xe có số thứ tự là \(X\) đi vào bãi gửi xe, \(T = 2\) thì xe có số thứ tự là \(X\) đi ra khỏi bãi gửi xe.</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Với mỗi truy vấn \(T = 1\), xuất ra vi trí mà xe mới vào sẽ đỗ.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>7 6
+1 15
+1 1206
+1 3
+1 5
+2 1206
+2 15</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>1 
+7 
+4 
+2</code></pre>
+<p><strong><em>Giải thích</em></strong>: Với xe số 15, khi vào bãi gửi thì chưa có xe nào. Chính vì vậy, khoảng cách tất cả đều bằng nhau. Nên xe 15 sẽ đỗ ở vi trí 1.</p>
+<hr/>
+<p><em>Nguồn: FC115</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,42 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Tam giác "gần hoàn hảo"</h2>
+</div><div class="content-description screen">
+<div><ul>
+<li><p>Tam giác \(K\) được gọi là tam giác "<strong>gần hoàn hảo</strong>" nếu \(K\) thỏa mãn \(2\) điều kiện sau:</p>
+<ul>
+<li><p>Ba cạnh của tam giác đó có dạng \((a,a,b)\) thỏa mãn \(a&gt;\frac{b}{2}\) và \(|a-b|=1\) với \(a,b\in \mathbb{N}^{*}\)</p>
+</li>
+<li><p>Diện tích của \(K\) là số nguyên dương.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Gọi \(Q\) là tập hợp tất cả các tam giác "<strong>gần hoàn hảo</strong>" .</p>
+<p><strong>Yêu cầu:</strong> Cho số nguyên dương \(N(1\le N\le 10^7)\) .Tính \(T=\sum\limits_{u\in Q\text{ và }P(u)\le N}P(u)\)</p>
+<p>(trong đó: \(P(u)\) là chu vi của tam giác \(u\))</p>
+<p>Nói cách khác, xét tất cả tam giác "gần hoàn hảo" và có chu vi không vượt quá \(N\). Hãy tính tổng chu vi tất cả tam giác đó.</p>
+<p><strong>Chú ý:</strong> Các tam giác có các cạnh \((a,a,b),(a,b,a),(b,a,a)\) thì cũng chỉ tính là \(1\) tam giác.</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li>Một dòng duy nhất chứa số nguyên dương \(N(1\le N\le 10^7)\)</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra đáp án \(T\) cần tìm.</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>16</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>16</code></pre>
+<p><strong>Giải thích:</strong> Chỉ có duy nhất \(1\) tam giác "<strong>gần hoàn hảo</strong>" thỏa mãn yêu cầu bài toán đó là : \((5;5;6)\). Vậy nên đáp án là \(16\)</p>
+<p><strong>Subtask:</strong></p>
+<ul>
+<li><p>\(20\text{%}\) test có \(1\le N\le 300\)</p>
+</li>
+<li><p>Còn lại không có điều kiện gì.</p>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,90 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Liên Minh Dễ Dàng</h2>
+</div><div class="content-description screen">
+<div><p><span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> đang đánh Liên Minh Huyền Thoại với vị tướng tủ soilehpa. <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> đã đánh từng trận một. Mỗi trận có một hệ số phong độ là \(a_i\). Nếu phong độ gánh team của <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> không nhỏ hơn \(a_i\), <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> sẽ chiến thắng ván đấu đó. Cứ mỗi một ván thắng, phong độ của <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> lại tăng lên đúng \(a_i\). Hiện tại, có \(n\) trận đấu, với các chỉ số phong độ lần lượt là \(a_1\), \(a_2\), ..., \(a_n\), <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> muốn cho <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> tập tạ, nên sẽ có \(q\) truy vấn, mỗi truy vấn thuộc 2 loại sau :</p>
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li>*1)<span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> thay đổi hệ số phong độ của trận đấu i thành x</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li>*2)<span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> hỏi xem nếu <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> lần lượt đánh các trận từ \(l\) đến \(r\) thì cần phong độ ban đầu tối thiểu (trước khi đánh) là bao nhiêu để chắc chắn thắng tất cả các trận đấu đó.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Ví dụ : Nếu <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cần thắng các trận có chỉ số phong độ lần lượt là \(1, 2, 3\) thì <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cần ít nhất 1 điểm phong độ trước khi đánh. Sau trận đầu tiên, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ có phong độ là \(1 + 1 = 2\), đủ để thắng trận 2. Sau trận thứ hai, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ có phong độ là \(2 + 2 = 4\), và dễ dàng chiến thắng trận 3.</p>
+<p>Vì <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đang bận gánh team, các bạn sẽ thay <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> trả lời câu hỏi này.</p>
+<h4>Input</h4>
+<p>Dòng đầu chứa 2 số nguyên dương \(n\) và \(q\).</p>
+<p>Dòng tiếp theo chứ n số nguyên dương \(a_1\), \(a_2\), ..., \(a_n\) là chỉ số phong độ của ván đấu.</p>
+<p>q dòng cuối cùng có dạng sau:</p>
+<p><code>1 i x</code> : <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> thay \(a_i\) = \(x\) \((0 \leq x \leq 10^9,\) \(1 \leq i \leq n)\)</p>
+<p><code>2 l r</code> : <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> muốn hỏi xem <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cần ít nhất bao nhiêu điểm phong độ để lần lượt thắng các trận đấu \(a_l\), \(a_{l+1}\), ..., \(a_r\) \((1 \leq l \leq r \leq n)\).</p>
+<h4>Output</h4>
+<p>Với mỗi truy vấn 2, in ra kết quả.</p>
+<p>Dữ liệu đảm bảo luôn có ít nhất một truy vấn loại 2.</p>
+<h4>Sample Input 1</h4>
+<pre><code>3 3
+1 2 3
+2 1 2
+1 1 3
+2 1 3</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>1
+3</code></pre>
+<h4>Sample Input 2</h4>
+<pre><code>10 10
+1 2 3 4 5 6 7 8 9 10
+2 1 2
+1 1 3
+2 1 3
+1 5 20
+1 6 1000
+2 1 7
+2 1 5
+2 1 10
+1 3 69
+2 2 7</code></pre>
+<h4>Sample Output 2</h4>
+<pre><code>1
+3
+968
+8
+968
+905</code></pre>
+<h4>Giải thích</h4>
+<p>Truy vấn 1, dãy phong độ là 1 2. <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cần 1 điểm phong độ để thắng tất cả ván đấu.</p>
+<p>Truy vấn 2, dãy phong độ là 3 2 2. <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cần 3 điểm phong độ để thắng tất cả ván đấu.</p>
+<h4>Giới hạn</h4>
+<p>Trong tất cả các test, \(1 \leq x, a_i \leq 10^9\) , \(1 \leq i \leq n\).</p>
+<p>\(20\)% test có \(2 \leq n , q \leq 1000\).</p>
+<p>\(40\)% test có \(2 \leq n , q \leq 100000\), và không có truy vấn loại 1.</p>
+<p>\(40\)% test có \(2 \leq n , q \leq 300000\).</p>
+<p>Xin cảm ơn bạn <span class="rating rate-newbie user"><a href="/user/Toilaaibanbietko7A4">Toilaaibanbietko7A4</a></span> đã truyền ý tưởng cho mình.</p>
+</div>
+<hr/>
+</div>

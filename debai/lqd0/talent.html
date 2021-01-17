@@ -1,0 +1,50 @@
+<div class="tm-box2">
+<div class="problem-name">
+    TALENT - Trung tâm bồi dưỡng tài năng 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"><span style="font-size:14px">Đất nước VN có 𝑛 thành phố, tất cả nằm dọc theo một con đường cao tốc. Trung tâm thành phố thứ 𝑖 có khoảng cách đến vị trí bắt đầu con đường cao tốc là 𝑑<sub>𝑖</sub> (𝑖 = 1,2, . . , 𝑛). Với những thành tích vang dội của các đoàn Olympic nước VN vừa đạt được trên đấu trường quốc tế, chính phủ muốn thành lập một trung tâm bồi dưỡng tài năng. Một vấn đề quan trọng đang được xem xét đó là lựa chọn vị trí để xây dựng trung tâm. Nếu trung tâm được đặt ở vị trí có khoảng cách tính từ vị trí bắt đầu con đường cao tốc là 𝑝 thì mức độ phù hợp được tính bằng: ∑𝑤<sub>𝑖</sub> × |𝑑<sub>𝑖</sub> − 𝑝| với chạy 𝑖=1 đến 𝑛  trong đó 𝑤<sub>𝑖</sub> là mức độ ưu tiên của thành phố thứ 𝑖. Hiện tại, chính phủ đang đánh giá 𝑚 đề xuất xây dựng trung tâm tại các vị trí 𝑝<sub>1</sub>, 𝑝<sub>2</sub>, … , 𝑝<sub>𝑚</sub>. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Yêu cầu:</strong> Cho các số nguyên dương 𝑑<sub>1</sub>, 𝑑<sub>2</sub>, . . , 𝑑<sub>𝑛</sub>, 𝑤<sub>1</sub>, 𝑤<sub>2</sub>, . . , 𝑤<sub>𝑛</sub> và 𝑚 đề xuất vị trí xây dựng trung tâm 𝑝<sub>1</sub>, 𝑝<sub>2</sub>, … , 𝑝<sub>𝑚</sub>, với mỗi đề xuất hãy tính mức độ phù hợp. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Dữ liệu vào</strong>: </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">- Dòng đầu tiên chứa hai số nguyên dương 𝑛, 𝑚;<br/>
+- Dòng thứ hai chứa 𝑛 số nguyên dương 𝑑<sub>1</sub>, 𝑑<sub>2</sub>, . . , 𝑑<sub>𝑛</sub> (0 &lt; 𝑑<sub>𝑖</sub> ≤ 10<sup>9</sup>);<br/>
+- Dòng thứ ba chứa 𝑛 số nguyên dương 𝑤<sub>1</sub>, 𝑤<sub>2</sub>, . . , 𝑤<sub>𝑛</sub> (0 &lt; 𝑤<sub>𝑖</sub> ≤ 10<sup>3</sup> );<br/>
+-  Dòng thứ 𝑘 trong 𝑚 dòng tiếp theo chứa một số nguyên dương 𝑝𝑘 mô tả cho đề xuất thứ 𝑘 (0 &lt; 𝑝<sub>𝑘</sub> ≤ 10<sup>6</sup> ; 𝑘 = 1,2, … , 𝑚). </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Kết quả</strong>: </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">Ghi ra 𝑚 dòng (mỗi dòng tương ứng với một đề xuất), dòng thứ 𝑘 là giá trị phù hợp cho đề xuất thứ 𝑘.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p style="text-align:justify"><span style="font-size:14px"><strong>Input</strong></span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">3 2<br/>
+1 2 4<br/>
+1 2 1<br/>
+2<br/>
+3<strong> </strong></span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Output</strong></span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">3<br/>
+5</span></p>
+<p style="text-align:justify"><span style="font-size:14px"><em><strong>Ràng buộc: </strong></em></span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">- Có 30% số test ứng với 30% số điểm của bài có 𝑛 ≤ 10; 𝑚 = 1; 𝑑<sub>𝑖</sub> ≤ 1000;<br/>
+- Có 30% test khác ứng với 30% số điểm của bài có có 𝑛 ≤ 10<sup>5</sup> ; 𝑚 ≤ 10;<br/>
+- Có 20% test khác ứng với 20% số điểm của bài có có 𝑛 ≤ 10<sup>5</sup> ; 𝑚 ≤ 10<sup>5</sup> ; 𝑤<sub>𝑖</sub> = 1;<br/>
+- Có 20% số test còn lại ứng với 20% số điểm của bài có 𝑛 ≤ 10<sup>5</sup> ; 𝑚 ≤ 10<sup>5</sup> . </span></p>
+<hr/>
+<p style="text-align:justify"><span style="font-size:14px"><em>Nguồn: THHV'17</em></span></p>
+</div>
+</div>

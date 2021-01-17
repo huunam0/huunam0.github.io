@@ -1,0 +1,59 @@
+<div class="tm-box2">
+<div class="problem-name">
+    TronTap - Trốn Tập 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;"><span style="font-size:14px">Những con chó tại trường X-dogs ngày càng láu cá. Hàng ngày chúng phải dậy sớm tập thể dục, nhưng tất cả đều lười và muốn trốn hoạt động này. Vì số chó rất đông (<em>n</em> con) nên người huấn luyện không đếm hết được, anh ta dùng một mẹo để xác định có con chó nào trốn tập hay không. Mẹo đó như sau:</span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-size:14px">Đầu tiên anh ta yêu cầu các con chó xếp thành các hàng ngang, mỗi hàng <em>a</em> con và đếm số chó dư ra (không đủ một hàng) gọi là <em>a</em>’.</span></li>
+<li style="text-align: justify;"><span style="font-size:14px">Lần 2, anh ta yêu cầu các con chó xếp thành các hàng ngang, mỗi hàng <em>b</em> con và đếm số chó dư ra (không đủ một hàng) gọi là <em>b</em>’.</span></li>
+<li style="text-align: justify;"><span style="font-size:14px">Lần 3, anh ta yêu cầu các con chó xếp thành các hàng ngang, mỗi hàng <em>c</em> con và đếm số chó dư ra (không đủ một hàng) gọi là <em>c</em>’.</span></li>
+<li style="text-align: justify;"><span style="font-size:14px">Lần 4, anh ta yêu cầu các con chó xếp thành các hàng ngang, mỗi hàng <em>d</em> con và đếm số chó dư ra (không đủ một hàng) gọi là <em>d</em>’.</span></li>
+</ul>
+<p style="text-align: justify;"><span style="font-size:14px">Sau đó người huấn luyện so sánh các giá trị <em>a</em>’, <em>b</em>’, <em>c</em>’, <em>d</em>’ lần lượt với các số dư của <em>n</em> khi chia cho <em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>. Nếu không khớp thì chắc chắn có con chó ngủ nướng và trốn tập. Tuy nhiên có thể nhận thấy rằng cho dù bốn cặp số này khớp nhau, vẫn có thể có con chó trốn tập.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Sau vài buổi sáng, lũ chó tuy không biết sĩ số <em>n</em> nhưng đã dò biết được những giá trị <em>a</em>, <em>a</em>’, <em>b</em>, <em>b</em>’, <em>c</em>, <em>c</em>’, <em>d</em>, <em>d</em>’. Vấn đề của chúng là cử một số ít nhất các chó đi tập thể dục buổi sáng mà người huấn luyện bằng phương pháp trên không thể phát hiện ra có những con chó trốn tập thể dục. Hãy giúp lũ chó xác định số lượng cử đi.</span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Dữ liệu:</strong> Dòng đầu tiên chứa số <em>T</em> ≤ 10<sup>4</sup> là số test. <em>T</em> khối dòng tiếp theo, mỗi khối 4 dòng chứa dữ liệu cho 1 test:</span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-size:14px">Dòng 1: chứa hai số nguyên <em>a</em>, <em>a</em>’ cách nhau bởi dấu cách (0 ≤ <em>a</em>’ &lt; <em>a</em> ≤ 10<sup>4</sup>).</span></li>
+<li style="text-align: justify;"><span style="font-size:14px">Dòng 2: chứa hai số nguyên <em>b</em>, <em>b</em>’ cách nhau bởi dấu cách (0 ≤ <em>b</em>’ &lt; <em>b</em> ≤ 10<sup>4</sup>).</span></li>
+<li style="text-align: justify;"><span style="font-size:14px">Dòng 3: chứa hai số nguyên <em>c</em>, <em>c</em>’ cách nhau bởi dấu cách (0 ≤ <em>c</em>’ &lt; <em>c</em> ≤ 10<sup>4</sup>).</span></li>
+<li style="text-align: justify;"><span style="font-size:14px">Dòng 4: chứa hai số nguyên <em>d</em>, <em>d</em>’ cách nhau bởi dấu cách (0 ≤ <em>d</em>’ &lt; <em>d</em> ≤ 10<sup>4</sup>).</span></li>
+</ul>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Kết quả:</strong> Với mỗi test, ghi ra một số nguyên dương duy nhất là số lượng chó tối thiểu phải đi tập thể dục, trong trường hợp lũ chó nhớ sai dữ liệu dẫn tới việc không thể xác định số chó cử đi, ghi ra số -1.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left: 40px;">2<br/>
+20 3<br/>
+15 3<br/>
+21 18<br/>
+35 18<br/>
+5 1<br/>
+5 2<br/>
+5 3<br/>
+5 4</p>
+<p><strong>Output</strong></p>
+<p style="margin-left: 40px;">123<br/>
+-1</p>
+<hr/>
+<p><em>Nguồn: LMH - ĐHSP HN</em></p>
+<div> </div>
+<div> </div>
+</div>
+</div>

@@ -1,0 +1,45 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Khu Rừng 6</h2>
+</div><div class="content-description screen">
+<div><p>Chúa đất vùng rừng <strong>AnLuuLand</strong> sau khi cho người anh hùng <span class="rating rate-candidate-master user"><a href="/user/algorit">algorit</a></span> chọn một vùng đất đã nhận ra sai lầm của mình khi cho phép phá rừng để làm nương rẫy, làm giảm diện tích rừng gây ảnh hưởng lớn đến biến đổi khí hậu.</p>
+<p>Để khắc phục hậu quả, chúa đất quyết định trồng cây vào khu vực trống trước đó. Khu vực trống có thể xem là một hình chữ nhật gồm \(m\) hàng và \(n\) cột. Ban đầu trên này chưa hề có cây. Chúa trồng lên mỗi ô một cây xanh, ban đầu mỗi cây cao \(1 cm\). Mỗi tuần chúa đất ra một trong hai lệnh theo thứ tự:</p>
+<ul>
+<li>\(1\) \(x\) \(y\) \(u\) \(v\) \(c\):  Bón phân cho một khu hình chữ nhật: \((x, y, u, v, c)\) bón cho mỗi cây có tọa độ thuộc vào hình chữ nhật có góc trái trên là \((x,y\)) và góc phải dưới là \((u,v)\) thêm \(c\) <strong>(gr)</strong> phân bón. Mỗi cây xanh khi nhận được \(1\) <strong>(gr)</strong> phân bón sẽ cao thêm \(1 (cm).\)</li>
+<li>\(2\) \(x\) \(y\) \(u\) \(v\): Cho biết tổng tất cả chiều cao các cây có toạ độ thuộc hình chữ nhật có góc trái trên là \((x,y\)) và góc phải dưới là \((u,v)\).</li>
+</ul>
+<p>Sau \(k\) tuần thực hiện, chúa đất muốn biết về tình trạng độ cao của cây xanh ở các lệnh dạng \(2\) trong khu vực này. Nhiệm vụ của bạn thống kê điều đó cho chúa đất.</p>
+<hr/>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li>Dòng thứ nhất gồm 3 số \(m, n , k\)</li>
+<li>\(k\) dòng sau, mỗi dòng gồm một trong \(2\) lệnh có dạng:<ul>
+<li>\(1\) \(x\) \(y\) \(u\) \(v\) \(c\) (\(1 \leq x \leq u \leq m\),  \(1 \leq y \leq v \leq n\),  \(1 \leq c \leq 10^3\)).</li>
+<li>\(2\) \(x\) \(y\) \(u\) \(v\) (\(1 \leq x \leq u \leq m\),  \(1 \leq y \leq v \leq n\)).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Kết quả:</strong> Với mỗi lệnh dạng \(2\), in ra số nguyên duy nhất trên một dòng.</p>
+<p><strong>Ràng buộc:</strong></p>
+<ul>
+<li>\(15\%\) số test đầu tiên tương ứng với \(15\%\) số điểm có \(m, n \leq 10^2, k \leq 10^3\).</li>
+<li>\(15\%\) số test tiếp theo tương ứng với \(15\%\) số điểm có \(m, n \leq 10^3, k \leq 10^5\), các lệnh loại \(1\) luôn thực hiện trước các lệnh loại \(2\).</li>
+<li>\(10\%\) số test tiếp theo tương ứng với \(10\%\) số điểm có \(m, n \leq 10^3, k \leq 10^5\), các lệnh loại \(1\) luôn có \(x = u\), \(y = v\).</li>
+<li>\(10\%\) số test tiếp theo tương ứng với \(10\%\) số điểm có \(m, n \leq 10^3, k \leq 10^5\), các lệnh loại \(2\) luôn có \(x = u\), \(y = v\).</li>
+<li>\(15\%\) số test tiếp theo tương ứng với \(15\%\) số điểm có \(m, n \leq 10^3, k \leq 10^5\).</li>
+<li>\(35\%\) số test còn lại tương ứng với \(35\%\) số điểm có \(m, n \leq 10^5, k \leq 10^5\). </li>
+</ul>
+<hr/>
+<p><strong>Sample Input</strong></p>
+<pre><code>4 5 5
+1 1 1 4 5 1
+2 1 1 3 3
+1 1 1 2 2 2
+2 1 2 1 2
+2 1 1 4 5</code></pre>
+<p><strong> Sample Output</strong></p>
+<pre><code>18
+4
+48</code></pre>
+</div>
+<hr/>
+</div>

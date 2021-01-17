@@ -1,0 +1,39 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Xoắn ốc</h2>
+</div><div class="content-description screen">
+<div><p>Một lưới ô vuông kích thước \((2n+1)\text{ x }(2n+1)\) được xây dựng như sau: Số \(1\) sẽ được điền vào ô trung tâm, số \(2\) được điền vào ô bên phải của số \(1\), và những số tự nhiên tiếp theo sẽ được điền theo một đường xoắn ốc ngược chiều kim đồng hồ.</p>
+<p>Nhiệm vụ của bạn là trả lời \(q\) truy vấn về tổng của các số được điền trong một hình chữ nhật con của lưới ô vuông xoắn ốc này (theo modulo \(10^9+7\)). Ví dụ, trong lưới ô vuông dưới đây, \(n=2\) và tổng các số trong hình chữ nhật con được tô màu xám là \(74\):</p>
+<p><img alt="Hình minh họa" src="https://i.ibb.co/WvVxZrT/spiral.png"/></p>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa hai số nguyên \(n\) và \(q\) thể hiện kích thước của lưới ô vuông và số lượt truy vấn.</p>
+<p>\(q\) dòng tiếp theo, mỗi dòng chứa bốn số nguyên \(x_1\), \(y_1\), \(x_2\) và \(y_2\) \(\left(-n\leq x_1\leq x_2\leq n, -n\leq y_1\leq y_2\leq n\right)\). Bạn cần tính tổng các số trong hình chữ nhật có hai góc đối là \(\left(x_1, y_1\right)\) và \(\left(x_2, y_2\right)\).</p>
+<hr/>
+<h4>Output</h4>
+<p>Gồm \(q\) dòng, mỗi dòng ghi một số nguyên là câu trả lời cho truy vấn tương ứng (theo module \(\left.10^9+7\right)\).</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>2 3
+0 -2 1 1
+-1 0 1 0
+1 2 1 2</code></pre>
+<h5>Output</h5>
+<pre><code>74
+9
+14</code></pre>
+<hr/>
+<h4>Giới hạn</h4>
+<ul>
+<li>\(1\leq q\leq 100\).</li>
+<li>\(1\leq n\leq 10^9\).</li>
+<li>\(12\%\) số test có \(1\leq n\leq 1000\).</li>
+<li>\(15\%\) số test khác có \(1\leq n\leq 10^9\), \(x_1=x_2\) và \(y_1=y_2\).</li>
+<li>\(17\%\) số test khác có \(1\leq n\leq 10^5\).</li>
+<li>\(31\%\) số test khác có \(1\leq n\leq 10^9\) và \(x_1=y_1=1\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn bài: BOI 2016</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,49 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    XOR3 - Phép XOR 3 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">An có một mảng <strong>A</strong> gồm <strong>N</strong> phần tử,  hãy giúp cậu ta tính tổng <strong>XOR</strong> của các phần tử trong các chuỗi con liên tiếp của mảng A, sau đó tính lại tổng <strong>XOR</strong> của các kết quả vừa thu được một lần nữa. Hãy giúp cậu ta thực hiện bài toán này nhé.</p>
+<p style="text-align:justify"><strong>Dữ liệu nhập:</strong> dòng đầu tiên chứa một số nguyên <strong>T</strong> - số lượng test case (1 ≤ T ≤ 5). Tiếp theo là các test case:</p>
+<ul>
+<li style="text-align:justify">Dòng đầu tiên chứa một số nguyên dương <strong>N</strong> - số lượng phần tử của mảng (2 ≤ N ≤ 10<sup><span style="font-size:11px">5</span></sup>)</li>
+<li style="text-align:justify">Dòng thứ hai chứa N số nguyên dương A<sub>1</sub>, A<sub>2</sub>, ... A<sub>N</sub> (1 ≤ A<sub>i</sub> ≤ 10<sup>9</sup>)</li>
+</ul>
+<p style="text-align:justify"><strong>Dữ liệu xuất:</strong> mối test case xuất trên một dòng, chứa một số nguyên duy nhất là kết quả tìm được.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">1<br/>3<br/>1 2 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p style="text-align:justify">Mảng {1, 2, 3} có 6 chuỗi con liên tiếp và có tổng XOR tương ứng như sau (⊕ là kí hiệu của phép XOR):</p>
+<ul>
+<li style="text-align:justify">{1}: 1</li>
+<li style="text-align:justify">{2}: 2</li>
+<li style="text-align:justify">{3}: 3</li>
+<li style="text-align:justify">{1, 2}: 1 ⊕ 2 = 3</li>
+<li style="text-align:justify">{2, 3}: 2 ⊕ 3 = 1</li>
+<li style="text-align:justify">{1, 2, 3}: 1 ⊕ 2 ⊕ 3 = 0</li>
+</ul>
+<p style="text-align:justify">Tổng XOR của các kết quả vừa tìm được: 1 ⊕ 2 ⊕ 3 ⊕ 3 ⊕ 1 ⊕ 0 = 2.</p>
+<p style="text-align:justify">Kết quả tìm được là 2.</p>
+</div>
+</div></body></html>

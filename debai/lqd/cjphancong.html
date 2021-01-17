@@ -1,0 +1,38 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">CJ Phản công</h2>
+</div><div class="content-description screen">
+<div><p>Nhóm của CJ - tức là nhóm Grove Street Families và nhóm Los Santos Vagos trước giờ là kẻ thù của nhau, và bây giờ vẫn vậy. Trước đó, nhóm Los Santos Vagos tấn công để chiếm lấy vùng của Grove Street Families nhưng thất bại. Và nhóm của CJ đã quyết định đáp trả, phản công ngược lại nhóm Los Santos Vagos.</p>
+<p>Sau khi thăm dò địa thế của đối phương, thì vùng ở Los Santos Vagos có \(N\) điểm căn cứ, các căn cứ được đánh số theo thứ tự từ \(1\) tới \(N\), và \(M\) tuyến đường hai chiều nối trực tiếp giữa hai căn cứ. CJ muốn nhắm, tìm ra các điểm trọng yếu của đối phương để đối phó. Điểm trọng yếu là những điểm khi mà bị nhóm CJ chặn, chiếm lấy thì những căn cứ mà điểm này đến được sẽ bị chia ra ít nhất hai phần và hai căn cứ thuộc hai phần khác nhau bất kì để không thể đi đến nhau được, và nhóm Los Santos sẽ nhanh bị suy yếu do không thể hỗ trợ lẫn nhau.</p>
+<p><a href="https://imgur.com/vwJnAdk"><img src="https://i.imgur.com/vwJnAdk.png" style="width:300px;" title="source: imgur.com"/></a></p>
+<p>Ví dụ bản đồ căn cứ của Los Santos Vagos như trên, khi chiếm lấy điểm \(3\) thì tập các căn cứ tới điểm \(3\) là (\(6\), \(4\), \(2\), \(5\), \(1\)) bị chia ra \(3\) phần: (\(6\), \(4\)), (\(2\)) và (\(5\), \(1\)) và bất kỳ \(2\) căn cứ thuộc \(2\) trong \(3\) phần khác nhau bất kì, như \(6\) và \(2\), đều không thể tới được với nhau, nên điểm \(3\) là điểm trọng yếu. Điểm \(4\) cũng là điểm trọng yếu vì tập các căn cứ tới điểm \(4\) là (\(6\), \(2\), \(3\), \(1\), \(5\)) bị chia ra là (\(6\)), (\(2\), \(3\), \(1\), \(5\)). Còn các điểm \(1\), \(2\), \(5\), \(6\) không phải là các điểm trọng yếu.</p>
+<p><strong>Yêu cầu</strong>: Hãy chỉ ra cho CJ tất cả các điểm trọng yếu trên.</p>
+<p><strong>Dữ liệu vào</strong>: Gồm \(M + 1\) dòng:</p>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương \(N\), \(M\) thể hiện số căn cứ và số tuyến đường hai chiều</li>
+<li>\(M\) dòng tiếp theo, dòng thứ \(i\) chứa hai số \(u_i\) và \(v_i\) thể hiện có tuyến đường hai chiều nối từ căn cứ \(u_i\) tới căn cứ \(v_i\)</li>
+</ul>
+<p><strong>Kết quả</strong>: Ghi ra hai dòng:</p>
+<ul>
+<li>Dòng đầu tiên ghi số \(K\) là số điểm trọng yếu.</li>
+<li>Dòng tiếp theo là ghi ra số hiệu của \(K\) điểm trọng yếu tìm được theo thứ tự tăng dần.</li>
+</ul>
+<p><strong>Ví dụ</strong></p>
+<p><strong>Input</strong>:</p>
+<pre><code>6 6
+1 3
+1 5
+2 3
+3 4
+3 5
+4 6</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>2
+3 4</code></pre>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>\(30\)% số test đầu tiên có \(N \leq 10^3, M \leq 3.10^3\)</li>
+<li>\(70\)% số test còn lại có \(N \leq 10^5, M \leq 3.10^5\)</li>
+</ul>
+</div>
+<hr/>
+</div>

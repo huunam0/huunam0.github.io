@@ -1,0 +1,37 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Đế chế</h2>
+</div><div class="content-description screen">
+<div><p>Trong tiết học lịch sử của trường mầm non super kids, các em nhỏ đã được học về lịch sử của một đất nước xa xôi. Lịch sử của đất nước này được chia làm \(N\) mốc thời gian. Tại một mốc thời gian bất kỳ, một đế chế mới sẽ xuất hiện, mỗi đế chế sẽ có một sức mạnh nhất định, không có hai đế chế nào có cùng chỉ số sức mạnh. Đế chế thứ \(i\) sẽ có chỉ số sức mạnh là \(a_i\). Với mỗi mốc thời gian bất kỳ, các đế chế có chỉ số sức mạnh cao hơn sẽ đi xâm chiếm những đế chế yếu có chỉ số sức mạnh thấp hơn. Cuộc chiến sẽ diễn ra đến khi chỉ còn một đế chế duy nhất tồn tại, và ta gọi đế chế này là đế chế thống trị trong mốc thời gian đang xét.</p>
+<p>Để ra đề kiểm tra khả năng hiểu bài của các bạn học sinh, thầy giáo đã cho các em ấy Q câu hỏi. Với mỗi câu hỏi bất kỳ, thầy giáo sẽ cho các bạn học sinh hai số nguyên dương \(L\) và \(R\) đại diện cho giai đoạn từ mốc thời gian \(L\) đến mốc thời gian \(R\). Yêu cầu của mỗi câu hỏi là: nếu chỉ tính trong các đế chế trong giai đoạn này, hãy tính độ đa dạng của giai đoạn lịch sử [\(L\), \(R\)].</p>
+<p>Độ đa dạng của giai đoạn lịch sử [\(L\), \(R\)] là số lượng đế chế có ít nhất một lần thống trị một mốc thời gian nào đó thuộc [\(L\), \(R\)].</p>
+<p><strong>Dữ liệu vào</strong>:</p>
+<ul>
+<li>Dòng đầu tiên là hai số nguyên dương \(N\), \(Q\) lần lượt là số lượng mốc thời gian trong lịch sử và số lượng câu hỏi (\(1 \leq N, Q \leq 5 \times 10^{5}\)).</li>
+<li>Dòng tiếp theo là một dãy a bao gồm \(N\) số, \(a_i\) là chỉ số sức mạnh của đế chế xuất hiện ở mốc thời gian \(i\) (\(1 \leq i \leq N\), \(1 \leq a_i \leq 2 \times 10^{9}\)).</li>
+<li>\(Q\) dòng tiếp theo mỗi dòng hai số nguyên dương \(L\), \(R\) (\(1 \leq L \leq R \leq N\)).</li>
+</ul>
+<p><strong>Dữ liệu ra</strong>:</p>
+<ul>
+<li>Gồm \(Q\) dòng là câu trả lời cho các câu hỏi.</li>
+</ul>
+<p><strong>Ví dụ</strong>:</p>
+<p><strong>Input</strong>:</p>
+<pre><code>5 2    
+1 2 4 3 5
+1 3
+2 4</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>3
+2</code></pre>
+<p>Giải thích giai đoạn [2, 4].</p>
+<p>Mốc thời gian thứ hai: đế chế 2 xuất hiện và là đế chế duy nhất -&gt; thống trị mốc thời gian thứ hai.</p>
+<p>Mốc thời gian thứ ba: đế chế 3 xuất hiện với chỉ số sức mạnh là 4 -&gt; thống trị mốc thời gian thứ ba.</p>
+<p>Mốc thời gian thứ tư: đế chế 4 xuất hiện với chỉ số sức mạnh là 3, bị đế chế 3 xâm chiếm.</p>
+<p>Subtasks:</p>
+<ul>
+<li>33% số test có: \(N, Q \leq 5 \times 10^{3}\).</li>
+<li>60% số test có: Không có ràng buộc gì thêm.</li>
+</ul>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,52 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Trò chơi với ngọc (Chọn ĐT'20-21)</h2>
+</div><div class="content-description screen">
+<div><p>Tí và Tèo rất thích chơi đùa với những viên ngọc. Hôm nay hai bạn có n viên ngọc trên bàn. Như vạn vật trên đời, mỗi viên ngọc có một vẻ đẹp riêng trong mắt mỗi người. Vì vậy, để giữ tình bạn thân thiết, Tí Tèo quyết định rằng, viên ngọc thứ \(i\) sẽ có vẻ đẹp \(a_i\) đối với Tí và \(b_i\) đối với Tèo. Tí và Tèo bắt đầu trò chơi như sau: hai bạn sẽ thay phiên bốc một viên ngọc trên bàn về phía mình. Sau khi bốc hết ngọc, điểm số của mỗi bạn sẽ là tổng vẻ đẹp các viên ngọc mà bạn đó lấy về phần mình.</p>
+<p>Ví dụ nếu Tí bốc các viên 1, 3 và Tèo bốc các viên 2, 4 thì Tí được \(a_1+a_3\) điểm còn Tèo được \(b_2+b_4\) điểm. Mục tiêu của trò chơi là làm cho tổng điểm của mình trừ tổng điểm đối phương càng lớn càng tốt. Nói cách khác, đặt \(X\) là tổng điểm của Tí trừ tổng điểm của Tèo. Tí muốn \(X\) càng lớn càng tốt, còn Tèo muốn \(X\) càng nhỏ càng tốt. Biết rằng Tí đi trước và cả hai đều chơi tối ưu.</p>
+<p><strong>Yêu cầu</strong>: Hãy tính tổng điểm của Tí trừ tổng điểm của Tèo sau khi trò chơi kết thúc.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng 1 chứa số nguyên dương \(n\) (\(1≤ n≤10^5\)).</li>
+<li>Dòng thứ hai chứa \(n\) số nguyên  \(a_1,a_2,…,a_n\)  (\(0 ≤ a_i≤ 10^9\) với \(1 ≤  i ≤ n\)).</li>
+<li>Dòng thứ ba chứa \(n\) số nguyên  \(b_1,b_2,…,b_n\)  (\(0 ≤ b_i  ≤ 10^9\) với \(1 ≤  i ≤ n\)).   </li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra số nguyên là kết quả bài toán.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>3
+10 20 30
+10 20 30</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>20</code></pre>
+<p><strong>Sample input</strong></p>
+<pre><code>2
+10 20
+20 10</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>0</code></pre>
+<p><strong>Sample input</strong></p>
+<pre><code>4
+10 10 10 20
+20 20 20 30</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>-10</code></pre>
+<p><strong><em>Giải thích:</em></strong></p>
+<ul>
+<li>Trong ví dụ 1, Tí bốc viên ngọc thứ 3 trước. Sau đó Tèo bốc viên thứ 2 rồi Tí bốc viên thứ 1 còn lại. Như vậy Tí được 40 điểm, còn Tèo được 20 điểm. Hiệu là 20.</li>
+<li>Trong ví dụ 2, dù Tí bốc viên thứ 1 hay thứ 2 thì hai bạn cũng sẽ bằng điểm nhau.</li>
+<li>Trong ví dụ 3, Tí bốc viên thứ 4 trước. Tèo bốc viên thứ 3. Tí bốc viên thứ 2 rồi Tèo bốc viên thứ 1. Hiệu của 2 bạn là: \((20 + 10) - (20 + 20) = -10\).</li>
+</ul>
+<p><strong><em>Ràng buộc:</em></strong></p>
+<ul>
+<li>Có 20% điểm tương ứng với trường hợp \(a_i=b_i\) với mọi \(1 ≤ i ≤ n\).</li>
+<li>Có 40% điểm tương ứng với trường hợp \(n ≤ 20\).</li>
+<li>Có 20% điểm tương ứng với trường hợp \(n ≤ 10^3\).</li>
+<li>Có 20% điểm tương ứng với trường hợp \(n ≤ 10^5\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn: Bài 4 Chọn ĐT HSG TP.ĐN 2020-2021</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,37 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    MEETING - Lễ Meeting 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>UBND thành phố Hồ Chí Minh đang lên kế hoạch tổ chức một buổi meeting chào mừng kỉ niệm 70 năm Ngày Cách mạng Tháng Tám (19/8/1945 - 19/8/2015) và Quốc khánh nước Cộng hòa xã hội chủ nghĩa Việt Nam (02/9/1945 - 02/9/2015). Trong buổi lễ, sẽ có một số tình nguyện viên được xếp trên khán đài để chào mừng buổi lễ. Có N người được xếp thành một hàng thẳng dài trên khán đài, một số người đang đứng để vỗ tay và vẫy cờ chào mừng, một số khác thì ngồi nghỉ ngơi. Vì buổi lễ diễn ra khá dài nên để tránh việc mọi người phải đứng quá lâu trong suốt buổi lễ, cũng như để tránh tình trạng số người đứng lên chào mừng trong các thời điểm của buổi lễ quá thưa thớt (nhìn sẽ không đẹp) nên BTC quyết định sau mỗi giờ sẽ thay đổi trạng thái của mọi người. Sau một giờ, một người chỉ được ngồi xuống nghỉ ngơi nếu như ở giờ trước đó, tất cả những người kế họ đều nghỉ ngơi, ngược lại, họ phải đứng lên chào mừng lễ trong giờ tiếp theo. Bạn được giao nhiệm vụ quản lý N tình nguyện viên này và ban tổ chức buổi lễ muốn bạn xem xét và báo cáo lại sau khi kết thúc buổi lễ, những ai đang đứng và những ai đang ngồi.</p>
+<p>Dữ liệu nhập:</p>
+<p> - Dòng đầu tiên chứa 1 số nguyên dương T - số lượng test case (1 ≤ T ≤ 1000).</p>
+<p> - Tiếp theo là các test case, mỗi test case gồm 2 dòng: Dòng đầu tiên chứa 2 số nguyên N, L là số tình nguyện viên và thời gian diễn ra buổi lễ (tính theo giờ) (2 ≤ N ≤ 100, 0 ≤ L ≤ 10<sup>4</sup>). Dòng thứ hai chứa trạng thái của N người khi bắt đầu buổi lễ: 's' nếu người đó đang ngồi và 'S' nếu họ đang đứng.</p>
+<p>Dữ liệu xuất: mỗi test case xuất ra trên 1 dòng chứa trạng thái của N người sau khi kết thúc buổi lễ.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">7<br/>3 1<br/>sSs<br/>3 2<br/>sSs<br/>3 3<br/>sSs<br/>3 4<br/>sSs<br/>3 5<br/>sSs<br/>3 4<br/>sss<br/>6 2<br/>sSssSS<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">SsS<br/>sSs<br/>SsS<br/>sSs<br/>SsS<br/>sss<br/>sSSSSS</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Từ test case 1 đến test case 5 là trạng thái của N người sau lần lượt từng giờ.</p>
+</div>
+</div></body></html>

@@ -1,0 +1,66 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Tổng xor của đường đi</h2>
+</div><div class="content-description screen">
+<div><p>Cho trước một cây chỉ gồm một đỉnh \(1\) (và cũng chính là <em>gốc</em> của cây). Nhiệm vụ của bạn là viết chương trình hỗ trợ thực hiện \(Q\) truy vấn ở hai dạng sau:</p>
+<ul>
+<li><code>Add x y</code> - Thêm một đỉnh vào cây và cho nó làm một đỉnh con của đỉnh \(x\). Đỉnh mới này và đỉnh \(x\) được kết nối bởi một cạnh có trọng số là \(y\). Số hiệu của đỉnh mới bằng số lượng đỉnh của cây trước khi thêm cộng cho \(1\).</li>
+<li><code>Query a b</code> - Tìm đường đi dài nhất bắt đầu từ đỉnh \(a\) và kết thúc tại một đỉnh thuộc cây con gốc \(b\) (bao gồm chính đỉnh \(b\)). Độ dài của một đường đi được định nghĩa là tổng xor các trọng số của các cạnh nằm trên đường đi đó.</li>
+</ul>
+<hr/>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa số nguyên dương \(Q\) \((1\leq Q\leq 200,000)\) được nhắc đến ở đề bài.</p>
+<p>Dòng thứ \(i\) trong \(Q\) dòng tiếp theo chứa thông tin về truy vấn thứ \(i\) ở định dạng đã được mô tả ở đề bài. Các giá trị \(x\), \(a\) và \(b\) thể hiện những đỉnh đang tồn tại ở trong cây tại thời điểm truy vấn và giá trị \(y\) không vượt quá \(2^{30}\).</p>
+<hr/>
+<h4>Output</h4>
+<p>Với mỗi truy vấn dạng <code>Query</code>, in ra một số nguyên trên một dòng riêng biệt thể hiện câu trả lời cho truy vấn tương ứng.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Sample input 1</h5>
+<pre><code>4
+Add 1 5
+Query 1 1
+Add 1 7
+Query 1 1</code></pre>
+<h5>Sample output 1</h5>
+<pre><code>5
+7</code></pre>
+<h5>Sample input 2</h5>
+<pre><code>6
+Add 1 5
+Add 2 7
+Add 1 4
+Add 4 3
+Query 1 1
+Query 2 4</code></pre>
+<h5>Sample output 2</h5>
+<pre><code>7
+2</code></pre>
+<h5>Sample input 3</h5>
+<pre><code>10
+Add 1 4
+Add 1 9
+Add 1 10
+Add 2 2
+Add 3 3
+Add 4 4
+Query 4 2
+Query 1 3
+Add 6 7
+Query 1 3</code></pre>
+<h5>Sample output 3</h5>
+<pre><code>14
+10
+13</code></pre>
+<hr/>
+<h4>Ràng buộc</h4>
+<ul>
+<li>\(25\%\) số test có \(Q\leq 200\).</li>
+<li>\(25\%\) số test khác có \(Q\leq 2000\).</li>
+<li>\(25\%\) số test khác thỏa \(b=1\) với mọi truy vấn <code>Query</code>.</li>
+<li>\(25\%\) số test còn lại không có ràng buộc gì thêm. </li>
+</ul>
+<hr/>
+<p><em>Nguồn bài: COCI</em></p>
+</div>
+<hr/>
+</div>

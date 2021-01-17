@@ -1,0 +1,36 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">CJ tới San Fierro</h2>
+</div><div class="content-description screen">
+<div><p>Sau khi cướp hết ngân hàng, thì Catalina cùng Claude đã đi tới Liberty City. Chỉ còn CJ ở lại. CJ giờ cũng chẳng biết làm gì, và đi dạo đâu đó chơi. Trong lúc đi dạo, vô tình gặp ông The Truth. Và hai người bắt tay với nhau làm bạn, và cùng nhau tới thành phố San Fierro làm ăn với chiếc xe buýt của ông. Trong lúc đi thì ông chợt nhận ra là ở thành phố này chủ yếu là đường hầm, ông thì chưa đo độ cao chiếc xe ?!!. Và ông đã đưa cho CJ tấm bản đồ San Fierro.</p>
+<p>Thành phố San Fierro có \(N\) địa điểm, đánh số từ \(1\) tới \(N\), và \(M\) con đường có hầm, được đánh số từ \(1\) tới \(M\), con đường thứ \(i\) có độ dài là \(L_i\), độ cao giới hạn là \(H_i\). Xe của ông hiện tại ở địa điểm \(s\), và muốn tới địa điểm \(t\). Và ông quyết định nhờ CJ tìm đường đi mà độ cao đạt được là lớn nhất có thể để đi qua. Trong các đường đi có cùng độ cao lớn nhất, thì ông muốn lấy đường đi ngắn nhất có thể.</p>
+<p>Hãy chỉ ra cho CJ con đường thoả mãn điều kiện của ông The Truth. Nếu có nhiều đường đi thoả mãn, in ra một đường đi bất kỳ.</p>
+<p><strong>Dữ liệu vào</strong>: Gồm \(M + 1\) dòng:</p>
+<ul>
+<li>Dòng đầu tiên chứa bốn số nguyên dương \(N, M, s, t\) \((1 \leq s, t \leq N, s \neq t)\).</li>
+<li>\(M\) dòng tiếp theo, dòng thứ \(i\) chứa bốn số nguyên dương \(u_i\), \(v_i\), \(L_i\), \(H_i\) \((1 \leq u_i, v_i \leq N, u_i \neq v_i, 1 \leq L_i, H_i \leq 10^9)\).</li>
+</ul>
+<p><strong>Kết quả</strong>: Gồm hai dòng:</p>
+<ul>
+<li>Dòng đầu tiên ghi ra độ cao lớn nhất có thể.</li>
+<li>Dòng thứ hai ghi ra số hiệu trên đường đi tương ứng có độ dài nhỏ nhất theo thứ tự hành trình, bắt đầu từ \(s\) và kết thúc tại \(t\).</li>
+</ul>
+<p><strong>Ví dụ</strong>:</p>
+<p><strong>Input</strong>:</p>
+<pre><code>6 6 4 3
+1 2 7 10
+5 3 3 7
+5 1 7 7
+5 4 7 3
+2 5 5 7
+3 6 6 8</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>3
+4 5 3</code></pre>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>\(30\)% số test đầu tiên có \(N \leq 10^3, M \leq 2.10^3\).</li>
+<li>\(70\)% số test còn lại có \(N \leq 10^5, M \leq 2.10^5\).</li>
+</ul>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,46 @@
+<h2>LAZYCOWS - Lazy Cows</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274501/problem/D" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274501/problem/D </a><p> </p>
+<table border="0" class="problems" style="width: 100%;">
+<tbody>
+<tr class="navigation">
+<td width="50%"><a href="/problems/LAZYCOWS/en/">English</a></td>
+<td width="50%"><a href="/problems/LAZYCOWS/vn/">Vietnamese</a></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Cho mô hình bãi cỏ có dạng bảng chữ nhật 2xB (1 &lt;= B &lt;= 15,000,000), trong đó một số ô có con bò đang ăn cỏ. Có tất cả N con bò (1 &lt;= N &lt;= 1000) trên bãi cỏ. Ví dụ:</p>
+<pre>-------------------------------------------------------
+|     | cow |     |     |     | cow | cow | cow | cow |
+-------------------------------------------------------
+|     | cow | cow | cow |     |     |     |     |     |
+-------------------------------------------------------
+</pre>
+<p>Bác John muốn dùng K (1 &lt;= K &lt;= N) cái chuồng hình chữ nhật để che phủ đàn bò, sao cho tổng diện tích được phủ là nhỏ nhất. Không có hai chuồng nào được nằm đè lên nhau. Hiển nhiên, các chuồng phải che phủ hết các ô có bò.</p>
+<p>Ví dụ, trong hình trên nếu K=2, lời giải tối ưu bao gồm một chuồng kích thước 2x3 và một chuồng kích thước 1x4. Tổng diện tích được phủ là 10.</p>
+<h3>Dữ liệu</h3>
+<p>Dòng đầu tiên chứa một số nguyên t là số bộ test. Mỗi bộ test có dạng:</p>
+<ul>
+<li>Dòng 1: N, K, B</li>
+<li>Dòng 2..N+1: chức tọa độ của các con bò, trong phạm vi (1,1) đến (2,B). Không có ô nào chứa hơn 1 con bò.</li>
+</ul>
+<h3>Kết quả</h3>
+<p>Với mỗi test, in ra tổng diện tích nhỏ nhất cần phủ.</p>
+<h3>Ví dụ</h3>
+<pre><strong>Dữ liệu</strong>
+1
+8 2 9
+1 2
+1 6
+1 7
+1 8
+1 9
+2 2
+2 3
+2 4
+
+<strong>Kết quả</strong>
+10
+</pre>
+<p></p>
+</div>

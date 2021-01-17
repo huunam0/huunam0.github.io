@@ -1,0 +1,53 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    OV - Bảng ô vuông 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.5 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Cho một bảng ô vuông N hàng M cột, mỗi ô vuông có giá trị 1 hoặc 2. bảng ô vuông có thể dịch chuyển theo một trong bốn cách Up-Down-Left-Right:</p>
+<p>-Up: các dòng dịch chuyển lên trên 1 dòng, dòng trên cùng dịch chuyển xuống dưới cùng.</p>
+<p>-Down: các dòng dịch chuyển xuống dưới 1 dòng, dòng dưới cùng dịch chuyển lên trên cùng</p>
+<p>-Left : các cột dịch chuyển sang trái 1 cột, cột tráu nhất dịch chuyển tới cột phải nhất.</p>
+<p>-Right : các cột dịch chuyển sang phải 1 cột, cột phải nhất dịch chuyển tới cột trái nhất.</p>
+<p>Cho T truy vấn thuộc một trong 4 loại:</p>
+<p>1 x : thực hiện x lệnh Down với bảng ô vuông đã cho.</p>
+<p>2 x : thực hiện x lệnh Right với bảng ô vuông đã cho.</p>
+<p>3 x : thực hiện x lệnh Up với bảng ô vuông đã cho.</p>
+<p>4 x : thực hiện x lệnh Left với bảng ô vuông đã cho.</p>
+<p>Với mỗi truy vấn hãy đưa ra số ô vuông 2x2 có tổng bằng 4 hoặc 8. </p>
+<p><strong>Input </strong></p>
+<p>-Dòng đầu gồm 2 số N M</p>
+<p>-N dòng tiếp mỗi dòng có M số nguyên 1 hoặc 2</p>
+<p>-Dòng N+1 có số nguyên T.</p>
+<p>-T dòng tiếp theo chứa các  truy vấn.</p>
+<p><strong>Output</strong></p>
+<p>-Gồm T dòng, mỗi dòng ghi số ô vuông 2x2 cần tìm.</p>
+<p><strong>Giới hạn:</strong></p>
+<p>1&lt;=N,M&lt;=2000;</p>
+<p>1&lt;=x&lt;=10<sup>9</sup>;</p>
+<p>1&lt;=T&lt;=10<sup>5</sup>;</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4 5<br/>1 1 2 2 2<br/>1 1 2 2 2<br/>2 2 2 2 1<br/>1 1 1 1 1<br/>14<br/>1 1<br/>1 2<br/>1 3<br/>2 1<br/>2 2<br/>2 3<br/>2 4<br/>4 1<br/>4 2<br/>4 3<br/>4 4<br/>3 1<br/>3 2<br/>3 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">5<br/>4<br/>2<br/>3<br/>2<br/>4<br/>3<br/>3<br/>4<br/>2<br/>3<br/>2<br/>4<br/>5</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

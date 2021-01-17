@@ -1,0 +1,43 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    LUNARNY - Đi chơi Tết 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 3.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Nhân dịp Tết Nguyên Đán, Misaki cùng các bạn của mình lại tổ chức một cuộc vui chơi ở khu vui chơi giải trí giống như đợt <a href="http://laptrinh.ntu.edu.vn/Problem/Details/4476" style="line-height: 13.8667px;">đi chơi Halloween</a> vừa rồi. Nhắc lại bài toán: Nhà của Misaki và các bạn của cô nằm trên cùng 1 con đường, các nhà được đánh vị trí từ 1 đến N, mỗi nhà cách nhau 1 mét. Nhà của Misaki ở vị trí <strong>1</strong> và khu vui chơi ở vị trí <strong>N</strong>. Nhà <strong>M</strong> người bạn của Misaki ở các vị trí <strong>a<sub>1</sub>, a<sub>2</sub>,..., a<sub>M</sub></strong>. Ngoài ra trên tuyến đường còn có <strong>P</strong> trạm xe buýt tại các vị trí <strong>b<sub>1</sub>, b<sub>2</sub>, ..., b<sub>P</sub></strong>. Từ nhà mình, Misaki sẽ đi đến nhà của các bạn mình. Cô có thể đi bằng taxi hoặc xe buýt. Với taxi, cô có thể bắt từ bất kì vị trí nào, giá của taxi là <strong>T đồng/mét</strong>. Với xe buýt, cô chỉ có thể bắt từ trạm này và đi đến một trạm khác, giá của xe buýt là <strong>B đồng/lượt</strong> không phân biệt khoảng cách. Tuy rằng trong túi đang rủng rỉnh tiền lì xì nhưng Misaki vẫn phải tìm cách đi <strong>tiết kiệm tiền nhất</strong> sao cho thăm đủ tất cả các bạn và đến khu giải trí N để chơi được nhiều trò chơi hơn. Sau khi nghe kể về chuyến <a href="http://laptrinh.ntu.edu.vn/Problem/Details/4476" style="line-height: 13.8667px;">đi chơi Halloween</a>, thầy Admin đã gợi ý Misaki rằng cô nên thăm nhà các bạn <strong>theo thứ tự bất kì</strong> để tiết kiệm được nhiều tiền nhất. Bạn hãy giúp Misaki tìm cách đi đón tất cả các bạn và đến điểm vui chơi với số tiền phải trả là ít nhất nhé! <img alt="wink" src="http://laptrinh.ntu.edu.vn/Scripts/ckeditorf/plugins/smiley/images/wink_smile.png" style="height:23px; width:23px" title="wink"/></p>
+<p><strong>Yêu cầu:</strong> Cho biết số nhà trên đường, các nhà phải đến đón, số trạm xe buýt và số tiền đi xe taxi, xe buýt, bạn hãy tìm cách đi sao cho đến <strong>thăm tất cả các nhà</strong> và đến vị trí N <strong>với số tiền ít nhất</strong>.</p>
+<p><strong>Dữ liệu nhập: </strong></p>
+<p><strong>  </strong>- Dòng thứ nhất chứa các số nguyên N, M, P, T, B là số nhà, các nhà phải đón, số trạm xe buýt và số tiền đi taxi, xe buýt. (1 <span style="color:rgb(35, 35, 35); font-size:13.6px">≤ N ≤ 10<sup>9 </sup>| 0 ≤ M ≤ 20 | 0 ≤ P</span><span style="color:rgb(35, 35, 35); font-size:13.6px"> ≤ 1000 | 1 ≤ T,B ≤ 10<sup>4</sup>).</span></p>
+<p><span style="color:rgb(35, 35, 35); font-size:13.6px">  - Dòng thứ hai chứa M số nguyên là các nhà phải đến, số thứ a<sub>i </sub>là vị trí của nhà thứ i (1 </span><span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:13.6px">≤ a<sub>i </sub>≤ N). Dữ liệu cho đảm bảo không có 2 nhà trùng vị trí.</span></p>
+<p><span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:13.6px">  - Dòng cuối cùng chứa P số nguyên là vị trí các trạm xe buýt theo thứ tự tăng dần, số thứ b<sub>i </sub>là vị trí của trạm thứ i, mặc định có trạm ở vị trí 1 và N. (1 ≤ b<sub>i </sub>≤ N).</span></p>
+<p><strong><span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:13.6px">Dữ liệu xuất:</span></strong></p>
+<p><span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:13.6px">  - Dòng thứ nhất chứa 1 số nguyên duy nhất là số tiền ít nhất phải trả.</span></p>
+<p><span style="color:rgb(35, 35, 35); font-family:verdana,helvetica,sans-serif; font-size:13.6px">  - Dòng thứ hai chứa M số nguyên là thứ tự Misaki thăm nhà các bạn của mình. Nếu có nhiều đáp án, chỉ cần in ra 1 cách đi bất kì.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">10 2 2 1000 2000<br/>5 8<br/>4 7</div>
+<div class="sample-type">output</div>
+<div class="sample-value">8000<br/>1 2</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>- Đầu tiên Misaki đi xe buýt từ 1 đến 4 </p>
+<p>- Sau đó đi taxi từ 4 đến 5, 5 đến 8 và 8 đến 10</p>
+<p>Tổng số tiền là 2000+1000+3000+2000=8000 đồng</p>
+</div>
+</div></body></html>

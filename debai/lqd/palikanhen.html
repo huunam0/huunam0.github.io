@@ -1,0 +1,29 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Xâu đối xứng và những thao tác</h2>
+</div><div class="content-description screen">
+<div><p>Gọi \(S(n,k)\) là tập hợp tất cả dãy đối xứng gồm \(n\) phần tử, mỗi phần tử thuộc đoạn \([1;k](k\in \mathbb{N}^{*})\) . (Dãy đối xứng là dãy mà khi ta viết ngược hay viết xuôi thì đều như nhau).</p>
+<p>Ví dụ \(S(3,2)=\left\{(1,2,1),(1,1,1),(2,2,2),(2,1,2)\right\}\).</p>
+<p><strong>Henry</strong> và <strong>Kaninho</strong> lần lượt thực hiện thủ tục như sau:</p>
+<ul>
+<li>Mỗi lượt, <strong>Henry</strong> sẽ lấy một dãy \(T\) từ tập \(S(n,k)\) rồi đưa cho <strong>Kaninho</strong>. Sau đó <strong>Kaninho</strong> sẽ thực hiện thao tác sau với số lần bất kì: Di chuyển phần tử đầu tiên của dãy đến sau phần tử cuối cùng của dãy.</li>
+</ul>
+<p>Hỏi sau khi hoàn thiện các thủ tục trên, thì số dãy khác nhau tối đa có thể tạo ra là bao nhiêu ?</p>
+<p>Vì đáp án có thể lớn nên kết quả cần lấy mod \(10^9+7\) trước khi in ra.</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li>Dòng thứ nhất chứa hai số nguyên \(n,k(1\le n,k\le 10^9)\)</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>Đáp án cần tìm</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3 2</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>8</code></pre>
+<p><strong>Giải thích:</strong> Ta có: \(S(3,2)=\left\{(1,2,1),(1,1,1),(2,2,2),(2,1,2)\right\}\), Khi đó có \(8\) dãy khác nhau có thể tạo ra đó là :\((1,2,1),(2,1,1),(1,1,2),(2,1,2),(1,2,2),(2,2,1),(1,1,1),(2,2,2)\). Vậy nên đáp án là \(8\).</p>
+<p><strong>Nguồn:</strong> Tham khảo từ Atcoder</p>
+</div>
+<hr/>
+</div>

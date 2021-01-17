@@ -1,0 +1,41 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    LUTH2 - Lũy thừa 2 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Hôm nay An được thầy giáo giao cho một bài tập. Ông ấy yêu cầu An phải tính <strong>A<sup>B</sup> mod K</strong>, nhưng ông yêu cầu phải giải quyết bài toán với cả 2 trường hợp số mũ âm và dương. Đồng thời ông cũng đưa ra 2 giả thuyết sau để giúp bài toán trở nên đơn giản hơn:</p>
+<p> - <strong>A<sup>-B</sup> mod K ≡ (A<sup>-1</sup> mod K)<sup>B</sup> mod K</strong> với B &gt; 0.</p>
+<p> - A, K là 2 số nguyên tố cùng nhau.</p>
+<p>Bài toán này quá khó so với An và cậu ta nhờ sự giúp đỡ của bạn, hãy giúp cậu ấy nhé.</p>
+<p><strong>Dữ liêu nhập:</strong> Dòng đầu tiên chứa một số nguyên <strong>T</strong> - số lượng test case (1 ≤ T ≤ 1000). T dòng tiếp theo, mỗi dòng chứa 3 số nguyên <strong>A, B, K</strong> (1 ≤ A ≤ 10<sup>6</sup>, −10<sup>6</sup> ≤ B ≤ 10<sup>6</sup>, 1 ≤ K ≤ 10<sup>6</sup>)</p>
+<p><strong>Dữ liệu xuất:</strong> Gồm T dòng, mỗi dòng chứa một số nguyên dương duy nhất là kết quả <strong>A<sup>B</sup> mod K</strong></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3<br/>1 2 3<br/>3 4 2<br/>4 -1 5</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1<br/>1<br/>4</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><span style="color:#FF0000"><u><span style="font-size:16px"><strong>Update:</strong></span></u></span></p>
+<p>Biểu thức "A<sup>-1</sup> mod K"<strong> </strong>thuộc về một vấn đề nằm trong lý thuyết đồng dư là "nghịch đảo module" (Modular multiplicative inverse). Nó được mô tả như sau: cho 2 số nguyên a và n nguyên tố cùng nhau thì sẽ tồn tại duy nhất 1 và chỉ một số tự nhiên x (0 ≤ X &lt; n) sao cho ax ≡ 1 (mod n) và x này được gọi là nghịch đảo của a theo module n. Kí hiệu x ≡ a<sup>-1</sup> (mod n).</p>
+<p>Theo đề bài mô tả thì A và K đều là số nguyên tố nên hiển nhiên 2 số này luôn nguyên tố cùng nhau.</p>
+<p>Hiện tại theo mình biết thì có 2 cách giải bài này theo 2 công thức khác nhau. Có thể tham khải thêm <a href="http://en.wikipedia.org/wiki/Modular_multiplicative_inverse">tại đây</a></p>
+</div>
+</div></body></html>

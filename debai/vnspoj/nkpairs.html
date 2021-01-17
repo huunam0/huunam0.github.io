@@ -1,0 +1,76 @@
+<h2>NKPAIRS - IOI07 Pairs</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274824/problem/Z" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274824/problem/Z </a><p> </p>
+<table border="0" class="problems" style="width: 100%;">
+<tbody>
+<tr class="navigation">
+<td width="50%"><a href="/problems/NKPAIRS/en/">English</a></td>
+<td width="50%"><a href="/problems/NKPAIRS/vn/">Vietnamese</a></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Mirko và Slavko chơi trò các con thú đồ chơi. Đầu tiên, Mirko và Slavko chọn một trong 3 bàn cờ như hình dưới đây. Mỗi bàn cờ bao gồm các ô (dưới dạng hình tròn trong hình vẽ) sắp xếp trên một lưới 1, 2 hoặc 3 chiều.</p>
+<p><img alt="" height="227" src="https://www.spoj.com/content/paulmcvn:pairs.jpg" width="921"/></p>
+<p>Sau đó Mirko sẽ đặt N con thú đồ chơi lên các ô.</p>
+<p>Khoảng cách giữa 2 ô là số bước đi nhỏ nhất để một con thú đi từ ô này đến ô kia. Trong mỗi bước đi. con thú có thể bước đến 1 trong 4 ô kề với nó (nối với nhau bằng đoạn thẳng trong hình vẽ).</p>
+<p>Hai con thú có thể nghe thấy nhau nếu khoảng cách giữa 2 ô chúng đứng không vượt quá D. Nhiệm vụ của Slavko là tính số cặp con thú có thể nghe thấy nhau.</p>
+<h3>Dữ liệu</h3>
+<p>Dòng đầu tiên chứa 4 số nguyên dương theo thứ tự:</p>
+<ul>
+<li>Loại bàn cờ B (1 ≤ B ≤ 3). </li>
+<li>Số con thú N (1 ≤ N ≤ 100000). </li>
+<li>Khoảng cách lớn nhất D mà hai con thú có thể nghe thấy nhau (1 ≤ D ≤ 100000000). </li>
+<li>Kích thước bàn cờ M (tọa độ lớn nhất xuất hiện trong dữ liệu). 
+<ul>
+<li>Khi B=1, M không vượt quá 75000000. </li>
+<li>Khi B=2, M không vượt quá 75000. </li>
+<li>Khi B=3, M không vượt quá 75. </li>
+</ul>
+</li>
+</ul>
+<p>Mỗi dòng trong số N dòng sau chứa B số nguyên cách nhau bởi khoảng trắng, cho biết các tọa độ của một con thú đồ chơi. Mỗi tọa độ sẽ thuộc phạm vi [1, M]. Có thể có nhiều con thú nằm trên cùng 1 ô.</p>
+<h3>Kết qủa</h3>
+<p>Gồm 1 số nguyên duy nhất là số lượng con thú có thể nghe thấy nhau.</p>
+<p>Lưu ý: sử dụng số nguyên 64-bit để tính kết quả (long long trong C/C++, int64 trong Pascal).</p>
+<h3>Hạn chế</h3>
+<p> </p>
+<h3>Ví dụ</h3>
+<pre><strong>Dữ liệu:</strong>
+1 6 5 100
+25
+50
+50
+10
+20
+23
+
+<strong>Kết qủa</strong>
+4
+
+<strong>Dữ liệu:</strong>
+2 5 4 10
+5 2
+7 2
+8 4
+6 5
+4 4
+
+<strong>Kết qủa</strong>
+8
+
+<strong>Dữ liệu:</strong>
+3 8 10 20
+10 10 10
+10 10 20
+10 20 10
+10 20 20
+20 10 10
+20 10 20
+20 20 10
+20 20 20
+
+<strong>Kết qủa</strong>
+12
+</pre>
+<p></p>
+</div>

@@ -1,0 +1,260 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Giao lưu</h2>
+</div><div class="content-description screen">
+<style>
+    .spoileralert-button {
+    }
+
+    .spoileralert-border {
+        background: linear-gradient(33deg, #222222, #444444);
+        background-clip: border-box;
+        border-radius: 50px 15px 50px 15px;
+    }
+
+    .spoileralert-content{
+        padding: 15px;
+        border: 3px dashed #666666;
+        font-size: 15px;
+        text-align:center;
+        text-justify: inter-word;
+        border-radius: 50px 15px 50px 15px;
+    }
+
+    .breakline-color {
+         background: linear-gradient(to right, red, purple, blue, green);
+         background-clip: border-box;
+    }
+
+    .breakline-float {
+         margin-top:    25px;
+         margin-bottom: 25px;
+         width: 100%;
+         height:  0%;
+         color: none;
+         border-top: 2px dashed white;
+    }
+
+    .Table-Of-Content {
+         display: flex;
+    }
+
+    .Table-Of-Content Menu {
+         padding: 0px 25px 0px 25px;
+    }
+
+     .Table-Of-Content header {
+         width: 150px;
+         height: 15px;
+         color: black;
+         background-color: #ddd;
+         margin: 0px 25px 0px 25px;
+         text-justify: center;
+         padding-left: 20px;
+         font-size: 16px;
+    }
+
+
+    .Table-Of-Content a {
+         width: 170px;
+         background-color: #eee;
+         margin: 0px 25px 0px 25px;
+         padding-left: 10px;
+         display: block;
+         text-justify: center;
+    }
+
+    .Table-Of-Content a:hover {
+         text-decoration: underline;
+    }
+
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: rgba(0,0,0,85%);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -60px;
+    }
+
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    .useless{}
+</style><div class="breakline-color"> <div class="breakline-float"> </div> </div><p><a name="above"></a></p>
+<h5>Vietnamese Statement: <a href="https://drive.google.com/file/d/1rrd1kaI6sKMVFrxQMunrkIROQjoYjPXs/view?usp=sharing" rel="nofollow">Giao lưu</a></h5>
+<h5>English Statement (<a href="#below"> below </a>): <a href="https://codeforces.com/blog/entry/84144" rel="nofollow">Socialise</a></h5>
+<p>Đợt tập huấn 3H có \(N\) bạn học sinh tham gia. Bạn thứ \(i\) được đánh giá khả năng là số nguyên dương \(a_i\). Tại buổi học thứ \(x\), mỗi bạn tự tính cho mình một chỉ số khả năng là \(\lfloor \frac{a_i}{x} \rfloor\) và các bạn có cùng chỉ số khả năng sẽ ngồi với nhau tạo thành một nhóm trao đổi và giao lưu.</p>
+<p><strong>Yêu cầu:</strong> với mỗi giá trị \(g = 1, 2, \dots N\), hãy xác định xem buổi học sớm nhất xuất hiện nhóm có \(g\) học sinh. (Ghi ra \(-1\) nếu không tồn tại)</p>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li>Dòng đầu chứa số nguyên dương \(N\)</li>
+<li>Dòng tiếp theo chứa \(N\) só nguyên không âm \(a_1, a_2, \dots, a_n\)</li>
+</ul>
+<p><strong>Dữ liệu ra:</strong></p>
+<ul>
+<li>Xuất ra \(n\) dòng, dòng thứ \(i\) là buổi học sớm nhất để có \(g\) học sinh. Hoặc in ra \(-1\) nếu không tồn tại</li>
+</ul>
+<p><strong>Giới hạn:</strong></p>
+<ul>
+<li>Subtaks 1: \(n \leq 100\) and \(a_i \leq 2.10^5\)</li>
+<li>Subtaks 2: \(n \leq 300\) and \(a_i \leq 3.10^6\)</li>
+<li>Subtaks 3: \(n \leq 300\) and \(a_i \leq 5.10^7\)</li>
+</ul>
+<hr style="height:1px;"/>
+<p><strong>Input 1:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mi">3</span>
+<span class="mi">1</span> <span class="mi">2</span> <span class="mi">5</span>
+</code></pre></div>
+<p><strong>Output 1:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mi">1</span>
+<span class="mi">3</span>
+<span class="mi">6</span>
+</code></pre></div>
+<details> <summary> Giải thích </summary>
+<br/> Ngày 1: \(x[d] = \) { \( \lfloor \frac{1}{1} \rfloor, \lfloor \frac{2}{1} \rfloor, \lfloor \frac{5}{1} \rfloor\) } \(=\) { \(1, 2, 5\) } — Nhóm đầu tiên có giá trị 1: Một trong các nhóm {\(1\)} {\(2\)} {\(5\)}
+<br/> Ngày 2: \(x[d] = \) { \( \lfloor \frac{1}{2} \rfloor, \lfloor \frac{2}{2} \rfloor, \lfloor \frac{5}{2} \rfloor\) } \(=\) { \(0, 1, 2\) } 
+<br/> Ngày 3: \(x[d] = \) { \( \lfloor \frac{1}{3} \rfloor, \lfloor \frac{2}{3} \rfloor, \lfloor \frac{5}{3} \rfloor\) } \(=\) { \(0, 0, 1\) } — Nhóm đầu tiên có giá trị 2: Chỉ có nhóm {\(1, 2\)} 
+<br/> Ngày 4: \(x[d] = \) { \( \lfloor \frac{1}{4} \rfloor, \lfloor \frac{2}{4} \rfloor, \lfloor \frac{5}{4} \rfloor\) } \(=\) { \(0, 0, 1\) } 
+<br/> Ngày 5: \(x[d] = \) { \( \lfloor \frac{1}{5} \rfloor, \lfloor \frac{2}{5} \rfloor, \lfloor \frac{5}{5} \rfloor\) } \(=\) { \(0, 0, 1\) } 
+<br/> Ngày 6: \(x[d] = \) { \( \lfloor \frac{1}{6} \rfloor, \lfloor \frac{2}{6} \rfloor, \lfloor \frac{5}{6} \rfloor\) } \(=\) { \(0, 0, 0\) } — Nhóm đầu tiên có giá trị 3: Chỉ có nhóm {\(1, 2, 5\)}</details><hr style="height:1px;"/>
+<p><strong>Input 2:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mi">3</span>
+<span class="mi">1</span> <span class="mi">1</span> <span class="mi">5</span>
+</code></pre></div>
+<p><strong>Output 2:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mi">1</span>
+<span class="mi">1</span>
+<span class="mi">6</span>
+</code></pre></div>
+<details> <summary> Giải thích </summary>
+<br/> Ngày 1: \(x[d] = \) { \( \lfloor \frac{1}{1} \rfloor, \lfloor \frac{1}{1} \rfloor, \lfloor \frac{5}{1} \rfloor\) } \(=\) { \(1, 1, 5\) } — Nhóm đầu tiên có giá trị 1: Một trong các nhóm {\(1\)} {\(1\)} {\(5\)}
+<br/> Ngày 2: \(x[d] = \) { \( \lfloor \frac{1}{2} \rfloor, \lfloor \frac{1}{2} \rfloor, \lfloor \frac{5}{2} \rfloor\) } \(=\) { \(0, 0, 2\) } — Nhóm đầu tiên có giá trị 2: Chỉ có nhóm {\(1, 1\)}
+<br/> Ngày 3: \(x[d] = \) { \( \lfloor \frac{1}{3} \rfloor, \lfloor \frac{1}{3} \rfloor, \lfloor \frac{5}{3} \rfloor\) } \(=\) { \(0, 0, 1\) } 
+<br/> Ngày 4: \(x[d] = \) { \( \lfloor \frac{1}{4} \rfloor, \lfloor \frac{1}{4} \rfloor, \lfloor \frac{5}{4} \rfloor\) } \(=\) { \(0, 0, 1\) } 
+<br/> Ngày 5: \(x[d] = \) { \( \lfloor \frac{1}{5} \rfloor, \lfloor \frac{1}{5} \rfloor, \lfloor \frac{5}{5} \rfloor\) } \(=\) { \(0, 0, 1\) } 
+<br/> Ngày 6: \(x[d] = \) { \( \lfloor \frac{1}{6} \rfloor, \lfloor \frac{1}{6} \rfloor, \lfloor \frac{5}{6} \rfloor\) } \(=\) { \(0, 0, 0\) } — Nhóm đầu tiên có giá trị 3: Chỉ có nhóm {\(1, 2, 5\)}</details><hr style="height:1px;"/>
+<p><strong>Input 3:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mi">3</span>
+<span class="mi">2</span> <span class="mi">2</span> <span class="mi">2</span>
+</code></pre></div>
+<p><strong>Output 3:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="mi">1</span>
+<span class="o">-</span><span class="mi">1</span>
+<span class="mi">2</span>
+</code></pre></div>
+<details> <summary> Giải thích </summary>
+<br/> Ngày 1: \(x[d] = \) { \( \lfloor \frac{2}{1} \rfloor, \lfloor \frac{2}{1} \rfloor, \lfloor \frac{2}{1} \rfloor\) } \(=\) { \(2, 2, 2\) } — Nhóm đầu tiên có giá trị 3: Chỉ có nhóm {\(2, 2, 2\)}
+<br/> Ngày 2: \(x[d] = \) { \( \lfloor \frac{2}{2} \rfloor, \lfloor \frac{2}{2} \rfloor, \lfloor \frac{2}{2} \rfloor\) } \(=\) { \(0, 0, 0\) }
+<br/> Ngày 3: \(x[d] = \) { \( \lfloor \frac{2}{3} \rfloor, \lfloor \frac{2}{3} \rfloor, \lfloor \frac{2}{3} \rfloor\) } \(=\) { \(0, 0, 0\) }
+<br/> Ngày 3 \(\leq k \rightarrow \infty\): \(x[d] = \) { \( \lfloor \frac{2}{k} \rfloor, \lfloor \frac{2}{k} \rfloor, \lfloor \frac{2}{k} \rfloor\) } \(=\) { \(0, 0, 0\) } — Không có nhóm có giá trị 1 hay 2</details><div class="breakline-color"> <div class="breakline-float"> </div> </div><p><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/></p>
+<div class="breakline-color"> <div class="breakline-float"> </div> </div><p><a name="below"></a></p>
+<h5>Vietnamese Statement ( <a href="#above"> Ở trên </a> ): <a href="https://drive.google.com/file/d/1rrd1kaI6sKMVFrxQMunrkIROQjoYjPXs/view?usp=sharing" rel="nofollow">Giao lưu</a></h5>
+<h5>English Statement: <a href="https://codeforces.com/blog/entry/84144" rel="nofollow">Socialise</a></h5>
+<p>There are \(N\) buildings with \(a_1, a_2, \dots, a_n\) metters height. These days are hard, the heavy raining weather still not ended yet. In day \(d\), every building with height \(h\) only have \(x_d = \lfloor \frac{h}{d} \rfloor\) height left of good space to use, while others are sunk underwater. Every building having the same value \(x_d\) on day \(d\) will group together (including \(x_d = 0\) which sunk completely underwater) in a way that no other building with same value \(x_d\) in another group.</p>
+<p><strong>Queries:</strong> In each size \(s\) from \(1\) to \(n\), what is the earliest day \(d\) that have at least one group of size \(s\)</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li>First line with positive integer \(N\)</li>
+<li>Second line with \(N\) non-negative height \(a_1, a_2, \dots, a_n\)</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>Output \(n\) lines, the line \(s-th\) should consist the earliest day that have a group of size \(s\). If there is no such group exists then output \(-1\).</li>
+</ul>
+<p><strong>Constraint:</strong></p>
+<ul>
+<li>Subtaks 1: \(n \leq 100\) and \(a_i \leq 2.10^5\)</li>
+<li>Subtaks 2: \(n \leq 300\) and \(a_i \leq 3.10^6\)</li>
+<li>Subtaks 3: \(n \leq 300\) and \(a_i \leq 5.10^7\)</li>
+</ul>
+<hr style="height:1px;"/>
+<p><strong>Input 1:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mi">3</span>
+<span class="mi">1</span> <span class="mi">2</span> <span class="mi">5</span>
+</code></pre></div>
+<p><strong>Output 1:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mi">1</span>
+<span class="mi">3</span>
+<span class="mi">6</span>
+</code></pre></div>
+<details> <summary> Explanation </summary>
+<br/> Day 1: \(x[d] = \) { \( \lfloor \frac{1}{1} \rfloor, \lfloor \frac{2}{1} \rfloor, \lfloor \frac{5}{1} \rfloor\) } \(=\) { \(1, 2, 5\) } — First group of size 1: Any of {\(1\)} {\(2\)} {\(5\)}
+<br/> Day 2: \(x[d] = \) { \( \lfloor \frac{1}{2} \rfloor, \lfloor \frac{2}{2} \rfloor, \lfloor \frac{5}{2} \rfloor\) } \(=\) { \(0, 1, 2\) } 
+<br/> Day 3: \(x[d] = \) { \( \lfloor \frac{1}{3} \rfloor, \lfloor \frac{2}{3} \rfloor, \lfloor \frac{5}{3} \rfloor\) } \(=\) { \(0, 0, 1\) } — First group of size 2: Only {\(1, 2\)} 
+<br/> Day 4: \(x[d] = \) { \( \lfloor \frac{1}{4} \rfloor, \lfloor \frac{2}{4} \rfloor, \lfloor \frac{5}{4} \rfloor\) } \(=\) { \(0, 0, 1\) } 
+<br/> Day 5: \(x[d] = \) { \( \lfloor \frac{1}{5} \rfloor, \lfloor \frac{2}{5} \rfloor, \lfloor \frac{5}{5} \rfloor\) } \(=\) { \(0, 0, 1\) } 
+<br/> Day 6: \(x[d] = \) { \( \lfloor \frac{1}{6} \rfloor, \lfloor \frac{2}{6} \rfloor, \lfloor \frac{5}{6} \rfloor\) } \(=\) { \(0, 0, 0\) } — First group of size 3: Only {\(1, 2, 5\)}</details><hr style="height:1px;"/>
+<p><strong>Input 2:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mi">3</span>
+<span class="mi">1</span> <span class="mi">1</span> <span class="mi">5</span>
+</code></pre></div>
+<p><strong>Output 2:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mi">1</span>
+<span class="mi">1</span>
+<span class="mi">6</span>
+</code></pre></div>
+<details> <summary> Explanation </summary>
+<br/> Day 1: \(x[d] = \) { \( \lfloor \frac{1}{1} \rfloor, \lfloor \frac{1}{1} \rfloor, \lfloor \frac{5}{1} \rfloor\) } \(=\) { \(1, 1, 5\) } — First group of size 1: Any of {\(1\)} {\(1\)} {\(5\)}
+<br/> Day 2: \(x[d] = \) { \( \lfloor \frac{1}{2} \rfloor, \lfloor \frac{1}{2} \rfloor, \lfloor \frac{5}{2} \rfloor\) } \(=\) { \(0, 0, 2\) } — First group of size 2: Only {\(1, 1\)}
+<br/> Day 3: \(x[d] = \) { \( \lfloor \frac{1}{3} \rfloor, \lfloor \frac{1}{3} \rfloor, \lfloor \frac{5}{3} \rfloor\) } \(=\) { \(0, 0, 1\) } 
+<br/> Day 4: \(x[d] = \) { \( \lfloor \frac{1}{4} \rfloor, \lfloor \frac{1}{4} \rfloor, \lfloor \frac{5}{4} \rfloor\) } \(=\) { \(0, 0, 1\) } 
+<br/> Day 5: \(x[d] = \) { \( \lfloor \frac{1}{5} \rfloor, \lfloor \frac{1}{5} \rfloor, \lfloor \frac{5}{5} \rfloor\) } \(=\) { \(0, 0, 1\) } 
+<br/> Day 6: \(x[d] = \) { \( \lfloor \frac{1}{6} \rfloor, \lfloor \frac{1}{6} \rfloor, \lfloor \frac{5}{6} \rfloor\) } \(=\) { \(0, 0, 0\) } — First group of size 3: Only {\(1, 2, 5\)}</details><hr style="height:1px;"/>
+<p><strong>Input 3:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="mi">3</span>
+<span class="mi">2</span> <span class="mi">2</span> <span class="mi">2</span>
+</code></pre></div>
+<p><strong>Output 3:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="mi">1</span>
+<span class="o">-</span><span class="mi">1</span>
+<span class="mi">2</span>
+</code></pre></div>
+<details> <summary> Explanation </summary>
+<br/> Day 1: \(x[d] = \) { \( \lfloor \frac{2}{1} \rfloor, \lfloor \frac{2}{1} \rfloor, \lfloor \frac{2}{1} \rfloor\) } \(=\) { \(2, 2, 2\) } — First group of size 3: Only {\(2, 2, 2\)}
+<br/> Day 2: \(x[d] = \) { \( \lfloor \frac{2}{2} \rfloor, \lfloor \frac{2}{2} \rfloor, \lfloor \frac{2}{2} \rfloor\) } \(=\) { \(0, 0, 0\) }
+<br/> Day 3: \(x[d] = \) { \( \lfloor \frac{2}{3} \rfloor, \lfloor \frac{2}{3} \rfloor, \lfloor \frac{2}{3} \rfloor\) } \(=\) { \(0, 0, 0\) }
+<br/> Day 3 \(\leq k \rightarrow \infty\): \(x[d] = \) { \( \lfloor \frac{2}{k} \rfloor, \lfloor \frac{2}{k} \rfloor, \lfloor \frac{2}{k} \rfloor\) } \(=\) { \(0, 0, 0\) } — There are no group of size 1 and 2</details><div class="breakline-color"> <div class="breakline-float"> </div> </div>
+<hr/>
+</div>

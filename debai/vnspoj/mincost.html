@@ -1,0 +1,58 @@
+<h2>MINCOST - Luồng với chi phí nhỏ nhất</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274506/problem/L" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274506/problem/L </a><p>        
+Cho một mạng đối xứng có n đỉnh, mỗi cạnh của mạng có một khả năng thông qua và một cước phí vận chuyển nhất định (như nhau theo cả hai chiều). Cho trước một lượng hàng S cần vận chuyển từ đỉnh nguồn (đánh số là s) tới đỉnh đích (đánh số là f). Hãy tìm một phương án vận chuyển, nghĩa là hãy xác định trên mỗi cạnh của mạng cần vận chuyển bao nhiêu hàng, theo chiều nào, sao cho phù hợp với khả năng thông qua của mạng (trên mỗi cạnh lượng hàng vận chuyển không vượt quá khả năng thông qua của cạnh) và vận chuyển được lượng hàng S từ nguồn về đích với tổng chi phí vận chuyển là nhỏ nhất.<br/>
+Về mặt toán học, bài toán tìm luồng với chi phí nhỏ nhất có thể diễn đạt như sau:</p><p>
+Cực tiểu hóa hàm chi phí ∑c<sub>ij</sub>x<sub>ij</sub> với điều kiện:<br/>
+</p><ol>
+<li>∑(x<sub>ij</sub> - x<sub>ji</sub>) với j = 1..n, có giá trị<br/>
+<ul><li>S nếu i = s
+      </li><li>0 nếu i ≠ s; i ≠ n
+      </li><li>-S nếu i = f</li></ul>
+</li><li>0 ≤ x<sub>ij</sub> ≤ d<sub>ij</sub> với mọi cạnh (i, j)<p>
+</p></li></ol>
+
+Ở đây đỉnh nguồn được đánh số là s, đỉnh đích là f, c<sub>ij</sub> là chi phí vận chuyển một đơn vị hàng trên cạnh (i, j), d<sub>ij</sub> là khả năng thông qua của cạnh (i, j); còn x<sub>ij</sub> là khối lượng hàng vận chuyển trên cạnh (i, j) cần xác định.
+<h3>Input</h3>
+<ul>
+<li>Dòng đầu là n, m, k, s, f : Số đỉnh, số đường, số đơn vị hàng cần vận chuyển. đỉnh bắt đầu, đỉnh kết thúc <br/>
+</li><li>m dòng tiếp theo mỗi bao gồm u, v, c, d cho biết có đường từ u -&gt; v, v -&gt; u với chi phí là c và khả năng thông qua là d.
+</li></ul>
+<h3>Output</h3>
+<ul>
+<li>Dòng đầu, nếu không vận chuyển được ghi –1, nếu có ghi tổng chi phí vận chuyển.<br/>
+</li><li>Nếu có nghiệm thì một số dòng tiếp ghi u, v, i cho biết vận chuyển i đơn vị hàng từ trên cạnh u -&gt; v. Kết thúc bằng "0 0 0".
+</li></ul>
+<h3>Example</h3>
+<pre>
+
+<b>Input:</b>
+6 8 5 1 6
+1 2 1 2
+1 4 3 4
+2 3 1 4
+2 5 5 2
+3 4 2 4
+3 6 1 2
+4 6 4 1
+5 6 6 2
+
+<b>Output:</b>
+43
+1 2 2
+1 4 3
+2 5 2
+3 6 2
+4 3 2
+4 6 1
+5 6 2
+0 0 0
+
+</pre>
+<i><b>Giới hạn:</b></i><br/>
+<ul>
+<li>n &lt;= 100
+  </li><li>d<sub>ij</sub> &lt;= 30000
+  </li><li>c<sub>ij</sub> &lt;= 10<sup>9</sup>
+</li></ul>
+Phạm vi tính toán là Longint.
+	</div>

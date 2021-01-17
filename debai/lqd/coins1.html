@@ -1,0 +1,39 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Bài toán đồng xu 1</h2>
+</div><div class="content-description screen">
+<div><p>Cho \(N\) là một số nguyên dương lẻ.</p>
+<p>Có \(N\) đồng xu, được đánh số \(1,2,3,...,N\). Với mỗi \(i(1\le i\le N)\), khi đồng xu \(i\) được gieo, xác suất nó xảy ra mặt ngửa là \(p_i\) và xác suất nó xảy ra mặt úp là \(1-p_i\).</p>
+<p>\(Kaninho\) gieo \(N\) đồng xu cùng một lúc. Tính xác suất để ta thu được số lượng đồng xu ngửa lớn hơn số lượng đồng xu úp.</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa số nguyên dương lẻ \(N(1\le N\le 2999)\)</p>
+</li>
+<li><p>Dòng thứ hai chứa \(n\) số thực có \(2\) chữ số ở hàng thập phân \(p_i(0&lt;p_i&lt;1)\)</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra đáp án cần tìm. (Gọi \(x\) là đáp án của bạn, \(y\) là đáp án của bài toán, thì \(x\) được chấp nhận là đúng nếu \(|x-y|&lt;10^{-9}\))</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3
+0.30 0.60 0.80</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>0.612</code></pre>
+<p><strong>Giải thích:</strong></p>
+<p>Xác suất của mỗi trường hợp có số lượng đồng xu ngửa lớn hơn số lượng đồng xu úp là :</p>
+<ul>
+<li><p>\(P(ngua,ngua,ngua) = 0.3*0.6*0.8=0.144\)</p>
+</li>
+<li><p>\(P(up,ngua,ngua) = 0.7*0.6*0.8=0.336\)</p>
+</li>
+<li><p>\(P(ngua,up,ngua) = 0.3*0.4*0.8=0.096\)</p>
+</li>
+<li><p>\(P(ngua,ngua,up) = 0.3*0.6*0.2=0.036\)</p>
+</li>
+</ul>
+<p>Như vậy, xác suất có số lượng mặt ngửa lớn hơn số lượng đồng xu úp là: \(0.144+0.336+0.096+0.036 = 0.612\)</p>
+</div>
+<hr/>
+</div>

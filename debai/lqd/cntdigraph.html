@@ -1,0 +1,41 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Bài toán đếm đường đi trong đồ thị đơn có hướng(*)</h2>
+</div><div class="content-description screen">
+<div><p>Cho một đồ thị đơn, có hướng \(G\) với \(N\) đỉnh, được đánh số \(1,2,3,4,...,N\)</p>
+<p>Với mỗi \(i,j(1\le i,j\le N)\), bạn được cho \(1\) số nguyên \(a_{i,j}\) thể hiện sự kết nối có hướng giữa hai đỉnh \(i\) và \(j\). Nếu \(a_{i,j}=1\) thì đỉnh \(i\) được nối với đỉnh \(j\) theo chiều từ \(i\) đến \(j\), nếu \(a_{i,j}=0\) thì không tồn tại kết nối giữa hai đỉnh \(i,j\).</p>
+<p><strong>Yêu cầu:</strong> Tìm số đường khác nhau có độ dài là \(K\) trong \(G\), biết rằng mỗi con đường này có thể đi qua một cạnh nhiều lần.</p>
+<p>Vì đáp số có thể lớn nên cần lấy mod \(10^9+7\) trước khi in ra</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa hai số nguyên \(N,K(1\le N\le 50,1\le K\le 10^{18})\)</p>
+</li>
+<li><p>\(N\) dòng tiếp theo, mỗi dòng chứa \(N\) số nguyên \(a_{i,1},a_{i,2},...,a_{i,n}(1\le i\le N, a_{i,j}\in \left\{0,1\right\})\)</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra đáp án sau khi đã lấy mod \(10^9+7\)</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3 3
+0 1 0
+1 0 1
+0 0 0</code></pre>
+<p>Output:</p>
+<pre><code>3</code></pre>
+<p><strong>Giải thích:</strong></p>
+<p><a href="https://i.imgur.com/DD7fxwa.png"><img src="https://i.imgur.com/DD7fxwa.png" style="width:300px;" title="source: imgur.com"/></a></p>
+<p>Những con đường có độ dài là \(3\) là :</p>
+<ul>
+<li><p>\(1\rightarrow 2 \rightarrow 1 \rightarrow 2\)</p>
+</li>
+<li><p>\(2\rightarrow 1 \rightarrow 2 \rightarrow 1\)</p>
+</li>
+<li><p>\(2\rightarrow 1 \rightarrow 2 \rightarrow 3\)</p>
+</li>
+</ul>
+<p><strong>Nguồn:</strong> Tham khảo từ Atcoder</p>
+</div>
+<hr/>
+</div>

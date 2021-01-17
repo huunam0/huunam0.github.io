@@ -1,0 +1,43 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Trực nhật</h2>
+</div><div class="content-description screen">
+<div><p>Lớp \(11\) chuyên Tin có \(n\) học sinh, thầy chủ nhiệm Linh Phan muốn chọn ra một số bạn ở lại trực nhật lớp. Để thêm tính hấp dẫn và công bằng, thầy viết một đoạn code cấp cho mỗi bạn một số tự nhiên ngẫu nhiên và quy định rằng, nếu bạn nào nhận được số có tổng các ước dương của nó nhỏ hơn hai lần số đó thì phải đi trực nhật.</p>
+<p>Một lần không may mắn, máy tính của thầy Linh Phan đã sinh ra các số mà sau khi cấp phát cho học sinh thì không có học sinh nào phải ở lại trực nhật. Rút kinh nghiệm từ lần đó, thầy đã chuẩn bị sẵn một dãy số, rồi nhờ các em đội tuyển Tin tính xem có bao nhiêu số có tổng các ước dương nhỏ hơn hai lần số đó, nếu số lượng số này đủ nhiều thì thầy sẽ lấy dãy số đó để cấp cho các bạn trong lớp.</p>
+<p><strong>Yêu cầu:</strong> Cho số nguyên dương \(n\) và dãy số \(a_1\), \(a_2\),..., \(a_{n – 1}\), \(a_n\). Hãy giúp thầy Linh Phan xác định xem với dãy số này thì có bao nhiêu em học sinh phải làm nhiệm vụ trực nhật.</p>
+<hr/>
+<h4>Input:</h4>
+<p>Gồm hai dòng:</p>
+<ul>
+<li>Dòng đầu là số nguyên dương \(n\), số học sinh trong lớp. </li>
+<li>Dòng thứ hai gồm \(n\) số nguyên dương \(a_1\), \(a_2\),..., \(a_{n–1}\), \(a_n\).</li>
+</ul>
+<hr/>
+<h4>Output:</h4>
+<p>Gồm một số duy nhất là số học sinh phải ở lại trực nhật tương ứng với dãy số input</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>5
+3 6 9 12 9</code></pre>
+<h5>Output</h5>
+<pre><code>3</code></pre>
+<h5>Giải thích</h5>
+<p>Tổng ước dương của các số là:</p>
+<ul>
+<li>Số \(3\): \(1+3=4&lt;2.3=6\);</li>
+<li>Số \(6\): \(1+2+3+6=2.6=12\)</li>
+<li>Số \(9\): \(1+3+9=13&lt;2.9=18\)</li>
+<li>Số \(12\): \(1+2+3+4+6+12=28&gt;2.12=24\)</li>
+<li>Số \(9\): \(1+3+9=13&lt;2*9=18\)</li>
+</ul>
+<p>Vậy có \(3\) số có tổng ước nhỏ hơn hai lần nó là: \(3, 9 ,9\).</p>
+<hr/>
+<h4>Ràng buộc</h4>
+<ul>
+<li><strong>Subtask 1 (70 điểm):</strong> \(a_i\leq 10^4\), \(N\leq 10^3\).</li>
+<li><strong>Subtask 2 (15 điểm):</strong> \(a_i\leq 5.10^6\), \(N\leq 10^4\).</li>
+<li><strong>Subtask 3 (15 điểm):</strong> \(a_i\leq 5.10^6\), \(N\leq 10^6\).</li>
+</ul>
+</div>
+<hr/>
+</div>

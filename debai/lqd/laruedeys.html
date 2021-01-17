@@ -1,0 +1,37 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Kiến trúc sư và con đường</h2>
+</div><div class="content-description screen">
+<div><p>Một công ty xây dựng nọ đang lên kế hoạch cho việc sữa chữa một con đường cao tốc có chiều dài là \(n\) kilomet. Con đường này được đánh số từ \(1\) đến \(n+1\) tại những vị trí cách đều nhau đúng \(1\) kilomet, bắt đầu từ vị trí đầu của con đường. Chi phí sửa chữa cho đoạn \(1\) kilomet từ vị trí \(i\) đến \(i+1\) là \(A_i\) với \(1 ≤ i ≤ n\).</p>
+<p>Một kiến trúc sư người Ý đảm nhiệm vai trò này và đang khảo sát mức độ hư hại cũng như chi phí để sửa chữa con đường này. Do kinh phí thời điểm hiện tại không đủ để thi công một lúc cả con đường. Anh ấy kế hoạch tính toán để chọn ra đoạn đường phù hợp nhất để sửa chữa đầu tiên. Anh ấy khảo sát con đường bằng cách chọn ra một đoạn từ vị trí \(L\) đến vị trí \(R\) trên con đường và tính xem chi phí sửa chữa trung bình trên \(1\) kilomet của đoạn này là bao nhiêu.</p>
+<p><strong>Yêu cầu:</strong> Cho \(Q\) câu truy vấn \((L, R)\). Hãy tính chi phí sửa chữa trung bình trên \(1\) kilomet của vị trí \(L\) đến vị trí \(R\).</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng đầu tiên gồm số \(n\).</li>
+<li>Dòng thứ hai gồm \(n\) số nguyên \(A_i\).</li>
+<li>Dòng thứ ba là số \(Q\) – số lượng câu truy vấn.</li>
+<li>Q dòng tiếp theo, mỗi dòng gồm 2 số \(L\) và \(R (L&lt;R)\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Gồm \(Q\) dòng tương ứng là kết quả của câu truy vấn thứ \(i\), kết quả được làm tròn đến chữ số thập phân thứ \(6\). </li>
+</ul>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>5
+1 2 3 4 5
+3
+1 4
+2 5
+4 6</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>2.000000
+3.000000
+4.500000</code></pre>
+<p><strong><em>Giới hạn</em></strong></p>
+<ul>
+<li>\(0 ≤ A_i ≤ 10^9\)</li>
+<li>70% test có \(1 ≤ q,n ≤ 10^3\).</li>
+<li>30% test có \(1 ≤ q,n ≤ 5*10^4\).</li>
+</ul>
+</div>
+<hr/>
+</div>

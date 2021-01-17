@@ -1,0 +1,33 @@
+<h2>CAR - Lập lịch sửa chữa ô tô</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274485/problem/M" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274485/problem/M </a><p>Một cơ sở sửa chữa ô tô có nhận n chiếc xe để sửa. Do các nhân viên làm việc quá lười nhác nên đã đến hạn  trả cho khách hàng mà vẫn chưa tiến hành sửa được chiếc xe nào. Theo hợp đồng đã ký kết từ trước, nếu bàn giao xe thứ i quá hạn ngày nào thì sẽ phải trả thêm một khoản tiền phạt là A[i].<br/>
+Ông chủ cơ sở sửa chữa quyết định sa thải toàn bộ công nhân và thuê nhân công mới. Với lực lượng mới này, ông ta dự định rằng để sửa chiếc xe thứ i sẽ cần B[i] ngày. Vấn đề đặt ra đối với ông là phải lập lịch sửa tuần tự các chiếc xe sao cho tổng số tiền bị phạt là ít nhất.<br/>
+<br/>
+<b>Yêu cầu: Hãy lập lịch sửa xe giúp cho ông chủ cơ sở sửa chữa ô tô.</b>
+<br/>
+<br/>
+<i>Download test và solution tại <a href="https://www.spoj.com/CSP/content/CAR.rar">đây</a>.</i>
+</p><h3>Input</h3>
+<p>•	Dòng 1: Chứa số n (n ≤ 10000)<br/>
+•	Dòng 2: Chứa n số nguyên dương A[1], A[2], ..., A[n] (1 ≤ A[i] ≤ 10000)<br/>
+•	Dòng 3: Chứa n số nguyên dương B[1], B[2], ..., B[n] (1 ≤ B[i] ≤ 100)
+
+
+</p><h3>Output</h3>
+<p>•	Dòng 1: Ghi số tiền bị phạt tối thiểu<br/>
+•	Dòng 2: Ghi số hiệu các xe sẽ tiến hành sửa chữa, theo thứ tự từ xe được sửa đầu tiên đến xe sửa sau cùng
+
+
+</p><h3>Example</h3>
+<pre>
+<b>Input:</b>
+4
+1 3 4 2
+3 2 3 1
+
+<b>Output:</b>
+44
+4 2 3 1 
+
+</pre>
+Xong công việc 4 vào cuối ngày 1 =&gt; phải trả 2 * 1 = 2 .<br/> Xong công việc 2 vào cuối ngày 3 =&gt; phải trả 3 * 3  = 9.<br/> Xong công việc 3 vào cuối ngày 6 =&gt; phải trả 6 * 4 = 24 . <br/>Xong công việc 1 vào cuối ngày 9 =&gt; phải trả 1 * 9 = 9 . <br/>Vậy tổng cộng phải trả 44 .
+	</div>

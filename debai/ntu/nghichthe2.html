@@ -1,0 +1,68 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    NGHICHTHE2 - Đếm Cặp Nghịch Thế 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 20.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Cho dãy số A có N phần tử và Q truy vấn đếm số lượng cặp nghịch thế có trong đoạn [L .. R].</p>
+<p>Định nghĩa cặp số (i, j) là cặp nghịch thế nếu 1 <span style="color:rgb(0, 0, 32); font-family:open sans,helvetica neue,helvetica,arial,sans-serif">≤ i &lt; j ≤ N và A<sub>i</sub> &gt;</span><span style="color:rgb(0, 0, 0); font-family:verdana,arial,helvetica,sans-serif; font-size:small"> A<sub>j</sub>.</span></p>
+<p><strong>Input:</strong></p>
+<p>Dòng 1: Số nguyên N và Q (1 <span style="color:rgb(0, 0, 32); font-family:open sans,helvetica neue,helvetica,arial,sans-serif">≤ N, Q ≤ 3.10<sup>4</sup>).</span></p>
+<p>Dòng 2: N số nguyên biểu diễn dãy A (1 <span style="color:rgb(0, 0, 32); font-family:open sans,helvetica neue,helvetica,arial,sans-serif">≤ A<sub>i</sub> ≤ 10<sup>9</sup>).</span></p>
+<p>Dòng 3..Q+2: Mỗi dòng chứa 2 số nguyên x, y (1 <span style="color:rgb(0, 0, 32); font-family:open sans,helvetica neue,helvetica,arial,sans-serif">≤</span> x, y <span style="color:rgb(0, 0, 32); font-family:open sans,helvetica neue,helvetica,arial,sans-serif">≤ </span>N):</p>
+<p>        Đặt u = (x - 1 + ans_last) % N + 1, v = (y - 1 + ans_last) % N + 1 (ans_last là kết quả của truy vấn liền trước, ban đầu ans_last = 0). Đoạn phần tử cần truy vấn là [min(u, v) .. max(u, v)].</p>
+<p><strong>Output:</strong></p>
+<p>Gồm Q dòng, mỗi dòng ghi kết quả của một truy vấn tương ứng.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<div> </div>
+<div>
+<table align="left" border="1" cellpadding="0" cellspacing="0" dir="ltr" style="line-height:20.8px; width:500px">
+<tbody>
+<tr>
+<td style="text-align:justify"><strong>Input</strong></td>
+</tr>
+<tr>
+<td style="text-align:justify">6 3<br/>
+			7 7 4 5 2 10<br/>
+			1 4<br/>
+			2 5<br/>
+			3 6</td>
+</tr>
+<tr>
+<td style="text-align:justify"><strong>Output</strong></td>
+</tr>
+<tr>
+<td style="text-align:justify">
+<div>4</div>
+<div>2</div>
+<div>5</div>
+</td>
+</tr>
+</tbody>
+</table>
+<pre>
+ </pre>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+</div>
+</div>
+</div></body></html>

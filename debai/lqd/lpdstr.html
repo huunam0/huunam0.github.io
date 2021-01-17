@@ -1,0 +1,37 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Xâu LPD</h2>
+</div><div class="content-description screen">
+<div><p><em>"Tình yêu như nắng, nắng đưa em về, bên dòng suối mơ</em></p>
+<p><em>Nhẹ vương theo gió, gió mang câu thề, xa rời chốn xưa..."</em></p>
+<p>Câu hát da diết của danh ca Tuấn Pearl vang lên làm thổn thức con tim mỏng manh của 2 fan trung thành là <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span> và <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span>. Vừa thả hồn vào điệu nhạc trữ tình, <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span> vừa thẫn thờ viết ra một xâu \(S\) độ dài \(k\) chỉ gồm các ký tự <code>L</code>, <code>P</code> và <code>D</code> in hoa (chữ cái đầu trong tên riêng của <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span>, danh ca Tuấn Pearl và <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span>) - tất cả những gì có thể xuất hiện trong đầu cậu lúc đó. <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> thấy rằng đây là một cách rất hay để nguôi ngoai cơn seven tình nên cũng muốn viết ra một xâu độ dài \(n\) chỉ gồm các ký tự <code>L</code>, <code>P</code>, <code>D</code> in hoa để trốn chạy khỏi tình cảnh <em>"gọi tên em mãi, trong cơn mê này, mình nhớ thương nhau."</em>  Vì trong tiềm thức của <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> vẫn còn một chút cảm giác GATO không thể diễn giải thành lời đối với <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span> nên cậu không muốn trong xâu mình viết ra có tồn tại một xâu con liên tiếp nào giống hệt với xâu \(S\) của <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span>. Nhưng <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> vẫn là một con người tự mâu thuẫn, dù không ưa nhau lắm nhưng cậu vẫn muốn trong xâu của mình có ít nhất \(m\) ký tự <code>L</code> - chữ cái đầu trong tên của <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span>, như đã đề cập bên trên, và cũng là chữ cái đầu trong họ của người chị gái mưa đã làm <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> lâm vào cảnh dở khóc dở cười này.</p>
+<p>Trước khi đặt bút viết ra xâu của mình, theo bản năng Toán học sẵn có, <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> muốn biết có tất cả bao nhiêu xâu ký tự khác nhau thỏa mãn tất cả các điều kiện trên:</p>
+<ul>
+<li><p>Chỉ gồm các ký tự <code>L</code>, <code>P</code>, <code>D</code> in hoa.</p>
+</li>
+<li><p>Độ dài đúng bằng \(n\).</p>
+</li>
+<li><p>Không tồn tại xâu con liên tiếp nào giống hệt với xâu \(S\).</p>
+</li>
+<li><p>Có chứa ít nhất \(m\) ký tự <code>L</code>.</p>
+</li>
+</ul>
+<p>Vì lý trí đã bị cơn say tình làm lu mờ, <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> đành phải tìm tới cao thủ <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> để nhờ bạn ấy tính toán hộ kết quả đó. Thật không may là tình cảnh của <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cũng không khá hơn <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> bao nhiêu nên bạn ấy tiếp tục phải nhờ đến sự trợ giúp của các bạn. <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span> và <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> vẫn còn chút tỉnh táo để nhận thức được rằng kết quả nhận được có thể rất lớn nên họ chỉ cần các bạn đưa ra phần dư khi chia kết quả cho \(10^9+7\).</p>
+<hr/>
+<h4>Input:</h4>
+<p>Dòng đầu chứa ba số nguyên \(n\), \(m\) và \(k\). \((1 \leq m , k \leq n \leq 300)\).</p>
+<p>Dòng sau chứa xâu \(S\) độ dài \(k\) do <span class="rating rate-none admin"><a href="/user/CaiWinDao">CaiWinDao</a></span> viết ra.</p>
+<hr/>
+<h4>Output:</h4>
+<p>Một số nguyên duy nhất là kết quả cần tìm.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>3 1 2
+LP</code></pre>
+<h5>Output</h5>
+<pre><code>13</code></pre>
+<h5>Giải thích</h5>
+<p>\(13\) xâu thỏa mãn là <code>DDL</code>, <code>DLD</code>, <code>DLL</code>, <code>DPL</code>,  <code>LDD</code>, <code>LDL</code>, <code>LDP</code>, <code>LLD</code>, <code>LLL</code>, <code>PDL</code>, <code>PLD</code>, <code>PLL</code> và <code>PPL</code>.</p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,53 @@
+<div class="tm-box2">
+<div class="problem-name">
+    LIGHTTSYS - Hệ thống đèn 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;"><span style="font-size:14px">Một hệ thống đèn gồm 𝑚 × 𝑛 đèn, được bố trí trên một lưới hình chữ nhật gồm 𝑚 hàng và 𝑛 cột. Các hàng của lưới được đánh số từ 1 đến 𝑚 từ trên xuống dưới, các cột của lưới được đánh số từ 1 đến 𝑛 từ trái sang phải. Ô nằm giao giữa hàng 𝑖 (𝑖 = 1, 2, … , 𝑚) và cột 𝑗 (𝑗 = 1, 2, … , 𝑛) được gọi là ô (𝑖,𝑗). Mỗi ô chứa đúng một đèn, mỗi đèn có 3 trạng thái, trạng thái sáng màu xanh hoặc sáng màu đỏ hoặc tắt. Có 𝑚 nút bấm điều khiển 𝑚 hàng, nút bấm điều khiển hàng thứ 𝑖 (𝑖 = 1, 2, … , 𝑚) được đánh chỉ số là 𝑖. Có 𝑛 nút bấm điều khiển 𝑛 cột, nút bấm điều khiển cột thứ 𝑗 (𝑗 = 1, 2, … , 𝑛) được đánh chỉ số là 𝑚 + 𝑗. Khi một nút điều khiển được bấm, nếu nó là nút điều khiển hàng, nó sẽ thay đổi trạng thái tất cả các đèn trên hàng đó, còn nếu nó là nút điều khiển cột, nó sẽ thay đổi trạng thái tất cả các đèn trên cột đó. Cụ thể, nếu một đèn đang ở trạng thái tắt sẽ chuyển sang trạng thái sáng màu xanh, còn nếu đang ở trạng thái sáng màu xanh thì chuyển sang trạng thái sáng màu đỏ, nếu ở trạng thái sáng màu đỏ thì chuyển về trạng thái tắt. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Yêu cầu: </strong>Cho trạng thái ban đầu của 𝑚 × 𝑛 đèn và dãy gồm 𝑠 thao tác bấm nút điều khiển. Hãy cho biết, sau khi thực hiện xong dãy thao tác thì có bao nhiêu đèn ở trạng thái tắt. </span></p>
+<p style="text-align: justify;"><span style="font-size:14px"><strong>Dữ liệu</strong>: </span></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">- Dòng đầu chứa ba số nguyên 𝑚, 𝑛, 𝑠;<br/>
+- Dòng thứ 𝑖 trong 𝑚 dòng tiếp theo, mỗi dòng chứa 𝑛 số nguyên 𝑐<sub>(𝑖,1)</sub> , 𝑐<sub>(𝑖,2)</sub> , … , 𝑐<sub>(𝑖,𝑛)</sub>, trong đó 𝑐<sub>(𝑖,𝑗)</sub> tương ứng bằng 0 hoặc 1 hoặc 2 nếu đèn ở ô (𝑖,𝑗) tương ứng đang ở trạng thái tắt hoặc sáng màu xanh hoặc sáng màu đỏ (𝑖 = 1, 2, … , 𝑚;𝑗 = 1, 2, … , 𝑛);<br/>
+-  Cuối cùng là một dòng chứa 𝑠 số nguyên 𝑡<sub>1</sub>,𝑡<sub>2</sub>, … ,𝑡<sub>𝑠</sub> mô tả dãy gồm 𝑠 thao tác bấm nút điều khiển (1 ≤ 𝑡<sub>𝑘</sub> ≤ 𝑚 + 𝑛; 𝑘 = 1, 2, … , 𝑠). </span></p>
+<p style="text-align: justify;"><strong><span style="font-size:14px">Kết quả: </span></strong></p>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px">Ghi ra một số nguyên là số lượng đèn tắt sau khi thực hiện xong dãy thao tác điều khiển.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><span style="font-size:14px"><strong>Input</strong></span></p>
+<p style="margin-left:40px"><span style="font-size:14px">2 3 0<br/>
+0 0 0<br/>
+0 0 2</span></p>
+<p><span style="font-size:14px"><strong>Output</strong></span></p>
+<p style="margin-left:40px"><span style="font-size:14px">5</span></p>
+<p><span style="font-size:14px"><strong>Input</strong></span></p>
+<p style="margin-left:40px"><span style="font-size:14px">2 3 2<br/>
+0 0 0<br/>
+0 0 2<br/>
+2 3</span></p>
+<p><span style="font-size:14px"><strong>Output</strong></span></p>
+<p style="margin-left:40px"><span style="font-size:14px">3</span></p>
+<p><span style="font-size:14px"><em><strong>Ràng buộc:</strong></em></span></p>
+<p style="margin-left:40px"><span style="font-size:14px">- Có 30% số lượng test thỏa mãn điều kiện: 𝑚, 𝑛 ≤ 20 và 𝑠 = 0;<br/>
+- Có 30% số lượng test khác thỏa mãn điều kiện: 𝑚, 𝑛, 𝑠 ≤ 20;<br/>
+- Có 20% số lượng test khác thỏa mãn điều kiện: 𝑚 ≤ 20; 𝑛 ≤ 50000 và 𝑠 ≤ 10<sup>6</sup> ;<br/>
+- Có 20% số lượng test còn lại thỏa mãn điều kiện: 𝑚 ≤ 50000; 𝑛 ≤ 20 và 𝑠 ≤ 10<sup>6</sup></span></p>
+<hr/>
+<p><span style="font-size:14px"><em>Nguồn: 3D 20162017</em></span></p>
+</div>
+</div>

@@ -1,0 +1,35 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Tráo bài</h2>
+</div><div class="content-description screen">
+<div><p>Cho một tập bài gồm \(𝑛\) lá bài đánh số từ 1 tới \(𝑛\) theo thứ tự từ trên xuống dưới. Đầu tiên người ta viết vào mỗi lá
+bài một số nguyên là số thứ tự lá bài đó. Xét phép tráo \(𝑆(𝑖,𝑗)\): Rút ra lá bài ghi số nguyên \(𝑖\) và chèn lên trên lá bài
+mang số nguyên \(𝑗 (𝑖 ≠ 𝑗)\).
+<em>Ví dụ</em>: Với \(𝑛 = 9\)</p>
+<p>\((1,2,3,4,5,6,7,8,9) \xrightarrow[]{S(2,8)} (1,8,2,3,4,5,6,7,9) \xrightarrow[]{S(4,7)} (1,8,2,3,5,6,4,7,9) \xrightarrow[]{S(1,9)} (8,2,3,5,6,4,7,1,9))\)</p>
+<p><strong>Yêu cầu:</strong>Cho \(𝑥\) phép tráo bài, hãy xác định trạng thái của tập bài sau \(𝑥\) phép tráo.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng 1 chứa hai số nguyên dương \(𝑛, 𝑥 ≤ 10^5\)</li>
+<li>\(𝑥\) dòng tiếp theo, dòng thứ \(𝑘\) chứa hai số nguyên dương \(𝑖_𝑘,𝑗_𝑘\) cho biết phép tráo thứ \(𝑘\) là \(𝑆(𝑖_𝑘,𝑗_𝑘) (𝑖_𝑘 ≠ 𝑗_𝑘, 1 ≤𝑖_𝑘,𝑗_𝑘 ≤ 𝑛)\)</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra một dòng gồm \(𝑛\) số nguyên là các số ghi trên các lá bài theo thứ tự từ trên xuống dưới</li>
+</ul>
+<p><em>Các số trên một dòng của Input/Output files được/phải ghi cách nhau ít nhất một dấu cách</em></p>
+<p><strong>Sample input</strong></p>
+<pre><code>9 3
+8 2
+4 7
+1 9</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>8 2 3 5 6 4 7 1 9</code></pre>
+<p><strong><em>Giới hạn:</em></strong></p>
+<ul>
+<li>Subtask 1: \(𝑛, 𝑥 ≤ 10^3\)</li>
+<li>Subtask 2: \(𝑛, 𝑥 ≤ 10^5\)</li>
+</ul>
+<p><em>Nguồn: LHM</em></p>
+</div>
+<hr/>
+</div>

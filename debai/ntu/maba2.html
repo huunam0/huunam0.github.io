@@ -1,0 +1,44 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    MABA2 - Giải phóng mặt bằng 2 (OLPCĐ 2012) 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">       <img alt="" src="images/Matbang.PNG" style="float:right; height:205px; margin-left:10px; width:263px"/> Khu công nghiệp được chia thành các lô có hình vuông. Toàn bộ khu công nghiệp có dạng hình chữ nhật kích thước <span style="font-size:16px"><em><span style="font-family:times new roman,times,serif">n</span></em></span> lô theo chiều ngang và <span style="font-family:times new roman,times,serif"><em><span style="font-size:16px">m</span></em></span> lô theo chiều dọc. Người ta dự định sẽ xây dựng hệ  thống đường bàn cờ đảm bảo mỗi lô đều có đường bao ở bốn phía. Điều này có nghĩa là Ban quản lý khu công nghiệp sẽ phải xây dựng  <em><span style="font-family:times new roman,times,serif"><span style="font-size:16px">n+1</span></span></em> đường ngang và <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>m+1</em></span></span> đường dọc. Các đường ngang được đánh số từ 0 đến <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>n</em></span></span> từ dưới lên trên, các đường dọc được đánh số từ 0 đến <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>m</em></span></span> từ trái qua phải. Mỗi khi đường ngang hay đường dọc nào  hoàn thành thì phải báo cáo ngay dưới dạng một dòng thông tin “<em><span style="font-size:16px"><span style="font-family:times new roman,times,serif">H i</span></span></em>” hay “<span style="font-size:16px"><em><span style="font-family:times new roman,times,serif">V j</span></em></span>”, cho biết đường ngang <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>i</em></span></span> hay đường dọc <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>j</em></span></span> đã hoàn thành. Dựa trên các thông tin này, Trưởng ban quản lý có thể xác định được các giá trị <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub></em></span></span> và <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>a<sub>4</sub></em></span></span>, trong đó <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>a<sub>s</sub></em></span></span> là số lô có số đường bao quanh đã làm xong là <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>s</em></span></span> đường (<span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>s</em></span></span> = 0, 1, 2, 3, 4).<br/>
+Ví dụ, khi <span style="font-size:16px"><em><span style="font-family:times new roman,times,serif">n</span></em></span> = 3,  <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>m</em></span></span> = 4 và các báo cáo là <span style="font-size:16px"><em><span style="font-family:times new roman,times,serif">V 1, H 2, V 2</span></em></span> và <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>H 1</em></span></span> thì <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>a<sub>0</sub>= 0, a<sub>1</sub>= 2, a<sub>2</sub>= 5, a<sub>3</sub>= 4, a<sub>4</sub>= 1</em></span></span>.<br/>
+<strong>Dữ liệu nhập:</strong></p>
+<p>- Gồm ba số nguyên <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>n, m, k</em></span></span>, mỗi số cách nhau một khoảng trắng (<span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>1 ≤ n, m ≤ <span style="color:#FF0000"><strong>30.000</strong></span>; k ≤ n+m+2</em></span></span>).</p>
+<p>- Trong <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>k</em></span></span> dòng tiếp theo mỗi dòng gồm một ký tự <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>t</em></span></span> và một số nguyên <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>v</em></span></span> cách nhau một khoảng trắng. <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>t</em></span></span> chỉ có hai trường hợp là '<span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>H</em></span></span>' - đường ngang, hay '<span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>V</em></span></span>' - đường dọc. <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>v</em></span></span> là thứ tự đường ngang hay đường dọc đã xây xong.  </p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Gồm 5 số nguyên <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub></em></span></span> và <span style="font-family:times new roman,times,serif"><span style="font-size:16px"><em>a<sub>4</sub></em></span></span>, mỗi số cách nhau một khoảng trắng.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 4 4<br/>V 1<br/>H 2<br/>V 2<br/>H 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">0 2 5 4 1</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">1 1 4<br/>H 0<br/>V 0<br/>H 1<br/>V 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">0 0 0 0 1</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

@@ -1,0 +1,48 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Cặp số "hàng xóm"</h2>
+</div><div class="content-description screen">
+<div><p>Hai số nguyên dương \(A\) và \(B\) được gọi là cặp số "<strong>hàng xóm</strong>" nếu chúng thỏa mãn \(1\) trong \(2\) điều kiện sau:</p>
+<ul>
+<li><p>Trong biểu diễn thập phân, \(A\) và \(B\) có cùng độ dài và khác nhau chính xác một chữ số. (Ví dụ \(\left\{158,198\right\}\) là cặp số "<strong>hàng xóm</strong>")</p>
+</li>
+<li><p>Nếu ta thêm một chữ số vào bên trái của \(A(\text{ hoặc }B)\) thì ta sẽ thu được \(B(\text{ hoặc }A)\) (Ví dụ \(\left\{47,147\right\}\) là cặp số "<strong>hàng xóm</strong>")</p>
+</li>
+</ul>
+<p>Bây giờ, ta gọi số nguyên tố \(G\) là "<strong>bà con</strong>" với số \(2\) nếu tồn tại một chuỗi số \(a_0,a_1,....a_q\) thỏa mãn điều kiện sau:</p>
+<ul>
+<li><p>\(a_0=2;a_q=G\)</p>
+</li>
+<li><p>\(\left\{a_i,a_{i+1}\right\}\) là cặp số "<strong>hàng xóm</strong>" và \(a_i\in \mathbb{P},a_{i+1}\in \mathbb{P}\) với mọi \(0\le i\le q-1(q\in \mathbb{N}^{*})\)</p>
+</li>
+<li><p>\(a_i\le G\text{ }\forall 0\le i\le q\)</p>
+</li>
+</ul>
+<p>(Trong đó \(\mathbb{P}\) là tập hợp các số nguyên tố.)</p>
+<p>Nói cách khác, tồn tại một dãy chuyển hóa \(2\) thành \(G\) mà tất cả các số trong dãy là số nguyên tố, hai số kề nhau phải là "hàng xóm" và tất cả các số trong dãy không quá \(G\).</p>
+<p>Ví dụ, \(31\) là số <strong>"bà con"</strong> với \(2\) vì ta có dãy sau: \(2, 7, 17, 11, 31\).</p>
+<p>Cho số nguyên dương \(N\) và gọi \(F(N)\) là tổng của tất cả các số nguyên tố không quá \(N\) và không "<strong>bà con</strong>" với số \(2\).</p>
+<p><strong>Yêu cầu:</strong> Nhập số nguyên dương \(N\). In ra \(F(N)\) tương ứng.</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li>Một dòng duy nhất chứa số nguyên dương \(N(1\le N\le 10000000)\)</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra đáp án cần tìm.</li>
+</ul>
+<p><strong>Ví dụ :</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>11</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>11</code></pre>
+<p><strong>Giải thích:</strong> Từ \(1\) đến \(11\) chỉ có duy nhất số \(11\) là số nguyên tố không "<strong>bà con</strong>" với số \(2\) nên đáp án là \(11\)</p>
+<p><strong>Subtask:</strong></p>
+<ul>
+<li><p>\(20\text{%}\) test có \(1\le N\le 1000\)</p>
+</li>
+<li><p>\(80\text{%}\) test có \(1000\le N\le 10000000 \)</p>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

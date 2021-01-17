@@ -1,0 +1,53 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    KGMSOCKETS - Mạng lưới điện 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 256 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Bò Bessie rất thích nghịch điện!<br/>
+Một buổi sáng, bò Bessie được nhận một món quà: một bảng mạch điện! Bảng mạch gồm 1 nguồn và N dây nối ngang song song, dẫn điện 1 trong 2 chiều từ trái sang phải hoặc ngược lại. Đồng thời bảng mạch cũng bao gồm M bóng đèn. Bóng đèn thứ i sẽ được nối vào các dây dẫn liên tiếp từ Li đến Ri và chỉ nhận điện theo 1 chiều. Tuy vậy, do bóng đèn là loại nhỏ nên trong các dây được nối với bóng đèn, chỉ cần 1 dây có cùng chiều điện với bóng đèn là bóng sẽ sáng chói!<br/>
+Bessie lập tức nối tất cả các bóng đèn vào mạch, và nhanh chóng tìm cách làm cho tất cả bóng đèn đều sáng. Bessie nhận ra mình có thể đảo chiều điện của 1 số dây, việc đảo chiều dây thứ i sẽ mất chi phí là Ci . Hãy xác định giúp Bessie chi phí nhỏ nhất để làm cho tất cả bóng đèn đều sáng!</p>
+<p><br/>
+<strong>Dữ liệu vào</strong><br/>
+• Dòng đầu tiên gồm 2 số N và M (1 ≤ N ≤ 2000, 0 ≤ M ≤ 5000)<br/>
+• Dòng tiếp theo gồm N kí tự mô tả chiều dòng điện của N dây dẫn (<strong>L</strong> là sang trái, <strong>R</strong> là sang phải)<br/>
+• Dòng tiếp theo gồm N số Ci là chi phí đảo chiều của từng dây dẫn. (1 ≤ Ci ≤ 1000)<br/>
+• M dòng tiếp theo mô tả các bóng đèn. Mỗi dòng có dạng Li Ri Ki trong đó Ki chỉ chiều điện mà<br/>
+bóng đèn nhận (<strong>L</strong> là sang trái, <strong>R</strong> là sang phải) (1 ≤ Li ≤ Ri ≤ N )</p>
+<p><br/>
+<strong>Kết quả ra</strong><br/>
+• Một dòng duy nhất in ra đáp số của bài.<br/>
+• Nếu Bessie không thể làm cho tất cả bóng đèn sáng, in −1.</p>
+<p> </p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2 2<br/>LL<br/>2 6<br/>1 2 L<br/>1 2 R</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2 2<br/>LL<br/>2 6<br/>2 2 L<br/>2 2 R</div>
+<div class="sample-type">output</div>
+<div class="sample-value">-1</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Ở test 1 có thể đảo chiều dây thứ nhất.</p>
+</div>
+</div></body></html>

@@ -1,0 +1,47 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Quản lý vùng BALLAS</h2>
+</div><div class="content-description screen">
+<div><p>Sau khi thanh toán hết băng nhóm BALLAS, CJ đã tịch thu những nơi do băng BALLAS làm chủ. Là một trong những người đứng đầu nhóm GROVE STREET FAMILIES, nên CJ đã ra lệnh cho một số lính thăm dò về vùng đất bị thu hồi này. Sau khi thăm dò, thì CJ biết trong vùng có \(N\) ngôi nhà, đánh số từ \(1\) tới \(N\), và có \(M\) tuyến đường giao thông hai chiều nối trực tiếp hai ngôi nhà với nhau. Lúc này CJ ra lệnh cho một số lính quản lý vùng đã được thu hồi với các điều kiện sau:</p>
+<ul>
+<li>Mỗi ngôi nhà chỉ chịu quản lý của một lính của CJ.</li>
+<li>Tập hợp các ngôi nhà có thể kết nối được với nhau (bất kỳ hai ngôi nhà nào cũng có thể kết nối với nhau) thì cũng chỉ chịu quản lý bởi một lính của CJ.</li>
+<li>Định nghĩa ngôi nhà u với ngôi nhà v kết nối được với nhau là tồn tại một đường đi giữa hai ngôi nhà \(u\) và \(v\), tức là tồn tại dãy các ngôi nhà \(P = 〈u = p_0, p_1, …, p_k = v〉\) sao cho \(\forall i: 1 &lt; i ≤ k\) thì tồn tại tuyến đường trực tiếp giữa hai ngôi nhà \(p_{i-1}\) và \(p_i\) trong khu vực.</li>
+<li>Số lính để quản lý là ít nhất.</li>
+</ul>
+<p><strong>Yêu cầu</strong>: Hãy tìm số lính quản lý thoả mãn các điều kiện của CJ, và chỉ ra rõ ra những ngôi nhà mà từng lính quản lý. Nếu có nhiều cách quản lý, chỉ ra một cách bất kì.</p>
+<p><strong>Dữ liệu vào</strong>: Gồm \(M + 1\) dòng:</p>
+<ul>
+<li>Dòng \(1\) chứa 2 số nguyên dương \(N\), \(M\);</li>
+<li>\(M\) dòng tiếp theo, mỗi dòng chứa hai số nguyên dương \(u\), \(v\) thể hiện có tuyến đường hai chiều nối trực tiếp từ ngôi nhà \(u\) tới ngôi nhà \(v\) trong vùng. </li>
+</ul>
+<p><strong>Kết quả</strong>: Gọi \(K\) là số đàn em quản lý thoả mãn các điều kiện của CJ. Ghi ra \(K+1\) dòng:</p>
+<ul>
+<li>Dòng \(1\) ghi ra số nguyên dương \(K\).</li>
+<li>\(K\) dòng tiếp theo, dòng i ghi ra số đầu tiên là số \(X\) - số ngôi nhà do lính \(i\) quản lý, \(X\) số tiếp theo là số hiệu ngôi nhà do lính \(i\) quản lý.</li>
+</ul>
+<p><strong>Ví dụ</strong></p>
+<p><strong>INPUT</strong></p>
+<pre><code>12 10
+1 4
+2 3
+3 6
+4 5
+6 7
+8 9
+8 10
+9 11
+11 8
+11 12</code></pre>
+<p><strong>OUTPUT</strong></p>
+<pre><code>3
+3 1 4 5 
+4 2 3 6 7 
+5 8 9 10 11 12</code></pre>
+<p><strong>Giới hạn</strong></p>
+<ul>
+<li>\(30\)% số test đầu tiên có \(N \leq 10^3, M \leq 10^4\)</li>
+<li>\(70\)% số test còn lại có \(N \leq 10^5, M \leq 10^6\)</li>
+</ul>
+</div>
+<hr/>
+</div>

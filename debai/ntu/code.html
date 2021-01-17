@@ -1,0 +1,66 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    CODE - Chuyển Mã 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">Hai công ty Alpha và Beta đang phối hợp với nhau để cùng thực hiện một dự án. Dự án sẽ được chia làm hai phần, sau khi công ty Alpha hoặc Beta làm xong phần của mình thì họ sẽ giao mã nguồn (source code) cho công ty còn lại để tiếp tục thực hiện dự án. Tuy nhiên, phong cách lập trình tại 2 công ty này lại khác nhau và họ có các quy tắc định danh (đặt tên) các đối tượng lần lượt như sau:</p>
+<p style="text-align:justify"> - Đối với công ty Alpha, từ đầu tiên của định danh sẽ được viết thường, đối với các từ tiếp theo, chữ cái đầu tiên sẽ được viết hoa. Ví dụ: để congTyAlpha, congTyBeta, chuyenMa...</p>
+<p style="text-align:justify"> - Đối với công ty Beta, tất cả các từ trong định danh đều được viết thường và các từ được phân tách nhau bằng 1 dấu '_'. Ví dụ: cong_ty_alpha, cong_ty_beta, chuyen_ma,...</p>
+<p style="text-align:justify">Biết rằng khi làm việc chung với nhau thì cần có những quy tắc định danh thống nhất. Tuy nhiên cả 2 công ty đều không muốn thay đổi quy tắc của mình, vì vậy họ quyết định nhờ đến NTUCoder giải quyết việc này. Họ yêu cầu các bạn - những lập trình viên của NTUCoder chuyển đổi các đối tượng được đặt tên theo phong cách của công ty Alpha sang phong cách của công ty Beta, và ngược lại. Tuy nhiên, trong quá trình thực hiện dự án, đôi lúc các lập trình viên của 2 công ty cũng thực hiện sai quy tắc của công ty, lúc này các bạn cần phải thông báo cho họ biết.</p>
+<p style="text-align:justify"><strong>Dữ liệu nhập: </strong>Gồm một dòng duy nhất chứa một định danh cần chuyển đổi, độ dài không vượt quá 100.</p>
+<p style="text-align:justify"><strong>Dữ liệu xuất:</strong> Là định danh sau khi chuyển đổi, nếu việc chuyển đổi không thành công, xuất ra <strong>Error!</strong></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">congTyAlpha</div>
+<div class="sample-type">output</div>
+<div class="sample-value">cong_ty_alpha</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">cong_ty_beta</div>
+<div class="sample-type">output</div>
+<div class="sample-value">congTyBeta</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">toi</div>
+<div class="sample-type">output</div>
+<div class="sample-value">toi</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">co_Loi</div>
+<div class="sample-type">output</div>
+<div class="sample-value">Error!</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">chuyen_ma</div>
+<div class="sample-type">output</div>
+<div class="sample-value">chuyenMa</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong><em>congTyAlpha</em></strong> khi chuyển từ phong cách của công ty Alpha sang công ty Beta sẽ được <strong><em>cong_ty_alpha</em></strong></p>
+<p><strong><em>cong_ty_beta</em></strong>, <strong><em>chuyen_ma</em></strong> khi chuyển từ phong cách của công ty Beta sang phong cách của công ty Alpha sẽ thu được <strong><em>congTyBeta</em></strong>, <strong><em>chuyenMa</em></strong></p>
+<p><strong><em>toi</em> </strong>có thể thuộc cả 2 phong cách lập trình, và khi chuyển đổi qua lại đều thi được kết quả như nhau.</p>
+<p><strong><em>co_Loi</em></strong> là một định danh lỗi, vì vậy xuất ra <strong><em>Error!</em></strong></p>
+<p> </p>
+</div>
+</div></body></html>

@@ -1,0 +1,58 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Tam giác</h2>
+</div><div class="content-description screen">
+<div><p>Cho \(S\) là tập các điểm có tọa độ nguyên trên mặt phẳng. Có ba thao tác có thể được thực hiện đối với tập điểm đã cho:</p>
+<ul>
+<li>Thao tác 1: thêm một điểm vào tập \(S\).</li>
+<li>Thao tác 2: loại bỏ một điểm khỏi tập \(S\).</li>
+<li>Thao tác 3: trả lời câu hỏi “Cho trước một điểm, hỏi diện tích lớn nhất trong số các diện tích của các tam giác vuông với đỉnh góc vuông tại một điểm cho trước có hai cạnh bên song song với các trục tọa độ và hai đỉnh còn lại thuộc vào tập \(S\) là bao nhiêu?”. </li>
+</ul>
+<p><strong>Yêu cầu</strong>: Cho tập \(S\) và dãy gồm \(N\) thao tác được thực hiện đối với nó, hãy viết chương trình thực hiện dãy các thao tác đã cho và đưa ra câu trả lời cho mồi câu hỏi (khi thực hiện thao tác 3).</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương \(N\) và \(Q\) được ghi cách nhau bởi dấu cách theo thứ tự là số lượng phần tử trong tập \(s\) lúc xuất phát và số lượng thao tác cần thực hiện, \(3 \le N \le 100 000; 1 \le Q \le 200 000\).</li>
+<li>Mồi dòng trong số \(N\) dòng tiếp theo chứa hai số nguyên được ghi cách nhau bởi dấu cách là tọa độ của một điểm trong tập xuất phát \(S\).</li>
+<li>Tiếp đến là \(Q\) dòng, mồi dòng trong số các dòng này chứa thông tin về một thao tác cần thực hiện có một trong ba dạng sau đây:<ul>
+<li>\(1\ x\ y\): yêu cầu thực hiện thao tác 1, cần bổ sung điểm có tọa độ (\(x,y\)) vào tập \(S\);</li>
+<li>\(2\ x\ y\): yêu cầu thực hiện thao tác 2, cần loại bở điềm có tọa độ (\(x, y\)) khỏi tập \(S\); </li>
+<li>\(3\ x\ y\): yêu cầu thực hiện thao tác 3 với điềm cho trước có tọa độ (\(x,y\)).</li>
+</ul>
+</li>
+</ul>
+<p>Đối với thao tác 2, dữ liệu đảm bảo rằng điểm cần loại bỏ có mặt trong tập \(s\). Dữ liệu cũng đảm bão là tại bất cứ thời điểm nào, tập s luôn không chứa hai điểm trùng nhau, tức là hai điềm có cùng tọa độ. Tọa độ của các điềm có giá trị tuyệt đối không vượt quá \(10^9\).</p>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Đối với mồi thao tác loại 3 hãy đưa ra một sổ nguyên hoặc số thực với 1 chữ số sau dấu phảy nếu như kết quả không là số nguyên, là câu trá lời cho truy vấn tương ứng. Nếu không có tam giác vuông với các tính chất đã nêu thì hãy đưa ra số 0.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>7 10
+1 1
+1 4
+2 3
+2 4
+3 2
+4 4
+-3 6
+3 1 2
+3 3 4
+2 1 4
+3 3 4
+1 7 4
+3 3 4
+3 1 2
+3 4 1
+2 1 1
+3 1 2</code></pre>
+<p><strong>Sample input</strong></p>
+<pre><code>2
+2
+1
+4
+1
+4.5
+0</code></pre>
+<hr/>
+<p><em>Nguồn: Thầy Nghĩa '18</em></p>
+</div>
+<hr/>
+</div>

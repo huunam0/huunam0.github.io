@@ -1,0 +1,56 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    GIEN - Gien màu da 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Con người có 4 loại ADN: A, X, T, G. Giả sử đoạn gien quy định màu da của con người là một chuỗi N ADN kết hợp từ  4 loại ADN trên (1 ≤ N≤ 20). Ví dụ một đoạn gien có 8 ADN là: AATXGGGT. Các ADN trong đoạn gien được đánh số từ 1 đến N.</p>
+<p>Đoạn gien quy định màu da của thế hệ con cũng là một đoạn N ADN kết hợp từ gien của bố và gien của mẹ. Trong đó ADN thứ i (1≤ i ≤ N) được hình thành bằng cách lấy ADN thứ i tương ứng của gien bố <strong><em>hoặc</em></strong> gien mẹ. Ví dụ:</p>
+<p>    - Gien của bố:  AATX</p>
+<p>    - Gien của mệ: GATT</p>
+<p>    - Gien của con chỉ có thể là 4 trường hợp sau: AATX, AATT, GATX, GATT.</p>
+<p>Cho trước gien của bố và gien của mẹ, bạn hãy viết chương trình liệt kê các khả năng có thể xảy ra của gien thế hệ con.   </p>
+<p><strong>Dữ liệu vào:</strong></p>
+<p>     - Dòng thứ nhất: là số N biểu thị số ADN trong đoạn gien của bố và mẹ. (1 ≤ N≤ 20)</p>
+<p>     - Dòng thứ hai: đoạn gien của bố.</p>
+<p>     - Dòng thứ ba: đoạn gien của mẹ (hai đoạn gien này có chiều dài bằng N và chỉ gồm các ký tự A, X, T G)</p>
+<p><strong>Dữ liệu ra :</strong></p>
+<p>     - Dòng dầu tiên: ghi số K là tổng số khả năng có thể xảy ra của đoạn gien thế hệ con.</p>
+<p>     - Trong K dòng tiếp theo, mỗi dòng liệt kê một khả năng của gien theo thứ tự từ điển.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">2<br/>AT<br/>GX</div>
+<div class="sample-type">output</div>
+<div class="sample-value">4<br/>AT<br/>AX<br/>GT<br/>GX</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3<br/>AXT<br/>GXA</div>
+<div class="sample-type">output</div>
+<div class="sample-value">4<br/>AXA<br/>AXT<br/>GXA<br/>GXT</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">4<br/>AATX<br/>GATT</div>
+<div class="sample-type">output</div>
+<div class="sample-value">4<br/>AATT<br/>AATX<br/>GATT<br/>GATX</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

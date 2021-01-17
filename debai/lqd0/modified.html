@@ -1,0 +1,53 @@
+<div class="tm-box2">
+<div class="problem-name">
+    MODIFIED - Bị Biến Đổi 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Ami có một dãy số A gồm n phần tử, được đánh số từ 1, phần tử thứ i của dãy số được kí hiệu là A<sub>i</sub>. Ami có thể thực hiện thao tác sau với số lần bất kỳ : chọn một số A<sub>i</sub> mà giá trị hiện tại <strong>lớn hơn</strong> 1 và trừ số này đi 1 đơn vị. Nếu số A<sub>i</sub> đã bị trừ ít nhất một đơn vị, ta gọi số này đã <strong>bị biến đổi</strong>.</p>
+<p>Bây giờ, Ami cần tìm cách thực hiện thao tác sao cho số phần tử <strong>bị biến đổi</strong> là ít nhất, và tổng các phần từ sau khi thực hiện một số thao tác đúng bằng k.</p>
+<p><strong>Input</strong></p>
+<p>Dòng đầu tiên chứa 2 số nguyên dương n và k lần lượt là số phần tử, và tổng (n ≤ 10<sup>5</sup> , k ≤ 10<sup>16</sup>).</p>
+<p>Dòng tiếp theo chứa n số nguyên dương A<sub>i</sub> là các phần tử dãy A (A<sub>i</sub> ≤ 10<sup>9</sup>).</p>
+<p><strong>Output</strong></p>
+<p>Một số nguyên là số phần tử ít nhất bị biến đổi. Nếu không tồn tại bất kỳ cách thực hiện thao nào để tổng bằng k, in ra -1</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 4<br/>1 2 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 4<br/>1 2 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">0</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 4<br/>1 1 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">-1</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Ở test ví dụ 1, có thể chọn phần tử cuối, và trừ đi 1 đơn vị, lặp lại 2 lần, ta có dãy sau 1 2 1. Dãy số có tổng đúng bằng 4, và chỉ thực hiện thao tác lên phần tử cuối, do đó kết quả là 1.</p>
+<p>Ở test ví dụ 2, vì dãy số đã có tổng bằng k, không có phần tử bị biến đổi, nên kết quả là 0.</p>
+<p>Ở test ví dụ 3, không tồn tại cách biến đổi để dãy số có tổng bằng k. In ra -1.</p>
+</div>
+</div>

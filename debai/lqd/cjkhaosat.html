@@ -1,0 +1,41 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">CJ Khảo sát</h2>
+</div><div class="content-description screen">
+<div><p>Sau bao nhiêu ngày tháng xây dựng ở vùng đất mới, thì CJ đã cử vài lực lượng cùng anh tới khu vực đó để khảo sát tình hình làm việc cũng như địa thế. CJ đặt biệt quan tâm đến sức mạnh và sự hỗ trợ của đồng đội, nên đã khảo sát như sau:</p>
+<ul>
+<li>Ở vùng đó có \(N\) căn cứ, được đánh số từ 1 tới \(N\) và \(M\) tuyến đường hai chiều, được đánh số từ \(1\) tới \(M\).</li>
+<li>Lực lượng của CJ sẽ tìm độ dài đường đi ngắn giữa Q cặp căn cứ \(s\), \(t\) bất kì do CJ muốn xem xét để làm kết quả của cuộc khảo sát, rồi sau đó về họp bàn sau.</li>
+<li>Định nghĩa căn cứ \(s\) có thể đi tới căn cứ \(t\) là tồn tại một đường đi từ \(s\) tới \(t\), tức là tồn tại dãy các căn cứ \(P=⟨s=p_0,p_1,...,p_k=t⟩\) sao cho \(∀i:1 \leq i \leq k\) thì tồn tại tuyến đường trực tiếp giữa hai căn tứ \(p_{i-1}\) và căn cứ \(p_i\).</li>
+</ul>
+<p><strong>Yêu cầu</strong>: Với mỗi cặp căn cứ \(s\), \(t\) do CJ chọn, tìm đường đi ngắn nhất giữa hai căn cứ \(s\) và \(t\).</p>
+<p><strong>Dữ liệu vào</strong>: Gồm \(M + Q + 1\) dòng:</p>
+<ul>
+<li>Dòng thứ nhất chứa ba số nguyên dương \(N\), \(M\), \(Q\) thể hiện số căn cứ, số con đường và số cặp căn cứ muốn xem xét.</li>
+<li>\(M\) dòng tiếp theo, dòng thứ \(i\) chứa ba số nguyên dương \(u_i\), \(v_i\) và \(c_i\) thể hiện có tuyến đường nối trực tiếp giữa \(u_i\) và \(v_i\) và có độ dài là \(c_i\) \((c_i \leq 10^9, u_i \neq v_i)\).</li>
+<li>\(Q\) dòng cuối cùng, dòng thứ \(i\) chứa hai số \(s_i\) và \(t_i\) thể hiện cặp căn cứ \(s_i\), \(t_i\) mà CJ muốn xem xét \((s_i \neq t_i)\).</li>
+</ul>
+<p><strong>Kết quả</strong>: Gồm \(Q\) dòng, dòng thứ \(i\) là đường đi ngắn nhất giữa cặp căn cứ \(s_i\), \(t_i\).</p>
+<p><strong>Ví dụ</strong>:</p>
+<p><strong>Input</strong>:</p>
+<pre><code>6 6 2
+3 1 2
+5 2 1
+6 5 9
+5 1 4
+5 3 6
+4 6 1
+4 5
+3 2</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>10
+7</code></pre>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>\(25\)% số test đầu tiên có \(N \leq 10^2, M \leq 10^3, Q \leq 5.10^2\).</li>
+<li>\(25\)% số test tiếp theo có \(N \leq 3.10^2, M \leq 2.10^4, Q \leq 2.10^2\).</li>
+<li>\(50\)% số test còn lại có \(N \leq 4.10^2, M \leq 35.10^3, Q \leq 35.10^3\).</li>
+</ul>
+<p><strong>Chú ý</strong>: Giới hạn \(N\) nhỏ nên đừng dại mà làm giống bài CJ dự tiệc nha :V, kẻo <strong>TLE</strong> đấy!!</p>
+</div>
+<hr/>
+</div>

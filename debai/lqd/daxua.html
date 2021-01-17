@@ -1,0 +1,41 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Thông thạo 7 Yasuo</h2>
+</div><div class="content-description screen">
+<div><p><img alt="" src="https://i.imgur.com/XkXDuah.png"/></p>
+<p><strong>Khôi</strong> rất thích chơi <strong>Liên Minh Huyền Thoại</strong>, đặc biệt là vị tướng <strong>Yasuo</strong>. Tuy nhiên anh ấy chơi <strong>Yasuo</strong> rất tệ nên anh ấy đang tập luyện để chơi vị tướng này một cách thành thạo.</p>
+<p>Biết rằng từ tọa độ \((x,y)\) <em>Yasuo</em> có thể lướt <strong>thẳng</strong> đến một trong các vị trí \((x-1,y), (x+1,y), (x,y-1), (x,y+1) \)</p>
+<p>hoặc lướt <strong>chéo</strong> đến một trong các vị trí \((x-1,y-1), (x-1,y+1), (x+1,y-1), (x+1,y+1)\)</p>
+<p><strong>Khôi</strong> sẽ tập luyện lướt <strong>Yasuo</strong> trong \(Q\) trận, trong trận thứ \(i\) mục tiêu của anh ấy là lướt tới điểm \((n,m)\) từ tọa độ \((0,0)\) trong chính xác \(k\) lần lướt. Tuy nhiên vì để được Thông Thạo 7 Yasuo, <strong>Khôi</strong> sẽ lướt đến điểm \((n,m)\) với số lần lướt <strong>chéo</strong> là nhiều nhất.</p>
+<p>Câu hỏi của bạn là, trong trận thứ \(i\), bạn hãy xác định số lần lướt <strong>chéo</strong> nhiều nhất của <strong>Khôi</strong> hoặc nói rằng <strong>Khôi</strong> không thể lướt từ điểm \((0,0)\) tới điểm \((n,m)\) trong chính xác \(k\) lần lướt.</p>
+<p><strong>Input</strong></p>
+<ul>
+<li>Dòng đầu tiên: Số nguyên dương \(Q\) \((Q \leq 10^4)\) - số câu hỏi</li>
+<li>\(Q\) dòng tiếp theo chứa số nguyên dương \(n\), \(m\), \(k\) \((n,m,k \leq 10^{18})\)</li>
+</ul>
+<p><strong>Output</strong></p>
+<ul>
+<li>Gồm \(Q\) dòng, tại dòng thứ \(i\), in ra \(“-1”\) nếu Khôi không thể lướt từ điểm \((0,0)\) đến điểm \((n,m)\) trong chính xác \(k\) lần lướt, ngược lại in ra số lần lướt chéo nhiều nhất của Khôi</li>
+</ul>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>3
+2 2 3
+4 3 7
+10 1 9</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>1
+6
+-1</code></pre>
+<p><strong>Giải thích</strong></p>
+<ul>
+<li>Một trong những cách lướt trong câu hỏi 1: \((0,0)→(1,0)→(1,1)→(2,2)\)</li>
+<li>Một trong những cách lướt trong câu hỏi 2  \((0,0)→(0,1)→(1,2)→(0,3)→(1,4)→(2,3)→(3,2)→(4,3)\)</li>
+<li>Câu hỏi 3: Khôi không thể lướt từ \((0,0)\) đến \((10,1)\) trong \(9\) lần lướt</li>
+</ul>
+<p><strong>Ràng buộc</strong></p>
+<ul>
+<li>50% test \(n,m \leq 10\)</li>
+<li>50% test \(n,m \leq 10^{18}\)</li>
+</ul>
+</div>
+<hr/>
+</div>

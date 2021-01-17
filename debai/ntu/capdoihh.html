@@ -1,0 +1,43 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    CapdoiHH - Cặp đôi hoàn hảo 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify">       Sau khi được NTUcoder tính giúp doanh thu, công ty của Bin ngày càng phát triển nhanh chóng. Số lượng nhân viên lúc này lên đến chục vạn người, phân thành nhiều cấp khác nhau. Công ty của Bin có cơ chế trả lương đặc thù đảm bảo trả đúng theo năng lực. Mỗi người trong công ty được đánh giá bởi một chỉ số năng lực C (0 &lt; C &lt;= số lượng nhân viên) và chỉ số năng lực này cũng được xem là số thứ tự của nhân viên đó trong công ty. Công ty sẽ dựa trên hệ số năng lực này để trả lương cho nhân viên. Ngoài ra công ty còn thường xuyên trả tiền thưởng theo tháng cho nhân viên. Hai nhân viên i và j được gọi là cặp đôi hoàn hảo và sẽ nhận được một khoản tiền thưởng trong tháng đó nếu hai chỉ số năng lực của họ thỏa mãn điều kiện công ty đưa ra:</p>
+<p style="text-align:justify"><strong>-  i là cấp trên của j (có thể là cấp trên trực tiếp hoặc cấp trên của cấp trên của j)</strong></p>
+<p style="text-align:justify"><strong>-  abs(Ci – Cj) &lt;=k với K là một số do công ty đưa ra.</strong></p>
+<p style="text-align:justify">       Xếp Bin muốn các bạn giúp tính xem trong tháng này thì số lượng cặp đôi hoàn hảo là bao nhiêu để chuẩn bị tiền thưởng.</p>
+<p style="text-align:justify"><strong>Input:</strong></p>
+<p style="text-align:justify">  -  Dòng đầu tiên: gồm 2 số nguyên dương N và K là số lượng nhân viên và số K do công ty đưa ra (1 ≤ N, K ≤ 10^5)</p>
+<p style="text-align:justify">  -  n-1 dòng sau: Mỗi dòng là một cặp số nguyên (u,v) tức nhân viên có chỉ số năng lực u là cấp trên trực tiếp của nhân viên có chỉ số năng lực v. (u,v ≤ N)</p>
+<p style="text-align:justify"><strong>Ràng buộc:</strong></p>
+<p style="text-align:justify">  - Dữ liệu cho đảm bảo các mối quan hệ tạo thành 1 cây.</p>
+<p style="text-align:justify"><strong>Ouput:</strong></p>
+<p style="text-align:justify">  -  Gồm một số nguyên duy nhất là đáp án của bài toán.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5 2<br/>3 2<br/>3 1<br/>1 4<br/>1 5</div>
+<div class="sample-type">output</div>
+<div class="sample-value">4</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p>Giải thích: có 4 cặp (3,2) (3,1) (3,4) và (3,5)</p>
+</div>
+</div></body></html>

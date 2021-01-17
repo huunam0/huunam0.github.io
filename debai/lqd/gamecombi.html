@@ -1,0 +1,31 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Ngãy rãnh của Kaninho</h2>
+</div><div class="content-description screen">
+<div><p>Hôm nay là chủ nhật - ngày mà <strong>Kaninho</strong> được rãnh rỗi sau những ngày cày ải liên tục cho Liverpool, cậu ấy quyết định đến nhà <strong>Henry</strong> để học tổ hợp nhằm trao dồi kiến thức ! Khi đến nơi, bố <strong>Henry</strong> đưa ra một số nguyên dương \(n\) ,sau đó đố <strong>Henry</strong> và <strong>Kaninho</strong> một bài toán như sau :</p>
+<p>Gọi \(S(gio,tao)\) là số cách xếp \(tao\) quả táo khác nhau và \(gio\) cái giỏ khác nhau. Biết rằng, một cái giỏ có thể chứa nhiều quả táo hoặc không chứa quả nào ! (ở đây, \(gio\) và \(tao\) đều là các số nguyên dương).</p>
+<p>Hiện tại nhà Henry có \(a\) cái giỏ và \(b\) quả táo, và bây giờ, <strong>Kaninho</strong> và <strong>Henry</strong> chơi một trò chơi như sau:</p>
+<ul>
+<li><p>Mỗi lượt, mỗi người sẽ được thêm một cái giỏ hoặc thêm một quả táo.</p>
+</li>
+<li><p>Người nào mà sau khi thực hiện lượt chơi của mình có \(S(gio,tao)\ge n\) thì người đó sẽ là người thua cuộc. (Trong đó \(gio,tao\) lần lượt là số giỏ và số táo đang có mặt tại cuộc chơi).</p>
+</li>
+</ul>
+<p>Giả sử <strong>Henry</strong> là người đi trước thì ai là người thua cuộc. Nếu <strong>Henry</strong> thắng in ra <strong>Kaninho</strong>, nếu <strong>Kaninho</strong> thắng in ra <strong>Henry</strong>, nếu hai người hòa in ra <strong>ZOZO</strong> (Biết rằng cả hai người đều chơi hết mình (tối ưu)).</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li>Một dòng duy nhất chứa \(3\) số nguyên dương \(a,b,n(1\le a\le 10000,1\le b\le 30,2\le n\le 10^9)\). Đảm bảo rằng, ban đầu ta luôn có \(S(a,b)&lt;n\)</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra đáp án cần tìm</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3 1 4</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>Kaninho</code></pre>
+<p><strong>Giải thích:</strong> Dù đi cách nào đi chăng nữa, thì <strong>Henry</strong> vẫn thua cuộc vì \(S(gio,tao)\ge 4\). Do đó ta có \(Kaninho\) luôn thắng cuộc !.</p>
+<p><strong>Nguồn:</strong> Tham khảo từ codeforces . Tag - DP</p>
+</div>
+<hr/>
+</div>

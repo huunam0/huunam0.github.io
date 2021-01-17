@@ -1,0 +1,34 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Trò chơi di chuyển Robot</h2>
+</div><div class="content-description screen">
+<div><p>Trò chơi di chuyển robot là mộ trò chơi di chuyển hai robot trong một mê cung gồm \(𝑚 × 𝑛\) phòng. Mê cung được chia thành \(𝑚\) dãy phòng, các dãy phòng được đánh số từ 1 đến \(𝑚 từ\) trên xuống dưới. Trên mỗi dãy phòng, có \(𝑛 phòng\), các phong được đánh số từ được đánh số từ 1 đến \(𝑛 từ\) trái sang phải. Phòng thứ \(𝑗\ (𝑗 = 1,2, … , 𝑛)\) trên dãy phòng \(𝑖\ (𝑖 = 1,2, … , 𝑚)\) được gọi là phòng \((𝑖,𝑗)\). Trong mê cung có một số phòng cấm không cho phép đi vào. Có 2 robot, robot thứ nhất ở phòng \((1,1)\) và hướng mặt về phòng \((1,2)\), robot thứ hai ở phòng \((𝑚, 𝑛)\) và hướng mặt về phòng \((𝑚, 𝑛 − 1)\). Tại mỗi thời điểm, người chơi có thể lựa chọn một trong ba hành động:</p>
+<ul>
+<li>“A” thì robot thứ nhất sẽ quay hướng 900 theo chiều kim đồng hồ, còn robot thứ hai quay hướng 1800 theo chiều kim đồng hồ;</li>
+<li>“B” thì cả robot thứ nhất sẽ quay hướng 1800 theo chiều kim đồng hồ, còn robot thứ hai quay hướng 900 theo chiều kim đồng hồ;</li>
+<li>“G” thì cả hai robot sẽ di chuyển sang phòng mà robot đang hướng mặt tới. Nếu robot nào hướng mặt vào phòng cấm hoặc ngoài mê cung thì robot đó sẽ đứng yên.</li>
+</ul>
+<p><strong>Yêu cầu</strong>: Tim dãy các hành động để điều khiển 2 robot gặp được nhau tại một phòng trong thời gian ngắn nhất.</p>
+<p><strong>Input</strong></p>
+<ul>
+<li>Dòng đầu là hai số nguyên dương \(𝑚, 𝑛\);</li>
+<li>Tiếp theo là \(𝑚\) dòng , mỗi dòng chứa \(𝑛\) số 0 hoặc 1 mô tả mê cung. Cụ thể, số thứ \(𝑗\) trên hàng \(𝑖\) bằng số 0 hoặc 1 có nghĩa là phòng \((𝑖,𝑗)\) được phép đi vào hay là phòng cấm.</li>
+</ul>
+<p><strong>Output</strong></p>
+<ul>
+<li>Ghi một số nguyên là thời gian ngắn nhất để điều khiển hai robot gặp nhau. Nếu không tồn tại cách điều khiển ghi -1. </li>
+</ul>
+<p><strong>Input</strong></p>
+<pre><code>1 3
+0 0 0</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>1</code></pre>
+<p><strong><em>Ràng buộc</em></strong></p>
+<ul>
+<li>Có 40% số test ứng với 40% số điểm của bài có \(𝑚 = 3; 𝑛 = 3\);</li>
+<li>Có 60% số test còn lại ứng với 60% số điểm của bài có \(𝑚 × 𝑛 ≤ 444\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 3D 20172018</em></p>
+</div>
+<hr/>
+</div>

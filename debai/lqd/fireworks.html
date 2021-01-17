@@ -1,0 +1,54 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Pháo hoa</h2>
+</div><div class="content-description screen">
+<div><p>Bắn pháo hoa là một trong những sự kiện thú vị nhất trong một lễ hội. Điều quan trọng khi bắn pháo hoa là tất cả các chất nổ được nối bởi các dây dẫn nổ tới một thiết bị kích nổ phải nổ đồng thời tại cùng một thời điểm định sẵn. Do các chất nổ sử dụng trong pháo hoa rất nguy hiểm, nên chúng được đặt cách xa thiết bị kích nổ và được nối đến thiết bị kích nổ bởi một số dây dẫn nổ. Để kết nối các chất nổ đến thiết bị kích nổ, các dây dẫn nổ được kết nối giống như các cạnh được nối trên một cây, xem minh họa trong [Hình 1]. Tia lửa bắt đầu từ thiết bị kích nổ và di chuyển dọc theo các dây dẫn nổ. Khi tia lửa chạm đến một đỉnh khớp, nó sẽ lan tỏa ra theo tất cả các dây dẫn nổ nối với đỉnh khớp đó. Tốc độ di chuyển của tia lửa là hằng số. [Hình 1] chỉ ra cách kết nối sáu chất nổ \(\left\{E_1, E_2,..., E_6\right\}\) và chiều dài mỗi dây dẫn nổ. Hình cũng chỉ ra thời điểm nổ với giả thiết thời điểm bắt đầu của tia lửa tại thiết bị kích nổ là \(0\).</p>
+<p><img alt="Sơ đồ kết nối" src="https://i.ibb.co/56Ykb34/fireworks-fig1.png"/></p>
+<p>Hyunmin là người tham gia chuẩn bị việc bắn pháo hoa đã tạo ra một sơ đồ kết nối. Tuy nhiên theo sơ đồ đó các chất nổ có thể không nổ tại cùng một thời điểm. Chúng ta muốn tất cả các chất nổ phải nổ tại cùng một thời điểm bằng cách điều chỉnh chiều dài của một số dây dẫn nổ. Ví dụ, để tất cả các chất nổ trong [Hình 1] nổ đồng thời tại thời điểm \(13\) thì chiều dài của các dây dẫn nổ có thể được điều chỉnh như hình bên trái trong [Hình 2]. Tương tự như vậy, để tất cả các chất nổ trong [Hình 1] nổ đồng thời tại thời điểm \(14\) thì chiều dài của các dây dẫn nổ có thể được điều chỉnh như hình bên phải trong [Hình 2].</p>
+<p><img alt="Ví dụ về điều chỉnh chiều dài các dây dẫn nổ để tất cả các chất nổ phát nổ cùng một lúc" src="https://i.ibb.co/gPDM0wC/fireworks-fig2.png"/></p>
+<p>Chi phí của việc điều chỉnh chiều dài một dây dẫn nổ bằng giá trị tuyệt đối của độ chênh lệch chiều dài dây dẫn nổ đó. Ví dụ, nếu sơ đồ trong [Hình 1] được điều chỉnh thành sơ đồ bên trái trong [Hình 2], thì chi phí tổng cộng là \(6\). Nếu sơ đồ trong [Hình 1] được điều chỉnh thành sơ đồ bên phải trong [Hình 2], thì chi phí tổng cộng là \(5\).</p>
+<p>Chiều dài của một dây dẫn nổ có thể giảm hoàn toàn về \(0\) mà vẫn giữ được sự kết nối giữa các đỉnh khớp.</p>
+<p>Cho một sơ đồ kết nối, bạn hãy viết chương trình điều chỉnh chiều dài các dây dẫn nổ sao cho tất cả các chất nổ phát nổ cùng một lúc với chi phí là nhỏ nhất.</p>
+<hr/>
+<h4>Input</h4>
+<p>Tất cả các giá trị đầu vào đều là số nguyên dương. Gọi \(N\) là số lượng đỉnh khớp, \(M\) là số lượng chất nổ. Mỗi đỉnh khớp được đánh số bởi một số từ \(1\) đến \(N\). Đỉnh khớp số \(1\) là nơi đặt thiết bị kích nổ. Mỗi đỉnh đặt chất nổ được đánh số bởi một số từ \(N+1\) đến \(N+M\).</p>
+<p>Định dạng dữ liệu vào như sau:</p>
+<p>\(N\) \(M\)</p>
+<p>\(P_2\) \(C_2\)</p>
+<p>\(P_3\) \(C_3\)</p>
+<p>...</p>
+<p>\(P_N\) \(C_N\)</p>
+<p>\(P_{N+1}\) \(C_{N+1}\)</p>
+<p>...</p>
+<p>\(P_{N+M}\) \(C_{N+M}\)</p>
+<p>\(P_i\), \(1\leq P_i &lt; i\), là chỉ số của đỉnh khớp được nối với hoặc đỉnh khớp hoặc đỉnh đặt chất nổ có chỉ số \(i\). \(C_i\) là chiều dài của dây dẫn nổ được sử dụng để nối chúng. \(\left(1\leq C_i\leq 10^9\right)\). Số lượng các dây dẫn nổ nối đến một đỉnh khớp ngoại trừ đỉnh đặt thiết bị kích nổ là lớn hơn \(1\), còn số lượng dây dẫn nổ nối đến một đỉnh đặt chất nổ luôn bằng \(1\).</p>
+<hr/>
+<h4>Output</h4>
+<p>Ghi ra chi phí nhỏ nhất để điều chỉnh chiều dài các dây dẫn nổ sao cho tất cả các chất nổ phải nổ cùng lúc.</p>
+<hr/>
+<h4>Ví dụ</h4>
+<h5>Input</h5>
+<pre><code>4 6
+1 5
+2 5
+2 8
+3 3
+3 2
+3 3
+2 9
+4 4
+4 3</code></pre>
+<h5>Output</h5>
+<pre><code>5</code></pre>
+<hr/>
+<h4>Ràng buộc</h4>
+<ul>
+<li>Subtask 1 (10 tests): \(N=1\), \(1\leq M\leq 100\).</li>
+<li>Subtask 2 (20 tests): \(1\leq N+M\leq 300\) và khoảng cách lớn nhất giữa đỉnh đặt thiết bị kích nổ đến một đỉnh đặt chất nổ nhỏ hơn hoặc bằng \(300\).</li>
+<li>Subtask 3 (25 tests): \(1\leq N+M\leq 500\).</li>
+<li>Subtask 4 (25 tests): \(1\leq N+M\leq 300,000\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn bài: APIO 2016</em></p>
+</div>
+<hr/>
+</div>

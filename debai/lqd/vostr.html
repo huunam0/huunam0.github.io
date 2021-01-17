@@ -1,0 +1,47 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Xử lý xâu</h2>
+</div><div class="content-description screen">
+<div><p>Bờm là một học sinh chuyên tin. Hôm nay Bờm được thầy dạy về thứ tự từ điển và các bài toán liên quan. Sau một hồi giảng giải và định nghĩa thứ tự từ điển là gì, thầy lấy ngay một ví dụ cho lớp. Thầy viết lên bảng 2 chuỗi kí tự dài ơi là dài, và hỏi cả lớp "Chuỗi thứ nhất có thứ tự từ điển như thế nào đối với chuỗi thứ hai: đứng trước (<code>&lt;</code>), đứng sau (<code>&gt;</code>) hay bằng nhau (<code>=</code>) ???".</p>
+<p>Cả lớp thì đang hoang mang, vì cũng chẳng có ai hiểu được định nghĩa "Thứ tự từ điển là gì?" của thầy, nói gì đến việc giải bài tập. Nhưng Bờm thì ngược lại, do đã chuẩn bị và xem bài trước ở nhà nên đã trả lời ngay được câu hỏi của thầy sau khi thấy vừa dứt lời. Bờm ngồi chơi trong lúc mọi người đang thảo luận xôn xao, nên đã tạo thêm một số ví dụ nữa về thứ tự từ điển để có thể hiểu sâu thêm về bài học. Nhìn ngay lên bảng, Bờm phát hiện từ 2 xâu trong ví dụ của thầy, Bờm có thể tự sinh ra rất nhiều ví dụ khác. Cụ thể hơn, Bờm chọn một xâu con trong xâu thứ nhất và một xâu con trong xâu thứ hai, thế là có ngay một cặp xâu để mà so sánh. Xâu con ở đây được hiểu là một dãy các ký tự liên tiếp.</p>
+<p>Thế là Bờm liên tục sinh ra các ví dụ và trả lời chúng. Bờm càng làm càng nhạy, và trả lời các câu hỏi về thứ tự từ điển càng nhanh. Đến nỗi trong 1 giây Bờm đã có thể trả lời đến tất cả là \(10^6\) câu hỏi!</p>
+<p><strong>Yêu cầu</strong>: Cho 2 xâu kí tự \(A\) và \(B\) (chỉ gồm các kí tự từ <code>a</code> đến <code>z</code>) và một danh sách gồm \(Q\) câu hỏi có dạng (\(l, r, u, v\)), với ý nghĩa cần so sánh thứ tự từ điển của xâu con \(A[l…r]\) và \(B[u…v]\) (các kí tự của một xâu được đánh số từ trái qua phải, bắt đầu bằng 1; và ký hiệu \(A[l…r]\) thể hiện xâu con từ kí tự thứ \(l\) đến \(r\) của xâu A).
+Bạn hãy viết một chương trình mô tả lại hoạt động trả lời các câu hỏi của Bờm.</p>
+<p><strong><em>Lưu ý</em></strong>
+Xâu \(a_1a_2…a_n\) (\(a+i\) là kí tự thứ \(i\) trong xâu \(a\)) có thứ tự từ điển nhỏ hơn xâu \(b_1b_2…b_m\) nếu:</p>
+<ul>
+<li>\(n&lt;m\) và \(a_i=b_i\) với mọi \(i\) (\(1≤ i≤ n\)) hoặc</li>
+<li>Với \(k\) (\(1≤ k≤ min(m,n)\)) là giá trị nhỏ nhất thỏa \(a+k ≠ b_k\) thì \(a_k&lt;b_k\).</li>
+<li>Hai xâu có thứ tự từ điển bằng nhau nếu không thể xác định được xâu nào có thứ tự từ điển nhỏ hơn.</li>
+</ul>
+<p><strong>Input</strong></p>
+<ul>
+<li>Dòng đầu tiên gồm 2 số nguyên dương \(L_A, L_B\) là độ dài của xâu \(A\) và xâu \(B\).</li>
+<li>Dòng thứ hai là xâu \(A\).</li>
+<li>Dòng thứ ba là xâu \(B\).</li>
+<li>Dòng tư là số nguyên dương \(Q\) - số câu hỏi trong danh sách</li>
+<li>\(Q\) dòng tiếp theo, mỗi dòng gồm 4 số nguyên dương \(l, r\ (1≤ l≤ r≤ L_A), u, v\ (1≤ u≤ v≤ L_B)\) mô tả một câu hỏi cần trả lời.</li>
+</ul>
+<p><strong>Output</strong></p>
+<ul>
+<li>Với mỗi truy vấn, in ra 1 ký tự <code>=</code>, <code>&gt;</code> hoặc <code>&lt;</code>. Tất cả các câu trả lời được viết trên một dòng.</li>
+</ul>
+<p><strong>input</strong></p>
+<pre><code>13 14
+bomthichdacau
+bomthichdabanh
+3
+1 10 1 10
+1 10 1 11
+1 11 1 11</code></pre>
+<p><strong>output</strong></p>
+<pre><code>=&lt;&gt;</code></pre>
+<p><strong><em>Ràng buộc</em></strong></p>
+<ul>
+<li>Trong 40 % số test, \(|A|, |B|, Q≤10^3\).</li>
+<li>Trong tất cả các test, \(|A|, |B|, Q≤10^6\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn: SPOJ</em></p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,52 @@
+<div class="tm-box2">
+<div class="problem-name">
+    BLGAME - Trò chơi khối hộp 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"> Trò chơi khối hộp là một trò chơi với một khối hộp chữ nhật kích thước<em> a × b × c</em> đơn vị trên lưới hình chữ nhật <em>H</em> được chia thành <em>m × n</em> ô vuông đơn vị. Các hàng của lưới được đánh số từ 1 tới <em>m</em> từ trên xuống dưới và các cột của lưới được đánh số từ 1 tới <em>n</em> từ trái qua phải. Ô nằm trên giao của hàng <em>i</em> và cột <em>j</em> được gọi là ô <em>(i, j)</em>. Ban đầu, khối hộp được đặt ở góc trái trên của lưới <em>H</em>, cụ thể mặt đáy khối hộp chiếm đúng <em>a × b</em> ô của lưới, là các ô nằm trong hình chữ nhật con của lưới <em>H</em> với ô ở góc trái trên là (1,1) và ô ở góc phải dưới là (<em>a,b</em>). Mỗi bước, người chơi có thể thực hiện một trong các loại thao tác sau:</p>
+<p style="margin-left:40px; text-align:justify">- Đẩy khối hộp tịnh tiến lên trên, xuống dưới, sang trái hoặc sang phải một ô;<br/>
+- Lật khối hộp lên trên, xuống dưới, sang trái hoặc sang phải một ô.</p>
+<p style="text-align:justify">Ví dụ, các hình vẽ trong Hình 2 dưới đây mô tả vị trí của khối hộp kích thước 1 <em>× </em>2 <em>× </em>1 sau khi thực hiện từng loại thao tác. </p>
+<p style="text-align:justify"><img alt="" src="../../ckfinder/userfiles/images/BLGAME.png" style="height:419px; width:550px"/></p>
+<p style="text-align:justify">Khi bắt đầu chơi, tất cả các ô mà khối hộp đè lên được bật sáng màu xanh và có <em>k</em> ô khác trên lưới được bật sáng màu đỏ, các ô còn lại ở trạng thái tắt. Một thao tác được gọi là hợp lệ, nếu sau khi thực hiện thao tác này, khối hộp vẫn nằm gọn trên lưới <em>H</em> và không đè lên ô sáng màu đỏ nào. Sau khi một thao tác được thực hiện, những ô bị khối hộp đè lên đang ở trạng thái tắt sẽ được bật sáng màu xanh, những ô đang sáng xanh vẫn giữ nguyên trạng thái bật sáng màu xanh. Nhiệm vụ của người chơi là tìm cách thực hiện dãy các thao tác hợp lệ để bật được nhiều ô sáng màu xanh nhất.</p>
+<p style="text-align:justify"><strong>Yêu cầu</strong>: Cho kích thước khối hộp, kích thước của lưới <em>H</em> và vị trí của các ô sáng màu đỏ, hãy xác định số lượng nhiều nhất các ô được bật sáng màu xanh mà người chơi có thể đạt được.</p>
+<p style="text-align:justify"><strong>Dữ liệu</strong>:</p>
+<p style="margin-left:40px; text-align:justify">- Dòng thứ nhất chứa sáu số nguyên dương <em>a, b, c, m, n, k</em>, các số được ghi cách nhau bởi dấu cách;<br/>
+- Dòng thứ <em>s</em> trong số <em>k</em> dòng tiếp theo chứa hai số nguyên dương được ghi cách nhau bởi dấu cách x<sub>s</sub>, y<sub>s</sub> là tọa độ của một ô đã bật sáng màu đỏ (s = 1, 2, ..., <em>k</em>).</p>
+<p style="text-align:justify"><strong>Kết quả</strong>:</p>
+<p style="margin-left:40px; text-align:justify">Ghi ra một số nguyên duy nhất là số lượng nhiều nhất các ô được bật sáng màu xanh mà người chơi có thể đạt được.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">1 2 1 3 3 2<br/>
+2 2<br/>
+3 3</p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">7</p>
+<p><strong><em>Giải thích</em></strong>:  <img alt="" src="../../ckfinder/userfiles/images/BLGAME1.png" style="float:right; height:139px; width:150px"/></p>
+<p style="text-align:justify">Hình vẽ bên phải mô tả trạng thái bắt đầu trò chơi, trong đó hai ô tô đen là các ô sáng màu đỏ. Người chơi có thể thực hiện dãy thao tác: Lật sang phải, đẩy xuống dưới, đẩy lên trên, đẩy sang trái, đẩy sang trái, đẩy xuống dưới, đẩy xuống dưới, cuối cùng đẩy sang phải để bật được 7 ô của lưới sáng màu xanh.</p>
+<p style="text-align:justify"><strong>Ràng buộc</strong>:</p>
+<p style="margin-left:40px; text-align:justify">- Có 25% số test ứng với 25% số điểm của bài có a = b = c = 1; m, n ≤ 100;<br/>
+- Có 25% số test khác ứng với 25% số điểm của bài có a = b = c; m, n ≤ 100;<br/>
+- Có 25% số test khác ứng với 25% số điểm của bài có m, n ≤ 100;<br/>
+-  25% số test còn lại ứng với 25% số điểm của bài có m, n ≤ 1000.</p>
+<hr/>
+<p><em>Nguồn: 3D 20172018</em></p>
+</div>
+</div>

@@ -1,0 +1,72 @@
+<div class="tm-box2">
+<div class="problem-name">
+    DIVGROUP - Chia nhóm 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align:justify"><span style="font-size:14px">Công ty X có 𝑛 nhân viên. Công ty có cấu trúc giống cây phân cấp - CEO (Giám đốc điều hành) đứng đầu (gốc cây), ông có một số cấp dưới trực tiếp, các cấp dưới cũng có cấp dưới trực tiếp của họ và cứ thế…., cho đến những nhân viên cấp thấp nhất, những người không có cấp dưới (lá của cây). </span></p>
+<p style="text-align:justify"><span style="font-size:14px">Các nhân viên được đánh số bằng các số nguyên từ 1 đến 𝑛. Giám đốc điều hành có số 1. Mỗi nhân viên có một số kinh nghiệm - nhân viên thứ 𝑖 có kinh nghiệm được biểu thị bằng số nguyên không âm 𝑊𝑖 . </span></p>
+<p style="text-align:justify"><span style="font-size:14px">Công ty có một số lượng lớn các dự án. Để hoàn thành, Ban quản lý quyết định chia tất cả các nhân viên thành các nhóm khác nhau sao cho các điều kiện sau được thỏa mãn: </span></p>
+<ul>
+<li style="text-align:justify"><span style="font-size:14px">Mỗi nhóm phải bao gồm ít nhất một người và mỗi người phải thuộc về chính xác một nhóm. </span></li>
+<li style="text-align:justify"><span style="font-size:14px">Mỗi nhóm chỉ bao gồm những người, là cấp dưới liên tiếp của nhau. Một nhóm nhân viên 𝑗<sub>1</sub>, 𝑗<sub>2</sub>, 𝑗<sub>3</sub>, 𝑗<sub>4</sub>… là một nhóm hợp lệ nếu 𝑗<sub>2</sub> là cấp dưới trực tiếp của 𝑗<sub>1</sub>, 𝑗<sub>3</sub> là cấp dưới trực tiếp của 𝑗<sub>2</sub>, 𝑗<sub>4</sub> là cấp dưới trực tiếp của 𝑗<sub>3</sub> và cứ tiếp tục như vậy. </span></li>
+</ul>
+<p style="text-align:justify"><span style="font-size:14px">Ban quản lý biết rằng sau khi chia nhóm kết thúc, tổng kinh nghiệm của nhóm được giao cho dự án tăng thêm 𝑊<sub>𝑚𝑎𝑥</sub> − 𝑊<sub>𝑚𝑖𝑛</sub>, trong đó 𝑊<sub>𝑚𝑎𝑥</sub> là kinh nghiệm tối đa, và 𝑊<sub>𝑚𝑖𝑛</sub> là kinh nghiệm tối thiểu giữa các thành viên trong nhóm. Tổng mức kinh nghiệm tăng cho công ty bằng tổng số kinh nghiệm tăng của tất cả các nhóm. Ban quản lý muốn tối đa tổng mức tăng kinh nghiệm cho công ty, bằng cách chia nhân viên thành các nhóm tốt nhất có thể, theo hai điều kiện nêu trên. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Yêu cầu</strong>: Viết chương trình để tính mức kinh nghiệm tăng tối đa có thể cho công ty. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Dữ liệu vào:</strong> </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">- Dòng đầu chứa số 𝑛<br/>
+- Dòng thứ hai chứa 𝑛 số 𝑊<sub>1</sub>, 𝑊<sub>2</sub> … , 𝑊<sub>𝑛</sub><br/>
+- 𝑛 − 1 dòng sau, mỗi dòng chứa hai số 𝑢, 𝑣 thể hiện 𝑣 là cấp dưới trực tiếp của 𝑢. </span></p>
+<p style="text-align:justify"><span style="font-size:14px"><strong>Kết quả:</strong> </span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-size:14px">- Ghi kết quả tìm được.</span></p>
+<p><span style="font-size:14px"><em><strong>Các ràng buộc:</strong></em><br/>
+- 1 ≤ 𝑛 ≤ 100 000<br/>
+- 0 ≤ 𝑊𝑖 ≤ 109<br/>
+- Sub 1: 20% số test đầu tiên, nhân viên có nhiều nhất một cấp dưới<br/>
+- Sub 2: 30% số test tiếp theo có 𝑛 ≤ 5000<br/>
+- Sub 3: Không có ràng buộc gì thêm.</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+<tbody>
+<tr>
+<td>
+<p><strong>Input</strong></p>
+<p style="margin-left:40px">7<br/>
+			5 5 3 6 2 3 3<br/>
+			1 6<br/>
+			5 3<br/>
+			1 5<br/>
+			6 2<br/>
+			2 4<br/>
+			6 7 </p>
+<p><strong>Output</strong></p>
+<p style="margin-left:40px">6</p>
+</td>
+<td> <img alt="" src="../../ckfinder/userfiles/images/w3.png" style="height:270px; width:314px"/></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>Giải thích: </strong></p>
+<p>Có thể chia thành 3 nhóm {1, 5, 3}, {6, 2, 4}, {7}<br/>
+Hoặc có thể chia thành 4 nhóm: {1, 5}, {3}, {6, 2, 4}, {7}. </p>
+<hr/>
+<p><em>Nguồn: VOI19 W3</em></p>
+</div>
+</div>

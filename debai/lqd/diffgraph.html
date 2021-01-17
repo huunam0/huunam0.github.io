@@ -1,0 +1,44 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Bài tập Wu Zi Mu</h2>
+</div><div class="content-description screen">
+<div><p>Một ngày, giáo sư Wu Zi Mu đã ra một bài tập mang tính "giải trí" cho các học sinh lớp \(1\) như sau:</p>
+<p>"Cho \(N\) cái thùng chứa đựng đồ chơi, thùng thứ \(i\) chỉ chứa loại đồ chơi mang số \(C_i\), và có \(N-1\) con đường để di chuyển trực tiếp hai thùng đồ chơi. Đảm bảo rằng tồn tại đường đi duy nhất giữa hai thùng đồ chơi bất kỳ.</p>
+<p>Ta định nghĩa \(D(u, v)\) là số loại đồ chơi khác nhau trên đường đi giữa hai thùng đồ chơi \(u\) và \(v\). Với mỗi thùng đồ chơi \(u\), giáo sư muốn tính toán \(Sum(u) = \sum\limits_{v=1}^N D(u, v)\).</p>
+<p>Yêu cầu của các học sinh là xác định tất cả các \(Sum(u)\), với \(1 \leq u \leq N\)."</p>
+<p>Học sinh rất là bối rối với bài tập này, không biết làm như thế nào cả. Các bạn giúp các học sinh thực hiện bài tập "giải trí" trên.</p>
+<p><strong>Dữ liệu vào</strong>: Gồm \(N + 1\) dòng:</p>
+<ul>
+<li>Dòng thứ nhất gồm số nguyên dương \(N\) là số thùng đồ chơi.</li>
+<li>Dòng thứ hai chứa \(N\) số nguyên dương \(C_1, C_2, C_3, ..., C_N\), với \(C_i\) là loại đồ chơi ở thùng thứ \(i\).</li>
+<li>\(N - 1\) dòng tiếp theo, dòng thứ \(i\) chứa hai số \(u, v\) là có đường di chuyển trực tiếp giữa hai thùng đồ chơi \(u\) và \(v\).</li>
+</ul>
+<p><strong>Kết quả</strong>: Gồm \(N\) dòng, dòng thứ \(i\) chứa số nguyên dương duy nhất là kết quả \(Sum(i)\).</p>
+<p><strong>Ví dụ</strong>:</p>
+<p><strong>Sample input</strong>:</p>
+<pre><code>5
+1 2 3 2 1
+1 2
+1 4
+2 3
+2 5</code></pre>
+<p><strong>Sample output</strong>:</p>
+<pre><code>10
+9
+12
+10
+10</code></pre>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>Trong tất cả các test, \(1 \leq C_i \leq 10^5\) với \(1 \leq i \leq N\).</li>
+<li>Có \(5\) subtasks:<ul>
+<li>Subtask \(1\): \(10\)% số test tương ứng với \(10\)% số điểm có \(N \leq 3.10^2\).</li>
+<li>Subtask \(2\): \(18\)% số test tương ứng với \(18\)% số điểm có \(N \leq 5.10^3\).</li>
+<li>Subtask \(3\): \(12\)% số test tương ứng với \(12\)% số điểm có \(N \leq 10^5\), mọi thùng đều chứa cùng một loại đồ chơi.</li>
+<li>Subtask \(4\): \(24\)% số test tương ứng với \(24\)% số điểm có \(N \leq 10^5\), không tồn tại hai thùng khác nhau đều chứa cùng loại.</li>
+<li>Subtask \(5\): \(36\)% số test tương ứng với \(36\)% số điểm có \(N \leq 10^5\).</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr/>
+</div>

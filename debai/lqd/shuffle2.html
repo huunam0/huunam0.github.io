@@ -1,0 +1,31 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Tráo bài 2</h2>
+</div><div class="content-description screen">
+<div><p>Cho một tập bài gồm \(N\) lá bài đánh số từ \(1\) tới \(N\) theo thứ tự từ trên xuống dưới. Đầu tiên người ta viết vào mỗi lá bài một số nguyên là số thứ tự lá bài đó. Xét phép tráo \(𝑆(𝑖,𝑗)\): Rút ra lá bài ghi số nguyên \(𝑖\) và chèn lên trên lá bài mang số nguyên \(𝑗\) \((𝑖 ≠ 𝑗)\).</p>
+<p>Ví dụ: Với \(N = 9\):</p>
+<p>\((1,2,3,4,5,6,7,8,9) \xrightarrow[]{S(8,2)} (1,8,2,3,4,5,6,7,9) \xrightarrow[]{S(4,7)} (1,8,2,3,5,6,4,7,9) \xrightarrow[]{S(1,9)} (8,2,3,5,6,4,7,1,9)\).</p>
+<p>Sau \(X\) phép tráo bài, người ta đánh số lại các quân bài từ \(1\) tới \(N\) theo thứ tự từ trên xuống dưới. Hãy cho biết có
+bao nhiêu lá bài trên đó có ghi con số lớn hơn số thứ tự của chúng.</p>
+<p><strong>Dữ liệu vào</strong>:</p>
+<ul>
+<li>Dòng thứ nhất chứa hai số nguyên dương \(N, X\).</li>
+<li>\(X\) dòng tiếp theo, dòng thứ \(k\) chứa hai số nguyên dương \(i_k\), \(j_k\) cho biết phép tráo thứ \(k\) là \(S(i_k, j_k)\) \((i_k ≠ j_k, 1 ≤ i_k, j_k ≤ N)\).</li>
+</ul>
+<p><em>Các số trên một dòng của Input được ghi cách nhau ít nhất một dấu cách</em></p>
+<p><strong>Kết quả</strong>: In ra một số nguyên duy nhất là kết quả tìm được.</p>
+<p><strong>Ràng buộc</strong>:</p>
+<ul>
+<li>Subtask \(1\) \((30\%)\): \(N, X \leq 10^3\).</li>
+<li>Subtask \(2\) \((30\%)\): \(N, X \leq 10^5\).</li>
+<li>Subtask \(3\) \((40\%)\): \(N \leq 10^9\), \(X \leq 10^5\).</li>
+</ul>
+<p><strong>Sample input</strong>:</p>
+<pre><code>9 3
+8 2
+4 7
+1 9</code></pre>
+<p><strong>Sample output</strong>:</p>
+<pre><code>3</code></pre>
+</div>
+<hr/>
+</div>

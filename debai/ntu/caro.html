@@ -1,0 +1,54 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    CARO - Cờ caro 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Tí và Tèo đang chơi trò chơi caro, Tí đi quân 'x' và Tèo đi quân 'o' vào các ô vuông trên bàn cờ. Ai đi được 5 ký hiệu liên tiếp (theo đường dọc, hoặc đường ngang, hoặc đường chéo) trước thì thắng. Giả sử bàn cờ là 1 hình vuông kích thước n x n. Cho tình trạng của 1 bàn cờ, bạn hãy cho biết giữa Tí và Tèo có người thắng hay chưa, hay ván cờ vẫn đang tiếp diễn.</p>
+<p style="text-align: center;"><img alt="" src="images/Caro.jpg" style="height:151px; width:169px"/></p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Dòng đầu tiên là số nguyên n (5 ≤ n ≤ 20) là kích thước bàn cờ.</p>
+<p>- Trong n dòng tiếp theo, mỗi dòng gồm n ký tự biểu thị tình trạng bàn cờ. Mỗi ký tự là một trong ba giá trị 'x', 'o' và dấu chấm '.' (x và o viết thường, dấu chấm là ô chưa đánh). </p>
+<p><strong>Dữ liệu xuất: </strong></p>
+<p>-  Nếu Tí thắng, in ra dòng chữ '<span style="font-size:14px"><span style="font-family:courier new,courier,monospace">Ti wins</span></span>'. Nếu Tèo thắng, in ra dòng chữ <span style="font-size:14px">'<span style="font-family:courier new,courier,monospace">Teo wins</span></span>'. (Tí Tèo không dấu)</p>
+<p>- Nếu ván cờ vẫn đang tiếp diễn chưa có ai thắng, in ra dòng chữ '<span style="font-size:14px"><span style="font-family:courier new,courier,monospace">Not yet</span></span>' (chú ý chữ hoa chữ thường)</p>
+<p><u><em>Ghi chú: </em></u></p>
+<p>- Dữ liệu cho đảm bảo không có trường hợp 2 đấu thủ cùng thắng.</p>
+<p>- Luật chơi cho phép chận 2 đầu cũng thắng, liên tiếp nhiều hơn 5 quân cũng thắng.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5<br/>xo...<br/>.xo..<br/>..xo.<br/>...xo<br/>....x</div>
+<div class="sample-type">output</div>
+<div class="sample-value">Ti wins</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5<br/>xo...<br/>.xx..<br/>ooooo<br/>...xo<br/>....x</div>
+<div class="sample-type">output</div>
+<div class="sample-value">Teo wins</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">5<br/>ox...<br/>.xoo.<br/>..ox.<br/>.o.xo<br/>..x..</div>
+<div class="sample-type">output</div>
+<div class="sample-value">Not yet</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

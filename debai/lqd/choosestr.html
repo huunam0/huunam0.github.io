@@ -1,0 +1,27 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chọn xâu</h2>
+</div><div class="content-description screen">
+<div><p><span class="rating rate-none admin"><a href="/user/ami">ami</a></span> nhận được mật mã người ngoài hành tinh. Mật mã người ngoài hành tinh được viết bằng ngôn ngữ ugnmouc. Để thuận tiện cho các bạn, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đã dịch thứ ngôn ngữ khó hiểu này sang ngôn ngữ tiếng Anh là xâu \(S\). Ý nghĩa của mật mã này, các bạn không cần biết, các bạn chỉ cần kiểm tra xem mật mã này có <strong>ngon</strong> hay không.</p>
+<p>Tiêu chuẩn <strong>ngon</strong> của người ngoài hành tinh cũng rất khác biệt. <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ đưa cho các bạn một xâu khác, gọi là \(T\). Xâu \(S\) được xem là ngon nếu có thể chọn ra \(K \geq 1\) xâu con <strong>không giao nhau</strong> của \(S\), mỗi xâu đều có độ xài \(L\). Tạm gọi các xâu này là \(X_1, X_2, X_3, ..., X_K\), các xâu này phải có thứ tự từ điển nhỏ hơn hoặc bằng xâu \(T\) và \(K \geq C\). <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ cho các bạn xâu \(S\), xâu \(T\) và số \(C\), các bạn cần đếm số lượng số \(L\) để có thể biến xâu \(S\) thành <strong>ngon</strong>.</p>
+<p>Xâu \(X\) được gọi là xâu con của S nếu ta có thể xoá đi một vài kí tự đầu tiên và cuối cùng (có thể không xoá) của \(S\) và thu được xâu \(X\)</p>
+<h4>Input</h4>
+<p>Dòng đầu tiên chứa 2 số nguyên dương \(L_S, L_T,\) và \(C\) lần lượt là chiều dài xâu \(S, T\) và số \(C\).
+Dòng tiếp theo chứa xâu \(S\) có đúng \(L_S\) kí tự.
+Dòng cuối cùng chứa xâu \(T\) có đùng \(L_T\) kí tự.</p>
+<h4>Output</h4>
+<p>In ra một số nguyên là số lượng số \(L\) thoả mãn để biến xâu S thành <strong>ngon</strong>.</p>
+<h4>Sample Input 1</h4>
+<pre><code>2 1 2
+AA
+Z</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>1</code></pre>
+<h4>Giải thích</h4>
+<p>Nếu chọn L = 1, ta có chọn ra 2 xâu |A| và |A|, các xâu này có thứ tự từ điển nhỏ hơn |Z| và 2 \(\geq\) 2.</p>
+<p>Nếu chọn L = 2, ta chỉ có thể chọn ra 1 xâu là |AA|. Mặc dù xâu |AA| có thứ tự từ điển nhỏ hơn |Z| nhưng 1 \(&lt;\) 2.</p>
+<p>Với L \(\geq\) 3, ta không thể chọn ra xâu con nào của S. Do đó kết quả là 1, vì chỉ có 1 cách chọn L là 1.</p>
+<h4>Giới hạn</h4>
+<p>\(100\)% test có \(L_S, L_T, C \leq 100000\).</p>
+</div>
+<hr/>
+</div>

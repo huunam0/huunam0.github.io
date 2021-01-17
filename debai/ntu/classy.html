@@ -1,0 +1,38 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    CLASSY - Giai cấp 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p><span style="font-family:verdana,geneva,sans-serif">Trong hồi kí của một người ở Bắc Mĩ có viết về sự phân biêt về giai cấp, như cha ông ấy là "middle-middle-middle-lower-middle class" và mẹ ông ấy "upper-upper-lower-middle class". Ngoài ra trong cuốn hồi kí còn có ghi tên và giai cấp của một số người trong gia đình, để giúp người đọc dễ tìm hiểu về sự phân biêt về giai cấp trong cuốn hồi kí bạn có nhiệm vụ sắp xếp tên của những nguời đó theo thứ tự theo hệ thống phân bậc từ cao đến thấp.</span></p>
+<p><span style="font-family:verdana,geneva,sans-serif"><strong>Input</strong></span></p>
+<p><span style="font-family:verdana,geneva,sans-serif">Dòng đầu tiên là số nguyên dương T (T&lt;=500) là số trường hợp. Mỗi trường hợp, bắt đầu là số nguyên dương n (n&lt;=100) theo sau đó là danh sách n người. Mỗi dòng bắt đầu là tên với không quá 30 kí tự thường và kết thúc bởi dấu ":", tiếp theo đó là chuỗi khác rỗng mô tả giai cấp gồm không quá 10 từ (upper, middle, lower) cách nhau bởi dấu "-" kết thúc là "class". Không có hai người bất kì cùng tên trong mỗi truờng hợp.</span></p>
+<p><span style="font-family:verdana,geneva,sans-serif"><strong>Output</strong></span></p>
+<p><span style="font-family:verdana,geneva,sans-serif">Với mỗi trường hợp in ra danh sách tên đã được sắp xếp theo hệ thống phân chia giai cấp từ cao xuống thấp. Nếu hai người có tầng lớp tương đương nhau thì sắp xếp theo bảng chữ cái abc. Kết thúc mỗi trường hợp là 30 dấu "=".</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">1<br/>5<br/>mom: upper-upper-lower-middle class<br/>dad: middle-middle-middle-lower-middle class<br/>queenelizabeth: upper-upper-upper class<br/>chair: lower-lower class<br/>unclebob: middle-middle-lower-middle class<br/></div>
+<div class="sample-type">output</div>
+<div class="sample-value">queenelizabeth<br/>mom<br/>dad<br/>unclebob<br/>chair<br/>==============================</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+<p><span style="font-family:verdana,geneva,sans-serif"><strong>Hướng dẫn</strong></span></p>
+<p><span style="font-family:verdana,geneva,sans-serif">Có ba tầng lớp chính là : upper, middle, lower. Tất nhiên cao nhất là upper và thấp nhất là lower. Nhưng upper-upper class thì cao hơn middle-upper class và lower-upper class; middle-upper class thì cao hơn lower-upper class. Tuy nhiên tất cả tầng lớp như (upper-upper, middle-upper, lower-upper) thì cao hơn bất kì middle class (upper-middle, middle-middle, lower-middle) nào. Khi so sánh ta bắt đầu từ <strong>cuối lên đầu</strong>, ngoài ra <strong>middle-upper</strong> class thì <strong>tương đương</strong> <strong>middle-middle-upper</strong> class, <strong>middle-middle-middle-middle-lower</strong> class <strong>tương đương</strong> <strong>middle-lower</strong> class và cứ như vậy. Tuy nhiên <strong>upper-middle-middle-lower</strong> class thì <strong>cao hơn</strong> <strong>middle-lower</strong> class</span></p>
+</div>
+</div></body></html>

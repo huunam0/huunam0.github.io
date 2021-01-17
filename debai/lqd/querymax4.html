@@ -1,0 +1,45 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Query-Max 4</h2>
+</div><div class="content-description screen">
+<div><p>Cho số nguyên \(A\) gồm \(N\) phần tử gồm các số nguyên dương \(A_1, A_2, ..., A_N\). Cho \(Q\) thao tác được thực hiện lần lượt bao gồm gán, truy vấn và quay lại: (Gọi \(T\) là số lần gán. Ban đầu \(T = 0\)).</p>
+<ul>
+<li>Thao tác gán có dạng: \(1\) \(p\) \(val\): Gán \(A_p = val\) (\(1 \leq p \leq N\), \(1 \leq val \leq 10^9\)). Và \(T\) sẽ tăng lên \(1\).</li>
+<li>Thao tác truy vấn có dạng: \(2\) \(u\) \(v\) \(t\): Tìm giá trị lớn nhất trong đoạn từ \(u\) tới \(v\) sau phép gán lần thứ \(t\) (\(1 \leq u \leq v \leq N\), \(0 \leq t \leq T\). Nếu \(t = 0\) thì sẽ truy vấn trên mảng ban đầu trước khi thực hiện \(Q\) thao tác). </li>
+<li>Thao tác quay lại có dạng: \(3\) \(t\): Quay lại thời điểm sau lần gán thứ \(t\) (\(0 \leq t \leq T\). Nếu \(t = 0\) thì sẽ quay về mảng ban đầu trước khi thực hiện \(Q\) thao tác). Mọi thao tác gán sau thời điểm \(t\) sẽ bị xoá bỏ. Và \(T = t\).</li>
+</ul>
+<h4>Yêu cầu</h4>
+<p>Thực hiện lần lượt \(Q\) thao tác. Với thao tác loại \(2\) (Truy vấn), in ra kết quả.</p>
+<h4>Dữ liệu vào</h4>
+<ul>
+<li>Dòng thứ nhất chứa hai số nguyên dương \(N\) và \(Q\).</li>
+<li>Dòng thứ hai chứa \(N\) số nguyên dương \(A_1, A_2, ..., A_N\) (\(A_i \leq 10^9\)).</li>
+<li>\(Q\) dòng tiếp theo, mỗi dòng là một thao tác gán, truy vấn hoặc quay lại: \(1\) \(p\) \(val\) hoặc \(2\) \(u\) \(v\) \(t\) hoặc \(3\) \(t\). </li>
+</ul>
+<h4>Kết quả</h4>
+<p>Với thao tác loại \(2\), in ra kết quả trên một dòng.</p>
+<h4>Ràng buộc</h4>
+<ul>
+<li>\(30\%\) số test đầu tiên tương đương với \(30\%\) số điểm có \(N, Q \leq 10^3\).</li>
+<li>\(30\%\) số test tiếp theo tương đương với \(30\%\) số điểm có \(N, Q \leq 10^5\), không có thao tác \(3\), mọi thao tác \(2\) có \(t = T\) </li>
+<li>\(40\%\) số test còn lại tương đương với \(40\%\) số điểm có \(N, Q \leq 10^5\).</li>
+</ul>
+<h4>Ví dụ</h4>
+<p><strong>Input</strong>:</p>
+<pre><code>5 8
+1 5 4 7 8
+1 3 2
+2 2 4 0
+1 1 5
+1 4 6
+2 1 5 2
+2 3 4 3
+3 1
+2 3 4 1</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>7
+8
+6
+7</code></pre>
+</div>
+<hr/>
+</div>

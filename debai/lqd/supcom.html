@@ -1,0 +1,63 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Siêu máy tính</h2>
+</div><div class="content-description screen">
+<div><p>Công ty Long Vân giới thiệu siêu máy tính có khả năng thực hiện được tỉ tỉ phép toán trong vòng
+một giây. Để chứng minh sức mạnh của siêu máy tính, công ty đã cho máy tính thực hiện một số
+lượng rất lớn các thao tác như sau:</p>
+<ul>
+<li>Ban đầu, dãy \(𝑆\) không có phần tử nào;</li>
+<li>Có \(𝑡\) thao tác, thao tác thứ \(𝑖\ (𝑖 = 1,2, … ,𝑡)\) thuộc một trong các loại:<ul>
+<li>1- Thêm vào dãy \(𝑆\) một phần tử mới \(𝑥_𝑖\);</li>
+<li>2- Tính tổng các phần tử của dãy \(𝑆\) hiện tại có giá trị nằm trong đoạn \([𝑎_𝑖, 𝑏_𝑖]\);</li>
+<li>3- Sắp xếp dãy 𝑆 hiện tại theo thứ tự không giảm rồi tính tổng tất cả các phần tử có thứ tự từ \(𝑝_𝑖\) đến \(𝑞_𝑖\) (\(1 ≤ 𝑝_𝑖 ≤ 𝑞_𝑖 ≤ |𝑆|\), trong đó \(|𝑆|\) là số lượng phần tử của dãy \(𝑆\) hiện tại). Sau đó, chèn vào dãy \(𝑆\) hai phần tử, một phần tử có giá trị bằng phần tử có thứ tự \(𝑝_𝑖\) cộng với \(1\) và phần tử có giá trị bằng phần tử có thứ tự \(𝑞_𝑖\) trừ đi \(1\).</li>
+</ul>
+</li>
+</ul>
+<p>Công ty sẽ trao thưởng cho người nào kiểm chứng được kết quả mà siêu máy tính đưa ra. Bạn được cho dãy gồm \(𝑡\) thao tác, với mỗi thao tác loại \(2\) và \(3\) hãy đưa câu trả lời tương ứng.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng đầu chứa số nguyên dương \(𝑡\);</li>
+<li>Dòng thứ \(𝑖\) trong \(𝑡\) dòng tiếp theo mô tả thao tác thứ \(𝑖\) là một trong ba loại thao tác theo khuôn dạng: Bắt đầu số \(𝑘_𝑖\) (\(𝑘_i\) bằng \(1\) hoặc \(2\) hoặc \(3\)). <ul>
+<li>Nếu là thao tác loại \(1\) thì tiếp theo là một số nguyên \(𝑥_𝑖\) (\(−10^9 ≤ 𝑥_𝑖 ≤ 10^9\)), </li>
+<li>Nếu là thao tác loại \(2\) thì tiếp theo là hai số nguyên \(𝑎_𝑖, 𝑏_𝑖\) (\(−10^9 ≤ 𝑎_𝑖 ≤ 𝑏_𝑖 ≤ 10^9\)), </li>
+<li>Nếu là thao tác loại \(3\) thì tiếp theo là hai số nguyên dương \(𝑝_𝑖, 𝑞_𝑖\) (\(1 ≤ 𝑝_𝑖 ≤ 𝑞_𝑖 ≤ |𝑆|\)).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Gồm một số dòng, mỗi dòng chứa một số lần lượt là các câu trả lời cho các thao tác loại \(2, 3\) theo thứ tự xuất hiện ở dữ liệu vào.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>7
+1 5
+1 3
+1 1
+2 2 4
+1 2
+3 2 3
+2 2 4</code></pre>
+<p><strong>Sample Output </strong></p>
+<pre><code>3
+5
+10</code></pre>
+<p><strong><em>Giải thích</em></strong></p>
+<pre><code>S = ()
+S = (5)
+S = (5,3)
+S = (5,3,1)
+Đưa ra 3
+S = (5,3,1,2)
+S = (1,2,3,5), đưa ra 5, S = (1,2,3,5,3,2)
+Đưa ra 10</code></pre>
+<p><strong><em>Ràng buộc:</em></strong></p>
+<ul>
+<li>Có 40% số test ứng với 40% số điểm có \(𝑡\le 10^3\);</li>
+<li>Có 40% số test khác ứng với 40% số điểm có \(𝑡\le 10^5\) và không có thao tác loại 3;</li>
+<li>Có 20% số test còn lại ứng với 20% số điểm có \(𝑡\le 10^5\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2019 chính thức</em></p>
+</div>
+<hr/>
+</div>

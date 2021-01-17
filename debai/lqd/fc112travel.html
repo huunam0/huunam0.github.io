@@ -1,0 +1,44 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Travel</h2>
+</div><div class="content-description screen">
+<div><p>FC là một vương quốc giàu có, sở hữu một mạng lưới giao thông phát triển. Vương quốc gồm \(n\) thị trấn, được đánh số từ 1 đến \(n\) và \(m\) đường đi một chiều kết nối \(n\) thị trấn đó. Mỗi thị
+trấn ở vương quốc này đều có một chỉ số wi đại diện cho độ quan trọng của thị trấn ấy.</p>
+<p>Để kỷ niệm ngày Quốc Khánh, vua Kiên đã yêu cầu tổ chức một buổi diễu hành vòng quanh vương quốc. Đoàn diễu hành sẽ xuất phát từ thị trấn 1 và dừng lại ở thị trấn \(n\).</p>
+<p>Vua Kiên muốn chọn đường đi diễu hành qua các thị trấn sao cho độ quan trọng đường đi là nhỏ nhất. Trong khi đó, Quang - vị tướng chỉ huy lại muốn độ quan trọng của đường đi là lớn nhất.
+Độ quan trọng của một đường đi được tính bằng tổng độ quan trọng của các thị trấn mà đoàn diễu hành đã đi qua. Lưu ý rằng đoàn diễu hành có thể đi ngang một thị trấn nhiều hơn một lần,
+nhưng độ quan trọng của thị trấn ấy chỉ được tính một lần duy nhất.</p>
+<p>LH nhận thấy đây là một bài toán rất thú vị và quyết định dùng nó cho kỳ thi lần này. Bạn hãy giúp nhà vua và vị tướng tính độ quan trọng nhỏ nhất và lớn nhất có thể của đường đi từ thị trấn 1 đến thị trấn n nhé."</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa 2 số nguyên dương \(n, m\) lần lượt là số lượng thị trấn và số lượng con
+đường một chiều trong mạng lưới giao thông (\(2 ≤ n ≤ 100000, 1 ≤ m ≤ 100000\)).</li>
+<li>\(n\) dòng tiếp theo chứa \(n\) số nguyên dương \(w_1, w_2, ..., w_n\) lần lượt là độ quan trọng của \(n\) thị trấn trong vương quốc \((1 ≤ w_i ≤ 1000)\).</li>
+<li>\(m\) dòng tiếp theo, mỗi dòng chứa hai số nguyên dương \(u, v\) miêu tả rằng có một đường một chiều kết nối giữa hai thị trấn \(u\) và \(v\) trong mạng lưới giao thông (\(u, v ≤ n\)).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Đưa ra 2 số nguyên trên một dòng duy nhất lần lượt là độ quan trọng nhỏ nhất và độ quan trọng lớn nhất có thể của đường đi từ thị trấn 1 đến thị trấn \(n\).</li>
+<li>Nếu không tồn tại bất kỳ đường đi nào từ 1 đến \(n\), bạn chỉ cần đưa ra kết quả gồm duy nhất một số −1.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>5 6
+1 1 1 1 1
+1 2
+3 1
+2 1
+2 3
+3 4
+2 5</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>3 4</code></pre>
+<p><strong><em>Ràng buộc</em></strong></p>
+<ul>
+<li>10% số test ứng với 10% số điểm có \(n, m ≤ 20\).</li>
+<li>20% số test ứng với 20% số điểm có \(n, m ≤ 100\).</li>
+<li>70% số test còn lại không có giới hạn gì thêm.</li>
+</ul>
+<hr/>
+<p><em>Nguồn: FC</em></p>
+</div>
+<hr/>
+</div>

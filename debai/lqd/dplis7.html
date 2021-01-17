@@ -1,0 +1,48 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Dãy con tăng dài nhất 2</h2>
+</div><div class="content-description screen">
+<div><p>Cho dãy \((A, B)\) gồm \(N\) phần tử là các cặp số nguyên \(A_1, A_2, ..., A_N\) và \(B_1, B_2, ..., B_N\). Dãy \((C, D)\) được gọi là dãy con tăng độ dài \(K\)của dãy \((A, B)\) nếu thoả mãn các điều kiện sau:</p>
+<ul>
+<li>\(K \geq 1\).</li>
+<li>\(1 \leq i_1 &lt; i_2 &lt; i_3 &lt; ... &lt; i_K \leq N\).</li>
+<li>\(C_1 = A_{i_1}, C_2 = A_{i_2}, ..., C_K = A_{i_K}\).</li>
+<li>\(D_1 = B_{i_1}, D_2 = B_{i_2}, ..., D_K = B_{i_K}\).</li>
+<li>\(C_1 &lt; C_2 &lt; ... &lt; C_K\) nếu \(K \geq 2\).</li>
+<li>\(D_1 &lt; D_2 &lt; ... &lt; D_K\) nếu \(K \geq 2\).</li>
+</ul>
+<p><strong>Yêu cầu</strong>: Tìm dãy \((C, D)\) thoả mãn \(K\) lớn nhất có thể, tức là tìm dãy con \((C, D)\) dài nhất.</p>
+<p><strong>Dữ liệu vào</strong>: Gồm \(N + 1\) dòng:</p>
+<ul>
+<li>Dòng thứ nhất gồm số nguyên dương \(N\).</li>
+<li>\(N\) dòng tiếp theo, dòng thứ \(i\) chứa hai số nguyên (\(A_i, B_i\)). \((|A_i|, |B_i| \leq 10^9)\).</li>
+</ul>
+<p><strong>Kết quả</strong>: Gồm \(K+1\) dòng:</p>
+<ul>
+<li>Dòng đầu tiên in ra số \(K\) là độ dài dãy con \((C, D)\) dài nhất. </li>
+<li>\(K\) dòng tiếp theo, dòng thứ \(i\) in ra hai số nguyên \(C_i, D_i\) là dãy có độ dài \(K\) dài nhất.</li>
+</ul>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>\(25\%\) số test đầu tiên tương ứng với \(25\%\) số điểm có \(N \leq 10^3\).</li>
+<li>\(25\%\) số test tiếp theo tương ứng với \(25\%\) số điểm có \(N \leq 10^5\), \(|A_i|, |B_i| \leq 10^3\).</li>
+<li>\(25\%\) số test tiếp theo tương ứng với \(25\%\) số điểm có \(N \leq 10^5\).</li>
+<li>\(25\%\) số test còn lại tương ứng với \(25\%\) số điểm có \(N \leq 5.10^5\).</li>
+<li>Nếu xuất đúng số \(K\) sẽ được \(50\%\) số điểm của test. Nếu xuất thêm đúng dãy \((C, D)\) tương ứng thì sẽ được thêm \(50\%\) số điểm của test.</li>
+</ul>
+<p><strong>Ví dụ</strong>:</p>
+<p><strong>Input</strong>:</p>
+<pre><code>5
+1 5
+2 3
+4 5
+6 8
+9 9</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>4
+2 3
+4 5
+6 8
+9 9</code></pre>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,39 @@
+<h2>NKPARITY - Mạng chẵn lẻ</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274825/problem/C" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274825/problem/C </a><p>Có N máy tính đánh số từ 1 đến N được nối với nhau thành một mạng bởi các đoạn nối trực tiếp giữa một số cặp máy nào đó (gọi là kênh). Mạng   được gọi là <em>chẵn lẻ</em> nếu như trong nó tìm được hai máy có thể trao đổi thông tin với nhau thông qua một số chẵn kênh cũng như thông qua một   số lẻ kênh.</p>
+<p>Yêu cầu: Kiểm tra xem mạng đã cho có phải <em>chẵn lẻ</em> hay không? Nếu câu trả lời là phủ định hãy tìm tập con X các máy có lực lượng lớn   nhất thoả mãn điều kiện: đối với hai máy bất kỳ trong X nếu chúng có thể trao đổi thông tin với nhau thì bao giờ cũng phải thông qua một số chẵn kênh.</p>
+<h3>Dữ liệu</h3>
+<ul>
+<li>Dòng đầu tiên chứa số N (N&lt;=300). </li>
+<li>Mỗi dòng trong số các dòng tiếp theo chứa một cặp số i, j cho biết máy i được nối trực tiếp với máy j. </li>
+</ul>
+<h3>Kết quả</h3>
+<ul>
+<li>Nếu mạng là <em>chẵn lẻ</em> thì ghi vào dòng đầu tiên thông báo 'YES', ngược lại ghi 'NO' sau đó ghi kết quả theo qui cách sau:  
+<ul>
+<li>Dòng thứ hai ghi số phần tử của tập X. </li>
+<li>Trong các dòng tiếp theo ghi các chỉ số của các máy trong tập X theo thứ tự tăng dần, các chỉ số được ghi cách nhau bởi ít nhất một dấu cách. </li>
+</ul>
+</li>
+</ul>
+<h3>Ví dụ</h3>
+<pre><strong>Dữ liệu:</strong>
+5
+1 2
+2 3
+3 4
+4 5
+5 1
+
+<strong>Kết qủa</strong>
+YES
+
+<strong>Dữ liệu</strong>
+3 
+1 2
+
+<strong>Kết quả</strong>
+NO
+2
+2 3
+</pre>
+</div>

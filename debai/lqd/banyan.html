@@ -1,0 +1,43 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Chặt đa</h2>
+</div><div class="content-description screen">
+<div><p>Để thưởng cho những ngày lao động vất vả chăm chỉ của Bờm, Phú Ông dẫn Bờm tới một cánh đồng hình chữ
+nhật đã được chia thành \(𝑚 × 𝑛\) ô vuông, mỗi ô là một vùng đất đang được trồng tối đa một cây đa. Đây là những
+cây đa mà Phú ông rất quý. Phú Ông cho Bờm lựa chọn một ô vuông, cho phép Bờm chặt các cây đa trên cùng
+hàng hoặc cùng cột với ô đang đứng (nếu ô được chọn có cây đa thì cây đó bắt buộc phải chặt) sao cho số lượng
+các cây đa bị chặt không vượt quá \(𝑘\). Sau đó Bờm được lấy vùng đất gồm ô đã chọn cùng với tất cả các ô trống tính
+theo 4 hướng từ vị trí đó cho tới khi chạm vào đường biên của cánh đồng hoặc vướng phải một ô có cây đa chưa
+bị chặt</p>
+<p>\(Yêu cầu\): Hãy giúp Bờm xác định số ô đất lớn nhất mà Bờm có thể lấy được</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu chứa 3 số nguyên \(𝑚, 𝑛, 𝑘\)</li>
+<li>\(𝑚\) dòng tiếp theo, dòng thứ \(𝑖\) chứa \(𝑛\) kí tự mô tả các ô thuộc dòng \(𝑖\). Ký tự <code>*</code> biểu thị ô có cây đa, và ký tự <code>.</code>
+biểu thị ô trống.</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Ghi ra một số nguyên duy nhất là số ô mà Bờm được phép sử dụng.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>6 5 2
+.**..
+**.*.
+..*.*
+**.*.
+****.
+*..**</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>9</code></pre>
+<p><strong><em>Giải thích</em></strong>: Bờm chọn ô (3,3) và chặt 2 cây ở vị trí (3,3), (5,3)</p>
+<p><em>Ràng buộc</em></p>
+<ul>
+<li>Subtask 1 (20% số điểm): \(𝑘 = 0; 𝑚, 𝑛 ≤ 15\)</li>
+<li>Subtask 2 (20% số điểm): \(2 ≤ 𝑚, 𝑛, 𝑘 ≤ 15\)</li>
+<li>Subtask 3 (40% số điểm): \(15 &lt; 𝑚, 𝑛, 𝑘 ≤ 100\)</li>
+<li>Subtask 3 (20% số điểm): \(100 &lt; 𝑚, 𝑛, 𝑘 ≤ 300\)</li>
+</ul>
+<p><em>Nguồn: LHM</em></p>
+</div>
+<hr/>
+</div>

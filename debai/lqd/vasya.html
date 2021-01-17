@@ -1,0 +1,40 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Vasya</h2>
+</div><div class="content-description screen">
+<div><p>Vasya đã có một robot nằm trên một mặt phẳng Cartesian vô hạn. Ban đầu Robot tại ô (\(0,0\)). Robot thực hiện 4 di chuyển sau:</p>
+<ul>
+<li>\(U\) di chuyển từ    (\(x,y\)) to (\(x,y+1\))</li>
+<li>\(D\) di chuyển từ    (\(x,y\)) to (\(x,y−1\));</li>
+<li>\(L\) di chuyển từ    (\(x,y\)) to (\(x−1,y\));</li>
+<li>\(R\) di chuyển từ    (\(x,y\)) to (\(x+1,y\));</li>
+</ul>
+<p>Vasya cũng đã có một chuỗi \(n\) hoạt động. Vasya muốn sửa đổi trình tự này để sau khi thực hiện nó, robot sẽ kết thúc bằng (\(x , y\)). Vasya muốn thay đổi trình tự để độ dài của sự thay đổi là tối thiểu có thể. Độ dài này có thể được tính như sau: \(maxID−minID+1\), ở đây \(maxID\) là chỉ số tối đa của một hoạt động thay đổi và \(minID\) là chỉ số tối thiểu của một hoạt động thay đổi Ví dụ: nếu Vasya thay đổi \(RRRRRRR\) thành \(RLRRLRL\) , thì các hoạt động với chỉ số 2, 5 và 7 được thay đổi, vì vậy độ dài của tiểu trình thay đổi là 7 - 2 + 1 = 6. Một ví dụ khác: nếu Vasya thay đổi \(DDDD\) thành \(DDRD\), thì độ dài của phân đoạn thay đổi là 1. Nếu không có thay đổi, thì độ dài của phân đoạn thay đổi là 0.</p>
+<p>Thay đổi một hoạt động có nghĩa là thay thế nó bằng một số hoạt động (có thể giống nhau); Vasya không thể chèn các hoạt động mới vào chuỗi hoặc loại bỏ chúng.
+Bạn hãy giúp Vasya tính độ dài tối thiểu của lộ trình mà anh ta cần thay đổi để Robot sẽ đi từ (\(0,0\)) đến (\(x,y\)) hoặc nếu không tồn tại lộ trình thì in ra -1.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa một số nguyên \(n\) (\(1≤ n ≤ 2 \times 10^5\)) là số lượng hoạt động của Robot.</li>
+<li>Dòng thứ hai chứa một chuỗi các hoạt động - một chuỗi \(n\) ký tự. Mỗi ký tự là một trong hai \(U,\ D,\ L\) hoặc \(R\).</li>
+<li>Dòng thứ ba chứa hai số nguyên \(x, y\) (\(-10^9 ≤ x, y ≤ 10^9\)).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>In một số nguyên là độ dài tối thiểu có thể thay thế có thể thay đổi để chuỗi hoạt động kết quả chuyển robot từ (\(0,0\)) sang (\(x, y\)). Nếu không tồn tại đường đi thì in ra  -1.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>5
+RURUU
+-2 3</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>3</code></pre>
+<p><strong><em>Chú ý</em></strong>: Trong ví dụ trên, chuỗi có thể được thay đổi thành \(LULUU\). Vì vậy, độ dài của tiểu trình thay đổi là \(3−1 + 1 = 3\).</p>
+<p><em>Ràng buộc:</em></p>
+<ul>
+<li>Có 60% số điểm thỏa mãn điều kiện: \(n ≤ 10^3\).</li>
+<li>40% số điểm còn lại thỏa mãn điều kiện \(n ≤ 2 \times 10^5\)</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2019 CLC</em></p>
+</div>
+<hr/>
+</div>

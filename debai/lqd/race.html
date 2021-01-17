@@ -1,0 +1,43 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Cuộc đua xe F1</h2>
+</div><div class="content-description screen">
+<div><p>Một cuộc thi đua xe công thức 1 mở rộng vô cùng hoành tráng sắp được tổ chức tại thành phố XYZ. Ray cũng sẽ tham gia cuộc đua xe lần này. Vốn là một tay đua xe có hạng, cậu rất tự tin rằng không ai có thể đánh bại được mình trong bất kì cuộc đua nào. Tuy nhiên, thể lệ cuộc đua xe lần này lại có nhiều điều đặc biệt khiến cậu cảm thấy rất bối rối.</p>
+<p>Như mọi lần khác, cuộc đua được tổ chức trên quy mô toàn thành phố, mỗi thí sinh sẽ chạy xe theo các con đường được kẻ vạch sẵn để di chuyển qua những địa điểm dừng. Có tất cả \(n\) địa điểm dừng được đánh số thứ tự từ 1 đến \(n\), 2 địa điểm bất kì đều có 2 con đường kết nối. Điểm đặc biệt của cuộc thi lần này là mỗi thí sinh sẽ phải sử dụng những chiếc xe đua được ban tổ chức chuẩn bị sẵn cho từng người. Cụ thể, mỗi thí sinh được chuẩn bị sẵn \(m\) chiếc xe khác nhau và có thể đổi xe liên tục tại bất kì địa điểm dừng nào (mỗi chiếc xe có thể sử dụng lại nhiều lần, thời gian đổi xe không đáng kể). Một chiếc xe lại tốn một khoảng thời gian trung bình khác nhau để di chuyển qua mỗi đoạn đường khác nhau. Cuộc thi gồm có \(r\) vòng đua, tại vòng thứ \(i\) ban tổ chức lại yêu cầu các thí sinh xuất phát từ địa điểm \(s_i\) và đích đến là địa điểm \(f_i\), đồng thời tại vòng này các thí sinh chỉ được phép đổi xe tối đa \(k_i\) lần. Ray đua xe rất giỏi nhưng thể lệ cuộc đua lần này quá mới lạ với cậu, vì thế nên Ray cần tới sự giúp đỡ của bạn. Hãy tính toán cách đua xe hợp lý để Ray có thể hoàn thành mỗi vòng đua trong tổng thời gian nhỏ nhất với mỗi vòng nhé!</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng thứ nhất gồm 3 số nguyên dương \(n, m, r\ (2 ≤ n ≤ 50)\).</li>
+<li>Tiếp theo là \(m\) bảng 2 chiều kích thước \(n x n\) biểu diễn thông tin của những chiếc xe, trong mỗi bảng ô giao giữa dòng \(i\) và cột \(j\) gồm 1 số nguyên dương \(a_{ij}\) (\(0 ≤ a_{ij} ≤ 10^6\)) là thời gian để chiếc xe tương ứng di chuyển qua đoạn đường nối 2 địa điểm dừng \(i, j\).</li>
+<li>\(r\) dòng tiếp theo, dòng thứ \(i\) gồm 3 số nguyên \(s_i, t_i, k_i\) (\(1 ≤ s_i, f_i ≤ n; s_i ≠ f_i; 0 ≤ k_i ≤ 10^5\)) cho biết địa điểm xuất phát, địa điểm đích và số lần đổi xe tối đa của vòng đua thứ \(i\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Đưa ra \(r\) dòng, mỗi dòng ghi tổng thời gian nhỏ nhất cần để Ray hoàn thành vòng đua tương ứng.</li>
+</ul>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>4 2 3
+0 1 5 6
+2 0 3 6
+1 3 0 1
+6 6 7 0
+0 3 5 6
+2 0 1 6
+1 3 0 2
+6 6 7 0
+1 4 2
+1 4 1
+1 4 3</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>3
+4
+3</code></pre>
+<p><strong><em>Giới hạn:</em></strong></p>
+<ul>
+<li>Subtask 1: 30% số điểm có \(m = 1, 1 ≤ r ≤ 10^5\).</li>
+<li>Subtask 2: 30% số điểm có \(1 ≤ m ≤ 50, 1 ≤ r ≤ 10^5, k_i = 0\).</li>
+<li>Subtask 3: 40% số điểm có \(1 ≤ m ≤ 50, 1 ≤ r ≤ 10^5\).</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2019 CHV-PT</em></p>
+</div>
+<hr/>
+</div>

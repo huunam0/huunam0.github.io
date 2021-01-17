@@ -1,0 +1,47 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">LED (DHBB CT)</h2>
+</div><div class="content-description screen">
+<div><p>Minh nhận được một chiếc máy tính bấm tay màn hình LCD. Màn hình được chia thành các ô biểu diễn chữ số, mỗi ô gồm 7 vạch LED và mỗi chữ số sẽ tương ứng với một số vạch LED được kích hoạt nổi màu đen trên ô đó. Cách hiển thị các số như sau:</p>
+<p><img alt="enter image description here" src="https://i.imgur.com/Ck5gzKG.png"/></p>
+<p>Minh bấm số nguyên dương \(N\) hiển thị trên màn hình và thắc mắc 2 câu hỏi:</p>
+<ol>
+<li>Có bao nhiêu vạch LED được kích hoạt để hiển thị số \(N\).</li>
+<li>Tính số lượng các số lớn hơn \(N\), có thể được hiển thị bởi kích hoạt thêm ít nhất một vạch LED ngoài các vạch đang được kích hoạt để hiển thị số \(N\) (không tắt bất kỳ vạch LED nào đang hiển thị và không kích hoạt vạch LED trên ô chưa có vạch kích hoạt).</li>
+</ol>
+<p><strong>Yêu cầu</strong>: Hãy lập trình giúp Minh trả lời 2 câu hỏi trên.</p>
+<p><strong>Dữ liệu vào</strong></p>
+<ul>
+<li>Dòng đầu tiên ghi mã câu hỏi \(V\) là \(1\) hoặc \(2\). </li>
+<li>Dòng thứ 2 ghi số nguyên dương \(N\) (<em>không bắt đầu bởi chữ số</em> \(0\)).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Nếu \(V = 1\) thì in ra số vạch LED được kích hoạt để hiển thị số \(N\).</li>
+<li>Nếu \(V = 2\) thì in ra số lượng số lớn hơn \(N\), có thể được hình thành bằng cách kích hoạt thêm ít nhất một vạch LED, bên cạnh các vạch đã kích hoạt được sử dụng để hiển thị số \(N\).</li>
+</ul>
+<p><strong>Sample Input 1</strong></p>
+<pre><code>1 
+823</code></pre>
+<p><strong>Sample Output 1</strong></p>
+<pre><code>17</code></pre>
+<p><strong>Sample Input 2</strong></p>
+<pre><code>2 
+823</code></pre>
+<p><strong>Sample Output 2</strong></p>
+<pre><code>5</code></pre>
+<p><strong><em>Giải thích:</em></strong></p>
+<ul>
+<li>Ví dụ 1: số 8 dùng 7 vạch, số 2 dùng 5 vạch, số 3 dùng 5 vạch, do đó cần 17 vạch</li>
+<li>Ví dụ 2: có 5 số lớn hơn 823 là 828, 829, 883, 888, 889.</li>
+</ul>
+<p><strong><em>Giới hạn</em></strong></p>
+<ul>
+<li>Subtask 1: (45 điểm) \(V=1,N≤ 10^{18}\)</li>
+<li>Subtask 2: (20 điểm) \(V=2,N&lt;20\)</li>
+<li>Subtask 3: (35 điểm) \(V=2,20≤ N≤ 10^{18}\)</li>
+</ul>
+<hr/>
+<p><em>Nguồn: 2020 Chính thức</em></p>
+</div>
+<hr/>
+</div>

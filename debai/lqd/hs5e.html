@@ -1,0 +1,39 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Ma Sa Xét</h2>
+</div><div class="content-description screen">
+<div><p><span class="rating rate-none admin"><a href="/user/ami">ami</a></span> càng ngày càng gần với việc thu thâp 6 vũ khí, và kẻ thù cũng ngày càng mạnh hơn. <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ phải đối mặt với ma sa xét <span class="rating rate-none admin"><a href="/user/cuom1999">cuom1999</a></span>. Để dàng chiến thắng, <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cần vượt qua mê cung tử thần và dành lấy vũ khí áo choàng chống lửa.</p>
+<p>Mê cung tử thần có \(n\) căn phòng và \(m\) cổng không gian. Để các bạn dễ hình dung, các căn phòng được đánh số từ \(1\) đến \(n\), các cổng không gian được đánh số từ \(1\) đến \(m\). Mỗi cây cầu không gian nối 2 phòng khác nhau theo một chiều, và có một con số ám ảnh là \(w_{i}\).</p>
+<p>Tuy nhiên, chỉ việc vượt qua mê cung vẫn là chưa đủ. <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> cần vượt qua mê cung với độ ám ảnh ít nhất. <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> sẽ bắt đầu ở căn phòng \(a\) và đích đến là căn phòng \(b\). <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> chỉ có thể di chuyển giữa 2 phòng nếu giữa chúng tồn tại một cồng không gian. Nếu <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> dùng các cổng không gian \(w_1, w_2, w_3, ..., w_k\) thì độ ám ảnh sẽ là \(w_1 \ OR \ w_2 \ OR \ ... \ OR \ w_k\). <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> có phép dịch chuyển, nên cậu đã đến cồng \(b\) một cách nhanh chóng. <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đố các bạn rằng <span class="rating rate-none admin"><a href="/user/ami">ami</a></span> đã đến đó với độ ám ảnh bao nhiêu ?</p>
+<h4>Input</h4>
+<p>Dòng đầu chứa 4 số nguyên dương \(n, m, a, b \ (2 \leq n \leq 10^5; 1 \leq m \leq 4 \times 10^5; 1 \leq a, b \leq n; a \neq b)\).</p>
+<p>Mỗi dòng trong \(m\) dòng tiếp theo \(u, v, w \ (1 \leq u, v \leq n; 0 \leq w \leq 10^9)\) - đại diện cho một cổng không gian một chiều từ \(u\) đến \(v\) với  độ ám ảnh \(w\).</p>
+<h4>Output</h4>
+<p>In ra một dòng là độ ám ảnh nhỏ nhất.</p>
+<p>Nếu không có cách di chuyển từ \(a\) đến \(b\) thì in ra \(-1\).</p>
+<h4>Sample Input 1</h4>
+<pre><code>3 4 1 3
+1 2 1
+1 2 4
+2 3 2
+1 3 5</code></pre>
+<h4>Sample Output 1</h4>
+<pre><code>3</code></pre>
+<h4>Sample Input 2</h4>
+<pre><code>3 4 3 1
+1 2 1
+1 2 4
+2 3 2
+1 3 5</code></pre>
+<h4>Sample Output 2</h4>
+<pre><code>-1</code></pre>
+<h4>Giải thích</h4>
+<p>Trong test ví dụ 1, ami đi theo con đường thứ 1 rồi qua con đường thứ 3. Giá trị cuối cùng là \(1 \ OR \ 2 = 3\).</p>
+<p>Trong test ví dụ 2, không có con đường nào từ 3 đến 1 vì các con đường là đường 1 chiều.</p>
+<h4>Giới hạn</h4>
+<p>\(10\)% test có \(w \leq 1\) (các con đường có giá trị \(0\) hoặc \(1\))</p>
+<p>\(10\)% test có \(n \leq 10, m \leq 15\)</p>
+<p>\(20\)% test có \(n \leq 1000, m \leq 4000, w \leq 1000\)</p>
+<p>\(60\)% test có \(n \leq 10^5, m \leq 4 \times 10^5, w \leq 10^9\)</p>
+</div>
+<hr/>
+</div>

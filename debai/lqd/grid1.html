@@ -1,0 +1,32 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Đếm đường đi trên ma trận 1</h2>
+</div><div class="content-description screen">
+<div><p>Cho ma trận gồm \(H\) hàng và \(W\) cột. Gọi \((i,j)\) là ô vuông ở hàng thứ \(i\) và cột thứ \(j\).</p>
+<p>Với mỗi \(i,j(1\le i\le H,1\le j\le W)\), ô vuông \((i,j)\) được mô tả bởi kí tự \(a_{i,j}\). Nếu \(a_{i,j}='.'\) thì ô vuông này trống rỗng, nếu \(a_{i,j}='\text{#}'\) thì ô vuông này chứa vật cản.</p>
+<p>\(Kaninho\) bắt đầu ở ô vuông \((1,1)\) và muốn đến ô vuông \((H,W)\) bằng việc lặp lại các bước: Đi sang phải hoặc đi xuống dưới ô trống kề với nó.</p>
+<p>Tìm số con đường mà \(Kaninho\) có thể đi được từ ô \((1,1)\) đến ô \((H,W)\). Bởi vì đáp án có thể lớn, nên trước khi in ra cần lấy mod \(10^9+7\).</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa hai số nguyên \(H,W(2\le H,W\le 1000)\)</p>
+</li>
+<li><p>\(H\) dòng tiếp theo, mỗi dòng chứa \(W\) kí tự \(a_{i,1},a_{i,2},...,a_{i,W}(1\le i\le H)\) - thể hiện ma trận \(Kaninho\) cần đi. Biết rằng đề ra luôn đảm bảo các ô \((1,1)\) và \((H,W)\) đều trống.</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra đáp án cần tìm .</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3 4
+...#
+.#..
+....</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>3</code></pre>
+<p><strong>Giải thích:</strong></p>
+<p><a href="https://i.imgur.com/Jrj1Mjf.png"><img src="https://i.imgur.com/Jrj1Mjf.png" style="width:300px;" title="source: imgur.com"/></a></p>
+<p><strong>Nguồn:</strong> DP Contest Atcoder</p>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,49 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Bức tường</h2>
+</div><div class="content-description screen">
+<div><p>Jian-Jia đang xây dựng bức tường bằng cách xếp các viên gạch có cùng kích thước. Bức tường bao gồm \(N\) cột gạch, được đánh số từ 0 đến \(N-1\) từ trái qua phải. Các cột có thể có độ cao khác nhau. Độ cao của một cột là số viên gạch trên nó.</p>
+<p>Jian-Jia xây dựng bức tường theo cách sau. Thoạt tiên, không có viên gạch nào trên mỗi cột. Sau đó, Jian-Jia thực hiện \(K\) giai đoạn thêm hoặc bớt các viên gạch. Quá trình xây dựng sẽ chấm dứt khi tất cả \(K\) giai đoạn được hoàn thành. Trong mỗi giai đoạn, Jian-Jia được cho biết một dãy các cột gạch liên tiếp và chiều cao \(H\), và nó cần thực hiện thủ tục sau đây:</p>
+<ul>
+<li><p>Trong giai đoạn thêm, Jian-Jia thêm các viên gạch vào các cột trong dãy cột đã cho mà có ít hơn \(H\) viên gạch sao cho chúng chứa đúng \(H\) viên gạch. Jian-Jia không làm gì với những cột có nhiều hơn hoặc bằng \(H\) viên gạch.</p>
+</li>
+<li><p>Trong giai đoạn bớt, Jian-Jia loại bớt các viên gạch từ các cột trong dãy cột đã cho mà chứa nhiều hơn \(H\) viên gạch, sao cho chúng chứa đúng \(H\) viên gạch. Jian-Jia không làm gì với những cột có ít hơn hoặc bằng \(H\) viên gạch.</p>
+</li>
+</ul>
+<p>Nhiệm vụ của bạn là xác định hình dạng cuối cùng của bức tường.</p>
+<p><strong>Ví dụ:</strong></p>
+<p>Giả sử là có 10 cột gạch và 6 giai đoạn xây dựng tường. Các dãy cột trong bảng sau đây là kể cả hai cột đầu mút. Sơ đồ của bức tường sau mỗi giai đoạn được mô tả ở phía dưới.</p>
+<p><img alt="enter image description here" src="https://i.imgur.com/puLc099.jpg"/></p>
+<p>Do khởi đầu tất cả các cột đều rỗng, sau giai đoạn 0 các cột từ 1 đến 8 đều có 4 viên gạch. Cột 0 và 9 vẫn là rỗng. Trong giai đoạn 1, cần bớt các viên gạch khỏi các cột từ 4 đến 8 cho đến khi mỗi cột này còn đúng 1 viên gạch, và cột 9 vẫn là rỗng. Các cột từ 0 đến 3, do không thuộc dãy cột được chọn, nên chúng không thay đổi. Giai đoạn 2 không dẫn đến thay đổi gì do các cột từ 3 đến 6 không chứa nhiều hơn 5 viên gạch. Sau giai đoạn 3 số lượng gạch trong các cột 0, 4, và 5 tăng lên thành 3. Có 5 viên gạch trong cột 2 sau giai đoạn 4. Giai đoạn 5 loại tất cả các viên gạch trong các cột 6 và 7.</p>
+<p><img alt="enter image description here" src="https://i.imgur.com/WnBAZfS.jpg"/></p>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li>Dòng thứ nhất chứa hai số nguyên dương \(N\) và \(K\) là số lượng cột trong bức tường và số giai đoạn.</li>
+<li>\(K\) dòng tiếp theo, dòng thứ \(i\) chứa bốn số nguyên \(Op_i\), \(Left_i\), \(Right_i\), \(Height_i\). Với \(\forall i, 0 \leq i \leq N-1\):<ul>
+<li>\(Op_i\): là kiểu của giai đoạn \(i\). 1 nếu là giai đoạn thêm và 2 nếu là giai đoạn bớt.</li>
+<li>\(Left_i\), \(Right_i\): giới hạn dãy cột ở giai đoạn \(i\) \((0 \leq Left_i \leq Right_i \leq N-1)\).</li>
+<li>\(Height_i\): là thông số chiều cao trong giai đoạn \(i\).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Kết quả:</strong> Gồm \(N\) số nguyên, số thứ \(i+1\) là chiều cao của cột thứ \(i\) sau khi thực hiện \(K\) giai đoạn, với \(\forall i, 0 \leq i \leq N-1\).</p>
+<p><strong>Sample Input:</strong></p>
+<pre><code>10 6
+1 1 8 4
+2 4 9 1
+2 3 6 5
+1 0 5 3
+1 2 2 5
+2 6 7 0</code></pre>
+<p><strong>Sample Output:</strong></p>
+<pre><code>3 4 5 4 3 3 0 0 1 0</code></pre>
+<p><strong>Ràng buộc:</strong></p>
+<p>Trong mọi Subtasks, chiều cao trong mọi giai đoạn là số nguyên không âm nhỏ hơn hoặc bằng \(10^5\).</p>
+<ul>
+<li>Subtask \(1\) (\(8\) điểm): \(N \leq 10^4\), \(K \leq 5.10^3\).</li>
+<li>Subtask \(2\) (\(24\) điểm): \(N \leq 10^5\), \(K \leq 5.10^5\), tất cả các giai đoạn thêm xuất hiện trước mọi giai đoạn bớt.</li>
+<li>Subtask \(3\) (\(29\) điểm): \(N \leq 10^5\), \(K \leq 5.10^5\).</li>
+<li>Subtask \(4\) (\(39\) điểm): \(N \leq 2.10^6\), \(K \leq 5.10^5\).</li>
+</ul>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,48 @@
+<h2>NKBM - Cặp ghép cực đại trên đồ thị hai phía</h2><div class="prob">
+	Đọc đề đẹp hơn ở: <a href="https://codeforces.com/group/FLVn1Sc504/contest/274823/problem/M" target="_blank"> https://codeforces.com/group/FLVn1Sc504/contest/274823/problem/M </a><p>Trong lý thuyết đồ thị, một <i>cặp ghép</i> hay <i>tập cạnh độc lập</i> của một đồ thị là một tập các cạnh không có đỉnh chung. Bài toán ghép 
+
+cặp thường được quan tâm trong trường hợp <i>đồ thị hai phía</i>. Đồ thị đơn vô hướng G=(V,E) là một <i>đồ thị hai phía</i> nếu như tồn tại một 
+
+cách phân hoạch tập đinh V thành hai tập V<sub>1</sub>, V<sub>2</sub> sao cho mỗi cạnh thuộc E đều có dạng v<sub>1</sub>v<sub>2</sub> 
+
+với v<sub>1</sub> thuộc V<sub>1</sub>, v<sub>2</sub> thuộc V<sub>2</sub>. Một ví dụ đó là bài toán sắp xếp công việc. Giả sử có P người và 
+
+J công việc, mỗi người có thể làm một số công việc nào đó. Ta mô hình bài toán bằng một đồ thị hai phía với P+J đỉnh. Nếu người p<sub>i</sub> có 
+
+thể làm công việc j<sub>i</sub> thì có một cạnh giữa hai đỉnh p<sub>i</sub> và j<sub>i</sub> trên đồ thị. 
+</p><p>Tìm một <i>cặp ghép cực đại</i> (còn được gọi là <i>cặp ghép có lực lượng lớn nhất</i>) trên một đồ thị hai phía G=(V=(X,Y), E) là một bài 
+
+toán quen thuộc và đơn giản trong lý thuyết đồ thị. Định lý Konig chỉ ra rằng trong một đồ thị hai phía, kích thước của cặp ghép cực đại bằng kích thước 
+
+của <i>phủ đỉnh nhỏ nhất</i>. Từ kết quả này, bài toán <i>phủ đỉnh nhỏ nhất</i> và bài toán <i>tập độc lập lớn nhất</i> trên đồ thị hai phía có thể giải 
+
+được trong thời gian đa thức.
+</p><p>Bạn hãy thử giải quyết bài toán tìm cặp ghép cực đại trên đồ thị hai phía: cho biết đồ thị hai phía G=(V=(X,Y), E), hãy tìm cặp ghép cực đại (có 
+
+nhiều cạnh nhất).
+
+</p><h3>Dữ liệu</h3>
+<ul>
+<li>Dòng đầu tiên chứa hai số x, y, m  (x, y ≤ 1000), theo thứ tự là số đỉnh thuộc tập X, tập Y của đồ thị và số cạnh nối.
+</li><li>m dòng tiếp theo mỗi dòng ghi hai số i, j cách nhau bởi một dấu cách thể hiện có cạnh nối giữa hai đỉnh x<sub>i</sub>, y<sub>j</sub>.
+</li></ul>
+<h3>Kết qủa</h3>
+<p>In ra kích thước của cặp ghép cực đại.
+</p><h3>Ví dụ</h3>
+<pre>
+<b>Dữ liệu:</b>
+4 5 9
+1 1
+1 4
+2 1
+2 2
+2 4
+3 2
+3 3
+4 2
+4 3
+
+<b>Kết qủa</b>
+4
+</pre>
+</div>

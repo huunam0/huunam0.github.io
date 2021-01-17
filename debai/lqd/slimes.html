@@ -1,0 +1,39 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Bài toán hủ kẹo dẻo</h2>
+</div><div class="content-description screen">
+<div><p>Có \(N\) hủ kẹo dẻo được đặt trên một hàng. Ban đầu, hủ thứ \(i\) có độ ngọt là \(a_i\).</p>
+<p>\(Kaninho\) cố gắng kết hợp tất cả các hủ kẹo này thành một hủ kẹo lớn hơn. Anh ấy thực hiện phép toán dưới đây nhiều lần cho đến khi chỉ còn một hủ kẹo duy nhất thì dừng:</p>
+<ul>
+<li>Chọn \(2\) hủ kẹo kề nhau bất kì và kết hợp chúng lại thành một hủ kẹo. Hủ kẹo mới này có độ ngọt là \(x+y\), trong đó \(x,y\) lần lượt là độ ngọt của hai hủ kẹo trước đó. Và việc này tốn chi phí là \(x+y\). Mối quan hệ về vị trí giữa các hủ kẹo vẫn không thay đổi khi ta kết hợp chúng lại với nhau.</li>
+</ul>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa số nguyên \(N(2\le N\le 400)\)</p>
+</li>
+<li><p>Dòng thứ hai chứa \(N\) số nguyên \(a_i(1\le a_i\le 10^9)\).</p>
+</li>
+</ul>
+<p><strong>Output:</strong> In ra chi phí tối thiểu để kết hợp tất cả các hủ kẹo trên thành \(1\) hủ duy nhất.</p>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>4
+10 20 30 40</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>190</code></pre>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li><p>\(Kaninho\) sẽ là như sau:</p>
+<ul>
+<li><p>\((10,20,30,40)\rightarrow (30,30,40)\) (Tốn chi phí: 10+20=<strong>30</strong>)</p>
+</li>
+<li><p>\((30,30,40)\rightarrow (60,40)\) (Tốn chi phí: 30+30=<strong>60</strong>)</p>
+</li>
+<li><p>\((60,40)\rightarrow (100)\) (Tốn chi phí: 60+40=<strong>100</strong>)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Vậy tổng chỉ phí tối thiểu cần dùng là \(30+60+100=190\)</p>
+</div>
+<hr/>
+</div>

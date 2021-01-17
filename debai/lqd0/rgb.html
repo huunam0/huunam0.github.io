@@ -1,0 +1,75 @@
+<div class="tm-box2">
+<div class="problem-name">
+    RGB  - RGB Coloring 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 512 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<h3 style="text-align: justify;"><span style="font-size:16px">Problem Statement</span></h3>
+<p style="text-align: justify;"><span style="font-size:16px">Takahashi has a tower which is divided into <em>N</em> layers. Initially, all the layers are uncolored. Takahashi is going to paint some of the layers in red, green or blue to make a beautiful tower. He defines the <em>beauty of the tower</em> as follows:</span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-size:16px">The beauty of the tower is the sum of the scores of the <em>N</em> layers, where the score of a layer is <em>A</em> if the layer is painted red, <em>A+B</em> if the layer is painted green, <em>B</em> if the layer is painted blue, and 0 if the layer is uncolored.</span></li>
+</ul>
+<p style="text-align: justify;"><span style="font-size:16px">Here, <em>A</em> and <em>B</em> are positive integer constants given beforehand. Also note that a layer may not be painted in two or more colors.</span></p>
+<p style="text-align: justify;"><span style="font-size:16px">Takahashi is planning to paint the tower so that the beauty of the tower becomes exactly <em>K</em>. How many such ways are there to paint the tower? Find the count modulo 998244353. Two ways to paint the tower are considered different when there exists a layer that is painted in different colors, or a layer that is painted in some color in one of the ways and not in the other.</span></p>
+<h3 style="text-align: justify;"><span style="font-size:16px">Constraints</span></h3>
+<ul>
+<li style="text-align: justify;"><span style="font-size:16px">1≤N≤3×10<sup>5</sup></span></li>
+<li style="text-align: justify;"><span style="font-size:16px">1≤A,B≤3×10<sup>5</sup></span></li>
+<li style="text-align: justify;"><span style="font-size:16px">0≤K≤18×10<sup>10</sup></span></li>
+<li style="text-align: justify;"><span style="font-size:16px">All values in the input are integers.</span></li>
+</ul>
+<p style="text-align: justify;"><span style="font-size:16px">​</span></p>
+<h3><span style="font-size:16px"><strong>Input</strong></span></h3>
+<p style="margin-left: 40px;"><span style="font-size:16px">Input is given from Standard Input in the following format:<br/>
+<em>N A B K</em></span></p>
+<h3><span style="font-size:16px"><strong>Output</strong></span></h3>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:16px">Print the number of the ways to paint tiles, modulo 998244353</span></p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<h3 style="text-align: justify;"><span style="font-size:14px"><strong>Sample Input 1</strong></span></h3>
+<pre style="margin-left: 40px; text-align: justify;">
+<span style="font-size:14px">4 1 2 5</span></pre>
+<h3 style="text-align: justify;"><span style="font-size:14px"><strong>Sample Output 1</strong></span></h3>
+<pre style="margin-left: 40px; text-align: justify;">
+<span style="font-size:14px">40</span></pre>
+<p style="text-align: justify;"><span style="font-size:14px">In this case, a red layer worth 1 points, a green layer worth 3 points and the blue layer worth 2 points. The beauty of the tower is 5 when we have one of the following sets of painted layers:</span></p>
+<p style="margin-left: 18.75pt; text-align: justify;"><span style="font-size:14px">·        1 green, 1 blue</span></p>
+<p style="margin-left: 18.75pt; text-align: justify;"><span style="font-size:14px">·        1 red, 2 blues</span></p>
+<p style="margin-left: 18.75pt; text-align: justify;"><span style="font-size:14px">·        2 reds, 1 green</span></p>
+<p style="margin-left: 18.75pt; text-align: justify;"><span style="font-size:14px">·        3 reds, 1 blue</span></p>
+<p style="text-align: justify;"><span style="font-size:14px">The total number of the ways to produce them is 40.</span></p>
+<div>
+<hr/></div>
+<h3 style="text-align: justify;"><strong><span style="font-size:14px">Sample Input 2</span></strong></h3>
+<p style="text-align: justify; margin-left: 40px;"><span style="font-size:14px; white-space:pre-wrap">2 5 6 0</span></p>
+<h3 style="text-align: justify;"><strong><span style="font-size:14px">Sample Output 2</span></strong></h3>
+<pre style="text-align: justify; margin-left: 40px;">
+<span style="font-size:14px">1</span></pre>
+<p style="text-align: justify;"><span style="font-size:14px">The beauty of the tower is 0 only when all the layers are uncolored. Thus, the answer is 1.</span></p>
+<div>
+<hr/></div>
+<h3 style="text-align: justify;"><strong><span style="font-size:14px">Sample Input 3</span></strong></h3>
+<pre style="text-align: justify; margin-left: 40px;">
+<span style="font-size:14px">90081 33447 90629 6391049189</span></pre>
+<h3 style="text-align: justify;"><strong><span style="font-size:14px">Sample Output 3</span></strong></h3>
+<pre style="text-align: justify; margin-left: 40px;">
+<span style="font-size:14px">577742975</span></pre>
+<hr/>
+<p><span style="font-size:14px">Nguồn: <a href="https://agc025.contest.atcoder.jp/tasks/agc025_b">https://agc025.contest.atcoder.jp/tasks/agc025_b</a></span></p>
+</div>
+</div>

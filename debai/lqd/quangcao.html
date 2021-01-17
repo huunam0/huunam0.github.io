@@ -1,0 +1,47 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Quảng Cáo</h2>
+</div><div class="content-description screen">
+<div><p>Để quảng bá cho cuộc thi chạy của Hippo Runners Club, các thành viên ban quản trị đã rất đau đầu để suy nghĩ ra một cái tên thực sự đáng chú ý. Sau nhiều tháng tranh luận, mọi người đã đi đến thống nhất các quy tắc sau:</p>
+<ul>
+<li>Tên cuộc thi chỉ có thể bao gồm các kí tự in thường Latin (a..z).</li>
+<li>Cho trước 2 xâu A và B, tên bắt buộc phải bắt đầu bằng A và kết thúc bằng B.</li>
+<li>Độ dài của tên không được vượt quá \(|𝐴| + |𝐵| + 𝑘\) (với \(|𝑆|\) là độ dài xâu \(S\)).</li>
+</ul>
+<p><strong>Ví dụ:</strong> Với A = “abc”, B = “cde”, k = 3. Những tên sau được xem là hợp lệ: “abcxyzcde”,
+“abcde”, … và những tên sau là không hợp lệ “abxcde”, “abczzzzcde”, “thoi bay covid
+123”, …</p>
+<p>Cho trước một xâu \(S\), hãy tìm xem liệu có tồn tại xâu con \(X\) của \(S\) (các kí tự liên tiếp) mà \(X\) là một cái tên hợp lệ hay không.</p>
+<h4>Input</h4>
+<ul>
+<li>Dòng đầu tiên gồm \(𝑇 (1 \leq 𝑇 \leq 10)\) là số testcase:</li>
+<li>Mỗi testcase bao gồm 4 dòng:<ul>
+<li>Dòng đầu tiên gồm 1 số nguyên \(𝑘\) duy nhất.</li>
+<li>Ba dòng tiếp theo gồm 3 xâu \(S, A, B\) trên mỗi dòng. \((1 ≤ 𝑛_𝑆, 𝑛_𝐴, 𝑛_𝐵, 𝑘 \leq 10^5\) và \(max(𝑛_𝐴, 𝑛_𝐵) \leq 𝑛_𝑆)\) với \(𝑛_𝑥\) là độ dài xâu \(x\)</li>
+</ul>
+</li>
+</ul>
+<h4>Output:</h4>
+<p>Gồm \(T\) dòng ứng với mỗi testcase. In ra YES nếu tồn tại, ngược lại in NO.</p>
+<h4>Ví dụ:</h4>
+<p><strong>Input</strong></p>
+<pre><code>3
+7
+thoibaycovid
+thoi
+covid
+9
+abcde
+abc
+cde
+1
+abcccd
+abc
+d</code></pre>
+<p><strong>Output</strong></p>
+<pre><code>YES
+YES
+NO</code></pre>
+<p><em>Nguồn: DUT Challenge Round 2 - 2020</em></p>
+</div>
+<hr/>
+</div>

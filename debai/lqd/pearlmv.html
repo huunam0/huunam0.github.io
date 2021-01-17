@@ -1,0 +1,44 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Ngọc di chuyển (Chọn ĐT'20-21)</h2>
+</div><div class="content-description screen">
+<div><p>Ngọc đang cần đi qua bốn khu phố \(A,B,C,D\). Mỗi một khu phố sẽ bao gồm một nhóm các ngôi nhà. Mỗi ngôi nhà có toạ độ (\(x ,y\)) trên mặt phẳng toạ độ thông thường. Ngọc sẽ bắt đầu ở một ngôi nhà thuộc \(A\), qua một ngôi nhà thuộc \(B\), đến một ngôi nhà thuộc \(C\) và cuối cùng kết thúc ở \(D\). Vì muốn tiết kiệm sức lực, Ngọc muốn tổng khoảng cách di chuyển là ít nhất có thể.</p>
+<p>Khoảng cách khi đi từ một ngôi nhà toạ độ (\(x_1,y_1\)) đến một ngôi nhà có toạ độ (\(x_2,y_2\)) là \((x_1- x_2 )^2  + (y_1  - y_2 )^2\).</p>
+<p><strong>Yêu cầu</strong>: Hãy tính tổng khoảng cách ngắn nhất để Ngọc di chuyển qua cả bốn khu phố \(A,B,C,D\) theo cách đã nêu ở trên.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng 1 chứa bốn số nguyên dương \(n_a,n_b,n_c,n_d\)  (\(1 ≤ n_a,n_b,n_c,n_d≤ 3000\)) lần lượt là số ngôi nhà ở các khu phố  \(A,B,C,D\).</li>
+<li>Dòng thứ hai chứa \(n_a\) cặp số nguyên \((x_1,y_1),(x_2,y_2),(x_3,y_3),…,(x_(n_a ),y_(n_a ))\) lần lượt là toạ độ một ngôi nhà trong khu phố \(A\).</li>
+<li>Dòng thứ ba chứa \(n_b\) cặp số nguyên \((x_1,y_1),(x_2,y_2),(x_3,y_3),…,(x_(n_b ),y_(n_b ))\)  lần lượt là toạ độ một ngôi nhà trong khu phố \(B\).   </li>
+<li>Dòng thứ tư chứa \(n_c\) cặp số nguyên \((x_1,y_1),(x_2,y_2),(x_3,y_3),…,(x_(n_c ),y_(n_c ))\)  lần lượt là toạ độ một ngôi nhà trong khu phố \(C\).</li>
+<li>Dòng cuối cùng chứa \(n_d\) cặp số nguyên \((x_1,y_1),(x_2,y_2),(x_3,y_3),…,(x_(n_d ),y_(n_d ))\)  lần lượt là toạ độ một ngôi nhà trong khu phố \(D\).</li>
+</ul>
+<p><em>Các toạ độ của toàn bộ ngôi nhà có giá trị tuyệt đối không vượt quá \(10^8\)</em></p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Ghi một số nguyên là kết quả bài toán.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>1 1 1 2
+-1 -1
+0 0
+1 1
+3 3 2 2</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>6</code></pre>
+<p><strong><em>Giải thích:</em></strong></p>
+<ul>
+<li>Đi từ ngôi nhà (-1,-1) ở \(A\) đến ngôi nhà (0,0) thuộc \(B\), khoảng cách là \((0 + 1)^2 + (0 + 1)^2 = 2\)</li>
+<li>Đi từ ngôi nhà (0,0) ở \(B\) đến ngôi nhà (1,1) thuộc \(C\), khoảng cách là \((1 - 0)^2 + (1 - 0)^2 = 2\)</li>
+<li>Đi từ ngôi nhà (1,1) ở \(C\) đến ngôi nhà (2,2) thuộc \(D\), khoảng cách là \((2 - 1)^2 + (2 - 1)^2 = 2\)</li>
+</ul>
+<p><strong><em>Ràng buộc:</em></strong></p>
+<ul>
+<li>Có 20% điểm tương ứng với \(1 ≤ n_a,n_b,n_c,n_d  ≤ 30\).</li>
+<li>Có 30% điểm tương ứng với \(1 ≤ n_a,n_b,n_c,n_d  ≤ 300\).</li>
+<li>Có 50% điểm không có ràng buộc gì thêm.</li>
+</ul>
+<hr/>
+<p><em>Nguồn: Bài 1 Chọn ĐT HSG TP.ĐN 2020-2021</em></p>
+</div>
+<hr/>
+</div>

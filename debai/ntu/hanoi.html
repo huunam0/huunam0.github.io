@@ -1,0 +1,60 @@
+<html><body><div class="tm-box2">
+<div class="problem-name">
+    HANOI - Tháp Hà Nội 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 1.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 128 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p>Trong bài toán Tháp Hà Nội, có n đĩa theo thứ tự từ nhỏ đến lớn đang nằm ở cột A như hình bên dưới.</p>
+<p style="text-align:center"><img alt="" src="images/HaNoi.png" style="height:127px; width:392px"/></p>
+<p>Cần chuyển n đĩa trên từ cột A sang cột B (lấy C làm cột trung gian) theo quy tắc:</p>
+<p>    - Mỗi lần chỉ chuyển một đĩa.</p>
+<p>    - Đĩa nhỏ phải nằm trên đĩa lớn tại bất kỳ thời điểm nào trong quá trình chuyển.</p>
+<p>Để giải bài toán trên, người ta dùng giải thuật đệ quy. Giải thuật này cho kết quả là 2<sup>n</sup>-1 bước chuyển, là số bước chuyển ít nhất cần thực hiện.</p>
+<p>Sau khi học xong giải thuật đệ quy trên tại trường Đại học Nha Trang, vị thần trong cây đèn của Aladin lập tức bay ra Hà Nội để chuyển đĩa thử. Tuy nhiên mới chỉ thực hiện được k bước chuyển (k ≤ 2<sup>n</sup>-1) thì vị thần đói bụng quá nên tạm nghỉ để đi ăn. Bạn hãy tính xem tại lúc này, số đĩa hiện có trên mỗi cột là bao nhiêu.</p>
+<p><strong>Dữ liệu nhập:</strong></p>
+<p>- Là hai số nguyên n và k cách nhau một khoảng trắng ((1 ≤ n ≤ 10, 1 ≤ k ≤ 2<sup>n</sup>-1).</p>
+<p><strong>Dữ liệu xuất:</strong></p>
+<p>- Là ba số nguyên a, b, c thể hiện số đĩa trên các cột A, B, C sau k bước chuyển. Ba số cách nhau một khoảng trắng.</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 1</div>
+<div class="sample-type">output</div>
+<div class="sample-value">2 1 0</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 2</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1 1 1</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 3</div>
+<div class="sample-type">output</div>
+<div class="sample-value">1 0 2</div>
+</li>
+<li>
+<div class="sample-type">input</div>
+<div class="sample-value">3 7</div>
+<div class="sample-type">output</div>
+<div class="sample-value">0 3 0</div>
+</li>
+</ul>
+</div>
+<div class="problem-explain">
+</div>
+</div></body></html>

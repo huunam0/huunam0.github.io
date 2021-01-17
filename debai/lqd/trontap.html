@@ -1,0 +1,44 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Trốn tập</h2>
+</div><div class="content-description screen">
+<div><p>Những con chó tại trường X-dogs ngày càng láu cá. Hàng ngày chúng phải dậy sớm tập thể dục, nhưng tất cả đều lười và muốn trốn hoạt động này. Vì số chó rất đông (\(n\) con) nên người huấn luyện không đếm hết được, anh ta dùng một mẹo để xác định có con chó nào trốn tập hay không. Mẹo đó như sau:</p>
+<ul>
+<li>Đầu tiên anh ta yêu cầu các con chó xếp thành các hàng ngang, mỗi hàng \(a\) con và đếm số chó dư ra (không đủ một hàng) gọi là \(a’\).</li>
+<li>Lần 2, anh ta yêu cầu các con chó xếp thành các hàng ngang, mỗi hàng \(b\) con và đếm số chó dư ra (không đủ một hàng) gọi là \(b’\).</li>
+<li>Lần 3, anh ta yêu cầu các con chó xếp thành các hàng ngang, mỗi hàng \(c\) con và đếm số chó dư ra (không đủ một hàng) gọi là \(c’\).</li>
+<li>Lần 4, anh ta yêu cầu các con chó xếp thành các hàng ngang, mỗi hàng \(d\) con và đếm số chó dư ra (không đủ một hàng) gọi là \(d’\).</li>
+</ul>
+<p>Sau đó người huấn luyện so sánh các giá trị \(a’, b’, c’, d’\) lần lượt với các số dư của n khi chia cho \(a, b, c, d\). Nếu không khớp thì chắc chắn có con chó ngủ nướng và trốn tập. Tuy nhiên có thể nhận thấy rằng cho dù bốn cặp số này khớp nhau, vẫn có thể có con chó trốn tập.</p>
+<p>Sau vài buổi sáng, lũ chó tuy không biết sĩ số \(n\) nhưng đã dò biết được những giá trị \(a, a’, b, b’, c, c’, d, d’\). Vấn đề của chúng là cử một số ít nhất các chó đi tập thể dục buổi sáng mà người huấn luyện bằng phương pháp trên không thể phát hiện ra có những con chó trốn tập thể dục. Hãy giúp lũ chó xác định số lượng cử đi.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên chứa số \(T ≤ 10^4\) là số test. \(T\) khối dòng tiếp theo, mỗi khối 4 dòng chứa dữ liệu cho 1 test:<ul>
+<li>Dòng 1: chứa hai số nguyên \(a, a’\) cách nhau bởi dấu cách (\(0 ≤ a’ &lt; a ≤ 10^4\)).</li>
+<li>Dòng 2: chứa hai số nguyên \(b, b’\) cách nhau bởi dấu cách (\(0 ≤ b’ &lt; b ≤ 10^4\)).</li>
+<li>Dòng 3: chứa hai số nguyên \(c, c’\) cách nhau bởi dấu cách (\(0 ≤ c’ &lt; c ≤ 10^4\)).</li>
+<li>Dòng 4: chứa hai số nguyên \(d, d’\) cách nhau bởi dấu cách (\(0 ≤ d’ &lt; d ≤ 10^4\)).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Với mỗi test, ghi ra một số nguyên dương duy nhất là số lượng chó tối thiểu phải đi tập thể dục, trong trường hợp lũ chó nhớ sai dữ liệu dẫn tới việc không thể xác định số chó cử đi, ghi ra số -1.</li>
+</ul>
+<p><strong>Sample input</strong></p>
+<pre><code>2
+20 3
+15 3
+21 18
+35 18
+5 1
+5 2
+5 3
+5 4</code></pre>
+<p><strong>Sample output</strong></p>
+<pre><code>123
+-1</code></pre>
+<hr/>
+<p><em>Nguồn: LMH-ĐHSP</em></p>
+</div>
+<hr/>
+</div>

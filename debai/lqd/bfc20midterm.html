@@ -1,0 +1,43 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">MIDTERM</h2>
+</div><div class="content-description screen">
+<div><p>Bi là một học sinh giỏi trong lớp. Sắp tới, Bi phải thi để nhận chứng chỉ cho M môn học trong
+vòng \(N\) ngày. Mỗi môn học được đánh số từ 1 đến \(M\) và để nhận được chứng chỉ thứ \(i\) thì cần bỏ
+ra \(t_i\) ngày để ôn tập và các ngày ôn tập không cần liên tiếp. Một ngày Bi có thể tham gia thi, ôn
+tập hoặc nghỉ ngơi.</p>
+<p>Bạn được biết lịch tổ chức các kì thi của \(M\) môn học sắp tới trong vòng \(N\) ngày. Hãy giúp Bi lên
+lịch sao cho số ngày cần là ít nhất để có thể lấy được \(M\) chứng chỉ.</p>
+<p><strong>Dữ liệu</strong></p>
+<ul>
+<li>Dòng đầu tiên gồm 2 số nguyên \(N, M\) (\(1 ≤ N, M ≤ 10^5\)).</li>
+<li>Dòng tiếp theo gồm \(N\) số nguyên \(X_1, X_2, ..., X_N\) , với \(X_i\) (\(0 ≤ Xi ≤ M\)) thể hiện cho ngày
+thứ \(i\) có kì thi để lấy chứng chỉ \(X_i\). Nếu \(X_i = 0\) thì ngày đó không có kì thi nào được tổ chức.</li>
+<li>Dòng cuối cùng là \(M\) số nguyên \(t_1, t_2, ..., t_M\), với \(t_i\) (\(1 ≤ t_i ≤ 10^5\)) là số ngày cần ôn tập để
+lấy được chứng chỉ thứ \(i\).</li>
+</ul>
+<p><strong>Kết quả</strong></p>
+<ul>
+<li>Gồm 1 số duy nhất là số ngày ít nhất để Bi có thể nhận được tất cả các chứng chỉ.</li>
+<li>Nếu không thể lấy trong vòng \(N\) ngày thì xuất -1.</li>
+</ul>
+<p><strong>Sample Input</strong></p>
+<pre><code>9 2
+1 1 2 0 1 2 1 1 2
+2 1</code></pre>
+<p><strong>Sample Output</strong></p>
+<pre><code>5</code></pre>
+<p><strong><em>Giải thích</em></strong></p>
+<ul>
+<li>Bi sẽ ôn tập ngày 1 cho môn thứ 2 và thi nó vào ngày thứ 3</li>
+<li>Bi sẽ ôn tập ngày 2 và 4 cho môn thứ 1 và thi nó vào ngày thứ 5</li>
+</ul>
+<p><strong><em>Ràng buộc</em></strong></p>
+<ul>
+<li>Subtask 1 (50% số test): \(1 ≤ N, M ≤ 1000\)</li>
+<li>Subtask 2 (50% số test): Không có ràng buộc gì thêm</li>
+</ul>
+<hr/>
+<p><em>Nguồn: BFC</em></p>
+</div>
+<hr/>
+</div>

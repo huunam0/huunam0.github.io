@@ -1,0 +1,54 @@
+<div class="tm-box2">
+<div class="problem-name">
+    GAME01 - Trò chơi kỳ lạ 
+</div>
+
+
+
+<div class="problem-param">
+    Giới hạn thời gian: 2.0 giây
+</div>
+<div class="problem-param">
+    Giới hạn bộ nhớ: 64 megabyte
+</div>
+
+<br/>
+<div class="problem-content">
+<p style="text-align: justify;"><span style="font-size:14px">Nhiều trò chơi toán học có vẻ khá kỳ lạ với mọi người. Sau đây là một trò chơi như thế:</span></p>
+<p style="text-align: justify;"><span style="font-size:14px">Bạn có 2N-1 lá bài. Ban đầu, trò chơi chỉ sử dụng N lá bài. Mặt trước của mỗi lá bài được viết 1 số nguyên. Mặt sau của lá bài được viết số 0. N-l lá bài còn lại để trống ở cả 2 mặt và sẽ không liên quan tới trò chơi. Bạn đoán 1 số trong khoảng từ 1 đến N. Trò chơi diễn ra theo quá trình sau:</span></p>
+<ul>
+<li style="text-align: justify;"><span style="font-size:14px">Chọn lá bài có số ở mặt trước nhỏ nhất. Nếu có nhiều lá bài như thế, thì chọn lá bài có số ở mặt sau nhỏ nhất. Gọi số ở mặt trước của lá bài được chọn là A còn số ở mặt sau của lá bài là B. Loại lá bài đó khỏi trò chơi.</span></li>
+<li style="text-align: justify;"><span style="font-size:14px">Tiếp tục chọn lá bài có số ở mặt trước nhỏ nhất. Nếu có nhiều lá bài như thế thì chọn lá bài có số ở mặt sau nhỏ nhất. Gọi số ở mặt trước của lá bài được chọn là c còn số ở mặt sau của lá bài là D. Loại lá bài đó khỏi trò chơi.</span></li>
+<li style="text-align: justify;"><span style="font-size:14px">Chọn 1 lá bài được để trống ở cả 2 mặt. Ở mặt trước của lá bài viết số A+C và ở mặt sau viết số lớn hơn trong 2 số B + 1 and D + 1. Cho lá bài đó vào trò chơi.</span></li>
+</ul>
+<p style="text-align: justify;"><span style="font-size:14px">Trò chơi kết thúc sau N-l lần làm như vậy, khi trò chơi chỉ còn đúng 1 lá bài. Nếu số ở mặt sau lá bài trùng với số mà bạn đã đoán thì bạn thắng, nếu không thì bạn thua. Viết 1 chương trình tính toán số cuối cùng được viết ở mặt sau của lá bài cuối cùng này</span></p>
+<p style="text-align: justify;"> </p>
+<p><strong>Dữ liệu vào:</strong></p>
+<ul>
+<li>Dòng đầu tiên ghi số nguyên 1 &lt; N &lt; lo<sup>5</sup>.</li>
+<li>Dòng tiếp theo ghi N số nguyên - những con số ghi trên mặt trước của mỗi lá bài. Mỗi số nằm trong khoảng từ -10<sup>9</sup> đến 10<sup>9</sup>.</li>
+</ul>
+<p><strong>Kết quả:</strong></p>
+<p>In ra I số duy nhất: Câu trả lời cho vấn đề</p>
+</div>
+<div class="problem-sample">
+<h3>Ví dụ</h3>
+<ul>
+</ul>
+</div>
+<div class="problem-explain">
+<p><span style="font-size:14px"><strong>Input</strong></span></p>
+<p style="margin-left: 40px;"><span style="font-size:14px">5<br/>
+1 2 3 4 5</span></p>
+<p><span style="font-size:14px"><strong>Output</strong></span></p>
+<p style="margin-left: 40px;"><span style="font-size:14px">3</span></p>
+<p><span style="font-size:14px"><em>Giải thích ví dụ:</em></span></p>
+<p style="margin-left: 40px;"><span style="font-size:14px">Ban đầu (1 0), (2 0), (3 0), (4 0), (5 0)<br/>
+Vòng 1: (3 1), (3 0), (4 0), (5 0)<br/>
+Vòng 2: (6 2), (4 0), (5 0)<br/>
+Vòng 3: (6 2), (9, 1)<br/>
+Vòng 4: (15, 3)</span></p>
+<hr/>
+<p><em>Nguồn: Test 2 KHTN 2015</em></p>
+</div>
+</div>

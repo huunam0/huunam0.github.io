@@ -1,0 +1,29 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">SUBTRACT</h2>
+</div><div class="content-description screen">
+<div><p>Cho dãy \(N\) số nguyên dương \(A = (a_1, a_2, … , a_N)\). Với mỗi chỉ số \(i: 1 \leq i &lt; N\), người ta định nghĩa phép rút gọn \(R(i)\): thay \(a_i = a_i − a_{i+1}\) rồi xóa phần tử \(a_{i+1}\).</p>
+<p>Sau mỗi lần rút gọn, số phần tử của dãy \(A\) giảm đi \(1\) và các phần tử của dãy \(A\) được đánh số lại từ \(1\) bắt đầu từ phần tử mang chỉ số nhỏ nhất.</p>
+<p>Sau \(N − 1\) lần rút gọn dãy \(A\), ta sẽ thu được duy nhất một số nguyên…</p>
+<p>Ví dụ: \((12,10,4,3,5) → R(2) → (12,6,3,5) → R(3) → (12,6, −2) →R(2) → (12,8) →R(1) → (4)\)</p>
+<p><strong>Yêu cầu</strong>: Cho số nguyên \(𝑉\), hãy tìm thứ tự thực hiện \(N − 1\) phép rút gọn đối với dãy đã cho để số cuối cùng thu được là \(𝑉\).</p>
+<p><strong>Dữ liệu vào</strong>: Gồm hai dòng:</p>
+<ul>
+<li>Dòng đầu tiên chứa hai số nguyên dương \(N\) và \(V\). \((V \leq 4.10^4)\)</li>
+<li>Dòng thứ hai chứa \(N\) số nguyên \(a_1, a_2, … , a_N. (1 \leq a_i \leq 2.10^2, \forall i)\)</li>
+</ul>
+<p><em>Dữ liệu vào luôn đảm bảo có thể tìm ra phương án theo yêu cầu.</em></p>
+<p><strong>Kết quả</strong>: Ghi ra \(N − 1\) số tương ứng với vị trí thực hiện \(N − 1\) phép rút gọn theo đúng thứ tự thi hành.</p>
+<p><strong>Ví dụ</strong>:</p>
+<p><strong>Input</strong>:</p>
+<pre><code>5 4 
+12 10 4 3 5</code></pre>
+<p><strong>Output</strong>:</p>
+<pre><code>2 3 2 1</code></pre>
+<p><strong>Giới hạn</strong>:</p>
+<ul>
+<li>\(50\)% số test đầu tiên có \(N \leq 10\).</li>
+<li>\(50\)% số test còn lại có \(N \leq 2.10^2\).</li>
+</ul>
+</div>
+<hr/>
+</div>

@@ -1,0 +1,31 @@
+<div class="problem-title">
+<h2 style="color:#393630; display: inline-block">Kaninho và bài toán sushi</h2>
+</div><div class="content-description screen">
+<div><p>Có \(N\) cái đĩa , được đánh số \(1,2,3,...,N\). Ban đầu, với mỗi \(i(1\le i\le N)\), cái đĩa thứ \(i\) có \(a_i(1\le a_i\le 3)\) miếng sushi.</p>
+<p>\(Kaninho\) sẽ lặp lại phép toán dưới đây cho đến khi tất cả các miếng sushi trên các đĩa được ăn hết:</p>
+<ul>
+<li>Thả con xúc sắc có \(N\) mặt được đánh số \(1,2,3,...,N\) (xác suất xuất hiện \(N\) mặt này là như nhau), và gọi \(i\) là mặt của con xúc sắc sau khi thả. Nếu có một vài miếng sushi trên đĩa thứ \(i\), \(Kaninho\) sẽ ăn \(1\) cái trong số chúng, còn nếu không có cái nào hết, thì \(Kaninho\) sẽ không làm gì cả.</li>
+</ul>
+<p>Tìm giá trị kì vọng của số lần thực hiện phép toán trên trước khi tất cả các miếng sushi trên các đĩa được ăn hết.</p>
+<p><strong>Input:</strong></p>
+<ul>
+<li><p>Dòng thứ nhất chứa số nguyên \(N(1\le N\le 300)\)</p>
+</li>
+<li><p>Dòng thứ hai chứa \(N\) số \(a_i(1\le a_i\le 3)\)</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<ul>
+<li>In ra giá trị kì vọng cần tìm. (gọi \(x\) là đáp án của bạn và \(y\) là đáp án của bài toán thì đáp án \(x\) được chấp nhận nếu \(|x-y|&lt;10^{-9}\)).</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<p><strong>Input:</strong></p>
+<pre><code>3
+1 1 1</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>5.5</code></pre>
+<p><strong>Giải thích:</strong> Giá trị kì vọng của số phép toán trước khi miếng sushi thứ nhất được ăn là \(1\). Sau đó, giá trị kì vọng của số phép toán trước khi miếng sushi thứ \(2\) được ăn là \(1.5\). Sau đó, giá trị kì vọng của số phép toán trước khi miếng sushi thứ \(3\) được ăn là \(3\). Như vậy, giá trị kì vọng tổng cộng của số phép toán cần thực hiện là \(1+1.5+3=5.5\)</p>
+<p><strong>Nguồn:</strong> DP Contest Atcoder</p>
+</div>
+<hr/>
+</div>
