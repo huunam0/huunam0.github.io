@@ -5,6 +5,10 @@
     <script>
       function chay() {
         $("#nd").load("nam.cpp");
+        var txt = $("#nd").html();
+        txt = txt.replace("<","&lt;");
+        txt = txt.replace(">","&gt;");
+        $("#nd").html(txt);
       }
       setTimeout(chay, 2000);
     </script>
