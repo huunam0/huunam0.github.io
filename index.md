@@ -8,10 +8,10 @@ Chiêu sinh các lớp học:
 3. Thuật toán + NNLT cơ bản. (Pascal, C++, Python)
 4. Kèm 1:1
 
-[Chi tiết](https://hoclen.top/thuattoan.html)
+[Chi tiết](https://hsgtin.vn/hsg.html)
 
 ### Sách
-[Các cuốn sach](https://hoclen.top/sach.html)
+[Các cuốn sach](https://hsgtin.vn/sach)
 
 ### Liên hệ
 
@@ -24,5 +24,5 @@ Trần Hữu Nam,
 
 ### Thông tin GV:
 
-+ GV Tin học, trường THPT Chuyên Chu Văn An - Bình Định.
++ GV Tin học, trường THPT Chuyên Chu Văn An - Gia Lai.
 + [Thêm](https://thptccva.edu.vn/gv/thnam)
